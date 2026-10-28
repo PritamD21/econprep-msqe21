@@ -1,0 +1,8 @@
+.openai/
+.sites*/
+node_modules/
+__pycache__/
+*.zip
+*.tar.gz
+.env
+.env.*
