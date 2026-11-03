@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2011-PEA-Q1",
+    "number": "1",
+    "stem": "The expression √(13+3√(23/3))+√(13−3√(23/3)) is",
+    "options": [
+      "A natural number",
+      "A rational number but not a natural number",
+      "An irrational number not exceeding 6",
+      "An irrational number exceeding 6"
+    ],
+    "correctIndex": 3,
+    "answer": "√46, an irrational number exceeding 6.",
+    "solution": "Squaring the positive sum gives 26+2√(169−9·23/3)=26+2√100=46. The sum is √46, which is irrational and greater than √36=6.",
+    "hint": "Square the entire sum of square roots.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q2",
+    "number": "2",
+    "stem": "The domain of f(x)=√(x+3)/(x²+5x+4) is",
+    "options": [
+      "(−∞,∞) excluding {−1,−4}",
+      "(−0,∞) excluding {−1,−4}",
+      "(−1,∞) excluding {−4}",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "[−3,∞) excluding −1.",
+    "solution": "The square root requires x≥−3. The denominator factors as (x+1)(x+4), so x≠−1,−4. Since −4 is outside x≥−3 anyway, the domain is [−3,∞)\\{−1}, absent from the options.",
+    "hint": "Intersect the square-root domain with the nonzero-denominator condition.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": "Source option (b) begins (−0,∞); it is preserved rather than silently repaired."
+  },
+  {
+    "id": "2011-PEA-Q3",
+    "number": "3",
+    "stem": "Find log₄2−log₈2+log₁₆2−⋯ .",
+    "options": [
+      "ln2",
+      "1−ln2",
+      "ln2−1",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "1−ln2",
+    "solution": "Change of base gives 1/2−1/3+1/4−⋯ . Since ln2=1−1/2+1/3−1/4+⋯, the given sum is 1−ln2.",
+    "hint": "Compare with the alternating harmonic series.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q4",
+    "number": "4",
+    "stem": "The function max{1,x,x²}, for real x, has",
+    "options": [
+      "Discontinuity at one point only",
+      "Discontinuity at two points only",
+      "Discontinuity at three points only",
+      "No point of discontinuity"
+    ],
+    "correctIndex": 3,
+    "answer": "No discontinuity.",
+    "solution": "The maximum of finitely many continuous real-valued functions is continuous. Here 1, x and x² are all continuous everywhere.",
+    "hint": "A finite maximum preserves continuity.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q5",
+    "number": "5",
+    "stem": "If x,y,z>0 are in harmonic progression, then (x−y)/(y−z) equals",
+    "options": [
+      "x/y",
+      "y/z",
+      "x/z",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "x/z, wherever the displayed ratio is defined.",
+    "solution": "Harmonic progression gives y=2xz/(x+z). Then x−y=x(x−z)/(x+z) and y−z=z(x−z)/(x+z), whose ratio is x/z when x≠z.",
+    "hint": "Express the harmonic mean y using x and z.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The all-equal case makes the source ratio 0/0; the identity is interpreted on its natural domain."
+  },
+  {
+    "id": "2011-PEA-Q6",
+    "number": "6",
+    "stem": "For every real x, f(x)=x/(1+|x|) is",
+    "options": [
+      "Everywhere differentiable but its derivative has one discontinuity",
+      "Everywhere differentiable except at 0",
+      "Everywhere continuously differentiable",
+      "Everywhere differentiable but its derivative has two discontinuities"
+    ],
+    "correctIndex": 2,
+    "answer": "Everywhere continuously differentiable.",
+    "solution": "For x>0, f′(x)=1/(1+x)²; for x<0, f′(x)=1/(1−x)². At 0, the difference quotient is 1/(1+|h|)→1. Both one-sided derivative formulas also tend to 1, so f′ is continuous at 0 and elsewhere.",
+    "hint": "Compute the derivative on each side, then check 0 separately.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q7",
+    "number": "7",
+    "stem": "Let f:ℝ₊₊→ℝ₊₊ satisfy f(1)=3 and f′(1)=9. Find lim as x→0 of [f(1+x)/f(1)]^(1/x).",
+    "options": [
+      "3",
+      "e²",
+      "2",
+      "e³"
+    ],
+    "correctIndex": 3,
+    "answer": "e³",
+    "solution": "Take logarithms. The logarithm of the expression is [ln f(1+x)−ln f(1)]/x, which tends to f′(1)/f(1)=9/3=3. Exponentiating gives e³.",
+    "hint": "Take the logarithm of the limit.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q8",
+    "number": "8",
+    "stem": "Let f,g:[0,∞)→[0,∞) be decreasing and increasing respectively, and define h(x)=f(g(x)). If h(0)=0, then h(x)−h(1) is",
+    "options": [
+      "Nonpositive for x≥1, positive otherwise",
+      "Always negative",
+      "Always positive",
+      "Positive for x≥1, nonpositive otherwise"
+    ],
+    "correctIndex": null,
+    "answer": "As printed, h(x)−h(1)=0 for every x, so no option is valid.",
+    "solution": "Under non-strict monotonicity, h is nonincreasing. Its nonnegative codomain and h(0)=0 imply 0≤h(x)≤0 for every x≥0. Therefore h≡0 and h(x)−h(1)=0. None of the choices allows zero for all x. Under strict decreasing/increasing conventions, the stated nonnegative codomain and h(0)=0 are themselves incompatible.",
+    "hint": "Combine monotonicity with the nonnegative codomain.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "The intended monotonicity answer may have been (a), but the codomain and h(0)=0 make the printed problem inconsistent with that choice."
+  },
+  {
+    "id": "2011-PEA-Q9",
+    "number": "9",
+    "stem": "A committee of three men and two women is to be chosen from six men and four women. In how many ways can this be done if Mr. X and Mrs. Y are not included together?",
+    "options": [
+      "120",
+      "140",
+      "90",
+      "60"
+    ],
+    "correctIndex": 2,
+    "answer": "90",
+    "solution": "There are C(6,3)C(4,2)=120 unrestricted committees. Those containing both specified persons number C(5,2)C(3,1)=30. Subtracting gives 90.",
+    "hint": "Subtract committees containing both named people.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q10",
+    "number": "10",
+    "stem": "How many continuous functions f satisfy x f(y)+y f(x)=(x+y)f(x)f(y) for all real x,y?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "2",
+    "solution": "Set y=x≠0 to get f(x)=f(x)², so f(x)∈{0,1}. Continuity forces f to be constant on the connected real line; the value at zero is fixed by continuity too. Both f≡0 and f≡1 satisfy the identity.",
+    "hint": "Set x=y and use continuity.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q11",
+    "number": "11",
+    "stem": "If positive x₁,…,xₙ are in arithmetic progression, find 1/(√x₁+√x₂)+1/(√x₂+√x₃)+⋯+1/(√xₙ₋₁+√xₙ).",
+    "options": [
+      "n/(√x₁+√xₙ)",
+      "1/(√x₁+√xₙ)",
+      "2n/(√x₁+√xₙ)",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "(n−1)/(√x₁+√xₙ), hence none of the listed general formulas.",
+    "solution": "If the common difference is d≠0, rationalize each term as (√xᵢ₊₁−√xᵢ)/d. The sum telescopes to (√xₙ−√x₁)/d=(n−1)/(√x₁+√xₙ). For d=0 the sum is (n−1)/(2√x₁), the same formula.",
+    "hint": "Rationalize each denominator and telescope.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "The third option is labeled (b) again in the source; options are indexed by position. For the natural sum n≥2 is understood."
+  },
+  {
+    "id": "2011-PEA-Q12",
+    "number": "12",
+    "stem": "For any real x,y,z, which is always true?",
+    "options": [
+      "max{x,y}<max{x,y,z}",
+      "max{x,y}>max{x,y,z}",
+      "max{x,y}=(x+y+|x−y|)/2",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "max{x,y}=(x+y+|x−y|)/2",
+    "solution": "If x≥y, |x−y|=x−y and the formula yields x. If y≥x, it yields y. Adding z to a maximum can leave the maximum unchanged, so the strict inequalities are not universal.",
+    "hint": "Split into x≥y and y≥x.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q13",
+    "number": "13",
+    "stem": "If x₁,x₂,x₃,x₄>0 and their sum is 2, then P=(x₁+x₂)(x₃+x₄) is",
+    "options": [
+      "Bounded between zero and one",
+      "Bounded between one and two",
+      "Bounded between two and three",
+      "Bounded between three and four"
+    ],
+    "correctIndex": 0,
+    "answer": "0<P≤1",
+    "solution": "Let u=x₁+x₂, so x₃+x₄=2−u and 0<u<2. Then P=u(2−u)=1−(u−1)²≤1 and is positive.",
+    "hint": "Group the terms into two positive numbers summing to 2.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q14",
+    "number": "14",
+    "stem": "Everyone in a room shakes hands with everyone else. There are 91 handshakes. How many persons are in the room?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "correctIndex": 3,
+    "answer": "14",
+    "solution": "With n people, C(n,2)=n(n−1)/2=91. Solving n²−n−182=0 gives the positive integer n=14.",
+    "hint": "Count unordered pairs of persons.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q15",
+    "number": "15",
+    "stem": "In how many ways can six pencils be distributed between two boys so each boy receives at least one pencil?",
+    "options": [
+      "30",
+      "60",
+      "62",
+      "64"
+    ],
+    "correctIndex": null,
+    "answer": "62 if the pencils are distinguishable; 5 if identical.",
+    "solution": "If each physical pencil is treated as distinct, assign each independently to one of the two boys: 2⁶ possibilities. Exclude the two assignments giving all pencils to one boy, leaving 62. If pencils are identical, only the five splits (1,5),(2,4),(3,3),(4,2),(5,1) are different. The source does not specify distinguishability.",
+    "hint": "Clarify whether individual pencils are distinguishable.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "needs_review",
+    "notes": "The intended option is likely (c)=62, but distinguishability is not stated."
+  },
+  {
+    "id": "2011-PEA-Q16",
+    "number": "16",
+    "stem": "How many continuous functions satisfy x f(x)+2f(−x)=−1 for every real x?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "1",
+    "solution": "Replacing x by −x gives 2f(x)−x f(−x)=−1. Solving these two equations yields f(x)=−(x+2)/(x²+4), which is continuous everywhere and satisfies the original equation. The solution is uniquely determined.",
+    "hint": "Write the equation at both x and −x.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q17",
+    "number": "17",
+    "stem": "The function f(x)=x+∫ from 0 to 1 of (xy²+x²y)f(y)dy has the form px+qx², where",
+    "options": [
+      "p=80,q=180",
+      "p=40,q=140",
+      "p=50,q=150",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "p=180/119, q=80/119; none of the above.",
+    "solution": "The integral formula implies f(x)=px+qx². Equating coefficients gives p=1+p/4+q/5 and q=p/3+q/4. The latter yields q=4p/9. Substitution gives p(1−1/4−4/45)=1, so p=180/119 and q=80/119.",
+    "hint": "Substitute px+qx² into the integral equation.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q18",
+    "number": "18",
+    "stem": "If real x,y satisfy x²+y²=1, the maximum of |x|+|y| is",
+    "options": [
+      "1/2",
+      "√2",
+      "1/√2",
+      "2"
+    ],
+    "correctIndex": 1,
+    "answer": "√2",
+    "solution": "Cauchy–Schwarz gives (|x|+|y|)²≤(1²+1²)(x²+y²)=2. Equality holds when |x|=|y|=1/√2.",
+    "hint": "Apply Cauchy–Schwarz.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q19",
+    "number": "19",
+    "stem": "How many onto functions are there from A={p,q,r,s} to B={p,r}?",
+    "options": [
+      "16",
+      "2",
+      "8",
+      "14"
+    ],
+    "correctIndex": 3,
+    "answer": "14",
+    "solution": "There are 2⁴=16 functions from a four-element set to a two-element set. Exactly two are constant and fail to be onto. Thus 16−2=14.",
+    "hint": "Remove the constant maps.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q20",
+    "number": "20",
+    "stem": "If the coefficients of the (2r+5)th and (r−6)th terms in (1+x)³⁹ are equal, then C(r,12) equals",
+    "options": [
+      "45",
+      "91",
+      "63",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "91",
+    "solution": "The two coefficients are C(39,2r+4) and C(39,r−7). Equal binomial coefficients have equal indices or complementary indices. The equal-index case gives r=−11, outside valid term indices. Complementarity gives 2r+4+r−7=39, hence r=14. Therefore C(14,12)=C(14,2)=91.",
+    "hint": "Remember that the kth term uses binomial index k−1.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q21",
+    "number": "21",
+    "stem": "If X=[[C,2],[1,C]] and det(X⁷)=128, find C.",
+    "options": [
+      "±5",
+      "±1",
+      "±2",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "±2",
+    "solution": "det(X⁷)=(det X)⁷=(C²−2)⁷=128=2⁷. Because the seventh power is one-to-one over the reals, C²−2=2, so C=±2.",
+    "hint": "Use det(X⁷)=(det X)⁷.",
+    "topic": "Linear algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q22",
+    "number": "22",
+    "stem": "Let f(x)=Ax²+Bx+C with real A,B,C. If f(x) is an integer whenever x is an integer, then",
+    "options": [
+      "2A and A+B are integers, but C is not",
+      "A+B and C are integers, but 2A is not",
+      "2A,A+B,C are all integers",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "2A,A+B,C are integers.",
+    "solution": "C=f(0) is an integer and A+B=f(1)−f(0) is an integer. The second finite difference f(2)−2f(1)+f(0)=2A is also an integer. Conversely f(n)=A n(n−1)+(A+B)n+C is integral under these conditions.",
+    "hint": "Evaluate the polynomial and its finite differences at integers.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q23",
+    "number": "23",
+    "stem": "Four people board a lift on the ground floor of a seven-storey building. In how many ways can they leave at four different floors?",
+    "options": [
+      "360",
+      "60",
+      "120",
+      "240"
+    ],
+    "correctIndex": 0,
+    "answer": "360",
+    "solution": "Counting the ground floor as one of the seven storeys leaves six upper floors. The four distinct people choose different exit floors in 6·5·4·3=360 ways.",
+    "hint": "Assign distinct exit floors to the four people.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "Uses the standard intended convention: seven storeys include the ground floor. Seven upper floors would produce a different count."
+  },
+  {
+    "id": "2011-PEA-Q24",
+    "number": "24",
+    "stem": "How many positive triples (x,x₁,x₂) satisfy |log x₁+log x₂|+|log(x/x₁)|+|log(x/x₂)|=|log x₁+log x₂|?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "Infinitely many; none of the above.",
+    "solution": "Cancel the identical absolute-value term from both sides. The remaining two nonnegative terms must both vanish, giving x/x₁=x/x₂=1. Hence all triples (t,t,t) with t>0 are solutions, and there are infinitely many.",
+    "hint": "Cancel the identical first term, then use nonnegativity.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q25",
+    "number": "25",
+    "stem": "In a sample invaded by smallpox, 70% of inhabitants are attacked and 85% have been vaccinated. What is the minimum attacked percentage among those vaccinated, to the nearest integer?",
+    "options": [
+      "55",
+      "65",
+      "30",
+      "15"
+    ],
+    "correctIndex": 1,
+    "answer": "65%",
+    "solution": "If A means attacked and V vaccinated, P(A∩V)≥P(A)+P(V)−1=0.55. Thus P(A|V)≥0.55/0.85=11/17≈0.6471, rounding to 65%. This bound is attainable.",
+    "hint": "Use the lower bound on an intersection probability.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q26",
+    "number": "26",
+    "stem": "Bivariate data have Var(X)=9. The product of the Y-on-X and X-on-Y regression coefficients is 0.36, and the Y-on-X coefficient is 0.8. Find Var(Y).",
+    "options": [
+      "16",
+      "4",
+      "1.69",
+      "3"
+    ],
+    "correctIndex": 0,
+    "answer": "16",
+    "solution": "The coefficient product is r²=0.36. Since the Y-on-X coefficient is positive, r=0.6. Using βᵧₓ=rσᵧ/σₓ with σₓ=3 gives σᵧ=0.8·3/0.6=4, so Var(Y)=16.",
+    "hint": "Recover correlation from the product of regression slopes.",
+    "topic": "Statistics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q27",
+    "number": "27",
+    "stem": "Two tyre brands are tested on independent samples of 50 customers each under similar conditions. Sample means are 13,200 and 13,650 km, and standard deviations 300 and 400 km. What is the 5% significance-level conclusion about wear quality?",
+    "options": [
+      "The brands are alike",
+      "The brands are not the same",
+      "Nothing can be concluded",
+      "The data are inadequate to perform a test"
+    ],
+    "correctIndex": 1,
+    "answer": "Reject equality of mean wear life.",
+    "solution": "The estimated standard error of the difference is √(300²/50+400²/50)=√5000≈70.71 km. The test statistic is (13650−13200)/70.71≈6.36, well above the two-sided 5% normal critical value 1.96 (and the relevant large-sample t critical value). Hence equality is rejected.",
+    "hint": "Standardize the difference of sample means.",
+    "topic": "Statistics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "Uses the intended independent-samples large-sample comparison."
+  },
+  {
+    "id": "2011-PEA-Q28",
+    "number": "28",
+    "stem": "A continuous random variable has density f(x)=(α/x₀)(x₀/x)^(α+1) for x>x₀ and α>1. Its distribution function on x>x₀ and mean respectively are",
+    "options": [
+      "1−(x/x₀)ᵅ, ((α−1)/α)x₀",
+      "1−(x/x₀)^(-α), ((α−1)/α)x₀",
+      "1−(x/x₀)^(-α), αx₀/(α−1)",
+      "1−(x/x₀)ᵅ, αx₀/(α−1)"
+    ],
+    "correctIndex": 2,
+    "answer": "F(x)=1−(x/x₀)^(-α), E(X)=αx₀/(α−1).",
+    "solution": "Integrating αx₀ᵅx^(−α−1) from x₀ to x gives 1−(x₀/x)ᵅ. Integrating x times this density over [x₀,∞) gives αx₀/(α−1), finite for α>1.",
+    "hint": "Integrate the Pareto density and its first moment.",
+    "topic": "Probability",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "The standard density requires x₀>0, implicit in this Pareto specification; F(x)=0 for x≤x₀."
+  },
+  {
+    "id": "2011-PEA-Q29",
+    "number": "29",
+    "stem": "X takes values 0,1,…,n with probabilities proportional to C(n,0),C(n,1),…,C(n,n). Its mean μ and variance σ² are",
+    "options": [
+      "μ=n/2, σ²=n/2",
+      "μ=n/4, σ²=n/4",
+      "μ=n/2, σ²=n/4",
+      "μ=n/4, σ²=n/2"
+    ],
+    "correctIndex": 2,
+    "answer": "μ=n/2, σ²=n/4",
+    "solution": "The binomial coefficients sum to 2ⁿ, so P(X=k)=C(n,k)/2ⁿ. This is Binomial(n,1/2), with mean n/2 and variance n(1/2)(1/2)=n/4.",
+    "hint": "Normalize the probabilities and identify the distribution.",
+    "topic": "Probability",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2011-PEA-Q30",
+    "number": "30",
+    "stem": "Let Xᵢ be i.i.d. with P(Xᵢ=1)=p and P(Xᵢ=0)=1−p. Define y=1 if ∑ from i=1 to n of Xᵢ=100, and y=0 otherwise. Then E(y²) is",
+    "options": [
+      "∞",
+      "C(n,100)p¹⁰⁰(1−p)^(n−100)",
+      "np",
+      "(np)²"
+    ],
+    "correctIndex": 1,
+    "answer": "C(n,100)p¹⁰⁰(1−p)^(n−100)",
+    "solution": "Because y is an indicator, y²=y, and E(y²)=P(∑Xᵢ=100). The sum is Binomial(n,p), giving the stated binomial probability. For n<100 the probability is zero.",
+    "hint": "An indicator squared equals itself.",
+    "topic": "Probability",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2024-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "topic": "Calculus",
+    "stem": "If $f:\\mathbb R\\to\\mathbb R$ is differentiable at $a$ and $f\\prime(a)=af(a)$, find $\\lim_{x\\to a}\\frac{xf(a)-af(x)}{x-a}$.",
+    "options": [
+      "$af(a)$",
+      "$f(a)/a$",
+      "$(1-a^2)f(a)$",
+      "None of the previous options"
+    ],
+    "correctIndex": 2,
+    "answer": "$(1-a^2)f(a)$",
+    "solution": "Rewrite the numerator as $(x-a)f(a)-a(f(x)-f(a))$. The limit is $f(a)-af\\prime(a)=f(a)-a^2f(a)$.",
+    "hint": "Separate the numerator into a constant term and a difference quotient.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "topic": "Algebra",
+    "stem": "For $n\\ge2$, let $S_n=\\prod_{k=2}^n(1-1/k^2)$. Find $\\lim_{n\\to\\infty}S_n$.",
+    "options": [
+      "0",
+      "$1/2$",
+      "1",
+      "$\\infty$"
+    ],
+    "correctIndex": 1,
+    "answer": "$1/2$",
+    "solution": "Factor each term as $(k-1)(k+1)/k^2$. The two products telescope to $\\frac1n\\cdot\\frac{n+1}{2}=\\frac{n+1}{2n}$, whose limit is $1/2$.",
+    "hint": "Factor the difference of two squares and telescope.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "topic": "Calculus",
+    "stem": "If $\\lim_{x\\to0}\\frac{e^{a_1x}-1}{a_2x^2+a_3x}=1$, which statement must hold?",
+    "options": [
+      "$a_1=a_2=a_3=1$",
+      "$a_1=a_3\\ne0$",
+      "$a_2=0$",
+      "$a_2+a_3\\ne0$"
+    ],
+    "correctIndex": 1,
+    "answer": "$a_1=a_3\\ne0$",
+    "solution": "The numerator is $a_1x+O(x^2)$. If $a_1=0$, the ratio cannot tend to 1. If $a_3=0$, its nonzero linear numerator divided by a quadratic denominator cannot have a finite limit. Hence $a_3\\ne0$ and the limit is $a_1/a_3=1$.",
+    "hint": "Compare the first nonzero powers of $x$.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q4",
+    "number": "4",
+    "sourcePage": 1,
+    "topic": "Calculus",
+    "stem": "For positive $a,b,c$, define $f(x)=cx^2+ax+b$ for $x<0$, $f(x)=bx^2+cx+a$ for $0\\le x<2$, and $f(x)=ax^2+bx+c$ for $x\\ge2$. Which condition is equivalent to continuity?",
+    "options": [
+      "Continuous for all positive $a,b,c$",
+      "$a-b=b-c$",
+      "$a=b$ and $c=2a$",
+      "$a=b=c$"
+    ],
+    "correctIndex": 3,
+    "answer": "$a=b=c$",
+    "solution": "Continuity at 0 gives $b=a$. Continuity at 2 gives $4b+2c+a=4a+2b+c$, so after substitution $c=a$. Conversely these equalities make the adjoining values agree.",
+    "hint": "Only the joins $x=0$ and $x=2$ need checking.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "topic": "Calculus",
+    "stem": "Let $f:[0,1]\\to[0,1]$ satisfy $f(x)=x/(2-x)$. Which statement is incorrect?",
+    "options": [
+      "$f(0)=0$ and $f(1)=1$",
+      "$f(1-f(x))=1-x$",
+      "$f$ is strictly concave on $(0,1)$",
+      "$f$ is strictly increasing on $(0,1)$"
+    ],
+    "correctIndex": 2,
+    "answer": "$f$ is strictly concave on $(0,1)$",
+    "solution": "$f\\prime(x)=2/(2-x)^2>0$ and $f\\prime\\prime(x)=4/(2-x)^3>0$. The function is strictly convex, not concave. Direct substitution verifies the other three statements.",
+    "hint": "Find the signs of the first two derivatives.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "topic": "Calculus",
+    "stem": "Let $f(x)=|x|+x^2$ on $\\mathbb R$. Which statement is correct?",
+    "options": [
+      "Differentiable",
+      "Concave but not differentiable",
+      "Convex but not differentiable",
+      "Discontinuous"
+    ],
+    "correctIndex": 2,
+    "answer": "Convex but not differentiable",
+    "solution": "Both $|x|$ and $x^2$ are convex, so their sum is convex. At zero the left derivative is $-1$ and the right derivative is $1$; the derivative does not exist. The function is continuous.",
+    "hint": "Inspect the one-sided derivatives at zero.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q7",
+    "number": "7",
+    "sourcePage": 2,
+    "topic": "Calculus",
+    "stem": "Find $\\int x^3e^{x^2}\\,dx$ (the arbitrary integration constant is understood).",
+    "options": [
+      "$\\frac{x(x-1)}2e^{x^2}$",
+      "$\\frac{x^2-1}2e^{x^2}$",
+      "$\\frac{x(x+1)}2e^{x^2}$",
+      "$\\frac{x^2+1}2e^{x^2}$"
+    ],
+    "correctIndex": 1,
+    "answer": "$\\frac{x^2-1}2e^{x^2}$",
+    "solution": "Put $u=x^2$, so $x^3dx=u\\,du/2$. Integration by parts gives $\\frac12\\int ue^u du=\\frac12(u-1)e^u+C$.",
+    "hint": "Use $u=x^2$, then integrate by parts.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q8",
+    "number": "8",
+    "sourcePage": 2,
+    "topic": "Linear algebra",
+    "stem": "A $3\\times3$ matrix $A$ has eigenvalues $2,7,5$. Find $\\det(A+2I)$.",
+    "options": [
+      "252",
+      "70",
+      "420",
+      "84"
+    ],
+    "correctIndex": 0,
+    "answer": "252",
+    "solution": "The eigenvalues of $A+2I$ are $4,9,7$. Their product is $4\\cdot9\\cdot7=252$.",
+    "hint": "Adding a scalar multiple of the identity shifts every eigenvalue.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q9",
+    "number": "9",
+    "sourcePage": 2,
+    "topic": "Linear algebra",
+    "stem": "Let $x,y$ be length-three column vectors with $\\sum_{i=1}^3x_i y_i\\ne0$. Find the rank of $xy^T$.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "The nonzero inner product ensures that both vectors are nonzero. Every column of the outer product is a scalar multiple of $x$, and at least one column is nonzero. Thus its column space has dimension 1.",
+    "hint": "An outer product has all columns proportional.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q10",
+    "number": "10",
+    "sourcePage": 3,
+    "topic": "Linear algebra",
+    "stem": "A $3\\times3$ matrix satisfies $Ax=x$ for every length-three column vector $x$. Which statement is correct?",
+    "options": [
+      "No such $A$ exists",
+      "$A=\\begin{pmatrix}1&1&1\\\\1&1&1\\\\1&1&1\\end{pmatrix}$",
+      "$A=\\begin{pmatrix}0&0&1\\\\0&1&0\\\\1&0&0\\end{pmatrix}$",
+      "A exists but is different from the options given in parts (A) or (B) above"
+    ],
+    "correctIndex": 3,
+    "answer": "A exists but is different from the options given in parts (A) or (B) above",
+    "solution": "Apply the condition to each standard basis vector. The columns of $A$ must be the corresponding basis vectors, so $A=I_3$. Neither displayed matrix is the identity.",
+    "hint": "Test the standard basis vectors.",
+    "status": "verified",
+    "notes": "The wording of option D is retained from the source; the intended matrix is the identity."
+  },
+  {
+    "id": "2024-PEA-Q11",
+    "number": "11",
+    "sourcePage": 3,
+    "topic": "Linear algebra",
+    "stem": "Let $S=\\{(x_1,0):x_1\\in\\mathbb R\\}$ and $T=\\{(0,x_2):x_2\\in\\mathbb R\\}$. Which statement is correct?",
+    "options": [
+      "$S,T,S\\cap T$ are vector spaces",
+      "$S,T,S\\cup T$ are vector spaces",
+      "$S\\cup T,S\\cap T$ are vector spaces",
+      "Neither $S\\cup T$ nor $S\\cap T$ is a vector space"
+    ],
+    "correctIndex": 0,
+    "answer": "$S,T,S\\cap T$ are vector spaces",
+    "solution": "The two coordinate axes are subspaces and their intersection is the zero subspace. Their union is not closed under addition: $(1,0)+(0,1)=(1,1)$ is outside it.",
+    "hint": "Check closure under addition for the union.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q12",
+    "number": "12",
+    "sourcePage": 3,
+    "topic": "Algebra",
+    "stem": "Each pair of players in a chess tournament plays exactly once. There are boys and girls, 45 games in total, and exactly 15 boy-versus-boy games. How many games feature a boy and a girl?",
+    "options": [
+      "6",
+      "15",
+      "20",
+      "24"
+    ],
+    "correctIndex": 3,
+    "answer": "24",
+    "solution": "$\\binom N2=45$ gives $N=10$. Similarly $\\binom b2=15$ gives $b=6$, leaving 4 girls. The number of mixed games is $6\\cdot4=24$.",
+    "hint": "Recover the player counts using combinations.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q13",
+    "number": "13",
+    "sourcePage": 4,
+    "topic": "Algebra",
+    "stem": "How many arrangements of the letters of “madam” have the two a’s nonconsecutive?",
+    "options": [
+      "30",
+      "24",
+      "18",
+      "12"
+    ],
+    "correctIndex": 2,
+    "answer": "18",
+    "solution": "There are $5!/(2!2!)=30$ distinct arrangements. Treating the two a’s as a single block leaves $4!/2!=12$ arrangements with adjacent a’s. Subtract to obtain 18.",
+    "hint": "Subtract arrangements containing an “aa” block.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q14",
+    "number": "14",
+    "sourcePage": 4,
+    "topic": "Algebra",
+    "stem": "A monkey is at $(0,0)$ in period 1. From $(x,y)$ it may move to any $(a,b)$ with $a\\in\\{x+1,x,x-1\\}$ and $b\\in\\{y+1,y,y-1\\}$. How many positions are possible in period 2?",
+    "options": [
+      "9",
+      "6",
+      "4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "answer": "9",
+    "solution": "Each of the three horizontal coordinates can be paired with each of the three vertical coordinates, giving $3\\cdot3=9$ positions.",
+    "hint": "Count the possible coordinates independently.",
+    "status": "verified",
+    "notes": "Transcription follows the official ISI PDF, including the option to keep the horizontal coordinate unchanged."
+  },
+  {
+    "id": "2024-PEA-Q15",
+    "number": "15",
+    "sourcePage": 4,
+    "topic": "Probability",
+    "stem": "For the monkey in the preceding question, all nine next-period positions are equally likely. What is the probability of being more than distance 1 from $(0,0)$ in period 2?",
+    "options": [
+      "0",
+      "$16/81$",
+      "$1/3$",
+      "$4/9$"
+    ],
+    "correctIndex": 3,
+    "answer": "$4/9$",
+    "solution": "Only the four diagonal positions $(\\pm1,\\pm1)$ have distance greater than 1. The four axial positions have distance 1 and the origin has distance 0. The probability is $4/9$.",
+    "hint": "Compare the distances of the centre, axial neighbours, and corners.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q16",
+    "number": "16",
+    "sourcePage": 4,
+    "topic": "Statistics",
+    "stem": "The least-squares regression line of $y$ on $x$ is $y=10+2x$. If $\\operatorname{Var}(x)=9$ and $\\operatorname{Var}(y)=81$, find the correlation coefficient.",
+    "options": [
+      "$1/3$",
+      "$1/2$",
+      "$2/3$",
+      "$3/4$"
+    ],
+    "correctIndex": 2,
+    "answer": "$2/3$",
+    "solution": "The regression slope is $r\\sigma_y/\\sigma_x$. Hence $2=r(9/3)=3r$, giving $r=2/3$.",
+    "hint": "Relate the regression slope to correlation and standard deviations.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q17",
+    "number": "17",
+    "sourcePage": 4,
+    "topic": "Probability",
+    "stem": "An urn has 4 white, 6 red, and 5 black balls. Five are selected at random. Let X and Y be the selected white and black counts. Given Y=2, find P(X=2).",
+    "options": [
+      "$3/10$",
+      "$4/10$",
+      "$3/15$",
+      "$4/15$"
+    ],
+    "correctIndex": 0,
+    "answer": "$3/10$",
+    "solution": "Given two black balls, the remaining three are a uniform sample from four white and six red balls. Thus $P(X=2\\mid Y=2)=\\binom42\\binom61/\\binom{10}3=36/120=3/10$.",
+    "hint": "Condition on the black count and sample from the ten nonblack balls.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q18",
+    "number": "18",
+    "sourcePage": 5,
+    "topic": "Probability",
+    "stem": "A student knows a four-choice question’s answer with probability 1/4; otherwise the student guesses, with probability 3/4. A guess is correct with probability 1/4. Given a correct answer, what is the probability that the student knew it?",
+    "options": [
+      "$3/7$",
+      "$4/7$",
+      "$3/4$",
+      "1"
+    ],
+    "correctIndex": 1,
+    "answer": "$4/7$",
+    "solution": "Let K mean knowing and C mean answering correctly. $P(C)=1/4+(3/4)(1/4)=7/16$, while $P(K\\cap C)=1/4$. Bayes’ rule gives $P(K\\mid C)=(1/4)/(7/16)=4/7$.",
+    "hint": "Distinguish a known correct answer from a lucky guess.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q19",
+    "number": "19",
+    "sourcePage": 5,
+    "topic": "Statistics",
+    "stem": "$X_1,\\ldots,X_5$ are IID with mean 10 and variance 4. Set $\\bar X=\\frac15\\sum_{i=1}^5X_i$. Find $\\operatorname{Cov}(\\bar X,X_1-\\bar X)$.",
+    "options": [
+      "0",
+      "1",
+      "−1",
+      "None of the previous options"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "$\\operatorname{Cov}(\\bar X,X_1)=4/5$ by independence, and $\\operatorname{Var}(\\bar X)=4/5$. Their difference is zero.",
+    "hint": "Use covariance linearity and compare with the variance of the sample mean.",
+    "status": "verified",
+    "notes": "The supplied compilation prints option A as 8. The official ISI PDF prints 0. This question and its option key follow the official PDF; the mathematical covariance is 0 in either version."
+  },
+  {
+    "id": "2024-PEA-Q20",
+    "number": "20",
+    "sourcePage": 5,
+    "topic": "Statistics",
+    "stem": "For a binomial distribution with $n\\ge1$ and $0<p<1$, which statement is incorrect?",
+    "options": [
+      "If $np$ is an integer, mean and mode coincide",
+      "If $n$ is even and $p=1/2$, the median is $n/2$",
+      "If $P(X=k)=P(X=n-k)$ for every $k$, then $p=1/2$",
+      "If $(n+1)p-1$ is an integer, the distribution is unimodal"
+    ],
+    "correctIndex": 3,
+    "answer": "If $(n+1)p-1$ is an integer, the distribution is unimodal",
+    "solution": "If $(n+1)p=m$ is an integer, the binomial has two adjacent modes $m-1$ and $m$. The condition in D is equivalent to this integer condition, so D is false. A follows by flooring $(n+1)p=np+p$; B follows from symmetry; C follows by comparing probabilities at 0 and n.",
+    "hint": "Recall when a binomial distribution has two modes.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q21",
+    "number": "21",
+    "sourcePage": 6,
+    "topic": "Macroeconomics",
+    "stem": "An economy has intensive production $y=Ak$, saving rate $s\\in(0,1)$, population growth $n>0$, and depreciation $\\delta\\in(0,1)$. Parameters ensure positive long-run growth of $y$. Which statement is incorrect?",
+    "options": [
+      "Aggregate output, capital, and consumption grow at the same rate",
+      "If investment $I>\\delta K$, aggregate output grows positively",
+      "The economy always has constant growth rates",
+      "Raising s has no effect on long-run output-per-worker growth"
+    ],
+    "correctIndex": 3,
+    "answer": "Raising s has no effect on long-run output-per-worker growth",
+    "solution": "Aggregate production is $Y=AK$. Hence $\\dot K/K=sA-\\delta$ and $\\dot k/k=sA-\\delta-n$. Because y is proportional to k, its long-run growth rate rises by A times any increase in s. Thus D is incorrect.",
+    "hint": "Write capital accumulation in aggregate and per-worker form.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q22",
+    "number": "22",
+    "sourcePage": 6,
+    "topic": "Macroeconomics",
+    "stem": "A Solow economy has no population growth or technological change, production $Y=K^{1/3}L^{2/3}$, and depreciation $\\delta=0.05$. If $s=0.2$, find the steady-state capital–labour ratio.",
+    "options": [
+      "6",
+      "8",
+      "2",
+      "4"
+    ],
+    "correctIndex": 1,
+    "answer": "8",
+    "solution": "The steady state solves $s k^{1/3}=\\delta k$. Thus $k^{2/3}=s/\\delta=4$, and $k=4^{3/2}=8$.",
+    "hint": "Set saving per worker equal to depreciation per worker.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q23",
+    "number": "23",
+    "sourcePage": 7,
+    "topic": "Macroeconomics",
+    "stem": "A Solow economy has no population growth or technological change, production $Y=K^{1/3}L^{2/3}$, and depreciation $\\delta=0.05$. What saving rate maximizes steady-state per-capita consumption?",
+    "options": [
+      "$2/3$",
+      "$1/2$",
+      "$1/3$",
+      "$1/4$"
+    ],
+    "correctIndex": 2,
+    "answer": "$1/3$",
+    "solution": "Golden-rule capital maximizes $c=k^{1/3}-\\delta k$, so $(1/3)k^{-2/3}=\\delta$. Together with steady-state $s=\\delta k^{2/3}$ this yields $s=1/3$.",
+    "hint": "Use the golden-rule condition: marginal product equals depreciation.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q24",
+    "number": "24",
+    "sourcePage": 7,
+    "topic": "Macroeconomics",
+    "stem": "In a fully employed Solow economy, $y=k^{1/2}$, depreciation is zero, and labour grows at rate $n>0$. Steady-state k is 50, while current k is 2. Find the current growth rate of output per worker.",
+    "options": [
+      "$24n$",
+      "$25/n$",
+      "0.3",
+      "None of the previous options"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the previous options",
+    "solution": "At steady state $s\\sqrt{50}=50n$, giving $s=n\\sqrt{50}$. At k=2, $\\dot k/k=s/\\sqrt2-n=4n$. Since $y=\\sqrt k$, $\\dot y/y=(1/2)\\dot k/k=2n$, which is not listed.",
+    "hint": "First recover s from the steady state, then apply the elasticity of y with respect to k.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q25",
+    "number": "25",
+    "sourcePage": 8,
+    "topic": "Microeconomics",
+    "stem": "Two countries produce only their own goods: A makes wheat ($Y_A=200$) and B makes televisions ($Y_B=250$). A television costs 1 and wheat costs p. A’s total expenditure in wheat units is $E_A$; B’s total expenditure in television units is $E_B$. World expenditure satisfies $pY_A+Y_B=pE_A+E_B$. A reduces $E_A$ from 100 to 70. If residents of both countries spend one-third on wheat and two-thirds on televisions, what happens to the equilibrium wheat price?",
+    "options": [
+      "p stays the same",
+      "p increases",
+      "p decreases",
+      "The effect on p is ambiguous"
+    ],
+    "correctIndex": 0,
+    "answer": "p stays the same",
+    "solution": "Global wheat spending is one-third of world spending, so $pY_A=(pY_A+Y_B)/3$. Therefore $p=Y_B/(2Y_A)=250/400$, independent of how world expenditure is split between the countries.",
+    "hint": "Aggregate the identical wheat expenditure shares.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q26",
+    "number": "26",
+    "sourcePage": 8,
+    "topic": "Microeconomics",
+    "stem": "Two countries produce only their own goods: A makes wheat ($Y_A=200$) and B makes televisions ($Y_B=250$). A television costs 1 and wheat costs p. A’s total expenditure in wheat units is $E_A$; B’s total expenditure in television units is $E_B$. World expenditure satisfies $pY_A+Y_B=pE_A+E_B$. A reduces $E_A$ from 100 to 70. If each country spends two-thirds on its own good and one-third on the other good, what happens to the equilibrium wheat price?",
+    "options": [
+      "p stays the same",
+      "p increases",
+      "p decreases",
+      "The effect on p is ambiguous"
+    ],
+    "correctIndex": 2,
+    "answer": "p decreases",
+    "solution": "Wheat-market clearing gives $pY_A=(2/3)pE_A+(1/3)E_B$. Substitute $E_B=pY_A+Y_B-pE_A$ to obtain $p=Y_B/(2Y_A-E_A)$. Reducing $E_A$ from 100 to 70 lowers p from $250/300$ to $250/330$.",
+    "hint": "Combine wheat-market clearing with the world expenditure identity.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q27",
+    "number": "27",
+    "sourcePage": 9,
+    "topic": "Microeconomics",
+    "stem": "A consumer’s demand for good X always falls when its own price falls, other things equal. At fixed prices, what happens to demand for X when income rises?",
+    "options": [
+      "Consumption falls",
+      "Consumption rises",
+      "Consumption stays unchanged",
+      "Indeterminate"
+    ],
+    "correctIndex": 0,
+    "answer": "Consumption falls",
+    "solution": "This is Giffen behaviour. The Slutsky equation is $\\partial x/\\partial p_x=\\partial h_x/\\partial p_x-x\\,\\partial x/\\partial m$. The compensated own-price effect is nonpositive. A positive uncompensated effect therefore requires $\\partial x/\\partial m<0$: X is inferior.",
+    "hint": "Use the Slutsky decomposition to infer the income effect.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q28",
+    "number": "28",
+    "sourcePage": 9,
+    "topic": "Microeconomics",
+    "stem": "A net yields f fish in period 1 and none in period 2. Fish can be stored costlessly without depreciation. There is no discounting, and period utility is $u(c_t)=c_t^n$, $0<n<1$. What is optimal consumption over the two periods?",
+    "options": [
+      "Any division is optimal",
+      "$c_1=c_2=f/2$",
+      "$c_1=f,c_2=0$",
+      "$c_1=0,c_2=f$"
+    ],
+    "correctIndex": 1,
+    "answer": "$c_1=c_2=f/2$",
+    "solution": "Maximize $c_1^n+c_2^n$ subject to $c_1+c_2=f$. Strict concavity and identical utility in each period imply equal marginal utilities, hence equal consumption $f/2$ in each period.",
+    "hint": "Identical strictly concave utilities favour smoothing consumption.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q29",
+    "number": "29",
+    "sourcePage": 10,
+    "topic": "Microeconomics",
+    "stem": "A closed economy has 10,000 identical rice farmers with cost $C(q)=0.5q^2+4q+100$. Demand is $Q=400000-10000p$. Price is regulated at 30 and the government buys all unsold output at 30. The government returns to competitive pricing and divides its former purchase expenditure equally among farmers. Each farmer must pay 300 to open a bank account. What is each farmer’s net gain or loss?",
+    "options": [
+      "Income rises by 8",
+      "Income rises by 4",
+      "Income falls by 4",
+      "Income falls by 8"
+    ],
+    "correctIndex": 1,
+    "answer": "Income rises by 4",
+    "solution": "At p=30, each farmer supplies q=26 and earns profit $780-(338+104+100)=238$. Aggregate supply is 260,000 and demand 100,000, so government expenditure is $160000\\cdot30=4800000$, or 480 per farmer. Competitive clearing $10000(p-4)=400000-10000p$ gives p=22 and q=18. New profit is $396-(162+72+100)=62$. Including the transfer and account cost yields $62+480-300=242$, a gain of 4.",
+    "hint": "Compute old profit, the per-farmer transfer, and competitive profit separately.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2024-PEA-Q30",
+    "number": "30",
+    "sourcePage": 11,
+    "topic": "Microeconomics",
+    "stem": "A consumer is observed choosing bundles $(X,Y,Z)$: at prices $(2,3,3)$ she chooses $(3,1,7)$; at prices $(3,2,3)$ she chooses $(7,3,1)$; at prices $(3,3,2)$ she chooses $(1,7,3)$. Which statement about her preferences is correct?",
+    "options": [
+      "Intransitive, though not necessarily incomplete",
+      "Transitive, though not necessarily complete",
+      "Incomplete and intransitive",
+      "Complete and transitive"
+    ],
+    "correctIndex": 0,
+    "answer": "Intransitive, though not necessarily incomplete",
+    "solution": "Each chosen bundle costs 30. At first-period prices the second bundle costs 26; at second-period prices the third costs 26; at third-period prices the first costs 26. Under the usual local-nonsatiation interpretation these choices reveal the strict cycle first ≻ second ≻ third ≻ first, contradicting transitivity. This observation does not establish incompleteness.",
+    "hint": "Price the other chosen bundles at each period’s prices.",
+    "status": "verified",
+    "notes": "Uses the standard revealed-preference assumption that a chosen bundle is preferred to a strictly cheaper alternative."
+  }
+]

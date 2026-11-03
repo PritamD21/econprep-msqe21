@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2014-PEA-Q1",
+    "number": "1",
+    "stem": "Let f(x)=(1−x)/(1+x), x≠−1. Then f(f(1/x)), for x≠0 and x≠−1, is",
+    "options": [
+      "1",
+      "x",
+      "x²",
+      "1/x"
+    ],
+    "correctIndex": 3,
+    "answer": "1/x",
+    "solution": "For any t in the composition’s domain, f(f(t))=[1−(1−t)/(1+t)]/[1+(1−t)/(1+t)]=t. Taking t=1/x gives 1/x.",
+    "hint": "First calculate f(f(t)) for a generic argument t.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q2",
+    "number": "2",
+    "stem": "What is the value of 2∫ from 0 to π/2 of eˣ cos x dx?",
+    "options": [
+      "e^(π/2)",
+      "e^(π/2)−1",
+      "0",
+      "e^(π/2)+1"
+    ],
+    "correctIndex": 1,
+    "answer": "e^(π/2)−1",
+    "solution": "An antiderivative of 2eˣcos x is eˣ(sin x+cos x). Evaluation at π/2 and 0 yields e^(π/2)−1.",
+    "hint": "Differentiate eˣ(sin x+cos x).",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q3",
+    "number": "3",
+    "stem": "Let f:ℝ→ℝ be f(x)=|x−1|+(x−1). Which statement is not true?",
+    "options": [
+      "f(x)=f(x′) for all x,x′<1",
+      "f(x)=2f(1) for all x>1",
+      "f is not differentiable at 1",
+      "The derivative of f at x=2 is 2"
+    ],
+    "correctIndex": 1,
+    "answer": "The assertion f(x)=2f(1) for all x>1 is false.",
+    "solution": "For x≤1, f(x)=0; for x>1, f(x)=2(x−1). Thus f(1)=0 but f(x)>0 for x>1, contradicting the second option. The two slopes at 1 are 0 and 2, and f′(2)=2.",
+    "hint": "Express f as a piecewise linear function.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q4",
+    "number": "4",
+    "stem": "A city’s population is 40% male and 60% female. Suppose 50% of males and 30% of females smoke. The probability that a smoker is male is closest to",
+    "options": [
+      "0.5",
+      "0.46",
+      "0.53",
+      "0.7"
+    ],
+    "correctIndex": 2,
+    "answer": "0.53",
+    "solution": "By Bayes’ rule, P(male|smoker)=(0.4·0.5)/(0.4·0.5+0.6·0.3)=0.2/0.38=10/19≈0.5263, closest to 0.53.",
+    "hint": "Compute male smokers as a fraction of all smokers.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q5",
+    "number": "5",
+    "stem": "A blue die and a red die are thrown simultaneously. E is the event that their sum is 7, F that the blue die shows 4, and G that the red die shows 3. Which statement is true?",
+    "options": [
+      "E and F are disjoint",
+      "E and F are independent",
+      "E and F are not independent",
+      "P(E)>P(F)"
+    ],
+    "correctIndex": 1,
+    "answer": "E and F are independent.",
+    "solution": "With fair independent dice, P(E)=6/36=1/6 and P(F)=1/6. Their intersection consists of the single outcome (blue 4, red 3), with probability 1/36=P(E)P(F). Thus E and F are independent and are not disjoint.",
+    "hint": "Compute the probability of the intersection E∩F.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The standard fair, independent dice interpretation is used."
+  },
+  {
+    "id": "2014-PEA-Q6",
+    "number": "6",
+    "stem": "Let p>2 be prime. Tₚ consists of matrices A=[[0,a],[b,0]] with integer a,b∈{0,1,…,p−1}. A matrix is p-special if its determinant is not divisible by p. How many p-special matrices are in Tₚ?",
+    "options": [
+      "(p−1)²",
+      "2p−1",
+      "p²",
+      "p²−p+1"
+    ],
+    "correctIndex": 0,
+    "answer": "(p−1)²",
+    "solution": "The determinant is −ab. Since p is prime, p fails to divide ab precisely when both a and b are nonzero modulo p. Each has p−1 possible values, giving (p−1)² matrices.",
+    "hint": "Use primality to determine when p divides a product.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q7",
+    "number": "7",
+    "stem": "A good seven-letter word uses letters from {A,B,C}, allowing repeats and absent letters, but A cannot be followed by B, B cannot be followed by C, and C cannot be followed by A. How many good words are there?",
+    "options": [
+      "192",
+      "128",
+      "96",
+      "64"
+    ],
+    "correctIndex": 0,
+    "answer": "192",
+    "solution": "The first letter has 3 choices. After any letter, exactly one of the three possible next letters is forbidden, leaving 2 choices for each of the remaining 6 positions. The number is 3·2⁶=192.",
+    "hint": "Count choices position by position.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q8",
+    "number": "8",
+    "stem": "Let n be a positive integer and 0<a<b<∞. The total number of real roots of (x−a)^(2n+1)+(x−b)^(2n+1)=0 is",
+    "options": [
+      "1",
+      "3",
+      "2n−1",
+      "2n+1"
+    ],
+    "correctIndex": 0,
+    "answer": "1",
+    "solution": "The odd-power map t↦t^(2n+1) is strictly increasing and one-to-one. The equation says (x−a)^(2n+1)=(b−x)^(2n+1), so x−a=b−x and x=(a+b)/2. This is the unique real root.",
+    "hint": "Use the one-to-one property of an odd power.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q9",
+    "number": "9",
+    "stem": "Maximize x+y subject to 2x+y≤14, −x+2y≤8, 2x−y≤10, x,y≥0. The optimal objective value",
+    "options": [
+      "Does not exist",
+      "Is 8",
+      "Is 10",
+      "Is unbounded"
+    ],
+    "correctIndex": 2,
+    "answer": "10",
+    "solution": "Multiply the first inequality by 3/5 and the second by 1/5 and add to get x+y≤10. The point (x,y)=(4,6) attains this bound and satisfies 2x−y=2≤10 as well as nonnegativity. Thus the optimum is 10.",
+    "hint": "Combine constraints to obtain an upper bound on x+y.",
+    "topic": "Linear algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q10",
+    "number": "10",
+    "stem": "X is supported on [0,1]. Mr. Fox believes its CDF is F, Mr. Goat believes its CDF is G. Assume F,G are differentiable, F≠G and F(x)≤G(x) for every x∈[0,1]. Which relation between their expected values is true?",
+    "options": [
+      "E_F[X]≤E_G[X]",
+      "E_F[X]≥E_G[X]",
+      "E_F[X]=E_G[X]",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "E_F[X]≥E_G[X]",
+    "solution": "For a variable supported on [0,1], its expectation is ∫₀¹[1−CDF(t)]dt. Since F≤G, one has 1−F≥1−G pointwise. Integration yields E_F[X]≥E_G[X]. In fact the differentiability and F≠G imply strict inequality somewhere over an interval.",
+    "hint": "Write expectation as the integral of a survival function.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q11",
+    "number": "11",
+    "stem": "Let f:[0,2]→[0,1] satisfy f(x)=x when x≤α and f(x)=1/2 when x∈(α,2], with α∈(0,2). X has probability density f. What is P(X>1)?",
+    "options": [
+      "1",
+      "0",
+      "1/2",
+      "3/4"
+    ],
+    "correctIndex": 2,
+    "answer": "1/2",
+    "solution": "Normalization gives ∫₀²f(x)dx=α²/2+(2−α)/2=1, so α(α−1)=0. Since α>0, α=1. Therefore P(X>1)=∫₁²(1/2)dx=1/2.",
+    "hint": "Use the density’s total integral to find α.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q12",
+    "number": "12",
+    "stem": "Find ∑ from k=1 to 100 of ∫ from 0 to 1 of xᵏ/k dx.",
+    "options": [
+      "100/101",
+      "1/99",
+      "1",
+      "99/100"
+    ],
+    "correctIndex": 0,
+    "answer": "100/101",
+    "solution": "The kth integral is 1/[k(k+1)]=1/k−1/(k+1). The finite sum telescopes to 1−1/101=100/101.",
+    "hint": "Integrate first, then use partial fractions.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q13",
+    "number": "13",
+    "stem": "Consider x₁−x₂≤3, x₂−x₃≤−2, x₃−x₄≤10, x₄−x₂≤α, x₄−x₃≤−4. A value of the real number α for which this system has a solution is",
+    "options": [
+      "−16",
+      "−12",
+      "−10",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the above; feasibility requires α≥−8.",
+    "solution": "Adding x₂−x₃≤−2, x₃−x₄≤10 and x₄−x₂≤α gives 0≤8+α, so α≥−8 is necessary. It is also sufficient: choose x₂=0,x₃=2,x₄=−8,x₁=0. All constraints hold for any α≥−8. None of the listed numbers meets that condition.",
+    "hint": "Sum inequalities around the cycle x₂→x₃→x₄→x₂.",
+    "topic": "Linear algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q14",
+    "number": "14",
+    "stem": "A fair coin is tossed infinitely many times. The probability that a head turns up for the first time after an even number of tosses is",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "correctIndex": 0,
+    "answer": "1/3",
+    "solution": "Let T be the toss number of the first head. For T=2k, the first 2k−1 tosses are tails and toss 2k is a head, with probability 2^(−2k). Thus P(T even)=∑ₖ₌₁∞(1/4)ᵏ=(1/4)/(1−1/4)=1/3.",
+    "hint": "Sum over toss numbers 2,4,6,… .",
+    "topic": "Probability",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "Interprets “after an even number of tosses” in the customary intended sense that the first head occurs on an even-numbered toss."
+  },
+  {
+    "id": "2014-PEA-Q15",
+    "number": "15",
+    "stem": "An entrance exam has 10 true-false questions. A student answers randomly, correctly with probability 0.5 on each. Correct answers score 1 and incorrect answers score 0. What is the probability of obtaining the mean score?",
+    "options": [
+      "1/4",
+      "63/256",
+      "1/2",
+      "1/8"
+    ],
+    "correctIndex": 1,
+    "answer": "63/256",
+    "solution": "With independent guesses, the score S has Binomial(10,1/2) distribution and mean 5. Thus P(S=5)=C(10,5)(1/2)¹⁰=252/1024=63/256.",
+    "hint": "Find the binomial mean, then its probability mass.",
+    "topic": "Probability",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q16",
+    "number": "16",
+    "stem": "For every positive integer k, Sₖ is the sum of the infinite geometric progression with first term (k−1)/k! and common ratio 1/k. Find ∑ from k=1 to infinity of Sₖ.",
+    "options": [
+      "e",
+      "1+e",
+      "2+e",
+      "e²"
+    ],
+    "correctIndex": null,
+    "answer": "e−1, which is not listed, if the k=1 progression is interpreted term by term.",
+    "solution": "For k≥2, Sₖ=[(k−1)/k!]/(1−1/k)=1/(k−1)!. At k=1, the first term is 0 and ratio 1, so every term is zero and S₁=0. Hence the total is ∑ⱼ₌₁∞1/j!=e−1. Cancelling k−1 in the geometric-sum formula at k=1 would illegally assign S₁=1 and yield the likely intended answer e. None of the printed choices matches the termwise series.",
+    "hint": "Handle k=1 separately before cancelling factors.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "needs_review",
+    "notes": "The source includes k=1 although its geometric ratio is 1. Its zero-term series sums to 0, but the usual geometric-sum formula has 0/0 there."
+  },
+  {
+    "id": "2014-PEA-Q17",
+    "number": "17",
+    "stem": "Let G(x)=∫ from 0 to x of teᵗ dt for all nonnegative real x. Find lim as x→0 of G′(x)/x.",
+    "options": [
+      "0",
+      "1",
+      "e",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "By the fundamental theorem of calculus, G′(x)=xeˣ for x>0. Therefore G′(x)/x=eˣ→1 as x→0⁺.",
+    "hint": "Differentiate the integral before taking the limit.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q18",
+    "number": "18",
+    "stem": "Let α∈(0,1), and f(x)=xᵅ+(1−x)ᵅ for x∈[0,1]. The maximum value of f is",
+    "options": [
+      "1",
+      "Greater than 2",
+      "In (1,2)",
+      "2"
+    ],
+    "correctIndex": 2,
+    "answer": "2^(1−α), which lies in (1,2).",
+    "solution": "The function is strictly concave and symmetric about 1/2. Its derivative vanishes at x=1/2, so its maximum is 2(1/2)ᵅ=2^(1−α). Since 0<1−α<1, this is strictly between 1 and 2.",
+    "hint": "Use concavity and symmetry.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q19",
+    "number": "19",
+    "stem": "For a positive integer n, find ∑ from k=1 to n of k C(n,k), where C(n,k) counts choices of k out of n objects.",
+    "options": [
+      "n·2^(n−1)",
+      "n·2^(n−2)",
+      "2ⁿ",
+      "n·2ⁿ"
+    ],
+    "correctIndex": 0,
+    "answer": "n·2^(n−1)",
+    "solution": "Differentiate (1+t)ⁿ=∑ₖC(n,k)tᵏ to get n(1+t)^(n−1)=∑ₖkC(n,k)t^(k−1). Evaluate at t=1 to obtain n2^(n−1).",
+    "hint": "Differentiate the binomial expansion.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q20",
+    "number": "20",
+    "stem": "An arithmetic progression begins with a and has common difference d∈(0,1). Its kth term equals the sum of an infinite geometric progression with first term a and common ratio d. If a>2 is prime, which is a possible value of d?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/5",
+      "1/9"
+    ],
+    "correctIndex": 0,
+    "answer": "1/2",
+    "solution": "The equality is a+(k−1)d=a/(1−d), hence k−1=a/(1−d). For d=1/2 this equals 2a, an integer. For the other choices it equals 3a/2, 5a/4, or 9a/8. Since a>2 is an odd prime, none of these is an integer.",
+    "hint": "Solve for the integer k−1.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q21",
+    "number": "21",
+    "stem": "A chicken produces two chicks in period 1. In each later period, every chick born in the preceding period either produces two chicks or none; a nonproducing chicken never produces later. No chicken dies. After T periods there are 31 chickens in total. The maximum and minimum possible T are respectively",
+    "options": [
+      "12 and 4",
+      "15 and 4",
+      "15 and 5",
+      "12 and 5"
+    ],
+    "correctIndex": 1,
+    "answer": "15 and 4, counting the last nonempty generation.",
+    "solution": "Each birth event adds two chickens, so 31 total chickens require (31−1)/2=15 producing chickens. The longest possible genealogy has one producing chicken in each generation, so its depth is 15. For the shortest, all eligible chickens reproduce; through period T the maximum total is 1+2+…+2ᵀ=2^(T+1)−1. Reaching 31 requires T≥4 and full reproduction achieves T=4.",
+    "hint": "Represent reproduction by a full binary tree.",
+    "topic": "Algebra",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": "Uses the intended convention that T is the final generation containing births. If arbitrary idle periods after the final births are counted as part of T, there is no finite maximum T; this wording caveat should be shown with the solution."
+  },
+  {
+    "id": "2014-PEA-Q22",
+    "number": "22",
+    "stem": "Let a,p be positive integers and A=[[p,1,1],[0,p,a],[0,a,2]]. If det A=0, a possible value of p is",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "2",
+    "solution": "Expanding along the first column gives det A=p(2p−a²). Since p>0, zero determinant requires a²=2p. Among p=1,2,4, only p=2 makes 2p a square: choose a=2.",
+    "hint": "Expand the determinant along the first column.",
+    "topic": "Linear algebra",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q23",
+    "number": "23",
+    "stem": "For what value of α does (x−1)(x²−7x+α)=0 have exactly two unique roots?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "6",
+    "solution": "For α=6, x²−7x+6=(x−1)(x−6), so the full polynomial is (x−1)²(x−6) and has exactly two distinct roots. The choices 10 and 12 give quadratic roots {2,5} and {3,4}, respectively, producing three distinct roots after including 1.",
+    "hint": "Make the quadratic share the root 1.",
+    "topic": "Algebra",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q24",
+    "number": "24",
+    "stem": "Find ∑ from k=1 to infinity of [(-1)^(k−1)/k²] logₑ(3ᵏ).",
+    "options": [
+      "logₑ2",
+      "(logₑ2)(logₑ3)",
+      "logₑ6",
+      "logₑ5"
+    ],
+    "correctIndex": 1,
+    "answer": "(ln 2)(ln 3)",
+    "solution": "Because ln(3ᵏ)=k ln3, the kth summand is ln3·(-1)^(k−1)/k. The alternating harmonic series sums to ln2, giving ln2·ln3.",
+    "hint": "Simplify the logarithm first.",
+    "topic": "Algebra",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": "Visual review confirms logₑ(3ᵏ) multiplies the fraction; it is not part of the denominator."
+  },
+  {
+    "id": "2014-PEA-Q25",
+    "number": "25",
+    "stem": "Twenty persons attend a party and each shakes hands with some of the others. K is the number of persons who shook hands with an odd number of persons. Which K is possible?",
+    "options": [
+      "19",
+      "1",
+      "20",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "20",
+    "solution": "In the handshake graph, the sum of all degrees is twice the number of edges and hence even. Thus the number of odd degrees must be even, excluding 19 and 1. K=20 is possible by pairing people into ten disjoint pairs, each of degree 1.",
+    "hint": "Apply the handshake lemma.",
+    "topic": "Algebra",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q26",
+    "number": "26",
+    "stem": "Independent X,Y are uniform on [0,1]. For z∈[0,1], P(max(X,Y)≤z)=P(min(X,Y)≤1−z). Find z.",
+    "options": [
+      "1/2",
+      "1/√2",
+      "Any value in [1/2,1]",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "1/√2",
+    "solution": "Independence gives P(max(X,Y)≤z)=z². Also P(min(X,Y)≤1−z)=1−P(X>1−z,Y>1−z)=1−z². Thus 2z²=1 and the nonnegative solution is z=1/√2.",
+    "hint": "Express both probabilities using independence.",
+    "topic": "Probability",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q27",
+    "number": "27",
+    "stem": "Let f:ℝ→ℝ satisfy f(x+y)f(x−y)=(f(x)+f(y))²−4x²f(y) for all real x,y. Which is not possible?",
+    "options": [
+      "f(0)=0",
+      "f(3)=9",
+      "f(5)=0",
+      "f(2)=2"
+    ],
+    "correctIndex": 3,
+    "answer": "f(2)=2 is impossible.",
+    "solution": "Setting x=y=0 gives f(0)²=4f(0)², so f(0)=0. Setting y=x then gives 0=4f(x)(f(x)−x²), hence f(x)∈{0,x²}. Therefore f(2) must be 0 or 4, not 2. The functions f≡0 and f(x)=x² satisfy the original identity and show the other options are possible.",
+    "hint": "First substitute x=y=0, then y=x.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q28",
+    "number": "28",
+    "stem": "Let f:ℝ→ℤ be f(x)=⌈x⌉, where the source defines ⌈x⌉ as the smallest integer larger than x. Set g(x)=|f(x)|−f(|x|). What is the range of g?",
+    "options": [
+      "{0,1}",
+      "[−1,1]",
+      "{−1,0,1}",
+      "{−1,0}"
+    ],
+    "correctIndex": null,
+    "answer": "Under the conventional ceiling definition, (d): {−1,0}. Under the printed strict definition, {−2,−1,0}, which is not listed.",
+    "solution": "For conventional ceiling, x≥0 gives g=0. If x<0 is nonintegral, write t=−x>0; then |ceil(−t)|=floor(t) and ceil(t)=floor(t)+1, so g=−1. Negative integers give g=0, yielding {−1,0}. But the printed definition says strictly larger: f(x)=floor(x)+1. At x=−n for positive integer n, this instead gives g=(n−1)−(n+1)=−2. Thus the source’s wording and standard notation disagree.",
+    "hint": "Separate positive, negative noninteger, and negative integer arguments.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "needs_review",
+    "notes": "Confirmed visually: the source says “larger than x,” not “larger than or equal to x.” Retain the source wording and flag the ambiguity."
+  },
+  {
+    "id": "2014-PEA-Q29",
+    "number": "29",
+    "stem": "Find lim as x→−1 of (x+1)/|x+1|.",
+    "options": [
+      "1",
+      "−1",
+      "0",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "The two-sided limit does not exist.",
+    "solution": "For x>−1 the expression is 1, whereas for x<−1 it is −1. The one-sided limits differ, so the two-sided limit does not exist.",
+    "hint": "Compare the signs on the two sides of −1.",
+    "topic": "Calculus",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2014-PEA-Q30",
+    "number": "30",
+    "stem": "Let f:ℝ→ℝ satisfy f(x)=2 for x≤2 and f(x)=a²−3a for x>2, where a is a positive integer. Which is true?",
+    "options": [
+      "f is continuous everywhere for some value of a",
+      "f is not continuous",
+      "f is differentiable at x=2",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "f is discontinuous at x=2 for every allowed a.",
+    "solution": "Continuity at 2 requires a²−3a=2, or a²−3a−2=0. Its roots are (3±√17)/2, neither a positive integer. Thus no allowed a makes the right limit equal f(2)=2, so f is not continuous at 2.",
+    "hint": "Check whether a²−3a=2 has an integer solution.",
+    "topic": "Calculus",
+    "sourcePage": 12,
+    "status": "verified",
+    "notes": ""
+  }
+]

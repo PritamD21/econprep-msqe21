@@ -1,0 +1,287 @@
+[
+  {
+    "id": "2000-PEA-Q1",
+    "number": "1",
+    "stem": "The real domain of f(x)=√x−√(3−x)+√(x²−4x) is",
+    "options": [
+      "(0,3)",
+      "[0,3]",
+      "{0}",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "{0}",
+    "solution": "The first two radicals require 0≤x≤3. The third requires x≤0 or x≥4. The intersection is {0}.",
+    "hint": "Intersect the three radicand conditions.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q2",
+    "number": "2",
+    "stem": "The sum of the first n terms of 1/2+3/4+7/8+15/16+⋯ is",
+    "options": [
+      "2ⁿ−n−1",
+      "1−2^(−n)",
+      "n+2^(−n)−1",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "n−1+2^(−n)",
+    "solution": "The kth term is 1−2^(−k). Summing gives n−Σₖ₌₁ⁿ2^(−k)=n−1+2^(−n).",
+    "hint": "Write each term as 1 minus a power of 1/2.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q3",
+    "number": "3",
+    "stem": "The matrix [[a,b,c],[b,c,a],[c,a,b]] is nonsingular only if",
+    "options": [
+      "a≠b, b≠c, c≠a",
+      "a≠b or b≠c or c≠a",
+      "a+b+c≠0",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "Both the second and third conditions are necessary",
+    "solution": "Its determinant is −(a+b+c)(a²+b²+c²−ab−bc−ca). Nonsingularity requires a+b+c≠0 and also not all a,b,c equal. Therefore both B and C are necessary conditions; A is stronger than necessary. The single-choice wording is ambiguous.",
+    "hint": "Factor the determinant and distinguish necessary from sufficient conditions.",
+    "topic": "Linear algebra",
+    "sourcePage": 2,
+    "status": "needs_review",
+    "notes": "Both B and C are necessary under the printed “only if”; there is no unique literal choice."
+  },
+  {
+    "id": "2000-PEA-Q4",
+    "number": "4",
+    "stem": "Find log tan1°+log tan2°+⋯+log tan89°.",
+    "options": [
+      "0",
+      "1",
+      "∞",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "Pair θ with 90°−θ. Since tanθ·tan(90°−θ)=1, their logarithms sum to zero. The unpaired term logtan45° also equals zero.",
+    "hint": "Pair complementary angles.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q5",
+    "number": "5",
+    "stem": "Let xₙ=cos(π/2ⁿ)+i sin(π/2ⁿ). The infinite product x₁x₂x₃⋯ equals",
+    "options": [
+      "0",
+      "i",
+      "−1",
+      "π"
+    ],
+    "correctIndex": 2,
+    "answer": "−1",
+    "solution": "The product through N is exp(iπΣₙ₌₁ᴺ2^(−n))=exp(iπ(1−2^(−N))). Its limit is exp(iπ)=−1.",
+    "hint": "Add the arguments and sum a geometric series.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q6",
+    "number": "6",
+    "stem": "Let f(x)=f(−x) for every real x. If f′(0) exists, it equals",
+    "options": [
+      "0",
+      "−1",
+      "1",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "The difference quotient at −h is the negative of that at h because f(−h)=f(h). If both converge to the same derivative, it must equal its negative and therefore be zero.",
+    "hint": "Use evenness in the difference quotient.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q7",
+    "number": "7",
+    "stem": "In what ratio should a line be divided into two parts to maximize the rectangle having those side lengths?",
+    "options": [
+      "1:1",
+      "1:3",
+      "3:2",
+      "(√5−1):(√5+1)"
+    ],
+    "correctIndex": 0,
+    "answer": "1:1",
+    "solution": "If the total length is L, x(L−x) is maximized at x=L/2, giving two equal parts.",
+    "hint": "Maximize the product with a fixed sum.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q8",
+    "number": "8",
+    "stem": "Given ∫₀^∞x²/[(x²+a²)(x²+b²)(x²+c²)]dx=π/[2(a+b)(b+c)(c+a)], find ∫₀^∞1/[(x²+4)(x²+9)]dx.",
+    "options": [
+      "π/10",
+      "π/20",
+      "π/30",
+      "π/60"
+    ],
+    "correctIndex": 3,
+    "answer": "π/60",
+    "solution": "Partial fractions give 1/[(x²+4)(x²+9)]=(1/5)[1/(x²+4)−1/(x²+9)]. Using ∫₀^∞dx/(x²+k²)=π/(2k), the result is (1/5)(π/4−π/6)=π/60.",
+    "hint": "Use partial fractions or take a→0 in the supplied identity.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q9",
+    "number": "9",
+    "stem": "The derivative of f(x)=|x|³ at x=0 is",
+    "options": [
+      "1",
+      "Nonexistent",
+      "0",
+      "1/2"
+    ],
+    "correctIndex": 2,
+    "answer": "0",
+    "solution": "The difference quotient is |h|³/h, whose absolute value is h²→0. Therefore the derivative exists and equals zero.",
+    "hint": "Use the derivative definition.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q10",
+    "number": "10",
+    "stem": "The coefficient of x²⁰ in (1−x²⁰)/(1−x)²−20x²⁰/(1−x) is",
+    "options": [
+      "0",
+      "1",
+      "20",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "The coefficient from (1−x)⁻² is 21, from −x²⁰(1−x)⁻² is −1, and from −20x²⁰(1−x)⁻¹ is −20. Their sum is zero.",
+    "hint": "Use the coefficients of the geometric series and its derivative.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q11",
+    "number": "11",
+    "stem": "Find limₓ→₀tan³x/x².",
+    "options": [
+      "0",
+      "1",
+      "∞",
+      "Does not exist"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "Rewrite tan³x/x²=x(tanx/x)³. The parenthesized ratio tends to 1, so the product tends to zero.",
+    "hint": "Use tanx/x→1.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q12",
+    "number": "12",
+    "stem": "Let f(x)=3+2x for −3/2≤x<0; f(x)=3−2x for 0≤x<3/2; and f(x)=−3−2x for x≥3/2. Then f is",
+    "options": [
+      "Continuous at both x=0 and x=3/2",
+      "Continuous at x=0 but discontinuous at x=3/2",
+      "Discontinuous at x=0 but continuous at x=3/2",
+      "Discontinuous at both x=0 and x=3/2"
+    ],
+    "correctIndex": 1,
+    "answer": "Continuous at 0, discontinuous at 3/2",
+    "solution": "Both branches at zero meet at 3. At 3/2 the left limit is 0, whereas the defined value and right limit are −6.",
+    "hint": "Compute the one-sided limits at both joins.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2000-PEA-Q13",
+    "number": "13",
+    "stem": "Solve the differential equation printed on PDF page 4, question 13 (several coefficients are faint).",
+    "options": [
+      "x+y+4ln(x−y)=c",
+      "5x+y−4ln(x+y)=c",
+      "5x−y+4ln(x+y)=c",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "Needs a clearer scan of the differential equation",
+    "solution": "The source appears to have the form (x−y+5)dy=(5x+5y−1)dx, but the coefficients and signs cannot all be read with sufficient confidence after magnification. A guessed equation would invalidate its solution. Keep this item ungraded until the original equation is checked.",
+    "hint": "First establish every coefficient and sign in the original differential equation.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Exact equation remains visually uncertain; readable alternatives transcribed. No answer inferred from handwritten marks."
+  },
+  {
+    "id": "2000-PEA-Q14",
+    "number": "14",
+    "stem": "The function f(x) is the logarithm ratio shown on PDF page 4, question 14; the signs in its arguments are faint. Its monotonicity is asked.",
+    "options": [
+      "Decreasing on (0,∞)",
+      "Increasing on (0,∞)",
+      "Decreasing on (0,π−e) and increasing on (π−e,∞)",
+      "Increasing on (0,π−e) and decreasing on (π−e,∞)"
+    ],
+    "correctIndex": null,
+    "answer": "Needs a clearer scan of both logarithm arguments",
+    "solution": "The printed ratio resembles ln(π−x)/ln(e−x), but the signs are not reliably legible. This reading is not even defined on all the intervals appearing in the choices. Do not substitute plus signs or grade a conjectured formula.",
+    "hint": "Check the logarithm arguments and their domain before differentiating.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Formula and the turning-point notation in options C/D require source verification; retained as a precise source gap rather than invented."
+  },
+  {
+    "id": "2000-PEA-Q15",
+    "number": "15",
+    "stem": "Maximize 2x₁+3x₂ subject to 2x₁−x₂≥2, x₁+x₂≤3, x₁−x₂≤−1, x₁,x₂≥0. Which is true?",
+    "options": [
+      "There is an optimal solution at (0,3)",
+      "There is an optimal solution at (1,2)",
+      "There is no optimal solution",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "No optimal solution: the constraints are infeasible",
+    "solution": "The third constraint implies x₂≥x₁+1, while the first gives x₂≤2x₁−2, forcing x₁≥3. Then x₁+x₂≥2x₁+1≥7, contradicting x₁+x₂≤3.",
+    "hint": "Combine the first and third constraints, then use the sum constraint.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "The minus sign in 2x₁−x₂≥2 was checked in a magnified crop; handwritten answer marks are inconsistent and were ignored."
+  }
+]

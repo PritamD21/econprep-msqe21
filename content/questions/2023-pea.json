@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2023-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "topic": "Microeconomics",
+    "stem": "A consumer has demand $x(p_x,p_y,m)=2m/(5p_x)$. Income is Rs.1000 and $p_y=20$. When $p_x$ falls from 5 to 4, which change is the substitution effect?",
+    "options": [
+      "80 to 100",
+      "90 to 100",
+      "80 to 92",
+      "80 to 90"
+    ],
+    "correctIndex": 2,
+    "answer": "80 to 92",
+    "solution": "Under Slutsky compensation, the initial bundle is $x_0=80$, $y_0=30$. Its cost at new prices is $m^S=4(80)+20(30)=920$. New compensated demand is $2(920)/(5\\cdot4)=92$, giving option C. If “substitution effect” means Hicks compensation, Cobb–Douglas preferences implied by these demands give $x^H=80(5/4)^{3/5}\\approx91.46$, which is not listed.",
+    "hint": "Price the original bundle at the new prices before evaluating compensated demand.",
+    "status": "needs_review",
+    "notes": "The finite-change compensation convention is not stated. Option C is the Slutsky answer; a Hicks answer differs."
+  },
+  {
+    "id": "2023-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "topic": "Microeconomics",
+    "stem": "At year-1 prices $(100,100)$, a consumer chooses quantities $(100,100)$. At year-2 prices $(100,80)$, quantities are $(120,x)$. Which range guarantees a violation of WARP?",
+    "options": [
+      "$x\\le75$",
+      "$x\\ge70$",
+      "$70<x<75$",
+      "$75<x<80$"
+    ],
+    "correctIndex": 3,
+    "answer": "$75<x<80$",
+    "solution": "Year 2’s bundle is affordable in year 1 if $12000+100x\\le20000$, or $x\\le80$. Year 1’s bundle is affordable in year 2 if $18000\\le12000+80x$, or $x\\ge75$. Therefore the entire listed open interval $75<x<80$ violates WARP, with strict budget comparisons.",
+    "hint": "Test each bundle at the other year’s prices.",
+    "status": "verified",
+    "notes": "The listed interval guarantees the violation; depending on the weak/strict WARP convention, the boundary values can also violate it."
+  },
+  {
+    "id": "2023-PEA-Q3",
+    "number": "3",
+    "sourcePage": 2,
+    "topic": "Microeconomics",
+    "stem": "Demand is $p=100-Q$. There are 23 Cournot firms, each with cost $c_i(q_i)=q_i^2/2$. The Nash equilibrium involves each firm producing:",
+    "options": [
+      "3 units",
+      "4 units",
+      "5 units",
+      "Equilibrium is not well defined"
+    ],
+    "correctIndex": 1,
+    "answer": "4 units",
+    "solution": "The first-order condition is $100-Q_{-i}-2q_i=q_i$. At a symmetric equilibrium this becomes $100-(23+2)q_i=0$, so $q_i=4$. The objective is strictly concave in own quantity.",
+    "hint": "Equate marginal revenue to the marginal cost $q_i$.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q4",
+    "number": "4",
+    "sourcePage": 2,
+    "topic": "Microeconomics",
+    "stem": "Demand is $p=100-Q$. Ten firms compete in quantities, each with cost $c_i(q_i)=q_i$. Find total deadweight loss.",
+    "options": [
+      "$9^2/2$",
+      "$99^2/2$",
+      "$10^2/2$",
+      "$100^2/2$"
+    ],
+    "correctIndex": 0,
+    "answer": "$9^2/2$",
+    "solution": "With ten identical Cournot firms and marginal cost 1, each produces $(100-1)/(10+1)=9$. Hence $Q=90$ and $p=10$. Competitive output is 99. The welfare-loss triangle is $(99-90)(10-1)/2=81/2$.",
+    "hint": "Compare Cournot output with the competitive benchmark.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "topic": "Microeconomics",
+    "stem": "Demand is $p=100-Q$. Many identical firms have $c_i(q_i)=10+2q_i$ if $q_i>0$ and zero cost at zero output. Which statement is correct?",
+    "options": [
+      "Competitive price is 2",
+      "Competitive price is 10",
+      "Competitive price is 2.1",
+      "Competitive equilibrium price is not well defined"
+    ],
+    "correctIndex": 3,
+    "answer": "Competitive equilibrium price is not well defined",
+    "solution": "At $p\\le2$ every firm prefers zero output because positive output incurs the setup cost. Demand is positive at such prices. At $p>2$, profit $(p-2)q_i-10$ increases without bound, so no finite profit-maximizing supply exists. Thus no finite competitive equilibrium clears this market.",
+    "hint": "Examine profit maximization both at and above marginal cost.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q6",
+    "number": "6",
+    "sourcePage": 3,
+    "topic": "Microeconomics",
+    "stem": "Two firms have cost zero for $q_i\\le10$ and infinite cost above 10. They set prices simultaneously. The lower-price firm faces demand $100-p_i$, equal prices split that demand equally, and the higher-price firm receives zero demand. Which listed pair is a Bertrand–Nash equilibrium?",
+    "options": [
+      "$(0,0)$",
+      "$(80,80)$",
+      "$(20,20)$",
+      "$(90,90)$"
+    ],
+    "correctIndex": null,
+    "answer": "The stated demand/capacity model does not uniquely identify one listed equilibrium.",
+    "solution": "The answer depends on how unserved demand is handled. If a firm must serve its full allocated demand, both (80,80) and (90,90) are Nash equilibria: a price cut below either rival price gives demand greater than capacity and infinite cost, while a price increase loses all demand. If instead sales are capped at 10 and the higher-price firm receives no residual demand, all equal-price pairs from 0 through 80 are Nash equilibria, so multiple listed answers again qualify. A rationing or equilibrium-selection convention is needed to select a unique option.",
+    "hint": "At price 80, equal splitting exactly exhausts both firms’ capacities.",
+    "status": "needs_review",
+    "notes": "No official answer key is being asserted. The cost and demand equations omit the rationing convention needed for a unique multiple-choice answer."
+  },
+  {
+    "id": "2023-PEA-Q7",
+    "number": "7",
+    "sourcePage": 3,
+    "topic": "Microeconomics",
+    "stem": "Five hundred consumers are uniform on [0,1]. The government may open two hospitals, or none. Treatment is free; each patient incurs travel cost equal to distance. Each hospital costs 300 to establish and 2 per patient, and treatment is worth 4 per patient. Which listed decision maximizes welfare?",
+    "options": [
+      "No hospital",
+      "Two hospitals, both at 1/2",
+      "Two hospitals, at 1/4 and 3/4",
+      "Two hospitals, at 1/3 and 2/3"
+    ],
+    "correctIndex": 2,
+    "answer": "Two hospitals, at 1/4 and 3/4",
+    "solution": "All consumers find treatment worthwhile. With two hospitals, treatment benefits and costs and the setup cost are location-independent. Minimize total distance: each hospital should lie at the median of its half of the population, giving 1/4 and 3/4. Mean travel distance is 1/8. Welfare is $500(4-2)-600-500/8=337.5>0$.",
+    "hint": "Minimize travel distance within each hospital’s catchment.",
+    "status": "verified",
+    "notes": "This answer compares the stated two-hospital and zero-hospital choices. If opening only one hospital were an allowed choice, its separate fixed-cost comparison would be necessary."
+  },
+  {
+    "id": "2023-PEA-Q8",
+    "number": "8",
+    "sourcePage": 4,
+    "topic": "Microeconomics",
+    "stem": "A unit mass of consumers buys one unit or none. Valuations have CDF $F(\\theta)$ on an interval. Let $p(q)$ be inverse demand. What is its slope where the CDF is differentiable with positive density?",
+    "options": [
+      "$-1/F\\prime(p(q))$",
+      "$-F\\prime(p(q))$",
+      "$-1/F\\prime(q)$",
+      "$-F\\prime(q)$"
+    ],
+    "correctIndex": 0,
+    "answer": "$-1/F\\prime(p(q))$",
+    "solution": "Demand is $q=1-F(p)$. Differentiating $q=1-F(p(q))$ gives $1=-F\\prime(p(q))p\\prime(q)$, yielding the first expression.",
+    "hint": "Invert the demand relation $q=1-F(p)$.",
+    "status": "verified",
+    "notes": "The derivative formula applies where a differentiable inverse exists and the density is positive."
+  },
+  {
+    "id": "2023-PEA-Q9",
+    "number": "9",
+    "sourcePage": 5,
+    "topic": "Macroeconomics",
+    "stem": "In a demand-determined economy, workers receive income share $\\lambda\\in(0,1)$ and capitalists the rest. Saving propensities are $s_w>s_c$, both in $(0,1)$. Investment I is autonomous. If both saving propensities rise, what happens in the new equilibrium?",
+    "options": [
+      "Saving rises, income falls",
+      "Saving falls, income rises",
+      "Saving stays unchanged, income falls",
+      "Saving rises, income is unchanged"
+    ],
+    "correctIndex": 2,
+    "answer": "Saving stays unchanged, income falls",
+    "solution": "The aggregate saving propensity is $\\bar s=\\lambda s_w+(1-\\lambda)s_c$. Equilibrium requires $\\bar sY=I$, so $Y=I/\\bar s$. A rise in both propensities raises $\\bar s$ and lowers Y, while total saving remains I.",
+    "hint": "Use the equilibrium identity between saving and autonomous investment.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q10",
+    "number": "10",
+    "sourcePage": 5,
+    "topic": "Macroeconomics",
+    "stem": "In a demand-determined economy, workers receive income share $\\lambda\\in(0,1)$ and capitalists the rest. Saving propensities are $s_w>s_c$, both in $(0,1)$. Investment I is autonomous. If saving propensities are fixed but the workers’ income share rises, what happens?",
+    "options": [
+      "Saving rises, income falls",
+      "Saving falls, income rises",
+      "Saving stays unchanged, income falls",
+      "Saving rises, income is unchanged"
+    ],
+    "correctIndex": 2,
+    "answer": "Saving stays unchanged, income falls",
+    "solution": "$d\\bar s/d\\lambda=s_w-s_c>0$. Since $Y=I/\\bar s$, equilibrium income falls. Saving remains equal to the unchanged autonomous investment I.",
+    "hint": "The question states that workers have the higher saving propensity.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q11",
+    "number": "11",
+    "sourcePage": 5,
+    "topic": "Macroeconomics",
+    "stem": "Aggregate production is $Y=\\bar K^\\alpha L^{1-\\alpha}$, $0<\\alpha<1$, with capital fixed in the short run. Competitive firms maximize profit; nominal wage is W and price level is P. Find labour demand as a function of the real wage.",
+    "options": [
+      "$Y^{1/(1-\\alpha)}\\bar K^{\\alpha/(1-\\alpha)}$",
+      "$\\bar K(1-\\alpha)^{1/\\alpha}(W/P)^{-1/\\alpha}$",
+      "$\\bar K(1-\\alpha)^{1/\\alpha}(W/P)^{1/\\alpha}$",
+      "$\\bar K(1-\\alpha)^{-1/\\alpha}(W/P)^{1/\\alpha}$"
+    ],
+    "correctIndex": 1,
+    "answer": "$\\bar K(1-\\alpha)^{1/\\alpha}(W/P)^{-1/\\alpha}$",
+    "solution": "Competitive hiring sets $(1-\\alpha)\\bar K^\\alpha L^{-\\alpha}=W/P$. Rearranging yields $L_d=\\bar K[(1-\\alpha)/(W/P)]^{1/\\alpha}$.",
+    "hint": "Set the marginal product of labour equal to the real wage.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q12",
+    "number": "12",
+    "sourcePage": 6,
+    "topic": "Macroeconomics",
+    "stem": "Aggregate production is $Y=\\bar K^\\alpha L^{1-\\alpha}$, $0<\\alpha<1$, with capital fixed in the short run. Competitive firms maximize profit; nominal wage is W and price level is P. A household has time endowment $\\bar L$, labour supply $L_s$, and utility $C^\\beta+(\\bar L-L_s)^\\beta$, $0<\\beta<1$. Its only income is wages, all spent on consumption. Find labour supply.",
+    "options": [
+      "$\\bar L/[1+(W/P)^{\\beta/(\\beta-1)}]$",
+      "$\\bar L/[1+(W/P)^{\\beta/(1-\\beta)}]$",
+      "$\\bar L[1+(W/P)^{\\beta/(1-\\beta)}]$",
+      "$\\bar L/[1-(W/P)^{\\beta/(\\beta-1)}]$"
+    ],
+    "correctIndex": 0,
+    "answer": "$\\bar L/[1+(W/P)^{\\beta/(\\beta-1)}]$",
+    "solution": "Let $w=W/P$ and substitute $C=wL_s$. The FOC is $w^\\beta L_s^{\\beta-1}=(\\bar L-L_s)^{\\beta-1}$. Therefore $L_s/(\\bar L-L_s)=w^{\\beta/(1-\\beta)}$, which rearranges to option A. Strict concavity gives the optimum.",
+    "hint": "Substitute the wage-income budget into utility before differentiating.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q13",
+    "number": "13",
+    "sourcePage": 6,
+    "topic": "Macroeconomics",
+    "stem": "Aggregate production is $Y=\\bar K^\\alpha L^{1-\\alpha}$, $0<\\alpha<1$, with capital fixed in the short run. Competitive firms maximize profit; nominal wage is W and price level is P. Use the labour supply in the preceding question. With flexible wages and labour-market clearing, what is the aggregate supply curve with Y horizontal and P vertical?",
+    "options": [
+      "Upward sloping",
+      "Downward sloping",
+      "Horizontal",
+      "Vertical"
+    ],
+    "correctIndex": 3,
+    "answer": "Vertical",
+    "solution": "Labour demand and supply depend only on the real wage W/P and real parameters. Their intersection fixes the equilibrium real wage, employment, and output independently of P; nominal W adjusts proportionately. Output is therefore fixed as P varies.",
+    "hint": "Ask whether a change in the price level changes the equilibrium real wage.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q14",
+    "number": "14",
+    "sourcePage": 7,
+    "topic": "Macroeconomics",
+    "stem": "Goods-market clearing is $S(Y,r)=I(r)$, with $0<S_Y<1$, $S_r>0$, $I_r<0$. Money-market clearing is $M/P=L(Y,r)$, with $L_Y>0$, $L_r<0$. Holding M fixed, find the AD slope $dP/dY$.",
+    "options": [
+      "$[S_YL_r-(S_r-I_r)L_Y]/[-(M/P^2)S_Y]$",
+      "$[S_YL_r-(S_r-I_r)L_Y]/[(M/P^2)(S_r-I_r)]$",
+      "$[S_YL_r-(S_r-I_r)L_Y]/[-S_Y/P]$",
+      "$[S_YL_r-(S_r-I_r)L_Y]/[(S_r-I_r)/P]$"
+    ],
+    "correctIndex": 1,
+    "answer": "$[S_YL_r-(S_r-I_r)L_Y]/[(M/P^2)(S_r-I_r)]$",
+    "solution": "Differentiate IS: $S_YdY+(S_r-I_r)dr=0$. Substitute $dr=-S_YdY/(S_r-I_r)$ into $-(M/P^2)dP=L_YdY+L_rdr$. Solving gives option B, which is negative under the stated signs.",
+    "hint": "Eliminate dr between the total differentials of IS and LM.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q15",
+    "number": "15",
+    "sourcePage": 7,
+    "topic": "Macroeconomics",
+    "stem": "To test Solow growth, regress country growth $g_i$ on initial log income, log population growth, log saving, and other controls: $g_i=\\alpha+\\beta_0\\log y_{i,0}+\\beta_1\\log n_i+\\beta_2\\log s_i+\\gamma X_i+\\epsilon_i$. What sign does Solow predict for $\\beta_0$?",
+    "options": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Inconclusive"
+    ],
+    "correctIndex": 1,
+    "answer": "Negative",
+    "solution": "Conditional convergence predicts that, holding steady-state determinants fixed, a country further below its steady-state income grows faster. Thus a higher initial income predicts slower subsequent growth and $\\beta_0<0$.",
+    "hint": "Use conditional convergence, holding the other regressors fixed.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q16",
+    "number": "16",
+    "sourcePage": 8,
+    "topic": "Linear algebra",
+    "stem": "Find the rank of $A=\\begin{pmatrix}1&0&1\\\\0&1&1\\\\1&1&0\\end{pmatrix}$.",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "answer": "3",
+    "solution": "Expanding along the first row gives $\\det A=-1-1=-2\\ne0$. Hence the matrix has full rank 3.",
+    "hint": "A nonzero determinant implies full rank.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q17",
+    "number": "17",
+    "sourcePage": 8,
+    "topic": "Probability",
+    "stem": "Bowl A has two red coins, B has two white coins, and C has one white and one red coin. A bowl is chosen uniformly, then one of its coins uniformly. Given the coin is white, what is the probability that the other coin is red?",
+    "options": [
+      "$1/3$",
+      "$1/4$",
+      "$1/2$",
+      "$1/6$"
+    ],
+    "correctIndex": 0,
+    "answer": "$1/3$",
+    "solution": "The event requires choosing C and then its white coin, with probability $1/6$. White overall has probability $0+1/3+1/6=1/2$. The conditional probability is $(1/6)/(1/2)=1/3$.",
+    "hint": "The other coin is red exactly when the selected bowl is C.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q18",
+    "number": "18",
+    "sourcePage": 9,
+    "topic": "Probability",
+    "stem": "A girl chooses n uniformly from $\\{1,2,3,4,5,6\\}$, then chooses a number uniformly from $\\{1,\\ldots,n\\}$. What is the probability that the second number is 5?",
+    "options": [
+      "$11/180$",
+      "$2/45$",
+      "$1/3$",
+      "$1/18$"
+    ],
+    "correctIndex": 0,
+    "answer": "$11/180$",
+    "solution": "Only n=5 or n=6 can produce 5. Total probability is $(1/6)(1/5)+(1/6)(1/6)=11/180$.",
+    "hint": "Condition on the first choice n.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q19",
+    "number": "19",
+    "sourcePage": 9,
+    "topic": "Statistics",
+    "stem": "Bearing diameters are normal with unknown mean $\\mu$ and standard deviation $\\sigma$. Eight percent fall below 1.8cm and 5.5% exceed 2.4cm. Standard-normal values include $F(1.4)=0.92$, $F(-1.6)=0.055$, $F(0.14)=0.555$, $F(-0.2)=0.42$. Find the mean.",
+    "options": [
+      "2",
+      "2.33",
+      "2.08",
+      "2.4"
+    ],
+    "correctIndex": 2,
+    "answer": "2.08",
+    "solution": "Symmetry gives $(1.8-\\mu)/\\sigma=-1.4$ and $(2.4-\\mu)/\\sigma=1.6$. Subtraction gives $0.6=3\\sigma$, so $\\sigma=0.2$ and $\\mu=1.8+1.4(0.2)=2.08$.",
+    "hint": "Convert the lower and upper rejection rates to z-scores.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q20",
+    "number": "20",
+    "sourcePage": 9,
+    "topic": "Calculus",
+    "stem": "A differentiable function has strictly increasing derivative, $f(1/2)=1/2$, and $f(1)=1$. Which statement is true?",
+    "options": [
+      "$f\\prime(1/2)<1<f\\prime(1)$",
+      "$f\\prime(1/2)<f\\prime(1)<1$",
+      "$1<f\\prime(1/2)<f\\prime(1)$",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "$f\\prime(1/2)<1<f\\prime(1)$",
+    "solution": "The secant slope on [1/2,1] is 1. The mean value theorem gives an interior point with derivative 1. Strict increase of the derivative places the endpoint derivatives strictly below and above this value.",
+    "hint": "Apply the mean value theorem.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q21",
+    "number": "21",
+    "sourcePage": 10,
+    "topic": "Calculus",
+    "stem": "Let $f(x)=\\lfloor x\\rfloor$ for $x\\ge0$. Evaluate $\\int_0^{\\sqrt5}f(x^2)\\,dx$.",
+    "options": [
+      "5",
+      "$4\\sqrt5-\\sqrt3-\\sqrt2-3$",
+      "$4\\sqrt5$",
+      "$4(\\sqrt5-2)$"
+    ],
+    "correctIndex": 1,
+    "answer": "$4\\sqrt5-\\sqrt3-\\sqrt2-3$",
+    "solution": "Split at $1,\\sqrt2,\\sqrt3,2,\\sqrt5$. The integral is $(\\sqrt2-1)+2(\\sqrt3-\\sqrt2)+3(2-\\sqrt3)+4(\\sqrt5-2)=4\\sqrt5-\\sqrt3-\\sqrt2-3$. Values at the endpoints do not affect the integral.",
+    "hint": "Find the intervals on which the floor is constant.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q22",
+    "number": "22",
+    "sourcePage": 10,
+    "topic": "Algebra",
+    "stem": "Find the constant term in $(x+1/x^2)^{19}$.",
+    "options": [
+      "1",
+      "19",
+      "171",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the above",
+    "solution": "A general term has exponent $19-3k$, for integer $0\\le k\\le19$. This exponent cannot be zero because 19 is not divisible by 3. There is no constant term, so its coefficient is 0.",
+    "hint": "Track the power of x in the general binomial term.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q23",
+    "number": "23",
+    "sourcePage": 10,
+    "topic": "Probability",
+    "stem": "Arjun and Gukesh each toss three independent fair coins. Arjun wins if he gets strictly more heads than Gukesh. What is his win probability?",
+    "options": [
+      "$1/3$",
+      "$11/32$",
+      "$3/8$",
+      "$13/32$"
+    ],
+    "correctIndex": 1,
+    "answer": "$11/32$",
+    "solution": "The tie probability is $[1^2+3^2+3^2+1^2]/64=20/64=5/16$. Symmetry divides the remaining probability equally, giving $(1-5/16)/2=11/32$.",
+    "hint": "Compute the tie probability, then use symmetry.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q24",
+    "number": "24",
+    "sourcePage": 11,
+    "topic": "Algebra",
+    "stem": "How many real solutions satisfy $x|x|+1=3|x|$?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "answer": "3",
+    "solution": "For $x\\ge0$, solve $x^2-3x+1=0$, giving two positive roots. For $x<0$, solve $x^2-3x-1=0$, which has exactly one negative root. Total: three.",
+    "hint": "Split into the positive and negative half-lines.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q25",
+    "number": "25",
+    "sourcePage": 11,
+    "topic": "Algebra",
+    "stem": "Positive integers $k_1,\\ldots,k_n$ satisfy $\\sum k_i=5n-4$ and $\\sum1/k_i=1$. What is the largest possible n?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctIndex": 1,
+    "answer": "4",
+    "solution": "Cauchy–Schwarz gives $(\\sum k_i)(\\sum1/k_i)\\ge n^2$, so $5n-4\\ge n^2$ or $(n-1)(n-4)\\le0$. Hence n≤4. Equality is attainable with four integers all equal to 4.",
+    "hint": "Bound n using the arithmetic–harmonic mean inequality.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q26",
+    "number": "26",
+    "sourcePage": 11,
+    "topic": "Algebra",
+    "stem": "A monkey starts at the origin and jumps exactly 5 units to a point with integer coordinates. How many locations are possible after one jump?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "12"
+    ],
+    "correctIndex": 3,
+    "answer": "12",
+    "solution": "Integer solutions to $x^2+y^2=25$ are $(\\pm5,0),(0,\\pm5)$, and the eight sign/order variants of (3,4). Thus there are 12 locations.",
+    "hint": "List the integer lattice points on the radius-five circle.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q27",
+    "number": "27",
+    "sourcePage": 12,
+    "topic": "Probability",
+    "stem": "A strip contains n white squares between two black end squares, where n≥1. A girl picks a white square uniformly and then one of its adjacent squares uniformly. What is the probability that the adjacent square is white?",
+    "options": [
+      "$1-1/(n+2)$",
+      "$1-1/(n-1)$",
+      "$1-1/n$",
+      "$1/2-1/(n+1)$"
+    ],
+    "correctIndex": 2,
+    "answer": "$1-1/n$",
+    "solution": "There are 2n equally likely directed neighbour choices. Exactly two point to a black endpoint, including when n=1. Thus the white probability is $(2n-2)/(2n)=1-1/n$.",
+    "hint": "Count directed moves from white squares into black squares.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q28",
+    "number": "28",
+    "sourcePage": 12,
+    "topic": "Calculus",
+    "stem": "Let $f(x)=\\max(|x|,x^2)$ on $\\mathbb R$. Which statement is true?",
+    "options": [
+      "Not continuous",
+      "Continuous but not differentiable",
+      "Decreasing",
+      "Increasing"
+    ],
+    "correctIndex": 1,
+    "answer": "Continuous but not differentiable",
+    "solution": "The maximum of continuous functions is continuous. Near zero, $f(x)=|x|$, whose one-sided derivatives are −1 and 1. Thus f is not differentiable on all of R. It is neither globally increasing nor globally decreasing.",
+    "hint": "Identify which branch dominates near zero.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q29",
+    "number": "29",
+    "sourcePage": 12,
+    "topic": "Calculus",
+    "stem": "For $f(x)=\\max(|x|,x^2)$ define $D=\\{(x,y)\\in\\mathbb R^2:y\\ge f(x)\\}$. Which statement is true?",
+    "options": [
+      "D is not convex",
+      "$\\mathbb R^2\\setminus D$ is convex",
+      "$\\mathbb R_+^2\\setminus D$ is convex",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the above",
+    "solution": "Both constituent functions are convex, hence f and its epigraph D are convex, ruling out A. Points (2,3) and (4,15) lie in the complement, including within the positive quadrant, but their midpoint (3,9) lies on D because f(3)=9. Therefore neither complement in B or C is convex.",
+    "hint": "Use the epigraph test for D and a two-point counterexample for its complement.",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2023-PEA-Q30",
+    "number": "30",
+    "sourcePage": 13,
+    "topic": "Calculus",
+    "stem": "$f:[-1,1]\\to\\mathbb R$ satisfies $f(x)=\\frac{2-x^2}{2}f\\left(\\frac{x^2}{2-x^2}\\right)$ for every x. Find $f(-1)$.",
+    "options": [
+      "−1",
+      "1",
+      "0",
+      "$1/2$"
+    ],
+    "correctIndex": 2,
+    "answer": "0",
+    "solution": "Set x=1 to obtain $f(1)=f(1)/2$, hence f(1)=0. Setting x=−1 gives $f(-1)=f(1)/2=0$.",
+    "hint": "Substitute the two endpoints into the functional equation.",
+    "status": "verified",
+    "notes": ""
+  }
+]

@@ -1,0 +1,699 @@
+[
+  {
+    "id": "2020-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2020-PEA-Q1-p1.jpg"
+    ],
+    "stem": "Question 1 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · g is differentiable at zero; f is not.",
+    "solution": "The difference quotient for f at zero is $\\sin(1/h)$, which has no limit. For g it is $h\\sin(1/h)$, which tends to zero by the squeeze theorem.",
+    "hint": "Write the two difference quotients at zero.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2020-PEA-Q2-p1.jpg"
+    ],
+    "stem": "Question 2 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · 7550",
+    "solution": "Start with $100^2=10000$ ordered pairs. For each difference d=51,…,99, there are $2(100-d)$ excluded pairs. The excluded count is $2(1+\\cdots+49)=2450$, leaving7550.",
+    "hint": "Count the complementary pairs with absolute difference greater than50.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2020-PEA-Q3-p1.jpg"
+    ],
+    "stem": "Question 3 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · 3/4",
+    "solution": "Scale to B=(0,0), A=(0,1), C=(1,0). Then D=(0,1/2). Its projection onto x+y=1 is E=(1/4,3/4), whose projection onto BC is F=(1/4,0). Thus FC/BC=3/4.",
+    "hint": "Choose coordinates for a unit right-isosceles triangle.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q4",
+    "number": "4",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2020-PEA-Q4-p1.jpg",
+      "question-images/2020-PEA-Q4-p2.jpg"
+    ],
+    "stem": "Question 4 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · Both expected scores equal30.",
+    "solution": "A uniform guess is correct with probability1/4, irrespective of the nonuniform answer key. Gupi earns expected score $4(1/4)=1$ per question. Bagha earns $(1/2)\\cdot1+(1/2)\\cdot1=1$ per question: a guess has expected score1 and skipping also earns1. Both total30.",
+    "hint": "Compute expected marks per question, including the credit for skipping.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2020-PEA-Q5-p2.jpg"
+    ],
+    "stem": "Question 5 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · $e^3$",
+    "solution": "Factor out $e^{3x}$ inside the brackets. The remaining factor tends to1 because the subtracted term grows more slowly than $e^{3x}$. Taking logarithms and dividing by x gives limit3, so the original limit is $e^3$.",
+    "hint": "Take the logarithm or factor out the dominant exponential.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2020-PEA-Q6-p2.jpg"
+    ],
+    "stem": "Question 6 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · The limit does not exist.",
+    "solution": "For x<3 the ratio is−1; for x>3 it is1. The unequal one-sided limits show that the two-sided limit does not exist. Defining the value at3 cannot repair that.",
+    "hint": "Compare the values on the two sides of3.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q7",
+    "number": "7",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2020-PEA-Q7-p2.jpg"
+    ],
+    "stem": "Question 7 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · $c+2b-5a\\ne0$",
+    "solution": "The third coefficient row is five times the first minus twice the second. Consistency therefore requires $c=5a-2b$. The first two rows are independent, so this single condition is also sufficient. Its failure means no solution.",
+    "hint": "Find a linear dependence among the equation rows.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q8",
+    "number": "8",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2020-PEA-Q8-p2.jpg",
+      "question-images/2020-PEA-Q8-p3.jpg"
+    ],
+    "stem": "Question 8 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · 5",
+    "solution": "$x_{n+1}-x_n=3n^2-15n-8$. This is negative for positive integer n≤5 and positive for n≥6; hence the largest n with $x_n>x_{n+1}$ is5.",
+    "hint": "Subtract consecutive terms; the constant631 cancels.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q9",
+    "number": "9",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2020-PEA-Q9-p3.jpg"
+    ],
+    "stem": "Question 9 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · 10",
+    "solution": "If H is the head count, $H\\sim\\operatorname{Bin}(10,1/2)$ and D=2H−10. Hence $\\operatorname{Var}(D)=4\\operatorname{Var}(H)=4(10/4)=10$.",
+    "hint": "Express heads minus tails using the head count alone.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q10",
+    "number": "10",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2020-PEA-Q10-p3.jpg"
+    ],
+    "stem": "Question 10 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D under independent draws · $(9/10)^4$",
+    "solution": "A triangular matrix is nonsingular exactly when all four diagonal entries are nonzero. Under independent uniform draws this has probability $(9/10)^4$. If only the four marginal uniform distributions are specified, this probability is not determined; perfectly dependent identical draws instead give9/10.",
+    "hint": "A triangular determinant is the product of the diagonal entries.",
+    "topic": "Linear algebra",
+    "status": "needs_review",
+    "notes": "Independence of the four random diagonal draws is needed; the source does not explicitly state it."
+  },
+  {
+    "id": "2020-PEA-Q11",
+    "number": "11",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2020-PEA-Q11-p3.jpg"
+    ],
+    "stem": "Question 11 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · g is either strictly increasing or strictly decreasing.",
+    "solution": "If g(u)=g(v), applying the functional equation at u and v yields bu=bv. Since b≠0, u=v. Thus g is injective. A continuous injective real function on an interval is strictly monotone; the equation does not force which monotonic direction.",
+    "hint": "First prove that g is one-to-one.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q12",
+    "number": "12",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2020-PEA-Q12-p3.jpg",
+      "question-images/2020-PEA-Q12-p4.jpg"
+    ],
+    "stem": "Question 12 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · 900",
+    "solution": "Include00, which adds zero. Among00–99, each digit0–9 occurs ten times in each decimal position. The total digit sum is therefore2·10·(0+1+…+9)=900.",
+    "hint": "Treat tens and units symmetrically.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q13",
+    "number": "13",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2020-PEA-Q13-p4.jpg"
+    ],
+    "stem": "Question 13 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · $4\\binom{13}{5}/\\binom{52}{5}$",
+    "solution": "Choose the suit in4ways and the five cards from its13cards. Divide by the total number of five-card subsets of52cards. The four favourable suit events are disjoint.",
+    "hint": "Count unordered hands, not ordered draws.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q14",
+    "number": "14",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2020-PEA-Q14-p4.jpg"
+    ],
+    "stem": "Question 14 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · $\\frac{x^{n+1}\\ln x}{n+1}-\\frac{x^{n+1}}{(n+1)^2}+C$",
+    "solution": "For x>0, integrate by parts with u=lnx and $dv=x^n dx$. Then $v=x^{n+1}/(n+1)$ and the remaining integral is $\\frac1{n+1}\\int x^n dx$.",
+    "hint": "Choose ln x as the part to differentiate.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q15",
+    "number": "15",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2020-PEA-Q15-p4.jpg"
+    ],
+    "stem": "Question 15 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · $e-e^{-1}$",
+    "solution": "Write the curve as x=e^y and integrate horizontal slices from the y-axis: $\\int_{-1}^1e^y dy=e-e^{-1}$.",
+    "hint": "Use y as the integration variable.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q16",
+    "number": "16",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2020-PEA-Q16-p4.jpg",
+      "question-images/2020-PEA-Q16-p5.jpg"
+    ],
+    "stem": "Question 16 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · Older buyers pay more and buy more.",
+    "solution": "With a common marginal production cost c and interior third-degree-discrimination sales, marginal revenue gives $A(y)-2q=c$, so $q=(A(y)-c)/2$ and price $p=(A(y)+c)/2$. Both increase with the age-dependent willingness-to-pay intercept A(y).",
+    "hint": "Compare marginal revenue in the age-based segments.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": "Uses the usual interior, common-cost interpretation of third-degree price discrimination."
+  },
+  {
+    "id": "2020-PEA-Q17",
+    "number": "17",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2020-PEA-Q17-p5.jpg"
+    ],
+    "stem": "Question 17 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · Less than5/7",
+    "solution": "Rural income is4000/4=1000. If p is the formal-job probability, expected urban income is $1200p+500(1-p)=500+700p$. Migration is deterred when this is below1000, i.e. p<5/7; at equality the worker is indifferent.",
+    "hint": "Compare personal rural income with expected urban income.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q18",
+    "number": "18",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2020-PEA-Q18-p5.jpg"
+    ],
+    "stem": "Question 18 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · 3 years under the least-cost separating convention.",
+    "solution": "In separation the low-quality seller earns7000−5000=2000 without the high-quality warranty. Mimicking yields10000−5000−1000Y, so deterrence requires Y≥3. A high-quality seller’s warranty cost is500Y, so the least costly deterrent is3years. At that threshold the low-quality seller is indifferent, so a no-mimic tie convention is required.",
+    "hint": "Use the low-quality seller’s incentive constraint.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": "This is the conventional least-cost weak-separation answer; the source does not specify off-path beliefs or tie-breaking."
+  },
+  {
+    "id": "2020-PEA-Q19",
+    "number": "19",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2020-PEA-Q19-p5.jpg",
+      "question-images/2020-PEA-Q19-p6.jpg"
+    ],
+    "stem": "Question 19 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · 10 workers at500 each",
+    "solution": "Capacity at500 is2(500−100)=800, and capacity per dollar is maximized at500. Below500 the ratio2−200/w rises with w; between500 and1000, capacity is1.1w+250, whose ratio1.1+250/w falls. Ten workers at500 supply exactly8000 units for5000, attaining the cost lower bound8000/(800/500).",
+    "hint": "Find the wage that maximizes capacity per dollar.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q20",
+    "number": "20",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2020-PEA-Q20-p6.jpg"
+    ],
+    "stem": "Question 20 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · Homogeneity of degree zero cannot hold.",
+    "solution": "Degree-zero demand is unchanged when all prices and income are multiplied by the same positive factor. Money illusion, as defined here, says purchases rise under that same proportional change, contradicting degree-zero homogeneity.",
+    "hint": "Use the definition of degree-zero homogeneity.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q21",
+    "number": "21",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2020-PEA-Q21-p6.jpg"
+    ],
+    "stem": "Question 21 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · Equilibrium prices are at least5 under standard capacity rationing.",
+    "solution": "A firm can charge6 and sell to at least the3buyers the rival’s capacity5cannot serve, giving profit at least3(6−4)=6. At a price below5.2 even selling its full capacity earns less than5(5.2−4)=6. Thus prices below5.2are not optimal, and the weaker listed lower bound5holds. Equal prices6are not a pure equilibrium because undercutting raises sales from4to5.",
+    "hint": "Use the profit a firm can guarantee by serving the rival’s residual customers.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": "Uses the standard residual-demand rationing convention and purchase at a buyer’s reservation price. The equilibrium is generally mixed, not a symmetric pure-price equilibrium."
+  },
+  {
+    "id": "2020-PEA-Q22",
+    "number": "22",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2020-PEA-Q22-p6.jpg",
+      "question-images/2020-PEA-Q22-p7.jpg"
+    ],
+    "stem": "Question 22 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "The printed market equations and target are inconsistent.",
+    "solution": "The source prints supply $Q_S=4$, not4P. Equating it to $Q_D=30-2P$ gives competitive price13. A target price8is therefore a decrease, not an increase. A floor at8would be nonbinding; a smaller production quota raises price further. No listed policy achieves the stated price increase under these equations.",
+    "hint": "Calculate the initial competitive price before comparing policies.",
+    "topic": "Microeconomics",
+    "status": "needs_review",
+    "notes": "A possible intended supply function is4P, but this is not what the source prints and has not been silently substituted."
+  },
+  {
+    "id": "2020-PEA-Q23",
+    "number": "23",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2020-PEA-Q23-p7.jpg"
+    ],
+    "stem": "Question 23 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "D is best among the listed prices; an exact unrestricted optimum is not specified.",
+    "solution": "Below the competitors’ price5, profit is $(p-3)(5/p)=5-15/p$, strictly increasing in p. Of the listed choices4.99gives the largest profit. But with continuously variable prices it can be improved by4.999and so on. An exact price4.99requires a one-cent price grid and an appropriate tie rule at5.",
+    "hint": "Evaluate profit as a function of price, and inspect the boundary at5.",
+    "topic": "Microeconomics",
+    "status": "needs_review",
+    "notes": "The price grid and allocation of customers when p=5are not stated."
+  },
+  {
+    "id": "2020-PEA-Q24",
+    "number": "24",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2020-PEA-Q24-p7.jpg"
+    ],
+    "stem": "Question 24 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · Increasing in income",
+    "solution": "$S=Y-0.3\\sqrt Y$, so $MPS=dS/dY=1-0.15/\\sqrt Y$. Its derivative is $0.075Y^{-3/2}>0$ for Y>0.",
+    "hint": "Differentiate saving, not average saving.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q25",
+    "number": "25",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2020-PEA-Q25-p7.jpg"
+    ],
+    "stem": "Question 25 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · L=C",
+    "solution": "With output used as numeraire, the marginal product of labour is A. A full-employment equilibrium can pay real wage A, which respects the floor because A>B. The inelastic labour endowment is then entirely employed: L=C.",
+    "hint": "Compare the wage floor with labour’s marginal product.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": "Output price is normalized to1, as needed to compare productivity and the wage floor."
+  },
+  {
+    "id": "2020-PEA-Q26",
+    "number": "26",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2020-PEA-Q26-p8.jpg"
+    ],
+    "stem": "Question 26 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · Output increases under monetary expansion; fiscal expansion leaves it unchanged.",
+    "solution": "Under perfect capital mobility and floating exchange rates, monetary expansion causes currency depreciation and raises net exports and output. Fiscal expansion induces appreciation and crowding out of net exports that offsets the fiscal demand increase in the standard short-run model.",
+    "hint": "Recall the exchange-rate adjustment under perfect capital mobility.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q27",
+    "number": "27",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2020-PEA-Q27-p8.jpg"
+    ],
+    "stem": "Question 27 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · $A^*=[p(a)-p(0)][u(W-T)-u(W)]/a^2$",
+    "solution": "The expected utility gain before effort cost is $[p(0)-p(a)][u(W)-u(W-T)]$. Prevention is chosen when this is greater than Aa². Equating benefit and cost gives the threshold; reversing both differences produces the printed optionA.",
+    "hint": "Subtract expected utility without prevention from that with prevention.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2020-PEA-Q28",
+    "number": "28",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2020-PEA-Q28-p8.jpg",
+      "question-images/2020-PEA-Q28-p9.jpg"
+    ],
+    "stem": "Question 28 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "C is the conditional first-order relation, not a general Marshallian wage effect.",
+    "solution": "The FOC is $w/c=L/b$, or $L=bw/c$. Holding c fixed this increases with w and, holding w fixed, decreases with c, matchingC. But consumption is endogenous: with fixed savings S, $c=wL-S$ gives $L=[S/w+\\sqrt{(S/w)^2+4b}]/2$. For S>0 this optimal L decreases with w. Therefore the question must distinguish conditional labour supply from the total wage comparative static.",
+    "hint": "Derive the FOC, then substitute the budget constraint to check the total wage effect.",
+    "topic": "Microeconomics",
+    "status": "needs_review",
+    "notes": "The question asks for optimal labour supply but lists conditional signs treating consumption as independent."
+  },
+  {
+    "id": "2020-PEA-Q29",
+    "number": "29",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2020-PEA-Q29-p9.jpg"
+    ],
+    "stem": "Question 29 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · Unchanged steady-state capital; output falls; transitional growth decreases.",
+    "solution": "The earthquake changes the initial capital stock but not saving, depreciation, population growth or technology, so steady-state capital remains unchanged. Output falls on impact. During recovery, the growth rate is initially elevated and decreases as the capital stock approaches its original steady state.",
+    "hint": "Separate impact effects from changes along the transition path.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": "Growth jumps above its old steady-state rate immediately after the shock, then decreases during convergence, as the question asks."
+  },
+  {
+    "id": "2020-PEA-Q30",
+    "number": "30",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2020-PEA-Q30-p9.jpg"
+    ],
+    "stem": "Question 30 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · $b_1+c_1<1$",
+    "solution": "Goods-market equilibrium has slope1−c₁−b₁multiplying Y. The autonomous-demand multiplier is $1/(1-c_1-b_1)$, which is finite and positive exactly when c₁+b₁<1.",
+    "hint": "Collect the income-dependent consumption and investment terms.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  }
+]

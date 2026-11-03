@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2010-PEA-Q1",
+    "number": "1",
+    "stem": "The value of 100[1/(1·2)+1/(2·3)+⋯+1/(99·100)]",
+    "options": [
+      "Is 99",
+      "Is 100",
+      "Is 101",
+      "Is 100²/99"
+    ],
+    "correctIndex": 0,
+    "answer": "99",
+    "solution": "Since 1/[k(k+1)]=1/k−1/(k+1), the bracket telescopes to 1−1/100=99/100. Multiplication by 100 gives 99.",
+    "hint": "Use telescoping partial fractions.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q2",
+    "number": "2",
+    "stem": "The function f(x)=x(√x+√(x+9)) is",
+    "options": [
+      "Continuously differentiable at x=0",
+      "Continuous but not differentiable at x=0",
+      "Differentiable but the derivative is not continuous at x=0",
+      "Not differentiable at x=0"
+    ],
+    "correctIndex": null,
+    "answer": "(a) with one-sided differentiation on [0,∞); two-sided differentiation is not defined at this endpoint.",
+    "solution": "The real domain is [0,∞). The right difference quotient at 0 is √h+√(h+9)→3. For x>0, f′(x)=√x+√(x+9)+√x/2+x/[2√(x+9)], which tends to 3 as x→0⁺. Thus the function is C¹ from the right. The source does not specify a one-sided convention at the domain endpoint.",
+    "hint": "Determine the real domain before discussing differentiability at zero.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "Endpoint differentiability convention is unspecified; the intended answer is likely (a)."
+  },
+  {
+    "id": "2010-PEA-Q3",
+    "number": "3",
+    "stem": "A GP has first term 1 and positive integer common ratio r>1. An AP has first term 1 and its (r+2)th term equals the GP’s third term. Find its common difference.",
+    "options": [
+      "r−1",
+      "r",
+      "r+1",
+      "r+2"
+    ],
+    "correctIndex": 0,
+    "answer": "r−1",
+    "solution": "The third GP term is r² and the indicated AP term is 1+(r+1)d. Hence d=(r²−1)/(r+1)=r−1.",
+    "hint": "Write the two terms using their general-term formulas.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q4",
+    "number": "4",
+    "stem": "The first three terms of (1+x)ⁿ are 1,−9,297/8 respectively. Find n.",
+    "options": [
+      "5",
+      "8",
+      "10",
+      "12"
+    ],
+    "correctIndex": 3,
+    "answer": "12",
+    "solution": "The second term gives nx=−9. The third gives n(n−1)x²/2=297/8. Substitute x²=81/n² to obtain 81(n−1)/(2n)=297/8, hence 324(n−1)=297n and n=12.",
+    "hint": "Eliminate x using the second term.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q5",
+    "number": "5",
+    "stem": "Given logₚx=α and log_qx=β, find log_(p/q)x.",
+    "options": [
+      "αβ/(β−α)",
+      "(β−α)/(αβ)",
+      "(α−β)/(αβ)",
+      "αβ/(α−β)"
+    ],
+    "correctIndex": 0,
+    "answer": "αβ/(β−α)",
+    "solution": "Change of base gives ln p=ln x/α and ln q=ln x/β. Therefore ln x/ln(p/q)=1/(1/α−1/β)=αβ/(β−α), on the domain where the logarithms exist.",
+    "hint": "Use a common logarithm base.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q6",
+    "number": "6",
+    "stem": "P={1,2,3,4,5}, Q={1,2}. How many subsets X of P satisfy X∩Q={2}?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "correctIndex": 2,
+    "answer": "8",
+    "solution": "Such a subset must contain 2 and exclude 1. Each of 3,4,5 can be included or excluded independently, giving 2³=8 possibilities.",
+    "hint": "Identify the forced and free membership choices.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q7",
+    "number": "7",
+    "stem": "An unbiased coin is tossed until a head appears. The expected number of tosses is",
+    "options": [
+      "1",
+      "2",
+      "4",
+      "∞"
+    ],
+    "correctIndex": 1,
+    "answer": "2",
+    "solution": "The waiting time is geometric with success probability 1/2. Its mean is 1/(1/2)=2. Equivalently E(T)=1+(1/2)E(T), so E(T)=2.",
+    "hint": "Condition on the first toss.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q8",
+    "number": "8",
+    "stem": "X has density f(x)=c/x² for x≥c and 0 for x<c. Find E(X).",
+    "options": [
+      "0",
+      "∞",
+      "1/c",
+      "1/c²"
+    ],
+    "correctIndex": 1,
+    "answer": "∞",
+    "solution": "The density premise requires c>0. Then E(X)=∫_c^∞x(c/x²)dx=c∫_c^∞dx/x, which diverges to infinity.",
+    "hint": "Check whether the first-moment integral converges.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q9",
+    "number": "9",
+    "stem": "How many real solutions does x²−5|x|+4=0 have?",
+    "options": [
+      "Two",
+      "Three",
+      "Four",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Four",
+    "solution": "Let u=|x|≥0. Then (u−1)(u−4)=0, giving |x|=1 or 4. Thus x∈{−4,−1,1,4}.",
+    "hint": "Solve a quadratic in |x|.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q10",
+    "number": "10",
+    "stem": "The range of f(x)=x²/(1+x²) is",
+    "options": [
+      "[0,1)",
+      "(0,1)",
+      "[0,1]",
+      "(0,1]"
+    ],
+    "correctIndex": 0,
+    "answer": "[0,1)",
+    "solution": "For all real x, f(x)=1−1/(1+x²) is at least 0 and strictly below 1. It equals 0 at x=0 and approaches 1 as |x|→∞. Every value between 0 and 1 is attained.",
+    "hint": "Rewrite the function as one minus a positive fraction.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q11",
+    "number": "11",
+    "stem": "If a,b,c are in arithmetic progression, find the determinant of [[x+2,x+3,x+2a],[x+3,x+4,x+2b],[x+4,x+5,x+2c]].",
+    "options": [
+      "b²−4ac",
+      "ab+bc+ca",
+      "2b−a−c",
+      "3b+a+c"
+    ],
+    "correctIndex": 2,
+    "answer": "0, equal to 2b−a−c.",
+    "solution": "Since a+c=2b, the row combination R₁−2R₂+R₃ equals the zero row. Thus the rows are linearly dependent and the determinant is zero. The third option equals zero under the AP assumption.",
+    "hint": "Apply R₁−2R₂+R₃.",
+    "topic": "Linear algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q12",
+    "number": "12",
+    "stem": "If a<b<c<d, then (x−a)(x−b)+2(x−c)(x−d)=0 has",
+    "options": [
+      "Both roots in [a,b]",
+      "Both roots in [c,d]",
+      "One root in (a,b) and the other in (c,d)",
+      "One root in [a,b] and the other in [c,d]"
+    ],
+    "correctIndex": null,
+    "answer": "No listed statement is universally true.",
+    "solution": "Take a=0,b=1,c=2,d=3. The equation becomes x(x−1)+2(x−2)(x−3)=3x²−11x+12=0, whose discriminant is 121−144=−23<0. Thus it has no real roots, contradicting every listed location statement.",
+    "hint": "Test the universal claim with four simple increasing numbers.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "needs_review",
+    "notes": "Visually confirmed the plus sign and factor 2. No “none” option is supplied; do not force an answer."
+  },
+  {
+    "id": "2010-PEA-Q13",
+    "number": "13",
+    "stem": "Let f,g be differentiable on (0,1), with f(0)=2,f(1)=6,g(0)=0,g(1)=2. Then some θ∈(0,1) satisfies f′(θ) equal to",
+    "options": [
+      "g′(θ)/2",
+      "2g′(θ)",
+      "6g′(θ)",
+      "g′(θ)/6"
+    ],
+    "correctIndex": null,
+    "answer": "Intended answer (b), provided endpoint continuity is added.",
+    "solution": "If f,g are continuous on [0,1], Rolle’s theorem applied to f−2g gives f′(θ)=2g′(θ), because f−2g has the same endpoint value 2. As printed, differentiability is asserted only inside (0,1). For instance f(x)=x,g(x)=0 in the interior, with the specified endpoint values assigned separately, satisfies the printed assumptions but has f′=1,g′=0, defeating every option.",
+    "hint": "Check the endpoint continuity assumptions needed for Rolle’s theorem.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "needs_review",
+    "notes": "The missing endpoint continuity assumption prevents a universal conclusion."
+  },
+  {
+    "id": "2010-PEA-Q14",
+    "number": "14",
+    "stem": "The minimum value of logₓa+logₐx, for 1<a<x, is",
+    "options": [
+      "Less than 1",
+      "Greater than 2",
+      "Greater than 1 but less than 2",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "No minimum is attained; the infimum is 2. Every allowed value is greater than 2.",
+    "solution": "Set t=logₐx>1. The expression is t+1/t. It exceeds 2 for every t>1 and approaches 2 as t↓1. Because x=a is excluded, equality cannot occur, so the expression has no minimum on the stated domain. The likely intended choice (b) describes each attained value, not an existing minimum.",
+    "hint": "Distinguish an unattained infimum from a minimum.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "needs_review",
+    "notes": "The strict inequality a<x makes the purported minimum nonexistent."
+  },
+  {
+    "id": "2010-PEA-Q15",
+    "number": "15",
+    "stem": "Evaluate ∫ from 4 to 9 of 1/[2x(1+√x)] dx.",
+    "options": [
+      "ln3−ln2",
+      "2ln2−ln3",
+      "2ln3−3ln2",
+      "3ln3−2ln2"
+    ],
+    "correctIndex": 2,
+    "answer": "2ln3−3ln2",
+    "solution": "Set u=√x, so dx=2u du. The integral becomes ∫₂³1/[u(1+u)]du=[ln u−ln(1+u)]₂³=ln(3/4)−ln(2/3)=ln(9/8)=2ln3−3ln2.",
+    "hint": "Substitute u=√x.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q16",
+    "number": "16",
+    "stem": "The inverse of f(x)=1/(1+x), x>0, is",
+    "options": [
+      "1+x",
+      "(1+x)/x",
+      "(1−x)/x",
+      "x/(1+x)"
+    ],
+    "correctIndex": 2,
+    "answer": "f⁻¹(x)=(1−x)/x for 0<x<1.",
+    "solution": "Solve y=1/(1+x) for x: 1+x=1/y, so x=(1−y)/y. The range of the original function is (0,1), which is the inverse’s domain.",
+    "hint": "Solve the defining equation for the input.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q17",
+    "number": "17",
+    "stem": "Xᵢ have identical variance σ² and Cov(Xᵢ,Xⱼ)=ρ whenever i≠j. Put X̄ₙ=(1/n)∑Xᵢ and aₙ=Var(X̄ₙ). Find lim as n→∞ of aₙ.",
+    "options": [
+      "0",
+      "ρ",
+      "σ²+ρ",
+      "σ²+ρ²"
+    ],
+    "correctIndex": 1,
+    "answer": "ρ",
+    "solution": "Variance of the sum is nσ²+n(n−1)ρ. Dividing by n² gives aₙ=σ²/n+(n−1)ρ/n, which tends to ρ.",
+    "hint": "Include all covariance terms when computing the sample-mean variance.",
+    "topic": "Statistics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q18",
+    "number": "18",
+    "stem": "X is standard normal and Φ is its cumulative distribution function. Find E[Φ(X)].",
+    "options": [
+      "−1/2",
+      "0",
+      "1/2",
+      "1"
+    ],
+    "correctIndex": 2,
+    "answer": "1/2",
+    "solution": "For a continuous random variable, its own CDF evaluated at that variable is uniform on (0,1). Thus Φ(X) is uniform and has mean 1/2. Alternatively symmetry gives Φ(X)+Φ(−X)=1 with identical expectations.",
+    "hint": "Use normal symmetry or the probability integral transform.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q19",
+    "number": "19",
+    "stem": "For finite integer r≥2, find lim as x→0 of ln(∑ from k=0 to r of xᵏ) / (∑ from k=1 to infinity of xᵏ/k!).",
+    "options": [
+      "0",
+      "1",
+      "e",
+      "ln2"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "The denominator is eˣ−1. Near zero, the numerator is ln(1+x+O(x²))=x+O(x²), and the denominator is x+O(x²). Their ratio tends to 1.",
+    "hint": "Compare first-order terms of numerator and denominator.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q20",
+    "number": "20",
+    "stem": "Five boxes each contain balls labeled 1,…,6. Draw one from each; bᵢ is the label from box i. How many choices satisfy b₁<b₂<b₃<b₄<b₅?",
+    "options": [
+      "1",
+      "2",
+      "5",
+      "6"
+    ],
+    "correctIndex": 3,
+    "answer": "6",
+    "solution": "Choose any five distinct labels from the six available. Their strictly increasing order then determines the choices in the five boxes uniquely. There are C(6,5)=6 possibilities.",
+    "hint": "Choose the set of labels; their order is forced.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q21",
+    "number": "21",
+    "stem": "Find ∑ from r=0 to m of C(n+r,r).",
+    "options": [
+      "C(n+m+1,n+m)",
+      "(n+m+1)C(n+m,n+1)",
+      "C(n+m+1,n)",
+      "C(n+m+1,n+1)"
+    ],
+    "correctIndex": 3,
+    "answer": "C(n+m+1,n+1)",
+    "solution": "Use C(n+r,r)=C(n+r,n). Summing along a diagonal of Pascal’s triangle gives the hockey-stick identity ∑ᵣ₌₀ᵐC(n+r,n)=C(n+m+1,n+1).",
+    "hint": "Use Pascal’s identity to telescope.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q22",
+    "number": "22",
+    "stem": "In yᵢ=α+β(xᵢ−x̄)+εᵢ, errors are i.i.d. with mean 0 and variance 1. If α̂,β̂ are OLS estimates, their correlation is",
+    "options": [
+      "1",
+      "0",
+      "−1",
+      "1/2"
+    ],
+    "correctIndex": 1,
+    "answer": "0",
+    "solution": "For a nonconstant fixed design, α̂=ȳ and β̂=∑(xᵢ−x̄)yᵢ/∑(xᵢ−x̄)². Their covariance is proportional to ∑(xᵢ−x̄)=0. Both have positive variances, so their correlation is zero.",
+    "hint": "Centering makes the constant regressor orthogonal to the slope regressor.",
+    "topic": "Statistics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "As usual, a nonconstant fixed regressor design is required to identify the slope."
+  },
+  {
+    "id": "2010-PEA-Q23",
+    "number": "23",
+    "stem": "f is real-valued and continuous on [0,3], takes only rational values, and f(1)=1. Then f(2) equals",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "1, hence none of these.",
+    "solution": "If a continuous real function took two distinct values, the intermediate value theorem would force it to take every value between them, including irrational values. Therefore f is constant, and f(1)=1 implies f(2)=1.",
+    "hint": "Apply the intermediate value theorem to a rational-valued function.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q24",
+    "number": "24",
+    "stem": "Let f(x₁,x₂)=∫ from 0 to √(x₁²+x₂²) of exp[−w²/(x₁²+x₂²)]dw, with f(0,0)=0. It is",
+    "options": [
+      "Homogeneous of degree −1",
+      "Homogeneous of degree 1/2",
+      "Homogeneous of degree 1",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Homogeneous of degree 1.",
+    "solution": "For r=√(x₁²+x₂²)>0, substitute w=ru. Then f=r∫₀¹e^(−u²)du. Scaling (x₁,x₂) by a positive t scales r and f by t, proving degree-one homogeneity; the definition at the origin agrees.",
+    "hint": "Substitute w=u√(x₁²+x₂²).",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q25",
+    "number": "25",
+    "stem": "If f(1)=0 and f′(x)>f(x) for all x>1, then f(x) is",
+    "options": [
+      "Positive for all x>1",
+      "Negative for all x>1",
+      "Positive on (1,2) but negative on [2,∞)",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "Intended answer (a) requires continuity at x=1; the printed conditions alone do not force a sign.",
+    "solution": "If f is continuous at 1, then h(x)=e^(−x)f(x) has h′(x)=e^(−x)(f′−f)>0 and h(1)=0, so h(x)>0 for x>1. Without continuity at 1, define f(x)=−eˣ/x for x>1 and f(1)=0. Then f′−f=eˣ/x²>0 but f remains negative, disproving the intended conclusion under the literal assumptions.",
+    "hint": "Use an integrating factor, but verify continuity at the initial endpoint.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "needs_review",
+    "notes": "Endpoint continuity is missing; do not automatically grade the intended positive-sign answer."
+  },
+  {
+    "id": "2010-PEA-Q26",
+    "number": "26",
+    "stem": "Maximize ax+by over x,y≥0 subject to cx+dy≤100, where a,b,c,d>0 and d/b>(c+d)/(a+b). The unique solution is",
+    "options": [
+      "(100/a,0)",
+      "(100/c,0)",
+      "(0,100/b)",
+      "(0,100/d)"
+    ],
+    "correctIndex": 1,
+    "answer": "(100/c,0)",
+    "solution": "The parameter condition simplifies to d(a+b)>b(c+d), hence ad>bc and a/c>b/d. Thus x yields strictly more objective per unit of budget than y, so all budget is allocated to x: cx=100,y=0.",
+    "hint": "Compare objective gain per unit of constraint cost.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q27",
+    "number": "27",
+    "stem": "For [x]=floor(x), the domain of f(x)=[√(|[|x|−2]|−3)]⁻¹ is",
+    "options": [
+      "[−6,6]",
+      "(−∞,−6)∪(6,∞)",
+      "(−∞,−6]∪[6,∞)",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "(−∞,−6]∪[6,∞)",
+    "solution": "The reciprocal square root requires |floor(|x|−2)|−3>0. Since |x|≥0, floor(|x|−2)≥−2, so its absolute value exceeds 3 only when floor(|x|−2)≥4. This is equivalent to |x|−2≥4, or |x|≥6.",
+    "hint": "The radicand must be strictly positive, not merely nonnegative.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q28",
+    "number": "28",
+    "stem": "Define f(x)=−1 if x<−1/2, f(x)=−1/2 if −1/2≤x<0, f(0)=0, and f(x)=1 if x>0. Define g(x)=1+x−floor(x). Find f(g(x)).",
+    "options": [
+      "−1",
+      "−1/2",
+      "0",
+      "1"
+    ],
+    "correctIndex": 3,
+    "answer": "1",
+    "solution": "The fractional part x−floor(x) always belongs to [0,1). Thus g(x)∈[1,2), so it is strictly positive and f(g(x))=1.",
+    "hint": "Find the range of g first.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2010-PEA-Q29",
+    "number": "29",
+    "stem": "Suppose a₁f(x)+a₂f(−x)=b₁−b₂x for all real x, with a₁≠a₂ and b₂≠0. Then f(b₁/b₂) equals",
+    "options": [
+      "0",
+      "−2a₂b₁/(a₁²−a₂²)",
+      "2a₂b₁/(a₁²−a₂²)",
+      "More information is required to find the exact value"
+    ],
+    "correctIndex": null,
+    "answer": "(b) when a₁+a₂≠0; an omitted degeneracy prevents that answer from being universally valid.",
+    "solution": "If a₁²≠a₂², solve the equations at x and −x to obtain f(x)=b₁/(a₁+a₂)−b₂x/(a₁−a₂), hence f(b₁/b₂)=−2a₂b₁/(a₁²−a₂²). But a₁≠a₂ does not exclude a₁=−a₂. In that case consistency forces b₁=0, and the equation constrains only the odd part of f; f(0) can be arbitrary. Thus the intended formula needs the additional assumption a₁+a₂≠0.",
+    "hint": "Check the determinant when solving the paired equations.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "needs_review",
+    "notes": "The source omits a₁≠−a₂. The point being evaluated becomes 0 in the degenerate consistent case, and its function value is not determined."
+  },
+  {
+    "id": "2010-PEA-Q30",
+    "number": "30",
+    "stem": "For every x,y>0, f:(0,∞)→ℝ satisfies |f(x)−f(y)|≤|x−y|³. Then f is",
+    "options": [
+      "Increasing",
+      "Decreasing",
+      "Constant",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Constant",
+    "solution": "For fixed x and small nonzero h, |(f(x+h)−f(x))/h|≤|h|²→0. Thus f′(x)=0 everywhere on the connected interval (0,∞), and the mean value theorem shows that f is constant.",
+    "hint": "Divide the inequality by |x−y| and take a limit.",
+    "topic": "Calculus",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  }
+]

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2016-PEA-Q1",
+    "number": "1",
+    "stem": "Consider the polynomial P(x)=ax³+bx²+cx+d, where a,b,c,d ∈ {1,2,…,9}. If P(10)=5861, then the value of c is",
+    "options": [
+      "1.",
+      "2.",
+      "6.",
+      "5."
+    ],
+    "correctIndex": 2,
+    "answer": "6",
+    "solution": "P(10)=1000a+100b+10c+d. Since the coefficients are digits from 1 to 9, the decimal expansion 5861 gives a=5, b=8, c=6, d=1.",
+    "hint": "Write P(10) as a four-digit decimal expansion.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q2",
+    "number": "2",
+    "stem": "Let A ⊂ ℝ, f:A→ℝ be a twice continuously differentiable function, and x*∈A be such that f′(x*)=0. Which statement about f″(x*)≤0 and a local maximum of f on A is correct?",
+    "options": [
+      "f″(x*)≤0 is a sufficient condition.",
+      "f″(x*)≤0 is a necessary condition.",
+      "f″(x*)≤0 is a necessary and sufficient condition.",
+      "f″(x*)≤0 is neither a necessary nor a sufficient condition."
+    ],
+    "correctIndex": 1,
+    "answer": "(b), under the usual assumption that x* is an interior point of the domain.",
+    "solution": "At an interior twice-differentiable local maximum, the symmetric second difference is nonpositive, so f″(x*)≤0. The condition is not sufficient: f(x)=x⁴ has f′(0)=f″(0)=0 but a local minimum at 0. However, the printed question allows an arbitrary subset A without explicitly making x* an interior point; on a restricted set this necessity need not follow.",
+    "hint": "Distinguish a necessary second-order condition from a sufficient strict inequality.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "needs_review",
+    "notes": "The standard answer is (b). An interior-domain assumption is missing from the printed statement; exclude from automatic grading until reviewed."
+  },
+  {
+    "id": "2016-PEA-Q3",
+    "number": "3",
+    "stem": "You are given five observations x₁,x₂,x₃,x₄,x₅ on a variable x, ordered from lowest to highest. Suppose x₅ is increased. Then,",
+    "options": [
+      "The mean, median, and variance all increase.",
+      "The median and the variance increase but the mean is unchanged.",
+      "The variance increases but the mean and the median are unchanged.",
+      "None of the above."
+    ],
+    "correctIndex": 3,
+    "answer": "(d) None of the above.",
+    "solution": "The median remains x₃. Increasing x₅ by δ>0 increases the mean by δ/5. For population variance, the change is 2δ(x₅−x̄)/5+4δ²/25, which is positive because x₅≥x̄. Thus the mean and variance increase while the median stays unchanged, a combination not listed.",
+    "hint": "The middle observation does not change.",
+    "topic": "Statistics",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q4",
+    "number": "4",
+    "stem": "Suppose the sum of coefficients in the expansion (x+y)ⁿ is 4096. The largest coefficient in the expansion is:",
+    "options": [
+      "924.",
+      "1024.",
+      "824.",
+      "724."
+    ],
+    "correctIndex": 0,
+    "answer": "924",
+    "solution": "Setting x=y=1 shows that the sum of coefficients is 2ⁿ=4096=2¹², so n=12. The largest binomial coefficient is the central one, C(12,6)=924.",
+    "hint": "Evaluate the expansion at x=y=1.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q5",
+    "number": "5",
+    "stem": "There are three cards. The first is green on both sides, the second is red on both sides and the third is green on one side and red on the other. I choose a card with equal probability, then a side of that card with equal probability. If the side I choose of the card is green, what is the probability that the other side is green?",
+    "options": [
+      "1/3.",
+      "1/2.",
+      "2/3.",
+      "3/4."
+    ],
+    "correctIndex": 2,
+    "answer": "2/3",
+    "solution": "The six card-side outcomes are equally likely. Three show green: two sides of the green–green card and the green side of the mixed card. In two of these three outcomes, the hidden side is also green. The conditional probability is 2/3.",
+    "hint": "Count equally likely card sides, rather than just cards.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q6",
+    "number": "6",
+    "stem": "The value of ∫₀^(π/2) x sin x dx is:",
+    "options": [
+      "0.",
+      "−1.",
+      "1/2.",
+      "1."
+    ],
+    "correctIndex": 3,
+    "answer": "1",
+    "solution": "Integration by parts gives ∫x sin x dx=−x cos x+sin x. Evaluating from 0 to π/2 gives 1−0=1.",
+    "hint": "Use integration by parts with u=x.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q7",
+    "number": "7",
+    "stem": "Let f:ℝ→ℝ be defined by f(x)=ax+b if x≥0, and f(x)=sin(2x) if x<0. For what values of a and b is f continuous but not differentiable?",
+    "options": [
+      "a=2, b=0.",
+      "a=2, b=1.",
+      "a=1, b=1.",
+      "a=1, b=0."
+    ],
+    "correctIndex": 3,
+    "answer": "a=1, b=0",
+    "solution": "Continuity at 0 requires b=0. The left derivative at 0 is 2, whereas the right derivative is a. Therefore continuity without differentiability requires b=0 and a≠2. Only option (d) satisfies these conditions.",
+    "hint": "Compare the two one-sided derivatives at 0.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q8",
+    "number": "8",
+    "stem": "A student wished to regress household food consumption on household income. By mistake the student regressed household income on household food consumption and found R² to be 0.35. The R² in the correct regression of household food consumption on household income is",
+    "options": [
+      "0.65.",
+      "0.35.",
+      "1−(0.35)².",
+      "None of the above."
+    ],
+    "correctIndex": 1,
+    "answer": "0.35",
+    "solution": "In simple least-squares regression with an intercept, R² equals the square of the sample correlation between the two variables. Correlation is unchanged when the variables are interchanged, so R² remains 0.35.",
+    "hint": "Use the relationship between R² and correlation.",
+    "topic": "Statistics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "Uses the conventional simple OLS regression with an intercept."
+  },
+  {
+    "id": "2016-PEA-Q9",
+    "number": "9",
+    "stem": "Let f:ℝ²→ℝ be defined by f(x,y)=3xeʸ−x³−e³ʸ. Which of the following statements is true?",
+    "options": [
+      "(x=1,y=0) is a local maximum of f.",
+      "(x=1,y=0) is a local minimum of f.",
+      "(x=1,y=0) is neither a local maximum nor a local minimum of f.",
+      "(x=0,y=0) is a global maximum of f."
+    ],
+    "correctIndex": 0,
+    "answer": "(1,0) is a local maximum.",
+    "solution": "The gradient is (3eʸ−3x², 3xeʸ−3e³ʸ), which vanishes at (1,0). The Hessian there is [[−6,3],[3,−6]]. Its first leading principal minor is −6 and determinant is 27>0, so it is negative definite. Thus (1,0) is a strict local maximum.",
+    "hint": "Evaluate the Hessian at the stationary point.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q10",
+    "number": "10",
+    "stem": "Let f(x)=(x+√3)/(1−√3x) for all x≠1/√3. What is the value of f(f(x))?",
+    "options": [
+      "(x−√3)/(1+√3x).",
+      "(x²+2√3x+3)/(1−2√3x+3x).",
+      "(x+√3)/(1−√3x).",
+      "(x+√3)/(1−√3x)."
+    ],
+    "correctIndex": 0,
+    "answer": "(x−√3)/(1+√3x), wherever the composition is defined.",
+    "solution": "Substitute f(x) into the fraction. The new numerator is (x+√3)+√3(1−√3x)=−2x+2√3; the new denominator is (1−√3x)−√3(x+√3)=−2−2√3x. Cancelling −2 gives (x−√3)/(1+√3x). The original composition excludes x=±1/√3.",
+    "hint": "Combine numerator and denominator over the common denominator 1−√3x.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Options (c) and (d) are identical in the supplied PDF. Option (b) is transcribed as printed, including the denominator ending +3x; no silent correction was made."
+  },
+  {
+    "id": "2016-PEA-Q11",
+    "number": "11",
+    "stem": "The continuous random variable X has probability density f(x)=a if 0≤x<k, f(x)=b if k≤x≤1, and 0 otherwise, where a>b>0 and 0<k<1. Then E(X) is given by:",
+    "options": [
+      "b(1−a)²/[2a(a−b)].",
+      "1/2.",
+      "(a−b)/(a+b).",
+      "(1−2b+ab)/[2(a−b)]."
+    ],
+    "correctIndex": 3,
+    "answer": "(1−2b+ab)/[2(a−b)]",
+    "solution": "Normalization gives ak+b(1−k)=1, so k=(1−b)/(a−b). The mean is ak²/2+b(1−k²)/2=[b+(a−b)k²]/2. Substituting k and simplifying yields [1−2b+ab]/[2(a−b)].",
+    "hint": "Use the total area under the density to eliminate k.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q12",
+    "number": "12",
+    "stem": "The set of values of x for which x²−3|x|+2<0 is given by:",
+    "options": [
+      "{x:x<−2} ∪ {x:x>1}.",
+      "{x:−2<x<−1} ∪ {x:1<x<2}.",
+      "{x:x<−1} ∪ {x:x>2}.",
+      "None of the above."
+    ],
+    "correctIndex": 1,
+    "answer": "(−2,−1) ∪ (1,2)",
+    "solution": "Put u=|x|≥0. The inequality becomes (u−1)(u−2)<0, equivalent to 1<u<2. Thus either −2<x<−1 or 1<x<2.",
+    "hint": "Treat |x| as a nonnegative variable.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q13",
+    "number": "13",
+    "stem": "The system of linear equations (4d−1)x+y+z=0, −y+z=0, (4d−1)z=0 has a non-zero solution if:",
+    "options": [
+      "d=1/4.",
+      "d=0.",
+      "d≠1/4.",
+      "d=1."
+    ],
+    "correctIndex": 0,
+    "answer": "d=1/4",
+    "solution": "If 4d−1≠0, the third equation gives z=0, the second gives y=0, and the first then gives x=0. If d=1/4, the first two equations imply y=z=0 while x is free, so a nonzero solution exists.",
+    "hint": "Start with the last equation.",
+    "topic": "Linear algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q14",
+    "number": "14",
+    "stem": "Suppose F is a cumulative distribution function of a random variable x distributed in [0,1], defined by F(x)=ax+b if x≥a, and F(x)=x²−x+1 otherwise, where a∈(0,1) and b is real. Which of the following is true?",
+    "options": [
+      "F is continuous in (0,1).",
+      "F is differentiable in (0,1).",
+      "F is not continuous at x=a.",
+      "None of the above."
+    ],
+    "correctIndex": null,
+    "answer": "The stated CDF cannot exist; the question needs source review.",
+    "solution": "For any a>0, the interval (0,min(a,1/2)) is nonempty. On this interval the printed formula gives F′(x)=2x−1<0. A CDF must be nondecreasing. Therefore no choice of a∈(0,1) and b can make the printed function a CDF, so the premise is inconsistent. An answer about its continuity cannot be selected reliably without correcting the source.",
+    "hint": "A cumulative distribution function must be nondecreasing.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "needs_review",
+    "notes": "Confirmed visually: the source says cumulative distribution function and prints x²−x+1 on the lower branch. Do not automatically grade this item."
+  },
+  {
+    "id": "2016-PEA-Q15",
+    "number": "15",
+    "stem": "The solution of the optimization problem max₍ₓ,ᵧ₎ 3xy−y³ subject to 2x+5y≥20, x−2y=5, x,y≥0 is given by:",
+    "options": [
+      "x=19,y=7.",
+      "x=45,y=20.",
+      "x=15,y=5.",
+      "None of the above."
+    ],
+    "correctIndex": 2,
+    "answer": "x=15,y=5",
+    "solution": "Use x=5+2y. The remaining constraints give y≥10/9. The objective becomes h(y)=15y+6y²−y³, with h′(y)=15+12y−3y²=−3(y−5)(y+1). It increases up to y=5 and decreases thereafter on the feasible interval. Thus y=5 and x=15 uniquely maximize it.",
+    "hint": "Eliminate x using the equality constraint.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q16",
+    "number": "16",
+    "stem": "Let f:ℝ→ℝ be a strictly increasing function. Let g be the inverse of f. If f′(1)=g(1)=1, then g′(1) equals",
+    "options": [
+      "0.",
+      "1/2.",
+      "−1.",
+      "1."
+    ],
+    "correctIndex": 3,
+    "answer": "1",
+    "solution": "Differentiate f(g(t))=t at t=1. This gives f′(g(1))g′(1)=1. Since g(1)=1 and f′(1)=1, g′(1)=1.",
+    "hint": "Differentiate the identity f(g(t))=t.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q17",
+    "number": "17",
+    "stem": "Consider a quadratic polynomial P(x). Suppose P(1)=−3, P(−1)=−9, P(−2)=0. Then which of the following is true?",
+    "options": [
+      "P(1/2)=0.",
+      "P(5/2)=0.",
+      "P(5/4)=0.",
+      "P(3/4)=0."
+    ],
+    "correctIndex": 2,
+    "answer": "P(5/4)=0",
+    "solution": "Write P(x)=ax²+bx+c. Subtracting P(−1)=−9 from P(1)=−3 gives 2b=6, so b=3. The other equations give a+c=−6 and 4a+c=6, hence a=4,c=−10. Therefore P(x)=4x²+3x−10=(x+2)(4x−5), whose other root is 5/4.",
+    "hint": "Find the coefficients or factor out the known root x=−2.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q18",
+    "number": "18",
+    "stem": "For positive integers k,ℓ with k≥ℓ, let C(k,ℓ) denote the number of ways ℓ distinct objects can be chosen from k objects. Consider n≥3 distinct points on a circle and join every pair by a line segment. If three of these line segments are picked uniformly at random, what is the probability that they form a triangle?",
+    "options": [
+      "C(n,2)/C(C(n,2),3).",
+      "C(n,3)/C(C(n,2),3).",
+      "2/(n−1).",
+      "C(n,3)/C(C(n,2),2)."
+    ],
+    "correctIndex": 1,
+    "answer": "C(n,3)/C(C(n,2),3)",
+    "solution": "There are C(n,2) available segments, so C(C(n,2),3) equally likely unordered selections of three segments. Every choice of three circle points determines exactly one triangle, yielding C(n,3) favorable selections.",
+    "hint": "Count all triples of edges and compare with triples of vertices.",
+    "topic": "Probability",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q19",
+    "number": "19",
+    "stem": "Let X={(x,y)∈ℝ²:x+y≤1, 2x+y/2≤1, x≥0,y≥0}. Consider maximizing f(x)=ax+by over (x,y)∈X, where a,b are real. Which of the following is not an optimal value of f for any value of a and b?",
+    "options": [
+      "x=0,y=1.",
+      "x=1/3,y=2/3.",
+      "x=1/4,y=1/4.",
+      "x=1/2,y=0."
+    ],
+    "correctIndex": null,
+    "answer": "Intended answer (c) requires excluding a=b=0; as printed there is no valid option.",
+    "solution": "The point (1/4,1/4) is strictly inside the feasible polygon. A nonconstant linear objective cannot attain a maximum at an interior point, since a small move in its gradient direction remains feasible and increases the objective. The other listed points are vertices and can be supported by appropriate linear objectives. However, the printed question allows a=b=0; then f≡0 and every feasible point, including (1/4,1/4), is optimal. Thus no listed point satisfies the literal claim.",
+    "hint": "Consider whether the objective is allowed to be constant.",
+    "topic": "Linear algebra",
+    "sourcePage": 8,
+    "status": "needs_review",
+    "notes": "The intended vertex-versus-interior answer is (c), but a²+b²>0 is missing. Options describe points rather than objective values. Exclude from automatic grading until reviewed."
+  },
+  {
+    "id": "2016-PEA-Q20",
+    "number": "20",
+    "stem": "Let F:[0,1]→ℝ be differentiable with F′(x) increasing in x. Which of the following is true for every x,y∈[0,1] with x>y?",
+    "options": [
+      "F(x)−F(y)=(x−y)F′(x).",
+      "F(x)−F(y)≥(x−y)F′(x).",
+      "F(x)−F(y)≤(x−y)F′(x).",
+      "F(x)−F(y)=F′(x)−F′(y)."
+    ],
+    "correctIndex": 2,
+    "answer": "F(x)−F(y)≤(x−y)F′(x)",
+    "solution": "By the mean value theorem, F(x)−F(y)=(x−y)F′(c) for some c∈(y,x). Because F′ is increasing, F′(c)≤F′(x). Multiplying by x−y>0 proves option (c).",
+    "hint": "Apply the mean value theorem on [y,x].",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q21",
+    "number": "21",
+    "stem": "A bag contains N balls of which a (a<N) are red. Two balls are drawn without replacement. Let p₁ be the probability that the first ball is red and p₂ the probability that the second ball is red. Which statement is true?",
+    "options": [
+      "p₁>p₂.",
+      "p₁<p₂.",
+      "p₂=(a−1)/(N−1).",
+      "p₂=a/N."
+    ],
+    "correctIndex": 3,
+    "answer": "p₂=a/N",
+    "solution": "Each ball is equally likely to occupy either draw position, so the second draw is red with probability a/N. Equivalently, total probability gives p₂=(a/N)((a−1)/(N−1))+((N−a)/N)(a/(N−1))=a/N. The draws are dependent, but their marginal red probabilities are equal.",
+    "hint": "Distinguish unconditional probability from probability conditional on a red first draw.",
+    "topic": "Probability",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q22",
+    "number": "22",
+    "stem": "Let t=x+√(x²+2bx+c), where b²>c. Which statement is true?",
+    "options": [
+      "dx/dt=(t−x)/(t+b).",
+      "dx/dt=(t+2x)/(2t+b).",
+      "dx/dt=1/(2x+b).",
+      "None of the above."
+    ],
+    "correctIndex": 0,
+    "answer": "dx/dt=(t−x)/(t+b)",
+    "solution": "For points where the square root is positive, dt/dx=1+(x+b)/√(x²+2bx+c). Since √(x²+2bx+c)=t−x, this becomes dt/dx=(t+b)/(t−x), hence dx/dt=(t−x)/(t+b). The expression extends to one-sided endpoints when appropriate.",
+    "hint": "Express the square root as t−x before differentiating.",
+    "topic": "Calculus",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": "Derivative formula is interpreted on the real differentiability domain."
+  },
+  {
+    "id": "2016-PEA-Q23",
+    "number": "23",
+    "stem": "Let A be an n×n matrix whose entry in row i and column j is min(i,j). The determinant of A is:",
+    "options": [
+      "n.",
+      "1.",
+      "n!.",
+      "0."
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "Let L be the lower-triangular matrix with every entry on and below the diagonal equal to 1. Then (LLᵀ)ᵢⱼ counts the common initial ones in rows i and j and equals min(i,j), so A=LLᵀ. Since det L=1, det A=(det L)²=1.",
+    "hint": "Factor A as a lower-triangular matrix times its transpose.",
+    "topic": "Linear algebra",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q24",
+    "number": "24",
+    "stem": "What is the number of non-negative integer solutions of x₁+x₂+x₃=10?",
+    "options": [
+      "66.",
+      "55.",
+      "100.",
+      "None of the above."
+    ],
+    "correctIndex": 0,
+    "answer": "66",
+    "solution": "By stars and bars, distributing 10 identical units among 3 nonnegative integer variables gives C(10+3−1,3−1)=C(12,2)=66.",
+    "hint": "Use stars and bars, allowing zero values.",
+    "topic": "Algebra",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q25",
+    "number": "25",
+    "stem": "The value of ∫ from b to 2b of x/(x²+b²) dx, where b>0, is:",
+    "options": [
+      "1/b.",
+      "ln(4b²).",
+      "(1/2)ln(5/2).",
+      "None of the above."
+    ],
+    "correctIndex": 2,
+    "answer": "(1/2)ln(5/2)",
+    "solution": "An antiderivative is (1/2)ln(x²+b²). Evaluating at 2b and b gives (1/2)ln(5b²/(2b²))=(1/2)ln(5/2).",
+    "hint": "Substitute u=x²+b².",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q26",
+    "number": "26",
+    "stem": "Let f(x,y)=x³/3−3y²/2+2x and g(x,y)=x−y on ℝ². Consider maximizing and minimizing f on C={(x,y)∈ℝ²:g(x,y)=0}. Which statement is correct?",
+    "options": [
+      "f has a maximum at (1,1), and a minimum at (2,2).",
+      "f has a maximum at (1,1), but does not have a minimum.",
+      "f has a minimum at (2,2), but does not have a maximum.",
+      "f has neither a maximum nor a minimum."
+    ],
+    "correctIndex": null,
+    "answer": "(d) for global extrema; (a) for local extrema. The wording needs review.",
+    "solution": "On C, write y=x=t. Then h(t)=t³/3−3t²/2+2t, with h′(t)=(t−1)(t−2) and h″(t)=2t−3. Hence t=1 is a strict local maximum and t=2 is a strict local minimum. But h(t)→∞ as t→∞ and h(t)→−∞ as t→−∞, so no global maximum or minimum exists. Thus (d) is correct if maximum/minimum means global, whereas (a) describes the local extrema.",
+    "hint": "Reduce to one variable, and distinguish local extrema from global extrema.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "needs_review",
+    "notes": "The source does not specify local versus global. Preserve both conclusions and exclude from automatic grading until an authoritative answer key resolves the intended convention."
+  },
+  {
+    "id": "2016-PEA-Q27",
+    "number": "27",
+    "stem": "A particular men’s competition has an unlimited number of rounds. In each round every participant must complete a task. The probability of completing it is p. A participant who fails is eliminated and participates in every round before elimination. The competition begins with three participants. The probability that all three are eliminated in the same round is:",
+    "options": [
+      "(1−p)³/(1−p³).",
+      "(1/3)(1−p).",
+      "1/p³.",
+      "None of the above."
+    ],
+    "correctIndex": 0,
+    "answer": "(1−p)³/(1−p³)",
+    "solution": "For all three to be eliminated in round k≥1, all must succeed in the preceding k−1 rounds and fail in round k. Under independent task outcomes this has probability p^(3(k−1))(1−p)³. Summing the geometric series gives (1−p)³/(1−p³) for 0≤p<1.",
+    "hint": "Sum over the common round of elimination.",
+    "topic": "Probability",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": "Uses the standard implicit independence assumption across participants and rounds, with 0≤p<1. If p=1, nobody is eliminated and the probability is 0; the displayed fraction has a removable limiting value 0 but is undefined at p=1."
+  },
+  {
+    "id": "2016-PEA-Q28",
+    "number": "28",
+    "stem": "Three married couples sit down at a round table with six chairs. All possible seating arrangements of the six people are equally likely. The probability that each husband sits next to his wife is:",
+    "options": [
+      "2/15.",
+      "1/3.",
+      "4/15.",
+      "None of the above."
+    ],
+    "correctIndex": 0,
+    "answer": "2/15",
+    "solution": "Treat each couple as a block. The three blocks have (3−1)! circular arrangements, and each block has 2 internal orders. Favorable arrangements number 2³·2!=16. All six distinct people have (6−1)!=120 circular arrangements, so the probability is 16/120=2/15.",
+    "hint": "Arrange the couples as three blocks around a circle.",
+    "topic": "Probability",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2016-PEA-Q29",
+    "number": "29",
+    "stem": "Let f:ℝ²→ℝ be a function. For every x,y,z∈ℝ, f(x,y)+f(y,z)+f(z,x)=0. Then f(x,y)−f(x,0)+f(y,0) equals",
+    "options": [
+      "0.",
+      "1.",
+      "−1.",
+      "None of the above."
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "Put x=y=z=0 to get f(0,0)=0. Then applying the identity to (x,0,0) gives f(0,x)=−f(x,0). Finally, with z=0, f(x,y)+f(y,0)+f(0,x)=0, so f(x,y)−f(x,0)+f(y,0)=0.",
+    "hint": "Set z=0 and first establish antisymmetry with one argument zero.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": "The source’s final line says “for every x,y∈ℝ²”, although the first line correctly takes x,y,z∈ℝ and f accepts two real arguments. The irrelevant dimensional typo is omitted from this normalized stem; the identity and answer are unambiguous."
+  },
+  {
+    "id": "2016-PEA-Q30",
+    "number": "30",
+    "stem": "For x>0, find the minimum of [(x+1/x)⁶−(x⁶+1/x⁶)−2] / [(x+1/x)³+(x³+1/x³)].",
+    "options": [
+      "1.",
+      "3.",
+      "6.",
+      "12."
+    ],
+    "correctIndex": 2,
+    "answer": "6",
+    "solution": "Let s=x+1/x≥2. Then x³+x⁻³=s³−3s and x⁶+x⁻⁶=s⁶−6s⁴+9s²−2. The numerator becomes 6s⁴−9s²=3s²(2s²−3); the denominator is 2s³−3s=s(2s²−3). The ratio is therefore 3s≥6, with equality at x=1.",
+    "hint": "Set s=x+1/x and simplify the numerator and denominator separately.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": "Confirmed visually that the printed expression is a fraction; plain PDF extraction had flattened the numerator and denominator."
+  }
+]

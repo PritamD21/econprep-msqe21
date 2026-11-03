@@ -1,0 +1,699 @@
+[
+  {
+    "id": "2017-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2017-PEA-Q1-p1.jpg"
+    ],
+    "stem": "Question 1 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "4",
+    "solution": "Arrange the four vectors as rows of a 4×4 matrix. Its determinant is −18, which is nonzero. Thus the vectors are linearly independent and span a four-dimensional space.",
+    "hint": "Compute the rank or determinant of the vector matrix.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2017-PEA-Q2-p1.jpg"
+    ],
+    "stem": "Question 2 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "2ᵐ−2",
+    "solution": "Each of m elements independently maps to either of the two labeled target elements, giving 2ᵐ functions. Exactly two are constant and fail to be onto. Subtracting them leaves 2ᵐ−2.",
+    "hint": "Remove the two constant functions from all possible functions.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2017-PEA-Q3-p1.jpg"
+    ],
+    "stem": "Question 3 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Quasiconcave but not concave",
+    "solution": "On the positive orthant, ln(xy)=lnx+lny is concave, so its upper level sets, and thus those of xy, are convex. However xy has Hessian [[0,1],[1,0]] with eigenvalues ±1, so it is not concave. The same quasiconcavity extends to the nonnegative boundary.",
+    "hint": "Use a logarithm for quasiconcavity and the Hessian for concavity.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q4",
+    "number": "4",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2017-PEA-Q4-p1.jpg"
+    ],
+    "stem": "Question 4 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Homogeneous of degree 2",
+    "solution": "For t>0, f(tx,ty)=(tx)(ty)=t²xy=t²f(x,y), exactly the defining condition for degree-2 homogeneity. Such a positive homogeneous function is also homothetic.",
+    "hint": "Scale both arguments by the same factor.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q5",
+    "number": "5",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2017-PEA-Q5-p1.jpg",
+      "question-images/2017-PEA-Q5-p2.jpg"
+    ],
+    "stem": "Question 5 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "Standard deviation ×10, variance ×100, CV unchanged",
+    "solution": "Millimetres equal 10 times centimetres. Standard deviation scales by 10, variance by 10²=100, and CV=standard deviation/mean is unchanged because both numerator and denominator scale by 10.",
+    "hint": "Track the scale factor in each definition.",
+    "topic": "Statistics",
+    "status": "verified",
+    "notes": "A nonzero mean is implicit in a defined CV."
+  },
+  {
+    "id": "2017-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2017-PEA-Q6-p2.jpg"
+    ],
+    "stem": "Question 6 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Covariance ×100; regression slope and correlation unchanged",
+    "solution": "Both variables are multiplied by 10, so covariance becomes 100Cov(x,y). The slope Cov(x,y)/Var(x) is unchanged because both parts gain factor 100. Correlation is also unchanged because covariance and the product of standard deviations scale identically.",
+    "hint": "Write the covariance, regression-slope and correlation formulas.",
+    "topic": "Statistics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q7",
+    "number": "7",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2017-PEA-Q7-p2.jpg",
+      "question-images/2017-PEA-Q7-p3.jpg"
+    ],
+    "stem": "Question 7 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "x*=1/√p",
+    "solution": "The objective −1/x+y requires x>0 and is increasing in y, so the budget binds: y=10−px. Maximizing 10−px−1/x gives derivative −p+1/x²=0, hence x=1/√p. The second derivative is −2/x³<0. Since p<100, y=10−√p>0, so the solution is feasible.",
+    "hint": "Use the binding budget to reduce to one variable.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": "The x=0 boundary is excluded by the objective’s reciprocal; this does not affect the unique positive optimum."
+  },
+  {
+    "id": "2017-PEA-Q8",
+    "number": "8",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2017-PEA-Q8-p3.jpg"
+    ],
+    "stem": "Question 8 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "Ax=0 has a nonzero solution",
+    "solution": "If A had rank 3 it would be invertible and Ax=b would have a solution for every b. Inconsistency therefore implies rank(A)<3. Rank–nullity gives a nullspace of positive dimension, hence a nonzero homogeneous solution.",
+    "hint": "Use inconsistency to rule out invertibility.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q9",
+    "number": "9",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2017-PEA-Q9-p3.jpg"
+    ],
+    "stem": "Question 9 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "n(n+1)⋯(n+k−1)",
+    "solution": "Treat the n queue positions as labeled and order people within each queue. First order the k distinct people in k! ways, then choose queue lengths, allowing empty queues, in C(n+k−1,k) ways. The product is (n+k−1)!/(n−1)!=n(n+1)⋯(n+k−1).",
+    "hint": "Combine an ordering of people with a weak composition into queues.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": "Queue order and distinct queue positions are implicit in the intended count; unlabeled groups would be a different problem."
+  },
+  {
+    "id": "2017-PEA-Q10",
+    "number": "10",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2017-PEA-Q10-p3.jpg"
+    ],
+    "stem": "Question 10 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "None of the above",
+    "solution": "Knowing P(A)=P(B)=p does not determine their dependence. If A=B with 0<p<1, the intersection is p>p². Independent events give p², while disjoint events with p≤1/2 give 0<p². No listed comparison holds universally.",
+    "hint": "Consider identical, independent and disjoint events.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q11",
+    "number": "11",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2017-PEA-Q11-p3.jpg"
+    ],
+    "stem": "Question 11 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "P(A∩B)≥1−α−β",
+    "solution": "By the union bound, P(Aᶜ∪Bᶜ)≤P(Aᶜ)+P(Bᶜ)=α+β. Complementing gives P(A∩B)≥1−α−β. Independence is not stated, so the product formula need not hold.",
+    "hint": "Use the union bound on the complements.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q12",
+    "number": "12",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2017-PEA-Q12-p3.jpg",
+      "question-images/2017-PEA-Q12-p4.jpg"
+    ],
+    "stem": "Question 12 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "μ−σ and μ+σ",
+    "solution": "For the normal density φ(x), φ″(x)=[(x−μ)²/σ⁴−1/σ²]φ(x). Since the density is positive, its second derivative changes sign exactly at (x−μ)²=σ².",
+    "hint": "Differentiate the normal density twice.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q13",
+    "number": "13",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2017-PEA-Q13-p4.jpg"
+    ],
+    "stem": "Question 13 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "72",
+    "solution": "Arrange five distinct objects in 5!=120 ways. If the specified pair is adjacent, treat it as one block: 4! orders of the block and other objects, times 2 internal orders. Excluding these 48 gives 120−48=72.",
+    "hint": "Count all arrangements and subtract those with the pair together.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": "The five objects and the prohibited pair are understood to be distinct."
+  },
+  {
+    "id": "2017-PEA-Q14",
+    "number": "14",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2017-PEA-Q14-p4.jpg"
+    ],
+    "stem": "Question 14 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Both statements must be true",
+    "solution": "Only the zero vector lies in the nullspace, so nullity is zero and rank(A)=n. Since a matrix’s rank is at most its number m of rows, n≤m also follows.",
+    "hint": "Apply rank–nullity and the row bound on rank.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q15",
+    "number": "15",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2017-PEA-Q15-p4.jpg"
+    ],
+    "stem": "Question 15 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "(n−1)/n",
+    "solution": "The seller fails only if the single person with a 2-rupee coin is first. If at least one 1-rupee customer precedes them, the seller has the necessary change, and everyone afterward pays exactly 1 rupee. The exceptional first position has probability 1/n.",
+    "hint": "Determine the only queue position that prevents giving change.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q16",
+    "number": "16",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2017-PEA-Q16-p4.jpg",
+      "question-images/2017-PEA-Q16-p5.jpg"
+    ],
+    "stem": "Question 16 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "500 families",
+    "solution": "Under the usual independent equal-probability model, the probability of 2 or 3 boys among five children is [C(5,2)+C(5,3)]/2⁵=20/32=5/8. Multiply by 800 to get 500.",
+    "hint": "Use binomial probabilities and linearity of expectation.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": "Uses the conventional independent births model implicit in this binomial question."
+  },
+  {
+    "id": "2017-PEA-Q17",
+    "number": "17",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2017-PEA-Q17-p5.jpg"
+    ],
+    "stem": "Question 17 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Neither concave nor convex",
+    "solution": "The function equals −1 for x<0 and +1 for x≥0, so it is discontinuous at zero. A finite convex or concave function on all ℝ must be continuous. Hence it is neither.",
+    "hint": "Identify the jump discontinuity.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q18",
+    "number": "18",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2017-PEA-Q18-p5.jpg"
+    ],
+    "stem": "Question 18 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Converges to 1/2",
+    "solution": "Dividing numerator and denominator of (n²+1)/(2n²+3) by n² gives (1+1/n²)/(2+3/n²)→1/2.",
+    "hint": "Compare the leading quadratic terms.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q19",
+    "number": "19",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2017-PEA-Q19-p5.jpg"
+    ],
+    "stem": "Question 19 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "Continuous at zero",
+    "solution": "The real cube-root function tends to 0 as x→0, so it is continuous. Its difference quotient at zero is h^(1/3)/h=|h|^(−2/3), which has no finite limit. Its curvature changes sign across zero, so it is not concave on all ℝ.",
+    "hint": "Check the difference quotient and the domain of the concavity claim.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q20",
+    "number": "20",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2017-PEA-Q20-p5.jpg"
+    ],
+    "stem": "Question 20 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Bounded but not convergent as x→∞",
+    "solution": "Sine bounds the function between −1 and 1. Along xₙ=e^(π/2+2πn) it equals 1, while along yₙ=e^(3π/2+2πn) it equals −1. The two unbounded subsequences have different limits.",
+    "hint": "Choose logarithmic phases where sine equals ±1.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q21",
+    "number": "21",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2017-PEA-Q21-p5.jpg",
+      "question-images/2017-PEA-Q21-p6.jpg"
+    ],
+    "stem": "Question 21 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "The maximum of two convex functions is convex",
+    "solution": "For 0≤t≤1, each f_i(tx+(1−t)y)≤tf_i(x)+(1−t)f_i(y)≤tg(x)+(1−t)g(y). Taking the maximum over i proves convexity of g. Maximums of affine or differentiable functions can instead have a kink, e.g. max{x,1−x}.",
+    "hint": "Apply the convexity inequality to each component.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q22",
+    "number": "22",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2017-PEA-Q22-p6.jpg"
+    ],
+    "stem": "Question 22 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "18",
+    "solution": "The constraint is (x²−4)(x²−9)≤0, so 2≤|x|≤3. On both feasible intervals f′(x)=3x²−3>0. Comparing their right endpoints gives f(−2)=−2 and f(3)=18, so the maximum is 18.",
+    "hint": "Factor the constraint as a quadratic in x².",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q23",
+    "number": "23",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2017-PEA-Q23-p6.jpg"
+    ],
+    "stem": "Question 23 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "For p>1/2 the random walk has positive drift and tends to +∞ almost surely, so it must cross each positive integer. For p=1/2 the one-dimensional symmetric walk is recurrent and also hits each integer almost surely. Thus the hitting probability is 1 throughout the specified range.",
+    "hint": "Distinguish eventual hitting from reaching the target in exactly k steps.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q24",
+    "number": "24",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2017-PEA-Q24-p6.jpg"
+    ],
+    "stem": "Question 24 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "1",
+    "solution": "The symmetric random walk on ℤ is recurrent. After its first move to +1 or −1, it returns to 0 with probability 1. The requirement t>0 therefore still gives return probability 1.",
+    "hint": "Use recurrence of the one-dimensional symmetric random walk.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q25",
+    "number": "25",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2017-PEA-Q25-p6.jpg",
+      "question-images/2017-PEA-Q25-p7.jpg"
+    ],
+    "stem": "Question 25 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "f(1)>0",
+    "solution": "The derivative condition makes f strictly increasing. For any t<1, the limiting lower bound L=limₓ→−∞f(x) satisfies f(t)≥L≥0, and strict increase gives f(1)>f(t)≥0.",
+    "hint": "Compare f(1) with a finite point to its left and the lower limit.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q26",
+    "number": "26",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2017-PEA-Q26-p7.jpg"
+    ],
+    "stem": "Question 26 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "−3<x<4",
+    "solution": "Rearranging gives x²−x−12<0, or (x−4)(x+3)<0. An upward-opening quadratic is negative between its two roots −3 and 4.",
+    "hint": "Factor after collecting all terms on one side.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q27",
+    "number": "27",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2017-PEA-Q27-p7.jpg"
+    ],
+    "stem": "Question 27 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "3/8",
+    "solution": "Use u=lnx, du=dx/x. The bounds become 1 and 2, giving ∫₁²u⁻³du=[−1/(2u²)]₁²=1/2−1/8=3/8.",
+    "hint": "Substitute the logarithm.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q28",
+    "number": "28",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2017-PEA-Q28-p7.jpg"
+    ],
+    "stem": "Question 28 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "(x,y,z)=(2,−1,3), none of the listed triples",
+    "solution": "Subtract twice equation 1 from equation 2 to get 3y+2z=3. Subtract three times equation 1 from equation 3 to get 4y−z=−7. Solving gives y=−1,z=3, then x=2. None of A,B,C equals this triple.",
+    "hint": "Eliminate x from the second and third equations.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q29",
+    "number": "29",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2017-PEA-Q29-p7.jpg",
+      "question-images/2017-PEA-Q29-p8.jpg"
+    ],
+    "stem": "Question 29 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "The cross partial f_xy is positive",
+    "solution": "At the unique interior maximum, f_y(x,y*(x))=0. The second-order necessary condition and nonzero f_yy give f_yy<0. Implicit differentiation yields y*′=−f_yx/f_yy, which has the same sign as f_yx. Thus a positive cross partial gives increasing y*.",
+    "hint": "Differentiate the first-order condition implicitly.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-PEA-Q30",
+    "number": "30",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2017-PEA-Q30-p8.jpg"
+    ],
+    "stem": "Question 30 from PEA 2017.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "3^√(2x+1)√(2x+1)/ln3 − 3^√(2x+1)/(ln3)² + C",
+    "solution": "Set u=√(2x+1), so dx=u du. The integral becomes ∫u3ᵘdu. Integration by parts gives u3ᵘ/ln3−3ᵘ/(ln3)²+C, then substitute back.",
+    "hint": "Substitute the square root, then integrate by parts.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  }
+]

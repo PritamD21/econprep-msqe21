@@ -1,0 +1,401 @@
+[
+  {
+    "id": "1998-PEA-Q1",
+    "number": "1",
+    "stem": "Consider S₁={0}, S₂={3/2,5/2}, S₃={8/3,11/3,14/3}, S₄={15/4,19/4,23/4,27/4}, S₅={24/5,29/5,34/5,39/5,44/5},…. The sum of the elements in Sₙ is",
+    "options": [
+      "(n+1)(n−2)/2",
+      "(n−1)(n+2)/2",
+      "(n+1)(3n−2)/2",
+      "(n−1)(3n+2)/2"
+    ],
+    "correctIndex": 3,
+    "answer": "(n−1)(3n+2)/2",
+    "solution": "The indicated pattern is n consecutive values beginning at (n²−1)/n and increasing by 1. Their sum is n·(n²−1)/n+n(n−1)/2=(3n²−n−2)/2=(n−1)(3n+2)/2.",
+    "hint": "Find the first element and common difference of Sₙ.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q2",
+    "number": "2",
+    "stem": "Find log₂e−log₄e+log₈e−log₁₆e+⋯.",
+    "options": [
+      "(1/2)log₂e",
+      "(1/2)logₑ2",
+      "1/2",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "1, hence none of these",
+    "solution": "Since log₂ⁿe=1/(nln2), the sum is (1/ln2)Σₙ≥₁(−1)ⁿ⁺¹/n=(ln2)/(ln2)=1.",
+    "hint": "Factor out 1/ln2 and use the alternating harmonic series.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q3",
+    "number": "3",
+    "stem": "−1/α and −1/β are the roots of 3x²−18x+2=0. The equation whose roots are α,β is",
+    "options": [
+      "2x²+18x+3=0",
+      "2x²−18x+3=0",
+      "3x²+27x+2=0",
+      "3x²−27x+2=0"
+    ],
+    "correctIndex": 0,
+    "answer": "2x²+18x+3=0",
+    "solution": "Substitute x=−1/t into the original equation and multiply by t²: 3+18t+2t²=0. Thus α and β satisfy 2t²+18t+3=0.",
+    "hint": "Transform the quadratic under x=−1/t.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q4",
+    "number": "4",
+    "stem": "For which (a,b) is ax+3y+z=5, 2x−y+2az=3, x+4y+az=b inconsistent?",
+    "options": [
+      "(a≠1,b=6) and (a≠−1,b=66/5)",
+      "(a=1,b≠6) and (a≠−1,b=66/5)",
+      "(a≠1,b=6) and (a=−1,b≠66/5)",
+      "(a=1,b≠6) and (a=−1,b≠66/5)"
+    ],
+    "correctIndex": 3,
+    "answer": "a=1,b≠6 or a=−1,b≠66/5",
+    "solution": "The coefficient determinant is 9(1−a²), so only a=±1 can be inconsistent. For a=1, row 3=(9row1−row2)/7, demanding b=6. For a=−1, row3=(9row1+7row2)/5, demanding b=66/5. Failure of these respective requirements gives D.",
+    "hint": "Check consistency only where the determinant vanishes.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The source joins the two parameter cases with “and”; this lists two alternative cases rather than requiring a to equal both 1 and −1."
+  },
+  {
+    "id": "1998-PEA-Q5",
+    "number": "5",
+    "stem": "For a given positive integer a, the maximum of aⁿ/n! over n=0,1,2,… is",
+    "options": [
+      "aᵃ",
+      "a^(a−1)/a!",
+      "a^(a−1)/(a−1)!",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "a^(a−1)/(a−1)! = aᵃ/a!",
+    "solution": "For tₙ=aⁿ/n!, tₙ₊₁/tₙ=a/(n+1). Terms increase while n+1<a, are equal when n+1=a, and then decrease. The maximum occurs at n=a−1 and n=a, with the common value in C.",
+    "hint": "Compare consecutive terms.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q6",
+    "number": "6",
+    "stem": "Let y=log_{g(x)}f(x), where f(x)=eˣ, g(x)=x², x>1. Find dy/dx.",
+    "options": [
+      "(lnx−1)/(2(lnx)²)",
+      "(lnx−1)/(lnx)²",
+      "(lnx+1)/(2(lnx)²)",
+      "(lnx+1)/(lnx)²"
+    ],
+    "correctIndex": 0,
+    "answer": "(lnx−1)/(2(lnx)²)",
+    "solution": "Change of base gives y=x/(2lnx). The quotient rule yields y′=[2lnx−2]/[4(lnx)²]=(lnx−1)/(2(lnx)²).",
+    "hint": "Change the logarithm base before differentiating.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q7",
+    "number": "7",
+    "stem": "The scanned piecewise formula gives f(x)=3x³+12x−1 on the first interval ending at 2, and f(x)=37−x on the second interval beginning at 2. Which assertion is true?",
+    "options": [
+      "f is not continuous on [−1,3]",
+      "f is continuous and differentiable on [−1,3]",
+      "f is continuous on [−1,3] but f′(2) does not exist",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "With the printed cubic, the two branches have unequal limits at 2; the interval endpoints need source review",
+    "solution": "The magnified source shows an exponent resembling 3 and endpoint signs resembling ≤ on both intervals. The cubic’s left limit at 2 is 47, while the second branch’s right limit is 35; thus any unambiguous branch assignment would be discontinuous (A). If both include 2, the formula assigns two different values and does not define a function. Preserve the ambiguity for editorial checking.",
+    "hint": "Check the exponent and the branch assignments at 2 before testing continuity.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Needs source review for the superscript and overlapping endpoint inequalities. A guessed square would falsely force continuity."
+  },
+  {
+    "id": "1998-PEA-Q8",
+    "number": "8",
+    "stem": "The matrix [[1,1,1,1],[2,1,0,−1],[4,1,0,1],[8,1,0,−1]]",
+    "options": [
+      "Is singular of rank 3",
+      "Is singular of rank less than 3",
+      "Is nonsingular with determinant −12",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "Nonsingular with determinant +12, hence none of these",
+    "solution": "Expand along the third column, whose only nonzero entry is the first-row 1. The remaining determinant is det([[2,1,−1],[4,1,1],[8,1,−1]])=−4+12+4=12. Thus C has the wrong sign.",
+    "hint": "Expand down the sparse third column.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q9",
+    "number": "9",
+    "stem": "The roots of x³−9x²+23x−15=0 are in A.P. Their common difference is",
+    "options": [
+      "1/2",
+      "2",
+      "3",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "2 when the roots are ordered increasingly",
+    "solution": "The cubic factors as (x−1)(x−3)(x−5). Thus the increasing roots are 1,3,5 with common difference 2.",
+    "hint": "The middle root of three arithmetic-progression roots equals their average.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q10",
+    "number": "10",
+    "stem": "If a₁,a₂,… are in G.P., find Δ=det([[log aₙ,log aₙ₊₁,log aₙ₊₂],[log aₙ₊₃,log aₙ₊₄,log aₙ₊₅],[log aₙ₊₆,log aₙ₊₇,log aₙ₊₈]]).",
+    "options": [
+      "log(aₙaₙ₊₈)−2log aₙ₊₄",
+      "log(a₁a₃)−2log a₂",
+      "0",
+      "1"
+    ],
+    "correctIndex": null,
+    "answer": "Δ=0, but A, B and C all have this value",
+    "solution": "For positive G.P. terms, log aₖ=A+(k−1)d. The three rows differ by constant multiples of (1,1,1), so their determinant is zero. Also aₙaₙ₊₈=aₙ₊₄² and a₁a₃=a₂², making both alternatives A and B zero as well.",
+    "hint": "Logarithms convert a geometric progression to an arithmetic progression.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "The alternatives A,B,C overlap exactly; all are zero. Positive terms are implicit in the real logarithms."
+  },
+  {
+    "id": "1998-PEA-Q11",
+    "number": "11",
+    "stem": "Let f(x)=x for 0<x<1; f(x)=2−x for 1≤x≤2; and f(x)=x−x²/2 for x>2. Then f is",
+    "options": [
+      "Continuous at 2 but not differentiable at 1",
+      "Continuous at 2 and differentiable at 1",
+      "Not continuous at 2 and not differentiable at 1",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "Continuous at 2 but not differentiable at 1",
+    "solution": "At 2 the defined value and both limiting values are zero. At 1 the branches meet at 1, but their slopes are +1 and −1, so the derivative does not exist.",
+    "hint": "Compare the one-sided slopes at 1 and values at 2.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q12",
+    "number": "12",
+    "stem": "Find limₓ→₀[1/x−log(1+x)/x²].",
+    "options": [
+      "1",
+      "1/2",
+      "Does not exist",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "1/2",
+    "solution": "The expression is [x−ln(1+x)]/x². Using ln(1+x)=x−x²/2+O(x³) gives limit 1/2.",
+    "hint": "Use the second-order logarithm expansion.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q13",
+    "number": "13",
+    "stem": "For |a|<1, |b|<1, the series a(a+b)+a²(a²+b²)+a³(a³+b³)+⋯",
+    "options": [
+      "Converges to a²/(1−a²)+b²/(1−b²)",
+      "Converges to a²/(1−a²)+b²/(1−ab)",
+      "Converges to a²/(1−a²)+ab/(1−ab)",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "a²/(1−a²)+ab/(1−ab)",
+    "solution": "The nth summand is a²ⁿ+(ab)ⁿ. Both are convergent geometric series because |a²|<1 and |ab|<1. Sum them separately.",
+    "hint": "Separate the two geometric series.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q14",
+    "number": "14",
+    "stem": "If a+1/a=2cosα, then aⁿ+1/aⁿ equals",
+    "options": [
+      "2ⁿcosⁿα",
+      "2ⁿcos(nα)",
+      "2cos(nα)",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "2cos(nα)",
+    "solution": "The equation a²−2cosα·a+1=0 has roots e^(±iα). Taking integer nth powers and adding reciprocals gives e^(inα)+e^(−inα)=2cos(nα).",
+    "hint": "Use the quadratic equation for a or the cosine recurrence.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q15",
+    "number": "15",
+    "stem": "For positive a,b,c, the least value of (a+b+c)(1/a+1/b+1/c) is",
+    "options": [
+      "9",
+      "3",
+      "10/3",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "9",
+    "solution": "Cauchy–Schwarz gives (a+b+c)(1/a+1/b+1/c)≥(1+1+1)²=9. Equality occurs at a=b=c.",
+    "hint": "Apply Cauchy–Schwarz.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q16",
+    "number": "16",
+    "stem": "Define f(x)=|x|−[x]−1 for −1<x<0; |x|−[x] for 0≤x<1; and 1 otherwise. Here [x] is the greatest integer ≤x. Then",
+    "options": [
+      "f is discontinuous at only one real point",
+      "f is discontinuous at more than one real point",
+      "f is continuous but nondifferentiable at only one real point",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "None of these: continuous, with three nondifferentiable points",
+    "solution": "For −1<x<0, floor(x)=−1 and f=−x; for 0≤x<1, f=x. Outside that interval f=1. Thus f=min{|x|,1}, continuous everywhere, with slope changes at −1,0,1. It is not differentiable at three points, rather than just one.",
+    "hint": "Reduce the floor expressions on each interval.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "The integer-part symbol is interpreted as conventional greatest integer ≤x, as printed in this source."
+  },
+  {
+    "id": "1998-PEA-Q17",
+    "number": "17",
+    "stem": "If a primal linear program has feasible solutions but no optimal solution, then its dual",
+    "options": [
+      "May have an optimal solution",
+      "Has no feasible solution",
+      "Has feasible solutions but no optimal solution",
+      "Cannot be formulated"
+    ],
+    "correctIndex": 1,
+    "answer": "Has no feasible solution",
+    "solution": "A feasible finite-dimensional linear program without an optimum is unbounded in the optimizing direction. A feasible dual would supply a finite bound by weak duality, which is impossible.",
+    "hint": "Use weak duality to rule out dual feasibility.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q18",
+    "number": "18",
+    "stem": "Maximize 3x₁+2x₂ subject to x₁+2x₂≤16, x₁+x₂≤12, x₁,x₂≥0. The optimal value is",
+    "options": [
+      "32",
+      "36",
+      "40",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "36",
+    "solution": "For nonnegative x₂, 3x₁+2x₂≤3(x₁+x₂)≤36. The feasible point (12,0) attains 36, so this bound is optimal.",
+    "hint": "Bound the objective by three times the second constraint.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q19",
+    "number": "19",
+    "stem": "Evaluate ∫₋₁¹(x+x²+x³)e^(−x²/2)dx.",
+    "options": [
+      "2/√e",
+      "−2/√e",
+      "2√e",
+      "−2√e"
+    ],
+    "correctIndex": null,
+    "answer": "None of the printed values matches the integral",
+    "solution": "The odd x and x³ terms integrate to zero, leaving ∫₋₁¹x²e^(−x²/2)dx>0. Integration by parts gives −2/√e+∫₋₁¹e^(−x²/2)dx≈0.498187. This is neither 2/√e≈1.213061 nor 2√e≈3.297443, and cannot be negative.",
+    "hint": "Use parity before evaluating the remaining even integral.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "needs_review",
+    "notes": "The printed integrand reads x+x²+x³, so the provided alternatives appear inconsistent; no official key supplied."
+  },
+  {
+    "id": "1998-PEA-Q20",
+    "number": "20",
+    "stem": "The series Σₙ₌₁^∞(−1)ⁿ⁺¹/n",
+    "options": [
+      "Converges absolutely",
+      "Converges conditionally to logₑ2",
+      "Does not converge",
+      "Converges conditionally to log₁₀2"
+    ],
+    "correctIndex": 1,
+    "answer": "Converges conditionally to ln2",
+    "solution": "Alternating decreasing terms 1/n tend to zero, so the alternating-series test gives convergence. Absolute values give the divergent harmonic series. Integrating the geometric expansion of 1/(1+x) on [0,1] gives the sum ln2.",
+    "hint": "Apply the alternating-series test and identify the logarithm series.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1998-PEA-Q21",
+    "number": "21",
+    "stem": "Solve (1+x)y dx+(1−y)x dy=0.",
+    "options": [
+      "ln|x|+ln|y|−x+y=constant",
+      "ln|x|−ln|y|−x+y=constant",
+      "ln|x|+ln|y|+x−y=constant",
+      "ln|x|−ln|y|+x−y=constant"
+    ],
+    "correctIndex": 2,
+    "answer": "ln|x|+ln|y|+x−y=C where xy≠0",
+    "solution": "Divide by xy to get (1+1/x)dx+(1/y−1)dy=0. Integration gives x+ln|x|+ln|y|−y=C. The axis solution y=0 must be considered separately because division excluded it.",
+    "hint": "Divide by xy and separate the variables.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "The logarithmic family describes solution curves away from the coordinate axes; y=0 is an additional solution."
+  }
+]

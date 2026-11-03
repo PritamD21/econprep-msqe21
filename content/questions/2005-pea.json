@@ -1,0 +1,230 @@
+[
+  {
+    "id": "2005-PEA-Q1",
+    "number": "1",
+    "stem": "X∼B(n,p). The maximum value of Var(X) is",
+    "options": [
+      "n/4",
+      "n",
+      "n/2",
+      "1/n"
+    ],
+    "correctIndex": 0,
+    "answer": "n/4",
+    "solution": "Var(X)=np(1−p)=n[1/4−(p−1/2)²]≤n/4, attained at p=1/2.",
+    "hint": "Complete the square in p.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q2",
+    "number": "2",
+    "stem": "The function x|x| is",
+    "options": [
+      "Discontinuous at x=0",
+      "Continuous but not differentiable at x=0",
+      "Differentiable at x=0",
+      "Continuous everywhere but not differentiable anywhere"
+    ],
+    "correctIndex": 2,
+    "answer": "Differentiable at x=0",
+    "solution": "Its derivative at zero is limₕ→₀h|h|/h=limₕ→₀|h|=0.",
+    "hint": "Use the difference quotient at zero.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q3",
+    "number": "3",
+    "stem": "If A=[[1,−1],[2,−2]], then A¹⁰⁰+A⁵ is",
+    "options": [
+      "[[0,0],[0,0]]",
+      "[[1,−1],[2,−2]]",
+      "[[−1,1],[−2,2]]",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "The zero matrix",
+    "solution": "Direct multiplication gives A²=−A. Hence Aᵏ=(−1)ᵏ⁻¹A for k≥1, so A¹⁰⁰+A⁵=−A+A=0.",
+    "hint": "Calculate A² first.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q4",
+    "number": "4",
+    "stem": "The maximum and minimum values of f(x)=|x²+2x−3|+1.5logₑx on [1/2,4] are",
+    "options": [
+      "(21+3logₑ2, −1.5logₑ2)",
+      "(21+logₑ1.5, 0)",
+      "(21+3logₑ2, 0)",
+      "(21+logₑ1.5, −1.5logₑ2)"
+    ],
+    "correctIndex": 2,
+    "answer": "Maximum 21+3ln2; minimum 0",
+    "solution": "On [1/2,1], f=3−2x−x²+1.5lnx, with derivative −2−2x+1.5/x≤0. On [1,4], f=x²+2x−3+1.5lnx is increasing. Thus the minimum is f(1)=0. Compare endpoint values: f(4)=21+3ln2 exceeds f(1/2)=7/4−1.5ln2.",
+    "hint": "Split at the positive zero of the expression inside the absolute value.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q5",
+    "number": "5",
+    "stem": "Let α and β be roots of x²−px+q=0 and xₙ=αⁿ+βⁿ. Then xₙ₊₁ is",
+    "options": [
+      "pxₙ−qxₙ₋₁",
+      "pxₙ+qxₙ₋₁",
+      "qxₙ−pxₙ₋₁",
+      "qxₙ+pxₙ₋₁"
+    ],
+    "correctIndex": 0,
+    "answer": "pxₙ−qxₙ₋₁",
+    "solution": "Each root r satisfies r²=pr−q. Multiply by rⁿ⁻¹ and sum over α and β to obtain xₙ₊₁=pxₙ−qxₙ₋₁.",
+    "hint": "Use the quadratic equation satisfied by each root.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q6",
+    "number": "6",
+    "stem": "Let f:[−1,1]→ℝ be twice differentiable at 0, f(0)=f′(0)=0 and f″(0)=4. Find limₓ→₀[2f(x)−3f(2x)+f(4x)]/x².",
+    "options": [
+      "11",
+      "2",
+      "12",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "12",
+    "solution": "Taylor expansion at zero gives f(t)=2t²+o(t²). The numerator is [4−24+32]x²+o(x²)=12x²+o(x²), yielding 12.",
+    "hint": "Use the second-order expansion at zero.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q7",
+    "number": "7",
+    "stem": "For e<x₁<x₂<∞, (logₑx₂)/(logₑx₁) is",
+    "options": [
+      "Less than x₂/x₁",
+      "Greater than x₂/x₁ but less than (x₂/x₁)²",
+      "Greater than (x₂/x₁)³",
+      "Greater than (x₂/x₁)² but less than (x₂/x₁)³"
+    ],
+    "correctIndex": 0,
+    "answer": "Less than x₂/x₁",
+    "solution": "The derivative of (lnx)/x is (1−lnx)/x²<0 for x>e. Thus (lnx₂)/x₂<(lnx₁)/x₁, which rearranges to the first choice.",
+    "hint": "Study the monotonicity of (lnx)/x.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q8",
+    "number": "8",
+    "stem": "The value of 1/(√1+√2)+1/(√2+√3)+⋯+1/(√99+√100) is",
+    "options": [
+      "A rational number in (0,9)",
+      "An irrational number in (0,9)",
+      "A rational number in (0,10)",
+      "An irrational number in (0,10)"
+    ],
+    "correctIndex": 2,
+    "answer": "9, a rational number in (0,10)",
+    "solution": "Rationalizing each summand gives 1/(√k+√(k+1))=√(k+1)−√k. The sum telescopes to √100−√1=9. Since 9 is excluded from (0,9), the third choice is correct.",
+    "hint": "Rationalize each denominator.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q9",
+    "number": "9",
+    "stem": "A combination lock has 3 buttons, pressed in any sequence including multiple buttons simultaneously, with each number pressed exactly once. The number of possible combinations is",
+    "options": [
+      "6",
+      "9",
+      "10",
+      "13"
+    ],
+    "correctIndex": 3,
+    "answer": "13",
+    "solution": "There are 3!=6 sequences of three individual presses, 3·2=6 ways to choose the pair pressed together and order that pair relative to the singleton, and 1 way to press all together. Total 6+6+1=13.",
+    "hint": "Count by the number of simultaneous groups.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q10",
+    "number": "10",
+    "stem": "Let R be the correlation between x and y, and R₁ the correlation between x and y+x. Then",
+    "options": [
+      "R₁>R",
+      "R₁=R",
+      "R₁<R",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "None of these is universally true",
+    "solution": "For uncorrelated unit-variance x,y, R=0 while R₁=1/√2>0. For y=x with positive variance, R=R₁=1. Therefore neither universal strict increase nor universal equality holds; a decrease is also not a universal rule. Choose none.",
+    "hint": "Test both an uncorrelated pair and a perfectly correlated pair.",
+    "topic": "Statistics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Correlations are interpreted only where both are defined; y=−x makes the second one undefined."
+  },
+  {
+    "id": "2005-PEA-Q11",
+    "number": "11",
+    "stem": "Evaluate ∫₋₁¹(x+|x|)dx.",
+    "options": [
+      "0",
+      "−1",
+      "1",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "1",
+    "solution": "For negative x the integrand is zero, and for positive x it is 2x. The integral is ∫₀¹2xdx=1.",
+    "hint": "Split the integral at zero.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2005-PEA-Q12",
+    "number": "12",
+    "stem": "The values x₁≥0,x₂≥0 maximizing Π=45x₁+55x₂ subject to 6x₁+4x₂≤120 and 3x₁+10x₂≤180 are",
+    "options": [
+      "(10,12)",
+      "(8,5)",
+      "(12,11)",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "(10,12)",
+    "solution": "The feasible vertices are (0,0),(20,0),(10,12),(0,18). Their objective values are 0,900,1110,990, respectively. The maximum 1110 occurs at (10,12).",
+    "hint": "Evaluate the objective at the feasible vertices.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  }
+]

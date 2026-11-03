@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2009-PEA-Q1",
+    "number": "1",
+    "stem": "An infinite geometric series has first term 1 and sum 4. Its common ratio is",
+    "options": [
+      "1/2",
+      "3/4",
+      "1",
+      "1/3"
+    ],
+    "correctIndex": 1,
+    "answer": "3/4",
+    "solution": "For a convergent geometric series, 1/(1−r)=4, so 1−r=1/4 and r=3/4.",
+    "hint": "Use the infinite geometric-sum formula.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q2",
+    "number": "2",
+    "stem": "X has density f(x)=3x² on 0≤x≤1. If P(X≤a)=P(X>a), then a is",
+    "options": [
+      "1/√6",
+      "(1/3)^(1/2)",
+      "1/2",
+      "(1/2)^(1/3)"
+    ],
+    "correctIndex": 3,
+    "answer": "(1/2)^(1/3)",
+    "solution": "The CDF is F(a)=∫₀ᵃ3x²dx=a³ on [0,1]. Equal tail probabilities mean F(a)=1/2, hence a=2^(−1/3).",
+    "hint": "Find the median from the CDF.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q3",
+    "number": "3",
+    "stem": "If f(x)=√(eˣ+√(eˣ+√(eˣ+⋯))), then f′(x) equals",
+    "options": [
+      "(f(x)−1)/(2f(x)+1)",
+      "(f(x)²−f(x))/(2f(x)−1)",
+      "(2f(x)+1)/(f(x)²+f(x))",
+      "f(x)/(2f(x)+1)"
+    ],
+    "correctIndex": 1,
+    "answer": "(f(x)²−f(x))/(2f(x)−1)",
+    "solution": "The repeated radical gives f²=eˣ+f. Differentiating gives (2f−1)f′=eˣ=f²−f. Dividing yields the second option. The positive root f=(1+√(1+4eˣ))/2 makes the denominator positive.",
+    "hint": "Use the self-similarity of the nested radical.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q4",
+    "number": "4",
+    "stem": "Find lim as x→4 of (√(x+5)−3)/(x−4).",
+    "options": [
+      "1/6",
+      "0",
+      "1/4",
+      "Not well defined"
+    ],
+    "correctIndex": 0,
+    "answer": "1/6",
+    "solution": "Rationalizing gives (√(x+5)−3)/(x−4)=1/(√(x+5)+3) for x≠4. The limit is 1/(3+3)=1/6.",
+    "hint": "Multiply by the conjugate.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q5",
+    "number": "5",
+    "stem": "Let X=2⁶⁵ and Y=2⁶⁴+2⁶³+⋯+2¹+2⁰. Then",
+    "options": [
+      "Y=X+2⁶⁴",
+      "X=Y",
+      "Y=X+1",
+      "Y=X−1"
+    ],
+    "correctIndex": 3,
+    "answer": "Y=X−1",
+    "solution": "The finite geometric sum from 2⁰ to 2⁶⁴ is (2⁶⁵−1)/(2−1)=2⁶⁵−1=X−1.",
+    "hint": "Use the finite geometric-sum formula.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q6",
+    "number": "6",
+    "stem": "Evaluate ∫ from 0 to 1 of eˣ/(eˣ+1) dx.",
+    "options": [
+      "log(1+e)",
+      "log2",
+      "log((1+e)/2)",
+      "2log(1+e)"
+    ],
+    "correctIndex": 2,
+    "answer": "ln((1+e)/2)",
+    "solution": "An antiderivative is ln(1+eˣ). Evaluating at 1 and 0 gives ln(1+e)−ln2=ln((1+e)/2).",
+    "hint": "The numerator is the derivative of the denominator.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q7",
+    "number": "7",
+    "stem": "A box contains ten balls labeled 1 through 10. Two are drawn simultaneously at random. What is the probability that both labels are odd?",
+    "options": [
+      "1/9",
+      "1/2",
+      "2/9",
+      "1/3"
+    ],
+    "correctIndex": 2,
+    "answer": "2/9",
+    "solution": "Five labels are odd. Of C(10,2)=45 unordered pairs, C(5,2)=10 contain two odd labels. The probability is 10/45=2/9.",
+    "hint": "Count favorable unordered pairs.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q8",
+    "number": "8",
+    "stem": "A box contains 100 balls, some white and the remaining red. X and Y denote the numbers of white and red balls. The correlation between X and Y is",
+    "options": [
+      "0",
+      "1",
+      "−1",
+      "Some real number between −1/2 and 1/2"
+    ],
+    "correctIndex": null,
+    "answer": "−1 under an additional nondegenerate random-count model; fixed counts have undefined correlation.",
+    "solution": "If X is a random variable with positive variance and X+Y=100, then Y=100−X, so Cov(X,Y)=−Var(X) and Corr(X,Y)=−1. But the source only describes counts in one fixed box, without a random experiment or varying composition. Fixed X and Y have variance zero, for which correlation is undefined.",
+    "hint": "A correlation coefficient requires nonzero variances.",
+    "topic": "Statistics",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "The likely intended choice is (C). The source does not specify the randomness or nondegeneracy needed to define correlation."
+  },
+  {
+    "id": "2009-PEA-Q9",
+    "number": "9",
+    "stem": "For 0≤x≤1, let f(x)=x(1−x), g(x)=x/2 and h(x)=min{f(x),g(x)}. Then h is",
+    "options": [
+      "Continuous and differentiable",
+      "Differentiable but not continuous",
+      "Continuous but not differentiable",
+      "Neither continuous nor differentiable"
+    ],
+    "correctIndex": 2,
+    "answer": "Continuous but not differentiable at x=1/2.",
+    "solution": "Both component functions are continuous, so their minimum is continuous. For 0<x<1/2 the minimum is x/2; for 1/2<x<1 it is x−x². At 1/2 the left derivative is 1/2 and the right derivative is 0, so h is not differentiable.",
+    "hint": "Find where the two component functions cross.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q10",
+    "number": "10",
+    "stem": "In how many ways can three people each throw one die and obtain a total score of 8?",
+    "options": [
+      "5",
+      "15",
+      "21",
+      "30"
+    ],
+    "correctIndex": 2,
+    "answer": "21",
+    "solution": "The number of ordered positive integer triples summing to 8 is C(7,2)=21. No component can exceed 6, since the other two are each at least 1. Thus all 21 are legal die outcomes.",
+    "hint": "Use stars and bars and check the die upper bound.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q11",
+    "number": "11",
+    "stem": "If 2f(x)+3f(−x)=55−7x for every real x, find f(3).",
+    "options": [
+      "40",
+      "32",
+      "26",
+      "10"
+    ],
+    "correctIndex": 1,
+    "answer": "32",
+    "solution": "At x=3, 2f(3)+3f(−3)=34. At x=−3, 3f(3)+2f(−3)=76. Multiply the first by 2 and the second by 3 and subtract: 5f(3)=160, giving f(3)=32.",
+    "hint": "Write equations at 3 and −3.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q12",
+    "number": "12",
+    "stem": "A and B independently arrive uniformly between 4 P.M. and 5 P.M. Each waits at most 15 minutes for the other. What is the probability they meet?",
+    "options": [
+      "15/16",
+      "7/16",
+      "5/24",
+      "22/175"
+    ],
+    "correctIndex": 1,
+    "answer": "7/16",
+    "solution": "Represent arrival times by a uniform point in a 60×60 square. They miss one another when their times differ by more than 15 minutes, forming two triangles with combined area 45². The meeting probability is 1−45²/60²=7/16.",
+    "hint": "Draw the strip where the arrival-time difference is at most 15.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q13",
+    "number": "13",
+    "stem": "For positive x₁,x₂,x₃, the expression x₁/x₂+x₂/x₃+x₃/x₁ is always",
+    "options": [
+      "≤3",
+      "≤3^(1/3)",
+      "≥3",
+      "3"
+    ],
+    "correctIndex": 2,
+    "answer": "At least 3",
+    "solution": "The product of the three positive summands is 1. AM–GM therefore gives their sum at least 3, with equality exactly when x₁=x₂=x₃.",
+    "hint": "Apply AM–GM to the three ratios.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q14",
+    "number": "14",
+    "stem": "Find lim as n→∞ of (1²+2²+⋯+n²)/n³.",
+    "options": [
+      "0",
+      "1/3",
+      "1/6",
+      "1"
+    ],
+    "correctIndex": 1,
+    "answer": "1/3",
+    "solution": "The numerator is n(n+1)(2n+1)/6. Divide by n³ to get (1+1/n)(2+1/n)/6→1/3.",
+    "hint": "Use the sum-of-squares formula.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q15",
+    "number": "15",
+    "stem": "Let odd integer b make x²−7x+12=0 and x²−8x+b=0 share a root. Which root of the second equation is not a root of the first?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctIndex": 3,
+    "answer": "5",
+    "solution": "The first equation has roots 3 and 4. If 4 were shared, the second root would also be 4 and b=16 would be even. Thus 3 is shared; the second equation’s root sum 8 makes the other root 5, with b=15.",
+    "hint": "Use root sums and the parity of the product.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q16",
+    "number": "16",
+    "stem": "For integer n≥9, put μ=n^(1/2)+n^(1/3)+n^(1/4). Which relation is correct?",
+    "options": [
+      "n=μ",
+      "n>μ",
+      "n<μ",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "n>μ",
+    "solution": "For n≥9, √n≤n/3. Since n>1, both n^(1/3) and n^(1/4) are strictly smaller than √n. Consequently μ<3√n≤n.",
+    "hint": "Bound all three powers by √n.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q17",
+    "number": "17",
+    "stem": "Which f:ℝ→ℝ satisfies f(x+y)=f(x)+f(y)?",
+    "options": [
+      "f(z)=z²",
+      "f(z)=az for some real a",
+      "f(z)=log z",
+      "f(z)=eᶻ"
+    ],
+    "correctIndex": 1,
+    "answer": "f(z)=az",
+    "solution": "For f(z)=az, f(x+y)=a(x+y)=ax+ay=f(x)+f(y). Squaring introduces a cross term, the logarithm is not real-valued on all ℝ, and the exponential obeys a multiplicative rather than additive identity.",
+    "hint": "Test the defining identity for each candidate.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q18",
+    "number": "18",
+    "stem": "For which a does det([[x,a,2],[2,x,0],[2,1,1]])=0 have a unique real solution x?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "4"
+    ],
+    "correctIndex": 0,
+    "answer": "a=0",
+    "solution": "Expansion gives x²−4x+4−2a=(x−2)²−2a. There is exactly one real root when a=0, in which case x=2 is a repeated root.",
+    "hint": "Expand the determinant and complete the square.",
+    "topic": "Linear algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q19",
+    "number": "19",
+    "stem": "Let y=det([[f(x),g(x),h(x)],[l,m,n],[a,b,c]]) where l,m,n,a,b,c are nonzero constants. Then dy/dx equals",
+    "options": [
+      "det([[f′(x),g′(x),h′(x)],[0,0,0],[0,0,0]])",
+      "det([[f′(x),g′(x),h′(x)],[0,0,0],[a,b,c]])",
+      "det([[f′(x),g′(x),h′(x)],[l,m,n],[a,b,c]])",
+      "det([[f′(x),g′(x),h′(x)],[l−a,m−b,n−c],[1,1,1]])"
+    ],
+    "correctIndex": 2,
+    "answer": "The determinant with only the first row differentiated.",
+    "solution": "Expand the determinant along its first row. Each cofactor is constant because the other two rows are constant. Differentiating therefore replaces f,g,h by f′,g′,h′ and leaves the lower rows unchanged.",
+    "hint": "Expand along the variable row.",
+    "topic": "Linear algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q20",
+    "number": "20",
+    "stem": "If f(x)=|x−1|+|x−2|+|x−3|, then f is differentiable at",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 0,
+    "answer": "x=0",
+    "solution": "Away from 1,2,3, each absolute-value term is differentiable. At 0 all three arguments are negative and f(x)=6−3x locally, so the derivative is −3. At each listed kink 1,2,3 one term changes slope and differentiability fails.",
+    "hint": "Locate the absolute-value kinks.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q21",
+    "number": "21",
+    "stem": "If (x−a)²+(y−b)²=c², then 1+(dy/dx)² is independent of",
+    "options": [
+      "a",
+      "b",
+      "c",
+      "Both b and c"
+    ],
+    "correctIndex": 1,
+    "answer": "b, the vertical-shift parameter.",
+    "solution": "On a differentiable branch y=b±√(c²−(x−a)²), the derivative is ∓(x−a)/√(c²−(x−a)²). Thus 1+(y′)²=c²/[c²−(x−a)²], which depends on a,c,x but not b.",
+    "hint": "Solve for a branch of y(x); vertical translation does not change its slope.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": "The derivative is considered where the circle defines a differentiable graph; c is a radius and is taken nonzero."
+  },
+  {
+    "id": "2009-PEA-Q22",
+    "number": "22",
+    "stem": "A student finds n book titles of interest, each with m distinguishable copies. He never wants duplicate copies of a title and selects at least one book. How many selections are possible? The source specifies one title with two copies gives two selections.",
+    "options": [
+      "(m+1)ⁿ−1",
+      "nm",
+      "2^(nm)−1",
+      "nm!/[m!(nm−m)!]−1"
+    ],
+    "correctIndex": 0,
+    "answer": "(m+1)ⁿ−1",
+    "solution": "For each title, choose no copy or one of its m individual copies: m+1 alternatives. Choices across n titles give (m+1)ⁿ, and excluding the empty selection leaves (m+1)ⁿ−1.",
+    "hint": "Count m+1 choices for each title, including none.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": "Distinguishable copies are required by the source’s explicit example; the normalized stem makes that convention clear."
+  },
+  {
+    "id": "2009-PEA-Q23",
+    "number": "23",
+    "stem": "Find A,B making f continuous everywhere, where f(x)=Ax−B if x≤−1, f(x)=2x²+3Ax+B if −1<x≤1, and f(x)=4 if x>1.",
+    "options": [
+      "A=B=0",
+      "A=3/4,B=−1/4",
+      "A=1/4,B=3/4",
+      "A=1/2,B=1/2"
+    ],
+    "correctIndex": 1,
+    "answer": "A=3/4,B=−1/4",
+    "solution": "Continuity at −1 requires −A−B=2−3A+B, or A−B=1. Continuity at 1 requires 2+3A+B=4, or 3A+B=2. Solving gives A=3/4 and B=−1/4.",
+    "hint": "Match the adjacent formulas at both break points.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q24",
+    "number": "24",
+    "stem": "Find lim as x→∞ of (3ˣ+3²ˣ)^(1/x).",
+    "options": [
+      "0",
+      "1",
+      "e",
+      "9"
+    ],
+    "correctIndex": 3,
+    "answer": "9",
+    "solution": "Factor 3²ˣ=9ˣ to write the expression as 9(1+3^(−x))^(1/x). The second factor tends to 1 because its logarithm ln(1+3^(−x))/x tends to zero.",
+    "hint": "Factor out the dominant exponential.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q25",
+    "number": "25",
+    "stem": "For 25 pairs a computer obtained ∑X=125,∑X²=650,∑Y=100,∑Y²=460,∑XY=508. The true pairs (8,12),(6,8) were input as (6,14),(8,6). Find the corrected correlation.",
+    "options": [
+      "4/5",
+      "2/3",
+      "1",
+      "5/6"
+    ],
+    "correctIndex": 1,
+    "answer": "2/3",
+    "solution": "Correcting the two pairs leaves ∑X=125,∑Y=100,∑X²=650 unchanged, but gives ∑Y²=460−196−36+144+64=436 and ∑XY=508−84−48+96+48=520. The centered sums are Sₓₓ=25,Sᵧᵧ=36,Sₓᵧ=20. Thus r=20/√(25·36)=2/3.",
+    "hint": "Correct raw sums before computing centered sums.",
+    "topic": "Statistics",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q26",
+    "number": "26",
+    "stem": "The point on y=x²−1 nearest to (2,−0.5) is",
+    "options": [
+      "(1,0)",
+      "(2,3)",
+      "(0,−1)",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "(1,0)",
+    "solution": "The squared distance is D(x)=(x−2)²+(x²−1/2)²=x⁴−4x+17/4. Its derivative 4(x³−1) is negative for x<1 and positive for x>1. Thus the global minimum occurs at x=1, where y=0.",
+    "hint": "Minimize squared distance instead of distance.",
+    "topic": "Calculus",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q27",
+    "number": "27",
+    "stem": "If X has density f(x)=kx(2−x) on 0≤x≤2, its mean is",
+    "options": [
+      "1/2",
+      "1",
+      "1/5",
+      "3/4"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "The density is symmetric about x=1, since f(1+t)=k(1−t²)=f(1−t). A distribution symmetric about 1 on [0,2] has mean 1. Direct normalization gives k=3/4 and the same result.",
+    "hint": "Use symmetry about the midpoint of the support.",
+    "topic": "Probability",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q28",
+    "number": "28",
+    "stem": "Let X be the integers at least 8 and f:X→ℝ satisfy f(x+y)=f(xy) for integers x,y≥4. If f(8)=9, find f(9).",
+    "options": [
+      "8",
+      "9",
+      "64",
+      "81"
+    ],
+    "correctIndex": 1,
+    "answer": "9",
+    "solution": "Using (x,y)=(4,4),(8,8),(4,16),(4,5), respectively, gives f(8)=f(16), f(16)=f(64), f(20)=f(64), and f(9)=f(20). Hence f(9)=f(8)=9.",
+    "hint": "Find a chain linking 8 and 9 through sums and products.",
+    "topic": "Algebra",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": "The integer domain makes integer x,y the meaningful interpretation of the source’s x,y≥4."
+  },
+  {
+    "id": "2009-PEA-Q29",
+    "number": "29",
+    "stem": "Let f(x)=(x−1)(x−2)(x−3). Which is true?",
+    "options": [
+      "It decreases on [2−1/√3,2+1/√3]",
+      "It increases on [2−1/√3,2+1/√3]",
+      "It decreases on (−∞,2−1/√3]",
+      "It decreases on [2,3]"
+    ],
+    "correctIndex": 0,
+    "answer": "It decreases on [2−1/√3,2+1/√3].",
+    "solution": "Writing u=x−2 gives f=u³−u, so f′=3u²−1. This is nonpositive precisely when |u|≤1/√3, giving the stated decreasing interval.",
+    "hint": "Translate x by 2 before differentiating.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2009-PEA-Q30",
+    "number": "30",
+    "stem": "An open-top box is formed from an 8 m by 5 m rectangle by removing squares of side x at all four corners and folding the sides. Its largest volume in cubic metres is",
+    "options": [
+      "15",
+      "12",
+      "20",
+      "18"
+    ],
+    "correctIndex": 3,
+    "answer": "18 m³",
+    "solution": "The volume is V(x)=x(8−2x)(5−2x)=40x−26x²+4x³ for 0<x<2.5. Its derivative is 4(3x−10)(x−1), so it increases to x=1 and decreases afterward in the allowed domain. V(1)=1·6·3=18.",
+    "hint": "Write the box dimensions after the corner cuts.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  }
+]

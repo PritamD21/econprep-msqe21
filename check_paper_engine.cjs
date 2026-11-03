@@ -1,0 +1,15 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert');
+const bank=JSON.parse(fs.readFileSync('dist/paper-bank.json','utf8'));
+const nodes=new Map();const $=selector=>{if(!nodes.has(selector))nodes.set(selector,{innerHTML:'',textContent:'',value:'120'});return nodes.get(selector)};
+const ctx={PAPER_BANK:bank,Map,Set,Number,String,Boolean,Date,Math,console,test:null,tick:null,track:'PEA',bookmarks:[],history:[],questions:{},safe:s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),heading:(a,b)=>`<h1>${a}</h1><p>${b||''}</p>`,$,$$:()=>[],navigate:()=>{},save:()=>{},clearInterval:()=>{},document:{addEventListener:()=>{}},window:{scrollTo:()=>{}}};
+vm.createContext(ctx);vm.runInContext(fs.readFileSync('dist/paper-engine.js','utf8'),ctx);
+vm.runInContext(`test={paperId:'2023-PEA',track:'PEA',answers:{0:0,1:1,2:0},reviewed:{},helpUsed:{},startedAt:Date.now(),done:false};finish();`,ctx);
+const record=ctx.history.at(-1),paper=bank.papers.find(p=>p.id==='2023-PEA');
+assert(record.scorableTotal===paper.checkedCount);assert(record.details[0].status==='ungraded');assert(record.details[5].status==='ungraded');
+assert(record.score===bank.questions.filter(q=>q.paperId===paper.id&&q.status==='verified'&&record.details.findIndex(d=>d.id===q.id)<3&&[0,1,0][record.details.findIndex(d=>d.id===q.id)]===q.correctIndex).length);
+assert(nodes.get('#content').innerHTML.includes('source-issue items excluded'));
+vm.runInContext(`test={paperId:'2020-PEA',track:'PEA',index:0,answers:{},reviewed:{},helpUsed:{},startedAt:Date.now(),end:Date.now()+60000,tab:'question',done:false};renderTest();`,ctx);
+assert(nodes.get('#content').innerHTML.includes('question-images/2020-PEA-Q1'));assert((nodes.get('#content').innerHTML.match(/type="radio"/g)||[]).length===4);
+vm.runInContext(`test={paperId:'2020-PEB',track:'PEB',index:0,answers:{},reviewed:{},helpUsed:{},startedAt:Date.now(),end:Date.now()+60000,tab:'hint',done:false};renderTest();`,ctx);
+const html=nodes.get('#content').innerHTML;assert(html.includes('hint-panel'));assert(!/textarea|type="radio"|contenteditable/.test(html));assert(html.includes('A1'));
+console.log('Real bank grading excludes flagged items; image MCQs and grouped PEB hint-only practice render correctly.');

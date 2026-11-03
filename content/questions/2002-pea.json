@@ -1,0 +1,293 @@
+[
+  {
+    "id": "2002-PEA-Q1",
+    "number": "1",
+    "stem": "The function f(x)=|x| is",
+    "options": [
+      "Both continuous and differentiable at x=0",
+      "Neither continuous nor differentiable at x=0",
+      "Continuous but not differentiable at x=0",
+      "Differentiable but not continuous at x=0"
+    ],
+    "correctIndex": 2,
+    "answer": "Continuous but not differentiable at zero",
+    "solution": "The limit of |x| at zero is zero, but the left derivative is −1 and the right derivative is 1.",
+    "hint": "Compare the one-sided derivatives.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q2",
+    "number": "2",
+    "stem": "Let f(x)=f(−x) for every real x. If f′(0) exists, it equals",
+    "options": [
+      "0",
+      "−1",
+      "1",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "The difference quotient at −h is the negative of that at h because f(−h)=f(h). If both converge to the same derivative, it must equal its negative and therefore be zero.",
+    "hint": "Use evenness in the difference quotient.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q3",
+    "number": "3",
+    "stem": "Let aₙ=1/n and bₙ=1/n². Then limₙ→∞aₙ/bₙ is",
+    "options": [
+      "0",
+      "+∞",
+      "Not defined",
+      "1"
+    ],
+    "correctIndex": 1,
+    "answer": "+∞",
+    "solution": "The quotient (1/n)/(1/n²) equals n and therefore diverges to positive infinity.",
+    "hint": "Simplify the quotient first.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q4",
+    "number": "4",
+    "stem": "Suppose dX(t)/dt=3t^(1/2). The dependence of X(t) on X(0) is",
+    "options": [
+      "X(0)+3t^(1/2)",
+      "X(0)+3t^(3/2)",
+      "X(0)+2t^(3/2)",
+      "X(0)+2t^(1/2)"
+    ],
+    "correctIndex": 2,
+    "answer": "X(t)=X(0)+2t^(3/2)",
+    "solution": "Integrate from 0 to t: X(t)−X(0)=∫₀ᵗ3s^(1/2)ds=2t^(3/2).",
+    "hint": "Integrate the rate of change.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q5",
+    "number": "5",
+    "stem": "The second-order Taylor expansion of 1/(1+x) about x₀=1 is",
+    "options": [
+      "1/2+1/[2(1+x)]+remainder",
+      "1/2−(x−1)/8+(x−1)²/4+remainder",
+      "1/2+(x−1)/2+(x−1)²/8+remainder",
+      "1/2−(x−1)/4+(x−1)²/8+remainder"
+    ],
+    "correctIndex": 3,
+    "answer": "1/2−(x−1)/4+(x−1)²/8+remainder",
+    "solution": "For f=1/(1+x), f(1)=1/2, f′(1)=−1/4 and f″(1)=1/4. Taylor’s formula gives f(1)+f′(1)(x−1)+f″(1)(x−1)²/2.",
+    "hint": "Compute the first two derivatives at 1.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q6",
+    "number": "6",
+    "stem": "The limit of the sequence +1,−1,+1,−1,…",
+    "options": [
+      "Does not exist",
+      "Is 1",
+      "Is −1",
+      "Is 0"
+    ],
+    "correctIndex": 0,
+    "answer": "Does not exist",
+    "solution": "Odd terms equal 1 and even terms equal −1, giving two distinct subsequential limits.",
+    "hint": "Compare the odd and even subsequences.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q7",
+    "number": "7",
+    "stem": "A and B are n×n matrices with det(AB)=0. Which statement must be true?",
+    "options": [
+      "det(A+B)=0",
+      "A and B are both nonsingular",
+      "At least one of A and B is singular",
+      "AB=BA"
+    ],
+    "correctIndex": 2,
+    "answer": "At least one factor is singular",
+    "solution": "The multiplicative determinant identity gives det(A)det(B)=0. Hence at least one determinant is zero, which is precisely singularity.",
+    "hint": "Use det(AB)=det(A)det(B).",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q8",
+    "number": "8",
+    "stem": "The matrix [[a,b,c],[b,c,a],[c,a,b]] is nonsingular only if",
+    "options": [
+      "a≠b, b≠c, c≠a",
+      "a≠b or b≠c or c≠a",
+      "a+b+c≠0",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "Both the second and third conditions are necessary",
+    "solution": "Its determinant is −(a+b+c)(a²+b²+c²−ab−bc−ca). Nonsingularity requires a+b+c≠0 and also not all a,b,c equal. Therefore both B and C are necessary conditions; A is stronger than necessary. The single-choice wording is ambiguous.",
+    "hint": "Factor the determinant and distinguish necessary from sufficient conditions.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Source labels the last option (E), not (D). B and C are both correct under the printed “only if”.",
+    "sourceOptionLabels": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "id": "2002-PEA-Q9",
+    "number": "9",
+    "stem": "Maximize 2x²+y² subject to x+y≤1 and x,y≥0. An optimizing value of x is",
+    "options": [
+      "1/2",
+      "2/3",
+      "1",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "x=1",
+    "solution": "Since x²+y²≤(x+y)²≤1 and x²≤1, 2x²+y²≤2. Equality occurs at (x,y)=(1,0).",
+    "hint": "Compare with the value at the feasible vertices.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q10",
+    "number": "10",
+    "stem": "In what ratio should a given line be divided so the rectangle with those two side lengths has maximum area?",
+    "options": [
+      "1:1",
+      "4:3",
+      "3:2",
+      "(√5+1):(√5−1)"
+    ],
+    "correctIndex": 0,
+    "answer": "1:1",
+    "solution": "If the total length is L, the area is x(L−x)=L²/4−(x−L/2)². Its maximum occurs when both parts equal L/2.",
+    "hint": "Complete the square in the area.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q11",
+    "number": "11",
+    "stem": "The derivative with respect to a of ∫ₐ¹⁰⁰x dx is",
+    "options": [
+      "a",
+      "−a",
+      "a²",
+      "100a"
+    ],
+    "correctIndex": 1,
+    "answer": "−a",
+    "solution": "The fundamental theorem with a variable lower limit gives d/da ∫ₐ¹⁰⁰x dx=−a.",
+    "hint": "A variable lower integration limit introduces a minus sign.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q12",
+    "number": "12",
+    "stem": "For the sequence 1,3,8,19,42,…, the next number is",
+    "options": [
+      "65",
+      "75",
+      "89",
+      "101"
+    ],
+    "correctIndex": 2,
+    "answer": "89 under the standard difference pattern",
+    "solution": "The first differences are 2,5,11,23, each twice its predecessor plus 1. Continuing this pattern gives the next difference 47 and next term 42+47=89.",
+    "hint": "Study the successive differences.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "As with finite sequence puzzles, the continuation is inferred from the simplest indicated pattern, not uniquely determined by the finite terms."
+  },
+  {
+    "id": "2002-PEA-Q13",
+    "number": "13",
+    "stem": "The tangent to f(x)=x² at x=3 is",
+    "options": [
+      "y=6x−9",
+      "y=3x",
+      "y=12x−27",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "y=6x−9",
+    "solution": "At x=3 the point is (3,9) and the slope is f′(3)=6. Thus y−9=6(x−3), or y=6x−9.",
+    "hint": "Use point-slope form with the derivative.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2002-PEA-Q14",
+    "number": "14",
+    "stem": "For 0<x<1, find the sum 1²+2²x+3²x²+4²x³+⋯.",
+    "options": [
+      "1",
+      "(1−x)⁻¹",
+      "(1+2x)(1+x)⁻¹",
+      "(1+x)(1−x⁻³)"
+    ],
+    "correctIndex": null,
+    "answer": "The sum is (1+x)/(1−x)³; no printed alternative matches",
+    "solution": "Differentiating Σₙ≥₁nxⁿ=x/(1−x)² gives Σₙ≥₁n²xⁿ⁻¹=(1+x)/(1−x)³. The last alternative places −3 on x inside the parentheses, which makes it negative on 0<x<1 and cannot equal this positive sum.",
+    "hint": "Differentiate the series for Σnxⁿ.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "A close-up of the source confirms choice D is printed (1+x)(1−x^(−3)), rather than the intended (1+x)(1−x)^(−3). No “none” alternative exists."
+  },
+  {
+    "id": "2002-PEA-Q15",
+    "number": "15",
+    "stem": "Maximize x₁+x₂ subject to x₁+2x₂≤4, x₁+6x₂≤6, x₁−2x₂≤2, x₁,x₂≥0. An optimal solution is",
+    "options": [
+      "x₁=4,x₂=0",
+      "x₁=0,x₂=1",
+      "x₁=3,x₂=1/2",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "(3,1/2)",
+    "solution": "Add 3/4 of the first inequality to 1/4 of the third: x₁+x₂≤3.5. The point (3,1/2) is feasible, including equality in the second constraint, and attains 3.5. Hence it is optimal.",
+    "hint": "Construct an upper bound by combining two constraints.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  }
+]

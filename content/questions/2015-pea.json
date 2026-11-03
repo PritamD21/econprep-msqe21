@@ -1,0 +1,578 @@
+[
+  {
+    "id": "2015-PEA-Q1",
+    "number": "1",
+    "stem": "Find lim as x→0⁺ of sin({√x})/{√x}, where {x} is the decimal part of x.",
+    "options": [
+      "0",
+      "1",
+      "Non-existent",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "For 0<x<1, {√x}=√x. Set t=√x; then t→0⁺ and sin t/t→1.",
+    "hint": "Near zero, √x lies between zero and one.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q2",
+    "number": "2",
+    "stem": "f:[0,1]→[0,1] is continuous. Then it is true that",
+    "options": [
+      "f(0)=0, f(1)=1",
+      "f is differentiable only at x=1/2",
+      "f′(x) is constant for all x∈(0,1)",
+      "f(x)=x for at least one x∈[0,1]"
+    ],
+    "correctIndex": 3,
+    "answer": "There is at least one fixed point.",
+    "solution": "Let h(x)=f(x)−x. This function is continuous, with h(0)=f(0)≥0 and h(1)=f(1)−1≤0. By the intermediate value theorem, h vanishes somewhere in [0,1].",
+    "hint": "Apply the intermediate value theorem to f(x)−x.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q3",
+    "number": "3",
+    "stem": "f(x)=|x−2|+|x−4|. Then f is",
+    "options": [
+      "Continuously differentiable at x=2",
+      "Differentiable but not continuously differentiable at x=2",
+      "f has both left and right derivatives at x=2",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Both one-sided derivatives exist.",
+    "solution": "For x<2, f(x)=6−2x, with slope −2. For 2<x<4, f(x)=2, with slope 0. Thus the left and right derivatives at 2 exist but are unequal, so f is not differentiable there.",
+    "hint": "Write the absolute values separately on either side of 2.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q4",
+    "number": "4",
+    "stem": "In an examination of 100 students, 70 passed Mathematics, 65 Physics and 55 Chemistry. Of these, 35 passed all three, 50 passed Mathematics and Physics, 45 Mathematics and Chemistry, and 40 Physics and Chemistry. How many passed exactly one subject?",
+    "options": [
+      "30",
+      "25",
+      "10",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "25",
+    "solution": "The counts passing only Mathematics, Physics and Chemistry are respectively 70−50−45+35=10, 65−50−40+35=10, and 55−45−40+35=5. Their sum is 25.",
+    "hint": "Subtract pairwise overlaps, then restore the triple overlap for each subject.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q5",
+    "number": "5",
+    "stem": "The square of the matrix [[a,b],[c,0]] is a null matrix if and only if",
+    "options": [
+      "a=b=c=0",
+      "a=c=0, b is any non-zero real number",
+      "a=b=0, c is any non-zero real number",
+      "a=0 and either b=0 or c=0"
+    ],
+    "correctIndex": 3,
+    "answer": "a=0 and bc=0",
+    "solution": "The square is [[a²+bc,ab],[ac,bc]]. If it vanishes, bc=0 and a²+bc=0 force a=0. Conversely, a=0 and bc=0 make every entry vanish.",
+    "hint": "Compute all four entries of the square.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q6",
+    "number": "6",
+    "stem": "If positive numbers x,y,z are in harmonic progression, then log(x+z)+log(x−2y+z) equals",
+    "options": [
+      "4 log(x−z)",
+      "3 log(x−z)",
+      "2 log(x−z)",
+      "log(x−z)"
+    ],
+    "correctIndex": null,
+    "answer": "Intended answer (c), with log|x−z| or an additional assumption x>z.",
+    "solution": "Harmonic progression gives 2/y=1/x+1/z, hence y=2xz/(x+z). Therefore (x+z)(x−2y+z)=(x−z)² and the sum of logarithms equals log((x−z)²)=2log|x−z| whenever x≠z. The printed options omit the absolute value and the question does not assume x>z. If x<z the left side is defined but all printed logarithms of x−z are not real; if x=z the left side itself is undefined.",
+    "hint": "Use y=2xz/(x+z), then combine the logarithms.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "Real-domain assumptions are missing. Do not silently replace log(x−z) by log|x−z|."
+  },
+  {
+    "id": "2015-PEA-Q7",
+    "number": "7",
+    "stem": "If f(x+2y,x−2y)=xy, then f(x,y) equals",
+    "options": [
+      "(x²−y²)/8",
+      "(x²−y²)/4",
+      "(x²+y²)/4",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "(x²−y²)/8",
+    "solution": "Put u=x+2y and v=x−2y. Then x=(u+v)/2 and y=(u−v)/4, giving xy=(u²−v²)/8. Relabel u,v as x,y.",
+    "hint": "Invert the linear substitution.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q8",
+    "number": "8",
+    "stem": "The domain of f(x)=√(x²−1)−log(√(1−x)), x≥0, is",
+    "options": [
+      "(−∞,−1)",
+      "(−1,0)",
+      "Null set",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "The empty set",
+    "solution": "For the first square root with x≥0, we need x≥1. The logarithm requires √(1−x)>0, so x<1. These conditions cannot both hold.",
+    "hint": "A logarithm requires a strictly positive argument.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q9",
+    "number": "9",
+    "stem": "The graph of y=log(1−2x+x²) intersects the x-axis at",
+    "options": [
+      "0, 2",
+      "0, −2",
+      "2",
+      "0"
+    ],
+    "correctIndex": 0,
+    "answer": "x=0 and x=2",
+    "solution": "At an x-intercept, log((x−1)²)=0, so (x−1)²=1. Thus x=0 or x=2, and the logarithm argument equals 1 at both points.",
+    "hint": "Set the logarithm equal to zero.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q10",
+    "number": "10",
+    "stem": "The sum of two positive integers is 100. The minimum value of the sum of their reciprocals is",
+    "options": [
+      "3/25",
+      "6/25",
+      "1/25",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "1/25",
+    "solution": "For positive integers a+b=100, 1/a+1/b=100/(ab). The product satisfies ab≤((a+b)/2)²=2500, with equality at a=b=50. The minimum is 100/2500=1/25.",
+    "hint": "Maximize the product of the two integers.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q11",
+    "number": "11",
+    "stem": "The range of f(x)=4ˣ+2ˣ+4⁻ˣ+2⁻ˣ+3 for x∈(−∞,∞) is",
+    "options": [
+      "(3/4,∞)",
+      "[3/4,∞)",
+      "(7,∞)",
+      "[7,∞)"
+    ],
+    "correctIndex": 3,
+    "answer": "[7,∞)",
+    "solution": "For every x, 4ˣ+4⁻ˣ≥2 and 2ˣ+2⁻ˣ≥2, so f(x)≥7. Equality occurs at x=0. The function is continuous and tends to infinity as x→∞, so every value at least 7 is attained.",
+    "hint": "Pair each positive term with its reciprocal.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q12",
+    "number": "12",
+    "stem": "The function f:ℝ→ℝ satisfies f(x+y)=f(x)+f(y) for all real x,y, and f(1)=7. Then ∑ from r=1 to n of f(r) equals",
+    "options": [
+      "7n/2",
+      "7(n+1)/2",
+      "7n(n+1)/2",
+      "7n(n+1)"
+    ],
+    "correctIndex": 2,
+    "answer": "7n(n+1)/2",
+    "solution": "Repeated addition gives f(r)=rf(1)=7r for positive integers r. Therefore the sum is 7(1+2+…+n)=7n(n+1)/2. No continuity assumption on f is needed for integer arguments.",
+    "hint": "Use additivity only at integer arguments.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q13",
+    "number": "13",
+    "stem": "Let f and g be differentiable for 0<x<1, with f(0)=g(0)=0 and f(1)=6. Suppose f′(x)=2g′(x) for all x∈(0,1). Then g(1) equals",
+    "options": [
+      "1",
+      "3",
+      "−2",
+      "−1"
+    ],
+    "correctIndex": null,
+    "answer": "Intended answer (b), 3, additionally requiring continuity at the endpoints.",
+    "solution": "On (0,1), h=f−2g has derivative zero and is constant. If f and g are continuous on [0,1], h(0)=0 makes that constant zero, and h(1)=0 yields g(1)=3. But differentiability only on the open interval does not constrain the endpoint values: choose f(x)=6x and g(x)=3x inside the interval and assign g(1) arbitrarily. Thus the printed assumptions do not determine g(1).",
+    "hint": "A zero derivative determines a constant only on the open interval. Check endpoint continuity.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "The supplied PDF does not state continuity at 0 and 1; these are needed for the intended mean-value-theorem argument."
+  },
+  {
+    "id": "2015-PEA-Q14",
+    "number": "14",
+    "stem": "Consider f(x)=ax²+bx+c defined on [1,2]. Then it is always possible to get k∈(1,2) such that",
+    "options": [
+      "k=2a+b",
+      "k=a+2b",
+      "k=3a+b",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "(d) for the literal printed options; likely intended (c) if the left-hand side was f′(k).",
+    "solution": "As printed, take a=b=0. Every right-hand side in (a)–(c) equals 0, so none can equal a number k∈(1,2). Thus (d) is the literal answer. A likely intended application of the mean value theorem is f′(k)=(f(2)−f(1))/(2−1)=3a+b, which would support option (c) only if f′(k), rather than k, were printed.",
+    "hint": "Compute f(2)−f(1), but compare carefully with the actual options.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Visual review confirms all three options begin k=, not f′(k)=. The likely typo makes intended grading uncertain."
+  },
+  {
+    "id": "2015-PEA-Q15",
+    "number": "15",
+    "stem": "A sequence has first term 1/3. Each subsequent term equals the preceding term divided by one more than that preceding term. The 500th term is",
+    "options": [
+      "1/503",
+      "1/501",
+      "1/502",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "1/502",
+    "solution": "If aₙ₊₁=aₙ/(1+aₙ), then 1/aₙ₊₁=1/aₙ+1. Since 1/a₁=3, induction gives 1/aₙ=n+2. Hence a₅₀₀=1/502.",
+    "hint": "Take reciprocals to obtain an arithmetic progression.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q16",
+    "number": "16",
+    "stem": "In how many ways can three persons, each throwing one die once, make a score of 10?",
+    "options": [
+      "6",
+      "18",
+      "27",
+      "36"
+    ],
+    "correctIndex": 2,
+    "answer": "27",
+    "solution": "The number of positive integer triples with sum 10 without upper bounds is C(9,2)=36. If one die is at least 7, subtracting 6 from it gives a positive triple summing to 4, with C(3,2)=3 possibilities. There are three choices of that die and two dice cannot both exceed 6. Therefore the answer is 36−3·3=27.",
+    "hint": "Use stars and bars, then exclude scores above 6.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q17",
+    "number": "17",
+    "stem": "Let a be a positive integer greater than 2. The number of values of x for which ∫ from a to x of (x+y) dy=0 is",
+    "options": [
+      "1",
+      "2",
+      "a",
+      "a+1"
+    ],
+    "correctIndex": 1,
+    "answer": "2",
+    "solution": "Integrating with respect to y gives x(x−a)+(x²−a²)/2=(3x²−2ax−a²)/2=(x−a)(3x+a)/2. The two distinct real roots are x=a and x=−a/3.",
+    "hint": "The x in the integrand is constant during integration with respect to y.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q18",
+    "number": "18",
+    "stem": "Let (x*,y*) solve max f(x,y) subject to g₁(x,y)≤c₁, and let (x′,y′) solve the same problem with the added constraint g₂(x,y)≤c₂. Which is always true?",
+    "options": [
+      "f(x*,y*)≥f(x′,y′)",
+      "f(x*,y*)≤f(x′,y′)",
+      "|f(x*,y*)|≥|f(x′,y′)|",
+      "|f(x*,y*)|≤|f(x′,y′)|"
+    ],
+    "correctIndex": 0,
+    "answer": "f(x*,y*)≥f(x′,y′)",
+    "solution": "Adding a constraint shrinks the feasible set. The new optimizer was feasible for the original maximization, so its objective value cannot exceed the original maximum. Absolute values need not preserve this inequality.",
+    "hint": "Compare the two feasible sets.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q19",
+    "number": "19",
+    "stem": "Let (x*,y*) be a real solution of max [√x+y] subject to px+y≤m, where m>0,p>0 and y*∈(0,m). Which is true?",
+    "options": [
+      "x* depends only on p",
+      "x* depends only on m",
+      "x* depends on both p and m",
+      "x* is independent of both p and m"
+    ],
+    "correctIndex": 0,
+    "answer": "x*=1/(4p²), depending only on p.",
+    "solution": "Because the objective is increasing in y, the budget binds: y=m−px. The objective is √x+m−px. Its derivative for x>0 is 1/(2√x)−p, which vanishes at x=1/(4p²); the second derivative is negative. The given interior condition ensures this optimum is compatible with y*∈(0,m).",
+    "hint": "Substitute y=m−px and differentiate.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q20",
+    "number": "20",
+    "stem": "Let 0<a₁<a₂<1 and f(x;a₁,a₂)=−|x−a₁|−|x−a₂|. Let X be the set of x maximizing this function. Then",
+    "options": [
+      "X={x:x∈{a₁/2,(1+a₂)/2}}",
+      "X={x:x∈{a₁,a₂}}",
+      "X={x:x∈{0,(a₁+a₂)/2,1}}",
+      "X={x:x∈[a₁,a₂]}"
+    ],
+    "correctIndex": 3,
+    "answer": "X=[a₁,a₂]",
+    "solution": "The triangle inequality gives |x−a₁|+|x−a₂|≥a₂−a₁, with equality exactly when x lies between a₁ and a₂. Negating the sum therefore produces its maximum throughout [a₁,a₂].",
+    "hint": "Minimize the sum of distances to the two points.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q21",
+    "number": "21",
+    "stem": "Let A and B be events with positive probability on the same sample space. Find the correct answer.",
+    "options": [
+      "P(A|B)>P(A) always",
+      "P(A|B)<P(A) always",
+      "P(A|B)>P(B) always",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the above",
+    "solution": "If A and B are independent, P(A|B)=P(A), disproving both strict comparisons with P(A). Taking A=B also shows conditional probability can equal 1; alternatively choosing independent events with P(A)<P(B) disproves the third proposed universal inequality.",
+    "hint": "Independent events provide a simple counterexample to strict inequalities.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q22",
+    "number": "22",
+    "stem": "Let A and B be mutually exclusive events with positive probability on the same sample space. Find the correct answer.",
+    "options": [
+      "A and B are necessarily independent",
+      "A and B are necessarily dependent",
+      "A and B are necessarily equally likely",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "They are necessarily dependent (printed option label (c)).",
+    "solution": "Mutual exclusivity gives P(A∩B)=0. Independence would require P(A∩B)=P(A)P(B)>0 because both probabilities are positive. The contradiction proves dependence.",
+    "hint": "Compare P(A∩B) with P(A)P(B).",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "The four source labels are (b),(c),(d),(e), an offset labeling error. The correct choice is the second listed option; correctIndex=1 indexes the options array, not the printed letter.",
+    "sourceOptionLabels": [
+      "b",
+      "c",
+      "d",
+      "e"
+    ]
+  },
+  {
+    "id": "2015-PEA-Q23",
+    "number": "23",
+    "stem": "The salaries of 16 football-club players, in thousands of rupees, are 100,100,111,114,165,210,225,225,230,575,1200,1900,2100,2100,2650,3300. Every player receives an extra Rs. 200,000 bonus. Find the correct answer.",
+    "options": [
+      "The mean increases by Rs. 200,000 but the median does not change",
+      "Both mean and median increase by Rs. 200,000",
+      "Both mean and standard deviation change",
+      "Standard deviation increases but the median is unchanged"
+    ],
+    "correctIndex": 1,
+    "answer": "Both mean and median increase by Rs. 200,000.",
+    "solution": "Adding the same constant to every observation translates both the arithmetic mean and every order statistic, hence the median, by that constant. Deviations from the mean remain unchanged, so standard deviation is unchanged.",
+    "hint": "Adding a constant shifts location but not dispersion.",
+    "topic": "Statistics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Question begins on PDF page 5 and options continue on PDF page 6."
+  },
+  {
+    "id": "2015-PEA-Q24",
+    "number": "24",
+    "stem": "Let Pr(X=2)=1. Define μ₂ₙ=E[(X−μ)²ⁿ], μ=E(X). Then:",
+    "options": [
+      "μ₂ₙ=2",
+      "μ₂ₙ=0",
+      "μ₂ₙ>0",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "μ₂ₙ=0 for positive integers n.",
+    "solution": "Since X=2 almost surely, μ=2 and X−μ=0 almost surely. Therefore every positive-order central moment, including μ₂ₙ, is zero.",
+    "hint": "A degenerate random variable has no deviations from its mean.",
+    "topic": "Statistics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q25",
+    "number": "25",
+    "stem": "Consider a positively skewed distribution. Find the correct answer on the position of the mean and the median.",
+    "options": [
+      "Mean is greater than median",
+      "Mean is smaller than median",
+      "Mean and median are the same",
+      "None of the above"
+    ],
+    "correctIndex": null,
+    "answer": "Conventional textbook answer (a); not guaranteed by positive third-moment skewness alone.",
+    "solution": "A conventional right-skewed unimodal distribution is commonly summarized as mean greater than median. This is a heuristic, not a theorem for every distribution with positive standardized third central moment. For example, put masses 0.49,0.50,0.01 at −1,1,10. The mean is 0.11, the unique median is 1, yet the third central moment is positive (approximately 9.35). Thus the source needs a precise skewness convention or distributional assumptions before universal grading.",
+    "hint": "Check what definition of positive skewness the question intends.",
+    "topic": "Statistics",
+    "sourcePage": 6,
+    "status": "needs_review",
+    "notes": "The familiar mean–median ordering requires additional assumptions; no distribution family or skewness definition is specified."
+  },
+  {
+    "id": "2015-PEA-Q26",
+    "number": "26",
+    "stem": "Puja and Priya repeatedly play a fair game, each staking one rupee per game. Initially Puja has a rupees and Priya b rupees, where a>b. What is the probability that Puja wins all Priya’s money when play continues until one loses all her money?",
+    "options": [
+      "1",
+      "0",
+      "b/(a+b)",
+      "a/(a+b)"
+    ],
+    "correctIndex": 3,
+    "answer": "a/(a+b)",
+    "solution": "Let u(i) be the chance of reaching capital a+b before 0 from capital i. Fairness gives u(i)=[u(i−1)+u(i+1)]/2, with u(0)=0 and u(a+b)=1. The unique solution is u(i)=i/(a+b), so u(a)=a/(a+b).",
+    "hint": "Use the fair gambler’s-ruin probability.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q27",
+    "number": "27",
+    "stem": "An urn contains w white balls and b black balls, with w,b>0. Two balls are drawn in order without replacement. Let Wᵢ mean white on draw i. Which is true?",
+    "options": [
+      "P(W₂)=P(W₁)=w/(w+b)",
+      "P(W₂)=P(W₁)=(w−1)/(w+b−1)",
+      "P(W₁)=w/(w+b), P(W₂)=(w−1)/(w+b−1)",
+      "P(W₁)=w/(w+b), P(W₂)=w(w−1)/[(w−b)(w+b−1)]"
+    ],
+    "correctIndex": 0,
+    "answer": "P(W₂)=P(W₁)=w/(w+b)",
+    "solution": "Every ball is equally likely to appear in either draw position, so both marginal probabilities equal the initial white fraction w/(w+b). The fraction (w−1)/(w+b−1) is conditional on the first ball being white, not the unconditional second-draw probability.",
+    "hint": "Use symmetry of the two positions.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "The unusual denominator w−b in source option (d) is preserved as printed."
+  },
+  {
+    "id": "2015-PEA-Q28",
+    "number": "28",
+    "stem": "A bag contains four papers labeled 1,2,3,4 without repeats. Draw three in order without replacement to form a three-digit number. What is the probability it is a multiple of 3?",
+    "options": [
+      "3/4",
+      "1/2",
+      "1/4",
+      "9/24"
+    ],
+    "correctIndex": 1,
+    "answer": "1/2",
+    "solution": "A number is divisible by 3 precisely when its digit sum is. The sum of all four labels is 10, so the chosen three sum to a multiple of 3 exactly when the omitted digit is 1 or 4. Each omitted digit is equally likely, giving probability 2/4=1/2.",
+    "hint": "Use the digit-sum divisibility rule.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q29",
+    "number": "29",
+    "stem": "X takes values −2,−1,0,1,2, each with probability 1/5, and Y=|X|. Which statement is true?",
+    "options": [
+      "X and Y are independent, and their Pearson correlation is 0",
+      "X and Y are dependent, and their Pearson correlation is 0",
+      "X and Y are independent, and their Pearson correlation is 1",
+      "X and Y are dependent, and their Pearson correlation is 1"
+    ],
+    "correctIndex": 1,
+    "answer": "Dependent, with correlation 0.",
+    "solution": "Y is a nonconstant deterministic function of X, so they are dependent. Symmetry gives E(X)=0 and E(X|X|)=0. Consequently Cov(X,Y)=E(XY)−E(X)E(Y)=0. Both variances are positive, so the correlation is zero.",
+    "hint": "Dependence need not imply nonzero correlation.",
+    "topic": "Statistics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2015-PEA-Q30",
+    "number": "30",
+    "stem": "Two friends arrive independently and uniformly at a metro station between 7:00 and 7:20. Each waits up to five minutes for the other. What is the probability that they meet?",
+    "options": [
+      "5/20",
+      "25/400",
+      "10/20",
+      "7/16"
+    ],
+    "correctIndex": 3,
+    "answer": "7/16",
+    "solution": "Let arrival times be U,V measured in minutes after 7:00. Their joint sample space is a square of area 20²=400. They fail to meet when |U−V|>5, the union of two right triangles of total area 2·15²/2=225. Therefore the meeting probability is (400−225)/400=7/16.",
+    "hint": "Draw the strip |U−V|≤5 in a 20-by-20 square.",
+    "topic": "Probability",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "Independent arrivals are the standard implied interpretation of the printed uniformly random arrivals."
+  }
+]

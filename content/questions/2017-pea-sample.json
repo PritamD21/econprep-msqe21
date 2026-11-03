@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2017-SAMPLE-PEA-Q1",
+    "number": "1",
+    "stem": "Let f,g:ℝ→ℝ have f(x)=ax+b and g(x)=cx+d. Then f(g(x))=g(f(x)) holds if and only if",
+    "options": [
+      "f(a)=g(c)",
+      "f(b)=g(b)",
+      "f(d)=g(b)",
+      "f(c)=g(a)"
+    ],
+    "correctIndex": 2,
+    "answer": "f(d)=g(b)",
+    "solution": "The compositions are acx+ad+b and acx+bc+d. Their x coefficients already agree, so equality is equivalent to ad+b=bc+d, which is f(d)=g(b).",
+    "hint": "Compare the constant terms of the two compositions.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q2",
+    "number": "2",
+    "stem": "A box has 90 good and 10 defective screws. Ten screws are drawn without replacement. The probability none is defective is",
+    "options": [
+      "C(90,10)/C(100,10)",
+      "90¹⁰/100¹⁰",
+      "P(90,10)/P(100,10)",
+      "None of the above"
+    ],
+    "correctIndex": null,
+    "answer": "Both A and C equal the correct probability",
+    "solution": "There are C(100,10) equally likely unordered samples, with C(90,10) all-good samples. Thus A is correct. But P(90,10)/P(100,10)=(10!C(90,10))/(10!C(100,10)) gives exactly the same number, so C is also correct.",
+    "hint": "Compare the ordered and unordered sample counts.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "The source says only one alternative is correct, but A and C are identical."
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q3",
+    "number": "3",
+    "stem": "How many ordered integer pairs (x,y) satisfy x²+6x+y²=4?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "answer": "8",
+    "solution": "Completing the square gives (x+3)²+y²=13. The integer square decompositions are 4+9 and 9+4. Each gives four independent sign choices, for a total of 8 pairs.",
+    "hint": "Translate x and express 13 as a sum of two squares.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q4",
+    "number": "4",
+    "stem": "Find limₓ→−∞[3x²−sin(5x)]/(x²+2).",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "answer": "3",
+    "solution": "Divide by x². The sine term divided by x² tends to zero because sine is bounded, giving (3−0)/(1+0)=3.",
+    "hint": "Use boundedness of sine and compare leading powers.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q5",
+    "number": "5",
+    "stem": "The smallest integer leaving remainders 2,4,6,1 on division by 3,5,7,11 respectively is",
+    "options": [
+      "104",
+      "1154",
+      "419",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "419, the least nonnegative solution",
+    "solution": "The first three congruences give N≡−1 mod105, so N=105k−1. Modulo11 this becomes 6k−1≡1, hence k≡4 mod11. The least nonnegative N is 105·4−1=419.",
+    "hint": "Combine the first three remainders before imposing the fourth.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "“Smallest integer” is interpreted in the standard remainder-puzzle sense of least nonnegative integer; over all integers no least representative exists."
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q6",
+    "number": "6",
+    "stem": "For 30 people, what is the probability that exactly six months contain two birthdays each and the other six contain three birthdays each?",
+    "options": [
+      "[30!/(2⁶6⁶)]C(12,6)12⁻³⁰",
+      "C(12,6)C(30,12)",
+      "[30!/(2⁶6⁶)]C(12,6)/C(30,12)",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "C(12,6)30!/[(2!)⁶(3!)⁶12³⁰]",
+    "solution": "Choose the six two-birthday months in C(12,6) ways. Assign the 30 distinct people to the prescribed monthly counts in 30!/[(2!)⁶(3!)⁶] ways. Divide by 12³⁰ equally likely month assignments. Since (2!)⁶(3!)⁶=2⁶6⁶, this is A.",
+    "hint": "Choose the month types, then use a multinomial count.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Uses independent birthdays uniformly distributed over the twelve months, implicit in the standard model."
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q7",
+    "number": "7",
+    "stem": "With [x]=floor(x), how many real solutions satisfy |x²−[x]|=1?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "answer": "1, namely x=√2",
+    "solution": "Because x²−floor(x)≥x²−x≥−1/4, it cannot equal −1. Put k=floor(x); the remaining equation is x²=k+1. A negative solution would need k<0, and the only possible k=−1 gives x=0 outside [−1,0). For x≥0, k≤√(k+1)<k+1 holds only at k=1, giving √2.",
+    "hint": "Consider the two signs, then impose the defining interval for the floor.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q8",
+    "number": "8",
+    "stem": "For real a,b,c with a²+b²+c²=1, let A=ab+bc+ca. Then",
+    "options": [
+      "−1/2<A<1",
+      "−1<A<1",
+      "−1/2<A≤1",
+      "−1/2≤A≤1"
+    ],
+    "correctIndex": 3,
+    "answer": "−1/2≤A≤1",
+    "solution": "Since (a+b+c)²=1+2A≥0, A≥−1/2. Also (a−b)²+(b−c)²+(c−a)²=2(1−A)≥0, so A≤1. Equality is attained at zero sum and at a=b=c, respectively.",
+    "hint": "Use sums of squares to bound A.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q9",
+    "number": "9",
+    "stem": "Two dice are rolled. Given that their faces differ, what is the probability one is a six?",
+    "options": [
+      "5/6",
+      "2/3",
+      "1/2",
+      "1/3"
+    ],
+    "correctIndex": 3,
+    "answer": "1/3",
+    "solution": "There are 36−6=30 ordered outcomes with different faces. Ten of them contain a six: (6,j),(j,6), j=1,…,5. The conditional probability is 10/30=1/3.",
+    "hint": "Count outcomes after imposing the condition.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q10",
+    "number": "10",
+    "stem": "For real x, find the minimum of (x²+2)/√(x²+1).",
+    "options": [
+      "1",
+      "2",
+      "√2",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "2",
+    "solution": "Let t=√(x²+1)≥1. The expression is (t²+1)/t=t+1/t≥2, with equality at t=1, or x=0.",
+    "hint": "Rewrite the expression as t+1/t.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q11",
+    "number": "11",
+    "stem": "If f(x)=((a+x)/(b+x))^(a+b+2x), then f′(0) is",
+    "options": [
+      "[2ln(a/b)+(b²−a²)/(ab)](a/(a+b))^(a+b)",
+      "[2ln(a/b)+(b²−a²)/(ab)](a/b)^(a+b)",
+      "[2ln(a/(a+b))+(b²−a²)/(ab)](a/b)^(a+b)",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "[2ln(a/b)+(b²−a²)/(ab)](a/b)^(a+b)",
+    "solution": "Logarithmic differentiation gives f′/f=2ln((a+x)/(b+x))+(a+b+2x)[1/(a+x)−1/(b+x)]. At zero the second term becomes (a+b)(b−a)/(ab)=(b²−a²)/(ab). Multiply by f(0)=(a/b)^(a+b).",
+    "hint": "Take logarithms before differentiating.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "Assumes nonzero a,b and a positive real base near zero so the displayed real power is defined."
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q12",
+    "number": "12",
+    "stem": "A bag contains 2 red,3 green,2 blue balls. Two are drawn without replacement. The probability neither is blue is",
+    "options": [
+      "10/21",
+      "11/21",
+      "2/7",
+      "5/7"
+    ],
+    "correctIndex": 0,
+    "answer": "10/21",
+    "solution": "Five of seven balls are nonblue. Favorable unordered pairs number C(5,2)=10 out of C(7,2)=21, giving 10/21.",
+    "hint": "Count pairs drawn from the five nonblue balls.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q13",
+    "number": "13",
+    "stem": "Permute the letters of COCHIN and arrange the distinct resulting words alphabetically. How many precede COCHIN?",
+    "options": [
+      "96",
+      "360",
+      "192",
+      "48"
+    ],
+    "correctIndex": 0,
+    "answer": "96",
+    "solution": "No word starts before C. Among words starting C, a second letter before O can be C,H,I,N. Each of these four choices leaves four distinct letters and 4!=24 completions. The prefix CO followed by CHIN is already the earliest completion for that prefix. Total 4·24=96.",
+    "hint": "Count lexicographically earlier words at the first differing letter.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q14",
+    "number": "14",
+    "stem": "For f(x,y)=x^(1/3)y^(1/2) on [0,∞)², which holds?",
+    "options": [
+      "Convex and quasiconvex",
+      "Convex but not quasiconvex",
+      "Quasiconvex but not convex",
+      "Neither quasiconvex nor convex"
+    ],
+    "correctIndex": 3,
+    "answer": "Neither quasiconvex nor convex",
+    "solution": "Along y=1, x^(1/3) is strictly concave, ruling out convexity. For quasiconvexity take (1,0),(0,1), both giving f=0; their midpoint gives a positive value, violating f(midpoint)≤max endpoint values.",
+    "hint": "Test a one-dimensional slice and the two axis points.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q15",
+    "number": "15",
+    "stem": "The function f(x,y)=x^(1/3)y^(1/2) from the preceding question is",
+    "options": [
+      "Homogeneous of degree 1 and homothetic",
+      "Homogeneous of degree 1 but not homothetic",
+      "Homothetic but not homogeneous of degree 1",
+      "Neither degree-1 homogeneous nor homothetic"
+    ],
+    "correctIndex": 2,
+    "answer": "Homothetic, homogeneous of degree 5/6",
+    "solution": "Scaling both inputs by t multiplies f by t^(1/3+1/2)=t^(5/6), so it is not degree 1. The increasing transformation f^(6/5)=x^(2/5)y^(3/5) is degree 1 homogeneous, showing homotheticity.",
+    "hint": "Add the exponents and apply an increasing power transformation.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q16",
+    "number": "16",
+    "stem": "Two players begin with Rs.100 each. In each of 10 rounds they independently choose a number uniformly from 1,…,5. If they match, Player 1 pays Player 2 Rs.10; otherwise Player 2 pays Player 1 Rs.10. Expected final money of Player 1 is",
+    "options": [
+      "120",
+      "100",
+      "50",
+      "160"
+    ],
+    "correctIndex": 3,
+    "answer": "Rs.160",
+    "solution": "The match probability is 1/5. Player 1’s expected gain per round is (4/5)10−(1/5)10=6. Over 10 rounds, expected gain is 60, so final expected money is 100+60=160.",
+    "hint": "Calculate one round’s expected gain and add over rounds.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q17",
+    "number": "17",
+    "stem": "On (0,1), let f(x)=x² for rational x and f(x)=2−x² for irrational x. The function is continuous at",
+    "options": [
+      "No point",
+      "Exactly one point",
+      "Exactly two points",
+      "More than two points"
+    ],
+    "correctIndex": 0,
+    "answer": "No point in (0,1)",
+    "solution": "Rationals and irrationals are both dense. Continuity at t would require t²=2−t², hence t²=1. Neither candidate ±1 lies in the open interval.",
+    "hint": "Equate the limits along rational and irrational sequences.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q18",
+    "number": "18",
+    "stem": "What is the last digit of 432^(43^567)?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correctIndex": 3,
+    "answer": "8",
+    "solution": "The last digits of powers of 2 cycle 2,4,8,6 with period 4. The exponent 43^567 is 3^567≡3 mod4 because 567 is odd. Therefore the last digit is the third in the cycle, 8.",
+    "hint": "Reduce the exponent modulo the final-digit cycle length.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q19",
+    "number": "19",
+    "stem": "Two distinct squares are chosen uniformly from an 8×8 chessboard. The probability they share a side is",
+    "options": [
+      "1/9",
+      "1/27",
+      "1/18",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "1/18",
+    "solution": "There are 8·7=56 horizontal and 56 vertical neighboring unordered pairs, totaling 112. All unordered pairs number C(64,2)=2016, so the probability is 112/2016=1/18.",
+    "hint": "Count horizontal and vertical neighboring pairs.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q20",
+    "number": "20",
+    "stem": "For f:[0,1]→ℝ defined by f(x)=x/(x−2), the function is",
+    "options": [
+      "One-to-one",
+      "Onto",
+      "One-to-one and onto",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "One-to-one, not onto ℝ",
+    "solution": "Its derivative −2/(x−2)² is negative throughout [0,1], making it strictly decreasing and injective. Its range is [−1,0], not all of the declared codomain ℝ.",
+    "hint": "Use monotonicity and compare range with codomain.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q21",
+    "number": "21",
+    "stem": "Let f:ℝ²→ℝ³ be f(x,y)=(x+2y,x−y,−2x+3y), and g:ℝ²→ℝ² be g(x,y)=(x+1,y+2).",
+    "options": [
+      "Both f and g are linear",
+      "f is linear and g is not",
+      "f is not linear and g is linear",
+      "Neither is linear"
+    ],
+    "correctIndex": 1,
+    "answer": "f is linear, g is not",
+    "solution": "The function f is multiplication by the constant matrix [[1,2],[1,−1],[−2,3]], hence linear. The translation g sends (0,0) to (1,2) rather than zero, violating linearity.",
+    "hint": "Test the zero vector and matrix representation.",
+    "topic": "Linear algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q22",
+    "number": "22",
+    "stem": "The boys:girls birth ratio in Singapore is 1.09:1. What proportion of families with exactly six children have at least three boys?",
+    "options": [
+      "0.696",
+      "0.315",
+      "0.521",
+      "0.455"
+    ],
+    "correctIndex": 0,
+    "answer": "Approximately 0.696",
+    "solution": "The boy probability is p=1.09/2.09. Under independent births, P(B≥3)=Σₖ₌₃⁶C(6,k)pᵏ(1−p)⁶⁻ᵏ≈0.696.",
+    "hint": "Convert the ratio to a probability, then use a binomial tail.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Uses independent births with the stated common sex ratio."
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q23",
+    "number": "23",
+    "stem": "Let X=[[2,1,0],[0,2,3],[0,0,2]]. Which is true?",
+    "options": [
+      "X⁻¹=(1/8)[[4,−2,0],[0,4,−6],[0,0,4]]",
+      "X⁻¹=(1/8)[[4,0,0],[−2,4,0],[3,−6,4]]",
+      "X⁻¹=(1/8)[[4,−2,3],[0,4,−6],[0,0,4]]",
+      "X⁻¹ does not exist"
+    ],
+    "correctIndex": 2,
+    "answer": "X⁻¹=(1/8)[[4,−2,3],[0,4,−6],[0,0,4]]",
+    "solution": "Back substitution in XX⁻¹=I gives diagonal entries 1/2, entries (1,2)=−1/4 and (2,3)=−3/4, and the induced (1,3) entry 3/8. These match C.",
+    "hint": "Invert the upper-triangular matrix by back substitution.",
+    "topic": "Linear algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q24",
+    "number": "24",
+    "stem": "For two independent children with equal probabilities of girl and boy, what is the probability both are girls given at least one girl?",
+    "options": [
+      "1/4",
+      "2/3",
+      "1/3",
+      "1/2"
+    ],
+    "correctIndex": 2,
+    "answer": "1/3",
+    "solution": "The four equally likely ordered outcomes are GG,GB,BG,BB. Conditioning removes BB, leaving three equally likely possibilities, exactly one of which is GG.",
+    "hint": "List the ordered outcomes after conditioning.",
+    "topic": "Probability",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q25",
+    "number": "25",
+    "stem": "Let U:[0,∞)→ℝ be strictly increasing with U(x)≠−1 everywhere. For V(x)=U(x)/(1+U(x)), which is necessarily true?",
+    "options": [
+      "Strictly increasing",
+      "Strictly decreasing",
+      "Constant",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None without a condition preventing a jump across −1",
+    "solution": "The transformation t/(1+t) increases on each side of −1 but has a downward jump across the excluded singularity. An increasing discontinuous U may skip −1: take U=x−2 for 0≤x<1 and U=x for x≥1. Then U is strictly increasing and avoids −1, but V(0.9)=11>V(1)=1/2. Within each branch V increases, so it is neither globally decreasing nor constant.",
+    "hint": "Avoid assuming a strictly increasing function is continuous.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q26",
+    "number": "26",
+    "stem": "A box contains two fair coins and one two-headed coin. A randomly selected coin is tossed and lands heads. The probability it is the two-headed coin is",
+    "options": [
+      "1/3",
+      "2/3",
+      "1/2",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "1/2",
+    "solution": "Bayes’ rule gives [(1/3)·1]/[(1/3)·1+(2/3)·(1/2)]=(1/3)/(2/3)=1/2.",
+    "hint": "Weight each coin type by its probability of producing heads.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q27",
+    "number": "27",
+    "stem": "A differentiable f:ℝ→ℝ satisfies f(x)f′(x)<0 for every x. Then",
+    "options": [
+      "f is increasing",
+      "|f| is increasing",
+      "f is decreasing",
+      "|f| is decreasing"
+    ],
+    "correctIndex": 3,
+    "answer": "|f| is strictly decreasing",
+    "solution": "The inequality ensures f never vanishes, so |f| is differentiable and (|f|)′=f f′/|f|<0 everywhere. The sign of f itself may be either positive or negative, so its own monotonicity is not determined.",
+    "hint": "Differentiate |f| using the fact that f never equals zero.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q28",
+    "number": "28",
+    "stem": "For independent discrete X,Y with CDFs F_X,F_Y, the CDF of W=min{X,Y} is",
+    "options": [
+      "(F_X(w)+F_Y(w))/2",
+      "min{F_X(w),F_Y(w)}",
+      "F_X(w)F_Y(w)",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "F_W(w)=1−[1−F_X(w)][1−F_Y(w)]",
+    "solution": "The event W>w means both X>w and Y>w. Independence gives P(W>w)=[1−F_X(w)][1−F_Y(w)]. Taking the complement yields F_X+F_Y−F_XF_Y, absent from A–C.",
+    "hint": "Find the survival probability of the minimum.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q29",
+    "number": "29",
+    "stem": "Two dice are thrown simultaneously. The probability their product is even is",
+    "options": [
+      "1/8",
+      "1/4",
+      "3/4",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "3/4",
+    "solution": "The product is odd only when both faces are odd. Each die has odd probability 1/2, so P(odd product)=1/4. Its complement is 3/4.",
+    "hint": "Use the complementary event of two odd faces.",
+    "topic": "Probability",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2017-SAMPLE-PEA-Q30",
+    "number": "30",
+    "stem": "With [x]=floor(x), what is the range of f(x)=sin(π[x])/(x²+5) on ℝ?",
+    "options": [
+      "(−1,1)",
+      "[−1,1]",
+      "{−1,1}",
+      "{0}"
+    ],
+    "correctIndex": 3,
+    "answer": "{0}",
+    "solution": "The floor is always an integer, so sin(πfloor(x))=0 for every x. The denominator is always positive, making f identically zero.",
+    "hint": "Use sine at integer multiples of π.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  }
+]

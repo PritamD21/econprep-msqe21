@@ -1,0 +1,694 @@
+[
+  {
+    "id": "2022-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2022-PEA-Q1-p1.jpg"
+    ],
+    "stem": "Question 1 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · 6·3!·5!",
+    "solution": "Treat the three vowels A,E,I as one block. The block and five consonants form six distinct objects, giving6! arrangements; within the block there are3!. Thus6!·3!=6·5!·3!.",
+    "hint": "Collapse the vowels into one object.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2022-PEA-Q2-p1.jpg"
+    ],
+    "stem": "Question 2 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D",
+    "solution": "The roots are $\\alpha_{1,2}=(1\\pm\\sqrt5)/2$. Since g(x)=x+1, $\\beta_i=\\alpha_i-1$. Hence the alpha roots sum to1, whereas the beta roots sum to−1. D incorrectly equates the former sum to−1; A,B,C follow directly.",
+    "hint": "Translate each original root one unit left.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2022-PEA-Q3-p1.jpg"
+    ],
+    "stem": "Question 3 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · 1−x",
+    "solution": "$1-f(x)=\\sqrt{1-x^2}$. Substitution gives $f(1-f(x))=1-\\sqrt{x^2}=1-x$ because x≥0.",
+    "hint": "Use the domain to simplify the absolute value.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q4",
+    "number": "4",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2022-PEA-Q4-p1.jpg"
+    ],
+    "stem": "Question 4 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · Decreasing and convex",
+    "solution": "$G\\prime=g\\prime(f)f\\prime\\le0$. Also $G^{\\prime\\prime}=g^{\\prime\\prime}(f)(f\\prime)^2+g\\prime(f)f^{\\prime\\prime}\\ge0$: both terms are nonnegative.",
+    "hint": "Differentiate the composition twice.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2022-PEA-Q5-p2.jpg"
+    ],
+    "stem": "Question 5 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · det(A+λI)",
+    "solution": "$C+\\lambda I=B(A+\\lambda I)B^{-1}$. Taking determinants cancels det B and its inverse.",
+    "hint": "Express the shifted matrix as a similarity transform.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2022-PEA-Q6-p2.jpg"
+    ],
+    "stem": "Question 6 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · f′(2)>1",
+    "solution": "The mean value theorem gives f′(c)=[f(2)−f(1)]/(2−1)=1 for some1<c<2. Strict positivity of f″ makes f′ strictly increasing, so f′(2)>1.",
+    "hint": "Compare the endpoint derivative with the chord slope.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q7",
+    "number": "7",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2022-PEA-Q7-p2.jpg"
+    ],
+    "stem": "Question 7 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · 1/e",
+    "solution": "This is the derivative of log x at x=e, equal to1/e. Equivalently apply l’Hôpital’s rule to the0/0 form.",
+    "hint": "Recognize a derivative quotient.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q8",
+    "number": "8",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2022-PEA-Q8-p2.jpg"
+    ],
+    "stem": "Question 8 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "A if continuity at0 is assumed; otherwise not determined.",
+    "solution": "For a convex function continuous at0 with f(0)=0, convex secant slopes f(x)/x increase. But the printed hypotheses only impose f″>0 for x>0: f(0)=0 and f(x)=x²+1 for x>0 satisfy them, while g=x+1/x decreases on(0,1) and increases thereafter. Thus A needs continuity at the endpoint.",
+    "hint": "Check the endpoint regularity before applying convex secant slopes.",
+    "topic": "Calculus",
+    "status": "needs_review",
+    "notes": "Continuity at0 is not explicitly required."
+  },
+  {
+    "id": "2022-PEA-Q9",
+    "number": "9",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2022-PEA-Q9-p2.jpg",
+      "question-images/2022-PEA-Q9-p3.jpg"
+    ],
+    "stem": "Question 9 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · 2⁵−2",
+    "solution": "There are2⁵ functions to a two-element set. Exactly two are constant and hence not onto, leaving30.",
+    "hint": "Subtract the constant functions.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q10",
+    "number": "10",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2022-PEA-Q10-p3.jpg"
+    ],
+    "stem": "Question 10 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "D gives the tight range; all four displayed bounds hold.",
+    "solution": "From $(x-1)^2\\ge0$ and $(x+1)^2\\ge0$ obtain $-1/2\\le x/(1+x^2)\\le1/2$, with equality at−1 and1. Therefore D is the exact range, but each weaker bound A,B,C also holds. The source asks which statement holds rather than which is the tightest.",
+    "hint": "Find the extrema and compare every bound.",
+    "topic": "Calculus",
+    "status": "needs_review",
+    "notes": "Multiple literally true options; D is the intended exact-range answer."
+  },
+  {
+    "id": "2022-PEA-Q11",
+    "number": "11",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2022-PEA-Q11-p3.jpg"
+    ],
+    "stem": "Question 11 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · 3",
+    "solution": "A is invertible because it is3×3 of rank3. Left multiplication by an invertible matrix preserves rank, so rank(AB)=rank B=3.",
+    "hint": "Use invertibility of A.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q12",
+    "number": "12",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2022-PEA-Q12-p3.jpg"
+    ],
+    "stem": "Question 12 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · 5",
+    "solution": "Every row sums to5. Hence multiplication by the nonzero all-ones vector gives five times that vector, proving5 is an eigenvalue.",
+    "hint": "Inspect the row sums.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q13",
+    "number": "13",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2022-PEA-Q13-p3.jpg"
+    ],
+    "stem": "Question 13 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · Infinitely many solutions",
+    "solution": "Singularity implies a nonzero null vector v. Every scalar multiple tv solves Ax=0, so there are infinitely many solutions over the reals.",
+    "hint": "Use the nullspace of a singular matrix.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q14",
+    "number": "14",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2022-PEA-Q14-p3.jpg"
+    ],
+    "stem": "Question 14 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · 1/3",
+    "solution": "Assuming independent equally likely sexes, the four ordered outcomes are BB,BG,GB,GG. Conditioning removes GG and leaves three equally likely outcomes, one BB.",
+    "hint": "List ordered sibling outcomes.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": "Uses the conventional independent, equiprobable model for births."
+  },
+  {
+    "id": "2022-PEA-Q15",
+    "number": "15",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2022-PEA-Q15-p4.jpg"
+    ],
+    "stem": "Question 15 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · 5/12",
+    "solution": "The boxes have black-ball probabilities1/2 and1/3. Each box is chosen with probability1/2, so the total probability is(1/2)(1/2)+(1/2)(1/3)=5/12.",
+    "hint": "Condition on the selected box.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q16",
+    "number": "16",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2022-PEA-Q16-p4.jpg"
+    ],
+    "stem": "Question 16 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · Neither",
+    "solution": "The function is even, so f(1)=f(−1) and it is not one-to-one. Its range is[1,∞), so it is not onto R.",
+    "hint": "Check symmetry and the smallest value.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q17",
+    "number": "17",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2022-PEA-Q17-p4.jpg"
+    ],
+    "stem": "Question 17 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · x*=y*",
+    "solution": "Maximizing A√(xy) gives equal expenditure shares: x*=M/(2P_X), y*=M/(2P_Y). Equal prices therefore imply equal quantities.",
+    "hint": "Use the equal Cobb–Douglas expenditure shares.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q18",
+    "number": "18",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2022-PEA-Q18-p4.jpg",
+      "question-images/2022-PEA-Q18-p5.jpg"
+    ],
+    "stem": "Question 18 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · (M/2,0,3/2)",
+    "solution": "Utility per rupee is3/2 for good1 and2/3 for good2. Spend all income on good1, giving x₁=M/2,x₂=0. The positive-good first-order condition3−2λ=0 yields λ=3/2; the inactive-good derivative2−3λ<0 is consistent.",
+    "hint": "Compare marginal utility per rupee before solving the multiplier.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q19",
+    "number": "19",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2022-PEA-Q19-p5.jpg"
+    ],
+    "stem": "Question 19 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · B satisfies WARP; A does not",
+    "solution": "A spends30 in each month. At the other month’s prices each chosen bundle costs25, creating a strict revealed-preference cycle. B spends30 in each month: the new bundle(4,9) would cost35 at old prices, so it was not affordable then. The old B bundle costs30 at new prices; this one-way relation creates no WARP violation.",
+    "hint": "Price both bundles at both price vectors.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q20",
+    "number": "20",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2022-PEA-Q20-p6.jpg"
+    ],
+    "stem": "Question 20 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · L*=Ȳ/2, K*=Ȳ",
+    "solution": "Producing at least Ȳ requires2L≥Ȳ and K≥Ȳ. Positive factor prices make the least feasible amounts optimal.",
+    "hint": "Translate the minimum technology into two constraints.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q21",
+    "number": "21",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2022-PEA-Q21-p6.jpg"
+    ],
+    "stem": "Question 21 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · (1−2κ₂+κ₁)²/9",
+    "solution": "The best-response equations are $2q_1+q_2=1-\\kappa_1$ and $q_1+2q_2=1-\\kappa_2$. Thus $q_2=(1-2\\kappa_2+\\kappa_1)/3>0$. Its first-order condition implies price−κ₂=q₂, so profit equals q₂².",
+    "hint": "Solve the two Cournot first-order conditions.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q22",
+    "number": "22",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2022-PEA-Q22-p6.jpg"
+    ],
+    "stem": "Question 22 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · Never",
+    "solution": "A numerical utility representation transfers transitivity of the numerical ≥ relation to preferences. A non-transitive relation therefore cannot have such a representation.",
+    "hint": "Use transitivity of real-number comparisons.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q23",
+    "number": "23",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2022-PEA-Q23-p7.jpg"
+    ],
+    "stem": "Question 23 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D",
+    "solution": "Marginal utilities depend on the chosen cardinal representation, whereas MRS and its changes do not. For example a convex increasing transformation can change marginal-utility curvature without changing preferences. Diminishing MU in only one good also leaves cross-effects and the other good uncontrolled, so it cannot guarantee diminishing MRS.",
+    "hint": "Separate an ordinal MRS property from cardinal marginal utility.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q24",
+    "number": "24",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2022-PEA-Q24-p7.jpg"
+    ],
+    "stem": "Question 24 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · A=40, B=50",
+    "solution": "Initially x=y=50. After the price change, x=y=40. To obtain40 units at old prices requires160, so an income cut40 is equivalent. To retain50 units at new prices requires250, so compensation is50.",
+    "hint": "Compute the cost of equal paired quantities at each price vector.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q25",
+    "number": "25",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2022-PEA-Q25-p8.jpg"
+    ],
+    "stem": "Question 25 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · (10,10)",
+    "solution": "Utility is minus squared distance from(10,10), maximized at that bliss point. It costs20 and is feasible under income40; spending all income is unnecessary with satiation.",
+    "hint": "Check whether the bliss point is affordable.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q26",
+    "number": "26",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2022-PEA-Q26-p8.jpg"
+    ],
+    "stem": "Question 26 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C",
+    "solution": "Holding K fixed, output is L/b when L<(b/a)K and K/a when L>(b/a)K. The corresponding labour derivatives are1/b and0. At equality the kink has no ordinary derivative.",
+    "hint": "Locate the kink of the Leontief production function.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q27",
+    "number": "27",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2022-PEA-Q27-p8.jpg"
+    ],
+    "stem": "Question 27 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "D · None of these",
+    "solution": "The aggregate elasticity is $\\sum_i(q_i/Q)e_i$, the quantity-share weighted mean. Since quantities differ, neither the sum nor the unweighted average generally matches it.",
+    "hint": "Differentiate total demand and multiply by price over total quantity.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q28",
+    "number": "28",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2022-PEA-Q28-p8.jpg"
+    ],
+    "stem": "Question 28 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "B · a/(m+2b)",
+    "solution": "A price-taking firm sets P=2q. Market clearing gives mq=a−bP=a−2bq, hence q=a/(m+2b). The constant1 is sunk in the stated short-run cost and does not affect marginal cost.",
+    "hint": "Combine marginal-cost pricing with industry market clearing.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q29",
+    "number": "29",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2022-PEA-Q29-p9.jpg"
+    ],
+    "stem": "Question 29 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "C · −2.5",
+    "solution": "Profit is280q−7q²−800, maximized at q=20. Price is200. Since dq/dp=−1/4, elasticity is(−1/4)(200/20)=−2.5.",
+    "hint": "Find the monopoly quantity, then evaluate point elasticity.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2022-PEA-Q30",
+    "number": "30",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2022-PEA-Q30-p9.jpg"
+    ],
+    "stem": "Question 30 · Original source excerpt",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "A · s/(n+δ)",
+    "solution": "At steady state $sY=(n+\\delta)K$. Rearranging yields K/Y=s/(n+δ).",
+    "hint": "Use the break-even investment equation.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  }
+]

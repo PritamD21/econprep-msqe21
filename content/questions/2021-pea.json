@@ -1,0 +1,477 @@
+[
+  {
+    "id": "2021-PEA-Q1",
+    "number": "1",
+    "stem": "If the nth partial sum of Σₙ₌₁^∞aₙ is sₙ=(2n²+2)/(3n²+1), then the infinite series is",
+    "options": [
+      "0",
+      "Divergent",
+      "2/3",
+      "3/2"
+    ],
+    "correctIndex": 2,
+    "answer": "2/3",
+    "solution": "A series sums to the limit of its partial sums. Dividing numerator and denominator by n² gives sₙ→2/3.",
+    "hint": "Take the limit of the partial sums.",
+    "topic": "Calculus",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q2",
+    "number": "2",
+    "stem": "From a sample of size n, OLS regression of y on x gives intercept a and slope b. Which statement is false?",
+    "options": [
+      "Σᵢ₌₁ⁿ(yᵢ−a−bxᵢ)xᵢ=0",
+      "n⁻¹Σᵢ₌₁ⁿyᵢ=a+(b/n)Σᵢ₌₁ⁿxᵢ",
+      "a,b solve min_{α,β}Σᵢ₌₁ⁿ(yᵢ−α−βxᵢ)²=0",
+      "a,b solve min_{α,β}Σᵢ₌₁ⁿ|yᵢ−α−βxᵢ|=0"
+    ],
+    "correctIndex": null,
+    "answer": "Both C and D are generally false as printed; D is the intended contrast",
+    "solution": "OLS satisfies the normal equations in A and B. It minimizes squared residuals, but the minimum need not equal zero, contrary to the trailing “=0” in C. OLS also need not minimize absolute residuals, making D false. For data (−1,1),(0,0),(1,1), OLS fits the constant 2/3 with positive residual sum of squares 2/3.",
+    "hint": "Distinguish the OLS normal equations from the objective’s minimized value.",
+    "topic": "Statistics",
+    "sourcePage": 1,
+    "status": "needs_review",
+    "notes": "Both optimization choices literally end in =0. Without those endings, C describes OLS and D describes least absolute deviations, so intended D would be unique."
+  },
+  {
+    "id": "2021-PEA-Q3",
+    "number": "3",
+    "stem": "Production is z=2x+3y. For what input price ratio pₓ/pᵧ can a cost-minimizing solution for positive output z₀ have x=0?",
+    "options": [
+      "pₓ/pᵧ=2/3",
+      "pₓ/pᵧ≥2/3",
+      "pₓ/pᵧ<2/3",
+      "pₓ/pᵧ≤−2/3"
+    ],
+    "correctIndex": 1,
+    "answer": "pₓ/pᵧ≥2/3",
+    "solution": "The cost per output unit is pₓ/2 from x and pᵧ/3 from y. Using only y can minimize cost exactly when pᵧ/3≤pₓ/2, or pₓ/pᵧ≥2/3. At equality every input mix is cost-minimizing.",
+    "hint": "Compare input cost per unit of output.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": "The second choice gives the full condition; equality in A is one special case. Positive input prices are implicit."
+  },
+  {
+    "id": "2021-PEA-Q4",
+    "number": "4",
+    "stem": "A number is chosen uniformly from the first billion natural numbers. The probability that its product with its two immediate successors is divisible by 24 is closest to",
+    "options": [
+      "1/2",
+      "3/4",
+      "5/8",
+      "2/3"
+    ],
+    "correctIndex": 2,
+    "answer": "5/8",
+    "solution": "Three consecutive integers always contain a factor of 3. Modulo 8, n(n+1)(n+2) is divisible by 8 for n≡0,2,4,6,7, five of the eight residues. Since 10⁹ is divisible by 8, the fraction is exactly 5/8.",
+    "hint": "Check divisibility by 8; divisibility by 3 is automatic.",
+    "topic": "Probability",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q5",
+    "number": "5",
+    "stem": "Each entry of a 2×2 matrix is independently 1 or −1 with equal probability. What is the probability the matrix is singular?",
+    "options": [
+      "1/16",
+      "1/4",
+      "1/2",
+      "1/3"
+    ],
+    "correctIndex": 2,
+    "answer": "1/2",
+    "solution": "For matrix [[a,b],[c,d]], singularity means ad=bc. The independent products ad and bc are each equally likely ±1, so they agree with probability 1/2.",
+    "hint": "Compare the two products in the determinant.",
+    "topic": "Probability",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q6",
+    "number": "6",
+    "stem": "How many 3×3 matrices with entries 0 or 1 have exactly one zero in each row and exactly one zero in each column?",
+    "options": [
+      "8",
+      "6",
+      "4",
+      "2"
+    ],
+    "correctIndex": 1,
+    "answer": "6",
+    "solution": "The zero positions form a permutation matrix: choose the zero column in the first row in 3 ways, the second in 2, and the last in 1. Total 3!=6.",
+    "hint": "Match each row to a distinct zero column.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q7",
+    "number": "7",
+    "stem": "Let f:[0,1]→ℝ be convex with f(0)=0. Which is always true?",
+    "options": [
+      "f is differentiable",
+      "f may fail differentiability but is continuous",
+      "f(x)≥xf′(x) for all x∈[0,1] if differentiable",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None of the above",
+    "solution": "Convexity need not give continuity at a closed-domain endpoint: f(x)=0 for 0≤x<1 and f(1)=1 is convex and discontinuous at 1. Differentiability is not guaranteed either. For differentiable convex f, the supporting line at x evaluated at 0 gives 0≥f(x)−xf′(x), so the correct inequality is f(x)≤xf′(x), opposite to C. For f=x², C fails.",
+    "hint": "Check the endpoints and the direction of the supporting-line inequality.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q8",
+    "number": "8",
+    "stem": "If f:ℝ→ℝ is strictly quasiconcave, which follows?",
+    "options": [
+      "f is not strictly convex",
+      "f is not linear",
+      "f is monotonic",
+      "If f is quadratic, its x² coefficient is ≤0"
+    ],
+    "correctIndex": 3,
+    "answer": "A quadratic f must have a nonpositive quadratic coefficient",
+    "solution": "A positive quadratic coefficient would give a strict interior minimum; taking two equidistant points around it violates quasiconcavity. A negative coefficient is possible, as with −x², and a nonconstant affine function is also strictly quasiconcave. The exponential is strictly convex and strictly quasiconcave, while −x² is not monotonic.",
+    "hint": "Test the other claims with monotone functions and a concave quadratic.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q9",
+    "number": "9",
+    "stem": "Find the rank of [[2,1,0],[1,2,−1],[−1,1,1]].",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 3,
+    "answer": "3",
+    "solution": "Its determinant is 2(2·1−(−1)·1)−1(1·1−(−1)(−1))=6. A nonzero determinant gives full rank 3.",
+    "hint": "Compute the determinant.",
+    "topic": "Linear algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q10",
+    "number": "10",
+    "stem": "Let V be the real polynomials of degree at most 2. Which definition gives a linear transformation T:V→V?",
+    "options": [
+      "T(p)=x+p(x)",
+      "T(p)=xp(x)",
+      "T(p)=dp(x)/dx",
+      "T(p)=∫p(x)dx with integration constant zero"
+    ],
+    "correctIndex": 2,
+    "answer": "Differentiation",
+    "solution": "Differentiation preserves sums and scalar multiplication and lowers degree to at most 1, remaining in V. A does not send zero to zero. B and D can produce degree 3 from a quadratic, so they do not map all V into V.",
+    "hint": "Check both linearity and the stated codomain.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q11",
+    "number": "11",
+    "stem": "X takes values only in [0,10], with P(X>5)≤2/5 and P(X<1)≤1/2. Then",
+    "options": [
+      "E(X)≥1",
+      "E(X)≤5",
+      "E(X)≥0.5 and E(X)≤8.5",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "0.5≤E(X)≤8.5",
+    "solution": "At least half the mass lies at X≥1, giving E(X)≥0.5. Also E(X)≤5P(X≤5)+10P(X>5)≤5+5·0.4=7, which is stronger than the listed upper bound 8.5. A fails for equal mass at 0 and 1; B fails for masses 0.6 at 5 and 0.4 at 10.",
+    "hint": "Bound the expectation separately on the specified events.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q12",
+    "number": "12",
+    "stem": "For data (−1,1),(0,0),(1,1), the standard deviations of x,y and their correlation are",
+    "options": [
+      "σₓ=√2/√3, σᵧ=√2/3, r=0",
+      "σₓ=2/3, σᵧ=2/9, r=0",
+      "σₓ=σᵧ=0, r undefined",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "σₓ=√(2/3), σᵧ=√2/3, r=0",
+    "solution": "The means are x̄=0 and ȳ=2/3. Dividing central sums by 3 gives variances 2/3 and 2/9. The cross-product sum is −1/3+0+1/3=0, so covariance and correlation are zero.",
+    "hint": "Compute the means and central second moments.",
+    "topic": "Statistics",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Uses the descriptive-data standard deviations with denominator n, as in the printed choices."
+  },
+  {
+    "id": "2021-PEA-Q13",
+    "number": "13",
+    "stem": "Two vaccine firms incur fixed R&D costs f₁,f₂. After R&D, each has a unit manufacturing cost uniformly drawn from [0,1]. Both invest, and the firm with the lowest unit cost supplies the entire one-unit demand. The total expected cost is",
+    "options": [
+      "f₁+f₂+1/2",
+      "f₁+f₂+1/3",
+      "f₁+f₂+2/3",
+      "f₁+f₂+3/4"
+    ],
+    "correctIndex": null,
+    "answer": "f₁+f₂+1/3 if the two cost draws are independent",
+    "solution": "With independent U[0,1] draws, P(min(c₁,c₂)>t)=(1−t)², so E[min]=∫₀¹(1−t)²dt=1/3 and intended B follows. Independence is not stated. If both costs share the same uniform draw, the minimum instead has mean 1/2, giving A. Marginal uniformity alone cannot identify a unique expected minimum.",
+    "hint": "The distribution of a minimum depends on the joint distribution.",
+    "topic": "Microeconomics",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "The source omits independence of cost draws; keep the intended independent-draw answer conditional."
+  },
+  {
+    "id": "2021-PEA-Q14",
+    "number": "14",
+    "stem": "India and China produce shirts and phones using high-skilled and low-skilled labour. Shirts are high-skill intensive; phones low-skill intensive. Technologies are identical. Both have equal low-skilled labour, but India has more high-skilled labour. Which good will India import?",
+    "options": [
+      "Shirts",
+      "Phones",
+      "Both",
+      "Neither"
+    ],
+    "correctIndex": 1,
+    "answer": "Phones in the standard Heckscher–Ohlin setting",
+    "solution": "India is relatively abundant in high-skilled labour. Comparative advantage therefore favors its high-skill-intensive shirts; it exports shirts and imports the low-skill-intensive phones.",
+    "hint": "Match relative factor abundance to factor intensity.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "Uses the standard Heckscher–Ohlin assumptions underlying this question."
+  },
+  {
+    "id": "2021-PEA-Q15",
+    "number": "15",
+    "stem": "A duopoly has demand p=10−q and costs 7q₁ and 2q₂. In equilibrium firm 2 charges which price?",
+    "options": [
+      "7",
+      "6",
+      "10",
+      "0"
+    ],
+    "correctIndex": 1,
+    "answer": "6 under the standard price-competition interpretation",
+    "solution": "Firm 2’s unconstrained monopoly profit is (p−2)(10−p), maximized at p=6. Since 6 is below firm 1’s marginal cost 7, firm 1 cannot profitably undercut it. Thus firm 2 can charge 6 and serve the market. In the standard Cournot model the same price results, with q₁=0,q₂=4.",
+    "hint": "Check whether the low-cost firm’s monopoly price deters the high-cost firm.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "The source does not explicitly name the competition model; Bertrand and standard Cournot both yield the listed answer."
+  },
+  {
+    "id": "2021-PEA-Q16",
+    "number": "16",
+    "stem": "Virat and Mithali initially consume the same rice and milk quantities. Rice’s price falls. Virat then buys less rice and more milk; Mithali buys more of both. Both exhaust their budgets on these goods. Under standard well-behaved preferences, rice for Virat must be a",
+    "options": [
+      "Inferior good",
+      "Giffen good",
+      "Luxury good",
+      "Normal good"
+    ],
+    "correctIndex": 1,
+    "answer": "Giffen good, and therefore also inferior",
+    "solution": "Virat’s rice demand falls when its own price falls, the defining Giffen response. The substitution effect alone would increase rice consumption, so a sufficiently strong opposing income effect must dominate, implying inferiority. B gives the more specific classification.",
+    "hint": "Identify the direction of the own-price demand response.",
+    "topic": "Microeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Inferiority in A is also necessary; B is the most specific classification of the described behavior."
+  },
+  {
+    "id": "2021-PEA-Q17",
+    "number": "17",
+    "stem": "If short-run IS–LM equilibrium income is above natural output, output returns to its natural level in the long run via",
+    "options": [
+      "An increase in the price level",
+      "A decrease in the interest rate",
+      "An increase in money supply",
+      "A downward shift of the consumption function"
+    ],
+    "correctIndex": 0,
+    "answer": "An increase in the price level",
+    "solution": "Above-natural output creates upward pressure on wages and prices. With nominal money fixed, a higher price level reduces real balances, shifts LM left, raises interest rates and reduces demand toward natural output.",
+    "hint": "Track how price adjustment changes real money balances.",
+    "topic": "Macroeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q18",
+    "number": "18",
+    "stem": "If the short-run aggregate supply curve is steep, the Phillips curve will be",
+    "options": [
+      "Flat",
+      "Steep",
+      "Backward bending",
+      "Unrelated to the SRAS slope"
+    ],
+    "correctIndex": 1,
+    "answer": "Steep",
+    "solution": "A steep SRAS means a given output-gap change causes a large price/inflation response. Through the inverse output–unemployment relation, this corresponds to a large inflation response per unemployment-gap change, hence a steep Phillips curve.",
+    "hint": "Relate the output gap to the unemployment gap.",
+    "topic": "Macroeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q19",
+    "number": "19",
+    "stem": "There are no capital controls between the US and UK. If the US interest rate exceeds the UK interest rate, which is the standard implication?",
+    "options": [
+      "The dollar is expected to appreciate against the pound",
+      "The pound is expected to appreciate against the dollar",
+      "The US interest rate is expected to increase",
+      "The US interest rate is expected to decrease"
+    ],
+    "correctIndex": 1,
+    "answer": "The pound is expected to appreciate under uncovered interest parity",
+    "solution": "Under uncovered interest parity with comparable assets and no risk premium, a higher dollar interest return is offset by expected dollar depreciation. Equivalently the pound is expected to appreciate relative to the dollar.",
+    "hint": "Compare expected returns in a common currency.",
+    "topic": "Macroeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "The implication uses the textbook uncovered-interest-parity assumptions; absence of capital controls alone does not establish risk neutrality or zero risk premia."
+  },
+  {
+    "id": "2021-PEA-Q20",
+    "number": "20",
+    "stem": "Countries B,C trade and transact financially only with each other. B imports goods worth 10 million bollars (its currency) from C and has no exports. Which must be true?",
+    "options": [
+      "B has a capital-account deficit",
+      "C has a current-account deficit",
+      "C is buying assets from B",
+      "The collar-per-bollar exchange rate exceeds 1"
+    ],
+    "correctIndex": 2,
+    "answer": "C acquires claims on B in the standard trade-financing accounting",
+    "solution": "B’s trade deficit is matched by a financial inflow: C’s export receipts finance its acquisition of B’s assets or claims, including currency claims. C has the corresponding external surplus, and nothing fixes the numerical exchange rate.",
+    "hint": "Use the balance-of-payments counterpart to a trade deficit.",
+    "topic": "Macroeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "Uses the usual simplified accounting with no offsetting net transfers or investment-income flows, which the question does not model."
+  },
+  {
+    "id": "2021-PEA-Q21",
+    "number": "21",
+    "stem": "Other things equal, inventory investment is expected to",
+    "options": [
+      "Rise when the real interest rate rises",
+      "Be independent of the real interest rate",
+      "Fall when the real interest rate rises",
+      "Depend only on the change in real GDP"
+    ],
+    "correctIndex": 2,
+    "answer": "Fall when the real interest rate rises",
+    "solution": "Holding inventories ties up funds. A higher real interest rate raises their financing and opportunity cost, reducing desired stocks and inventory investment, other things equal.",
+    "hint": "Treat the interest rate as a cost of holding inventories.",
+    "topic": "Macroeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q22",
+    "number": "22",
+    "stem": "A unit cake is divided between two people, with shares x₁,x₂≥0. Utilities are u₁=x₁ and u₂=x₂+|x₁−x₂|. Which listed division is Pareto optimal?",
+    "options": [
+      "(1,0)",
+      "(1/2,1/2)",
+      "(3/4,1/4)",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "(1,0)",
+    "solution": "At (1,0), person 1 already obtains the entire cake; maintaining her utility requires x₁=1 and hence x₂=0, leaving no strict improvement. At the other listed divisions utilities are respectively (1/2,1/2) and (3/4,3/4), both strictly dominated by the utility pair (1,1) at (1,0).",
+    "hint": "Compare both people’s utility at each listed allocation.",
+    "topic": "Microeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q23",
+    "number": "23",
+    "stem": "Rohit exhausts his weekly budget on dosas and coffee. In Delhi their prices are equal and he buys (15,35). In Chennai equal prices let him just afford (40,10). In Bangalore one dosa costs twice one coffee and he can just afford (10,20). Where does he prefer to stay?",
+    "options": [
+      "Delhi",
+      "Chennai",
+      "Bangalore",
+      "Indifferent between Delhi and Chennai"
+    ],
+    "correctIndex": 3,
+    "answer": "Indifferent between Delhi and Chennai",
+    "solution": "In Delhi and Chennai the normalized budget set is d+c≤50, so his attainable choices and maximum utility are identical. Bangalore’s budget is 2d+c≤40, a strict subset of d+c≤50 for nonnegative goods. With usual monotone preferences, it cannot improve on Delhi/Chennai.",
+    "hint": "Write each city’s budget set in comparable quantity units.",
+    "topic": "Microeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "Assumes preferences and the relevance of the two consumption goods are unchanged across cities."
+  },
+  {
+    "id": "2021-PEA-Q24",
+    "number": "24",
+    "stem": "In an IS–LM diagram with real interest rate R vertical and output Y horizontal, the central bank fixes R=R̄. The LM curve will",
+    "options": [
+      "Not exist",
+      "Be horizontal at R=R̄",
+      "Slope upward as usual",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "Be horizontal at R=R̄",
+    "solution": "An interest-rate-targeting central bank adjusts money supply to accommodate money demand at its selected interest rate. Consequently every output level is associated with the same targeted rate.",
+    "hint": "Let money supply adjust to defend the rate target.",
+    "topic": "Macroeconomics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2021-PEA-Q25",
+    "number": "25",
+    "stem": "Labour supply slopes upward and demand slopes downward. A rigid wage w̄ lies above the market-clearing wage. A reduction in labour demand causes",
+    "options": [
+      "A larger employment reduction than with flexible wages",
+      "A smaller employment reduction than with flexible wages",
+      "The same employment reduction as with flexible wages",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "A larger employment reduction in the standard demand-shift comparison",
+    "solution": "At the rigid wage firms reduce employment along the shift of their demand curve. With flexible wages the demand reduction also lowers the wage, partially cushioning the employment loss through additional demand at the lower wage. Thus wage rigidity amplifies the employment reduction.",
+    "hint": "Compare fixed-wage adjustment with a fall in the clearing wage.",
+    "topic": "Macroeconomics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "Uses the standard inward demand shift while the wage remains binding above equilibrium."
+  }
+]

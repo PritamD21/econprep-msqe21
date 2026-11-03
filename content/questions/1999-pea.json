@@ -1,0 +1,382 @@
+[
+  {
+    "id": "1999-PEA-Q1",
+    "number": "1",
+    "stem": "Find n·1+(n−1)·3+(n−2)·5+⋯+1·(2n−1).",
+    "options": [
+      "n³−n(n−1)(2n+5)/6",
+      "n³−n(n−1)(5n−1)/6",
+      "n(n+1)(2n+1)/6",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "n(n+1)(2n+1)/6",
+    "solution": "The kth summand is (n−k+1)(2k−1). Summing and using Σk=n(n+1)/2 and Σk²=n(n+1)(2n+1)/6 simplifies to n(n+1)(2n+1)/6.",
+    "hint": "Expand the general summand and use standard power sums.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q2",
+    "number": "2",
+    "stem": "For A=[[2,5],[3,1]] and I=[[1,0],[0,1]], A²−3A−13I equals",
+    "options": [
+      "0",
+      "I",
+      "The column vector (15,30)ᵀ",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "The zero matrix",
+    "solution": "The trace is 3 and determinant −13, so Cayley–Hamilton gives A²−3A−13I=0. Direct multiplication also gives A²=[[19,15],[9,16]]=3A+13I.",
+    "hint": "Compute the trace and determinant.",
+    "topic": "Linear algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": "Choice C is printed as a two-entry column rather than a 2×2 matrix; preserved."
+  },
+  {
+    "id": "1999-PEA-Q3",
+    "number": "3",
+    "stem": "If (mx²+3x+4)/(x²+2x+2)<5 for every real x, then m satisfies",
+    "options": [
+      "m=5",
+      "m<5",
+      "5<m<7",
+      "m<5 or m>7"
+    ],
+    "correctIndex": null,
+    "answer": "Exact condition m<71/24; choices B and D both follow",
+    "solution": "The denominator (x+1)²+1 is positive. The condition is (m−5)x²−7x−6<0 for all x. It requires m−5<0 and discriminant 49+24(m−5)<0, equivalently m<71/24. This implies both B and the weaker disjunction D, so the alternatives are not mutually exclusive.",
+    "hint": "Reduce to a quadratic that must stay strictly negative.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "needs_review",
+    "notes": "The likely intended necessary condition is B, but D is also a necessary consequence. No unique literal answer."
+  },
+  {
+    "id": "1999-PEA-Q4",
+    "number": "4",
+    "stem": "How many solutions satisfy x+y=2, y+z=2, 2x+3y+z=6?",
+    "options": [
+      "Infinitely many",
+      "Zero",
+      "One",
+      "More than one but finitely many"
+    ],
+    "correctIndex": 0,
+    "answer": "Infinitely many",
+    "solution": "Twice the first equation plus the second is precisely the third. Letting y=t gives x=z=2−t for arbitrary real t.",
+    "hint": "Check whether one equation is dependent on the others.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The third right-hand side is 6, checked in a magnified crop."
+  },
+  {
+    "id": "1999-PEA-Q5",
+    "number": "5",
+    "stem": "Let f(x)=det([[cos x,x,1],[2sin x,x²,2x],[tan x,x,1]]). Find limₓ→₀f(x)/x².",
+    "options": [
+      "0",
+      "1",
+      "−1",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "−1",
+    "solution": "Subtract the third row from the first. Expanding along the resulting row gives f(x)=(cosx−tanx)(x²−2x²)=x²(tanx−cosx). The quotient tends to −1.",
+    "hint": "Subtract the two rows that share their last entries.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q6",
+    "number": "6",
+    "stem": "What value must be assigned to f(x)=[1−cos(7(x−π))]/(x−π) at x=π to make f continuous?",
+    "options": [
+      "0",
+      "2",
+      "7",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "Put h=x−π. Since 1−cos7h=O(h²), the quotient is O(h) and tends to zero.",
+    "hint": "Use 1−cosu≈u²/2 near zero.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q7",
+    "number": "7",
+    "stem": "The real solutions of x²+4|x|−4=0 are",
+    "options": [
+      "±(√8−2)",
+      "−2±√8",
+      "2±√8",
+      "−2±8 and 2±√8"
+    ],
+    "correctIndex": 0,
+    "answer": "±(√8−2)",
+    "solution": "For t=|x|≥0, t²+4t−4=0 gives t=−2+√8; the other quadratic root is negative and inadmissible. Hence x=±(√8−2).",
+    "hint": "Solve for |x| first.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The source’s last alternative prints −2±8 without a visible radical; preserved as printed."
+  },
+  {
+    "id": "1999-PEA-Q8",
+    "number": "8",
+    "stem": "The matrix [[1,1,1,1],[2,1,0,−1],[4,1,0,1],[8,1,0,−1]]",
+    "options": [
+      "Is singular of rank 3",
+      "Is singular of rank less than 3",
+      "Is nonsingular with determinant −12",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "Nonsingular with determinant +12, hence none of these",
+    "solution": "Expand along the third column, whose only nonzero entry is the first-row 1. The remaining determinant is det([[2,1,−1],[4,1,1],[8,1,−1]])=−4+12+4=12. Thus C has the wrong sign.",
+    "hint": "Expand down the sparse third column.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q9",
+    "number": "9",
+    "stem": "The roots of x³−9x²+23x−15=0 are in A.P. Their common difference is",
+    "options": [
+      "1/2",
+      "2",
+      "3",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "2 when the roots are ordered increasingly",
+    "solution": "The cubic factors as (x−1)(x−3)(x−5). Thus the increasing roots are 1,3,5 with common difference 2.",
+    "hint": "The middle root of three arithmetic-progression roots equals their average.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q10",
+    "number": "10",
+    "stem": "If a₁,a₂,… are in G.P., find Δ=det([[log aₙ,log aₙ₊₁,log aₙ₊₂],[log aₙ₊₃,log aₙ₊₄,log aₙ₊₅],[log aₙ₊₆,log aₙ₊₇,log aₙ₊₈]]).",
+    "options": [
+      "log(aₙaₙ₊₈)−2log aₙ₊₄",
+      "log(a₁a₃)−2log a₂",
+      "0",
+      "1"
+    ],
+    "correctIndex": null,
+    "answer": "Δ=0, but A, B and C all have this value",
+    "solution": "For positive G.P. terms, log aₖ=A+(k−1)d. The three rows differ by constant multiples of (1,1,1), so their determinant is zero. Also aₙaₙ₊₈=aₙ₊₄² and a₁a₃=a₂², making both alternatives A and B zero as well.",
+    "hint": "Logarithms convert a geometric progression to an arithmetic progression.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "The alternatives A,B,C overlap exactly; all are zero. Positive terms are implicit in the real logarithms."
+  },
+  {
+    "id": "1999-PEA-Q11",
+    "number": "11",
+    "stem": "Let f(x)=x for 0<x<1; f(x)=2−x for 1<x≤2; and f(x)=x−x²/2 for x>2. Then f is",
+    "options": [
+      "Continuous at 2 but not differentiable at 1",
+      "Continuous at 2 and differentiable at 1",
+      "Not continuous at 2 and not differentiable at 1",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "The source leaves f(1) undefined; intended continuous extension has a kink there",
+    "solution": "At 2 the middle value is zero and the right limit is 2−2=0, so f is continuous there. Neither of the first two branches includes 1, so differentiability at 1 is formally not defined. If one fills f(1)=1, the left and right slopes are 1 and −1, giving the intended first choice.",
+    "hint": "Check whether each joining point belongs to the displayed domain.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Both source inequalities at x=1 are strict. Missing f(1) is retained rather than silently supplied."
+  },
+  {
+    "id": "1999-PEA-Q12",
+    "number": "12",
+    "stem": "Find limₓ→₀[1/x−log(1+x)/x²].",
+    "options": [
+      "1",
+      "1/2",
+      "Does not exist",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "1/2",
+    "solution": "The expression is [x−ln(1+x)]/x². Using ln(1+x)=x−x²/2+O(x³) gives limit 1/2.",
+    "hint": "Use the second-order logarithm expansion.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q13",
+    "number": "13",
+    "stem": "For |a|<1, |b|<1, the series a(a+b)+a²(a²+b²)+a³(a³+b³)+⋯",
+    "options": [
+      "Converges to a²/(1−a²)+b²/(1−b²)",
+      "Converges to a²/(1−a²)+b²/(1−ab)",
+      "Converges to a²/(1−a²)+ab/(1−ab)",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "a²/(1−a²)+ab/(1−ab)",
+    "solution": "The nth summand is a²ⁿ+(ab)ⁿ. Both are convergent geometric series because |a²|<1 and |ab|<1. Sum them separately.",
+    "hint": "Separate the two geometric series.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q14",
+    "number": "14",
+    "stem": "If a+1/a=2cosα, then aⁿ+1/aⁿ equals",
+    "options": [
+      "2ⁿcosⁿα",
+      "2ⁿcos(nα)",
+      "2cos(nα)",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "2cos(nα)",
+    "solution": "The equation a²−2cosα·a+1=0 has roots e^(±iα). Taking integer nth powers and adding reciprocals gives e^(inα)+e^(−inα)=2cos(nα).",
+    "hint": "Use the quadratic equation for a or the cosine recurrence.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q15",
+    "number": "15",
+    "stem": "For positive a,b,c, the least value of (a+b+c)(1/a+1/b+1/c) is",
+    "options": [
+      "9",
+      "3",
+      "10/3",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "9",
+    "solution": "Cauchy–Schwarz gives (a+b+c)(1/a+1/b+1/c)≥(1+1+1)²=9. Equality occurs at a=b=c.",
+    "hint": "Apply Cauchy–Schwarz.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q16",
+    "number": "16",
+    "stem": "Define f(x)=|x|−[x]−1 for −1<x<0; |x|−[x] for 0≤x<1; and 1 otherwise. The source defines [x] as the greatest integer strictly less than x. Then",
+    "options": [
+      "f is discontinuous at only one real point",
+      "f is discontinuous at more than one real point",
+      "f is continuous but nondifferentiable at only one real point",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "Literal strict-integer definition gives one discontinuity; conventional floor gives a different answer",
+    "solution": "With the printed strict definition, [0]=−1. For −1<x<0, f=−x; for 0<x<1, f=x; and f(0)=1. Thus only 0 is discontinuous, giving A. With the conventional greatest-integer function floor(x), f(0)=0 and f=min{|x|,1}, continuous with three nondifferentiable points −1,0,1, giving D. The intended convention needs clarification.",
+    "hint": "Evaluate the integer-part symbol at the integer 0.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "needs_review",
+    "notes": "Source uses “greatest integer <x”, conflicting with conventional floor notation. Conditional answers are given without silently correcting the definition."
+  },
+  {
+    "id": "1999-PEA-Q17",
+    "number": "17",
+    "stem": "If a primal linear program has feasible solutions but no optimal solution, then its dual",
+    "options": [
+      "May have an optimal solution",
+      "Has no feasible solution",
+      "Has feasible solutions but no optimal solution",
+      "Cannot be formulated"
+    ],
+    "correctIndex": 1,
+    "answer": "Has no feasible solution",
+    "solution": "A feasible finite-dimensional linear program without an optimum is unbounded in the optimizing direction. A feasible dual would supply a finite bound by weak duality, which is impossible.",
+    "hint": "Use weak duality to rule out dual feasibility.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "1999-PEA-Q18",
+    "number": "18",
+    "stem": "Maximize 2x₁+3x₂ subject to 2x₁+x₂>2, x₁+x₂≤3, x₁−x₂≤−1 and x₁,x₂>0. Which is true?",
+    "options": [
+      "Optimal at (0,3)",
+      "Optimal at (1,2)",
+      "No optimal solution",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "No attained optimum under the printed strict positivity constraints",
+    "solution": "The objective is 3(x₁+x₂)−x₁≤9−x₁<9 since x₁>0. For arbitrarily small ε>0, (ε,3−ε) is feasible and has value 9−ε→9. Thus the supremum is 9 but it is not attained.",
+    "hint": "Distinguish strict positivity from nonnegativity.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": "Magnification confirms > in the first and nonnegativity lines, while the other two use ≤. If the intended final constraint were ≥0, choice A would instead be optimal."
+  },
+  {
+    "id": "1999-PEA-Q19",
+    "number": "19",
+    "stem": "Evaluate ∫₋₁¹(x+x²+x³)e^(−x²/2)dx.",
+    "options": [
+      "2/√e",
+      "−2/√e",
+      "2√e",
+      "−2√e"
+    ],
+    "correctIndex": null,
+    "answer": "None of the printed values matches the integral",
+    "solution": "The odd x and x³ terms integrate to zero, leaving ∫₋₁¹x²e^(−x²/2)dx>0. Integration by parts gives −2/√e+∫₋₁¹e^(−x²/2)dx≈0.498187. This is neither 2/√e≈1.213061 nor 2√e≈3.297443, and cannot be negative.",
+    "hint": "Use parity before evaluating the remaining even integral.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "needs_review",
+    "notes": "The printed integrand reads x+x²+x³, so the provided alternatives appear inconsistent; no official key supplied."
+  },
+  {
+    "id": "1999-PEA-Q20",
+    "number": "20",
+    "stem": "The series Σₙ₌₁^∞(−1)ⁿ⁺¹/n",
+    "options": [
+      "Converges absolutely",
+      "Converges conditionally to logₑ2",
+      "Does not converge",
+      "Converges conditionally to log₁₀2"
+    ],
+    "correctIndex": 1,
+    "answer": "Converges conditionally to ln2",
+    "solution": "Alternating decreasing terms 1/n tend to zero, so the alternating-series test gives convergence. Absolute values give the divergent harmonic series. Integrating the geometric expansion of 1/(1+x) on [0,1] gives the sum ln2.",
+    "hint": "Apply the alternating-series test and identify the logarithm series.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  }
+]

@@ -1,0 +1,700 @@
+[
+  {
+    "id": "2018-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2018-PEA-Q1-p1.jpg"
+    ],
+    "stem": "Question 1 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "An IS curve is not identified by an accounting identity.",
+    "solution": "The statement makes saving identically equal to investment. An identity holds without restricting income and interest to a goods-market-equilibrium locus. An IS curve instead requires a behavioral planned-saving/planned-investment equilibrium condition, so the identity alone gives no IS curve.",
+    "hint": "Distinguish an accounting identity from an equilibrium condition.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2018-PEA-Q2-p1.jpg"
+    ],
+    "stem": "Question 2 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "Total income grows at 2%.",
+    "solution": "Without technological progress, steady-state output per worker and consumption per worker are constant, as is the real wage. Aggregate output grows at the labour-force growth rate, 2%.",
+    "hint": "Separate aggregate growth from per-worker growth.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2018-PEA-Q3-p1.jpg"
+    ],
+    "stem": "Question 3 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "Aggregate saving declines in the stable Keynesian equilibrium.",
+    "solution": "The transfer from the low-saving to high-saving group raises desired saving at any given Y and lowers consumption. In a stable Keynesian model this reduces equilibrium Y. Since planned investment increases in Y and equilibrium aggregate saving equals investment, equilibrium saving falls.",
+    "hint": "Trace the transfer’s effect on demand, then use S=I.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": "Uses the usual stable Keynesian multiplier assumption."
+  },
+  {
+    "id": "2018-PEA-Q4",
+    "number": "4",
+    "sourcePage": 1,
+    "images": [
+      "question-images/2018-PEA-Q4-p1.jpg",
+      "question-images/2018-PEA-Q4-p2.jpg"
+    ],
+    "stem": "Question 4 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "The IS curve slopes negatively.",
+    "solution": "Goods-market equilibrium is Y=C̄+I(r)+G. Since I′(r)<0, dY/dr=I′(r)<0. A higher interest rate lowers investment and equilibrium output even though consumption is fixed.",
+    "hint": "Write the goods-market equation with fixed consumption.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2018-PEA-Q5-p2.jpg"
+    ],
+    "stem": "Question 5 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "Involuntary unemployment is 0.",
+    "solution": "Flexible wages equate 100−5w=5w, giving w=10 and employment 50. All 50 people willing to work at this wage are employed. The other 30 units of endowment are voluntarily withheld, not involuntarily unemployed.",
+    "hint": "Compare employment to labour supplied, rather than total endowment.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2018-PEA-Q6-p2.jpg"
+    ],
+    "stem": "Question 6 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "Total unemployment is 35.",
+    "solution": "The binding minimum wage is 11. Firms demand 100−55=45 units, out of an endowment of 80, so total unused labour is 80−45=35. Of this, 55−45=10 is involuntary and 80−55=25 voluntary.",
+    "hint": "The question asks total unemployment out of the full endowment.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q7",
+    "number": "7",
+    "sourcePage": 2,
+    "images": [
+      "question-images/2018-PEA-Q7-p2.jpg",
+      "question-images/2018-PEA-Q7-p3.jpg"
+    ],
+    "stem": "Question 7 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "The price level rises more than proportionately.",
+    "solution": "S(r)=I(r) determines r independently of M; y is fixed. Thus P=[M−L(r)]/(kȳ) and dP/dM=1/(kȳ). Its elasticity is (M/P)/(kȳ)=M/[M−L(r)]>1 when speculative balances L(r)>0.",
+    "hint": "Solve the money-market equation for P.",
+    "topic": "Macroeconomics",
+    "status": "verified",
+    "notes": "Positive speculative money demand is implicit in the economic interpretation; its zero boundary would give proportionality."
+  },
+  {
+    "id": "2018-PEA-Q8",
+    "number": "8",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2018-PEA-Q8-p3.jpg"
+    ],
+    "stem": "Question 8 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "(x,y)=(60,40).",
+    "solution": "Using y=100−x gives U_X=25+3x/4 and U_Y=100−x/2. Their minimum is maximized where they intersect: 25+3x/4=100−x/2, so x=60,y=40 and both utilities are 70.",
+    "hint": "Equalize the increasing and decreasing utility expressions.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q9",
+    "number": "9",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2018-PEA-Q9-p3.jpg"
+    ],
+    "stem": "Question 9 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "Each contributes M/3.",
+    "solution": "Consumer i maximizes [(M−g_i)/p](g_i+g_j). The first-order condition is M−2g_i−g_j=0, giving best response g_i=(M−g_j)/2 when positive. The symmetric equilibrium solves 3g_i=M.",
+    "hint": "Differentiate utility holding the other contribution fixed.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q10",
+    "number": "10",
+    "sourcePage": 3,
+    "images": [
+      "question-images/2018-PEA-Q10-p3.jpg",
+      "question-images/2018-PEA-Q10-p4.jpg"
+    ],
+    "stem": "Question 10 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Firm 1’s profit remains unchanged while both firms are active.",
+    "solution": "Let labour price be w, material price v, and inverse demand p=A/b−q/b. Then c₁=w+v,c₂=2w+v. Interior Cournot output q₁=[A−b(2c₁−c₂)]/3=(A−bv)/3 is independent of w. Profit q₁²/b is therefore unchanged.",
+    "hint": "Substitute the two factor-cost formulas into Cournot output.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": "The intended comparative static assumes the two-firm interior regime persists. If the labour-price increase makes firm 2 exit, further wage rises lower firm 1’s monopoly profit."
+  },
+  {
+    "id": "2018-PEA-Q11",
+    "number": "11",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2018-PEA-Q11-p4.jpg"
+    ],
+    "stem": "Question 11 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "Firm 2’s profit decreases while it remains active.",
+    "solution": "In the same interior equilibrium, q₂=[A−b(2c₂−c₁)]/3=[A−b(3w+v)]/3. Hence dq₂/dw=−b and π₂=q₂²/b decreases for q₂>0. After exit its profit remains zero.",
+    "hint": "Calculate 2c₂−c₁ for the high-labour-input firm.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": "Uses the interior two-firm regime implicit in the comparative-static question."
+  },
+  {
+    "id": "2018-PEA-Q12",
+    "number": "12",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2018-PEA-Q12-p4.jpg"
+    ],
+    "stem": "Question 12 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "The monopoly-market price increases.",
+    "solution": "Initially MR_A=20−2Q_A and MC=Q_A/2, giving Q_A=8 and P_m=12. Selling in B at price 6 makes total output satisfy MC=6, so Q_total=12. Equating MR_A=6 gives Q_A=7, Q_B=5 and P*_m=13>12.",
+    "hint": "Use the competitive market price as the common marginal revenue.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q13",
+    "number": "13",
+    "sourcePage": 4,
+    "images": [
+      "question-images/2018-PEA-Q13-p4.jpg",
+      "question-images/2018-PEA-Q13-p5.jpg"
+    ],
+    "stem": "Question 13 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "(1/5,2/5) is one of many equilibrium price vectors.",
+    "solution": "At these prices, A’s income is 60 and her Leontief demand is (100,100). B’s income is 10; since X is cheaper per utility unit, B buys (50,0). Both markets clear. Multiplying both prices by any positive scalar preserves demands and equilibrium.",
+    "hint": "Compute the two demands at the proposed price ratio.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q14",
+    "number": "14",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2018-PEA-Q14-p5.jpg"
+    ],
+    "stem": "Question 14 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "k>1.",
+    "solution": "Writing employment as l_M=w_M^k, profit from male labour is (p−w_M)w_M^k. Its optimum has w_M=kp/(k+1). Female profit (p−w_F)w_F gives w_F=p/2. The inequality w_M>w_F is equivalent to k>1.",
+    "hint": "Maximize each group’s profit contribution over its wage.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q15",
+    "number": "15",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2018-PEA-Q15-p5.jpg"
+    ],
+    "stem": "Question 15 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "The firm hires more male workers.",
+    "solution": "From Q14, k>1 and w_M=kp/(k+1)>w_F=p/2. Since p>2, w_F>1, so w_M>1 and l_M=w_M^k>w_M>w_F=l_F.",
+    "hint": "Use both k>1 and the fact that both optimal wages exceed 1.",
+    "topic": "Microeconomics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q16",
+    "number": "16",
+    "sourcePage": 5,
+    "images": [
+      "question-images/2018-PEA-Q16-p5.jpg",
+      "question-images/2018-PEA-Q16-p6.jpg"
+    ],
+    "stem": "Question 16 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "a=1/4.",
+    "solution": "If 4a−1≠0, the third equation forces z=0, the second y=0, and the first x=0. If 4a−1=0, x is free while the other equations imply y=z=0, yielding nonzero solutions.",
+    "hint": "Test when the coefficient 4a−1 vanishes.",
+    "topic": "Linear algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q17",
+    "number": "17",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2018-PEA-Q17-p6.jpg"
+    ],
+    "stem": "Question 17 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "The maximum is 5.",
+    "solution": "The tangent inequality for a convex differentiable f at 2 gives f(0)≥f(2)+f′(2)(0−2)=f(2)−4. Since f(0)=1, f(2)≤5. The affine function f(x)=1+2x attains equality.",
+    "hint": "Evaluate the tangent inequality at x=0.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q18",
+    "number": "18",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2018-PEA-Q18-p6.jpg"
+    ],
+    "stem": "Question 18 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "7 pairs.",
+    "solution": "From 2x=103−5y, y must be odd. The condition x>y is 103>7y, so positive odd y can be 1,3,5,7,9,11,13. Each gives a unique positive integer x, yielding 7 pairs.",
+    "hint": "Use parity, then impose x>y.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q19",
+    "number": "19",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2018-PEA-Q19-p6.jpg"
+    ],
+    "stem": "Question 19 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 3,
+    "answer": "m=n, so none of the listed values in the nondegenerate case.",
+    "solution": "For an integer support point m, P(X≥m|X≤m)=f(m)/P(X≤m). Since f(m)>0, equality to f(m) requires P(X≤m)=1, hence m=n. This is not the listed n−1.",
+    "hint": "The intersection of the two conditional events is {X=m}.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": "Interprets n≥2 as intended by the alternatives. The source does not explicitly rule out degenerate n=0 or n=1, in which m=n would coincide with A or B."
+  },
+  {
+    "id": "2018-PEA-Q20",
+    "number": "20",
+    "sourcePage": 6,
+    "images": [
+      "question-images/2018-PEA-Q20-p6.jpg",
+      "question-images/2018-PEA-Q20-p7.jpg"
+    ],
+    "stem": "Question 20 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "x=1 is an inflection point.",
+    "solution": "For x>0, f′=2a(lnx+1−x) and f″=2a(1/x−1). Because a≠0, f″ changes sign as x passes through 1, while f′(1)=0. Thus this is a stationary inflection point, not an extremum.",
+    "hint": "Examine the sign change of f″.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q21",
+    "number": "21",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2018-PEA-Q21-p7.jpg"
+    ],
+    "stem": "Question 21 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "f″(5)=0.",
+    "solution": "The derivative bound gives f(x)−10≤x and 20−f(x)≤10−x by the mean value theorem. Together these force f(x)=10+x throughout [0,10]. Its second derivative is zero.",
+    "hint": "Use the slope bound from both endpoints.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q22",
+    "number": "22",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2018-PEA-Q22-p7.jpg"
+    ],
+    "stem": "Question 22 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": null,
+    "answer": "For nonzero a,b,c the intended condition is harmonic progression.",
+    "solution": "The coefficient determinant is 2ac−ab−bc. Nontrivial solutions require 2ac=ab+bc; dividing by abc gives 2/b=1/a+1/c, the harmonic-progression condition. But the source never excludes zero parameters. For example a=b=0,c=1 makes the system singular without defining a harmonic progression, and it satisfies none of the other alternatives.",
+    "hint": "Compute the determinant before dividing by any parameters.",
+    "topic": "Linear algebra",
+    "status": "needs_review",
+    "notes": "The intended choice is C only under an additional nonzero-parameter assumption."
+  },
+  {
+    "id": "2018-PEA-Q23",
+    "number": "23",
+    "sourcePage": 7,
+    "images": [
+      "question-images/2018-PEA-Q23-p7.jpg",
+      "question-images/2018-PEA-Q23-p8.jpg"
+    ],
+    "stem": "Question 23 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "x₁*−x₂*=a−b.",
+    "solution": "The two arguments a−x₁ and b−x₂ have a fixed sum a+b−c. Their minimum is largest when they are equal. Thus a−x₁*=b−x₂*, giving x₁*−x₂*=a−b.",
+    "hint": "Maximize the minimum of two numbers with a fixed sum.",
+    "topic": "Calculus",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q24",
+    "number": "24",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2018-PEA-Q24-p8.jpg"
+    ],
+    "stem": "Question 24 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "10!/(2!3!3!4!)=2100.",
+    "solution": "Choose the four books in the box, then split the remaining six into two unlabeled groups of three for the identical bags. The count is C(10,4)C(6,3)/2!=2100.",
+    "hint": "Divide by 2! because the two bags are identical.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q25",
+    "number": "25",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2018-PEA-Q25-p8.jpg"
+    ],
+    "stem": "Question 25 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "615.",
+    "solution": "The selected 33 terms a₂,a₅,…,a₉₈ are symmetric around index 50, so their mean is a₅₀ and 33a₅₀=205. All 99 AP terms have the same mean a₅₀, so their sum is 99a₅₀=3·205=615.",
+    "hint": "Compare the mean index of the selected terms to that of the full AP.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q26",
+    "number": "26",
+    "sourcePage": 8,
+    "images": [
+      "question-images/2018-PEA-Q26-p8.jpg"
+    ],
+    "stem": "Question 26 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "2/3 metre.",
+    "solution": "Uniform area in the unit disk gives P(R≤r)=πr²/π=r² for 0≤r≤1, hence radial density 2r. Therefore E(R)=∫₀¹r·2r dr=2/3.",
+    "hint": "Uniform area is not uniform radius.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q27",
+    "number": "27",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2018-PEA-Q27-p9.jpg"
+    ],
+    "stem": "Question 27 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 2,
+    "answer": "Tₙ=Tₙ₋₁+Tₙ₋₂.",
+    "solution": "Every path to stair n ends either with a one-stair jump from n−1 or a two-stair jump from n−2. These classes are disjoint and contain Tₙ₋₁ and Tₙ₋₂ paths, respectively.",
+    "hint": "Split paths by their final jump.",
+    "topic": "Algebra",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q28",
+    "number": "28",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2018-PEA-Q28-p9.jpg"
+    ],
+    "stem": "Question 28 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "The limiting variance is 0.",
+    "solution": "With n=mk and within-group pair correlation ρ, Var(Ȳ)=[mkσ²+mk(k−1)ρσ²]/(m²k²)=σ²[1+(k−1)ρ]/(mk). For fixed finite k this tends to zero as m→∞.",
+    "hint": "Add covariances within groups and use independence across groups.",
+    "topic": "Statistics",
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2018-PEA-Q29",
+    "number": "29",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2018-PEA-Q29-p9.jpg"
+    ],
+    "stem": "Question 29 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 0,
+    "answer": "0.032.",
+    "solution": "Given the first five failures, independence leaves the remaining trials unchanged. First destruction on trial 8 requires failures on 6 and 7, then success on 8: 0.2²·0.8=0.032.",
+    "hint": "Use independence and the geometric distribution’s memorylessness.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": "“Destroyed in the 8th attempt” is read as the first destruction, as indicated by the alternatives."
+  },
+  {
+    "id": "2018-PEA-Q30",
+    "number": "30",
+    "sourcePage": 9,
+    "images": [
+      "question-images/2018-PEA-Q30-p9.jpg",
+      "question-images/2018-PEA-Q30-p10.jpg"
+    ],
+    "stem": "Question 30 from PEA 2018.",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "imageOptions": true,
+    "correctIndex": 1,
+    "answer": "P(Eᶜ|F)+P(Eᶜ|Fᶜ)=1.",
+    "solution": "Complementing each conditional probability gives [1−P(E|F)]+[1−P(E|Fᶜ)]=2−1=1. The given sum alone does not imply independence or exclusivity.",
+    "hint": "Complement inside each conditioning event.",
+    "topic": "Probability",
+    "status": "verified",
+    "notes": "Both conditioning events must have positive probability for the source’s expressions to be defined."
+  }
+]

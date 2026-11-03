@@ -1,0 +1,287 @@
+[
+  {
+    "id": "2001-PEA-Q1",
+    "number": "1",
+    "stem": "The sequence 5n/(n+2) is",
+    "options": [
+      "Unbounded and monotone increasing",
+      "Bounded and monotone decreasing",
+      "Bounded and monotone increasing",
+      "Unbounded and monotone decreasing"
+    ],
+    "correctIndex": 2,
+    "answer": "Bounded and increasing",
+    "solution": "Write aₙ=5−10/(n+2). As n increases the subtracted positive term decreases, so aₙ increases and remains below 5.",
+    "hint": "Rewrite as a constant minus a decreasing positive term.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q2",
+    "number": "2",
+    "stem": "Let f:ℝ→ℝ satisfy f(x)=x for x≥1 and f(x)=x² for x<1. Then",
+    "options": [
+      "f is continuous but not differentiable at x=1",
+      "f is not continuous but is differentiable at x=1",
+      "f is continuous and differentiable at x=1",
+      "f is neither continuous nor differentiable at x=1"
+    ],
+    "correctIndex": 0,
+    "answer": "Continuous but not differentiable at 1",
+    "solution": "Both side limits and f(1) are 1. The left derivative is 2 while the right derivative is 1, so no derivative exists at the join.",
+    "hint": "Compare function values and slopes on both sides.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q3",
+    "number": "3",
+    "stem": "The infinite series x/1²+x²/2²+x³/3²+⋯ is",
+    "options": [
+      "Convergent if |x|>1",
+      "Convergent if |x|<1",
+      "Divergent if |x|<1",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "Convergent if |x|<1",
+    "solution": "For |x|<1, |xⁿ/n²|≤|x|ⁿ and the geometric majorant converges. For |x|>1 the terms do not approach zero.",
+    "hint": "Compare absolute values with a geometric series.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q4",
+    "number": "4",
+    "stem": "The range of f(x)=2x²/(1+3x²) over ℝ is",
+    "options": [
+      "[0,∞)",
+      "[0,2/3)",
+      "[0,2/3]",
+      "(−∞,∞)"
+    ],
+    "correctIndex": 1,
+    "answer": "[0,2/3)",
+    "solution": "Put t=x²≥0. The function 2t/(1+3t) increases from 0 toward 2/3, which is never attained for finite t. Every intermediate value is attained.",
+    "hint": "Use t=x² and inspect the limiting upper bound.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q5",
+    "number": "5",
+    "stem": "The determinant of [[2,4,3],[5,10,11],[2,4,10]] is",
+    "options": [
+      "0",
+      "4",
+      "−4",
+      "3"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "The second column equals twice the first, so the columns are linearly dependent and the determinant is zero.",
+    "hint": "Look for proportional columns.",
+    "topic": "Linear algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q6",
+    "number": "6",
+    "stem": "The inverse of f(x)=1/x, x>0, is",
+    "options": [
+      "g(x)=x",
+      "g(x)=−x",
+      "g(x)=−1/x",
+      "g(x)=1/x"
+    ],
+    "correctIndex": 3,
+    "answer": "g(x)=1/x on x>0",
+    "solution": "Solving y=1/x for x gives x=1/y. Equivalently f(f(x))=x on its positive domain.",
+    "hint": "Solve y=1/x for x.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q7",
+    "number": "7",
+    "stem": "Find limₙ→∞(2n³−3n)/(5n³+4n²−2).",
+    "options": [
+      "−1/2",
+      "−3/4",
+      "2/5",
+      "1"
+    ],
+    "correctIndex": 2,
+    "answer": "2/5",
+    "solution": "Divide numerator and denominator by n³. The lower-degree terms vanish, leaving 2/5.",
+    "hint": "Compare the leading terms.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q8",
+    "number": "8",
+    "stem": "If x=log₁₂18 and y=log₂₄54, then xy+5(x−y) is",
+    "options": [
+      "Negative",
+      "Positive but less than 1",
+      "1",
+      "2"
+    ],
+    "correctIndex": 2,
+    "answer": "1",
+    "solution": "Let a=ln2 and b=ln3. Then x=(a+2b)/(2a+b), y=(a+3b)/(3a+b). Over the common denominator (2a+b)(3a+b), the numerator of xy+5(x−y) is (a+2b)(a+3b)+5(a²−b²)=6a²+5ab+b², exactly that denominator.",
+    "hint": "Express both logarithms using ln2 and ln3.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q9",
+    "number": "9",
+    "stem": "Maximize x₁+x₂ subject to x₁≥x₂−1, x₂≤2+x₁/2 and x₁,x₂≥0. The linear program",
+    "options": [
+      "Has no feasible solution",
+      "Has a unique optimal solution",
+      "Has more than one optimal solution",
+      "Has no optimal solution"
+    ],
+    "correctIndex": 3,
+    "answer": "No optimal solution: the objective is unbounded",
+    "solution": "For every t≥0, (x₁,x₂)=(t,0) satisfies all constraints and has objective value t. Thus feasible objective values have no upper bound.",
+    "hint": "Try setting x₂=0 and increasing x₁.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q10",
+    "number": "10",
+    "stem": "Given f(16)=16 and f′(16)=4, find limₓ→₁₆[√f(x)−4]/[√x−4].",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "2"
+    ],
+    "correctIndex": 1,
+    "answer": "4",
+    "solution": "Rationalize both differences to obtain [(f(x)−16)/(x−16)]·[(√x+4)/(√f(x)+4)]. Continuity from differentiability makes the second factor tend to 1 and the first to 4.",
+    "hint": "Rationalize the two square-root differences.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q11",
+    "number": "11",
+    "stem": "The integral ∫(2x³+1)/(x⁴+2x) dx equals",
+    "options": [
+      "(x⁴+2x)/(4x³+2)+constant",
+      "ln x⁴+ln 2x+constant",
+      "(1/2)ln|x⁴+2x|+constant",
+      "|(x⁴+2x)/(4x³+2)|+constant"
+    ],
+    "correctIndex": 2,
+    "answer": "(1/2)ln|x⁴+2x|+C",
+    "solution": "The derivative of the denominator is 4x³+2, twice the numerator. The substitution u=x⁴+2x yields half the integral of du/u.",
+    "hint": "Compare numerator with the derivative of the denominator.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q12",
+    "number": "12",
+    "stem": "Let (aₙ) be a real sequence not converging to zero. Then",
+    "options": [
+      "(aₙ) converges to a nonzero number",
+      "For every ε>0 there exists N such that |aₙ|>ε",
+      "There exists ε>0 such that for every N, |aₙ|>ε for all n>N",
+      "There exists N such that |aₙ|>1/n for all n>N"
+    ],
+    "correctIndex": null,
+    "answer": "No alternative correctly states the negation of convergence to zero",
+    "solution": "The correct statement is: some ε>0 has the property that for every N there exists n>N with |aₙ|≥ε. The source’s C instead says “for all n>N”. A sequence alternating 0 and 1 does not converge to zero, yet fails A,C,D. B is malformed because N does not occur in its concluding inequality and is false for bounded sequences under its natural readings.",
+    "hint": "Negate the quantifiers in the definition of convergence.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "Source C explicitly says “for all n>N”; it is not silently replaced by “there exists n>N”. B has an unbound n in the source."
+  },
+  {
+    "id": "2001-PEA-Q13",
+    "number": "13",
+    "stem": "Find limₓ→∞(1+3/x)ˣ.",
+    "options": [
+      "e",
+      "e³",
+      "0",
+      "1"
+    ],
+    "correctIndex": 1,
+    "answer": "e³",
+    "solution": "The logarithm is xln(1+3/x)→3 using ln(1+u)/u→1. Exponentiating gives e³.",
+    "hint": "Take logarithms and use the standard exponential limit.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q14",
+    "number": "14",
+    "stem": "Solve dx/dt+2x=6 with x(0)=10.",
+    "options": [
+      "x=10e^(−2t)+3",
+      "x=7e^(−2t)+3",
+      "x=3e^(−2t)+3",
+      "x=(10/7)e^(−2t)+3"
+    ],
+    "correctIndex": 1,
+    "answer": "x=7e^(−2t)+3",
+    "solution": "A constant particular solution is 3, so x=3+Ce^(−2t). The initial condition gives C=7.",
+    "hint": "Subtract the steady-state value 3.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2001-PEA-Q15",
+    "number": "15",
+    "stem": "Let X,Y,Z be n×n matrices such that XT=YZYX=I, where I is the identity matrix. Then",
+    "options": [
+      "X=Y",
+      "Y=Z",
+      "Z=X",
+      "XZY=YZX"
+    ],
+    "correctIndex": null,
+    "answer": "Source uses undefined T; if XT was intended as XY, then Z=X",
+    "solution": "The source defines X,Y,Z but prints XT in its hypothesis, leaving T undefined. Under the likely correction XY=YZYX=I, invertibility gives YX=I and YZ=I, hence Z=Y⁻¹=X. Under the literal condition with an extra unrestricted T, Z need not equal X and the alternatives do not follow.",
+    "hint": "Check the matrix symbol in the first product before cancelling factors.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "A magnified scan confirms the printed first product is XT, not XY. The likely intended answer C is conditional on correcting that typo."
+  }
+]

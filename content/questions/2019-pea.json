@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2019-PEA-Q1",
+    "number": "1",
+    "stem": "Robinson Crusoe lives in periods 1 and 2 on an isolated island. He harvests 100 coconuts at the beginning of each period; unconsumed coconuts spoil at 20% per period. With utility u(c₁,c₂)=min{5c₁,6c₂}, his utility-maximizing consumption choice is",
+    "options": [
+      "c₁=200×6/11, c₂=200×5/11",
+      "c₁=90, c₂=108",
+      "c₁=100, c₂=100",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "(100,100) is an optimal choice",
+    "solution": "No borrowing from the future is possible, so c₁≤100 and utility cannot exceed 5c₁≤500. Consuming each period’s harvest, (100,100), gives min(500,600)=500 and attains this bound. The spoilage constraint is c₂≤100+0.8(100−c₁).",
+    "hint": "Use the physical upper bound on first-period consumption.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": "There are also optimal bundles with c₁=100 and 250/3≤c₂≤100 if second-period coconuts may be discarded; C is the listed optimum."
+  },
+  {
+    "id": "2019-PEA-Q2",
+    "number": "2",
+    "stem": "Domestic supply is P=50+Q and demand P=200−2Q, with Q in thousands of kilograms and P in rupees per kilogram. The small country faces world price Rs.60. The government issues 300 permits, each allowing a foreign exporter to sell 100 kilograms domestically. What is the maximum price an exporter will pay per permit?",
+    "options": [
+      "Rs.3000",
+      "Rs.2000",
+      "Rs.1500",
+      "Rs.1000"
+    ],
+    "correctIndex": 1,
+    "answer": "Rs.2000",
+    "solution": "Permitted imports total 30 thousand kg. Market clearing requires (200−P)/2−(P−50)=30, giving P=80. A permit permits 100 kg with margin 80−60=20 rupees/kg, so its value is 100·20=2000.",
+    "hint": "Equate excess domestic demand to the permitted import quantity.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q3",
+    "number": "3",
+    "stem": "SeaTel has captive customers with weekly demand Q=60−P hours of calls and total cost C=20Q. It offers unlimited calls for a flat weekly access fee, with no per-hour usage charge. Which weekly fee maximizes profit?",
+    "options": [
+      "1800",
+      "1200",
+      "800",
+      "40"
+    ],
+    "correctIndex": 0,
+    "answer": "1800",
+    "solution": "With a zero marginal usage price, each customer consumes 60 hours. Their total willingness to pay is the area under inverse demand: ∫₀⁶⁰(60−Q)dQ=1800. Charging 1800 extracts it; cost is 1200 and profit 600 per subscriber.",
+    "hint": "Calculate total willingness to pay when the usage price is zero.",
+    "topic": "Microeconomics",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": "Uses the usual convention that an indifferent customer participates."
+  },
+  {
+    "id": "2019-PEA-Q4",
+    "number": "4",
+    "stem": "A bus stop is located at x∈[0,1]. Three people at 0.2,0.3,0.9 have utilities −|y−x|. A move is Pareto improving if at least one gains and nobody loses. Which statement about Pareto-efficient locations is true?",
+    "options": [
+      "0.5 is the only Pareto-efficient location",
+      "(0.2+0.3+0.9)/3 is the only Pareto-efficient location",
+      "The median 0.3 is the only Pareto-efficient location",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "Every location in [0.2,0.9] is Pareto efficient",
+    "solution": "Any stop below 0.2 can move toward 0.2 and improve all distances; similarly a stop above 0.9 can move left. At any x between 0.2 and 0.9, moving right harms the person at 0.2 and moving left harms the person at 0.9. Thus the whole interval is efficient.",
+    "hint": "Use the two people at the extreme locations.",
+    "topic": "Microeconomics",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q5",
+    "number": "5",
+    "stem": "Match goods (a) cable television, (b) a fish in international waters, (c) a burger to descriptions: A nonrival and nonexcludable; B rival and excludable; C nonrival and excludable; D rival and nonexcludable.",
+    "options": [
+      "a–A, b–C, c–B",
+      "a–C, b–D, c–A",
+      "a–C, b–B, c–A",
+      "a–C, b–D, c–B"
+    ],
+    "correctIndex": 3,
+    "answer": "a–C, b–D, c–B",
+    "solution": "Cable access can exclude nonpayers while one viewer does not diminish another’s viewing. An unowned fish is a rival common resource. A burger is both rival in consumption and excludable.",
+    "hint": "Distinguish rivalry from the ability to exclude consumers.",
+    "topic": "Microeconomics",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q6",
+    "number": "6",
+    "stem": "A zero-cost monopolist sells goods A,B to three unit-demand individuals with valuations (10,1),(1,10),(7,7). It can set separate prices p_A,p_B and a bundle price p_AB for one unit of each. A profit-maximizing menu is",
+    "options": [
+      "p_A=11,p_B=11,p_AB=11",
+      "p_A=11,p_B=11,p_AB=14",
+      "p_A=10,p_B=10,p_AB=11",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "None: a maximizing menu is p_A=p_B=10, p_AB=14, with revenue 34",
+    "solution": "At (10,10,14), the first two buy their preferred single goods for 10 each, and the third buys the bundle for 14, totaling 34. The listed menus yield respectively 33,14,33. No menu can exceed 34: if neither of the first two buys a bundle, their payments are at most 10 each and the third at most 14. If either buys a bundle, its price is at most 11 and the resulting menu cannot exceed the 33 obtainable by selling that bundle to all.",
+    "hint": "Compare mixed bundling with pure bundling.",
+    "topic": "Microeconomics",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Uses participation and favorable tie-breaking at reservation prices, as is standard in the listed menus."
+  },
+  {
+    "id": "2019-PEA-Q7",
+    "number": "7",
+    "stem": "Two Bertrand firms face demand p=10−q. Lower price wins all demand; equal prices split demand equally. Costs are 3q₁ and 2q₂. Prices must lie in {0,0.1,0.2,…}. The equilibrium is",
+    "options": [
+      "p₁=2,p₂=2",
+      "p₁=3,p₂=2",
+      "p₁=3,p₂=2.9",
+      "p₁=3,p₂=3"
+    ],
+    "correctIndex": 2,
+    "answer": "p₁=3,p₂=2.9",
+    "solution": "Firm 1 cannot undercut 2.9 without selling below its marginal cost 3. Firm 2 earns (2.9−2)(10−2.9)=6.39, more than sharing demand at price 3 (profit 3.5). Lower prices reduce its profit on this price range, and prices above 3 lose demand.",
+    "hint": "Account for the discrete price grid and unequal marginal costs.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q8",
+    "number": "8",
+    "stem": "A monopolist faces p=20−q and operates two plants. Each plant has cost cᵢ(qᵢ)=2+4qᵢ if qᵢ>0, and 0 otherwise. Optimal monopoly profit is",
+    "options": [
+      "60",
+      "64",
+      "68",
+      "62"
+    ],
+    "correctIndex": 3,
+    "answer": "62",
+    "solution": "Both plants have identical marginal cost, so use just one to avoid the second fixed charge. Profit is (20−q)q−4q−2=16q−q²−2, maximized at q=8, giving 128−64−2=62.",
+    "hint": "Avoid paying a second fixed cost when marginal costs are identical.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q9",
+    "number": "9",
+    "stem": "Labour supply L maximizes u(C,L)=C^α(1−L)^β, α,β>0, α+β<1, with consumption expenditure C=wL. Then",
+    "options": [
+      "Labour supply does not depend on w",
+      "Labour supply is directly proportional to w",
+      "Labour supply is inversely proportional to w",
+      "More information is needed"
+    ],
+    "correctIndex": 0,
+    "answer": "L=α/(α+β), independent of w",
+    "solution": "Substitute C=wL. Maximizing αlnw+αlnL+βln(1−L) gives α/L−β/(1−L)=0, hence L=α/(α+β).",
+    "hint": "Substitute wage income into utility before differentiating.",
+    "topic": "Microeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q10",
+    "number": "10",
+    "stem": "In Question 9, suppose a Keynesian economy has autonomous investment I and Y=C+I. Production is Y=AL^θ with A>0 and 0<θ<1; firms equate the marginal product of labour to w. The marginal propensity to consume is",
+    "options": [
+      "(α+β)/θ",
+      "β/θ",
+      "α",
+      "θ"
+    ],
+    "correctIndex": 3,
+    "answer": "θ",
+    "solution": "Competitive labour demand implies w=AθL^(θ−1). Thus consumption expenditure C=wL=θAL^θ=θY. Differentiating gives dC/dY=θ.",
+    "hint": "Express the wage bill as a share of output.",
+    "topic": "Macroeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q11",
+    "number": "11",
+    "stem": "In a continuous-time Solow model, Y=F(K,AL), L̇/L=n, Ȧ/A=g, K̇=sY−δK. Let Z=K/(AL) and f(Z)=F(Z,1). Then Ż/Z equals",
+    "options": [
+      "sf(Z)/Z−(n+g)",
+      "sf(Z)/Z−(δ+n+g)",
+      "sf(Z)/Z",
+      "sf(Z)/Z−n"
+    ],
+    "correctIndex": 1,
+    "answer": "sf(Z)/Z−(δ+n+g)",
+    "solution": "Log differentiation gives Ż/Z=K̇/K−Ȧ/A−L̇/L. Constant returns imply Y/K=f(Z)/Z, so substitution gives sf(Z)/Z−δ−g−n.",
+    "hint": "Log-differentiate capital per effective worker.",
+    "topic": "Macroeconomics",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Uses the usual constant-returns production assumption of the Solow model."
+  },
+  {
+    "id": "2019-PEA-Q12",
+    "number": "12",
+    "stem": "In the Solow model of Question 11, the growth rate of aggregate output Y at steady state is",
+    "options": [
+      "n+g",
+      "δ+n+g",
+      "Zero",
+      "n"
+    ],
+    "correctIndex": 0,
+    "answer": "n+g",
+    "solution": "At steady state capital and output per effective worker are constant. Since effective labour AL grows at n+g, total output Y=ALf(Z*) grows at the same rate.",
+    "hint": "Distinguish aggregate output from output per effective worker.",
+    "topic": "Macroeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q13",
+    "number": "13",
+    "stem": "An IS–LM model has IS: 0.25Y=500+G−i, and money demand M/P=2Y/eⁱ. Government spending rises and the central bank changes M to hold the short-run interest rate i constant. Which condition holds?",
+    "options": [
+      "dM/dG=e",
+      "dM/dG=Ye/M",
+      "dM/dG=Y/M",
+      "dM/dG=4M/Y"
+    ],
+    "correctIndex": 3,
+    "answer": "dM/dG=4M/Y",
+    "solution": "With i fixed the IS equation gives dY/dG=4. At fixed short-run P and i, M=2Pe^(−i)Y implies dM/dY=M/Y. Chain differentiation therefore gives dM/dG=4M/Y.",
+    "hint": "Differentiate IS at a fixed rate, then differentiate LM.",
+    "topic": "Macroeconomics",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q14",
+    "number": "14",
+    "stem": "An agent maximizes ln c₁+βln c₂, 0<β<1, with incomes w₁,w₂ and interest rate r>0. If w₁ increases temporarily with expected w₂ unchanged, dc₁/dw₁ is",
+    "options": [
+      "(1/(1+β))(1+1/(1+r))",
+      "(1/(1+β))(1/(1+r))",
+      "1/(1+β)",
+      "1"
+    ],
+    "correctIndex": 2,
+    "answer": "1/(1+β)",
+    "solution": "Present-value wealth is W=w₁+w₂/(1+r). Log utility allocates c₁=W/(1+β). With w₂ fixed, dc₁/dw₁=1/(1+β).",
+    "hint": "Write the present-value budget constraint.",
+    "topic": "Microeconomics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q15",
+    "number": "15",
+    "stem": "In Question 14, w₁ increases permanently: expected w₂ rises by the same amount. Then dc₁/dw₁ is",
+    "options": [
+      "(1/(1+β))(1+1/(1+r))",
+      "(1/(1+β))(1/(1+r))",
+      "1/(1+β)",
+      "1"
+    ],
+    "correctIndex": 0,
+    "answer": "[1+1/(1+r)]/(1+β)",
+    "solution": "Since c₁=[w₁+w₂/(1+r)]/(1+β), a simultaneous equal rise in both incomes changes present-value wealth by 1+1/(1+r) per unit of w₁. Divide by 1+β.",
+    "hint": "Differentiate along a change that raises both incomes equally.",
+    "topic": "Microeconomics",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q16",
+    "number": "16",
+    "stem": "For what values of a are (0,1,a),(a,1,0),(1,a,1) linearly dependent in ℝ³?",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "√2"
+    ],
+    "correctIndex": null,
+    "answer": "a=0,√2,−√2; both A and D are valid listed values",
+    "solution": "Their determinant is a³−2a=a(a²−2). It vanishes at 0 and ±√2. Therefore the single-choice options include two correct values, 0 and √2, and omit the negative root.",
+    "hint": "Set the determinant of the vector matrix to zero.",
+    "topic": "Linear algebra",
+    "sourcePage": 8,
+    "status": "needs_review",
+    "notes": "No unique correct option in the printed source."
+  },
+  {
+    "id": "2019-PEA-Q17",
+    "number": "17",
+    "stem": "Which set of vectors is a basis of ℝ²?",
+    "options": [
+      "{(2,1)}",
+      "{(1,1),(2,2)}",
+      "{(1,1),(1,2),(2,1)}",
+      "{(1,1),(2,3)}"
+    ],
+    "correctIndex": 3,
+    "answer": "{(1,1),(2,3)}",
+    "solution": "A basis of ℝ² has exactly two independent vectors. The last pair has determinant 1·3−2·1=1≠0. The other options have too few vectors, dependent vectors, or too many vectors.",
+    "hint": "Check cardinality and a 2×2 determinant.",
+    "topic": "Linear algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q18",
+    "number": "18",
+    "stem": "A good candidate is selected in MSQE with probability 0.9, a bad candidate with probability 0.2. A candidate is equally likely good or bad. Conditional on selection, the probability the candidate is good is",
+    "options": [
+      "11/20",
+      "9/10",
+      "9/11",
+      "11/12"
+    ],
+    "correctIndex": 2,
+    "answer": "9/11",
+    "solution": "Bayes’ rule gives P(good|selected)=(0.9·0.5)/(0.9·0.5+0.2·0.5)=0.9/1.1=9/11.",
+    "hint": "Apply Bayes’ rule with equal prior probabilities.",
+    "topic": "Probability",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q19",
+    "number": "19",
+    "stem": "Let S₁={2,3,4,…,9}. Draw s₁ uniformly, remove it and all its factors to get S₂, draw s₂ uniformly from S₂, remove it and all its factors to get S₃, and draw s₃ uniformly from S₃. Find P(s₁=2,s₂=3,s₃=5).",
+    "options": [
+      "1/8",
+      "1/64",
+      "1/16",
+      "1/72"
+    ],
+    "correctIndex": null,
+    "answer": "1/336; no printed alternative matches",
+    "solution": "There are 8 initial choices. After drawing 2 only 2 is removed, since its other positive factor 1 was never in S₁. The new set has 7 elements. Drawing 3 removes only 3 from it, leaving 6. Thus the specified path has probability (1/8)(1/7)(1/6)=1/336.",
+    "hint": "Track the actual set after each deletion.",
+    "topic": "Probability",
+    "sourcePage": 9,
+    "status": "needs_review",
+    "notes": "All four printed choices differ from the independently computed probability."
+  },
+  {
+    "id": "2019-PEA-Q20",
+    "number": "20",
+    "stem": "A and B independently toss coins with head probability 0.25, twice each. Given exactly two heads among all four tosses, what is the probability A got exactly one head?",
+    "options": [
+      "2/3",
+      "1/2",
+      "1/4",
+      "1/3"
+    ],
+    "correctIndex": 0,
+    "answer": "2/3",
+    "solution": "Conditional on two heads, each of the C(4,2)=6 placements has equal probability p²(1−p)². Four placements give one head in A’s two tosses and one in B’s, so the probability is 4/6.",
+    "hint": "Condition on the equally likely placements of the two heads.",
+    "topic": "Probability",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q21",
+    "number": "21",
+    "stem": "Let f:ℝ→ℝ have f(x)=x if x≤e, and f(x)=xlnx if x>e. Which is true?",
+    "options": [
+      "f is not continuous at e",
+      "f is not differentiable at e",
+      "f is neither continuous nor differentiable at e",
+      "f is continuous and differentiable at e"
+    ],
+    "correctIndex": 1,
+    "answer": "Continuous but not differentiable at e",
+    "solution": "Both sides approach e and f(e)=e. The left derivative is 1; the right derivative of xlnx is lnx+1, tending to 2 at e. Thus differentiability fails.",
+    "hint": "Compare one-sided values and derivatives at e.",
+    "topic": "Calculus",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q22",
+    "number": "22",
+    "stem": "Let f:[−1,1]→ℝ be continuous and weakly increasing, with ∫₋₁¹f(x)dx=2∫₋₁¹f(−x)dx and f(−1)=0. What is the implied value of f on the interval?",
+    "options": [
+      "0",
+      "1",
+      "1/2",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "f is identically zero",
+    "solution": "The substitution u=−x makes the two integrals equal. Thus I=2I and I=0. Monotonicity and f(−1)=0 imply f≥0. A nonnegative continuous function with zero integral must vanish everywhere.",
+    "hint": "Compare the two integrals using reflection.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": "The official PDF’s line after “then” omits the requested function argument; the assumptions force f≡0, so every possible point-value target on this domain has the same answer 0."
+  },
+  {
+    "id": "2019-PEA-Q23",
+    "number": "23",
+    "stem": "A twice continuously differentiable f has f′(x*)=0. Consider (i) f″(x*)≤0 implies x* is a maximum; (ii) a local maximum at x* implies f″(x*)<0. Which is true?",
+    "options": [
+      "Both correct",
+      "Both incorrect",
+      "Only (i) correct",
+      "Only (ii) correct"
+    ],
+    "correctIndex": 1,
+    "answer": "Both incorrect",
+    "solution": "For f=x³ at 0, f′=f″=0 but there is no maximum, disproving (i). For f=−x⁴ at 0 there is a strict local maximum with f″=0, disproving (ii).",
+    "hint": "Test cases where the second derivative is zero.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q24",
+    "number": "24",
+    "stem": "For f(x)=eˣ on ℝ, which is true?",
+    "options": [
+      "f is quasiconvex",
+      "f is quasiconcave",
+      "f is neither quasiconvex nor quasiconcave",
+      "f is both quasiconvex and quasiconcave"
+    ],
+    "correctIndex": 3,
+    "answer": "Both quasiconvex and quasiconcave",
+    "solution": "A strictly increasing real function on an interval has convex lower and upper level sets, here half-lines. Hence the exponential is both quasiconvex and quasiconcave, and the fourth choice is the complete characterization.",
+    "hint": "Inspect both upper and lower level sets.",
+    "topic": "Calculus",
+    "sourcePage": 10,
+    "status": "verified",
+    "notes": "The fourth choice is the most complete answer; the individual properties in A and B are also true."
+  },
+  {
+    "id": "2019-PEA-Q25",
+    "number": "25",
+    "stem": "Let A=[[x,0,k],[1,x,k−3],[0,1,1]]. Its determinant is zero for two distinct real x. What is the least positive integer k?",
+    "options": [
+      "1",
+      "9",
+      "10",
+      "8"
+    ],
+    "correctIndex": 2,
+    "answer": "10",
+    "solution": "The determinant is x²−(k−3)x+k. Distinct real roots require (k−3)²−4k=(k−1)(k−9)>0, so k<1 or k>9. The least positive integer allowed is 10.",
+    "hint": "Require a positive quadratic discriminant.",
+    "topic": "Linear algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q26",
+    "number": "26",
+    "stem": "For positive integers, f(n)=2·4·⋯·(n−3)(n−1) if n is odd, and 1·3·⋯·(n−3)(n−1) if n is even. Find f(n+2)f(n+1).",
+    "options": [
+      "n!",
+      "(n+1)!",
+      "(n+2)!",
+      "(n+2)n!"
+    ],
+    "correctIndex": 1,
+    "answer": "(n+1)!",
+    "solution": "The two products contain, respectively, the odd and even integers from 1 through n+1. Their product therefore contains every integer from 1 to n+1 exactly once.",
+    "hint": "Interleave the two double-factorial products.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": "Empty products for the smallest n are taken as 1."
+  },
+  {
+    "id": "2019-PEA-Q27",
+    "number": "27",
+    "stem": "Let x₀=1 and xₙ=Σⱼ₌₀ⁿ⁻¹xⱼ for n≥1. Find Σⱼ₌₀^∞1/xⱼ.",
+    "options": [
+      "∞",
+      "2",
+      "3",
+      "7/4"
+    ],
+    "correctIndex": 2,
+    "answer": "3",
+    "solution": "The recurrence gives x₁=1, and xₙ₊₁=xₙ+Σⱼ₌₀ⁿ⁻¹xⱼ=2xₙ for n≥1. Thus xₙ=2ⁿ⁻¹ for n≥1, so the sum is 1+Σₙ≥₁2¹⁻ⁿ=1+2=3.",
+    "hint": "Find the ratio between consecutive terms after x₁.",
+    "topic": "Algebra",
+    "sourcePage": 11,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q28",
+    "number": "28",
+    "stem": "For what p does (p²−16)x²−(p²−4p)x+(p²−5p+4)=0 have more than two solutions in x?",
+    "options": [
+      "No such p",
+      "−4 and 4",
+      "1 and 4",
+      "4"
+    ],
+    "correctIndex": 3,
+    "answer": "p=4",
+    "solution": "A polynomial of degree at most two has more than two distinct roots only if all coefficients vanish. The first requires p=±4; the second excludes −4. At p=4 the constant also vanishes, so the identity 0=0 holds for all x.",
+    "hint": "Require all coefficients to vanish.",
+    "topic": "Algebra",
+    "sourcePage": 12,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q29",
+    "number": "29",
+    "stem": "The square has vertices A,B,C,D in cyclic order. With four labeled colours, how many ways can the vertices be coloured so adjacent vertices have different colours?",
+    "options": [
+      "84",
+      "24",
+      "72",
+      "108"
+    ],
+    "correctIndex": 0,
+    "answer": "84",
+    "solution": "Choose A in 4 ways and B in 3. If C matches A (1 choice), D has 3 choices. If C differs from A and B (2 choices), D has 2 choices. Total 4·3·(1·3+2·2)=84.",
+    "hint": "Split according to whether opposite vertices A,C match.",
+    "topic": "Algebra",
+    "sourcePage": 12,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2019-PEA-Q30",
+    "number": "30",
+    "stem": "Players P₁,P₂ alternately fill unfilled entries of an even n×n real matrix, n≥2, starting with P₁. After all entries are filled, P₁ wins if the determinant is nonzero; otherwise P₂ wins. Which is true?",
+    "options": [
+      "P₁ has a winning strategy",
+      "P₂ has a winning strategy",
+      "Neither has a winning strategy",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "answer": "P₂ has a winning strategy",
+    "solution": "Pair rows (1,2),(3,4),…. Whenever P₁ fills an entry, P₂ fills the same column in its paired row with the same value. The counterpart is always empty, because completed entries occur in pairs after every P₂ turn. The final matrix has identical paired rows and zero determinant.",
+    "hint": "Use a copying strategy that forces equal rows.",
+    "topic": "Linear algebra",
+    "sourcePage": 13,
+    "status": "verified",
+    "notes": ""
+  }
+]

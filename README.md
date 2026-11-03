@@ -1,35 +1,17 @@
-# EconPrep — ISI MSQE Preparation
+# EconPrep
 
-Demo interface for ISI MSQE entrance preparation.
+ISI MSQE preparation with year-wise PEA objective practice and PEB Question, Hint and Solution tabs. PEB practice is on paper, without answer entry. Includes the syllabus, bookmarks, browser-local performance analytics and topic weightage from indexed source questions.
 
-## Included
+Serve `dist/` with a static HTTP server, or open `EconPrep.html` with its adjacent `dist/` folder. No build dependencies are needed. Equations use locally bundled KaTeX. Progress is saved in the current browser's localStorage; it does not sync between devices.
 
-- PEA multiple-choice practice with a timer and scoring.
-- PEB Question, Hint, and Solution tabs for practice on paper.
-- Paper-year library for 1998–2024 (content import pending).
-- Official 2026 syllabus overview.
-- Bookmarks and browser-local practice history.
-- Analytics: session history, paper/date filters, PEA score trends, topic accuracy, and PEB practice/hint usage.
-- Topic Weightage: question-share calculations and paper/year filters, awaiting verified past-paper topic tags.
+The bank preserves original PDFs, source page links and separately identified sample booklets. Some supplied files are duplicated or contain mixed-year pages; source metadata records these cases. Original-source excerpts preserve complex notation for some PEA questions and can be opened at full size.
 
-## Run locally
+Answers are independently derived worked solutions, not official answer keys. Questions with source errors, missing assumptions or multiple defensible answers have a visible review flag and are excluded from automatic scoring. PEA uses unweighted practice scoring (+1 correct, 0 otherwise); this is not the official examination marking scheme. PEB records practice and hint usage, without inferring a score.
 
-Open EconPrep.html directly, or serve dist with any static HTTP server:
+`content/questions/` contains the editable question records. `dist/paper-bank.json` contains the generated bank and current paper-by-paper coverage. `build_paper_bank.py` rebuilds it from the research working folder when present, otherwise from `content/`; existing PDFs must remain in `dist/papers/`. Run `node check_paper_bank.cjs` and `node check_insights.cjs` for content, asset, equation and analytics checks. Run `python package_paper_app.py` to refresh the standalone entry and source ZIP.
 
-```sh
-python -m http.server 8000 --directory dist
-```
+No authentication or server-side database is implemented in this interface prototype. Hosting access is managed separately by Sites.
 
-No build step or dependencies are required. Edit files in dist for development. EconPrep.html is a standalone snapshot.
+The private GitHub mirror omits original PDF binaries. The deployed demo and complete source ZIP include them. To restore them after cloning, run `python restore_source_pdfs.py --source-directory "your original PDF folder" --download-official`. Question text, source excerpts, solutions, math assets and the generated bank remain usable without the full PDFs.
 
-Run the aggregation checks with Node.js:
-
-```sh
-node check_insights.cjs
-```
-
-## Data and status
-
-This is a demo. Questions are original samples; full past papers and verified solutions have not been imported. Analytics records topic-level results for new sessions; older sessions retain their aggregate scores. PEB practice is self-reviewed, not automatically graded. Topic Weightage uses verified past-paper question tags only; demo attempts never affect it, and percentages remain unavailable before tagging. Data is stored in this browser; accounts, cloud sync, and the Android app are planned. GATE, JAM, and CUET PG are planned.
-
-This repository intentionally contains no hosted demo link, hosting configuration, credentials, or source PDFs.
+Topic weightage counts indexed question items, including descriptive subparts, with year, track and source-kind filters. Incomplete years are explicitly labelled; missing content is not treated as a zero-frequency topic. Future GATE, JAM, CUET PG and Android support are planned. Deployment addresses are intentionally absent from this repository.

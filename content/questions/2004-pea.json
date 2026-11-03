@@ -1,0 +1,572 @@
+[
+  {
+    "id": "2004-PEA-Q1",
+    "number": "1",
+    "stem": "X∼B(n,p). The maximum value of Var(X) is",
+    "options": [
+      "n/4",
+      "n",
+      "n/2",
+      "1/n"
+    ],
+    "correctIndex": 0,
+    "answer": "n/4",
+    "solution": "Var(X)=np(1−p)=n[1/4−(p−1/2)²]≤n/4, attained at p=1/2.",
+    "hint": "Complete the square in p.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q2",
+    "number": "2",
+    "stem": "P(x) is a quadratic polynomial such that P(1)=−P(2). If one root is −1, the other root is",
+    "options": [
+      "−4/5",
+      "8/5",
+      "4/5",
+      "−8/5"
+    ],
+    "correctIndex": 1,
+    "answer": "8/5",
+    "solution": "Write P(x)=k(x+1)(x−r) with k≠0. Then 2(1−r)=−3(2−r), so 8=5r and r=8/5.",
+    "hint": "Factor using the known root.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q3",
+    "number": "3",
+    "stem": "Let f(x)=(x−a)³+(x−b)³+(x−c)³, where a<b<c. The number of real roots of f(x)=0 is",
+    "options": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ],
+    "correctIndex": 2,
+    "answer": "1",
+    "solution": "The derivative is 3[(x−a)²+(x−b)²+(x−c)²]>0, since distinct a,b,c cannot all equal x. Thus f is strictly increasing. Its limits at ±∞ have opposite signs, so exactly one real zero exists.",
+    "hint": "Show the derivative is strictly positive.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q4",
+    "number": "4",
+    "stem": "Three students A,B,C independently solve a statistics problem with probabilities 1/3,1/4,1/5. The probability that the problem is solved is",
+    "options": [
+      "3/5",
+      "2/5",
+      "1/5",
+      "4/5"
+    ],
+    "correctIndex": 0,
+    "answer": "3/5",
+    "solution": "The probability none solves it is (2/3)(3/4)(4/5)=2/5. Its complement is 3/5.",
+    "hint": "Use the complement event.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q5",
+    "number": "5",
+    "stem": "Let ρ₁ and ρ₂ be the correlations of x,y satisfying respectively (i) y=2+3x and (ii) 2y=5+8x. Then",
+    "options": [
+      "ρ₁>ρ₂",
+      "ρ₂>ρ₁",
+      "ρ₁=ρ₂",
+      "Either ρ₁>ρ₂ or ρ₁<ρ₂"
+    ],
+    "correctIndex": 2,
+    "answer": "ρ₁=ρ₂=1",
+    "solution": "Both are exact affine relationships with positive slopes, 3 and 4. For nonconstant x both correlations are +1.",
+    "hint": "Correlation does not depend on a positive slope’s magnitude.",
+    "topic": "Statistics",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Nonzero variance is implicit in the stated correlation coefficients."
+  },
+  {
+    "id": "2004-PEA-Q6",
+    "number": "6",
+    "stem": "The slope in the regression of y on x is Cov(x,y)/V(x). The slope in the regression of x on y is",
+    "options": [
+      "V(x)/Cov(x,y)",
+      "Cov(x,y)/V(x)",
+      "Cov(x,y)/√(V(x)V(y))",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "Cov(x,y)/V(y), hence none of these",
+    "solution": "Swap the response and explanatory variable in the least-squares slope formula. The explanatory variable is now y, so its variance belongs in the denominator.",
+    "hint": "The denominator is the explanatory variable’s variance.",
+    "topic": "Statistics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q7",
+    "number": "7",
+    "stem": "For f(x)=eˣ, which statement is true?",
+    "options": [
+      "f((x₁+x₂)/2)>(f(x₁)+f(x₂))/2 for every distinct x₁,x₂",
+      "f((x₁+x₂)/2)<(f(x₁)+f(x₂))/2 for every distinct x₁,x₂",
+      "The first strict inequality holds for some distinct pair, and the reverse holds for some distinct pair",
+      "Equality holds for at least one distinct pair"
+    ],
+    "correctIndex": 1,
+    "answer": "The strict midpoint convexity inequality in the second choice",
+    "solution": "Since f″(x)=eˣ>0 everywhere, f is strictly convex. Its value at the midpoint of distinct points lies strictly below their average function value.",
+    "hint": "Use strict convexity of the exponential.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q8",
+    "number": "8",
+    "stem": "Consider (i) 1/2+2/2²+3/2³+4/2⁴+⋯ and (ii) 1/2+1/2²+1/2³+1/2⁴+⋯. Then",
+    "options": [
+      "Only the first converges",
+      "Only the second converges",
+      "Both converge",
+      "Both diverge"
+    ],
+    "correctIndex": 2,
+    "answer": "Both converge",
+    "solution": "The second is geometric with sum 1. Differentiating Σrⁿ=1/(1−r) gives Σₙ≥₁nrⁿ=r/(1−r)², so the first converges to 2 at r=1/2.",
+    "hint": "Use geometric-series identities.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q9",
+    "number": "9",
+    "stem": "The function x|x| is",
+    "options": [
+      "Discontinuous at x=0",
+      "Continuous but not differentiable at x=0",
+      "Differentiable at x=0",
+      "Continuous everywhere but not differentiable anywhere"
+    ],
+    "correctIndex": 2,
+    "answer": "Differentiable at x=0",
+    "solution": "Its derivative at zero is limₕ→₀h|h|/h=limₕ→₀|h|=0.",
+    "hint": "Use the difference quotient at zero.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q10",
+    "number": "10",
+    "stem": "The sequence (−1)ⁿ⁺¹ has",
+    "options": [
+      "No limit",
+      "1 as the limit",
+      "−1 as the limit",
+      "1 and −1 as the limits"
+    ],
+    "correctIndex": 0,
+    "answer": "No limit",
+    "solution": "Its odd-index subsequence is constantly 1 and its even-index subsequence constantly −1. Distinct subsequential limits rule out convergence of the full sequence.",
+    "hint": "Compare the odd and even subsequences.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q11",
+    "number": "11",
+    "stem": "The series 1·(1/2)+(1/2)(1/3)+(1/3)(1/4)+⋯+(1/n)(1/(n+1))+⋯",
+    "options": [
+      "Diverges",
+      "Converges to a number between 0 and 1",
+      "Converges to a number greater than 2",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "It converges to exactly 1; none of these",
+    "solution": "The nth term is 1/[n(n+1)]=1/n−1/(n+1). The partial sum through n is 1−1/(n+1)→1, which is neither strictly between 0 and 1 nor greater than 2.",
+    "hint": "Telescope the partial fractions.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Interprets “between 0 and 1” strictly; the sum is the endpoint 1."
+  },
+  {
+    "id": "2004-PEA-Q12",
+    "number": "12",
+    "stem": "For x>0, let fₜ(x)=(xᵗ−1)/(xᵗ+1). The limit as t→∞",
+    "options": [
+      "Does not exist",
+      "Exists and is everywhere continuous",
+      "Exists and is discontinuous at exactly one point",
+      "Exists and is discontinuous at exactly two points"
+    ],
+    "correctIndex": 2,
+    "answer": "Exists, with one discontinuity at x=1",
+    "solution": "For 0<x<1 the limit is −1; at x=1 it is 0; for x>1 it is 1. This function is continuous on each side of 1 and discontinuous at 1 alone.",
+    "hint": "Split into x<1, x=1, and x>1.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q13",
+    "number": "13",
+    "stem": "If u=sin⁻¹((x²+y²)/(x+y)), then x∂u/∂x+y∂u/∂x is equal to",
+    "options": [
+      "sin u cos u",
+      "cot u",
+      "tan u",
+      "None of these"
+    ],
+    "correctIndex": null,
+    "answer": "The printed derivative repeats ∂u/∂x; intended Euler expression would give tan u",
+    "solution": "Put v=(x²+y²)/(x+y), homogeneous of degree 1. Euler’s theorem gives xvₓ+yvᵧ=v, and hence xuₓ+yuᵧ=tan u. But the source prints (x+y)uₓ, which equals (x²+2xy−y²)/[(x+y)cos u] and is not generally tan u. The question’s likely typo needs editorial resolution before grading.",
+    "hint": "Check the denominator on each partial derivative before applying Euler’s theorem.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "needs_review",
+    "notes": "Both displayed derivatives are with respect to x in the PDF. Preserve the printed formula rather than silently changing the second denominator to y."
+  },
+  {
+    "id": "2004-PEA-Q14",
+    "number": "14",
+    "stem": "The derivative of tan⁻¹(cos x/(1+sin x)) with respect to x is",
+    "options": [
+      "−x/2",
+      "x/2",
+      "1/2",
+      "−1/2"
+    ],
+    "correctIndex": 3,
+    "answer": "−1/2 wherever the source expression is defined",
+    "solution": "For q=cosx/(1+sinx), q′=−1/(1+sinx) and 1+q²=2/(1+sinx). Thus (arctanq)′=q′/(1+q²)=−1/2.",
+    "hint": "Differentiate arctangent using the quotient rule.",
+    "topic": "Calculus",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q15",
+    "number": "15",
+    "stem": "The infinite series 1+3/4+7/16+15/64+31/256+⋯ has sum",
+    "options": [
+      "2/3",
+      "4/3",
+      "8/3",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "8/3",
+    "solution": "The nth term for n≥0 is (2ⁿ⁺¹−1)/4ⁿ. Summing gives 2Σ(1/2)ⁿ−Σ(1/4)ⁿ=4−4/3=8/3.",
+    "hint": "Express each numerator as a power of 2 minus 1.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q16",
+    "number": "16",
+    "stem": "Five boys and four girls are seated in a row with no two girls together. The number of arrangements is",
+    "options": [
+      "⁶P₄×5!",
+      "⁴P₂×5!",
+      "4!×5!",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "⁶P₄×5!=43200",
+    "solution": "Arrange the five boys in 5! ways. They create six gaps, including the two ends. Assign four distinct girls to four distinct gaps in ⁶P₄ ways.",
+    "hint": "Place the boys first and use the gaps.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q17",
+    "number": "17",
+    "stem": "A point has distances from (−a,0) and (a,0) in the ratio 2:3. Its locus is",
+    "options": [
+      "x²+y²+10ax+a²=0",
+      "5x²+5y²+26ax+5a²=0",
+      "5x²+5y²−26ax+5a²=0",
+      "x²+y²−10ax+a²=0"
+    ],
+    "correctIndex": 1,
+    "answer": "5x²+5y²+26ax+5a²=0",
+    "solution": "Squaring the ratio gives 9[(x+a)²+y²]=4[(x−a)²+y²]. Expanding and collecting yields the second equation.",
+    "hint": "Square the distance-ratio equation.",
+    "topic": "Algebra",
+    "sourcePage": 6,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q18",
+    "number": "18",
+    "stem": "If Σₓ₌₁¹⁰⁰x! is divided by 36, the remainder is",
+    "options": [
+      "3",
+      "6",
+      "9",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "9",
+    "solution": "For x≥6, x! is divisible by 36. The remaining sum is 1!+2!+3!+4!+5!=153, whose remainder on division by 36 is 9.",
+    "hint": "Only the first few factorials matter modulo 36.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "The source’s old factorial symbol is normalized to !; it is not a floor function."
+  },
+  {
+    "id": "2004-PEA-Q19",
+    "number": "19",
+    "stem": "If a,b,c,d are in G.P., then (a³+b³)⁻¹,(b³+c³)⁻¹,(c³+d³)⁻¹ are in",
+    "options": [
+      "A.P.",
+      "G.P.",
+      "H.P.",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "G.P., when the displayed reciprocals exist",
+    "solution": "Write b=ar,c=ar²,d=ar³. The denominators are a³(1+r³), a³r³(1+r³), a³r⁶(1+r³). Their reciprocals have common ratio r⁻³.",
+    "hint": "Represent the geometric progression using its ratio.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": "The statement presupposes nonzero denominators; for example ratio −1 would make the displayed quantities undefined."
+  },
+  {
+    "id": "2004-PEA-Q20",
+    "number": "20",
+    "stem": "The solution set of ||x|−1|<1−x is",
+    "options": [
+      "(−∞,0)",
+      "(−∞,∞)",
+      "(0,∞)",
+      "(−1,1)"
+    ],
+    "correctIndex": 0,
+    "answer": "(−∞,0)",
+    "solution": "If x≥1 the right side is nonpositive, impossible. If 0≤x<1 both sides equal 1−x. For x<0, putting t=−x>0 gives |t−1|<t+1, always true.",
+    "hint": "Split into negative x and the two nonnegative ranges.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q21",
+    "number": "21",
+    "stem": "The distance of the curve y=x² from the line 2x−y=4 is minimum at",
+    "options": [
+      "(−1,1)",
+      "(1,1)",
+      "(2,4)",
+      "(1/2,1/4)"
+    ],
+    "correctIndex": 1,
+    "answer": "(1,1)",
+    "solution": "The distance is |2x−x²−4|/√5=[(x−1)²+3]/√5, minimized at x=1. The curve then has y=1.",
+    "hint": "Use the point-to-line distance formula and complete the square.",
+    "topic": "Calculus",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q22",
+    "number": "22",
+    "stem": "The dual of: maximize x₁+x₂ subject to −3x₁+2x₂≤−1, x₁−x₂≤2, x₁,x₂≥0, has",
+    "options": [
+      "A unique optimal solution",
+      "A feasible solution but no optimal solution",
+      "Multiple optimal solutions",
+      "No feasible solution"
+    ],
+    "correctIndex": 3,
+    "answer": "No feasible solution",
+    "solution": "The primal is feasible at (1,0). Adding t(1,1), t≥0, preserves feasibility and increases its objective without bound. A feasible dual would give a finite upper bound by weak duality, so the dual is infeasible.",
+    "hint": "Find a feasible direction that increases the primal objective without bound.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q23",
+    "number": "23",
+    "stem": "The number of real roots of x²−3|x|+2=0 is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctIndex": 3,
+    "answer": "4",
+    "solution": "Put t=|x|≥0. Then (t−1)(t−2)=0, so x=±1,±2 gives four roots.",
+    "hint": "Solve the quadratic in |x|.",
+    "topic": "Algebra",
+    "sourcePage": 7,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q24",
+    "number": "24",
+    "stem": "Four letters are placed into four addressed envelopes so every letter is in a wrong envelope. The number of ways is",
+    "options": [
+      "9",
+      "12",
+      "16",
+      "64"
+    ],
+    "correctIndex": 0,
+    "answer": "9",
+    "solution": "Inclusion–exclusion gives 4!−C(4,1)3!+C(4,2)2!−C(4,3)1!+C(4,4)0!=24−24+12−4+1=9.",
+    "hint": "Count derangements by inclusion–exclusion.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q25",
+    "number": "25",
+    "stem": "If a²x²+2bx+c=0 has one root greater than 1 and the other less than 1, then",
+    "options": [
+      "a²+2b+c=0",
+      "a²+2b+c>0",
+      "2b+c<0",
+      "2b+c>0"
+    ],
+    "correctIndex": 2,
+    "answer": "2b+c<0",
+    "solution": "There are two roots straddling 1, and the leading coefficient a² is positive. Hence the polynomial at 1 is negative: a²+2b+c<0. Therefore 2b+c<−a²<0.",
+    "hint": "Evaluate the upward-opening quadratic at 1.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q26",
+    "number": "26",
+    "stem": "Let aₙ=1/n and bₙ=1/(n+1). Find Σₙ₌₁⁹⁹(aₙ−bₙ)²/(aₙbₙ).",
+    "options": [
+      "1",
+      "1−1/99",
+      "99/100",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "99/100",
+    "solution": "The summand simplifies to 1/[n(n+1)]=1/n−1/(n+1). Telescoping through n=99 gives 1−1/100=99/100.",
+    "hint": "Simplify a single summand before summing.",
+    "topic": "Algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q27",
+    "number": "27",
+    "stem": "If A=[[1,−1],[2,−2]], then A¹⁰⁰+A⁵ is",
+    "options": [
+      "[[0,0],[0,0]]",
+      "[[1,−1],[2,−2]]",
+      "[[−1,1],[−2,2]]",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "The zero matrix",
+    "solution": "Direct multiplication gives A²=−A. Hence Aᵏ=(−1)ᵏ⁻¹A for k≥1, so A¹⁰⁰+A⁵=−A+A=0.",
+    "hint": "Calculate A² first.",
+    "topic": "Linear algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q28",
+    "number": "28",
+    "stem": "Find limₓ→₀(sin x/x)^(1/x²).",
+    "options": [
+      "0",
+      "1",
+      "e^(−1/2)",
+      "e^(−1/6)"
+    ],
+    "correctIndex": 3,
+    "answer": "e^(−1/6)",
+    "solution": "Since sinx/x=1−x²/6+O(x⁴), the logarithm of the expression is x⁻²ln(1−x²/6+O(x⁴))→−1/6. Exponentiating gives e^(−1/6).",
+    "hint": "Take logarithms and expand sin x at zero.",
+    "topic": "Calculus",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2004-PEA-Q29",
+    "number": "29",
+    "stem": "The system x+y+z=6, x+ay−z=1, 2x+2y+bz=12 has a unique solution if and only if",
+    "options": [
+      "a≠1",
+      "b≠2",
+      "ab≠2a+b+2",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "None of these: the correct condition is (a−1)(b−2)≠0",
+    "solution": "Subtract row 1 from row 2 and twice row 1 from row 3. The determinant becomes (a−1)(b−2). Unique solvability requires both a≠1 and b≠2. Equivalently ab≠2a+b−2, whereas the source’s third option prints +2.",
+    "hint": "Use row operations to compute the coefficient determinant.",
+    "topic": "Linear algebra",
+    "sourcePage": 8,
+    "status": "verified",
+    "notes": "Source choice (C) has +2, visually checked. It is not the determinant condition; do not silently replace its sign."
+  },
+  {
+    "id": "2004-PEA-Q30",
+    "number": "30",
+    "stem": "The number of times y=x³−3x+3 intersects the x-axis is",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctIndex": 1,
+    "answer": "1",
+    "solution": "The derivative is 3(x²−1), with local maximum f(−1)=5 and local minimum f(1)=1, both positive. The strictly increasing branch on (−∞,−1) rises from −∞ to 5, crossing zero once; the remaining branches stay positive.",
+    "hint": "Evaluate the cubic at its two critical points.",
+    "topic": "Calculus",
+    "sourcePage": 9,
+    "status": "verified",
+    "notes": ""
+  }
+]

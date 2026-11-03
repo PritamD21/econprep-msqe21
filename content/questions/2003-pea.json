@@ -1,0 +1,344 @@
+[
+  {
+    "id": "2003-PEA-Q1",
+    "number": "1",
+    "stem": "The function f(x)=|x| is",
+    "options": [
+      "Both continuous and differentiable at x=0",
+      "Neither continuous nor differentiable at x=0",
+      "Continuous but not differentiable at x=0",
+      "Differentiable but not continuous at x=0"
+    ],
+    "correctIndex": 2,
+    "answer": "Continuous but not differentiable at zero",
+    "solution": "The limit of |x| at zero is zero, but the left derivative is −1 and the right derivative is 1.",
+    "hint": "Compare the one-sided derivatives.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q2",
+    "number": "2",
+    "stem": "Let f(x)=f(−x) for every real x. If f′(0) exists, it equals",
+    "options": [
+      "0",
+      "−1",
+      "1",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "The difference quotient at −h is the negative of that at h because f(−h)=f(h). If both converge to the same derivative, it must equal its negative and therefore be zero.",
+    "hint": "Use evenness in the difference quotient.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q3",
+    "number": "3",
+    "stem": "Find limₓ→₁[x+x²+x³+⋯+xⁿ−n]/(x−1).",
+    "options": [
+      "n²",
+      "(n+1)/2",
+      "n(n+1)/2",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "n(n+1)/2",
+    "solution": "The limit is the derivative at 1 of x+x²+⋯+xⁿ. This is 1+2+⋯+n=n(n+1)/2.",
+    "hint": "Recognize a derivative at 1.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q4",
+    "number": "4",
+    "stem": "Suppose dX(t)/dt=3t^(1/2). The dependence of X(t) on X(0) is",
+    "options": [
+      "X(0)+3t^(1/2)",
+      "X(0)+3t^(3/2)",
+      "X(0)+2t^(3/2)",
+      "X(0)+2t^(1/2)"
+    ],
+    "correctIndex": 2,
+    "answer": "X(t)=X(0)+2t^(3/2)",
+    "solution": "Integrate from 0 to t: X(t)−X(0)=∫₀ᵗ3s^(1/2)ds=2t^(3/2).",
+    "hint": "Integrate the rate of change.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q5",
+    "number": "5",
+    "stem": "The second-order Taylor expansion of 1/(1+x) about x₀=1 is",
+    "options": [
+      "1/2+1/[2(1+x)]+remainder",
+      "1/2−(x−1)/8+(x−1)²/4+remainder",
+      "1/2+(x−1)/2+(x−1)²/8+remainder",
+      "1/2−(x−1)/4+(x−1)²/8+remainder"
+    ],
+    "correctIndex": 3,
+    "answer": "1/2−(x−1)/4+(x−1)²/8+remainder",
+    "solution": "For f=1/(1+x), f(1)=1/2, f′(1)=−1/4 and f″(1)=1/4. Taylor’s formula gives f(1)+f′(1)(x−1)+f″(1)(x−1)²/2.",
+    "hint": "Compute the first two derivatives at 1.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q6",
+    "number": "6",
+    "stem": "Let A be the real numbers satisfying |1−x|−x≥0. Then A equals",
+    "options": [
+      "[−1/2,1/2]",
+      "(−∞,0]",
+      "(−∞,−1/2]",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "A=(−∞,1/2], hence none of these",
+    "solution": "For x≤1 the left side is 1−2x, nonnegative exactly when x≤1/2. For x>1 it equals −1, so there are no further solutions.",
+    "hint": "Split the absolute value at x=1.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q7",
+    "number": "7",
+    "stem": "For an arithmetic progression, Sₘ/Sₙ=m²/n², where Sₘ,Sₙ are sums through m,n terms. If tₘ,tₙ denote those terms, tₘ/tₙ equals",
+    "options": [
+      "(2m−1)/(2n−1)",
+      "(2m+1)/(2n+1)",
+      "(2m−1)/(2n+1)",
+      "(2m+1)/(2n−1)"
+    ],
+    "correctIndex": 0,
+    "answer": "(2m−1)/(2n−1) for distinct positive indices",
+    "solution": "Write Sₖ=k[2a+(k−1)d]/2. Cross multiplication of the given relation gives (n−m)(2a−d)=0. For m≠n this forces d=2a, so tₖ=a+(k−1)d=a(2k−1), giving the first choice. For m=n the requested ratio is simply 1, also the first expression.",
+    "hint": "Use the arithmetic-progression sum formula.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Ratios presuppose nonzero denominators."
+  },
+  {
+    "id": "2003-PEA-Q8",
+    "number": "8",
+    "stem": "The expression √(11+6√2)+√(11−6√2) is",
+    "options": [
+      "An even positive integer",
+      "An even positive number with an even decimal component",
+      "An odd positive number with an odd decimal component",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "6, an even positive integer",
+    "solution": "Since (3±√2)²=11±6√2 and both 3±√2 are positive, the radicals sum to (3+√2)+(3−√2)=6.",
+    "hint": "Seek radicals of the form 3±√2.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "The source’s unusual wording in choices B and C is preserved."
+  },
+  {
+    "id": "2003-PEA-Q9",
+    "number": "9",
+    "stem": "Maximize 2x²+y² subject to x+y≤1 and x,y≥0. An optimizing value of x is",
+    "options": [
+      "1/2",
+      "2/3",
+      "1",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "x=1",
+    "solution": "Since x²+y²≤(x+y)²≤1 and x²≤1, 2x²+y²≤2. Equality occurs at (x,y)=(1,0).",
+    "hint": "Compare with the value at the feasible vertices.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q10",
+    "number": "10",
+    "stem": "In what ratio should a given line be divided so the rectangle with those two side lengths has maximum area?",
+    "options": [
+      "1:1",
+      "4:3",
+      "3:2",
+      "(√5+1):(√5−1)"
+    ],
+    "correctIndex": 0,
+    "answer": "1:1",
+    "solution": "If the total length is L, the area is x(L−x)=L²/4−(x−L/2)². Its maximum occurs when both parts equal L/2.",
+    "hint": "Complete the square in the area.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q11",
+    "number": "11",
+    "stem": "The derivative with respect to a of ∫ₐ¹⁰⁰x dx is",
+    "options": [
+      "a",
+      "−a",
+      "a²",
+      "100a"
+    ],
+    "correctIndex": 1,
+    "answer": "−a",
+    "solution": "The fundamental theorem with a variable lower limit gives d/da ∫ₐ¹⁰⁰x dx=−a.",
+    "hint": "A variable lower integration limit introduces a minus sign.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q12",
+    "number": "12",
+    "stem": "The domain of f(x)=√(x²−|x|)+1/√(9−x²) is",
+    "options": [
+      "(−2,−1)",
+      "[2,3)",
+      "{0}",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "(−3,−1]∪{0}∪[1,3), hence none",
+    "solution": "The first radical requires |x|(|x|−1)≥0, so x=0 or |x|≥1. The denominator requires |x|<3. Their intersection is the stated set.",
+    "hint": "Intersect both square-root domain conditions.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q13",
+    "number": "13",
+    "stem": "The range of f(x)=√(−4x²+4x+3) is",
+    "options": [
+      "[0,−1)",
+      "[1,3]",
+      "(0,1)",
+      "None of the above"
+    ],
+    "correctIndex": 3,
+    "answer": "[0,2], hence none of these",
+    "solution": "The radicand is 4−4(x−1/2)². On its real domain it runs from 0 to 4, so its square root runs from 0 to 2 inclusive.",
+    "hint": "Complete the square under the radical.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "Choice A is printed [0,−1), an empty interval; preserved as printed."
+  },
+  {
+    "id": "2003-PEA-Q14",
+    "number": "14",
+    "stem": "For 0<x<1, find the sum 1²+2²x+3²x²+4²x³+⋯.",
+    "options": [
+      "1",
+      "(1−x)⁻¹",
+      "(1+2x)(1+x)⁻¹",
+      "(1+x)(1−x)⁻³"
+    ],
+    "correctIndex": 3,
+    "answer": "(1+x)/(1−x)³",
+    "solution": "Differentiate x/(1−x)²=Σₙ≥₁nxⁿ termwise on |x|<1. The derivative is (1+x)/(1−x)³=Σₙ≥₁n²xⁿ⁻¹.",
+    "hint": "Differentiate the series for Σnxⁿ.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q15",
+    "number": "15",
+    "stem": "Let F(y)=∫₀¹x²y dx and G(y)=y+|y|. Then",
+    "options": [
+      "F(y)>G(y) for all y≥0",
+      "F(y)<G(y) for all y≥0",
+      "F(y)<G(y) for all y>0",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "answer": "F(y)<G(y) for every y>0",
+    "solution": "F(y)=y/3. For y>0, G(y)=2y and y/3<2y. At zero both vanish, so the option that includes zero with a strict inequality is false.",
+    "hint": "Evaluate the integral and check the endpoint y=0.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q16",
+    "number": "16",
+    "stem": "The function √(4x−x²) is",
+    "options": [
+      "Bounded wherever it is defined",
+      "Unbounded",
+      "Well-defined for all x",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "answer": "Bounded on its real domain",
+    "solution": "The radicand is 4−(x−2)². Its real domain is [0,4], and the function lies between 0 and 2.",
+    "hint": "Complete the square.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2003-PEA-Q17",
+    "number": "17",
+    "stem": "For A=[[a,b],[c,d]] with ad≠bc, the matrix (ad−bc)⁻¹[[d,−b],[−c,a]] is",
+    "options": [
+      "The right inverse of A",
+      "The left inverse of A",
+      "The inverse of A",
+      "None of the above"
+    ],
+    "correctIndex": null,
+    "answer": "It is the two-sided inverse; A, B and C are all true",
+    "solution": "Multiplication on either side gives the identity matrix. Thus the displayed expression is the inverse, as the likely intended choice C states, but it is also both a left inverse and a right inverse. The alternatives overlap, making a unique literal answer unavailable.",
+    "hint": "Multiply the matrices in both orders.",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "needs_review",
+    "notes": "The instruction says choose the most appropriate alternative; intended C is strongest, but the other two alternatives are also mathematically correct."
+  },
+  {
+    "id": "2003-PEA-Q18",
+    "number": "18",
+    "stem": "Var(X)=4 and Var(Y)=9. Let V=Var(X−Y) when X,Y are independent and R=Var(X−Y) when Cov(X,Y)=2. Then",
+    "options": [
+      "V>R",
+      "V<R",
+      "V=R",
+      "Cannot be said definitely"
+    ],
+    "correctIndex": 0,
+    "answer": "V=13>R=9",
+    "solution": "Var(X−Y)=Var(X)+Var(Y)−2Cov(X,Y). Independence gives V=13; covariance 2 gives R=13−4=9.",
+    "hint": "Use the variance formula for a difference.",
+    "topic": "Statistics",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  }
+]

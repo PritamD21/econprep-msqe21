@@ -1,0 +1,287 @@
+[
+  {
+    "id": "2006-PEA-Q1",
+    "number": "1",
+    "stem": "If f(x)=log((1+x)/(1−x)), 0<x<1, then f(2x/(1+x²)) equals",
+    "options": [
+      "2f(x)",
+      "f(x)/2",
+      "(f(x))²",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "2f(x)",
+    "solution": "Putting t=2x/(1+x²), (1+t)/(1−t)=(1+x)²/(1−x)². Taking logarithms gives 2f(x).",
+    "hint": "Simplify the ratio inside the logarithm.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q2",
+    "number": "2",
+    "stem": "If u=φ(x−y,y−z,z−x), then ∂u/∂x+∂u/∂y+∂u/∂z equals",
+    "options": [
+      "0",
+      "1",
+      "u",
+      "None of these"
+    ],
+    "correctIndex": 0,
+    "answer": "0",
+    "solution": "Write φ₁,φ₂,φ₃ for its partial derivatives. The chain rule gives uₓ=φ₁−φ₃, uᵧ=−φ₁+φ₂, u_z=−φ₂+φ₃; their sum is zero.",
+    "hint": "Apply the multivariable chain rule.",
+    "topic": "Calculus",
+    "sourcePage": 2,
+    "status": "verified",
+    "notes": "Differentiability of φ is implicit in the displayed partial derivatives."
+  },
+  {
+    "id": "2006-PEA-Q3",
+    "number": "3",
+    "stem": "Let disjoint sets A and B contain m and n elements, respectively, and C=A∪B. The number of subsets S of C containing k elements with S∩A containing i elements is",
+    "options": [
+      "C(m,i)",
+      "C(n,i)",
+      "C(m,k−i)C(n,i)",
+      "C(m,i)C(n,k−i)"
+    ],
+    "correctIndex": 3,
+    "answer": "C(m,i)C(n,k−i)",
+    "solution": "Choose the i elements from A and the remaining k−i from B independently. The product rule gives the fourth choice.",
+    "hint": "Choose separately from the disjoint sets.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q4",
+    "number": "4",
+    "stem": "The number of disjoint intervals over which f(x)=|0.5x²−|x|| is decreasing is",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Three",
+    "solution": "For x≥0, f=x−x²/2 on [0,2] and f=x²/2−x on [2,∞). It decreases on (1,2). By evenness the negative-side decreasing intervals are (−∞,−2) and (−1,0). Thus there are three maximal decreasing intervals.",
+    "hint": "Split at the zeros and turning points of the absolute-value expression.",
+    "topic": "Calculus",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q5",
+    "number": "5",
+    "stem": "For real numbers x₁,…,xₙ, RMS={N⁻¹Σᵢ₌₁ⁿxᵢ²}^(1/2). If AM denotes their arithmetic mean, which statement is correct?",
+    "options": [
+      "RMS<AM always",
+      "RMS>AM always",
+      "RMS<AM when the numbers are not all equal",
+      "RMS>AM when the numbers are not all equal"
+    ],
+    "correctIndex": 3,
+    "answer": "RMS>AM when the numbers are not all equal",
+    "solution": "Interpreting N as the number n of observations, RMS²−AM²=n⁻¹Σ(xᵢ−AM)². For unequal observations this is positive, so RMS>|AM|≥AM.",
+    "hint": "Relate the difference of squared means to variance.",
+    "topic": "Statistics",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": "Source uses uppercase N in the denominator but lowercase n for the number of observations; they are interpreted as the same sample size."
+  },
+  {
+    "id": "2006-PEA-Q6",
+    "number": "6",
+    "stem": "Let Δf(x)=f(x+1)−f(x), and for k>1 put Δᵏf=Δ(Δᵏ⁻¹f). Then Δᵏf(x) equals",
+    "options": [
+      "Σⱼ₌₀ᵏ(−1)ʲC(k,j)f(x+j)",
+      "Σⱼ₌₀ᵏ(−1)ʲ⁺¹C(k,j)f(x+j)",
+      "Σⱼ₌₀ᵏ(−1)ʲC(k,j)f(x+k−j)",
+      "Σⱼ₌₀ᵏ(−1)ʲ⁺¹C(k,j)f(x+k−j)"
+    ],
+    "correctIndex": 2,
+    "answer": "Σⱼ₌₀ᵏ(−1)ʲC(k,j)f(x+k−j)",
+    "solution": "If E is the shift operator Ef(x)=f(x+1), then Δ=E−I. The binomial expansion of (E−I)ᵏ gives precisely the third expression.",
+    "hint": "Use the binomial theorem for the shift operator.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q7",
+    "number": "7",
+    "stem": "Let Iₙ=∫₀^∞xⁿe^(−x)dx for a positive integer n. Then Iₙ equals",
+    "options": [
+      "n!−nIₙ₋₁",
+      "n!+nIₙ₋₁",
+      "nIₙ₋₁",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "nIₙ₋₁",
+    "solution": "Integrate by parts with u=xⁿ and dv=e^(−x)dx. The boundary term −xⁿe^(−x) vanishes at both ends, leaving n∫₀^∞xⁿ⁻¹e^(−x)dx.",
+    "hint": "Integrate by parts.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q8",
+    "number": "8",
+    "stem": "If x³=1, then Δ=det([[a,b,c],[b,c,a],[c,a,b]]) equals",
+    "options": [
+      "(cx²+bx+a)det([[1,b,c],[x,c,a],[x²,a,b]])",
+      "(cx²+bx+a)det([[x,b,c],[1,c,a],[x²,a,b]])",
+      "(cx²+bx+a)det([[x²,b,c],[x,c,a],[1,a,b]])",
+      "(cx²+bx+a)det([[1,b,c],[x²,c,a],[x,a,b]])"
+    ],
+    "correctIndex": 3,
+    "answer": "The fourth determinant expression",
+    "solution": "Replace the first column by C₁+xC₂+x²C₃. Its entries are s, x²s, xs, where s=a+bx+cx² and x³=1. By determinant multilinearity this operation leaves Δ unchanged, and factoring out s gives the fourth choice.",
+    "hint": "Combine the columns with coefficients 1,x,x².",
+    "topic": "Linear algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": "The identity is valid for every complex cube root of unity. At x=1 all four displayed options coincide; the fourth is the generally valid identity."
+  },
+  {
+    "id": "2006-PEA-Q9",
+    "number": "9",
+    "stem": "Consider I=m²+n², where m and n are any two odd integers. Then",
+    "options": [
+      "I is never divisible by 2",
+      "I is never divisible by 4",
+      "I is never divisible by 6",
+      "None of these"
+    ],
+    "correctIndex": 1,
+    "answer": "I is never divisible by 4",
+    "solution": "Every odd square is 1 modulo 4, hence I≡2 modulo 4. It is even, and m=n=3 gives I=18 divisible by 6.",
+    "hint": "Reduce odd squares modulo 4.",
+    "topic": "Algebra",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q10",
+    "number": "10",
+    "stem": "A box has 10 red and 5 black balls. A selected red ball is returned. If a black ball is selected, it and 2 additional black balls are put in the box. The probability that the second selected ball is red is",
+    "options": [
+      "47/72",
+      "25/72",
+      "55/153",
+      "98/153"
+    ],
+    "correctIndex": 3,
+    "answer": "98/153",
+    "solution": "Conditioning on the first draw gives (10/15)(10/15)+(5/15)(10/17)=4/9+10/51=98/153.",
+    "hint": "Condition on the first ball’s colour.",
+    "topic": "Probability",
+    "sourcePage": 4,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q11",
+    "number": "11",
+    "stem": "Let f(x)=[log(1+x/p)−log(1−x/q)]/x for x≠0. If f is continuous at x=0, then f(0) equals",
+    "options": [
+      "1/p−1/q",
+      "p+q",
+      "1/p+1/q",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "1/p+1/q",
+    "solution": "The numerator vanishes at zero and its derivative there is 1/p+1/q. Consequently its ratio to x tends to this value, which continuity forces to equal f(0).",
+    "hint": "Use the derivative of the numerator at zero.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": "Nonzero p and q are required for the source formula to be defined."
+  },
+  {
+    "id": "2006-PEA-Q12",
+    "number": "12",
+    "stem": "Four positive numbers x₁,x₂,y₁,y₂ satisfy y₁y₂>x₁x₂. Consider S=(x₁y₂+x₂y₁)−2x₁x₂. The number S is",
+    "options": [
+      "Always a negative integer",
+      "Can be a negative fraction",
+      "Always a positive number",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "Always positive",
+    "solution": "AM–GM gives x₁y₂+x₂y₁≥2√(x₁x₂y₁y₂)>2x₁x₂ because y₁y₂>x₁x₂>0. Hence S>0.",
+    "hint": "Apply AM–GM to the two mixed products.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q13",
+    "number": "13",
+    "stem": "Given x≥y≥z and x+y+z=12, the maximum value of x+3y+5z is",
+    "options": [
+      "36",
+      "42",
+      "38",
+      "32"
+    ],
+    "correctIndex": 0,
+    "answer": "36",
+    "solution": "The expression is 3(x+y+z)−2(x−z)=36−2(x−z)≤36. Equality occurs at x=y=z=4.",
+    "hint": "Compare the expression with three times the sum.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q14",
+    "number": "14",
+    "stem": "The number of positive integral pairs (x,y) solving 2xy−4x²+12x−5y=11 is",
+    "options": [
+      "4",
+      "1",
+      "2",
+      "None of these"
+    ],
+    "correctIndex": 2,
+    "answer": "2",
+    "solution": "Rearrange to (2x−5)y=4x²−12x+11, or y=2x−1+6/(2x−5). The odd integer 2x−5 must divide 6, so it is ±1 or ±3. The resulting positive pairs are (3,11) and (4,9); x=1,2 give negative y.",
+    "hint": "Divide the quadratic by 2x−5 and use divisibility.",
+    "topic": "Algebra",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  },
+  {
+    "id": "2006-PEA-Q15",
+    "number": "15",
+    "stem": "For any continuous f:[0,1]→[0,1], which statement is incorrect?",
+    "options": [
+      "f always has at least one maximum in [0,1]",
+      "f always has at least one minimum in [0,1]",
+      "There exists x∈[0,1] such that f(x)=x",
+      "f(0)∈{0,1}, f(1)∈{0,1}, and f(0)+f(1)=1 must always hold"
+    ],
+    "correctIndex": 3,
+    "answer": "The endpoint assertion in the fourth option is incorrect",
+    "solution": "The extreme value theorem proves the first two. For g(x)=f(x)−x, g(0)≥0 and g(1)≤0, so the intermediate value theorem proves a fixed point. The constant function f(x)=1/2 disproves the fourth assertion.",
+    "hint": "Use compactness and the intermediate value theorem, then test a constant function.",
+    "topic": "Calculus",
+    "sourcePage": 5,
+    "status": "verified",
+    "notes": ""
+  }
+]
