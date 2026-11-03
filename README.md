@@ -12,6 +12,6 @@ Answers are independently derived worked solutions, not official answer keys. Qu
 
 No authentication or server-side database is implemented in this interface prototype. Hosting access is managed separately by Sites.
 
-The private GitHub mirror omits original PDF binaries. The deployed demo and complete source ZIP include them. To restore them after cloning, run `python restore_source_pdfs.py --source-directory "your original PDF folder" --download-official`. Question text, source excerpts, solutions, math assets and the generated bank remain usable without the full PDFs.
+The private GitHub mirror omits original PDF binaries. The complete local demo and source ZIP include them; publishing the package will make them available on the hosted demo. To restore them after cloning, run `python restore_source_pdfs.py --source-directory "your original PDF folder" --download-official`. Question text, source excerpts, solutions, math assets and the generated bank remain usable without the full PDFs.
 
 Topic weightage counts indexed question items, including descriptive subparts, with year, track and source-kind filters. Incomplete years are explicitly labelled; missing content is not treated as a zero-frequency topic. Future GATE, JAM, CUET PG and Android support are planned. Deployment addresses are intentionally absent from this repository.
