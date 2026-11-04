@@ -8,8 +8,6 @@ The paper library is the single entry point for reading solutions and starting y
 
 The Syllabus section displays the complete original ISI PDF as an unchanged full-page rendering, with the original downloadable PDF and official-source link. The About section introduces ISI Kolkata and the Economic Research Unit, with an attributed campus photograph and official reference links.
 
-Only the MSQE preparation application is mirrored to this GitHub repository. Separately prepared personal-site pages, personal styles/scripts, portraits, CV data and personal-site assets are excluded from the GitHub export.
-
 The library includes 2025 papers from an attributed mirror and 2026 paper transcriptions from Econschool, with independent solutions. Transcriptions are explicitly labelled and link to their external source PDFs. ISI's official 2026 sample files repeat the 2025 sets and are not presented as the actual 2026 examination. Missing or inconsistent transcribed details are flagged in the relevant solutions.
 
 Serve `dist/` with a static HTTP server, or open `EconPrep.html` with its adjacent `dist/` folder. No build dependencies are needed. Equations use locally bundled KaTeX. Progress is saved in the current browser's localStorage; it does not sync between devices.
