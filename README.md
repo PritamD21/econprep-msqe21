@@ -8,7 +8,7 @@ The paper library is the single entry point for reading solutions and starting y
 
 The Syllabus section displays the complete original ISI PDF as an unchanged full-page rendering, with the original downloadable PDF and official-source link. The About section introduces ISI Kolkata and the Economic Research Unit, with an attributed campus photograph and official reference links.
 
-Only the MSQE preparation application is mirrored to this GitHub repository. Separately prepared personal-site pages, personal styles/scripts, portraits, CV data and personal-site navigation links are excluded from the GitHub export.
+Only the MSQE preparation application is mirrored to this GitHub repository. Separately prepared personal-site pages, personal styles/scripts, portraits, CV data and personal-site assets are excluded from the GitHub export.
 
 The library includes 2025 papers from an attributed mirror and 2026 paper transcriptions from Econschool, with independent solutions. Transcriptions are explicitly labelled and link to their external source PDFs. ISI's official 2026 sample files repeat the 2025 sets and are not presented as the actual 2026 examination. Missing or inconsistent transcribed details are flagged in the relevant solutions.
 
@@ -20,8 +20,8 @@ Answers are independently derived worked solutions, not official answer keys. Qu
 
 `content/questions/` contains the editable question records. `dist/paper-bank.json` contains the generated bank and current paper-by-paper coverage. `build_paper_bank.py` rebuilds it from the research working folder when present, otherwise from `content/`; existing PDFs must remain in `dist/papers/`. Run `node check_paper_bank.cjs` and `node check_insights.cjs` for content, asset, equation and analytics checks. Run `python package_paper_app.py` to refresh the standalone entry and source ZIP.
 
-No authentication or server-side database is implemented in this interface prototype. Hosting access is managed separately by Sites.
+No authentication or server-side database is implemented in this interface prototype. The site is published through GitHub Pages from the main branch root. The root entry opens dist/index.html; committing changes to main triggers publication.
 
-The private GitHub mirror omits original PDF binaries. The complete local demo and source ZIP include them; publishing the package will make them available on the hosted demo. To restore them after cloning, run `python restore_source_pdfs.py --source-directory "your original PDF folder" --download-official`. Question text, source excerpts, solutions, math assets and the generated bank remain usable without the full PDFs.
+The GitHub source repository omits original PDF binaries. The complete local demo and source ZIP include them; publishing the package will make them available on the hosted demo. To restore them after cloning, run `python restore_source_pdfs.py --source-directory "your original PDF folder" --download-official`. Question text, source excerpts, solutions, math assets and the generated bank remain usable without the full PDFs.
 
-Topic weightage counts indexed question items, including descriptive subparts, with year, track and source-kind filters. Incomplete years are explicitly labelled; missing content is not treated as a zero-frequency topic. Future GATE, JAM, CUET PG and Android support are planned. Deployment addresses are intentionally absent from this repository.
+Topic weightage counts indexed question items, including descriptive subparts, with year, track and source-kind filters. Incomplete years are explicitly labelled; missing content is not treated as a zero-frequency topic. Future GATE, JAM, CUET PG and Android support are planned. The separately maintained portfolio is linked from creator credits. The previous hosted demo address is not stored in this repository.
