@@ -11,14 +11,21 @@
     ],
     "correctIndex": 0,
     "answer": "A. I is Pareto efficient but II is not",
-    "solution": "If Aditya receives $x$, Gaurav receives $100-x$ and has utility $-(70-x)^2$. For $x<20$, increasing $x$ improves both; for $x>70$, decreasing $x$ improves both. For $20\\leq x\\leq70$, increasing one person’s welfare requires reducing the other’s, so exactly this interval is efficient. Proposal I has $x=60$ inside it; II has $x=90$ outside it.",
+    "solution": "If Aditya receives $x$, Gaurav receives $100-x$ and has utility $-(70-x)^2$. For $x<20$, increasing $x$ improves both; for $x>70$, decreasing $x$ improves both.\n\nFor $20\\leq x\\leq70$, increasing one person’s welfare requires reducing the other’s, so exactly this interval is efficient. Proposal I has $x=60$ inside it; II has $x=90$ outside it.",
     "hint": "Express both utilities in terms of Aditya’s hours.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "If Aditya receives $x$, Gaurav receives $100-x$ and has utility $-(70-x)^2$. For $x<20$, increasing $x$ improves both; for $x>70$, decreasing $x$ improves both. For $20\\leq x\\leq70$, increasing one person’s welfare requires reducing the other’s, so exactly this interval is efficient. Proposal I has $x=60$ inside it; II has $x=90$ outside it.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "If Aditya receives $x$, Gaurav receives $100-x$ and has utility $-(70-x)^2$. For $x<20$, increasing $x$ improves both; for $x>70$, decreasing $x$ improves both.\n\nFor $20\\leq x\\leq70$, increasing one person’s welfare requires reducing the other’s, so exactly this interval is efficient. Proposal I has $x=60$ inside it; II has $x=90$ outside it."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q2",
@@ -32,14 +39,21 @@
     ],
     "correctIndex": 3,
     "answer": "D. Perfect competition and first-degree price discrimination",
-    "solution": "Marginal cost equals 1.50. Both competition and perfect first-degree price discrimination expand output to willingness to pay equal to marginal cost: $Q=1800-200(1.5)=1500$. They therefore attain the same efficient total surplus, $\\tfrac12(9-1.5)1500=5625$, although its distribution differs. Uniform monopoly restricts output and yields less total surplus.",
+    "solution": "Marginal cost equals 1.50. Both competition and perfect first-degree price discrimination expand output to willingness to pay equal to marginal cost: $Q=1800-200(1.5)=1500$.\n\nThey therefore attain the same efficient total surplus, $\\tfrac12(9-1.5)1500=5625$, although its distribution differs. Uniform monopoly restricts output and yields less total surplus.",
     "hint": "Distribution of surplus does not determine its total.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Marginal cost equals 1.50. Both competition and perfect first-degree price discrimination expand output to willingness to pay equal to marginal cost: $Q=1800-200(1.5)=1500$. They therefore attain the same efficient total surplus, $\\tfrac12(9-1.5)1500=5625$, although its distribution differs. Uniform monopoly restricts output and yields less total surplus.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Marginal cost equals 1.50. Both competition and perfect first-degree price discrimination expand output to willingness to pay equal to marginal cost: $Q=1800-200(1.5)=1500$.\n\nThey therefore attain the same efficient total surplus, $\\tfrac12(9-1.5)1500=5625$, although its distribution differs. Uniform monopoly restricts output and yields less total surplus."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q3",
@@ -60,7 +74,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options appear on page 13."
+    "notes": "Options appear on page 13.",
+    "solutionOriginal": "Equate marginal willingness to pay $75-Q$ with marginal social cost $0.5Q+31$. Thus $44=1.5Q$ and $Q=88/3=29\\tfrac13$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Equate marginal willingness to pay $75-Q$ with marginal social cost $0.5Q+31$. Thus $44=1.5Q$ and $Q=88/3=29\\tfrac13$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q4",
@@ -74,14 +95,21 @@
     ],
     "correctIndex": 3,
     "answer": "D. $5/3$",
-    "solution": "The efficient output is $88/3$. A taxed monopolist sets $75-2Q=0.5Q+\\tau$. Substituting that output gives $\\tau=75-(5/2)(88/3)=5/3$. It is much lower than external damage 31 because the monopoly restriction already reduces output.",
+    "solution": "The efficient output is $88/3$. A taxed monopolist sets $75-2Q=0.5Q+\\tau$.\n\nSubstituting that output gives $\\tau=75-(5/2)(88/3)=5/3$. It is much lower than external damage 31 because the monopoly restriction already reduces output.",
     "hint": "Account for the existing monopoly distortion when setting the corrective fee.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The efficient output is $88/3$. A taxed monopolist sets $75-2Q=0.5Q+\\tau$. Substituting that output gives $\\tau=75-(5/2)(88/3)=5/3$. It is much lower than external damage 31 because the monopoly restriction already reduces output.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The efficient output is $88/3$. A taxed monopolist sets $75-2Q=0.5Q+\\tau$.\n\nSubstituting that output gives $\\tau=75-(5/2)(88/3)=5/3$. It is much lower than external damage 31 because the monopoly restriction already reduces output."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q5",
@@ -95,14 +123,21 @@
     ],
     "correctIndex": 0,
     "answer": "A. $[p(a)-p(0)][U(W-T)-U(W)]/a^2$",
-    "solution": "Expected utility at effort $e$ is $p(e)U(W-T)+(1-p(e))U(W)-Ae^2$. The gain from choosing $a$ rather than 0 is $[p(a)-p(0)][U(W-T)-U(W)]-Aa^2$. Effort is strictly preferred iff this is positive, yielding option A. Equality gives indifference.",
+    "solution": "Expected utility at effort $e$ is $p(e)U(W-T)+(1-p(e))U(W)-Ae^2$. The gain from choosing $a$ rather than 0 is $[p(a)-p(0)][U(W-T)-U(W)]-Aa^2$.\n\nEffort is strictly preferred iff this is positive, yielding option A. Equality gives indifference.",
     "hint": "Subtract expected utilities under the two effort levels.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Expected utility at effort $e$ is $p(e)U(W-T)+(1-p(e))U(W)-Ae^2$. The gain from choosing $a$ rather than 0 is $[p(a)-p(0)][U(W-T)-U(W)]-Aa^2$. Effort is strictly preferred iff this is positive, yielding option A. Equality gives indifference.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Expected utility at effort $e$ is $p(e)U(W-T)+(1-p(e))U(W)-Ae^2$. The gain from choosing $a$ rather than 0 is $[p(a)-p(0)][U(W-T)-U(W)]-Aa^2$.\n\nEffort is strictly preferred iff this is positive, yielding option A. Equality gives indifference."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q6",
@@ -123,7 +158,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Question and options continue on page 14."
+    "notes": "Question and options continue on page 14.",
+    "solutionOriginal": "Lifetime present-value resources are $W-T+T/(1+r)=W-rT/(1+r)$, strictly decreasing in $T$. Optimized utility is increasing in resources, since he can allocate saving privately at the higher return. Thus $T=0$ maximizes utility.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Lifetime present-value resources are $W-T+T/(1+r)=W-rT/(1+r)$, strictly decreasing in $T$. Optimized utility is increasing in resources, since he can allocate saving privately at the higher return. Thus $T=0$ maximizes utility."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q7",
@@ -144,7 +186,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "C assumes the usual upward-sloping short-run aggregate supply curve."
+    "notes": "C assumes the usual upward-sloping short-run aggregate supply curve.",
+    "solutionOriginal": "Lower expected dividends reduce the price of the fixed stock of shares, reducing household wealth. The wealth effect lowers autonomous consumption and shifts aggregate demand left. Along a conventional upward-sloping short-run aggregate-supply curve, output and the price level both fall.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Lower expected dividends reduce the price of the fixed stock of shares, reducing household wealth. The wealth effect lowers autonomous consumption and shifts aggregate demand left. Along a conventional upward-sloping short-run aggregate-supply curve, output and the price level both fall."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q8",
@@ -165,7 +214,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Total revenue $(10-q)q$ is at most 25 for nonnegative output and price. Any positive output incurs fixed cost at least 200, so every production plan has negative profit. Shutting both plants yields zero and is optimal: $q_1=q_2=0$, absent from A–C.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Total revenue $(10-q)q$ is at most 25 for nonnegative output and price. Any positive output incurs fixed cost at least 200, so every production plan has negative profit. Shutting both plants yields zero and is optimal: $q_1=q_2=0$, absent from A–C."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q9",
@@ -179,14 +235,21 @@
     ],
     "correctIndex": 0,
     "answer": "A. $(7,6,9)$",
-    "solution": "At $(7,6,9)$, consumer 1 buys X for 7, consumer 2 buys the bundle for 9, and consumer 3 buys Y for 6, yielding revenue 22 under the standard purchase-at-indifference convention. For any consumer paying for the bundle, consumer 1 can pay at most 8, consumer 2 at most 9 and consumer 3 at most 7. If all buy bundles revenue is at most 21. If one buys a bundle and the other two buy separate goods, the highest bound is $7+9+6=22$ (consumer 2 bundled). Other bundle assignments give at most 20; two bundles plus one standalone also give at most 22 after the common bundle-price restriction. Without bundle sales, separate monopoly revenues are at most 8 for X and 10 for Y, totaling 18. Thus 22 is optimal.",
+    "solution": "At $(7,6,9)$, consumer 1 buys X for 7, consumer 2 buys the bundle for 9, and consumer 3 buys Y for 6, yielding revenue 22 under the standard purchase-at-indifference convention. For any consumer paying for the bundle, consumer 1 can pay at most 8, consumer 2 at most 9 and consumer 3 at most 7.\n\nIf all buy bundles revenue is at most 21. If one buys a bundle and the other two buy separate goods, the highest bound is $7+9+6=22$ (consumer 2 bundled).\n\nOther bundle assignments give at most 20; two bundles plus one standalone also give at most 22 after the common bundle-price restriction. Without bundle sales, separate monopoly revenues are at most 8 for X and 10 for Y, totaling 18.\n\nThus 22 is optimal.",
     "hint": "Compare extraction from the mixed tastes with uniform bundling or separate sales.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Exact prices use acceptance at zero surplus; epsilon price reductions approximate the revenue if strict purchase incentives are required."
+    "notes": "Exact prices use acceptance at zero surplus; epsilon price reductions approximate the revenue if strict purchase incentives are required.",
+    "solutionOriginal": "At $(7,6,9)$, consumer 1 buys X for 7, consumer 2 buys the bundle for 9, and consumer 3 buys Y for 6, yielding revenue 22 under the standard purchase-at-indifference convention. For any consumer paying for the bundle, consumer 1 can pay at most 8, consumer 2 at most 9 and consumer 3 at most 7. If all buy bundles revenue is at most 21. If one buys a bundle and the other two buy separate goods, the highest bound is $7+9+6=22$ (consumer 2 bundled). Other bundle assignments give at most 20; two bundles plus one standalone also give at most 22 after the common bundle-price restriction. Without bundle sales, separate monopoly revenues are at most 8 for X and 10 for Y, totaling 18. Thus 22 is optimal.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "At $(7,6,9)$, consumer 1 buys X for 7, consumer 2 buys the bundle for 9, and consumer 3 buys Y for 6, yielding revenue 22 under the standard purchase-at-indifference convention. For any consumer paying for the bundle, consumer 1 can pay at most 8, consumer 2 at most 9 and consumer 3 at most 7.\n\nIf all buy bundles revenue is at most 21. If one buys a bundle and the other two buy separate goods, the highest bound is $7+9+6=22$ (consumer 2 bundled).\n\nOther bundle assignments give at most 20; two bundles plus one standalone also give at most 22 after the common bundle-price restriction. Without bundle sales, separate monopoly revenues are at most 8 for X and 10 for Y, totaling 18.\n\nThus 22 is optimal."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q10",
@@ -207,7 +270,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Firm B’s FOC is $90-0.5Q_B-0.25Q_J=0$; symmetry gives $Q_B=Q_J=q$ and $90-0.75q=0$. Hence each produces 120, total output is 240 and price is 30.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Firm B’s FOC is $90-0.5Q_B-0.25Q_J=0$; symmetry gives $Q_B=Q_J=q$ and $90-0.75q=0$. Hence each produces 120, total output is 240 and price is 30."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q11",
@@ -228,7 +298,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Model equations and options on page 16."
+    "notes": "Model equations and options on page 16.",
+    "solutionOriginal": "Substitution gives $[1-c(1-t)]\\Delta Y=\\Delta I+\\Delta G-c\\Delta T_0$. Holding private investment fixed and setting $\\Delta G=\\Delta T_0$ yields $\\Delta Y/\\Delta G=(1-c)/[1-c(1-t)]$. The induced tax revenue $t\\Delta Y$ explains why it need not equal one.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Substitution gives $[1-c(1-t)]\\Delta Y=\\Delta I+\\Delta G-c\\Delta T_0$. Holding private investment fixed and setting $\\Delta G=\\Delta T_0$ yields $\\Delta Y/\\Delta G=(1-c)/[1-c(1-t)]$. The induced tax revenue $t\\Delta Y$ explains why it need not equal one."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q12",
@@ -249,7 +326,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The multiplier is $1/[1-c(1-t)]=1/[1-0.8(0.625)]=1/0.5=2$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The multiplier is $1/[1-c(1-t)]=1/[1-0.8(0.625)]=1/0.5=2$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q13",
@@ -270,7 +354,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The tax multiplier is $-c/[1-c(1-t)]=-0.8/0.5=-1.6$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The tax multiplier is $-c/[1-c(1-t)]=-0.8/0.5=-1.6$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q14",
@@ -291,7 +382,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Fiscal contraction raises national saving at the initial income and shifts IS left. Monetary expansion shifts LM right to offset the output contraction, lowering the interest rate and raising investment. At unchanged GDP, higher national saving finances the increased investment.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Fiscal contraction raises national saving at the initial income and shifts IS left. Monetary expansion shifts LM right to offset the output contraction, lowering the interest rate and raising investment. At unchanged GDP, higher national saving finances the increased investment."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q15",
@@ -305,14 +403,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. Lower, higher, higher",
-    "solution": "Monetary expansion shifts LM outward. With no capital flows, external balance requires the trade balance to return to zero. Depreciation raises net exports at a given income; the expanded goods demand and lower rate raise output until imports restore external balance. Thus the final rate is lower, output higher and the exchange rate (domestic currency per foreign currency) higher.",
+    "solution": "Monetary expansion shifts LM outward. With no capital flows, external balance requires the trade balance to return to zero.\n\nDepreciation raises net exports at a given income; the expanded goods demand and lower rate raise output until imports restore external balance. Thus the final rate is lower, output higher and the exchange rate (domestic currency per foreign currency) higher.",
     "hint": "Use depreciation to restore the external balance after monetary expansion.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Exchange rate is domestic currency per foreign currency, so a higher value means depreciation."
+    "notes": "Exchange rate is domestic currency per foreign currency, so a higher value means depreciation.",
+    "solutionOriginal": "Monetary expansion shifts LM outward. With no capital flows, external balance requires the trade balance to return to zero. Depreciation raises net exports at a given income; the expanded goods demand and lower rate raise output until imports restore external balance. Thus the final rate is lower, output higher and the exchange rate (domestic currency per foreign currency) higher.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Monetary expansion shifts LM outward. With no capital flows, external balance requires the trade balance to return to zero.\n\nDepreciation raises net exports at a given income; the expanded goods demand and lower rate raise output until imports restore external balance. Thus the final rate is lower, output higher and the exchange rate (domestic currency per foreign currency) higher."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q16",
@@ -333,7 +438,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "At a steady state, investment just replaces depreciation and capital dilution, so feasible consumption is $c^*(k)=Ak^\\alpha-(n+\\delta)k$. Maximizing it gives $\\alpha Ak^{\\alpha-1}=n+\\delta$. This is the golden-rule condition; setting saving equal to replacement alone merely identifies a steady state for a given saving rate.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "At a steady state, investment just replaces depreciation and capital dilution, so feasible consumption is $c^*(k)=Ak^\\alpha-(n+\\delta)k$. Maximizing it gives $\\alpha Ak^{\\alpha-1}=n+\\delta$. This is the golden-rule condition; setting saving equal to replacement alone merely identifies a steady state for a given saving rate."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q17",
@@ -354,7 +466,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "On the balanced-growth path, output, capital and consumption per effective worker are constant. Effective labour grows at $n+g$, so all three aggregate quantities grow at that rate.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "On the balanced-growth path, output, capital and consumption per effective worker are constant. Effective labour grows at $n+g$, so all three aggregate quantities grow at that rate."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q18",
@@ -375,7 +494,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Effective expected inflation is $\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}$. Substitution gives $(1-\\lambda)(\\pi_t-\\pi_{t-1})=-\\alpha(u_t-u_n)$, so the response coefficient becomes $\\alpha/(1-\\lambda)$, larger than $\\alpha$ for $0<\\lambda<1$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Effective expected inflation is $\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}$. Substitution gives $(1-\\lambda)(\\pi_t-\\pi_{t-1})=-\\alpha(u_t-u_n)$, so the response coefficient becomes $\\alpha/(1-\\lambda)$, larger than $\\alpha$ for $0<\\lambda<1$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q19",
@@ -396,7 +522,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options C,D on page 19."
+    "notes": "Options C,D on page 19.",
+    "solutionOriginal": "When capital capacity is binding, only $L=AK/B$ workers are needed. This is less than the available $\\bar L$ precisely if $AK<B\\bar L$. If capital capacity exceeds full-employment capacity, labour is fully used and capital is underutilized instead.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "When capital capacity is binding, only $L=AK/B$ workers are needed. This is less than the available $\\bar L$ precisely if $AK<B\\bar L$. If capital capacity exceeds full-employment capacity, labour is fully used and capital is underutilized instead."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q20",
@@ -417,7 +550,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Each chooses $x_i$ to maximize $v(x_i)$ because pollution from the other residents is unaffected by her own choice. Thus $v\\prime(x_i)=0$ determines the privately optimal distance, independent of $n$. Population raises external harm but not individual driving incentives.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Each chooses $x_i$ to maximize $v(x_i)$ because pollution from the other residents is unaffected by her own choice. Thus $v\\prime(x_i)=0$ determines the privately optimal distance, independent of $n$. Population raises external harm but not individual driving incentives."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q21",
@@ -438,7 +578,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Tax revenue must be rebated or treated as a transfer; otherwise a tax-only objective would require a revenue convention."
+    "notes": "Tax revenue must be rebated or treated as a transfer; otherwise a tax-only objective would require a revenue convention.",
+    "solutionOriginal": "Total utility is $\\sum_i[v(x_i)-(n-1)kx_i]$, since each person’s driving harms the other $n-1$ residents. Efficient driving satisfies $v\\prime(x_i)=(n-1)k$. A tax $\\tau=(n-1)k$, treated as a transfer, implements it and rises with population.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Total utility is $\\sum_i[v(x_i)-(n-1)kx_i]$, since each person’s driving harms the other $n-1$ residents. Efficient driving satisfies $v\\prime(x_i)=(n-1)k$. A tax $\\tau=(n-1)k$, treated as a transfer, implements it and rises with population."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q22",
@@ -459,7 +606,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options appear on page 20; strict comparison is for positive productive inputs."
+    "notes": "Options appear on page 20; strict comparison is for positive productive inputs.",
+    "solutionOriginal": "For $t>1$ and $K>0$, $F(tL,tK)=t\\sqrt{(L+10/t)K}<t\\sqrt{(L+10)K}=tF(L,K)$. Proportional scaling therefore raises output less than proportionately. The additive 10 acts as an unscaled fixed resource.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For $t>1$ and $K>0$, $F(tL,tK)=t\\sqrt{(L+10/t)K}<t\\sqrt{(L+10)K}=tF(L,K)$. Proportional scaling therefore raises output less than proportionately. The additive 10 acts as an unscaled fixed resource."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q23",
@@ -480,7 +634,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Holding labour fixed and positive, $F_{KK}=-(2/9)L^{1/2}K^{-4/3}<0$, so capital’s marginal product diminishes. In $G$, $G_K=L$ is constant and $G_{KK}=0$, so there are no strictly diminishing marginal returns to capital.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Holding labour fixed and positive, $F_{KK}=-(2/9)L^{1/2}K^{-4/3}<0$, so capital’s marginal product diminishes. In $G$, $G_K=L$ is constant and $G_{KK}=0$, so there are no strictly diminishing marginal returns to capital."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q24",
@@ -501,7 +662,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Cable television access can be restricted to subscribers, so it is excludable even if viewing is non-rival. A congested street is rival at the margin because additional use reduces others’ travel quality. Neither satisfies both defining conditions.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Cable television access can be restricted to subscribers, so it is excludable even if viewing is non-rival. A congested street is rival at the margin because additional use reduces others’ travel quality. Neither satisfies both defining conditions."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q25",
@@ -515,14 +683,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. B can but A cannot",
-    "solution": "For A, at $p>1$ profit $(p-1)y-1$ is unbounded with output, so there is no finite maximizing positive quantity. At $p\\leq1$, any positive quantity loses against shutdown (taking the fixed cost as avoidable). For B the cubic cost eventually dominates revenue and finite positive optima exist. For example at $p=1$, profit $2y^2-y^3$ is maximized at $y=4/3>0$. Thus B can operate, while A cannot at finite positive scale under the intended free-shutdown interpretation.",
+    "solution": "For A, at $p>1$ profit $(p-1)y-1$ is unbounded with output, so there is no finite maximizing positive quantity. At $p\\leq1$, any positive quantity loses against shutdown (taking the fixed cost as avoidable).\n\nFor B the cubic cost eventually dominates revenue and finite positive optima exist. For example at $p=1$, profit $2y^2-y^3$ is maximized at $y=4/3>0$.\n\nThus B can operate, while A cannot at finite positive scale under the intended free-shutdown interpretation.",
     "hint": "A’s constant marginal cost and fixed charge prevent a finite profitable supply choice.",
     "topic": "Microeconomics",
     "sourcePage": 20,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options C,D on page 21. Interpretation assumes avoidable fixed cost/shutdown; with an unavoidable sunk fixed cost, A at p=1 has an indifference degeneracy."
+    "notes": "Options C,D on page 21. Interpretation assumes avoidable fixed cost/shutdown; with an unavoidable sunk fixed cost, A at p=1 has an indifference degeneracy.",
+    "solutionOriginal": "For A, at $p>1$ profit $(p-1)y-1$ is unbounded with output, so there is no finite maximizing positive quantity. At $p\\leq1$, any positive quantity loses against shutdown (taking the fixed cost as avoidable). For B the cubic cost eventually dominates revenue and finite positive optima exist. For example at $p=1$, profit $2y^2-y^3$ is maximized at $y=4/3>0$. Thus B can operate, while A cannot at finite positive scale under the intended free-shutdown interpretation.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For A, at $p>1$ profit $(p-1)y-1$ is unbounded with output, so there is no finite maximizing positive quantity. At $p\\leq1$, any positive quantity loses against shutdown (taking the fixed cost as avoidable).\n\nFor B the cubic cost eventually dominates revenue and finite positive optima exist. For example at $p=1$, profit $2y^2-y^3$ is maximized at $y=4/3>0$.\n\nThus B can operate, while A cannot at finite positive scale under the intended free-shutdown interpretation."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q26",
@@ -543,7 +718,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "A uses the simple fully sticky-price benchmark; staggered-price models may have upward-sloping short-run AS."
+    "notes": "A uses the simple fully sticky-price benchmark; staggered-price models may have upward-sloping short-run AS.",
+    "solutionOriginal": "With the price level fixed in the simple sticky-price benchmark, firms accommodate demand at that price, giving horizontal AS. With nominal wages fixed, a higher price lowers the real wage and raises labour demand and output, giving upward-sloping AS.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With the price level fixed in the simple sticky-price benchmark, firms accommodate demand at that price, giving horizontal AS. With nominal wages fixed, a higher price lowers the real wage and raises labour demand and output, giving upward-sloping AS."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q27",
@@ -564,7 +746,14 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Under a fixed exchange rate, attempted monetary expansion creates capital outflow and pressure to depreciate. Central-bank intervention to defend the peg contracts the money supply, undoing the original expansion. Monetary policy therefore cannot independently affect output in the standard Mundell–Fleming model.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Under a fixed exchange rate, attempted monetary expansion creates capital outflow and pressure to depreciate. Central-bank intervention to defend the peg contracts the money supply, undoing the original expansion. Monetary policy therefore cannot independently affect output in the standard Mundell–Fleming model."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q28",
@@ -578,14 +767,21 @@
     ],
     "correctIndex": 2,
     "answer": "C. The left and top edges",
-    "solution": "Write A’s allocation as $(x,y)$, so B has $(1-x,1-y)$. A values Y relatively more than B. If $x>0,y<1$, transfer a small $\\epsilon$ of X from A to B and between $\\epsilon/2$ and $2\\epsilon$ of Y from B to A: both can improve. Thus any interior allocation off the left/top edges is inefficient. On the left edge A has no X to exchange; giving her extra X costs B more than any available compensating Y can repay, and on the top edge B has no Y to exchange. Formally weighted-utility maximization also supports every point on these two edges.",
+    "solution": "Write A’s allocation as $(x,y)$, so B has $(1-x,1-y)$. A values Y relatively more than B.\n\nIf $x>0,y<1$, transfer a small $\\epsilon$ of X from A to B and between $\\epsilon/2$ and $2\\epsilon$ of Y from B to A: both can improve. Thus any interior allocation off the left/top edges is inefficient.\n\nOn the left edge A has no X to exchange; giving her extra X costs B more than any available compensating Y can repay, and on the top edge B has no Y to exchange. Formally weighted-utility maximization also supports every point on these two edges.",
     "hint": "Trade X toward B and Y toward A until one of those goods runs out.",
     "topic": "Microeconomics",
     "sourcePage": 21,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options C,D on page 22."
+    "notes": "Options C,D on page 22.",
+    "solutionOriginal": "Write A’s allocation as $(x,y)$, so B has $(1-x,1-y)$. A values Y relatively more than B. If $x>0,y<1$, transfer a small $\\epsilon$ of X from A to B and between $\\epsilon/2$ and $2\\epsilon$ of Y from B to A: both can improve. Thus any interior allocation off the left/top edges is inefficient. On the left edge A has no X to exchange; giving her extra X costs B more than any available compensating Y can repay, and on the top edge B has no Y to exchange. Formally weighted-utility maximization also supports every point on these two edges.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Write A’s allocation as $(x,y)$, so B has $(1-x,1-y)$. A values Y relatively more than B.\n\nIf $x>0,y<1$, transfer a small $\\epsilon$ of X from A to B and between $\\epsilon/2$ and $2\\epsilon$ of Y from B to A: both can improve. Thus any interior allocation off the left/top edges is inefficient.\n\nOn the left edge A has no X to exchange; giving her extra X costs B more than any available compensating Y can repay, and on the top edge B has no Y to exchange. Formally weighted-utility maximization also supports every point on these two edges."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q29",
@@ -599,14 +795,21 @@
     ],
     "correctIndex": 0,
     "answer": "A. $(0,1)$",
-    "solution": "Normalize $p_y=1$ and write $p_x=p$. If $1/2<p<2$, A buys only Y with income $p$, while B buys only X with income 1. Clearing requires $p=1$, giving A $(0,1)$ and B $(1,0)$. For $p\\leq1/2$, B demands $1/p\\geq2$ units of X, exceeding total supply; for $p\\geq2$, A demands $p\\geq2$ units of Y. Boundary indifference does not remove these excess demands. Thus the equilibrium allocation is unique.",
+    "solution": "Normalize $p_y=1$ and write $p_x=p$. If $1/2<p<2$, A buys only Y with income $p$, while B buys only X with income 1.\n\nClearing requires $p=1$, giving A $(0,1)$ and B $(1,0)$. For $p\\leq1/2$, B demands $1/p\\geq2$ units of X, exceeding total supply; for $p\\geq2$, A demands $p\\geq2$ units of Y.\n\nBoundary indifference does not remove these excess demands. Thus the equilibrium allocation is unique.",
     "hint": "Use endowment-dependent incomes when checking the price ratio.",
     "topic": "Microeconomics",
     "sourcePage": 22,
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Normalize $p_y=1$ and write $p_x=p$. If $1/2<p<2$, A buys only Y with income $p$, while B buys only X with income 1. Clearing requires $p=1$, giving A $(0,1)$ and B $(1,0)$. For $p\\leq1/2$, B demands $1/p\\geq2$ units of X, exceeding total supply; for $p\\geq2$, A demands $p\\geq2$ units of Y. Boundary indifference does not remove these excess demands. Thus the equilibrium allocation is unique.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Normalize $p_y=1$ and write $p_x=p$. If $1/2<p<2$, A buys only Y with income $p$, while B buys only X with income 1.\n\nClearing requires $p=1$, giving A $(0,1)$ and B $(1,0)$. For $p\\leq1/2$, B demands $1/p\\geq2$ units of X, exceeding total supply; for $p\\geq2$, A demands $p\\geq2$ units of Y.\n\nBoundary indifference does not remove these excess demands. Thus the equilibrium allocation is unique."
+      }
+    ]
   },
   {
     "id": "2017-PEB-Q30",
@@ -627,6 +830,13 @@
     "sourceFile": "ISI 2017 Updated.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For $1/2<p_x<2$, A spends her wealth $p_x$ on Y and B spends wealth 1 on X. X-market clearing requires $1/p_x=1$, hence $p_x=1$; Y then also clears. The endpoint ratios generate excess demand, so no other listed value works.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For $1/2<p_x<2$, A spends her wealth $p_x$ on Y and B spends wealth 1 on X. X-market clearing requires $1/p_x=1$, hence $p_x=1$; Y then also clears. The endpoint ratios generate excess demand, so no other listed value works."
+      }
+    ]
   }
 ]

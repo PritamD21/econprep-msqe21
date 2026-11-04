@@ -1,0 +1,602 @@
+[
+  {
+    "id": "2025-PEA-Q1",
+    "number": "1",
+    "sourcePage": 1,
+    "sourceKind": "archive",
+    "stem": "For the Solow technology $Y=\\sqrt{KN}$ with no population or technology growth, identify steady-state capital and output per worker. Saving is s and depreciation is δ.",
+    "options": [
+      "$s\\delta,(s\\delta)^2$",
+      "$s/\\delta,s/\\delta$",
+      "$s^2/\\delta^2,s^2/\\delta$",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "D · None of these",
+    "solution": "Output per worker is $y=\\sqrt{k}$. At a positive steady state, $s\\sqrt{k}=\\delta k$, so $k^*=(s/\\delta)^2$ and $y^*=s/\\delta$. None of A–C gives this pair.\n\nThese formulas require δ>0; if δ=0 and s>0 there is no finite positive steady state.",
+    "hint": "Divide production by labour and equate saving with depreciation.",
+    "topic": "Macroeconomics",
+    "notes": "Uses the positive steady-state case; the source also permits boundary parameters where the standard formulas need separate treatment.",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q2",
+    "number": "2",
+    "sourcePage": 1,
+    "sourceKind": "archive",
+    "stem": "In Q1 set δ=0.1. Which pair gives steady consumption per worker and its maximizing saving rate?",
+    "options": [
+      "$s(1-s)/\\delta,\\ s=0.5$",
+      "$(s/\\delta)^2,\\ s=0.4$",
+      "$s/\\delta^2,\\ s=0$",
+      "$\\delta/(1-s),\\ s=1$"
+    ],
+    "correctIndex": 0,
+    "answer": "A · $s(1-s)/\\delta,\\ s=0.5$",
+    "solution": "$c^*=(1-s)y^*=s(1-s)/\\delta$. Differentiating gives $dc^*/ds=(1-2s)/\\delta$, which vanishes at s=1/2. The second derivative is −2/δ<0, and endpoint consumption is zero, so this is the global maximum.",
+    "hint": "Use consumption=(1−s)×steady output.",
+    "topic": "Macroeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q3",
+    "number": "3",
+    "sourcePage": 1,
+    "sourceKind": "archive",
+    "stem": "Wage setting is $W=P(1-u)$, production is Y=N, the price markup is20%, and the labour force is60. Find natural unemployment and output.",
+    "options": [
+      "16.667%,50",
+      "23.5%,15.5",
+      "20%,15.5",
+      "20%,20"
+    ],
+    "correctIndex": 0,
+    "answer": "A · 16.667%,50",
+    "solution": "Unit labour productivity is1, so price setting implies $W/P=1/(1+0.2)=5/6$. Equating this with1−u gives $u_n=1/6$. Employment and output are $60(1-1/6)=50$.",
+    "hint": "Equate the real wage from wage setting with that from price setting.",
+    "topic": "Macroeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q4",
+    "number": "4",
+    "sourcePage": 2,
+    "sourceKind": "archive",
+    "stem": "Two economies have identical equations: $C=20+0.8(Y-T)$, I=10, G=T=10, imports=0.3Y and exports=0.3Y*. The exchange rate is1. Find the domestic government-spending multiplier.",
+    "options": [
+      "1",
+      "2",
+      "0.4",
+      "0.8"
+    ],
+    "correctIndex": null,
+    "answer": "B under a fixed-foreign-income interpretation;3.125 with feedback.",
+    "solution": "Holding foreign income fixed, goods-market clearing is $0.5Y=22+G+0.3Y^*$, and the partial multiplier is2 (B).\n\nIf the stated identical foreign economy is allowed to respond, its equation gives $0.5\\,dY^*=0.3\\,dY$. Substitution yields $0.32\\,dY=dG$, so the two-country multiplier is3.125, absent from the options.",
+    "hint": "Decide whether foreign income is held fixed or responds through its own goods market.",
+    "topic": "Macroeconomics",
+    "notes": "The source does not distinguish the partial multiplier from the two-country multiplier.",
+    "status": "needs_review"
+  },
+  {
+    "id": "2025-PEA-Q5",
+    "number": "5",
+    "sourcePage": 2,
+    "sourceKind": "archive",
+    "stem": "Using Q4, keep foreign government spending unchanged and raise domestic output to250. How much must domestic G increase?",
+    "options": [
+      "112.4",
+      "96",
+      "38.8",
+      "86"
+    ],
+    "correctIndex": null,
+    "answer": "Increase28.8; the new G level is38.8 (option C).",
+    "solution": "Initially symmetry gives $0.2Y=32$, hence Y=Y*=160. At the target Y250, foreign equilibrium implies $Y^*=64+0.6(250)=214$. Domestic equilibrium then requires $125=22+G+64.2$, so the new level is G=38.8.\n\nSince initial G=10, the required increase is28.8. C is the new spending level, not the increase asked for.",
+    "hint": "Solve the foreign equation first at the target domestic income.",
+    "topic": "Macroeconomics",
+    "notes": "The displayed options list the new spending level rather than its change.",
+    "status": "needs_review"
+  },
+  {
+    "id": "2025-PEA-Q6",
+    "number": "6",
+    "sourcePage": 2,
+    "sourceKind": "archive",
+    "stem": "For $Y=A\\min\\{K,L\\}$, compare the marginal-product wage W and return R as k=K/L varies.",
+    "options": [
+      "W=R everywhere",
+      "W=R for k≤1 only",
+      "W=R for k>1 only",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "D · None of these",
+    "solution": "If K<L, capital is limiting: $R=\\partial Y/\\partial K=A$ and $W=\\partial Y/\\partial L=0$. If K>L, labour is limiting, so R=0 and W=A. At K=L the production function has a kink and the ordinary derivatives are not defined. None of the first three statements is valid.",
+    "hint": "Identify the limiting input on either side of the kink.",
+    "topic": "Macroeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q7",
+    "number": "7",
+    "sourcePage": 3,
+    "sourceKind": "archive",
+    "stem": "For increasing strictly concave U, consumption satisfies $\\frac{d}{dt}[-e^{-\\rho t}U\\prime(C)]=e^{-\\rho t}U\\prime(C)r$. When is consumption increasing?",
+    "options": [
+      "r<ρ",
+      "r>ρ",
+      "r=ρ",
+      "Never"
+    ],
+    "correctIndex": 1,
+    "answer": "B · r>ρ",
+    "solution": "Differentiate the left side and cancel $e^{-\\rho t}$: $\\rho U\\prime(C)-U^{\\prime\\prime}(C)\\dot C=rU\\prime(C)$. Hence $\\dot C=(\\rho-r)U\\prime(C)/U^{\\prime\\prime}(C)$. Since U′>0 and U″<0, this is positive exactly when r>ρ.",
+    "hint": "Keep the minus sign outside the discounted marginal utility.",
+    "topic": "Macroeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q8",
+    "number": "8",
+    "sourcePage": 3,
+    "sourceKind": "archive",
+    "stem": "Income alternates $y_h,y_l,y_h,y_l,\\ldots$ from date0. For discount factor β∈(0,1), find constant consumption with the same present value.",
+    "options": [
+      "$\\beta(y_h+y_l)/(1-\\beta)$",
+      "$\\beta^2(y_h+y_l)/(1-\\beta)$",
+      "$\\beta^2(y_h+y_l)(1-\\beta)$",
+      "$(y_h+\\beta y_l)/(1+\\beta)$"
+    ],
+    "correctIndex": 3,
+    "answer": "D · $(y_h+\\beta y_l)/(1+\\beta)$",
+    "solution": "The income present value is $(y_h+\\beta y_l)/(1-\\beta^2)$. Constant consumption has present value $\\bar c/(1-\\beta)$. Equating and cancelling1−β gives $\\bar c=(y_h+\\beta y_l)/(1+\\beta)$.",
+    "hint": "Group the income stream into repeating two-period blocks.",
+    "topic": "Macroeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q9",
+    "number": "9",
+    "sourcePage": 4,
+    "sourceKind": "archive",
+    "stem": "A20-item exam reports mean correct answers11.7 and mean wrong answers5.3. Is this necessarily an error?",
+    "options": [
+      "Yes",
+      "No",
+      "Possibly",
+      "Insufficient information"
+    ],
+    "correctIndex": null,
+    "answer": "A if all20 items must be answered; otherwise omissions can explain it.",
+    "solution": "If every item receives either a correct or wrong answer from every student, each student has C+W=20, so the averages must sum to20. The reported sum17 violates this identity.\n\nIf unanswered items are permitted and counted separately, a mean of3 unanswered items reconciles the data. The source does not explicitly say whether every item must be answered.",
+    "hint": "Apply linearity of averages to correct+wrong+unanswered.",
+    "topic": "Statistics",
+    "notes": "The treatment of unanswered questions is unstated.",
+    "status": "needs_review"
+  },
+  {
+    "id": "2025-PEA-Q10",
+    "number": "10",
+    "sourcePage": 4,
+    "sourceKind": "archive",
+    "stem": "Independent twin-pair outcomes are equally likely to favour either twin. Compare probabilities of15 smoking-first deaths out of20 pairs and12 out of20 pairs.",
+    "options": [
+      "Equal",
+      "First probability is smaller",
+      "First probability is larger",
+      "Cannot compare"
+    ],
+    "correctIndex": 1,
+    "answer": "B · First probability is smaller",
+    "solution": "Under the independent-pair model, the counts are Binomial(20,1/2). Their probability ratio is $\\binom{20}{15}/\\binom{20}{12}=15504/125970<1$. The common factor2⁻²⁰ cancels.",
+    "hint": "Compare binomial coefficients, not the raw numbers of deaths.",
+    "topic": "Probability",
+    "notes": "Uses the standard independent-pair binomial model.",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q11",
+    "number": "11",
+    "sourcePage": 5,
+    "sourceKind": "archive",
+    "stem": "An OLS regression of economics marks on mathematics marks has intercept5, means65 and90, respectively. Predict economics marks at mathematics75.",
+    "options": [
+      "55",
+      "75",
+      "40",
+      "65"
+    ],
+    "correctIndex": 0,
+    "answer": "A · 55",
+    "solution": "The OLS line with an intercept passes through the sample means:65=5+b·90, so b=2/3. At75 its prediction is5+(2/3)75=55.",
+    "hint": "Recover the missing slope from the point of sample means.",
+    "topic": "Statistics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q12",
+    "number": "12",
+    "sourcePage": 5,
+    "sourceKind": "archive",
+    "stem": "Two independent fair coins are tossed. A=first head, C=second head, D=matching coins and G=two heads. Which claimed independence is false?",
+    "options": [
+      "C and D",
+      "A and G",
+      "A and D",
+      "A and C"
+    ],
+    "correctIndex": 1,
+    "answer": "B · A and G",
+    "solution": "$P(A)=1/2$, $P(G)=1/4$, but $P(A\\cap G)=1/4\\ne1/8=P(A)P(G)$. For the other pairs the intersection probability is1/4 and both marginal probabilities are1/2, so they are independent.",
+    "hint": "List HH,HT,TH,TT and compare intersections with products.",
+    "topic": "Probability",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q13",
+    "number": "13",
+    "sourcePage": 5,
+    "sourceKind": "archive",
+    "stem": "A bowl has three chips worth1 each and two worth4 each. Two chips are drawn without replacement; the payout is their total value. Find its range.",
+    "options": [
+      "Below2",
+      "Exactly3",
+      "Between3 and4",
+      "Between4 and5"
+    ],
+    "correctIndex": 3,
+    "answer": "D · Between4 and5",
+    "solution": "Each draw has marginal expected value $(3\\cdot1+2\\cdot4)/5=11/5$. Linearity of expectation gives payout22/5=4.4, regardless of dependence between the two draws.",
+    "hint": "Use the mean chip value and linearity of expectation.",
+    "topic": "Probability",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q14",
+    "number": "14",
+    "sourcePage": 6,
+    "sourceKind": "archive",
+    "stem": "Two simple regressions have different R² values. A higher R² alone implies which listed comparison?",
+    "options": [
+      "Larger slope",
+      "Larger absolute slope",
+      "Smaller variance of the dependent variable",
+      "None of these"
+    ],
+    "correctIndex": 3,
+    "answer": "D · None of these",
+    "solution": "In simple OLS with an intercept, $R^2=r_{XY}^2$, while the slope is $b=r_{XY}s_Y/s_X$. A higher R² restricts correlation magnitude, but leaves the sign and scale ratio unrestricted. Rescaling Y also changes its variance without changing R². Thus none follows.",
+    "hint": "Separate correlation strength from units and scale.",
+    "topic": "Statistics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q15",
+    "number": "15",
+    "sourcePage": 6,
+    "sourceKind": "archive",
+    "stem": "If sample standard deviations are s_x=2 and s_y=4, express the slope in the OLS regression of y on x using correlation r.",
+    "options": [
+      "8r",
+      "2r",
+      "r/2",
+      "None"
+    ],
+    "correctIndex": 1,
+    "answer": "B · 2r",
+    "solution": "The slope is sample covariance divided by variance of x: $b=r s_xs_y/s_x^2=r(s_y/s_x)=2r$.",
+    "hint": "Use b=r·s_y/s_x.",
+    "topic": "Statistics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q16",
+    "number": "16",
+    "sourcePage": 6,
+    "sourceKind": "archive",
+    "stem": "Identify monotonicity intervals for $f(x)=4x^3-6x^2-72x$.",
+    "options": [
+      "Increasing everywhere",
+      "Decreasing everywhere",
+      "Increasing below−2, decreasing thereafter",
+      "Increasing below−2 and above3; decreasing between−2 and3"
+    ],
+    "correctIndex": 3,
+    "answer": "D · Increasing below−2 and above3; decreasing between−2 and3",
+    "solution": "$f\\prime(x)=12x^2-12x-72=12(x+2)(x-3)$. It is positive for x<−2 and x>3, and negative for−2<x<3. These signs determine the stated intervals.",
+    "hint": "Factor the derivative and make a sign table.",
+    "topic": "Calculus",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q17",
+    "number": "17",
+    "sourcePage": 7,
+    "sourceKind": "archive",
+    "stem": "Evaluate $\\sum_{j=1}^{2024}1/[j(j+1)]$.",
+    "options": [
+      "1",
+      "2025/2026",
+      "2024/2025",
+      "2025/2024"
+    ],
+    "correctIndex": 2,
+    "answer": "C · 2024/2025",
+    "solution": "Use $1/[j(j+1)]=1/j-1/(j+1)$. All interior terms cancel, leaving1−1/2025=2024/2025.",
+    "hint": "Write each summand as a difference of two fractions.",
+    "topic": "Algebra",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q18",
+    "number": "18",
+    "sourcePage": 7,
+    "sourceKind": "archive",
+    "stem": "For nonnegative x,y with x+y=16, minimize x³+y³.",
+    "options": [
+      "x=y=8",
+      "x15,y1",
+      "x12,y4",
+      "None"
+    ],
+    "correctIndex": 0,
+    "answer": "A · x=y=8",
+    "solution": "Substitute y=16−x. The objective derivative is $3x^2-3(16-x)^2=96x-768$, which vanishes at x8. Its second derivative96 is positive, so x=y8 is the unique minimum, including comparison with the endpoints.",
+    "hint": "Use symmetry and strict convexity of the cube on nonnegative inputs.",
+    "topic": "Calculus",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q19",
+    "number": "19",
+    "sourcePage": 7,
+    "sourceKind": "archive",
+    "stem": "Evaluate $\\int_1^2\\log x\\,dx$.",
+    "options": [
+      "log4",
+      "log4−1",
+      "log2−1",
+      "None"
+    ],
+    "correctIndex": 1,
+    "answer": "B · log4−1",
+    "solution": "Integration by parts gives $\\int\\log x\\,dx=x\\log x-x$. Evaluation yields $(2\\log2-2)-(0-1)=\\log4-1$.",
+    "hint": "Take u=log x and dv=dx.",
+    "topic": "Calculus",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q20",
+    "number": "20",
+    "sourcePage": 7,
+    "sourceKind": "archive",
+    "stem": "Find the remainder of6²⁰²⁵ modulo25.",
+    "options": [
+      "0",
+      "1",
+      "24",
+      "6"
+    ],
+    "correctIndex": 1,
+    "answer": "B · 1",
+    "solution": "$6^5\\equiv1\\pmod{25}$ (successive powers give6,11,16,21,1). Since2025=5·405, the required power is congruent to1.",
+    "hint": "Look for a short cycle modulo25.",
+    "topic": "Algebra",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q21",
+    "number": "21",
+    "sourcePage": 8,
+    "sourceKind": "archive",
+    "stem": "A positive-integer function obeys f(x+y)=f(x)f(y) and f(1)=2. Evaluate $2+\\sum_{n=1}^{2025}f(n)$.",
+    "options": [
+      "$2^{2025}$",
+      "$2^{2026}$",
+      "$3^{2024}$",
+      "None"
+    ],
+    "correctIndex": 1,
+    "answer": "B · $2^{2026}$",
+    "solution": "Induction using f(n+1)=2f(n) yields f(n)=2ⁿ. The geometric sum is2²⁰²⁶−2; adding2 leaves2²⁰²⁶.",
+    "hint": "First derive the value of f at every positive integer.",
+    "topic": "Algebra",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q22",
+    "number": "22",
+    "sourcePage": 8,
+    "sourceKind": "archive",
+    "stem": "Two separated markets have demands q_s=5(5−p) and q_p=10(5−p). A monopolist has marginal cost1. Which market receives the higher price?",
+    "options": [
+      "Professors",
+      "Students",
+      "Same price",
+      "Cannot determine"
+    ],
+    "correctIndex": 2,
+    "answer": "C · Same price",
+    "solution": "Both markets have the same choke price5. For q=a(5−p), inverse demand is p=5−q/a and MR=5−2q/a. Setting MR=1 yields q=2a and p=3. Demand slopes affect quantities but not the optimal price here.",
+    "hint": "Write the marginal revenue separately in each market.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q23",
+    "number": "23",
+    "sourcePage": 8,
+    "sourceKind": "archive",
+    "stem": "Two linear demands have choke prices5 and10. Describe the market inverse-demand kink.",
+    "options": [
+      "At price5; flatter to its right",
+      "At price5; flatter to its left",
+      "At price15; flatter to its right",
+      "At price15; flatter to its left"
+    ],
+    "correctIndex": 0,
+    "answer": "A · At price5; flatter to its right",
+    "solution": "Above price5 only the higher-choke-price consumer buys. Below5 both buy, and the absolute slope of aggregate quantity demand becomes the sum of both individual slopes. Therefore inverse demand becomes flatter as quantity increases past the kink, which occurs at price5.",
+    "hint": "Horizontally sum demands and then view price as a function of quantity.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q24",
+    "number": "24",
+    "sourcePage": 9,
+    "sourceKind": "archive",
+    "stem": "Income is200, books cost5 and other goods cost1. Utility is $4B+2Y$. An additional nontransferable50 book voucher is received. Choose the optimum.",
+    "options": [
+      "10 books,200 other goods",
+      "0 books,200 other goods",
+      "20 books,150 other goods",
+      "40 books,0 other goods"
+    ],
+    "correctIndex": 0,
+    "answer": "A · 10 books,200 other goods",
+    "solution": "Cash yields marginal utility2 per rupee in other goods but only4/5 in books. Spend all cash on200 units of other goods, and use the voucher for10 books. Spending cash on extra books reduces utility; discarding free positive-utility books also cannot be optimal.",
+    "hint": "Compare utility per cash rupee while treating the voucher separately.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q25",
+    "number": "25",
+    "sourcePage": 9,
+    "sourceKind": "archive",
+    "stem": "Tree planting costs25 per tree. Five residents have MB=100−0.5Q and ten have MB=50−0.25Q. Under collective cost sharing, find the efficient public-good quantity.",
+    "options": [
+      "0",
+      "100",
+      "150",
+      "195"
+    ],
+    "correctIndex": 3,
+    "answer": "D · 195",
+    "solution": "The aggregate marginal benefit is the vertical sum: $5(100-0.5Q)+10(50-0.25Q)=1000-5Q$. Equating this with marginal cost25 gives Q195. At195 every individual marginal benefit is still positive, so no truncation of the sum is necessary.",
+    "hint": "For a public good add marginal benefits vertically.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q26",
+    "number": "26",
+    "sourcePage": 10,
+    "sourceKind": "archive",
+    "stem": "A fruit consumer first ranks bundles by total fruit, breaking ties in favour of more apples. With positive prices and income w, which pair of demand statements is correct?",
+    "options": [
+      "All apples when p_a<p_b; all bananas when p_b≤p_a",
+      "All apples when p_a≤p_b; all bananas when p_b≤p_a",
+      "All apples when p_a≤p_b; all bananas when p_b<p_a",
+      "All apples when p_a<p_b; banana demand w/p_b² when p_b<p_a"
+    ],
+    "correctIndex": 2,
+    "answer": "C · All apples when p_a≤p_b; all bananas when p_b<p_a",
+    "solution": "When one fruit is cheaper, spending the entire budget on it uniquely maximizes total fruit. At equal prices all budget-line bundles have the same total fruit, and the tie-break selects only apples. Hence apples are chosen for p_a≤p_b, while bananas are chosen only for the strict inequality p_b<p_a.",
+    "hint": "Apply the total-fruit criterion before the apple tie-break.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q27",
+    "number": "27",
+    "sourcePage": 11,
+    "sourceKind": "archive",
+    "stem": "For the preferences in Q26, are apple and banana demands continuous in prices?",
+    "options": [
+      "Both continuous",
+      "Only apple demand is continuous",
+      "Only banana demand is continuous",
+      "Neither is continuous"
+    ],
+    "correctIndex": 3,
+    "answer": "D · Neither is continuous",
+    "solution": "Fix equal positive prices p and approach from either side. When apples are cheaper the demand vector is(w/p_a,0); when bananas are cheaper it is(0,w/p_b). At equality the choice is(w/p,0). The unequal one-sided limits make both demand components discontinuous on the equal-price line.",
+    "hint": "Approach the price equality from the two sides.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q28",
+    "number": "28",
+    "sourcePage": 11,
+    "sourceKind": "archive",
+    "stem": "With nonnegative goods and utility $4x_1^2+x_2^2$, maximize on $p_1x_1+p_2x_2=w$. Which claim about the set X of optimal bundles is true?",
+    "options": [
+      "X(2,1,10) is not convex",
+      "X(6,3,30) is convex",
+      "X(1,1,10) is not convex",
+      "X(4,2,20) is convex"
+    ],
+    "correctIndex": 0,
+    "answer": "A · X(2,1,10) is not convex",
+    "solution": "The objective is strictly convex, so a maximum on the budget segment occurs at an endpoint. At prices(2,1) and income10, the endpoints(5,0) and(0,10) both give100; every strict mixture gives less. Thus their two-point maximizing set is not convex. B and D have proportional budgets and the same nonconvex set; C has the unique maximizing corner(10,0), a convex singleton.",
+    "hint": "Compare utility at the budget endpoints, then test a mixture.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q29",
+    "number": "29",
+    "sourcePage": 11,
+    "sourceKind": "archive",
+    "stem": "For $U(x,y)=x/(1+x)+y$ at equal positive prices and positive income, identify demand.",
+    "options": [
+      "Positive x,zero y",
+      "Zero x,positive y",
+      "Both positive",
+      "Both zero"
+    ],
+    "correctIndex": 1,
+    "answer": "B · Zero x,positive y",
+    "solution": "Let total affordable quantity be m=w/p. On the budget line y=m−x, utility equals $m-x+x/(1+x)=m-x^2/(1+x)$. It is uniquely maximized at x0, so y=m>0.",
+    "hint": "Substitute the equal-price budget into utility.",
+    "topic": "Microeconomics",
+    "notes": "",
+    "status": "verified"
+  },
+  {
+    "id": "2025-PEA-Q30",
+    "number": "30",
+    "sourcePage": 12,
+    "sourceKind": "archive",
+    "stem": "Two consumers have identical strictly convex preferences and identical endowments. Under standard competitive-equilibrium existence assumptions, how many equilibrium allocations are possible?",
+    "options": [
+      "No Pareto-efficient allocation",
+      "Multiple competitive allocations",
+      "Exactly two Pareto-efficient allocations",
+      "Only one competitive allocation"
+    ],
+    "correctIndex": 3,
+    "answer": "D · Only one competitive allocation",
+    "solution": "At common equilibrium prices, both consumers have the same wealth and the same budget set. Strict convexity gives a unique demand on that set, so their chosen bundles coincide. Market clearing then forces each bundle to equal their common initial endowment. Thus every equilibrium, if it exists, implements the same no-trade allocation, though supporting prices need not be unique.",
+    "hint": "Use identical budgets and uniqueness of individual demand before market clearing.",
+    "topic": "Microeconomics",
+    "notes": "The claim concerns allocations, not uniqueness of equilibrium prices. Standard regularity assumptions ensure existence; strict convexity alone is not a complete existence theorem.",
+    "status": "verified"
+  }
+]

@@ -9,6 +9,7 @@ args=parser.parse_args()
 bank=json.loads((root/'dist/paper-bank.json').read_text(encoding='utf-8'))
 missing=[]
 for doc in bank['documents']:
+ if doc['url'].startswith('https://'):continue
  out=root/'dist'/doc['url'];out.parent.mkdir(exist_ok=True)
  if out.exists():continue
  original=args.source_directory/doc['filename'] if args.source_directory else None

@@ -6,14 +6,25 @@
     "group": "A",
     "stem": "Ms. A earns Rs. 25,000 in period 1 and Rs. 15,000 in period 2. Mr. B earns Rs. 15,000 and Rs. 30,000 respectively. Both can borrow at interest 200% and lend at interest 0%. They like consumption in both periods and choose on their budget frontiers. Write both budget constraints and draw their frontiers in the same figure, with $C_1$ and $C_2$ in thousands of rupees on the horizontal and vertical axes.",
     "answer": "A: $C_2=40-C_1$ for $C_1\\leq25$, $C_2=90-3C_1$ for $C_1\\geq25$. B: $C_2=45-C_1$ for $C_1\\leq15$, $C_2=75-3C_1$ for $C_1\\geq15$.",
-    "solution": "For income $(a,b)$ in thousands, saving $a-C_1\\geq0$ yields $C_2=b+a-C_1$, while borrowing $C_1-a\\geq0$ requires repayment $3(C_1-a)$, yielding $C_2=b-3(C_1-a)$. Feasible consumption lies on or below the piecewise frontier in the nonnegative quadrant. Plot A through $(0,40),(25,15),(30,0)$ and B through $(0,45),(15,30),(25,0)$. Their frontiers intersect at $(17.5,22.5)$.",
+    "solution": "Measure money in thousands, so each income pair is a point in the consumption plane. Lending moves the consumer northwest from that point at slope -1 because its gross return is 1. Borrowing moves southeast at slope -3 because the 200% interest rate means three units must be repaid per unit borrowed. Thus the budget is a kinked line, not a single line based on one average rate. To find an intercept, set the other period’s consumption to zero in the appropriate segment.\n\nFor income $(a,b)$ in thousands, saving $a-C_1\\geq0$ yields $C_2=b+a-C_1$, while borrowing $C_1-a\\geq0$ requires repayment $3(C_1-a)$, yielding $C_2=b-3(C_1-a)$. Feasible consumption lies on or below the piecewise frontier in the nonnegative quadrant.\n\nPlot A through $(0,40),(25,15),(30,0)$ and B through $(0,45),(15,30),(25,0)$. Their frontiers intersect at $(17.5,22.5)$.",
     "hint": "Separate the saving and borrowing segments.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For income $(a,b)$ in thousands, saving $a-C_1\\geq0$ yields $C_2=b+a-C_1$, while borrowing $C_1-a\\geq0$ requires repayment $3(C_1-a)$, yielding $C_2=b-3(C_1-a)$. Feasible consumption lies on or below the piecewise frontier in the nonnegative quadrant. Plot A through $(0,40),(25,15),(30,0)$ and B through $(0,45),(15,30),(25,0)$. Their frontiers intersect at $(17.5,22.5)$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Measure money in thousands, so each income pair is a point in the consumption plane. Lending moves the consumer northwest from that point at slope -1 because its gross return is 1. Borrowing moves southeast at slope -3 because the 200% interest rate means three units must be repaid per unit borrowed. Thus the budget is a kinked line, not a single line based on one average rate. To find an intercept, set the other period’s consumption to zero in the appropriate segment."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "For income $(a,b)$ in thousands, saving $a-C_1\\geq0$ yields $C_2=b+a-C_1$, while borrowing $C_1-a\\geq0$ requires repayment $3(C_1-a)$, yielding $C_2=b-3(C_1-a)$. Feasible consumption lies on or below the piecewise frontier in the nonnegative quadrant.\n\nPlot A through $(0,40),(25,15),(30,0)$ and B through $(0,45),(15,30),(25,0)$. Their frontiers intersect at $(17.5,22.5)$."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q1b",
@@ -22,14 +33,25 @@
     "group": "A",
     "stem": "Ms. A earns Rs. 25,000 in period 1 and Rs. 15,000 in period 2. Mr. B earns Rs. 15,000 and Rs. 30,000 respectively. Both can borrow at interest 200% and lend at interest 0%. They like consumption in both periods and choose on their budget frontiers. B borrows Rs. 5,000 in period 1. Give an example of a consumption profile which, if chosen by A, proves their preferences differ, with explanation.",
     "answer": "For example A choosing $(C_1,C_2)=(15,25)$ thousand rupees.",
-    "solution": "B chooses $(20,15)$. A can afford $(20,20)$, which strictly dominates B's choice, so A's chosen bundle must be strictly preferred to $(20,15)$. But $(15,25)$ is strictly inside B's budget (at $C_1=15$ B can consume $C_2=30$). Thus if A chose $(15,25)$ and both had the same monotonic preferences, B would have available a strictly preferable bundle to his chosen one, a contradiction. The same revealed-preference argument applies to any A frontier choice with $C_1\\leq17.5$.",
+    "solution": "The question asks for a choice inconsistent with common preferences, so comparing numerical incomes is insufficient. Use revealed preference: a consumer cannot select a bundle while strictly preferring another affordable one. B’s observed borrowing gives the concrete bundle (20,15). A can afford a bundle that dominates it, while some of A’s potential frontier choices are affordable to B. That creates a contradiction if those choices are attributed to the same monotone preferences.\n\nB chooses $(20,15)$. A can afford $(20,20)$, which strictly dominates B's choice, so A's chosen bundle must be strictly preferred to $(20,15)$.\n\nBut $(15,25)$ is strictly inside B's budget (at $C_1=15$ B can consume $C_2=30$). Thus if A chose $(15,25)$ and both had the same monotonic preferences, B would have available a strictly preferable bundle to his chosen one, a contradiction.\n\nThe same revealed-preference argument applies to any A frontier choice with $C_1\\leq17.5$.",
     "hint": "Test each chosen bundle against the other budget.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "B chooses $(20,15)$. A can afford $(20,20)$, which strictly dominates B's choice, so A's chosen bundle must be strictly preferred to $(20,15)$. But $(15,25)$ is strictly inside B's budget (at $C_1=15$ B can consume $C_2=30$). Thus if A chose $(15,25)$ and both had the same monotonic preferences, B would have available a strictly preferable bundle to his chosen one, a contradiction. The same revealed-preference argument applies to any A frontier choice with $C_1\\leq17.5$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The question asks for a choice inconsistent with common preferences, so comparing numerical incomes is insufficient. Use revealed preference: a consumer cannot select a bundle while strictly preferring another affordable one. B’s observed borrowing gives the concrete bundle (20,15). A can afford a bundle that dominates it, while some of A’s potential frontier choices are affordable to B. That creates a contradiction if those choices are attributed to the same monotone preferences."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "B chooses $(20,15)$. A can afford $(20,20)$, which strictly dominates B's choice, so A's chosen bundle must be strictly preferred to $(20,15)$.\n\nBut $(15,25)$ is strictly inside B's budget (at $C_1=15$ B can consume $C_2=30$). Thus if A chose $(15,25)$ and both had the same monotonic preferences, B would have available a strictly preferable bundle to his chosen one, a contradiction.\n\nThe same revealed-preference argument applies to any A frontier choice with $C_1\\leq17.5$."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q1c",
@@ -38,14 +60,29 @@
     "group": "A",
     "stem": "Ms. A earns Rs. 25,000 in period 1 and Rs. 15,000 in period 2. Mr. B earns Rs. 15,000 and Rs. 30,000 respectively. Both can borrow at interest 200% and lend at interest 0%. They like consumption in both periods and choose on their budget frontiers. Now A and B have the same preferences and B borrows Rs. 5,000. (i) [6 marks] If A lends in period 1, find the maximum lending consistent with common preferences. (ii) [6 marks] Is B better off than A?",
     "answer": "(i) Lending must be strictly below Rs. 7,500 (supremum Rs. 7,500). (ii) A is strictly better off than B.",
-    "solution": "B chooses $b=(20,15)$ in thousands. A can afford $(20,20)$, so monotonicity implies her chosen bundle $a$ is strictly preferred to $b$. If A lends, her choice is $(x,40-x)$ with $x\\leq25$. Such a bundle is feasible for B whenever $x\\leq17.5$: below 15 it lies below B's saving frontier, and from 15 onward $40-x\\leq75-3x$ exactly when $x\\leq17.5$. Common preferences therefore require $x>17.5$, otherwise B could choose a bundle strictly preferred to $b$. Thus saving $25-x<7.5$ thousand. The common frontier point at 17.5 is also ruled out, so the bound is strict; the source's word maximum should be read as supremum. The earlier comparison already proves A strictly better off.",
+    "solution": "Both budgets intersect at the point where A’s lending segment meets B’s borrowing segment:\n\n$$40-x=75-3x\\quad\\Longrightarrow\\quad(x,y)=(17.5,22.5).$$\n\nCommon preferences and B’s observed choice rule out not only points strictly inside B’s budget but also this intersection, because A strictly prefers her optimum to B’s bundle. That is why the restriction on A’s lending is strict. A bound that can be approached is a supremum; it must not be reported as an attained maximum.\n\nB chooses $b=(20,15)$ in thousands. A can afford $(20,20)$, so monotonicity implies her chosen bundle $a$ is strictly preferred to $b$.\n\nIf A lends, her choice is $(x,40-x)$ with $x\\leq25$. Such a bundle is feasible for B whenever $x\\leq17.5$: below 15 it lies below B's saving frontier, and from 15 onward $40-x\\leq75-3x$ exactly when $x\\leq17.5$.\n\nCommon preferences therefore require $x>17.5$, otherwise B could choose a bundle strictly preferred to $b$. Thus saving $25-x<7.5$ thousand.\n\nThe common frontier point at 17.5 is also ruled out, so the bound is strict; the source's word maximum should be read as supremum. The earlier comparison already proves A strictly better off.\n\nNo attained maximum under the stated monotonicity: Rs. 7,500 is a strict upper bound/supremum, not an admissible maximum.",
     "hint": "Locate the intersection of the budgets and apply strict monotonicity.",
     "topic": "Microeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 12,
     "status": "needs_review",
-    "notes": "No attained maximum under the stated monotonicity: Rs. 7,500 is a strict upper bound/supremum, not an admissible maximum."
+    "notes": "No attained maximum under the stated monotonicity: Rs. 7,500 is a strict upper bound/supremum, not an admissible maximum.",
+    "solutionOriginal": "B chooses $b=(20,15)$ in thousands. A can afford $(20,20)$, so monotonicity implies her chosen bundle $a$ is strictly preferred to $b$. If A lends, her choice is $(x,40-x)$ with $x\\leq25$. Such a bundle is feasible for B whenever $x\\leq17.5$: below 15 it lies below B's saving frontier, and from 15 onward $40-x\\leq75-3x$ exactly when $x\\leq17.5$. Common preferences therefore require $x>17.5$, otherwise B could choose a bundle strictly preferred to $b$. Thus saving $25-x<7.5$ thousand. The common frontier point at 17.5 is also ruled out, so the bound is strict; the source's word maximum should be read as supremum. The earlier comparison already proves A strictly better off.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Both budgets intersect at the point where A’s lending segment meets B’s borrowing segment:\n\n$$40-x=75-3x\\quad\\Longrightarrow\\quad(x,y)=(17.5,22.5).$$\n\nCommon preferences and B’s observed choice rule out not only points strictly inside B’s budget but also this intersection, because A strictly prefers her optimum to B’s bundle. That is why the restriction on A’s lending is strict. A bound that can be approached is a supremum; it must not be reported as an attained maximum."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "B chooses $b=(20,15)$ in thousands. A can afford $(20,20)$, so monotonicity implies her chosen bundle $a$ is strictly preferred to $b$.\n\nIf A lends, her choice is $(x,40-x)$ with $x\\leq25$. Such a bundle is feasible for B whenever $x\\leq17.5$: below 15 it lies below B's saving frontier, and from 15 onward $40-x\\leq75-3x$ exactly when $x\\leq17.5$.\n\nCommon preferences therefore require $x>17.5$, otherwise B could choose a bundle strictly preferred to $b$. Thus saving $25-x<7.5$ thousand.\n\nThe common frontier point at 17.5 is also ruled out, so the bound is strict; the source's word maximum should be read as supremum. The earlier comparison already proves A strictly better off."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "No attained maximum under the stated monotonicity: Rs. 7,500 is a strict upper bound/supremum, not an admissible maximum."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q2a",
@@ -54,14 +91,25 @@
     "group": "A",
     "stem": "An exchange economy has two agents, one unit each of goods $X,Y$, and allocations $(X_1,Y_1),(X_2,Y_2)$ summing to $(1,1)$. Utilities are $u_1=X_1Y_1$ and $u_2=2X_2+Y_2$. Describe all Pareto-efficient allocations.",
     "answer": "In agent 1 coordinates: $Y_1=2X_1$, $0\\leq X_1\\leq1/2$, or $Y_1=1$, $1/2\\leq X_1\\leq1$.",
-    "solution": "Fix agent 2's utility, equivalently the resource cost $t=2X_1+Y_1\\in[0,3]$. Efficiency maximizes $X_1Y_1$ subject to this cost and $0\\leq X_1,Y_1\\leq1$. The unconstrained maximizer has $Y_1=2X_1$, hence $X_1=t/4,Y_1=t/2$ for $t\\leq2$. For $t\\geq2$, the upper bound $Y_1=1$ binds and $X_1=(t-1)/2$. These maximizers, including both endpoints, trace the stated frontier. Any other allocation permits higher utility for agent 1 at unchanged utility for agent 2.",
+    "solution": "Use agent 1’s coordinates x,y; agent 2 then obtains utility $3-2x-y$. Holding agent 2 exactly indifferent is equivalent to holding the linear resource cost $2x+y=t$ fixed. Efficiency requires giving agent 1 the largest product xy affordable at each such cost. This converts the two-agent problem into a constrained one-agent problem. The usual tangency gives y=2x only until y reaches its upper bound 1; after that a boundary segment completes the contract curve.\n\nFix agent 2's utility, equivalently the resource cost $t=2X_1+Y_1\\in[0,3]$. Efficiency maximizes $X_1Y_1$ subject to this cost and $0\\leq X_1,Y_1\\leq1$.\n\nThe unconstrained maximizer has $Y_1=2X_1$, hence $X_1=t/4,Y_1=t/2$ for $t\\leq2$. For $t\\geq2$, the upper bound $Y_1=1$ binds and $X_1=(t-1)/2$.\n\nThese maximizers, including both endpoints, trace the stated frontier. Any other allocation permits higher utility for agent 1 at unchanged utility for agent 2.",
     "hint": "Maximize the product at a fixed cost $2X_1+Y_1$.",
     "topic": "Microeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Fix agent 2's utility, equivalently the resource cost $t=2X_1+Y_1\\in[0,3]$. Efficiency maximizes $X_1Y_1$ subject to this cost and $0\\leq X_1,Y_1\\leq1$. The unconstrained maximizer has $Y_1=2X_1$, hence $X_1=t/4,Y_1=t/2$ for $t\\leq2$. For $t\\geq2$, the upper bound $Y_1=1$ binds and $X_1=(t-1)/2$. These maximizers, including both endpoints, trace the stated frontier. Any other allocation permits higher utility for agent 1 at unchanged utility for agent 2.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Use agent 1’s coordinates x,y; agent 2 then obtains utility $3-2x-y$. Holding agent 2 exactly indifferent is equivalent to holding the linear resource cost $2x+y=t$ fixed. Efficiency requires giving agent 1 the largest product xy affordable at each such cost. This converts the two-agent problem into a constrained one-agent problem. The usual tangency gives y=2x only until y reaches its upper bound 1; after that a boundary segment completes the contract curve."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Fix agent 2's utility, equivalently the resource cost $t=2X_1+Y_1\\in[0,3]$. Efficiency maximizes $X_1Y_1$ subject to this cost and $0\\leq X_1,Y_1\\leq1$.\n\nThe unconstrained maximizer has $Y_1=2X_1$, hence $X_1=t/4,Y_1=t/2$ for $t\\leq2$. For $t\\geq2$, the upper bound $Y_1=1$ binds and $X_1=(t-1)/2$.\n\nThese maximizers, including both endpoints, trace the stated frontier. Any other allocation permits higher utility for agent 1 at unchanged utility for agent 2."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q2b",
@@ -70,14 +118,25 @@
     "group": "A",
     "stem": "An exchange economy has two agents, one unit each of goods $X,Y$, and allocations $(X_1,Y_1),(X_2,Y_2)$ summing to $(1,1)$. Utilities are $u_1=X_1Y_1$ and $u_2=2X_2+Y_2$. An allocation is envy-free if $u_1(X_1,Y_1)\\geq u_1(X_2,Y_2)$ and $u_2(X_2,Y_2)\\geq u_2(X_1,Y_1)$. (i) [6 marks] Are all efficient allocations envy-free, and are all envy-free allocations efficient? Prove or give counterexamples. (ii) [6 marks] Describe all envy-free allocations.",
     "answer": "Both implications are false. Envy-free set: $0\\leq x,y\\leq1$, $x+y\\geq1$, $2x+y\\leq3/2$, where $(x,y)=(X_1,Y_1)$.",
-    "solution": "(i) Giving everything to agent 1 is efficient but agent 2 envies her. Equal division $(1/2,1/2)$ is envy-free but inefficient: for small $\\epsilon>0$, replace agent 1's bundle by $(1/2-\\epsilon,1/2+2\\epsilon)$. Agent 2's utility stays fixed while agent 1's product rises by $\\epsilon/2-2\\epsilon^2>0$. (ii) Agent 1's no-envy inequality is $xy\\geq(1-x)(1-y)$, equivalent to $x+y\\geq1$. Agent 2's is $2(1-x)+(1-y)\\geq2x+y$, equivalent to $2x+y\\leq3/2$. Intersect these with the unit square; the triangle has vertices $(0,1),(1/4,1),(1/2,1/2)$.",
+    "solution": "Envy uses each agent’s own utility to evaluate both bundles; one must not compare the two agents’ utility numbers with each other. With agent 1 receiving (x,y), her comparison is between xy and $(1-x)(1-y)$. Agent 2 compares $2(1-x)+(1-y)$ with $2x+y$. Simplify these separately before intersecting their regions. To disprove either proposed implication, one valid allocation is enough; no general converse theorem can replace checking the examples.\n\n(i) Giving everything to agent 1 is efficient but agent 2 envies her. Equal division $(1/2,1/2)$ is envy-free but inefficient: for small $\\epsilon>0$, replace agent 1's bundle by $(1/2-\\epsilon,1/2+2\\epsilon)$.\n\nAgent 2's utility stays fixed while agent 1's product rises by $\\epsilon/2-2\\epsilon^2>0$. (ii) Agent 1's no-envy inequality is $xy\\geq(1-x)(1-y)$, equivalent to $x+y\\geq1$.\n\nAgent 2's is $2(1-x)+(1-y)\\geq2x+y$, equivalent to $2x+y\\leq3/2$. Intersect these with the unit square; the triangle has vertices $(0,1),(1/4,1),(1/2,1/2)$.",
     "hint": "Write both no-envy inequalities using the resource constraints.",
     "topic": "Microeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": "Part (ii) is on user PDF page 17."
+    "notes": "Part (ii) is on user PDF page 17.",
+    "solutionOriginal": "(i) Giving everything to agent 1 is efficient but agent 2 envies her. Equal division $(1/2,1/2)$ is envy-free but inefficient: for small $\\epsilon>0$, replace agent 1's bundle by $(1/2-\\epsilon,1/2+2\\epsilon)$. Agent 2's utility stays fixed while agent 1's product rises by $\\epsilon/2-2\\epsilon^2>0$. (ii) Agent 1's no-envy inequality is $xy\\geq(1-x)(1-y)$, equivalent to $x+y\\geq1$. Agent 2's is $2(1-x)+(1-y)\\geq2x+y$, equivalent to $2x+y\\leq3/2$. Intersect these with the unit square; the triangle has vertices $(0,1),(1/4,1),(1/2,1/2)$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Envy uses each agent’s own utility to evaluate both bundles; one must not compare the two agents’ utility numbers with each other. With agent 1 receiving (x,y), her comparison is between xy and $(1-x)(1-y)$. Agent 2 compares $2(1-x)+(1-y)$ with $2x+y$. Simplify these separately before intersecting their regions. To disprove either proposed implication, one valid allocation is enough; no general converse theorem can replace checking the examples."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "(i) Giving everything to agent 1 is efficient but agent 2 envies her. Equal division $(1/2,1/2)$ is envy-free but inefficient: for small $\\epsilon>0$, replace agent 1's bundle by $(1/2-\\epsilon,1/2+2\\epsilon)$.\n\nAgent 2's utility stays fixed while agent 1's product rises by $\\epsilon/2-2\\epsilon^2>0$. (ii) Agent 1's no-envy inequality is $xy\\geq(1-x)(1-y)$, equivalent to $x+y\\geq1$.\n\nAgent 2's is $2(1-x)+(1-y)\\geq2x+y$, equivalent to $2x+y\\leq3/2$. Intersect these with the unit square; the triangle has vertices $(0,1),(1/4,1),(1/2,1/2)$."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q2c",
@@ -86,14 +145,25 @@
     "group": "A",
     "stem": "An exchange economy has two agents, one unit each of goods $X,Y$, and allocations $(X_1,Y_1),(X_2,Y_2)$ summing to $(1,1)$. Utilities are $u_1=X_1Y_1$ and $u_2=2X_2+Y_2$. Each agent is endowed with half a unit of each good. Prove without direct computation that a competitive equilibrium allocation is Pareto efficient and envy-free.",
     "answer": "Equal incomes imply no envy; local nonsatiation and competitive optimization imply Pareto efficiency.",
-    "solution": "At common prices both agents have the same wealth, since their endowments coincide. Each can therefore afford the other's equilibrium bundle. Individual optimality implies neither strictly prefers the other's bundle, establishing envy-freeness. For efficiency, suppose a feasible allocation made everyone weakly better off and someone strictly better off. Optimality and local nonsatiation require each weakly better bundle to cost at least that agent's wealth, and any strictly better bundle to cost strictly more. Summing would exceed the value of total endowments, contradicting feasibility and market clearing. This is the first welfare theorem.",
+    "solution": "Equal endowments give equal wealth at every common equilibrium price vector. The agents’ tastes can differ, but the set of bundles each can afford is the same. Consequently, if one preferred the other’s chosen bundle, that agent would have failed to maximize utility. Efficiency uses a different argument: any Pareto improvement would require strictly more total expenditure than the unchanged value of aggregate resources. Keeping these two arguments separate explains both conclusions without solving demands.\n\nAt common prices both agents have the same wealth, since their endowments coincide. Each can therefore afford the other's equilibrium bundle.\n\nIndividual optimality implies neither strictly prefers the other's bundle, establishing envy-freeness. For efficiency, suppose a feasible allocation made everyone weakly better off and someone strictly better off.\n\nOptimality and local nonsatiation require each weakly better bundle to cost at least that agent's wealth, and any strictly better bundle to cost strictly more. Summing would exceed the value of total endowments, contradicting feasibility and market clearing.\n\nThis is the first welfare theorem.",
     "hint": "Combine identical budget sets with the first welfare theorem.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "At common prices both agents have the same wealth, since their endowments coincide. Each can therefore afford the other's equilibrium bundle. Individual optimality implies neither strictly prefers the other's bundle, establishing envy-freeness. For efficiency, suppose a feasible allocation made everyone weakly better off and someone strictly better off. Optimality and local nonsatiation require each weakly better bundle to cost at least that agent's wealth, and any strictly better bundle to cost strictly more. Summing would exceed the value of total endowments, contradicting feasibility and market clearing. This is the first welfare theorem.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Equal endowments give equal wealth at every common equilibrium price vector. The agents’ tastes can differ, but the set of bundles each can afford is the same. Consequently, if one preferred the other’s chosen bundle, that agent would have failed to maximize utility. Efficiency uses a different argument: any Pareto improvement would require strictly more total expenditure than the unchanged value of aggregate resources. Keeping these two arguments separate explains both conclusions without solving demands."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At common prices both agents have the same wealth, since their endowments coincide. Each can therefore afford the other's equilibrium bundle.\n\nIndividual optimality implies neither strictly prefers the other's bundle, establishing envy-freeness. For efficiency, suppose a feasible allocation made everyone weakly better off and someone strictly better off.\n\nOptimality and local nonsatiation require each weakly better bundle to cost at least that agent's wealth, and any strictly better bundle to cost strictly more. Summing would exceed the value of total endowments, contradicting feasibility and market clearing.\n\nThis is the first welfare theorem."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q3a",
@@ -102,14 +172,25 @@
     "group": "A",
     "stem": "Two flatmates play their own music on one CD player while both are present. Let $m_i\\geq0$ be music played by $i$ and $Y_i$ money holding. Utility is $u_i=8m_i-2m_i^2-\\frac32m_j^2+Y_i$, $i\\ne j$. How much music does each play independently? Find efficient music levels and compare, with economic intuition.",
     "answer": "Independent choices $m_1=m_2=2$; efficient levels $m_1=m_2=8/7$.",
-    "solution": "Each ignores the effect on the other and sets $8-4m_i=0$, giving 2. With transfers, efficiency maximizes total utility, whose music component is $8(m_1+m_2)-(7/2)(m_1^2+m_2^2)$. FOCs $8-7m_i=0$ give $8/7$. Independent play is excessive because its negative external effect is ignored.",
+    "solution": "The externality is the term involving the other person’s music. It is constant in an individual’s own maximization and is therefore ignored privately, but a planner counts it. Summing the two utilities counts every music benefit once and every external cost once:\n\n$$u_1+u_2=8(m_1+m_2)-\\frac72(m_1^2+m_2^2)+Y_1+Y_2.$$\n\nMoney transfers between the flatmates cancel from this sum. Comparing private and social first-order conditions isolates the source of excessive music.\n\nEach ignores the effect on the other and sets $8-4m_i=0$, giving 2. With transfers, efficiency maximizes total utility, whose music component is $8(m_1+m_2)-(7/2)(m_1^2+m_2^2)$.\n\nFOCs $8-7m_i=0$ give $8/7$. Independent play is excessive because its negative external effect is ignored.",
     "hint": "Compare private and social marginal benefits.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Each ignores the effect on the other and sets $8-4m_i=0$, giving 2. With transfers, efficiency maximizes total utility, whose music component is $8(m_1+m_2)-(7/2)(m_1^2+m_2^2)$. FOCs $8-7m_i=0$ give $8/7$. Independent play is excessive because its negative external effect is ignored.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The externality is the term involving the other person’s music. It is constant in an individual’s own maximization and is therefore ignored privately, but a planner counts it. Summing the two utilities counts every music benefit once and every external cost once:\n\n$$u_1+u_2=8(m_1+m_2)-\\frac72(m_1^2+m_2^2)+Y_1+Y_2.$$\n\nMoney transfers between the flatmates cancel from this sum. Comparing private and social first-order conditions isolates the source of excessive music."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Each ignores the effect on the other and sets $8-4m_i=0$, giving 2. With transfers, efficiency maximizes total utility, whose music component is $8(m_1+m_2)-(7/2)(m_1^2+m_2^2)$.\n\nFOCs $8-7m_i=0$ give $8/7$. Independent play is excessive because its negative external effect is ignored."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q3b",
@@ -118,14 +199,25 @@
     "group": "A",
     "stem": "Two flatmates play their own music on one CD player while both are present. Let $m_i\\geq0$ be music played by $i$ and $Y_i$ money holding. Utility is $u_i=8m_i-2m_i^2-\\frac32m_j^2+Y_i$, $i\\ne j$. Individual 2 considers giving a headphone to individual 1 and gets no utility from gift-giving itself. What is the maximum price she would pay?",
     "answer": "Rs. 6.",
-    "solution": "Without headphones, individual 1 plays $m_1=2$, causing individual 2 loss $(3/2)2^2=6$. A headphone removes this external harm while leaving her own optimal music unchanged. Quasilinearity makes the avoided utility loss her maximum monetary willingness to pay.",
+    "solution": "A headphone is useful to the giver because it removes the neighbour’s noise, not because it changes the giver’s own preferred amount of music. First obtain the neighbour’s unregulated choice m=2. Its harm to the giver is $\\frac32m^2$. Since utility is linear in money with coefficient one, the utility gain and maximum payment have the same numerical value. A payment above the avoided harm would make the giver worse off.\n\nWithout headphones, individual 1 plays $m_1=2$, causing individual 2 loss $(3/2)2^2=6$. A headphone removes this external harm while leaving her own optimal music unchanged. Quasilinearity makes the avoided utility loss her maximum monetary willingness to pay.",
     "hint": "Value the external harm removed by the gift.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Without headphones, individual 1 plays $m_1=2$, causing individual 2 loss $(3/2)2^2=6$. A headphone removes this external harm while leaving her own optimal music unchanged. Quasilinearity makes the avoided utility loss her maximum monetary willingness to pay.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A headphone is useful to the giver because it removes the neighbour’s noise, not because it changes the giver’s own preferred amount of music. First obtain the neighbour’s unregulated choice m=2. Its harm to the giver is $\\frac32m^2$. Since utility is linear in money with coefficient one, the utility gain and maximum payment have the same numerical value. A payment above the avoided harm would make the giver worse off."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Without headphones, individual 1 plays $m_1=2$, causing individual 2 loss $(3/2)2^2=6$. A headphone removes this external harm while leaving her own optimal music unchanged. Quasilinearity makes the avoided utility loss her maximum monetary willingness to pay."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q3c",
@@ -134,14 +226,25 @@
     "group": "A",
     "stem": "Two flatmates play their own music on one CD player while both are present. Let $m_i\\geq0$ be music played by $i$ and $Y_i$ money holding. Utility is $u_i=8m_i-2m_i^2-\\frac32m_j^2+Y_i$, $i\\ne j$. A headphone costs Rs. 11. Should the flatmates jointly buy it, split the cost equally and commit to listening only via the headphone?",
     "answer": "Yes; each gains Rs. 0.50 in utility-equivalent terms.",
-    "solution": "Each initially receives own-music benefit $8(2)-2(2)^2=8$ minus harm 6, giving 2 before money holdings. Headphones preserve own benefit 8, remove harm 6 and cost each $11/2=5.5$, giving 2.5. Hence each gains 0.5, so the arrangement is mutually beneficial.",
+    "solution": "The relevant comparison is each person’s utility before and after the agreement, not whether the headphone costs less than one person’s willingness to pay for the entire purchase. Joint purchase removes both external harms and splits the cost. Each person still selects m=2 because own-music preferences are unchanged. Compare the six-unit harm avoided by each person with their individual contribution 11/2; the commitment matters because it prevents one person from continuing to impose noise.\n\nEach initially receives own-music benefit $8(2)-2(2)^2=8$ minus harm 6, giving 2 before money holdings. Headphones preserve own benefit 8, remove harm 6 and cost each $11/2=5.5$, giving 2.5. Hence each gains 0.5, so the arrangement is mutually beneficial.",
     "hint": "Compare each person’s avoided harm with half the price.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": "Question continues onto user PDF page 18."
+    "notes": "Question continues onto user PDF page 18.",
+    "solutionOriginal": "Each initially receives own-music benefit $8(2)-2(2)^2=8$ minus harm 6, giving 2 before money holdings. Headphones preserve own benefit 8, remove harm 6 and cost each $11/2=5.5$, giving 2.5. Hence each gains 0.5, so the arrangement is mutually beneficial.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The relevant comparison is each person’s utility before and after the agreement, not whether the headphone costs less than one person’s willingness to pay for the entire purchase. Joint purchase removes both external harms and splits the cost. Each person still selects m=2 because own-music preferences are unchanged. Compare the six-unit harm avoided by each person with their individual contribution 11/2; the commitment matters because it prevents one person from continuing to impose noise."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Each initially receives own-music benefit $8(2)-2(2)^2=8$ minus harm 6, giving 2 before money holdings. Headphones preserve own benefit 8, remove harm 6 and cost each $11/2=5.5$, giving 2.5. Hence each gains 0.5, so the arrangement is mutually beneficial."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q3d",
@@ -150,14 +253,25 @@
     "group": "A",
     "stem": "Two flatmates play their own music on one CD player while both are present. Let $m_i\\geq0$ be music played by $i$ and $Y_i$ money holding. Utility is $u_i=8m_i-2m_i^2-\\frac32m_j^2+Y_i$, $i\\ne j$. Now individual 1 owns the player and can prohibit individual 2 from playing. She offers a take-it-or-leave-it contract: she plays $\\bar m_1$, individual 2 may play $\\bar m_2$ for payment $T$. If rejected, individual 1 chooses her music unilaterally and individual 2 plays none. Find optimal $\\bar m_1,\\bar m_2,T$ and explain.",
     "answer": "$\\bar m_1=\\bar m_2=8/7$, $T=74/7$.",
-    "solution": "Upon rejection, individual 1 chooses 2 and individual 2's utility excluding money is $-6$. Acceptance requires $8m_2-2m_2^2-(3/2)m_1^2-T\\geq-6$. Individual 1 sets the largest acceptable transfer $T=8m_2-2m_2^2-(3/2)m_1^2+6$. Her resulting utility is total music surplus plus 6, so she chooses the efficient levels $m_1=m_2=8/7$. Substitution gives $T=64/7-32/7+6=74/7$. She captures the gains over individual 2's outside option. This assumes acceptance at indifference and no binding transfer/wealth constraint.",
+    "solution": "The owner chooses both music levels and the transfer, so this is not the original noncooperative music game. First determine what person 2 receives if she rejects: person 1 plays m1=2 and person 2 cannot play. This outside option determines the largest acceptable payment. Once that binding participation constraint is substituted, the owner maximizes total surplus and extracts the other person’s gain through T. Property rights affect the division of gains, while unrestricted bargaining restores efficient music levels.\n\nUpon rejection, individual 1 chooses 2 and individual 2's utility excluding money is $-6$. Acceptance requires $8m_2-2m_2^2-(3/2)m_1^2-T\\geq-6$.\n\nIndividual 1 sets the largest acceptable transfer $T=8m_2-2m_2^2-(3/2)m_1^2+6$. Her resulting utility is total music surplus plus 6, so she chooses the efficient levels $m_1=m_2=8/7$.\n\nSubstitution gives $T=64/7-32/7+6=74/7$. She captures the gains over individual 2's outside option.\n\nThis assumes acceptance at indifference and no binding transfer/wealth constraint.",
     "hint": "Use the other flatmate’s participation constraint to eliminate the transfer.",
     "topic": "Microeconomics",
     "sourcePage": 18,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Upon rejection, individual 1 chooses 2 and individual 2's utility excluding money is $-6$. Acceptance requires $8m_2-2m_2^2-(3/2)m_1^2-T\\geq-6$. Individual 1 sets the largest acceptable transfer $T=8m_2-2m_2^2-(3/2)m_1^2+6$. Her resulting utility is total music surplus plus 6, so she chooses the efficient levels $m_1=m_2=8/7$. Substitution gives $T=64/7-32/7+6=74/7$. She captures the gains over individual 2's outside option. This assumes acceptance at indifference and no binding transfer/wealth constraint.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The owner chooses both music levels and the transfer, so this is not the original noncooperative music game. First determine what person 2 receives if she rejects: person 1 plays m1=2 and person 2 cannot play. This outside option determines the largest acceptable payment. Once that binding participation constraint is substituted, the owner maximizes total surplus and extracts the other person’s gain through T. Property rights affect the division of gains, while unrestricted bargaining restores efficient music levels."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Upon rejection, individual 1 chooses 2 and individual 2's utility excluding money is $-6$. Acceptance requires $8m_2-2m_2^2-(3/2)m_1^2-T\\geq-6$.\n\nIndividual 1 sets the largest acceptable transfer $T=8m_2-2m_2^2-(3/2)m_1^2+6$. Her resulting utility is total music surplus plus 6, so she chooses the efficient levels $m_1=m_2=8/7$.\n\nSubstitution gives $T=64/7-32/7+6=74/7$. She captures the gains over individual 2's outside option.\n\nThis assumes acceptance at indifference and no binding transfer/wealth constraint."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q4a",
@@ -166,14 +280,25 @@
     "group": "B",
     "stem": "An employer produces $Y=F(N^A+N^B)$, where $F$ is concave and $N^i$ is employment from province $i=A,B$. Output price is $P$ and wages are $W^A,W^B$, all taken as given. Write profit as a function of both employment quantities.",
     "answer": "$\\pi=PF(N^A+N^B)-W^AN^A-W^BN^B$.",
-    "solution": "Revenue is output price times production. Subtract the wage bill for each province to obtain the stated expression.",
+    "solution": "Output depends on total employment because the two provincial labour inputs are perfect production substitutes. Revenue is the same whichever province supplies a given unit of labour, but wage payments may differ. Write both wage bills separately rather than replacing them by one average wage:\n\n$$\\pi(N^A,N^B)=PF(N^A+N^B)-W^AN^A-W^BN^B.$$\n\nThis separates technological substitutability from the employer’s nonpecuniary preferences, which enter only in the following utility-maximization problem.\n\nRevenue is output price times production. Subtract the wage bill for each province to obtain the stated expression.",
     "hint": "Subtract both wage bills from revenue.",
     "topic": "Microeconomics",
     "sourcePage": 19,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Revenue is output price times production. Subtract the wage bill for each province to obtain the stated expression.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Output depends on total employment because the two provincial labour inputs are perfect production substitutes. Revenue is the same whichever province supplies a given unit of labour, but wage payments may differ. Write both wage bills separately rather than replacing them by one average wage:\n\n$$\\pi(N^A,N^B)=PF(N^A+N^B)-W^AN^A-W^BN^B.$$\n\nThis separates technological substitutability from the employer’s nonpecuniary preferences, which enter only in the following utility-maximization problem."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Revenue is output price times production. Subtract the wage bill for each province to obtain the stated expression."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q4b",
@@ -182,14 +307,25 @@
     "group": "B",
     "stem": "An employer produces $Y=F(N^A+N^B)$, where $F$ is concave and $N^i$ is employment from province $i=A,B$. Output price is $P$ and wages are $W^A,W^B$, all taken as given. The employer maximizes $u(\\pi(N^A,N^B),N^A,N^B)$, with $u_\\pi>0$, direct $u_A>0$ and direct $u_B<0$. Write the first-order conditions assuming an interior solution.",
     "answer": "$u_\\pi[PF\\prime-W^A]+u_A=0$ and $u_\\pi[PF\\prime-W^B]+u_B=0$.",
-    "solution": "By the chain rule, differentiate utility with respect to each employment quantity, including both its profit effect and its direct taste effect. Evaluate $F\\prime$ at $N^A+N^B$ and all utility partials at the chosen allocation. These are necessary interior FOCs; the stated monotonicity conditions alone do not guarantee sufficiency.",
+    "solution": "The employer values both money profit and the composition of employment. Therefore differentiating profit alone would omit the discrimination terms. For each province, the chain rule has two contributions:\n\n$$\\frac{dU}{dN^i}=u_\\pi\\frac{\\partial\\pi}{\\partial N^i}+u_i.$$\n\nThe derivative ui is the direct taste effect while holding profit fixed. Set the total derivative to zero only under the stated interior assumption; with a zero employment corner, use the corresponding inequality instead.\n\nBy the chain rule, differentiate utility with respect to each employment quantity, including both its profit effect and its direct taste effect. Evaluate $F\\prime$ at $N^A+N^B$ and all utility partials at the chosen allocation. These are necessary interior FOCs; the stated monotonicity conditions alone do not guarantee sufficiency.",
     "hint": "Include the direct preference effect as well as the profit effect.",
     "topic": "Microeconomics",
     "sourcePage": 19,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "By the chain rule, differentiate utility with respect to each employment quantity, including both its profit effect and its direct taste effect. Evaluate $F\\prime$ at $N^A+N^B$ and all utility partials at the chosen allocation. These are necessary interior FOCs; the stated monotonicity conditions alone do not guarantee sufficiency.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The employer values both money profit and the composition of employment. Therefore differentiating profit alone would omit the discrimination terms. For each province, the chain rule has two contributions:\n\n$$\\frac{dU}{dN^i}=u_\\pi\\frac{\\partial\\pi}{\\partial N^i}+u_i.$$\n\nThe derivative ui is the direct taste effect while holding profit fixed. Set the total derivative to zero only under the stated interior assumption; with a zero employment corner, use the corresponding inequality instead."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "By the chain rule, differentiate utility with respect to each employment quantity, including both its profit effect and its direct taste effect. Evaluate $F\\prime$ at $N^A+N^B$ and all utility partials at the chosen allocation. These are necessary interior FOCs; the stated monotonicity conditions alone do not guarantee sufficiency."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q4c",
@@ -198,14 +334,25 @@
     "group": "B",
     "stem": "An employer produces $Y=F(N^A+N^B)$, where $F$ is concave and $N^i$ is employment from province $i=A,B$. Output price is $P$ and wages are $W^A,W^B$, all taken as given. The employer maximizes $u(\\pi(N^A,N^B),N^A,N^B)$, with $u_\\pi>0$, direct $u_A>0$ and direct $u_B<0$. Do employees from both provinces receive the same wage in equilibrium? If not, who receives more and by how much?",
     "answer": "With both types employed at an interior optimum, $W^A-W^B=(u_A-u_B)/u_\\pi>0$.",
-    "solution": "Rearranging the FOCs gives $W^A=PF\\prime+u_A/u_\\pi$ and $W^B=PF\\prime+u_B/u_\\pi$. Thus preferred A workers receive more despite identical marginal productivity; the wage gap is the difference in direct utility effects divided by marginal utility of profit. The claim is conditional on both labour types being hired at an interior optimum; corner hiring or market supply conditions not supplied cannot be characterized from these FOCs alone.",
+    "solution": "Both types have the same value marginal product $PF'$, so a wage difference cannot be attributed to production technology here. Divide the two hiring conditions by the positive marginal utility of profit, putting all direct preference effects into money units. The preferred A worker is worth an extra $u_A/u_\\pi$, while the disliked B worker must be cheaper by $-u_B/u_\\pi$. Subtracting cancels the common productivity term and gives the wage gap.\n\nRearranging the FOCs gives $W^A=PF\\prime+u_A/u_\\pi$ and $W^B=PF\\prime+u_B/u_\\pi$. Thus preferred A workers receive more despite identical marginal productivity; the wage gap is the difference in direct utility effects divided by marginal utility of profit. The claim is conditional on both labour types being hired at an interior optimum; corner hiring or market supply conditions not supplied cannot be characterized from these FOCs alone.",
     "hint": "Subtract the two interior conditions.",
     "topic": "Microeconomics",
     "sourcePage": 19,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Rearranging the FOCs gives $W^A=PF\\prime+u_A/u_\\pi$ and $W^B=PF\\prime+u_B/u_\\pi$. Thus preferred A workers receive more despite identical marginal productivity; the wage gap is the difference in direct utility effects divided by marginal utility of profit. The claim is conditional on both labour types being hired at an interior optimum; corner hiring or market supply conditions not supplied cannot be characterized from these FOCs alone.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Both types have the same value marginal product $PF'$, so a wage difference cannot be attributed to production technology here. Divide the two hiring conditions by the positive marginal utility of profit, putting all direct preference effects into money units. The preferred A worker is worth an extra $u_A/u_\\pi$, while the disliked B worker must be cheaper by $-u_B/u_\\pi$. Subtracting cancels the common productivity term and gives the wage gap."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Rearranging the FOCs gives $W^A=PF\\prime+u_A/u_\\pi$ and $W^B=PF\\prime+u_B/u_\\pi$. Thus preferred A workers receive more despite identical marginal productivity; the wage gap is the difference in direct utility effects divided by marginal utility of profit. The claim is conditional on both labour types being hired at an interior optimum; corner hiring or market supply conditions not supplied cannot be characterized from these FOCs alone."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q5a",
@@ -214,14 +361,25 @@
     "group": "B",
     "stem": "Utility $u(c,l)$ is concave, increasing in consumption $c$ and decreasing in working hours $l$. Wage is $w>0$, gross earnings $y=wl$, consumption price $p>0$, and time endowment $\\bar L$. Write utility as $u(c,y/w)$. In figures use earnings $y$ horizontally and consumption $c$ vertically. Derive the slope of an indifference curve in the earnings–consumption plane.",
     "answer": "$dc/dy=-u_l/(wu_c)>0$.",
-    "solution": "Along an indifference curve, $0=du=u_c\\,dc+(u_l/w)\\,dy$. Rearranging gives the slope. Its positivity reflects that more labour earnings require additional consumption to compensate for the disutility of working.",
+    "solution": "Gross income y and working time l are different variables: one extra income unit requires only 1/w additional work units. That conversion must appear in the derivative. Holding utility constant gives\n\n$$0=u_c\\,dc+u_l\\,dl=u_c\\,dc+\\frac{u_l}{w}\\,dy.$$\n\nSince consumption is good and labour is bad, the resulting slope is positive. A downward-sloping leisure–consumption indifference curve should not be copied into this earnings–consumption diagram, whose horizontal good is costly work rather than leisure.\n\nAlong an indifference curve, $0=du=u_c\\,dc+(u_l/w)\\,dy$. Rearranging gives the slope. Its positivity reflects that more labour earnings require additional consumption to compensate for the disutility of working.",
     "hint": "Totally differentiate utility while holding its level fixed.",
     "topic": "Microeconomics",
     "sourcePage": 20,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Along an indifference curve, $0=du=u_c\\,dc+(u_l/w)\\,dy$. Rearranging gives the slope. Its positivity reflects that more labour earnings require additional consumption to compensate for the disutility of working.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Gross income y and working time l are different variables: one extra income unit requires only 1/w additional work units. That conversion must appear in the derivative. Holding utility constant gives\n\n$$0=u_c\\,dc+u_l\\,dl=u_c\\,dc+\\frac{u_l}{w}\\,dy.$$\n\nSince consumption is good and labour is bad, the resulting slope is positive. A downward-sloping leisure–consumption indifference curve should not be copied into this earnings–consumption diagram, whose horizontal good is costly work rather than leisure."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Along an indifference curve, $0=du=u_c\\,dc+(u_l/w)\\,dy$. Rearranging gives the slope. Its positivity reflects that more labour earnings require additional consumption to compensate for the disutility of working."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q5b",
@@ -230,14 +388,25 @@
     "group": "B",
     "stem": "Utility $u(c,l)$ is concave, increasing in consumption $c$ and decreasing in working hours $l$. Wage is $w>0$, gross earnings $y=wl$, consumption price $p>0$, and time endowment $\\bar L$. Write utility as $u(c,y/w)$. In figures use earnings $y$ horizontally and consumption $c$ vertically. Show the utility-maximizing earnings and consumption in a figure with the budget line and indifference curves.",
     "answer": "Budget $c=y/p$, $0\\leq y\\leq w\\bar L$; an interior optimum satisfies $-u_l/(wu_c)=1/p$.",
-    "solution": "Draw the budget segment from $(0,0)$ to $(w\\bar L,w\\bar L/p)$ with slope $1/p$. Indifference curves slope upward; higher utility lies above a given curve at fixed earnings. The highest attainable curve is tangent to the segment at an interior solution, equating its slope with $1/p$. Equivalently $-u_l/u_c=w/p$. A corner at the time bound or zero work must be checked when the tangency is not feasible; positive consumption is not otherwise guaranteed by the stated general utility.",
+    "solution": "Here the horizontal axis is earnings, so budget feasibility is $pc\\leq y$, not the more familiar leisure budget. The feasible frontier rises from the origin and stops at the time-endowment bound $y=w\\bar L$. At an interior tangency, the consumption required to compensate an additional earnings unit equals the consumption that unit can actually buy. Concavity helps verify maximization, but a tangency beyond the allowed time interval is not feasible and must be replaced by a boundary comparison.\n\nDraw the budget segment from $(0,0)$ to $(w\\bar L,w\\bar L/p)$ with slope $1/p$. Indifference curves slope upward; higher utility lies above a given curve at fixed earnings.\n\nThe highest attainable curve is tangent to the segment at an interior solution, equating its slope with $1/p$. Equivalently $-u_l/u_c=w/p$.\n\nA corner at the time bound or zero work must be checked when the tangency is not feasible; positive consumption is not otherwise guaranteed by the stated general utility.",
     "hint": "The feasible segment has a positive slope in these axes.",
     "topic": "Microeconomics",
     "sourcePage": 20,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Draw the budget segment from $(0,0)$ to $(w\\bar L,w\\bar L/p)$ with slope $1/p$. Indifference curves slope upward; higher utility lies above a given curve at fixed earnings. The highest attainable curve is tangent to the segment at an interior solution, equating its slope with $1/p$. Equivalently $-u_l/u_c=w/p$. A corner at the time bound or zero work must be checked when the tangency is not feasible; positive consumption is not otherwise guaranteed by the stated general utility.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Here the horizontal axis is earnings, so budget feasibility is $pc\\leq y$, not the more familiar leisure budget. The feasible frontier rises from the origin and stops at the time-endowment bound $y=w\\bar L$. At an interior tangency, the consumption required to compensate an additional earnings unit equals the consumption that unit can actually buy. Concavity helps verify maximization, but a tangency beyond the allowed time interval is not feasible and must be replaced by a boundary comparison."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Draw the budget segment from $(0,0)$ to $(w\\bar L,w\\bar L/p)$ with slope $1/p$. Indifference curves slope upward; higher utility lies above a given curve at fixed earnings.\n\nThe highest attainable curve is tangent to the segment at an interior solution, equating its slope with $1/p$. Equivalently $-u_l/u_c=w/p$.\n\nA corner at the time bound or zero work must be checked when the tangency is not feasible; positive consumption is not otherwise guaranteed by the stated general utility."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q5c",
@@ -246,14 +415,25 @@
     "group": "B",
     "stem": "Utility $u(c,l)$ is concave, increasing in consumption $c$ and decreasing in working hours $l$. Wage is $w>0$, gross earnings $y=wl$, consumption price $p>0$, and time endowment $\\bar L$. Write utility as $u(c,y/w)$. In figures use earnings $y$ horizontally and consumption $c$ vertically. Experiment 1: increase $w$. In the same figure show which budget or indifference curves change and compare the old and new earnings and consumption, with explanation.",
     "answer": "The budget ray’s slope stays $1/p$ and its endpoint extends. Preferences in the earnings–consumption coordinates change; welfare weakly rises, but earnings/hours need not move unambiguously under the stated general assumptions.",
-    "solution": "At the same $(y,c)$, a larger wage requires less labour $l=y/w$, so utility rises. The budget segment remains on $c=y/p$, extending to $y=w_{new}\\bar L$. Draw the new indifference map using $u(c,y/w_{new})$, with the new optimum where its relevant curve touches the budget. The old labour–consumption choice can be replicated with less labour or can finance more consumption, so welfare weakly improves. In labour–leisure coordinates the wage increase has opposing substitution and income effects on labour. Neither normality nor restrictions on the cross partial are stated, so a universal movement of earnings or consumption should not be asserted; along the budget earnings and consumption move together. Under customary additional normality assumptions their standard directions can be shown in the diagram.",
+    "solution": "Increasing the wage does not rotate the budget ray c=y/p in these particular axes. Instead it changes how much work is represented by each horizontal coordinate y and extends the maximum feasible earnings. Thus the preference map changes even though preferences over actual consumption and work have not changed. For a fixed displayed earnings bundle, the worker now needs fewer hours. This coordinate effect is essential to drawing the comparative-static diagram correctly.\n\nAt the same $(y,c)$, a larger wage requires less labour $l=y/w$, so utility rises. The budget segment remains on $c=y/p$, extending to $y=w_{new}\\bar L$.\n\nDraw the new indifference map using $u(c,y/w_{new})$, with the new optimum where its relevant curve touches the budget. The old labour–consumption choice can be replicated with less labour or can finance more consumption, so welfare weakly improves.\n\nIn labour–leisure coordinates the wage increase has opposing substitution and income effects on labour. Neither normality nor restrictions on the cross partial are stated, so a universal movement of earnings or consumption should not be asserted; along the budget earnings and consumption move together.\n\nUnder customary additional normality assumptions their standard directions can be shown in the diagram.",
     "hint": "Changing wage changes the preference map when the horizontal axis is earnings.",
     "topic": "Microeconomics",
     "sourcePage": 20,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": "General concavity and monotonicity do not state normality; diagram must not impose an unconditional earnings/labour response."
+    "notes": "General concavity and monotonicity do not state normality; diagram must not impose an unconditional earnings/labour response.",
+    "solutionOriginal": "At the same $(y,c)$, a larger wage requires less labour $l=y/w$, so utility rises. The budget segment remains on $c=y/p$, extending to $y=w_{new}\\bar L$. Draw the new indifference map using $u(c,y/w_{new})$, with the new optimum where its relevant curve touches the budget. The old labour–consumption choice can be replicated with less labour or can finance more consumption, so welfare weakly improves. In labour–leisure coordinates the wage increase has opposing substitution and income effects on labour. Neither normality nor restrictions on the cross partial are stated, so a universal movement of earnings or consumption should not be asserted; along the budget earnings and consumption move together. Under customary additional normality assumptions their standard directions can be shown in the diagram.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Increasing the wage does not rotate the budget ray c=y/p in these particular axes. Instead it changes how much work is represented by each horizontal coordinate y and extends the maximum feasible earnings. Thus the preference map changes even though preferences over actual consumption and work have not changed. For a fixed displayed earnings bundle, the worker now needs fewer hours. This coordinate effect is essential to drawing the comparative-static diagram correctly."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At the same $(y,c)$, a larger wage requires less labour $l=y/w$, so utility rises. The budget segment remains on $c=y/p$, extending to $y=w_{new}\\bar L$.\n\nDraw the new indifference map using $u(c,y/w_{new})$, with the new optimum where its relevant curve touches the budget. The old labour–consumption choice can be replicated with less labour or can finance more consumption, so welfare weakly improves.\n\nIn labour–leisure coordinates the wage increase has opposing substitution and income effects on labour. Neither normality nor restrictions on the cross partial are stated, so a universal movement of earnings or consumption should not be asserted; along the budget earnings and consumption move together.\n\nUnder customary additional normality assumptions their standard directions can be shown in the diagram."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q5d",
@@ -262,14 +442,25 @@
     "group": "B",
     "stem": "Utility $u(c,l)$ is concave, increasing in consumption $c$ and decreasing in working hours $l$. Wage is $w>0$, gross earnings $y=wl$, consumption price $p>0$, and time endowment $\\bar L$. Write utility as $u(c,y/w)$. In figures use earnings $y$ horizontally and consumption $c$ vertically. Experiment 2: instead impose a proportional income tax $\\tau$, so disposable income is $(1-\\tau)y$. Draw old and new optima and show the budget and preference changes, comparing outcomes.",
     "answer": "For $0<\\tau<1$, budget rotates down to $c=(1-\\tau)y/p$; the preference map is unchanged and welfare weakly falls. Labour/earnings response is generally ambiguous.",
-    "solution": "In the same earnings–consumption axes, retain the original indifference curves because $w$ is unchanged. Rotate the budget segment clockwise through the origin from slope $1/p$ to $(1-\\tau)/p$, keeping horizontal endpoint $w\\bar L$. An interior new optimum satisfies $-u_l/(wu_c)=(1-\\tau)/p$. The feasible consumption set contracts, so utility cannot rise. The lower net wage produces opposing substitution and income effects on labour; without further preference restrictions its sign, and thus gross earnings, is ambiguous. Consumption also has no universal sign under the fully general preferences stated.",
+    "solution": "A proportional earnings tax leaves the number of hours needed to earn gross y unchanged, so it leaves the indifference map unchanged. It reduces how much consumption that gross income purchases:\n\n$$c=\\frac{(1-\\tau)y}{p}.$$\n\nThat is a clockwise budget rotation at the origin, unlike the wage experiment’s change in the preference map. Welfare falls because every newly feasible bundle was already feasible before. An assertion about the direction of labour must separately resolve income and substitution effects.\n\nIn the same earnings–consumption axes, retain the original indifference curves because $w$ is unchanged. Rotate the budget segment clockwise through the origin from slope $1/p$ to $(1-\\tau)/p$, keeping horizontal endpoint $w\\bar L$.\n\nAn interior new optimum satisfies $-u_l/(wu_c)=(1-\\tau)/p$. The feasible consumption set contracts, so utility cannot rise.\n\nThe lower net wage produces opposing substitution and income effects on labour; without further preference restrictions its sign, and thus gross earnings, is ambiguous. Consumption also has no universal sign under the fully general preferences stated.",
     "hint": "The tax changes net purchasing power, not the labour required for gross earnings.",
     "topic": "Microeconomics",
     "sourcePage": 20,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": "Question continues onto user PDF page 21. Proportional tax assumed between zero and one."
+    "notes": "Question continues onto user PDF page 21. Proportional tax assumed between zero and one.",
+    "solutionOriginal": "In the same earnings–consumption axes, retain the original indifference curves because $w$ is unchanged. Rotate the budget segment clockwise through the origin from slope $1/p$ to $(1-\\tau)/p$, keeping horizontal endpoint $w\\bar L$. An interior new optimum satisfies $-u_l/(wu_c)=(1-\\tau)/p$. The feasible consumption set contracts, so utility cannot rise. The lower net wage produces opposing substitution and income effects on labour; without further preference restrictions its sign, and thus gross earnings, is ambiguous. Consumption also has no universal sign under the fully general preferences stated.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A proportional earnings tax leaves the number of hours needed to earn gross y unchanged, so it leaves the indifference map unchanged. It reduces how much consumption that gross income purchases:\n\n$$c=\\frac{(1-\\tau)y}{p}.$$\n\nThat is a clockwise budget rotation at the origin, unlike the wage experiment’s change in the preference map. Welfare falls because every newly feasible bundle was already feasible before. An assertion about the direction of labour must separately resolve income and substitution effects."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "In the same earnings–consumption axes, retain the original indifference curves because $w$ is unchanged. Rotate the budget segment clockwise through the origin from slope $1/p$ to $(1-\\tau)/p$, keeping horizontal endpoint $w\\bar L$.\n\nAn interior new optimum satisfies $-u_l/(wu_c)=(1-\\tau)/p$. The feasible consumption set contracts, so utility cannot rise.\n\nThe lower net wage produces opposing substitution and income effects on labour; without further preference restrictions its sign, and thus gross earnings, is ambiguous. Consumption also has no universal sign under the fully general preferences stated."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q6a",
@@ -278,14 +469,25 @@
     "group": "B",
     "stem": "An agent lives three periods and consumes only in periods 2 and 3, with utility $\\log c_2+\\beta\\log c_3$, $0<\\beta<1$. She borrows education expenditure $e\\geq0$ in period 1 at interest $r>0$. Period-2 earnings are $wh(e)$, with fixed $w>0$ and increasing concave $h$. She repays $(1+r)e$, saves $s$, and in period 3 consumes saving plus interest, with no other income. Write separate period-2 and period-3 budget constraints.",
     "answer": "$c_2+s=wh(e)-(1+r)e$, $c_3=(1+r)s$.",
-    "solution": "Period-2 resources are labour earnings minus repayment of the education loan. They finance consumption and saving. In period 3, gross saving returns are the sole resources and are consumed.",
+    "solution": "Education debt is incurred in period 1 but repaid in period 2. It therefore reduces the resources available for period-2 consumption and saving by the full gross repayment, not merely the interest. There is no period-3 wage and no bequest, so all accumulated saving is consumed then. These timing facts lead to two separate equations; combining them too early can hide the education repayment or count saving twice.\n\nPeriod-2 resources are labour earnings minus repayment of the education loan. They finance consumption and saving. In period 3, gross saving returns are the sole resources and are consumed.",
     "hint": "Account for education debt before allocating period-2 resources.",
     "topic": "Macroeconomics",
     "sourcePage": 21,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Period-2 resources are labour earnings minus repayment of the education loan. They finance consumption and saving. In period 3, gross saving returns are the sole resources and are consumed.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Education debt is incurred in period 1 but repaid in period 2. It therefore reduces the resources available for period-2 consumption and saving by the full gross repayment, not merely the interest. There is no period-3 wage and no bequest, so all accumulated saving is consumed then. These timing facts lead to two separate equations; combining them too early can hide the education repayment or count saving twice."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Period-2 resources are labour earnings minus repayment of the education loan. They finance consumption and saving. In period 3, gross saving returns are the sole resources and are consumed."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q6b",
@@ -294,14 +496,25 @@
     "group": "B",
     "stem": "An agent lives three periods and consumes only in periods 2 and 3, with utility $\\log c_2+\\beta\\log c_3$, $0<\\beta<1$. She borrows education expenditure $e\\geq0$ in period 1 at interest $r>0$. Period-2 earnings are $wh(e)$, with fixed $w>0$ and increasing concave $h$. She repays $(1+r)e$, saves $s$, and in period 3 consumes saving plus interest, with no other income. Set up the utility maximization problem, identifying the choices.",
     "answer": "$\\max_{e\\geq0,s>0}\\log[wh(e)-(1+r)e-s]+\\beta\\log[(1+r)s]$.",
-    "solution": "The choices are education $e$ and saving $s$; equivalently choose all four variables $e,s,c_2,c_3$ under the two budgets and positive consumption. Feasibility requires $0<s<wh(e)-(1+r)e$. Substitute the budgets to obtain the answer. A feasible positive-consumption solution is assumed to exist.",
+    "solution": "Choose education e and the saving amount s. Once these are chosen, both consumptions are determined by the budgets. For logarithmic utility, feasibility requires strictly positive consumption, not merely nonnegative consumption:\n\n$$e\\geq0,\\qquad0<s<wh(e)-(1+r)e.$$\n\nThe right-hand side is net lifetime earning capacity measured at period 2. If no education choice makes it positive, the stated log-utility problem has no feasible solution; the usual economic exercise assumes positive resources are attainable.\n\nThe choices are education $e$ and saving $s$; equivalently choose all four variables $e,s,c_2,c_3$ under the two budgets and positive consumption. Feasibility requires $0<s<wh(e)-(1+r)e$.\n\nSubstitute the budgets to obtain the answer. A feasible positive-consumption solution is assumed to exist.",
     "hint": "Use education and saving as the independent choices.",
     "topic": "Macroeconomics",
     "sourcePage": 21,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": "Prompt continues onto user PDF page 22."
+    "notes": "Prompt continues onto user PDF page 22.",
+    "solutionOriginal": "The choices are education $e$ and saving $s$; equivalently choose all four variables $e,s,c_2,c_3$ under the two budgets and positive consumption. Feasibility requires $0<s<wh(e)-(1+r)e$. Substitute the budgets to obtain the answer. A feasible positive-consumption solution is assumed to exist.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Choose education e and the saving amount s. Once these are chosen, both consumptions are determined by the budgets. For logarithmic utility, feasibility requires strictly positive consumption, not merely nonnegative consumption:\n\n$$e\\geq0,\\qquad0<s<wh(e)-(1+r)e.$$\n\nThe right-hand side is net lifetime earning capacity measured at period 2. If no education choice makes it positive, the stated log-utility problem has no feasible solution; the usual economic exercise assumes positive resources are attainable."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The choices are education $e$ and saving $s$; equivalently choose all four variables $e,s,c_2,c_3$ under the two budgets and positive consumption. Feasibility requires $0<s<wh(e)-(1+r)e$.\n\nSubstitute the budgets to obtain the answer. A feasible positive-consumption solution is assumed to exist."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q6c",
@@ -310,14 +523,25 @@
     "group": "B",
     "stem": "An agent lives three periods and consumes only in periods 2 and 3, with utility $\\log c_2+\\beta\\log c_3$, $0<\\beta<1$. She borrows education expenditure $e\\geq0$ in period 1 at interest $r>0$. Period-2 earnings are $wh(e)$, with fixed $w>0$ and increasing concave $h$. She repays $(1+r)e$, saves $s$, and in period 3 consumes saving plus interest, with no other income. Write the first-order conditions for utility maximization.",
     "answer": "Interior: $wh\\prime(e)=1+r$ and $1/c_2=\\beta(1+r)/c_3$.",
-    "solution": "Differentiate the reduced objective. Its derivative with respect to $e$ is $[wh\\prime(e)-(1+r)]/c_2$, giving the education condition. With respect to $s$ it is $-1/c_2+\\beta/s=0$, equivalent to the Euler condition since $c_3=(1+r)s$. At $e=0$, replace equality by $wh\\prime(0)\\leq1+r$ when the derivative exists. Strict concavity of $h$ gives uniqueness of an interior education optimum; mere concavity allows multiple maximizers.",
+    "solution": "Saving shifts resources between consumption dates, whereas education changes the total resources available at those dates. Differentiate the reduced objective with respect to these two choices separately. The education condition compares marginal earnings $wh'(e)$ with the gross repayment on one more borrowed education unit, 1+r. The saving condition compares marginal utilities across periods. An education equality is only an interior condition; a person who optimally buys no education satisfies the boundary inequality.\n\nDifferentiate the reduced objective. Its derivative with respect to $e$ is $[wh\\prime(e)-(1+r)]/c_2$, giving the education condition.\n\nWith respect to $s$ it is $-1/c_2+\\beta/s=0$, equivalent to the Euler condition since $c_3=(1+r)s$. At $e=0$, replace equality by $wh\\prime(0)\\leq1+r$ when the derivative exists.\n\nStrict concavity of $h$ gives uniqueness of an interior education optimum; mere concavity allows multiple maximizers.",
     "hint": "Separate the return to education from the consumption Euler equation.",
     "topic": "Macroeconomics",
     "sourcePage": 22,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Differentiate the reduced objective. Its derivative with respect to $e$ is $[wh\\prime(e)-(1+r)]/c_2$, giving the education condition. With respect to $s$ it is $-1/c_2+\\beta/s=0$, equivalent to the Euler condition since $c_3=(1+r)s$. At $e=0$, replace equality by $wh\\prime(0)\\leq1+r$ when the derivative exists. Strict concavity of $h$ gives uniqueness of an interior education optimum; mere concavity allows multiple maximizers.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Saving shifts resources between consumption dates, whereas education changes the total resources available at those dates. Differentiate the reduced objective with respect to these two choices separately. The education condition compares marginal earnings $wh'(e)$ with the gross repayment on one more borrowed education unit, 1+r. The saving condition compares marginal utilities across periods. An education equality is only an interior condition; a person who optimally buys no education satisfies the boundary inequality."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Differentiate the reduced objective. Its derivative with respect to $e$ is $[wh\\prime(e)-(1+r)]/c_2$, giving the education condition.\n\nWith respect to $s$ it is $-1/c_2+\\beta/s=0$, equivalent to the Euler condition since $c_3=(1+r)s$. At $e=0$, replace equality by $wh\\prime(0)\\leq1+r$ when the derivative exists.\n\nStrict concavity of $h$ gives uniqueness of an interior education optimum; mere concavity allows multiple maximizers."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q6d",
@@ -326,14 +550,25 @@
     "group": "B",
     "stem": "An agent lives three periods and consumes only in periods 2 and 3, with utility $\\log c_2+\\beta\\log c_3$, $0<\\beta<1$. She borrows education expenditure $e\\geq0$ in period 1 at interest $r>0$. Period-2 earnings are $wh(e)$, with fixed $w>0$ and increasing concave $h$. She repays $(1+r)e$, saves $s$, and in period 3 consumes saving plus interest, with no other income. Derive the ratio $c_2/c_3$ in terms of the parameters.",
     "answer": "$c_2/c_3=1/[\\beta(1+r)]$.",
-    "solution": "The saving FOC gives $s=\\beta c_2$. Period-3 consumption is $(1+r)s=\\beta(1+r)c_2$. Divide to obtain the stated ratio.",
+    "solution": "A saved unit costs one consumption unit in period 2 and delivers 1+r consumption units in period 3. The saving Euler equation must include both that gross return and the preference discount beta:\n\n$$\\frac1{c_2}=\\beta(1+r)\\frac1{c_3}.$$\n\nSolving for the ratio gives $c_2/c_3=1/[\\beta(1+r)]$. If beta(1+r)=1 the path is flat; otherwise the ratio shows the direction of the optimal tilt. Education affects the consumption level through earnings but cancels from this intertemporal ratio.\n\nThe saving FOC gives $s=\\beta c_2$. Period-3 consumption is $(1+r)s=\\beta(1+r)c_2$. Divide to obtain the stated ratio.",
     "hint": "Combine the Euler condition with old-age resources.",
     "topic": "Macroeconomics",
     "sourcePage": 22,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The saving FOC gives $s=\\beta c_2$. Period-3 consumption is $(1+r)s=\\beta(1+r)c_2$. Divide to obtain the stated ratio.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A saved unit costs one consumption unit in period 2 and delivers 1+r consumption units in period 3. The saving Euler equation must include both that gross return and the preference discount beta:\n\n$$\\frac1{c_2}=\\beta(1+r)\\frac1{c_3}.$$\n\nSolving for the ratio gives $c_2/c_3=1/[\\beta(1+r)]$. If beta(1+r)=1 the path is flat; otherwise the ratio shows the direction of the optimal tilt. Education affects the consumption level through earnings but cancels from this intertemporal ratio."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The saving FOC gives $s=\\beta c_2$. Period-3 consumption is $(1+r)s=\\beta(1+r)c_2$. Divide to obtain the stated ratio."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q6e",
@@ -342,14 +577,25 @@
     "group": "B",
     "stem": "An agent lives three periods and consumes only in periods 2 and 3, with utility $\\log c_2+\\beta\\log c_3$, $0<\\beta<1$. She borrows education expenditure $e\\geq0$ in period 1 at interest $r>0$. Period-2 earnings are $wh(e)$, with fixed $w>0$ and increasing concave $h$. She repays $(1+r)e$, saves $s$, and in period 3 consumes saving plus interest, with no other income. Explain how optimal investment in education depends on $\\beta$.",
     "answer": "The education optimum is independent of $\\beta$ under the stated unconstrained borrowing setup.",
-    "solution": "Let net period-2 resources be $M(e)=wh(e)-(1+r)e$. Conditional optimal saving is $s=\\beta M(e)/(1+\\beta)$ and $c_2=M(e)/(1+\\beta)$. Substitution into utility gives $(1+\\beta)\\log M(e)$ plus terms independent of $e$. Thus every $\\beta>0$ gives the same education argmax, maximizing net resources. At an interior optimum $wh\\prime(e)=1+r$, which has no $\\beta$ term. Greater patience changes saving and the consumption split rather than education.",
+    "solution": "The absence of beta from the interior education condition is a useful clue, but a complete argument should cover all feasible education choices, including a boundary. Optimize saving conditional on education and substitute it back into utility. Education then appears only through a positive multiple of the logarithm of net resources. Since multiplying an objective by a positive constant does not change its maximizers, patience changes the consumption split but not the set of optimal education investments.\n\nLet net period-2 resources be $M(e)=wh(e)-(1+r)e$. Conditional optimal saving is $s=\\beta M(e)/(1+\\beta)$ and $c_2=M(e)/(1+\\beta)$.\n\nSubstitution into utility gives $(1+\\beta)\\log M(e)$ plus terms independent of $e$. Thus every $\\beta>0$ gives the same education argmax, maximizing net resources.\n\nAt an interior optimum $wh\\prime(e)=1+r$, which has no $\\beta$ term. Greater patience changes saving and the consumption split rather than education.",
     "hint": "Education is chosen to maximize lifetime resources.",
     "topic": "Macroeconomics",
     "sourcePage": 22,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Let net period-2 resources be $M(e)=wh(e)-(1+r)e$. Conditional optimal saving is $s=\\beta M(e)/(1+\\beta)$ and $c_2=M(e)/(1+\\beta)$. Substitution into utility gives $(1+\\beta)\\log M(e)$ plus terms independent of $e$. Thus every $\\beta>0$ gives the same education argmax, maximizing net resources. At an interior optimum $wh\\prime(e)=1+r$, which has no $\\beta$ term. Greater patience changes saving and the consumption split rather than education.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The absence of beta from the interior education condition is a useful clue, but a complete argument should cover all feasible education choices, including a boundary. Optimize saving conditional on education and substitute it back into utility. Education then appears only through a positive multiple of the logarithm of net resources. Since multiplying an objective by a positive constant does not change its maximizers, patience changes the consumption split but not the set of optimal education investments."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Let net period-2 resources be $M(e)=wh(e)-(1+r)e$. Conditional optimal saving is $s=\\beta M(e)/(1+\\beta)$ and $c_2=M(e)/(1+\\beta)$.\n\nSubstitution into utility gives $(1+\\beta)\\log M(e)$ plus terms independent of $e$. Thus every $\\beta>0$ gives the same education argmax, maximizing net resources.\n\nAt an interior optimum $wh\\prime(e)=1+r$, which has no $\\beta$ term. Greater patience changes saving and the consumption split rather than education."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q7a",
@@ -358,14 +604,25 @@
     "group": "C",
     "stem": "A street is $[0,1]$. Three agents live at $x_1\\leq x_2\\leq x_3$ and a hospital is located at $p\\in[0,1]$. Find the square-optimal $p$ minimizing $\\sum_{i=1}^3(x_i-p)^2$.",
     "answer": "$p=(x_1+x_2+x_3)/3$.",
-    "solution": "The objective derivative is $6p-2\\sum_i x_i$, which vanishes at the mean. Its second derivative is 6, so this is the unique minimum. The mean lies in $[0,1]$ and is feasible.",
+    "solution": "Squared distance is smooth in the hospital location, so differentiate the sum rather than considering three separate nearest-agent cases. Each resident contributes 2(p-xi) to the derivative:\n\n$$\\frac{d}{dp}\\sum_i(p-x_i)^2=2\\left(3p-\\sum_i x_i\\right).$$\n\nThe positive second derivative proves global uniqueness. Finally check feasibility: the arithmetic mean lies between the smallest and largest residence, so it belongs to the allowed street interval without needing a constrained boundary correction.\n\nThe objective derivative is $6p-2\\sum_i x_i$, which vanishes at the mean. Its second derivative is 6, so this is the unique minimum. The mean lies in $[0,1]$ and is feasible.",
     "hint": "Differentiate the sum of squared distances.",
     "topic": "Calculus",
     "sourcePage": 23,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The objective derivative is $6p-2\\sum_i x_i$, which vanishes at the mean. Its second derivative is 6, so this is the unique minimum. The mean lies in $[0,1]$ and is feasible.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Squared distance is smooth in the hospital location, so differentiate the sum rather than considering three separate nearest-agent cases. Each resident contributes 2(p-xi) to the derivative:\n\n$$\\frac{d}{dp}\\sum_i(p-x_i)^2=2\\left(3p-\\sum_i x_i\\right).$$\n\nThe positive second derivative proves global uniqueness. Finally check feasibility: the arithmetic mean lies between the smallest and largest residence, so it belongs to the allowed street interval without needing a constrained boundary correction."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The objective derivative is $6p-2\\sum_i x_i$, which vanishes at the mean. Its second derivative is 6, so this is the unique minimum. The mean lies in $[0,1]$ and is feasible."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q7b",
@@ -374,14 +631,25 @@
     "group": "C",
     "stem": "A street is $[0,1]$. Three agents live at $x_1\\leq x_2\\leq x_3$ and a hospital is located at $p\\in[0,1]$. An absolute-optimal $p$ minimizes $\\sum_{i=1}^3|x_i-p|$. (i) Show an optimum lies in $[x_1,x_3]$. (ii) Derive an absolute-optimal location.",
     "answer": "$p=x_2$, the median.",
-    "solution": "If $p<x_1$, moving right reduces all three distances; if $p>x_3$, moving left does the same. Therefore neither can be optimal. For $p\\in[x_1,x_3]$, the first and third distances sum to $x_3-x_1$, leaving objective $x_3-x_1+|p-x_2|$, uniquely minimized at $x_2$. The argument includes coincident locations.",
+    "solution": "Absolute distance has corners, so a geometric cancellation is more convenient than differentiating through them. A location outside the extreme residences can move toward all residents at once, reducing every distance. Inside their interval, the distances to the two extreme residents add to their fixed separation. Only distance to the middle resident remains variable. This explains why the median minimizes absolute distances, whereas the preceding squared-distance problem selected the mean.\n\nIf $p<x_1$, moving right reduces all three distances; if $p>x_3$, moving left does the same. Therefore neither can be optimal.\n\nFor $p\\in[x_1,x_3]$, the first and third distances sum to $x_3-x_1$, leaving objective $x_3-x_1+|p-x_2|$, uniquely minimized at $x_2$. The argument includes coincident locations.",
     "hint": "The extreme agents’ combined distance is constant between them.",
     "topic": "Calculus",
     "sourcePage": 23,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "If $p<x_1$, moving right reduces all three distances; if $p>x_3$, moving left does the same. Therefore neither can be optimal. For $p\\in[x_1,x_3]$, the first and third distances sum to $x_3-x_1$, leaving objective $x_3-x_1+|p-x_2|$, uniquely minimized at $x_2$. The argument includes coincident locations.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Absolute distance has corners, so a geometric cancellation is more convenient than differentiating through them. A location outside the extreme residences can move toward all residents at once, reducing every distance. Inside their interval, the distances to the two extreme residents add to their fixed separation. Only distance to the middle resident remains variable. This explains why the median minimizes absolute distances, whereas the preceding squared-distance problem selected the mean."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "If $p<x_1$, moving right reduces all three distances; if $p>x_3$, moving left does the same. Therefore neither can be optimal.\n\nFor $p\\in[x_1,x_3]$, the first and third distances sum to $x_3-x_1$, leaving objective $x_3-x_1+|p-x_2|$, uniquely minimized at $x_2$. The argument includes coincident locations."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q7c",
@@ -390,14 +658,25 @@
     "group": "C",
     "stem": "On street $[0,1]$, $n$ agents have ordered locations $x_1\\leq\\cdots\\leq x_n$, where $n$ is odd. Derive $p$ minimizing $\\sum_{i=1}^n|x_i-p|$.",
     "answer": "$p=x_{(n+1)/2}$.",
-    "solution": "Pair the extreme locations: $(x_1,x_n),(x_2,x_{n-1}),\\ldots$. Each pair contributes at least its separation, with equality whenever $p$ lies between that pair. All these intervals contain the median $m=x_{(n+1)/2}$. The unpaired median contributes $|p-m|$, which is zero only at $m$. Thus the median uniquely minimizes total distance.",
+    "solution": "Let n=2m+1 and pair the outermost residents, then the next outermost, leaving the central resident unpaired. For any pair a≤b,\n\n$$|p-a|+|p-b|\\geq b-a,$$\n\nwith equality exactly when p lies between a and b. The median belongs to every paired interval simultaneously, achieving every pair’s lower bound and making the unpaired distance zero. Any other p leaves the central distance positive without reducing any pair below its lower bound.\n\nPair the extreme locations: $(x_1,x_n),(x_2,x_{n-1}),\\ldots$. Each pair contributes at least its separation, with equality whenever $p$ lies between that pair.\n\nAll these intervals contain the median $m=x_{(n+1)/2}$. The unpaired median contributes $|p-m|$, which is zero only at $m$.\n\nThus the median uniquely minimizes total distance.",
     "hint": "Pair locations symmetrically around the middle agent.",
     "topic": "Calculus",
     "sourcePage": 23,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Pair the extreme locations: $(x_1,x_n),(x_2,x_{n-1}),\\ldots$. Each pair contributes at least its separation, with equality whenever $p$ lies between that pair. All these intervals contain the median $m=x_{(n+1)/2}$. The unpaired median contributes $|p-m|$, which is zero only at $m$. Thus the median uniquely minimizes total distance.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Let n=2m+1 and pair the outermost residents, then the next outermost, leaving the central resident unpaired. For any pair a≤b,\n\n$$|p-a|+|p-b|\\geq b-a,$$\n\nwith equality exactly when p lies between a and b. The median belongs to every paired interval simultaneously, achieving every pair’s lower bound and making the unpaired distance zero. Any other p leaves the central distance positive without reducing any pair below its lower bound."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Pair the extreme locations: $(x_1,x_n),(x_2,x_{n-1}),\\ldots$. Each pair contributes at least its separation, with equality whenever $p$ lies between that pair.\n\nAll these intervals contain the median $m=x_{(n+1)/2}$. The unpaired median contributes $|p-m|$, which is zero only at $m$.\n\nThus the median uniquely minimizes total distance."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q8a",
@@ -406,14 +685,29 @@
     "group": "C",
     "stem": "Two random variables $x_1,x_2$ are uniformly drawn from $[0,1]$. For $p\\in[0,1]$, define $G(p)=p\\,\\mathbb P[p\\geq\\max(x_1,x_2)]$. Derive $G(p)$ with clear explanation.",
     "answer": "For independent draws, $G(p)=p^3$.",
-    "solution": "The event is $x_1\\leq p$ and $x_2\\leq p$. Each has probability $p$; independence makes the joint probability $p^2$. Multiplication by $p$ gives $p^3$. If only uniform marginals are intended, the answer is instead $pH(p,p)$ for the joint CDF $H$, and is not determined: perfectly comoving uniforms give $p^2$, for example.",
+    "solution": "The event that the maximum is at most p means that both draws are at most p. This is an intersection of events, not a union. For independent uniform draws its probability is the area of the square [0,p]² inside the unit square, namely p². The extra prefactor p in the definition of G then gives p³. If independence is not part of the draw mechanism, a joint distribution is needed; marginal uniformity alone does not justify multiplying probabilities.\n\nThe event is $x_1\\leq p$ and $x_2\\leq p$. Each has probability $p$; independence makes the joint probability $p^2$.\n\nMultiplication by $p$ gives $p^3$. If only uniform marginals are intended, the answer is instead $pH(p,p)$ for the joint CDF $H$, and is not determined: perfectly comoving uniforms give $p^2$, for example.\n\nStandard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
     "hint": "Express the maximum event as the intersection of two events.",
     "topic": "Probability",
     "sourcePage": 23,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 7,
     "status": "needs_review",
-    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
+    "solutionOriginal": "The event is $x_1\\leq p$ and $x_2\\leq p$. Each has probability $p$; independence makes the joint probability $p^2$. Multiplication by $p$ gives $p^3$. If only uniform marginals are intended, the answer is instead $pH(p,p)$ for the joint CDF $H$, and is not determined: perfectly comoving uniforms give $p^2$, for example.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The event that the maximum is at most p means that both draws are at most p. This is an intersection of events, not a union. For independent uniform draws its probability is the area of the square [0,p]² inside the unit square, namely p². The extra prefactor p in the definition of G then gives p³. If independence is not part of the draw mechanism, a joint distribution is needed; marginal uniformity alone does not justify multiplying probabilities."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The event is $x_1\\leq p$ and $x_2\\leq p$. Each has probability $p$; independence makes the joint probability $p^2$.\n\nMultiplication by $p$ gives $p^3$. If only uniform marginals are intended, the answer is instead $pH(p,p)$ for the joint CDF $H$, and is not determined: perfectly comoving uniforms give $p^2$, for example."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q8b",
@@ -422,14 +716,29 @@
     "group": "C",
     "stem": "Two random variables $x_1,x_2$ are uniformly drawn from $[0,1]$. For $p\\in[0,1]$, define $G(p)=p\\,\\mathbb P[p\\geq\\max(x_1,x_2)]$. Plot $G(p)$.",
     "answer": "For independent draws, plot the increasing cubic $G(p)=p^3$ from $(0,0)$ to $(1,1)$.",
-    "solution": "Use points $(0,0),(1/4,1/64),(1/2,1/8),(3/4,27/64),(1,1)$. The curve starts with horizontal tangent, increases thereafter and becomes steeper toward 1. The graph presumes independent draws; uniform marginals without a joint distribution do not specify a unique graph.",
+    "solution": "A correct plot needs both the endpoints and the curvature, not just a line joining (0,0) and (1,1). Under independent draws, $G'(p)=3p^2$ is nonnegative and $G''(p)=6p$ is positive away from zero. Thus the graph rises increasingly steeply, with a horizontal tangent at the origin. At p=1/2 its height is only 1/8, which is a useful point for distinguishing the cubic from a straight line or a square-root curve.\n\nUse points $(0,0),(1/4,1/64),(1/2,1/8),(3/4,27/64),(1,1)$. The curve starts with horizontal tangent, increases thereafter and becomes steeper toward 1. The graph presumes independent draws; uniform marginals without a joint distribution do not specify a unique graph.\n\nStandard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
     "hint": "Use the cubic expression from part (a).",
     "topic": "Calculus",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 5,
     "status": "needs_review",
-    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
+    "solutionOriginal": "Use points $(0,0),(1/4,1/64),(1/2,1/8),(3/4,27/64),(1,1)$. The curve starts with horizontal tangent, increases thereafter and becomes steeper toward 1. The graph presumes independent draws; uniform marginals without a joint distribution do not specify a unique graph.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A correct plot needs both the endpoints and the curvature, not just a line joining (0,0) and (1,1). Under independent draws, $G'(p)=3p^2$ is nonnegative and $G''(p)=6p$ is positive away from zero. Thus the graph rises increasingly steeply, with a horizontal tangent at the origin. At p=1/2 its height is only 1/8, which is a useful point for distinguishing the cubic from a straight line or a square-root curve."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Use points $(0,0),(1/4,1/64),(1/2,1/8),(3/4,27/64),(1,1)$. The curve starts with horizontal tangent, increases thereafter and becomes steeper toward 1. The graph presumes independent draws; uniform marginals without a joint distribution do not specify a unique graph."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q8c",
@@ -438,14 +747,29 @@
     "group": "C",
     "stem": "Two random variables $x_1,x_2$ are uniformly drawn from $[0,1]$. For $p\\in[0,1]$, define $G(p)=p\\,\\mathbb P[p\\geq\\max(x_1,x_2)]$. Is $G$ convex or concave in $p$? Explain.",
     "answer": "Under independent draws, strictly convex and not concave on $[0,1]$.",
-    "solution": "For independent draws, $G(p)=p^3$ and $G\\prime\\prime(p)=6p\\geq0$, positive for $p>0$. Thus it is strictly convex on the interval and fails concavity. The curvature conclusion relies on the joint-law assumption in part (a); uniform marginals alone do not fix $G$.",
+    "solution": "Convexity concerns the slope’s direction of change; it does not mean the function must be decreasing or have an interior minimum on the domain. Here $G(p)=p^3$ is increasing and its slope $3p^2$ is itself increasing. The zero second derivative at the single endpoint p=0 does not make the whole function linear or remove strict convexity on [0,1]. This conclusion inherits the independent-draw assumption used to obtain the cubic.\n\nFor independent draws, $G(p)=p^3$ and $G\\prime\\prime(p)=6p\\geq0$, positive for $p>0$. Thus it is strictly convex on the interval and fails concavity. The curvature conclusion relies on the joint-law assumption in part (a); uniform marginals alone do not fix $G$.\n\nStandard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
     "hint": "Check the second derivative.",
     "topic": "Calculus",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 5,
     "status": "needs_review",
-    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+    "notes": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source.",
+    "solutionOriginal": "For independent draws, $G(p)=p^3$ and $G\\prime\\prime(p)=6p\\geq0$, positive for $p>0$. Thus it is strictly convex on the interval and fails concavity. The curvature conclusion relies on the joint-law assumption in part (a); uniform marginals alone do not fix $G$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Convexity concerns the slope’s direction of change; it does not mean the function must be decreasing or have an interior minimum on the domain. Here $G(p)=p^3$ is increasing and its slope $3p^2$ is itself increasing. The zero second derivative at the single endpoint p=0 does not make the whole function linear or remove strict convexity on [0,1]. This conclusion inherits the independent-draw assumption used to obtain the cubic."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For independent draws, $G(p)=p^3$ and $G\\prime\\prime(p)=6p\\geq0$, positive for $p>0$. Thus it is strictly convex on the interval and fails concavity. The curvature conclusion relies on the joint-law assumption in part (a); uniform marginals alone do not fix $G$."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Standard independent-draw interpretation used. Uniform marginals alone do not determine the joint distribution; independence is not explicitly stated in the source."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q8d",
@@ -454,14 +778,25 @@
     "group": "C",
     "stem": "Two random variables $x_1,x_2$ are uniformly drawn from $[0,1]$. For $p\\in[0,1]$, define $G(p)=p\\,\\mathbb P[p\\geq\\max(x_1,x_2)]$. Find $\\max_{p\\in[0,1]}G(p)$.",
     "answer": "$\\max G=1$ at $p=1$.",
-    "solution": "For every $p\\in[0,1]$, $0\\leq G(p)\\leq p\\leq1$. At $p=1$, both uniforms lie below 1 almost surely, so $G(1)=1$. For $p<1$, $G(p)\\leq p<1$, so the maximizing point is unique. This conclusion needs no independence assumption.",
+    "solution": "An upper bound can solve this part without using the joint distribution at all. Probabilities never exceed one, so $G(p)=pP(\\max\\leq p)\\leq p\\leq1$. At the endpoint p=1 the event happens surely, making the bound attainable. For any smaller p the prefactor itself is strictly below one, proving uniqueness. This argument remains valid even when the independence assumption needed in the earlier parts is absent.\n\nFor every $p\\in[0,1]$, $0\\leq G(p)\\leq p\\leq1$. At $p=1$, both uniforms lie below 1 almost surely, so $G(1)=1$.\n\nFor $p<1$, $G(p)\\leq p<1$, so the maximizing point is unique. This conclusion needs no independence assumption.",
     "hint": "Bound the probability by one.",
     "topic": "Probability",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For every $p\\in[0,1]$, $0\\leq G(p)\\leq p\\leq1$. At $p=1$, both uniforms lie below 1 almost surely, so $G(1)=1$. For $p<1$, $G(p)\\leq p<1$, so the maximizing point is unique. This conclusion needs no independence assumption.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "An upper bound can solve this part without using the joint distribution at all. Probabilities never exceed one, so $G(p)=pP(\\max\\leq p)\\leq p\\leq1$. At the endpoint p=1 the event happens surely, making the bound attainable. For any smaller p the prefactor itself is strictly below one, proving uniqueness. This argument remains valid even when the independence assumption needed in the earlier parts is absent."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "For every $p\\in[0,1]$, $0\\leq G(p)\\leq p\\leq1$. At $p=1$, both uniforms lie below 1 almost surely, so $G(1)=1$.\n\nFor $p<1$, $G(p)\\leq p<1$, so the maximizing point is unique. This conclusion needs no independence assumption."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q9a",
@@ -470,14 +805,25 @@
     "group": "C",
     "stem": "Let $X\\subset\\mathbb R$ and $f:X\\to X$. For continuous $f$ and $X=[0,1]$, use the intermediate value theorem to show there exists $x^*\\in X$ with $f(x^*)=x^*$.",
     "answer": "A fixed point always exists.",
-    "solution": "Define $h(x)=f(x)-x$, continuous on $[0,1]$. Since $f$ maps the interval into itself, $h(0)=f(0)\\geq0$ and $h(1)=f(1)-1\\leq0$. If either is zero it is a fixed point; otherwise the intermediate value theorem supplies an interior zero.",
+    "solution": "The desired fixed point is a zero of the difference between the graph of f and the 45-degree line. Define h(x)=f(x)-x. Because f is a self-map of the closed interval, its value at the left endpoint cannot lie below that endpoint and its value at the right endpoint cannot lie above it. These opposite weak signs, together with continuity, are exactly the conditions the intermediate value theorem needs; handle a zero endpoint directly.\n\nDefine $h(x)=f(x)-x$, continuous on $[0,1]$. Since $f$ maps the interval into itself, $h(0)=f(0)\\geq0$ and $h(1)=f(1)-1\\leq0$. If either is zero it is a fixed point; otherwise the intermediate value theorem supplies an interior zero.",
     "hint": "Apply the theorem to $f(x)-x$.",
     "topic": "Calculus",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Define $h(x)=f(x)-x$, continuous on $[0,1]$. Since $f$ maps the interval into itself, $h(0)=f(0)\\geq0$ and $h(1)=f(1)-1\\leq0$. If either is zero it is a fixed point; otherwise the intermediate value theorem supplies an interior zero.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The desired fixed point is a zero of the difference between the graph of f and the 45-degree line. Define h(x)=f(x)-x. Because f is a self-map of the closed interval, its value at the left endpoint cannot lie below that endpoint and its value at the right endpoint cannot lie above it. These opposite weak signs, together with continuity, are exactly the conditions the intermediate value theorem needs; handle a zero endpoint directly."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Define $h(x)=f(x)-x$, continuous on $[0,1]$. Since $f$ maps the interval into itself, $h(0)=f(0)\\geq0$ and $h(1)=f(1)-1\\leq0$. If either is zero it is a fixed point; otherwise the intermediate value theorem supplies an interior zero."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q9b",
@@ -486,14 +832,25 @@
     "group": "C",
     "stem": "Let $X\\subset\\mathbb R$ and $f:X\\to X$. Determine whether fixed-point existence is guaranteed in each case, giving proof or counterexample: (i) $X=(0,1)$ and $f$ continuous; (ii) $X=[0,1]\\cup[2,3]$ and $f$ continuous; (iii) $X=[0,1]$ but $f$ not continuous.",
     "answer": "No guarantee in any of the three cases.",
-    "solution": "(i) $f(x)=(1+x)/2$ is a continuous self-map of $(0,1)$ whose only algebraic fixed point is 1, excluded from the domain. (ii) Set $f(x)=x+2$ on $[0,1]$ and $f(x)=x-2$ on $[2,3]$. This is continuous on the disconnected domain, maps it into itself and has no fixed point. (iii) Set $f(0)=1$ and $f(x)=0$ for $x>0$. It maps $[0,1]$ into itself, is discontinuous and never equals $x$.",
+    "solution": "A single counterexample suffices to show that existence is not guaranteed. Each example must still satisfy all the conditions that remain: the open-interval example must map into the open interval, the disconnected-domain example must be continuous relative to that domain, and the discontinuous example must still map into [0,1]. Checking these requirements is as important as observing that no algebraic fixed point belongs to the permitted set.\n\n(i) $f(x)=(1+x)/2$ is a continuous self-map of $(0,1)$ whose only algebraic fixed point is 1, excluded from the domain. (ii) Set $f(x)=x+2$ on $[0,1]$ and $f(x)=x-2$ on $[2,3]$.\n\nThis is continuous on the disconnected domain, maps it into itself and has no fixed point. (iii) Set $f(0)=1$ and $f(x)=0$ for $x>0$.\n\nIt maps $[0,1]$ into itself, is discontinuous and never equals $x$.",
     "hint": "Remove compactness, connectedness and continuity one at a time.",
     "topic": "Calculus",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "(i) $f(x)=(1+x)/2$ is a continuous self-map of $(0,1)$ whose only algebraic fixed point is 1, excluded from the domain. (ii) Set $f(x)=x+2$ on $[0,1]$ and $f(x)=x-2$ on $[2,3]$. This is continuous on the disconnected domain, maps it into itself and has no fixed point. (iii) Set $f(0)=1$ and $f(x)=0$ for $x>0$. It maps $[0,1]$ into itself, is discontinuous and never equals $x$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A single counterexample suffices to show that existence is not guaranteed. Each example must still satisfy all the conditions that remain: the open-interval example must map into the open interval, the disconnected-domain example must be continuous relative to that domain, and the discontinuous example must still map into [0,1]. Checking these requirements is as important as observing that no algebraic fixed point belongs to the permitted set."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(i) $f(x)=(1+x)/2$ is a continuous self-map of $(0,1)$ whose only algebraic fixed point is 1, excluded from the domain. (ii) Set $f(x)=x+2$ on $[0,1]$ and $f(x)=x-2$ on $[2,3]$.\n\nThis is continuous on the disconnected domain, maps it into itself and has no fixed point. (iii) Set $f(0)=1$ and $f(x)=0$ for $x>0$.\n\nIt maps $[0,1]$ into itself, is discontinuous and never equals $x$."
+      }
+    ]
   },
   {
     "id": "2019-PEB-Q9c",
@@ -502,13 +859,24 @@
     "group": "C",
     "stem": "Let $f_i:[0,1]\\to[0,1]$, $i=1,\\ldots,m$, be continuous. Prove there is $x^*\\in[0,1]$ such that $\\sum_{i=1}^m f_i(x^*)=mx^*$.",
     "answer": "Apply the fixed-point theorem to the average $F(x)=m^{-1}\\sum_i f_i(x)$.",
-    "solution": "The average $F$ is continuous and remains in $[0,1]$, because every summand lies there. The interval fixed-point argument in part (a) gives $F(x^*)=x^*$. Multiplying this equation by $m$ gives the required identity. Equivalently apply the intermediate value theorem directly to $\\sum_i f_i(x)-mx$.",
+    "solution": "The target identity resembles a fixed-point equation after division by m. Build the average function $F(x)=m^{-1}\\sum_i f_i(x)$. Continuity is preserved by a finite sum and positive rescaling, and an average of numbers between zero and one remains between zero and one. Thus the average satisfies exactly the hypotheses of the closed-interval fixed-point result already established; its fixed point is the required point for the sum identity.\n\nThe average $F$ is continuous and remains in $[0,1]$, because every summand lies there. The interval fixed-point argument in part (a) gives $F(x^*)=x^*$.\n\nMultiplying this equation by $m$ gives the required identity. Equivalently apply the intermediate value theorem directly to $\\sum_i f_i(x)-mx$.",
     "hint": "An average of continuous interval self-maps is another such self-map.",
     "topic": "Calculus",
     "sourcePage": 24,
     "sourceFile": "MSQE 2019.pdf",
     "marks": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The average $F$ is continuous and remains in $[0,1]$, because every summand lies there. The interval fixed-point argument in part (a) gives $F(x^*)=x^*$. Multiplying this equation by $m$ gives the required identity. Equivalently apply the intermediate value theorem directly to $\\sum_i f_i(x)-mx$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The target identity resembles a fixed-point equation after division by m. Build the average function $F(x)=m^{-1}\\sum_i f_i(x)$. Continuity is preserved by a finite sum and positive rescaling, and an average of numbers between zero and one remains between zero and one. Thus the average satisfies exactly the hypotheses of the closed-interval fixed-point result already established; its fixed point is the required point for the sum identity."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The average $F$ is continuous and remains in $[0,1]$, because every summand lies there. The interval fixed-point argument in part (a) gives $F(x^*)=x^*$.\n\nMultiplying this equation by $m$ gives the required identity. Equivalently apply the intermediate value theorem directly to $\\sum_i f_i(x)-mx$."
+      }
+    ]
   }
 ]

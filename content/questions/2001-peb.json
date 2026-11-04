@@ -9,7 +9,7 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer consumes only two goods. If good1 has income elasticity1.2, what is the income elasticity of good2?",
     "answer": "C:Less than1, assuming positive budget shares and an exhausted budget.",
-    "solution": "Differentiating the budget identity at fixed prices givesw₁η₁+w₂η₂=1, withw₁+w₂=1 and both shares positive. Henceη₂=(1−1.2w₁)/(1−w₁)=1−.2w₁/(1−w₁)<1. It may even be negative.",
+    "solution": "Use income-elasticity adding-up. Let the positive budget shares be w_1,w_2, with w_1+w_2=1. Differentiating an exhausted budget at fixed prices gives w_1η_1+w_2η_2=1. Hence \nη_2=(1-1.2w_1)/(1-w_1)=1-(0.2w_1)/(1-w_1)<1.\n Choose C. The second good's elasticity can even be negative; it is not constrained to lie between one and 1.2.",
     "hint": "Income elasticities have a budget-share weighted average of one.",
     "topic": "Microeconomics",
     "sourcePage": 4,
@@ -20,6 +20,12 @@
       "Less than1.2 but greater than1",
       "Less than1",
       "Exactly1.2"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use income-elasticity adding-up",
+        "body": "Let the positive budget shares be $w_1,w_2$, with $w_1+w_2=1$. Differentiating an exhausted budget at fixed prices gives $w_1\\eta_1+w_2\\eta_2=1$. Hence $$\\eta_2=\\frac{1-1.2w_1}{1-w_1}=1-\\frac{0.2w_1}{1-w_1}<1.$$ Choose C. The second good's elasticity can even be negative; it is not constrained to lie between one and 1.2."
+      }
     ]
   },
   {
@@ -32,7 +38,7 @@
     "originalPaperCode": "ME II",
     "stem": "A Keynesian economy has consumptionC=15+Y^0.5 and autonomous investment plus government spending585. Find equilibriumY.",
     "answer": "C:625.",
-    "solution": "Goods balanceY=15+√Y+585 givesY=600+√Y. Sets=√Y≥0; s²−s−600=(s−25)(s+24)=0, so s25 andY625. The negative algebraic roots−24 cannot be a square root.",
+    "solution": "Solve the square-root equilibrium with its domain. Goods equilibrium is Y=15+√(Y)+585=600+√(Y). Put s=√(Y)≥0: \ns^2-s-600=(s-25)(s+24)=0.\n The negative root s=-24 is not a valid square root. Therefore s=25 and Y=625, option C.",
     "hint": "Set s=√Y and discard the negative root.",
     "topic": "Macroeconomics",
     "sourcePage": 4,
@@ -43,6 +49,12 @@
       "570",
       "625",
       "900"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Solve the square-root equilibrium with its domain",
+        "body": "Goods equilibrium is $Y=15+\\sqrt Y+585=600+\\sqrt Y$. Put $s=\\sqrt Y\\ge0$: $$s^2-s-600=(s-25)(s+24)=0.$$ The negative root $s=-24$ is not a valid square root. Therefore $s=25$ and $Y=625$, option C."
+      }
     ]
   },
   {
@@ -55,7 +67,7 @@
     "originalPaperCode": "ME II",
     "stem": "For a monopolist, marginal cost increases at every output. What happens to the profit-maximizing price?",
     "answer": "Under the usual smooth, interior, strictly downward-sloping monopoly demand and regular second-order conditions: B, price rises. Without these assumptions only weak monotonicity is assured.",
-    "solution": "With fixed demand and a regular interior optimum, raising marginal cost moves the MR=MC intersection to lower output; strictly downward inverse demand then implies higher price. More generally, if new costs exceed old costs by an increasing function of output, the optimal output cannot increase. Strict price increase need not follow with kinks, discrete output or a flat inverse-demand segment, so an unqualified strict answer needs regularity assumptions. The source supplies none of those qualifications; its handwritten ticks are not an answer key.",
+    "solution": "Give the regular interior monopoly result. Under smooth downward inverse demand and a regular interior maximum, the upward marginal-cost shift lowers the quantity solving MR=MC. Strictly downward demand then raises price, giving the usual answer B. More generally, the increase in cost is an increasing function of quantity, so the chosen quantity cannot rise.\n\nPreserve the qualification needed for a strict MCQ answer. A strict price increase is not assured with discrete output, a kinked demand curve or a flat inverse-demand segment: the quantity or price can remain unchanged. The source supplies no regularity assumptions excluding these cases. Consequently the record retains its review flag rather than treating the usual strict answer as a universal theorem. Handwritten ticks do not settle the issue.",
     "hint": "Track the output choice first, then use inverse demand to infer price.",
     "topic": "Microeconomics",
     "sourcePage": 4,
@@ -66,6 +78,16 @@
       "Price increases",
       "Price is unchanged",
       "How price changes depends on the demand curve"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Give the regular interior monopoly result",
+        "body": "Under smooth downward inverse demand and a regular interior maximum, the upward marginal-cost shift lowers the quantity solving $MR=MC$. Strictly downward demand then raises price, giving the usual answer B. More generally, the increase in cost is an increasing function of quantity, so the chosen quantity cannot rise."
+      },
+      {
+        "title": "Preserve the qualification needed for a strict MCQ answer",
+        "body": "A strict price increase is not assured with discrete output, a kinked demand curve or a flat inverse-demand segment: the quantity or price can remain unchanged. The source supplies no regularity assumptions excluding these cases. Consequently the record retains its review flag rather than treating the usual strict answer as a universal theorem. Handwritten ticks do not settle the issue."
+      }
     ]
   },
   {
@@ -78,7 +100,7 @@
     "originalPaperCode": "ME II",
     "stem": "If government taxes10% of a monopolist’s profit, the monopolist will…",
     "answer": "C:Not change output.",
-    "solution": "A proportional pure-profit tax changes the objective fromπ(q) to.9π(q). Multiplication by a positive constant preserves the maximizing output and price; it reduces after-tax profit rather than changing marginal incentives.",
+    "solution": "Compare the taxed and untaxed objectives. A proportional 10% pure-profit tax changes the objective from π(q) to 0.9π(q). Because 0.9 is positive, every ranking of quantities is unchanged. The monopolist therefore chooses the same profit-maximizing output: C. This is different from a tax on each output unit or on sales revenue, which changes marginal incentives.",
     "hint": "Compare the before- and after-tax objective functions.",
     "topic": "Microeconomics",
     "sourcePage": 5,
@@ -89,6 +111,12 @@
       "Decrease output by10%",
       "Not change output",
       "Decrease output by less than10%"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Compare the taxed and untaxed objectives",
+        "body": "A proportional 10% pure-profit tax changes the objective from $\\pi(q)$ to $0.9\\pi(q)$. Because 0.9 is positive, every ranking of quantities is unchanged. The monopolist therefore chooses the same profit-maximizing output: C. This is different from a tax on each output unit or on sales revenue, which changes marginal incentives."
+      }
     ]
   },
   {
@@ -101,12 +129,26 @@
     "originalPaperCode": "ME II",
     "stem": "Competitive petrol demandQ_D=100−2P_c and supplyQ_S=3P_s. (i) Find untaxed equilibrium. (ii) With tax1 per litre, find consumer price, supplier price, quantity and excess burden.",
     "answer": "InitiallyP20,Q60. With tax:P_c20.6,P_s19.6,Q58.8; deadweight loss0.6.",
-    "solution": "Without tax,100−2P=3P givesP20,Q60. With taxP_c=P_s+1, solve100−2(P_s+1)=3P_s, givingP_s98/5=19.6 andP_c103/5=20.6. Quantity is294/5=58.8. The tax reduces quantity by1.2; excess burden is the triangle(1/2)·tax·quantity decline=.6. Consumers bear.6 of each tax rupee and producers.4.",
+    "solution": "Clear the untaxed petrol market. Without tax, consumers and suppliers face the same price. Equating 100-2P=3P gives P_0=20 and Q_0=60. This is the comparison point for both tax incidence and welfare loss.\n\nIntroduce the price wedge. A one-rupee unit tax makes P_c=P_s+1. Substitute this into demand and equate it to supply: \n100-2(P_s+1) =3P_s,; P_s =19.6, P_c=20.6,; Q_1 =3(19.6)=58.8.\n Consumers bear 0.6 of the rupee through a price rise and suppliers bear 0.4 through a lower net receipt.\n\nMeasure the excess burden. The tax reduces trade by 60-58.8=1.2 litres. With linear demand and supply, the lost gains from those units form a triangle: \nDWL=(1)/(2)(1)(1.2)=0.6.\n Tax revenue is a transfer to government, so it is not itself the deadweight loss.",
     "hint": "Use the tax wedge between the two prices.",
     "topic": "Microeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Clear the untaxed petrol market",
+        "body": "Without tax, consumers and suppliers face the same price. Equating $100-2P=3P$ gives $P_0=20$ and $Q_0=60$. This is the comparison point for both tax incidence and welfare loss."
+      },
+      {
+        "title": "Introduce the price wedge",
+        "body": "A one-rupee unit tax makes $P_c=P_s+1$. Substitute this into demand and equate it to supply: $$\\begin{aligned}100-2(P_s+1)&=3P_s,\\\\P_s&=19.6,\\qquad P_c=20.6,\\\\Q_1&=3(19.6)=58.8.\\end{aligned}$$ Consumers bear 0.6 of the rupee through a price rise and suppliers bear 0.4 through a lower net receipt."
+      },
+      {
+        "title": "Measure the excess burden",
+        "body": "The tax reduces trade by $60-58.8=1.2$ litres. With linear demand and supply, the lost gains from those units form a triangle: $$DWL=\\tfrac12(1)(1.2)=0.6.$$ Tax revenue is a transfer to government, so it is not itself the deadweight loss."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q3",
@@ -118,12 +160,30 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer has U(x₁,x₂)=min(2x₁,x₂). (i) Describe an indifference curve. (ii) At prices5,10 and income100, find the optimal bundle. (iii) Price1 rises to8: decompose the change in good1 into income and substitution effects.",
     "answer": "Initial bundle(4,8); final(25/7,50/7). Good1 total effect−3/7, substitution effect0 and income effect−3/7.",
-    "solution": "Utility levelu has kink at(x₁,x₂)=(u/2,u), with vertical and horizontal rays extending upward and rightward from the kink. Optimal quantities satisfy x₂=2x₁. Initially(5+20)x₁=100, so(4,8). With new price8,(8+20)x₁=100, so x₁=25/7 and x₂=50/7. Both Hicks and Slutsky compensation preserve the original kink bundle: its new expenditure is8·4+10·8=112. At compensated income112 the optimum remains(4,8), hence substitution effect is zero and the entire decline25/7−4=−3/7 is an income effect.",
+    "solution": "Identify the kink ratio. For U=min{2x_1,x_2}, utility level u has kink (u/2,u). An efficient purchased bundle satisfies x_2=2x_1; buying additional units of only one good leaves utility unchanged.\n\nFind the original and new Marshallian bundles. Initially the budget at the kink is (5+2×10)x_1=100, yielding (x_1,x_2)=(4,8). After the price rise, \n(8+20)x_1 =100,; x_1' =25/7, x_2'=50/7.\n\nCompensate at the new prices. The old kink bundle now costs 8(4)+10(8)=112. At this compensated income the optimal bundle remains (4,8). Both Hicks and Slutsky compensation give the same result for this fixed-proportion case: no change in the quantity ratio can save expenditure while preserving utility.\n\nAllocate the total change. The substitution effect for good 1 is zero. Its entire total change is the income effect: \nΔ x_1=(25)/(7)-4=-(3)/(7).\n A zero substitution effect does not mean the price increase has no consequence; it lowers the amount of the fixed-proportion bundle the original income can buy.",
     "hint": "Perfect complements retain the same optimal quantity ratio after a price change.",
     "topic": "Microeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Identify the kink ratio",
+        "body": "For $U=\\min\\{2x_1,x_2\\}$, utility level $u$ has kink $(u/2,u)$. An efficient purchased bundle satisfies $x_2=2x_1$; buying additional units of only one good leaves utility unchanged."
+      },
+      {
+        "title": "Find the original and new Marshallian bundles",
+        "body": "Initially the budget at the kink is $(5+2\\cdot10)x_1=100$, yielding $(x_1,x_2)=(4,8)$. After the price rise, $$\\begin{aligned}(8+20)x_1&=100,\\\\x_1'&=25/7,\\qquad x_2'=50/7.\\end{aligned}$$"
+      },
+      {
+        "title": "Compensate at the new prices",
+        "body": "The old kink bundle now costs $8(4)+10(8)=112$. At this compensated income the optimal bundle remains $(4,8)$. Both Hicks and Slutsky compensation give the same result for this fixed-proportion case: no change in the quantity ratio can save expenditure while preserving utility."
+      },
+      {
+        "title": "Allocate the total change",
+        "body": "The substitution effect for good 1 is zero. Its entire total change is the income effect: $$\\Delta x_1=\\frac{25}{7}-4=-\\frac37.$$ A zero substitution effect does not mean the price increase has no consequence; it lowers the amount of the fixed-proportion bundle the original income can buy."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q4",
@@ -135,12 +195,26 @@
     "originalPaperCode": "ME II",
     "stem": "In a simple open Keynesian model, investment and exports are autonomous. What happens toGDP and aggregate imports when the propensity to import rises?",
     "answer": "GDP falls; imports rise under the standard linear model.",
-    "solution": "LetC=C₀+cY, exportsX̄, investmentĪ and imports=mY, with0<c<1,m>0. DefineA=C₀+Ī+X̄>0. Equilibrium isY=A/(1−c+m), so dY/dm=−A/(1−c+m)²<0. Actual imports areM=mA/(1−c+m), whose derivative isA(1−c)/(1−c+m)²>0. The direct increase in import propensity outweighs the fall in income in this standard specification.",
+    "solution": "Write the open-economy equilibrium. Use C=C_0+cY, imports M=mY and autonomous investment and exports. Let A=C_0+Ī+X̄>0. Goods-market equilibrium gives \nY=A+cY-mY ⇒ Y=(A)/(1-c+m).\n This uses the standard linear simple-Keynesian specification.\n\nFind the output effect. Differentiate holding the autonomous components fixed: \n(dY)/(dm)=-(A)/((1-c+m)^2)<0.\n A greater fraction of each spending round now leaks into imports, reducing domestic income and the multiplier.\n\nDifferentiate actual imports as well. Actual imports are M=mA/(1-c+m), not just the parameter m. Their derivative is \n(dM)/(dm)=(A(1-c))/((1-c+m)^2)>0.\n Thus imports rise even though income falls. The direct propensity effect exceeds the indirect reduction generated by the lower income.",
     "hint": "Differentiate actual imports mY, not just income.",
     "topic": "Macroeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": "Uses the standard proportional-import, affine-consumption simple-Keynesian formulation implicit in the question."
+    "notes": "Uses the standard proportional-import, affine-consumption simple-Keynesian formulation implicit in the question.",
+    "solutionSteps": [
+      {
+        "title": "Write the open-economy equilibrium",
+        "body": "Use $C=C_0+cY$, imports $M=mY$ and autonomous investment and exports. Let $A=C_0+\\bar I+\\bar X>0$. Goods-market equilibrium gives $$Y=A+cY-mY\\quad\\Rightarrow\\quad Y=\\frac A{1-c+m}.$$ This uses the standard linear simple-Keynesian specification."
+      },
+      {
+        "title": "Find the output effect",
+        "body": "Differentiate holding the autonomous components fixed: $$\\frac{dY}{dm}=-\\frac A{(1-c+m)^2}<0.$$ A greater fraction of each spending round now leaks into imports, reducing domestic income and the multiplier."
+      },
+      {
+        "title": "Differentiate actual imports as well",
+        "body": "Actual imports are $M=mA/(1-c+m)$, not just the parameter $m$. Their derivative is $$\\frac{dM}{dm}=\\frac{A(1-c)}{(1-c+m)^2}>0.$$ Thus imports rise even though income falls. The direct propensity effect exceeds the indirect reduction generated by the lower income."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q5",
@@ -152,12 +226,26 @@
     "originalPaperCode": "ME II",
     "stem": "IS–LM has C=a+bY, a>0,0<b<1, exogenous I₀,G₀ and money demand L=kY−gr, k,g>0. Nominal money is M₀, initial price P₀. (i) Set up equilibrium equations. (ii) How does a rise to P₁>P₀ affect Y and r?",
     "answer": "Y*=(a+I₀+G₀)/(1−b), unchanged by the price rise. r*=[kY*−M₀/P]/g rises by(M₀/g)(1/P₀−1/P₁).",
-    "solution": "IS is Y=a+bY+I₀+G₀, fixing output regardless of interest because investment is exogenous. It is vertical in the usual(Y,r) plane. LM is M₀/P=kY−gr, or r=(kY−M₀/P)/g. A higher price lowers real money supply and shifts LM upward/leftward. Its intersection with the vertical IS therefore has the same Y and a higher r, with the exact increase given above. There is no investment crowding-out channel in this particular specification.",
+    "solution": "Solve the goods market first. IS equilibrium is Y=a+bY+I_0+G_0. Because none of its spending components depends on interest, it fixes \nY^*=(a+I_0+G_0)/(1-b).\n Thus IS is vertical in a graph with output horizontal and interest vertical.\n\nUse money equilibrium to find interest. The LM equation is M_0/P=kY-gr, giving r=(kY-M_0/P)/g. Substituting the goods-market income identifies the equilibrium interest rate. The money equation adjusts interest to clear the market; it does not change the already fixed goods-market income in this specification.\n\nEvaluate the price increase exactly. When the price level rises from P_0 to P_1>P_0, real balances fall and LM shifts upward/leftward. The vertical IS keeps output unchanged, while \nΔ r=(M_0)/(g)((1)/(P_0)-(1)/(P_1))>0.\n There is no investment crowding-out feedback here because investment is explicitly exogenous.",
     "hint": "Notice that no goods-market component depends on interest.",
     "topic": "Macroeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Solve the goods market first",
+        "body": "IS equilibrium is $Y=a+bY+I_0+G_0$. Because none of its spending components depends on interest, it fixes $$Y^*=\\frac{a+I_0+G_0}{1-b}.$$ Thus IS is vertical in a graph with output horizontal and interest vertical."
+      },
+      {
+        "title": "Use money equilibrium to find interest",
+        "body": "The LM equation is $M_0/P=kY-gr$, giving $r=(kY-M_0/P)/g$. Substituting the goods-market income identifies the equilibrium interest rate. The money equation adjusts interest to clear the market; it does not change the already fixed goods-market income in this specification."
+      },
+      {
+        "title": "Evaluate the price increase exactly",
+        "body": "When the price level rises from $P_0$ to $P_1>P_0$, real balances fall and LM shifts upward/leftward. The vertical IS keeps output unchanged, while $$\\Delta r=\\frac{M_0}{g}\\left(\\frac1{P_0}-\\frac1{P_1}\\right)>0.$$ There is no investment crowding-out feedback here because investment is explicitly exogenous."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q6",
@@ -169,12 +257,30 @@
     "originalPaperCode": "ME II",
     "stem": "A competitive firm makesY=K^0.25L^0.25. Labour adjusts weekly and capital monthly; wage and capital rental are both10. The question explicitly supplies short-run cost10Y⁴/K̄ and long-run cost20Y². (i) At January’s start output price400: find long-run output and input hires. (ii) At week3 price rises to691.20; fixed capital remains: find short-run output and additional labour for the rest of January.",
     "answer": "Using the supplied cost functions: initiallyY10,L100,K100. From week3, Y12 andL207.36, requiring107.36 additional workers per remaining week.",
-    "solution": "(i) Maximize400Y−20Y². The first-order condition400−40Y0 givesY10. Equal input prices and the symmetric production function implyL=K; Y=√L then givesL=K100. (ii) KeepK100. Supplied short-run variable cost becomes.1Y⁴, withMC=.4Y³. Equate to691.2 to obtainY³1728, henceY12. Production requiresL=Y⁴/K=20736/100=207.36, an increase of107.36 above100. With unchanged conditions this staffing applies in both remaining weeks. Fixed-capital costs, omitted from the supplied short-run formula, do not affect this marginal output choice.",
+    "solution": "Use the cost functions explicitly supplied. This version of the source provides long-run cost 20Y^2 and short-run cost 10Y^4/K̄. Follow those supplied functions rather than replacing them with a different weekly/monthly accounting convention. Fixed-capital costs omitted from the short-run expression do not affect its marginal output condition.\n\nChoose the initial long-run quantity and inputs. At price 400, maximize 400Y-20Y^2. The first-order condition gives 400-40Y=0, so Y=10. Equal factor prices and the symmetric production function imply K=L. Since Y=K^(1/4)L^(1/4)=√(L) when they are equal, initial capital and labour are both 100.\n\nHold capital fixed after the third-week price rise. With K̄=100, short-run variable cost is 0.1Y^4, so marginal cost is 0.4Y^3. At the new price, \n0.4Y^3=691.20 ⇒ Y^3=1728 ⇒ Y=12.\n Capital cannot be rehired until the next month, so the long-run cost curve is inappropriate for this adjustment.\n\nCalculate the additional workers. The production constraint gives L=Y^4/K̄=12^4/100=207.36. Compared with the original workforce 100, the increase is 107.36 workers for each remaining week with these conditions. Fractional values reflect the continuous-factor model. The source's time-unit conventions are not fully reconciled, but these computations consistently use its stated cost formulas.",
     "hint": "Use the expressly supplied cost functions and hold capital fixed in the third week.",
     "topic": "Microeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": "Weekly/monthly accounting is not fully reconciled by the source; computations follow its explicitly provided SR/LR cost formulas, rather than replacing them with another time convention."
+    "notes": "Weekly/monthly accounting is not fully reconciled by the source; computations follow its explicitly provided SR/LR cost formulas, rather than replacing them with another time convention.",
+    "solutionSteps": [
+      {
+        "title": "Use the cost functions explicitly supplied",
+        "body": "This version of the source provides long-run cost $20Y^2$ and short-run cost $10Y^4/\\bar K$. Follow those supplied functions rather than replacing them with a different weekly/monthly accounting convention. Fixed-capital costs omitted from the short-run expression do not affect its marginal output condition."
+      },
+      {
+        "title": "Choose the initial long-run quantity and inputs",
+        "body": "At price 400, maximize $400Y-20Y^2$. The first-order condition gives $400-40Y=0$, so $Y=10$. Equal factor prices and the symmetric production function imply $K=L$. Since $Y=K^{1/4}L^{1/4}=\\sqrt L$ when they are equal, initial capital and labour are both 100."
+      },
+      {
+        "title": "Hold capital fixed after the third-week price rise",
+        "body": "With $\\bar K=100$, short-run variable cost is $0.1Y^4$, so marginal cost is $0.4Y^3$. At the new price, $$0.4Y^3=691.20\\quad\\Rightarrow\\quad Y^3=1728\\quad\\Rightarrow\\quad Y=12.$$ Capital cannot be rehired until the next month, so the long-run cost curve is inappropriate for this adjustment."
+      },
+      {
+        "title": "Calculate the additional workers",
+        "body": "The production constraint gives $L=Y^4/\\bar K=12^4/100=207.36$. Compared with the original workforce 100, the increase is 107.36 workers for each remaining week with these conditions. Fractional values reflect the continuous-factor model. The source's time-unit conventions are not fully reconciled, but these computations consistently use its stated cost formulas."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q7",
@@ -186,12 +292,26 @@
     "originalPaperCode": "ME II",
     "stem": "A patented drug monopolist facesP=100−X andC=25+X². (i) Find monopoly price and output. (ii) The patent expires, allowing unlimited entry of identical firms with the same cost. Find long-run competitive price, total output and number of firms.",
     "answer": "MonopolyX25,P75,profit1225. Free-entry competition: each firmq5, price10, total output90 and18 firms.",
-    "solution": "Monopoly profit is(100−X)X−25−X²=100X−2X²−25. Its maximum is at100−4X0, givingX25,P75 andprofit1225. With free entry, each active competitive firm must produce at minimum average costAC=25/q+q. Its minimum occurs atq5, whereAC=MC10. Market demand atP10 is90. Therefore18 identical firms each produce5, earn revenue50 equal to cost50 and have zero economic profit.",
+    "solution": "Solve the patented monopoly problem. Profit is \nπ(X)=(100-X)X-(25+X^2)=100X-2X^2-25.\n Setting its derivative 100-4X equal to zero gives X_M=25 and P_M=75. The second derivative is negative. Revenue 1875 minus cost 650 gives monopoly profit 1225.\n\nApply the free-entry zero-profit condition. With identical firms entering, long-run price equals minimum average cost, not the old monopoly price. For one firm, \nAC(q)=(25)/(q)+q, MC(q)=2q.\n Average cost is minimized where -25/q^2+1=0, so each active firm produces 5 and the common competitive price is 10.\n\nClear industry demand and count firms. At price 10, total demand is 100-10=90. With each firm producing 5, the industry contains 90/5=18 firms. Each earns revenue 50 equal to total cost 25+25=50, confirming zero economic profit. The question continues on PDF page 2 in the supplied scan order.",
     "hint": "For free entry use minimum average cost, not monopoly marginal revenue.",
     "topic": "Microeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": "Question starts on PDFpage5 and continues on PDFpage2, printedbookletpage8."
+    "notes": "Question starts on PDFpage5 and continues on PDFpage2, printedbookletpage8.",
+    "solutionSteps": [
+      {
+        "title": "Solve the patented monopoly problem",
+        "body": "Profit is $$\\pi(X)=(100-X)X-(25+X^2)=100X-2X^2-25.$$ Setting its derivative $100-4X$ equal to zero gives $X_M=25$ and $P_M=75$. The second derivative is negative. Revenue 1875 minus cost 650 gives monopoly profit 1225."
+      },
+      {
+        "title": "Apply the free-entry zero-profit condition",
+        "body": "With identical firms entering, long-run price equals minimum average cost, not the old monopoly price. For one firm, $$AC(q)=\\frac{25}q+q,\\qquad MC(q)=2q.$$ Average cost is minimized where $-25/q^2+1=0$, so each active firm produces 5 and the common competitive price is 10."
+      },
+      {
+        "title": "Clear industry demand and count firms",
+        "body": "At price 10, total demand is $100-10=90$. With each firm producing 5, the industry contains $90/5=18$ firms. Each earns revenue 50 equal to total cost $25+25=50$, confirming zero economic profit. The question continues on PDF page 2 in the supplied scan order."
+      }
+    ]
   },
   {
     "id": "2001-PEB-Q8",
@@ -203,11 +323,25 @@
     "originalPaperCode": "ME II",
     "stem": "Two consumersA,B have identical utilityU=x₁x₂. Endowments areA(1,0),B(0,1). (i) Describe efficient allocations. (ii) Find competitive equilibrium. (iii) Duplicate each type, giving twoA and twoB with the same individual endowments and preferences: find equilibrium allocation.",
     "answer": "Efficient allocations giveA(t,t),B(1−t,1−t),0≤t≤1. Equilibrium price ratio1 and each consumer receives(1/2,1/2), both before and after cloning.",
-    "solution": "For the two-person economy, total stocks are(1,1). Interior efficiency equatesMRS_A=x_A2/x_A1 withMRS_B=(1−x_A2)/(1−x_A1), implyingx_A1=x_A2. The diagonal endpoints are efficient as well: reallocating to improve a zero-utility person necessarily lowers the sole positive-utility holder. Competitive Cobb–Douglas demand spends half of wealth on each good. A wealth isp₁, B wealthp₂. Clearinggood1 requires1/2+p₂/(2p₁)=1, so p₁=p₂; both demand(.5,.5). With two copies of each type, aggregate stocks double to(2,2) and each price-taking person’s wealth/demand at equal prices stays unchanged. Thus all four consume(.5,.5), clearing both markets.",
+    "solution": "Derive the efficient allocations. Total endowments are (1,1). For interior allocations, equality of marginal rates of substitution gives \n(x_(A2))/(x_(A1))=(1-x_(A2))/(1-x_(A1)) ⇒ x_(A1)=x_(A2).\n Thus the contract curve is A=(t,t), B=(1-t,1-t), 0≤ t≤1. The endpoints are efficient too: helping the zero-utility person would reduce the other person's positive product utility.\n\nClear markets using half-income demands. Let prices be p_1,p_2>0. A's wealth is p_1 and B's wealth is p_2. Cobb–Douglas demands spend half of wealth on each good. Clearing good 1 requires \n(1)/(2)+(p_2)/(2p_1)=1,\n hence p_1=p_2. Both consumers receive (1/2,1/2).\n\nShow why cloning does not alter individual consumption. With two copies of each type, aggregate stocks double to (2,2) and aggregate demands also double at the old prices. Each person's endowment value and demand at equal prices remain unchanged. Consequently the same price ratio clears the enlarged economy and all four people consume (1/2,1/2). This is replication, not an increase in any person's wealth.",
     "hint": "Compute individual half-income demands and then clear markets; cloning scales supply and aggregate demand equally.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Derive the efficient allocations",
+        "body": "Total endowments are $(1,1)$. For interior allocations, equality of marginal rates of substitution gives $$\\frac{x_{A2}}{x_{A1}}=\\frac{1-x_{A2}}{1-x_{A1}}\\quad\\Rightarrow\\quad x_{A1}=x_{A2}.$$ Thus the contract curve is $A=(t,t)$, $B=(1-t,1-t)$, $0\\le t\\le1$. The endpoints are efficient too: helping the zero-utility person would reduce the other person's positive product utility."
+      },
+      {
+        "title": "Clear markets using half-income demands",
+        "body": "Let prices be $p_1,p_2>0$. A's wealth is $p_1$ and B's wealth is $p_2$. Cobb–Douglas demands spend half of wealth on each good. Clearing good 1 requires $$\\frac12+\\frac{p_2}{2p_1}=1,$$ hence $p_1=p_2$. Both consumers receive $(1/2,1/2)$."
+      },
+      {
+        "title": "Show why cloning does not alter individual consumption",
+        "body": "With two copies of each type, aggregate stocks double to $(2,2)$ and aggregate demands also double at the old prices. Each person's endowment value and demand at equal prices remain unchanged. Consequently the same price ratio clears the enlarged economy and all four people consume $(1/2,1/2)$. This is replication, not an increase in any person's wealth."
+      }
+    ]
   }
 ]

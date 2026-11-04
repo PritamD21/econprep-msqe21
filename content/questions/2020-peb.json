@@ -6,14 +6,25 @@
     "group": "A",
     "stem": "Let $X_1,\\ldots,X_n$ be independent and identically distributed random variables with a uniform distribution on $(0,\\theta]$, where $\\theta>0$. Write down their joint probability density function.",
     "answer": "$f_\\theta(x_1,\\ldots,x_n)=\\theta^{-n}\\mathbf1\\{0<x_i\\leq\\theta\\ \\forall i\\}$.",
-    "solution": "Each marginal density is $\\theta^{-1}$ on $(0,\\theta]$ and zero otherwise. Independence makes the joint density the product of the marginal densities.",
+    "solution": "For one observation, a uniform density is constant 1/theta only inside its theta-dependent support. Independence lets us multiply densities, but it does not remove those support restrictions. The joint density is therefore theta to the power -n on the n-dimensional box where every observation lies in (0,theta], and zero everywhere else. Writing the indicator explicitly is crucial for the likelihood maximization in the next part.\n\nEach marginal density is $\\theta^{-1}$ on $(0,\\theta]$ and zero otherwise. Independence makes the joint density the product of the marginal densities.",
     "hint": "Multiply the independent uniform densities.",
     "topic": "Probability",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Each marginal density is $\\theta^{-1}$ on $(0,\\theta]$ and zero otherwise. Independence makes the joint density the product of the marginal densities.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "For one observation, a uniform density is constant 1/theta only inside its theta-dependent support. Independence lets us multiply densities, but it does not remove those support restrictions. The joint density is therefore theta to the power -n on the n-dimensional box where every observation lies in (0,theta], and zero everywhere else. Writing the indicator explicitly is crucial for the likelihood maximization in the next part."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Each marginal density is $\\theta^{-1}$ on $(0,\\theta]$ and zero otherwise. Independence makes the joint density the product of the marginal densities."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q1b",
@@ -22,14 +33,25 @@
     "group": "A",
     "stem": "Let $X_1,\\ldots,X_n$ be independent and identically distributed random variables with a uniform distribution on $(0,\\theta]$, where $\\theta>0$. Given observations $x_1,\\ldots,x_n$, find the value of the unknown $\\theta$ that maximizes the joint density (the maximum likelihood estimate).",
     "answer": "$\\widehat\\theta=\\max_i x_i$.",
-    "solution": "For valid positive observations let $m=\\max_i x_i$. The likelihood is zero for $\\theta<m$ and equals $\\theta^{-n}$ for $\\theta\\geq m$. The latter is strictly decreasing, so its maximum occurs at the smallest admissible value, $m$.",
+    "solution": "The observed largest value is a lower bound on theta: a proposed uniform distribution whose upper endpoint lies below an observed point cannot have generated the sample. Above that bound the likelihood decreases as theta increases. Therefore first restrict the parameter to its feasible range, then choose its smallest value. Differentiating theta to the power -n and looking for a zero derivative would miss the optimum because the maximum lies at the support boundary.\n\nFor valid positive observations let $m=\\max_i x_i$. The likelihood is zero for $\\theta<m$ and equals $\\theta^{-n}$ for $\\theta\\geq m$. The latter is strictly decreasing, so its maximum occurs at the smallest admissible value, $m$.",
     "hint": "Remember that the support depends on the parameter.",
     "topic": "Statistics",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For valid positive observations let $m=\\max_i x_i$. The likelihood is zero for $\\theta<m$ and equals $\\theta^{-n}$ for $\\theta\\geq m$. The latter is strictly decreasing, so its maximum occurs at the smallest admissible value, $m$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The observed largest value is a lower bound on theta: a proposed uniform distribution whose upper endpoint lies below an observed point cannot have generated the sample. Above that bound the likelihood decreases as theta increases. Therefore first restrict the parameter to its feasible range, then choose its smallest value. Differentiating theta to the power -n and looking for a zero derivative would miss the optimum because the maximum lies at the support boundary."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "For valid positive observations let $m=\\max_i x_i$. The likelihood is zero for $\\theta<m$ and equals $\\theta^{-n}$ for $\\theta\\geq m$. The latter is strictly decreasing, so its maximum occurs at the smallest admissible value, $m$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q1c",
@@ -38,14 +60,25 @@
     "group": "A",
     "stem": "Consider $f(x,y)=x^2+y^2-2x$. (i) Find its maximum over $2x^2+3y^2-2x\\leq100$. (ii) Find its minimum over $2x^2+3y^2-2x\\geq100$.",
     "answer": "(i) $(99+\\sqrt{201})/2$ at $((1-\\sqrt{201})/2,0)$. (ii) $32$ at $(2,\\pm4\\sqrt2)$.",
-    "solution": "Put $h=2x^2+3y^2-2x$. If $h\\leq100$, then $2x^2-2x\\leq100$, hence $x\\geq a=(1-\\sqrt{201})/2$. Therefore $f=h/2-x-y^2/2\\leq50-a$, with equality at $(a,0)$. For (ii), the identity $h=3f+4-(x-2)^2$ gives $3f=h-4+(x-2)^2\\geq96$. Equality requires $h=100,x=2$, giving $y^2=32$.",
+    "solution": "Both questions are global optimization problems, so a stationary point alone would not prove the answer. Introduce $h=2x^2+3y^2-2x$ and use identities that give valid bounds throughout the entire feasible set:\n\n$$f=\\frac h2-x-\\frac{y^2}{2},\\qquad h=3f+4-(x-2)^2.$$\n\nFor the first region the constraint also bounds x through a quadratic inequality. For the second region a nonnegative square gives a lower bound on f. In each case an explicit feasible equality point proves the bound is attained.\n\nPut $h=2x^2+3y^2-2x$. If $h\\leq100$, then $2x^2-2x\\leq100$, hence $x\\geq a=(1-\\sqrt{201})/2$.\n\nTherefore $f=h/2-x-y^2/2\\leq50-a$, with equality at $(a,0)$. For (ii), the identity $h=3f+4-(x-2)^2$ gives $3f=h-4+(x-2)^2\\geq96$.\n\nEquality requires $h=100,x=2$, giving $y^2=32$.",
     "hint": "Express one quadratic as a multiple of the other plus squares.",
     "topic": "Calculus",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Put $h=2x^2+3y^2-2x$. If $h\\leq100$, then $2x^2-2x\\leq100$, hence $x\\geq a=(1-\\sqrt{201})/2$. Therefore $f=h/2-x-y^2/2\\leq50-a$, with equality at $(a,0)$. For (ii), the identity $h=3f+4-(x-2)^2$ gives $3f=h-4+(x-2)^2\\geq96$. Equality requires $h=100,x=2$, giving $y^2=32$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Both questions are global optimization problems, so a stationary point alone would not prove the answer. Introduce $h=2x^2+3y^2-2x$ and use identities that give valid bounds throughout the entire feasible set:\n\n$$f=\\frac h2-x-\\frac{y^2}{2},\\qquad h=3f+4-(x-2)^2.$$\n\nFor the first region the constraint also bounds x through a quadratic inequality. For the second region a nonnegative square gives a lower bound on f. In each case an explicit feasible equality point proves the bound is attained."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Put $h=2x^2+3y^2-2x$. If $h\\leq100$, then $2x^2-2x\\leq100$, hence $x\\geq a=(1-\\sqrt{201})/2$.\n\nTherefore $f=h/2-x-y^2/2\\leq50-a$, with equality at $(a,0)$. For (ii), the identity $h=3f+4-(x-2)^2$ gives $3f=h-4+(x-2)^2\\geq96$.\n\nEquality requires $h=100,x=2$, giving $y^2=32$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q2a",
@@ -54,14 +87,25 @@
     "group": "A",
     "stem": "A tournament has $n$ players, one match between every pair and no ties. A player's score is her number of wins. Order the scores $s_1\\geq\\cdots\\geq s_n$. For $2\\leq k\\leq n$, show that $s_1+\\cdots+s_k\\geq k(k-1)/2$.",
     "answer": "$\\sum_{j=1}^k s_j\\geq\\binom{k}{2}$.",
-    "solution": "The matches among these $k$ players contribute exactly $\\binom{k}{2}$ wins to their combined score. Wins against the remaining players can only add to this total.",
+    "solution": "Every tournament match creates exactly one win and no draw. Focus on the matches played entirely within the chosen k players. There are k(k-1)/2 such unordered pairs, and whichever player wins, that win is counted in the same sum of k scores. Matches against players outside the group add a nonnegative number of further wins. In fact this counting bound holds for any k players, even before ordering scores.\n\nThe matches among these $k$ players contribute exactly $\\binom{k}{2}$ wins to their combined score. Wins against the remaining players can only add to this total.",
     "hint": "Count the matches within the chosen set.",
     "topic": "Algebra",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The matches among these $k$ players contribute exactly $\\binom{k}{2}$ wins to their combined score. Wins against the remaining players can only add to this total.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Every tournament match creates exactly one win and no draw. Focus on the matches played entirely within the chosen k players. There are k(k-1)/2 such unordered pairs, and whichever player wins, that win is counted in the same sum of k scores. Matches against players outside the group add a nonnegative number of further wins. In fact this counting bound holds for any k players, even before ordering scores."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The matches among these $k$ players contribute exactly $\\binom{k}{2}$ wins to their combined score. Wins against the remaining players can only add to this total."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q2b",
@@ -70,14 +114,25 @@
     "group": "A",
     "stem": "A tournament has $n$ players, one match between every pair and no ties. A player's score is her number of wins. Order the scores $s_1\\geq\\cdots\\geq s_n$. Suppose $n>3$ and players 1, 2 and 3 beat every player in $\\{4,\\ldots,n\\}$. Find $s_4+\\cdots+s_n$.",
     "answer": "$\\binom{n-3}{2}=(n-3)(n-4)/2$.",
-    "solution": "The bottom $n-3$ players obtain no wins against the top three. Every match among the bottom players contributes exactly one win to their total, so their total score equals the number of those matches.",
+    "solution": "Separate the bottom group’s matches into two types. Against the top three, the assumption forces every bottom player to lose, so these matches contribute zero. Against each other, every bottom-group match contributes exactly one win to the group total. There are n-3 players in this smaller tournament, so its internal pair count gives the entire requested sum; no individual pattern of winners needs to be specified.\n\nThe bottom $n-3$ players obtain no wins against the top three. Every match among the bottom players contributes exactly one win to their total, so their total score equals the number of those matches.",
     "hint": "Only internal matches can contribute wins.",
     "topic": "Algebra",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The bottom $n-3$ players obtain no wins against the top three. Every match among the bottom players contributes exactly one win to their total, so their total score equals the number of those matches.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Separate the bottom group’s matches into two types. Against the top three, the assumption forces every bottom player to lose, so these matches contribute zero. Against each other, every bottom-group match contributes exactly one win to the group total. There are n-3 players in this smaller tournament, so its internal pair count gives the entire requested sum; no individual pattern of winners needs to be specified."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The bottom $n-3$ players obtain no wins against the top three. Every match among the bottom players contributes exactly one win to their total, so their total score equals the number of those matches."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q2c",
@@ -86,14 +141,25 @@
     "group": "A",
     "stem": "A tournament has $n$ players, one match between every pair and no ties. A player's score is her number of wins. Order the scores $s_1\\geq\\cdots\\geq s_n$. Suppose $s_n=s_0$, $s_{n-1}=s_0+1$, $s_{n-2}=s_0+2$, where $s_0$ is a positive integer and $n\\geq3$. Show $s_0\\leq(n-2)(n-3)/(2n)$.",
     "answer": "$s_0\\leq (n-2)(n-3)/(2n)$.",
-    "solution": "The top $n-2$ scores are each at least $s_0+2$. Thus $\\binom n2=\\sum s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0=ns_0+2n-3$. Rearranging gives the result.",
+    "solution": "All tournament scores sum to the number of matches, n(n-1)/2. Ordering gives a lower bound on each of the top n-2 scores: each is at least the third-smallest score s0+2. Keep the two lowest scores separately rather than assigning them the same lower bound:\n\n$$\\sum_{j=1}^n s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0.$$\n\nComparing this lower bound with the fixed total and solving for s0 yields the inequality.\n\nThe top $n-2$ scores are each at least $s_0+2$. Thus $\\binom n2=\\sum s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0=ns_0+2n-3$. Rearranging gives the result.",
     "hint": "Use the fixed sum of all tournament scores.",
     "topic": "Algebra",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The top $n-2$ scores are each at least $s_0+2$. Thus $\\binom n2=\\sum s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0=ns_0+2n-3$. Rearranging gives the result.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "All tournament scores sum to the number of matches, n(n-1)/2. Ordering gives a lower bound on each of the top n-2 scores: each is at least the third-smallest score s0+2. Keep the two lowest scores separately rather than assigning them the same lower bound:\n\n$$\\sum_{j=1}^n s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0.$$\n\nComparing this lower bound with the fixed total and solving for s0 yields the inequality."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The top $n-2$ scores are each at least $s_0+2$. Thus $\\binom n2=\\sum s_j\\geq(n-2)(s_0+2)+(s_0+1)+s_0=ns_0+2n-3$. Rearranging gives the result."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q2d",
@@ -102,14 +168,25 @@
     "group": "A",
     "stem": "A tournament has $n$ players, one match between every pair and no ties. A player's score is her number of wins. Order the scores $s_1\\geq\\cdots\\geq s_n$. Suppose $s_j-s_{j+1}=1$ for $j=1,\\ldots,n-1$. Find the score vector and identify whom each player $j$ beats.",
     "answer": "$s=(n-1,n-2,\\ldots,0)$; player $j$ beats exactly players $j+1,\\ldots,n$.",
-    "solution": "Writing $s_j=s_n+n-j$ and summing gives $ns_n+n(n-1)/2=n(n-1)/2$, hence $s_n=0$. Player 1 has $n-1$ wins and beats everyone. Player 2 has already lost to player 1 and must beat all remaining players to attain $n-2$ wins. Induction gives the stated orientation for every pair.",
+    "solution": "Consecutive differences of one force the score list to be an arithmetic progression, but its starting value must still be found. The total-win identity determines the lowest score to be zero. The score pattern then also determines all match outcomes: the top player has to beat everyone, the next has already lost that one match and must beat all remaining players, and so on. This inductive argument establishes the orientation, not merely the numerical scores.\n\nWriting $s_j=s_n+n-j$ and summing gives $ns_n+n(n-1)/2=n(n-1)/2$, hence $s_n=0$. Player 1 has $n-1$ wins and beats everyone.\n\nPlayer 2 has already lost to player 1 and must beat all remaining players to attain $n-2$ wins. Induction gives the stated orientation for every pair.",
     "hint": "First sum the arithmetic progression of scores.",
     "topic": "Algebra",
     "sourcePage": 11,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": "Question continues onto user PDF page 12."
+    "notes": "Question continues onto user PDF page 12.",
+    "solutionOriginal": "Writing $s_j=s_n+n-j$ and summing gives $ns_n+n(n-1)/2=n(n-1)/2$, hence $s_n=0$. Player 1 has $n-1$ wins and beats everyone. Player 2 has already lost to player 1 and must beat all remaining players to attain $n-2$ wins. Induction gives the stated orientation for every pair.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Consecutive differences of one force the score list to be an arithmetic progression, but its starting value must still be found. The total-win identity determines the lowest score to be zero. The score pattern then also determines all match outcomes: the top player has to beat everyone, the next has already lost that one match and must beat all remaining players, and so on. This inductive argument establishes the orientation, not merely the numerical scores."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Writing $s_j=s_n+n-j$ and summing gives $ns_n+n(n-1)/2=n(n-1)/2$, hence $s_n=0$. Player 1 has $n-1$ wins and beats everyone.\n\nPlayer 2 has already lost to player 1 and must beat all remaining players to attain $n-2$ wins. Induction gives the stated orientation for every pair."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q2e",
@@ -118,14 +195,25 @@
     "group": "A",
     "stem": "A tournament has $n$ players, one match between every pair and no ties. A player's score is her number of wins. Order the scores $s_1\\geq\\cdots\\geq s_n$. For $n=6$, every player has at least two wins and scores differ by at most one. Find the score vector and construct all match outcomes realizing it.",
     "answer": "$(3,3,3,2,2,2)$. One construction is specified in the solution.",
-    "solution": "The mean score is $15/6=2.5$. Integer scores differing by at most one must therefore be 2 and 3; their sum forces three of each. Specify winners by listing whom each player beats: $1:\\{2,3,4\\}$; $2:\\{3,4,5\\}$; $3:\\{4,5,6\\}$; $4:\\{5,6\\}$; $5:\\{6,1\\}$; $6:\\{1,2\\}$. Every pair appears exactly once, and the resulting scores are as required.",
+    "solution": "For six players there are 15 matches and the average score is 2.5. Because all integer scores differ by at most one and their minimum is at least two, only scores 2 and 3 can occur. The fixed total tells us how many of each. A score sequence still needs a realizing tournament; listing each player’s beaten opponents supplies that construction. Verify that the list includes every unordered pair once, with no pair assigned two winners.\n\nThe mean score is $15/6=2.5$. Integer scores differing by at most one must therefore be 2 and 3; their sum forces three of each.\n\nSpecify winners by listing whom each player beats: $1:\\{2,3,4\\}$; $2:\\{3,4,5\\}$; $3:\\{4,5,6\\}$; $4:\\{5,6\\}$; $5:\\{6,1\\}$; $6:\\{1,2\\}$. Every pair appears exactly once, and the resulting scores are as required.",
     "hint": "The mean score is $(n-1)/2$.",
     "topic": "Algebra",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The mean score is $15/6=2.5$. Integer scores differing by at most one must therefore be 2 and 3; their sum forces three of each. Specify winners by listing whom each player beats: $1:\\{2,3,4\\}$; $2:\\{3,4,5\\}$; $3:\\{4,5,6\\}$; $4:\\{5,6\\}$; $5:\\{6,1\\}$; $6:\\{1,2\\}$. Every pair appears exactly once, and the resulting scores are as required.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "For six players there are 15 matches and the average score is 2.5. Because all integer scores differ by at most one and their minimum is at least two, only scores 2 and 3 can occur. The fixed total tells us how many of each. A score sequence still needs a realizing tournament; listing each player’s beaten opponents supplies that construction. Verify that the list includes every unordered pair once, with no pair assigned two winners."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The mean score is $15/6=2.5$. Integer scores differing by at most one must therefore be 2 and 3; their sum forces three of each.\n\nSpecify winners by listing whom each player beats: $1:\\{2,3,4\\}$; $2:\\{3,4,5\\}$; $3:\\{4,5,6\\}$; $4:\\{5,6\\}$; $5:\\{6,1\\}$; $6:\\{1,2\\}$. Every pair appears exactly once, and the resulting scores are as required."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q3a",
@@ -134,14 +222,25 @@
     "group": "A",
     "stem": "Let $P_n(x)=(x-1)(x-2)\\cdots(x-n)$, where $n>1$ is an integer. Determine whether the statement is true or false, with proof or counterexample: For $n=2$, $P_n(x)=k$ has a real solution for every real $k$.",
     "answer": "False.",
-    "solution": "$P_2(x)=(x-3/2)^2-1/4\\geq-1/4$, so for example $k=-1$ has no real solution.",
+    "solution": "A quadratic with a positive leading coefficient is bounded below; it need not take every real value just because x itself can be any real number. Complete the square to identify its exact range:\n\n$$P_2(x)=(x-1)(x-2)=\\left(x-\\frac32\\right)^2-\\frac14.$$\n\nAny k below -1/4 is therefore a counterexample. The question asks whether a universal assertion is true, so one excluded value of k already disproves it.\n\n$P_2(x)=(x-3/2)^2-1/4\\geq-1/4$, so for example $k=-1$ has no real solution.",
     "hint": "Complete the square.",
     "topic": "Algebra",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "$P_2(x)=(x-3/2)^2-1/4\\geq-1/4$, so for example $k=-1$ has no real solution.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A quadratic with a positive leading coefficient is bounded below; it need not take every real value just because x itself can be any real number. Complete the square to identify its exact range:\n\n$$P_2(x)=(x-1)(x-2)=\\left(x-\\frac32\\right)^2-\\frac14.$$\n\nAny k below -1/4 is therefore a counterexample. The question asks whether a universal assertion is true, so one excluded value of k already disproves it."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "$P_2(x)=(x-3/2)^2-1/4\\geq-1/4$, so for example $k=-1$ has no real solution."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q3b",
@@ -150,14 +249,25 @@
     "group": "A",
     "stem": "Let $P_n(x)=(x-1)(x-2)\\cdots(x-n)$, where $n>1$ is an integer. Determine whether the statement is true or false, with proof or counterexample: For $n=3$, $P_n(x)=k$ has a real solution for every real $k$.",
     "answer": "True.",
-    "solution": "The monic cubic is continuous, tends to $-\\infty$ as $x\\to-\\infty$ and to $+\\infty$ as $x\\to+\\infty$. The intermediate value theorem gives every real value $k$.",
+    "solution": "An odd-degree polynomial with positive leading coefficient has opposite signs of divergence at the two ends of the real line. For any target k, choose one sufficiently negative and one sufficiently positive x so that the polynomial lies below and above k respectively. Continuity on the finite interval between them guarantees a crossing. The argument uses the degree’s parity and does not require finding the cubic’s roots explicitly.\n\nThe monic cubic is continuous, tends to $-\\infty$ as $x\\to-\\infty$ and to $+\\infty$ as $x\\to+\\infty$. The intermediate value theorem gives every real value $k$.",
     "hint": "Use the end behaviour of an odd-degree polynomial.",
     "topic": "Calculus",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The monic cubic is continuous, tends to $-\\infty$ as $x\\to-\\infty$ and to $+\\infty$ as $x\\to+\\infty$. The intermediate value theorem gives every real value $k$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "An odd-degree polynomial with positive leading coefficient has opposite signs of divergence at the two ends of the real line. For any target k, choose one sufficiently negative and one sufficiently positive x so that the polynomial lies below and above k respectively. Continuity on the finite interval between them guarantees a crossing. The argument uses the degree’s parity and does not require finding the cubic’s roots explicitly."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The monic cubic is continuous, tends to $-\\infty$ as $x\\to-\\infty$ and to $+\\infty$ as $x\\to+\\infty$. The intermediate value theorem gives every real value $k$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q3c",
@@ -166,14 +276,25 @@
     "group": "A",
     "stem": "Let $P_n(x)=(x-1)(x-2)\\cdots(x-n)$, where $n>1$ is an integer. Determine whether the statement is true or false, with proof or counterexample: For every $k\\geq0$ and every integer $n>1$, $P_n(x)=k$ has a real solution.",
     "answer": "True.",
-    "solution": "$P_n(n)=0$ and $P_n(x)\\to+\\infty$ as $x\\to+\\infty$. Continuity on $[n,\\infty)$ implies that every nonnegative $k$ is attained.",
+    "solution": "Parity no longer matters when the target k is nonnegative. Start at the known root x=n, where the product is zero, and move far enough to the right, where a monic polynomial of any positive degree becomes arbitrarily large. The intermediate value theorem fills every target value between them. Include k=0 separately or observe that it is already attained at the starting root.\n\n$P_n(n)=0$ and $P_n(x)\\to+\\infty$ as $x\\to+\\infty$. Continuity on $[n,\\infty)$ implies that every nonnegative $k$ is attained.",
     "hint": "Start at the largest root.",
     "topic": "Calculus",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "$P_n(n)=0$ and $P_n(x)\\to+\\infty$ as $x\\to+\\infty$. Continuity on $[n,\\infty)$ implies that every nonnegative $k$ is attained.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Parity no longer matters when the target k is nonnegative. Start at the known root x=n, where the product is zero, and move far enough to the right, where a monic polynomial of any positive degree becomes arbitrarily large. The intermediate value theorem fills every target value between them. Include k=0 separately or observe that it is already attained at the starting root."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "$P_n(n)=0$ and $P_n(x)\\to+\\infty$ as $x\\to+\\infty$. Continuity on $[n,\\infty)$ implies that every nonnegative $k$ is attained."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q3d",
@@ -182,14 +303,25 @@
     "group": "A",
     "stem": "Let $P_n(x)=(x-1)(x-2)\\cdots(x-n)$, where $n>1$ is an integer. Determine whether the statement is true or false, with proof or counterexample: For every $k<0$ and every odd integer $n>1$, $P_n(x)=k$ has a real solution.",
     "answer": "True.",
-    "solution": "For odd $n$, the continuous monic polynomial tends to opposite infinite limits at the two ends of the real line. It therefore attains every real value, including every negative $k$.",
+    "solution": "The claim fixes an odd n but permits any negative target. A monic odd-degree product tends to minus infinity on the left and plus infinity on the right, so its image is all real numbers. Choose endpoints that bracket the particular negative target and use continuity. This proof also shows the stronger statement for all real k; it is the odd-degree condition that matters, not whether the displayed individual linear factors are negative at a specific point.\n\nFor odd $n$, the continuous monic polynomial tends to opposite infinite limits at the two ends of the real line. It therefore attains every real value, including every negative $k$.",
     "hint": "Apply the intermediate value theorem.",
     "topic": "Calculus",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For odd $n$, the continuous monic polynomial tends to opposite infinite limits at the two ends of the real line. It therefore attains every real value, including every negative $k$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The claim fixes an odd n but permits any negative target. A monic odd-degree product tends to minus infinity on the left and plus infinity on the right, so its image is all real numbers. Choose endpoints that bracket the particular negative target and use continuity. This proof also shows the stronger statement for all real k; it is the odd-degree condition that matters, not whether the displayed individual linear factors are negative at a specific point."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For odd $n$, the continuous monic polynomial tends to opposite infinite limits at the two ends of the real line. It therefore attains every real value, including every negative $k$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q3e",
@@ -198,14 +330,25 @@
     "group": "A",
     "stem": "Let $P_n(x)=(x-1)(x-2)\\cdots(x-n)$, where $n>1$ is an integer. Determine whether the statement is true or false, with proof or counterexample: For every $k<0$, there exists an even positive integer $n$ such that $P_n(x)=k$ has a real solution.",
     "answer": "True.",
-    "solution": "For even $n$, $P_n(3/2)=-\\frac14\\prod_{j=3}^n(j-3/2)$. Its magnitude is at least $\\frac14(3/2)^{n-2}$, which tends to infinity along even $n$. Choose even $n$ with $P_n(3/2)\\leq k<0=P_n(1)$. Continuity between 1 and $3/2$ provides a solution.",
+    "solution": "Unlike the previous part, n may now be chosen to suit k, but must be even. Evaluate every product at the same point x=3/2. For even n there are an odd number of negative factors, so the product is negative, and adding later factor pairs makes its magnitude grow without bound. Once it lies below the desired k, use the nearby fixed root x=1 to bracket k by continuity. This avoids the false claim that any particular even-degree polynomial covers all negative numbers.\n\nFor even $n$, $P_n(3/2)=-\\frac14\\prod_{j=3}^n(j-3/2)$. Its magnitude is at least $\\frac14(3/2)^{n-2}$, which tends to infinity along even $n$.\n\nChoose even $n$ with $P_n(3/2)\\leq k<0=P_n(1)$. Continuity between 1 and $3/2$ provides a solution.",
     "hint": "Evaluate the products at the same point between the first two roots.",
     "topic": "Calculus",
     "sourcePage": 12,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For even $n$, $P_n(3/2)=-\\frac14\\prod_{j=3}^n(j-3/2)$. Its magnitude is at least $\\frac14(3/2)^{n-2}$, which tends to infinity along even $n$. Choose even $n$ with $P_n(3/2)\\leq k<0=P_n(1)$. Continuity between 1 and $3/2$ provides a solution.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Unlike the previous part, n may now be chosen to suit k, but must be even. Evaluate every product at the same point x=3/2. For even n there are an odd number of negative factors, so the product is negative, and adding later factor pairs makes its magnitude grow without bound. Once it lies below the desired k, use the nearby fixed root x=1 to bracket k by continuity. This avoids the false claim that any particular even-degree polynomial covers all negative numbers."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For even $n$, $P_n(3/2)=-\\frac14\\prod_{j=3}^n(j-3/2)$. Its magnitude is at least $\\frac14(3/2)^{n-2}$, which tends to infinity along even $n$.\n\nChoose even $n$ with $P_n(3/2)\\leq k<0=P_n(1)$. Continuity between 1 and $3/2$ provides a solution."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q4a",
@@ -214,14 +357,25 @@
     "group": "B",
     "stem": "An economy has mass 1 of identical agents with $u(c,l)=c^\\alpha(24-l)^{1-\\alpha}$, $0<\\alpha<1$, and technology $c=Al$, $A>0$. Both markets are perfectly competitive, with wage $w>0$ and commodity price $p>0$. (i) [13 marks] Set up household utility maximization, its first-order conditions, and derive $l^S,c^D$. (ii) [7 marks] Set up firm profit maximization and derive $l^D,c^S$. (iii) [5 marks] Determine the competitive equilibrium allocation and $w/p$.",
     "answer": "$l^S=24\\alpha$, $c^D=24\\alpha w/p$; equilibrium $w/p=A$, $l=24\\alpha$, $c=24\\alpha A$.",
-    "solution": "(i) Maximize $\\alpha\\ln c+(1-\\alpha)\\ln(24-l)$ subject to $pc\\leq wl$, $0\\leq l\\leq24$. FOCs give $\\alpha/c=\\lambda p$ and $(1-\\alpha)/(24-l)=\\lambda w$, with $pc=wl$. Hence $l^S=24\\alpha$ and $c^D=24\\alpha w/p$. (ii) The firm maximizes $(pA-w)l$ over $l\\geq0$. If $w/p>A$, choose $l^D=c^S=0$; if $w/p=A$, any $l\\geq0$ with $c^S=Al$ maximizes profit; if $w/p<A$, profit is unbounded and no finite maximizing demand exists. (iii) Positive finite clearing requires $w/p=A$. Taking $l^D=l^S=24\\alpha$ then clears both markets and yields the stated consumption.",
+    "solution": "Three separate pieces are needed for a competitive equilibrium: household optimization, firm optimization, and market clearing. The household chooses a split between labour and leisure, using wages to finance consumption. The firm has linear technology, so its profit is linear in hired labour and may be unbounded away from the equilibrium price ratio. Do not force an interior firm first-order condition at arbitrary prices. Market clearing selects the zero-profit relative price and the particular employment level that households supply.\n\n(i) Maximize $\\alpha\\ln c+(1-\\alpha)\\ln(24-l)$ subject to $pc\\leq wl$, $0\\leq l\\leq24$. FOCs give $\\alpha/c=\\lambda p$ and $(1-\\alpha)/(24-l)=\\lambda w$, with $pc=wl$.\n\nHence $l^S=24\\alpha$ and $c^D=24\\alpha w/p$. (ii) The firm maximizes $(pA-w)l$ over $l\\geq0$.\n\nIf $w/p>A$, choose $l^D=c^S=0$; if $w/p=A$, any $l\\geq0$ with $c^S=Al$ maximizes profit; if $w/p<A$, profit is unbounded and no finite maximizing demand exists. (iii) Positive finite clearing requires $w/p=A$.\n\nTaking $l^D=l^S=24\\alpha$ then clears both markets and yields the stated consumption.",
     "hint": "Use leisure as a second consumption good and check constant returns in the firm problem.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 25,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "(i) Maximize $\\alpha\\ln c+(1-\\alpha)\\ln(24-l)$ subject to $pc\\leq wl$, $0\\leq l\\leq24$. FOCs give $\\alpha/c=\\lambda p$ and $(1-\\alpha)/(24-l)=\\lambda w$, with $pc=wl$. Hence $l^S=24\\alpha$ and $c^D=24\\alpha w/p$. (ii) The firm maximizes $(pA-w)l$ over $l\\geq0$. If $w/p>A$, choose $l^D=c^S=0$; if $w/p=A$, any $l\\geq0$ with $c^S=Al$ maximizes profit; if $w/p<A$, profit is unbounded and no finite maximizing demand exists. (iii) Positive finite clearing requires $w/p=A$. Taking $l^D=l^S=24\\alpha$ then clears both markets and yields the stated consumption.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Three separate pieces are needed for a competitive equilibrium: household optimization, firm optimization, and market clearing. The household chooses a split between labour and leisure, using wages to finance consumption. The firm has linear technology, so its profit is linear in hired labour and may be unbounded away from the equilibrium price ratio. Do not force an interior firm first-order condition at arbitrary prices. Market clearing selects the zero-profit relative price and the particular employment level that households supply."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "(i) Maximize $\\alpha\\ln c+(1-\\alpha)\\ln(24-l)$ subject to $pc\\leq wl$, $0\\leq l\\leq24$. FOCs give $\\alpha/c=\\lambda p$ and $(1-\\alpha)/(24-l)=\\lambda w$, with $pc=wl$.\n\nHence $l^S=24\\alpha$ and $c^D=24\\alpha w/p$. (ii) The firm maximizes $(pA-w)l$ over $l\\geq0$.\n\nIf $w/p>A$, choose $l^D=c^S=0$; if $w/p=A$, any $l\\geq0$ with $c^S=Al$ maximizes profit; if $w/p<A$, profit is unbounded and no finite maximizing demand exists. (iii) Positive finite clearing requires $w/p=A$.\n\nTaking $l^D=l^S=24\\alpha$ then clears both markets and yields the stated consumption."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q4b",
@@ -230,14 +384,25 @@
     "group": "B",
     "stem": "An economy has mass 1 of identical agents with $u(c,l)=c^\\alpha(24-l)^{1-\\alpha}$, $0<\\alpha<1$, and technology $c=Al$, $A>0$. Both markets are perfectly competitive, with wage $w>0$ and commodity price $p>0$. Define Pareto efficiency for this economy and find a Pareto efficient allocation of consumption and labour, with explanation.",
     "answer": "$l^{PE}=24\\alpha$, $c^{PE}=24\\alpha A$.",
-    "solution": "An allocation is Pareto efficient if no feasible allocation makes some agent better off without making another worse off. In the representative identical-agent allocation, maximize utility subject to $c\\leq Al$. Monotonicity makes $c=Al$. The log objective is $\\alpha\\ln(Al)+(1-\\alpha)\\ln(24-l)$; its derivative vanishes at $\\alpha/l=(1-\\alpha)/(24-l)$, so $l=24\\alpha$. Strict concavity establishes the maximum and efficiency. The competitive allocation attains it.",
+    "solution": "An efficient allocation uses the production frontier because extra feasible consumption is desirable. Substitute c=Al into the household’s utility and maximize directly over labour. This asks which technologically feasible choice gives the highest utility, independently of whether a market decentralizes it. The log transformation preserves the positive utility ranking and makes the labour–leisure tradeoff transparent. Verify that the maximizer is strictly between zero and the 24-hour time endowment.\n\nAn allocation is Pareto efficient if no feasible allocation makes some agent better off without making another worse off. In the representative identical-agent allocation, maximize utility subject to $c\\leq Al$.\n\nMonotonicity makes $c=Al$. The log objective is $\\alpha\\ln(Al)+(1-\\alpha)\\ln(24-l)$; its derivative vanishes at $\\alpha/l=(1-\\alpha)/(24-l)$, so $l=24\\alpha$.\n\nStrict concavity establishes the maximum and efficiency. The competitive allocation attains it.",
     "hint": "Maximize utility directly on the technological frontier.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "An allocation is Pareto efficient if no feasible allocation makes some agent better off without making another worse off. In the representative identical-agent allocation, maximize utility subject to $c\\leq Al$. Monotonicity makes $c=Al$. The log objective is $\\alpha\\ln(Al)+(1-\\alpha)\\ln(24-l)$; its derivative vanishes at $\\alpha/l=(1-\\alpha)/(24-l)$, so $l=24\\alpha$. Strict concavity establishes the maximum and efficiency. The competitive allocation attains it.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "An efficient allocation uses the production frontier because extra feasible consumption is desirable. Substitute c=Al into the household’s utility and maximize directly over labour. This asks which technologically feasible choice gives the highest utility, independently of whether a market decentralizes it. The log transformation preserves the positive utility ranking and makes the labour–leisure tradeoff transparent. Verify that the maximizer is strictly between zero and the 24-hour time endowment."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "An allocation is Pareto efficient if no feasible allocation makes some agent better off without making another worse off. In the representative identical-agent allocation, maximize utility subject to $c\\leq Al$.\n\nMonotonicity makes $c=Al$. The log objective is $\\alpha\\ln(Al)+(1-\\alpha)\\ln(24-l)$; its derivative vanishes at $\\alpha/l=(1-\\alpha)/(24-l)$, so $l=24\\alpha$.\n\nStrict concavity establishes the maximum and efficiency. The competitive allocation attains it."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q5a",
@@ -246,14 +411,25 @@
     "group": "B",
     "stem": "Ms. A receives an annual pension of Rs. 100,000 and harvests 2,000 kg of rice. She spends income on rice $x$ and other expenses $y$, whose price is 1. Last year rice cost Rs. 20/kg and she consumed exactly 2,000 kg. This year rice costs Rs. 30/kg. She has standard convex preferences. Without utility functions or indifference curves: (i) [7 marks] does rice consumption increase, decrease or remain unchanged? (ii) [5 marks] is she better or worse off?",
     "answer": "Rice consumption weakly decreases; she is weakly better off.",
-    "solution": "The old budget is $y\\leq100000+20(2000-x)$; the new one is $y\\leq100000+30(2000-x)$. The old choice $(2000,100000)$ remains available. Every new feasible bundle with $x>2000$ lies strictly inside the old budget, and hence cannot outperform the old optimum under standard monotonic preferences. Thus the new optimum cannot have $x>2000$. Because the old optimum is still feasible, the new optimum is weakly preferred to it. A strict fall and strict welfare gain require additional smoothness/strictness conditions; convexity alone allows the same choice.",
+    "solution": "Rice is both a consumption good and an endowment. The price increase therefore changes the value of wealth as well as the price paid; treating pension alone as her fixed income would give the wrong budget. Both budget lines pass through her old no-trade choice. Above 2000 kg, the new budget offers less other consumption than the old one; below it, the new budget offers more. Revealed preference excludes a move to the dominated, net-buying side while guaranteeing the old utility is still attainable.\n\nThe old budget is $y\\leq100000+20(2000-x)$; the new one is $y\\leq100000+30(2000-x)$. The old choice $(2000,100000)$ remains available.\n\nEvery new feasible bundle with $x>2000$ lies strictly inside the old budget, and hence cannot outperform the old optimum under standard monotonic preferences. Thus the new optimum cannot have $x>2000$.\n\nBecause the old optimum is still feasible, the new optimum is weakly preferred to it. A strict fall and strict welfare gain require additional smoothness/strictness conditions; convexity alone allows the same choice.",
     "hint": "The budget pivots through her endowment bundle.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The old budget is $y\\leq100000+20(2000-x)$; the new one is $y\\leq100000+30(2000-x)$. The old choice $(2000,100000)$ remains available. Every new feasible bundle with $x>2000$ lies strictly inside the old budget, and hence cannot outperform the old optimum under standard monotonic preferences. Thus the new optimum cannot have $x>2000$. Because the old optimum is still feasible, the new optimum is weakly preferred to it. A strict fall and strict welfare gain require additional smoothness/strictness conditions; convexity alone allows the same choice.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Rice is both a consumption good and an endowment. The price increase therefore changes the value of wealth as well as the price paid; treating pension alone as her fixed income would give the wrong budget. Both budget lines pass through her old no-trade choice. Above 2000 kg, the new budget offers less other consumption than the old one; below it, the new budget offers more. Revealed preference excludes a move to the dominated, net-buying side while guaranteeing the old utility is still attainable."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The old budget is $y\\leq100000+20(2000-x)$; the new one is $y\\leq100000+30(2000-x)$. The old choice $(2000,100000)$ remains available.\n\nEvery new feasible bundle with $x>2000$ lies strictly inside the old budget, and hence cannot outperform the old optimum under standard monotonic preferences. Thus the new optimum cannot have $x>2000$.\n\nBecause the old optimum is still feasible, the new optimum is weakly preferred to it. A strict fall and strict welfare gain require additional smoothness/strictness conditions; convexity alone allows the same choice."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q5b",
@@ -262,14 +438,25 @@
     "group": "B",
     "stem": "Mr. B has standard convex preferences, endowment $(e_x,e_y)>0$, no other income, and price of $y$ equal to 1. At price $p_x$ for $x$, he neither buys nor sells $x$. Now selling $x$ earns $p_L<p_x$ and buying $x$ costs $p_H>p_x$. (i) [8 marks] Write and draw the new budget constraint, labelling important points. (ii) [10 marks] Will he buy or sell $x$, and how much? Explain without utility functions or indifference curves.",
     "answer": "Piecewise budget through $(e_x,e_y)$ with slopes $-p_L,-p_H$; no trade.",
-    "solution": "The frontier is $y=e_y+p_L(e_x-x)$ for $0\\leq x\\leq e_x$, and $y=e_y-p_H(x-e_x)$ for $x\\geq e_x$ with $y\\geq0$. Draw a kink at $(e_x,e_y)$, vertical intercept $e_y+p_Le_x$ and horizontal intercept $e_x+e_y/p_H$. The left segment has slope $-p_L$ and the right has slope $-p_H$. Every new feasible trade bundle was strictly inside the old budget $y\\leq e_y+p_x(e_x-x)$. The old optimum, the endowment itself, remains available; no trade bundle can improve on it. Thus purchases and sales are both zero.",
+    "solution": "The consumer’s no-trade endowment remains feasible after the buying–selling spread is introduced. Any sale now earns less than before, and any purchase now costs more. Thus the new budget frontier lies strictly inside the old one at every trade quantity and touches it only at the endowment. No utility formula or indifference-curve drawing is needed: since the endowment was optimal in the larger old set, shrinking the set around it cannot make a formerly available trade preferable.\n\nThe frontier is $y=e_y+p_L(e_x-x)$ for $0\\leq x\\leq e_x$, and $y=e_y-p_H(x-e_x)$ for $x\\geq e_x$ with $y\\geq0$. Draw a kink at $(e_x,e_y)$, vertical intercept $e_y+p_Le_x$ and horizontal intercept $e_x+e_y/p_H$.\n\nThe left segment has slope $-p_L$ and the right has slope $-p_H$. Every new feasible trade bundle was strictly inside the old budget $y\\leq e_y+p_x(e_x-x)$.\n\nThe old optimum, the endowment itself, remains available; no trade bundle can improve on it. Thus purchases and sales are both zero.",
     "hint": "The buy–sell spread contracts the budget around the original optimum.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 18,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The frontier is $y=e_y+p_L(e_x-x)$ for $0\\leq x\\leq e_x$, and $y=e_y-p_H(x-e_x)$ for $x\\geq e_x$ with $y\\geq0$. Draw a kink at $(e_x,e_y)$, vertical intercept $e_y+p_Le_x$ and horizontal intercept $e_x+e_y/p_H$. The left segment has slope $-p_L$ and the right has slope $-p_H$. Every new feasible trade bundle was strictly inside the old budget $y\\leq e_y+p_x(e_x-x)$. The old optimum, the endowment itself, remains available; no trade bundle can improve on it. Thus purchases and sales are both zero.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The consumer’s no-trade endowment remains feasible after the buying–selling spread is introduced. Any sale now earns less than before, and any purchase now costs more. Thus the new budget frontier lies strictly inside the old one at every trade quantity and touches it only at the endowment. No utility formula or indifference-curve drawing is needed: since the endowment was optimal in the larger old set, shrinking the set around it cannot make a formerly available trade preferable."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The frontier is $y=e_y+p_L(e_x-x)$ for $0\\leq x\\leq e_x$, and $y=e_y-p_H(x-e_x)$ for $x\\geq e_x$ with $y\\geq0$. Draw a kink at $(e_x,e_y)$, vertical intercept $e_y+p_Le_x$ and horizontal intercept $e_x+e_y/p_H$.\n\nThe left segment has slope $-p_L$ and the right has slope $-p_H$. Every new feasible trade bundle was strictly inside the old budget $y\\leq e_y+p_x(e_x-x)$.\n\nThe old optimum, the endowment itself, remains available; no trade bundle can improve on it. Thus purchases and sales are both zero."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q6a",
@@ -278,14 +465,25 @@
     "group": "B",
     "stem": "A moneylender has funds for one loan $L$ and faces two applicants, one safe and one risky, whose types he cannot identify. The safe project returns $R>L$ for sure; the risky project returns $R\\prime>R$ with probability $p$ and zero otherwise. Borrowers repay only when returns cover repayment; each knows his type. If both apply, the lender selects one by a fair coin. He lends his own resources and has zero opportunity cost. Find the highest interest rates $i_s$ and $i_r$ at which safe and risky borrowers respectively want a loan. Who is willing to pay more?",
     "answer": "$i_s=R/L-1$, $i_r=R\\prime/L-1>i_s$.",
-    "solution": "The safe borrower receives nonnegative project surplus if $(1+i)L\\leq R$; the risky borrower receives nonnegative expected surplus $p[R\\prime-(1+i)L]$ when success permits repayment. These yield the cutoff rates. Since $R\\prime>R$, the risky type accepts the higher rate. This uses the usual convention that a zero-surplus borrower applies at the cutoff.",
+    "solution": "The borrower compares the loan repayment with project receipts, not with the lender’s expected repayment. With limited liability the risky borrower repays only after success. Her surplus conditional on success falls to zero when repayment reaches the high project return. Multiplication by the success probability changes the expected surplus magnitude but does not change the zero-surplus cutoff, provided that probability is positive. This explains why the risky type can accept a higher interest rate.\n\nThe safe borrower receives nonnegative project surplus if $(1+i)L\\leq R$; the risky borrower receives nonnegative expected surplus $p[R\\prime-(1+i)L]$ when success permits repayment. These yield the cutoff rates.\n\nSince $R\\prime>R$, the risky type accepts the higher rate. This uses the usual convention that a zero-surplus borrower applies at the cutoff.",
     "hint": "Compare promised repayment with each successful project return.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The safe borrower receives nonnegative project surplus if $(1+i)L\\leq R$; the risky borrower receives nonnegative expected surplus $p[R\\prime-(1+i)L]$ when success permits repayment. These yield the cutoff rates. Since $R\\prime>R$, the risky type accepts the higher rate. This uses the usual convention that a zero-surplus borrower applies at the cutoff.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The borrower compares the loan repayment with project receipts, not with the lender’s expected repayment. With limited liability the risky borrower repays only after success. Her surplus conditional on success falls to zero when repayment reaches the high project return. Multiplication by the success probability changes the expected surplus magnitude but does not change the zero-surplus cutoff, provided that probability is positive. This explains why the risky type can accept a higher interest rate."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The safe borrower receives nonnegative project surplus if $(1+i)L\\leq R$; the risky borrower receives nonnegative expected surplus $p[R\\prime-(1+i)L]$ when success permits repayment. These yield the cutoff rates.\n\nSince $R\\prime>R$, the risky type accepts the higher rate. This uses the usual convention that a zero-surplus borrower applies at the cutoff."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q6b",
@@ -294,14 +492,29 @@
     "group": "B",
     "stem": "A moneylender has funds for one loan $L$ and faces two applicants, one safe and one risky, whose types he cannot identify. The safe project returns $R>L$ for sure; the risky project returns $R\\prime>R$ with probability $p$ and zero otherwise. Borrowers repay only when returns cover repayment; each knows his type. If both apply, the lender selects one by a fair coin. He lends his own resources and has zero opportunity cost. The lender maximizes expected profit. Argue that his effective choice is between $i_s$ and $i_r$, excluding rates below both, above both or strictly between them.",
     "answer": "Conditional on making a loan, only $i_s$ and $i_r$ need consideration; no lending must also be considered.",
-    "solution": "Below $i_s$, both types apply, and raising the rate to $i_s$ raises repayment without changing the pool. For $i_s<i<i_r$, only the risky type applies; raising the rate to $i_r$ raises expected repayment. Above $i_r$, neither applies, so the lender makes no loan and earns zero. Thus among positive lending outcomes only the two cutoffs are candidates. However, if both cutoff profits are negative, a rate above $i_r$ and no lending is optimal. The unqualified source assertion therefore omits a necessary outside option.",
+    "solution": "Within a range of interest rates that leaves the applicant pool unchanged, a higher rate increases expected receipts. This pushes candidate lending optima to the two participation cutoffs. But that argument only compares rates at which lending occurs. A profit-maximizing lender can also keep the principal and earn zero; it is essential to retain that option because the next part subtracts the original loan amount as a real cost.\n\nBelow $i_s$, both types apply, and raising the rate to $i_s$ raises repayment without changing the pool. For $i_s<i<i_r$, only the risky type applies; raising the rate to $i_r$ raises expected repayment.\n\nAbove $i_r$, neither applies, so the lender makes no loan and earns zero. Thus among positive lending outcomes only the two cutoffs are candidates.\n\nHowever, if both cutoff profits are negative, a rate above $i_r$ and no lending is optimal. The unqualified source assertion therefore omits a necessary outside option.\n\nSource claim omits no-lending outside option despite subtracting principal L in part (c). Cutoff applications require an indifference convention.",
     "hint": "Hold the applicant pool fixed within each rate interval.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 7,
     "status": "needs_review",
-    "notes": "Source claim omits no-lending outside option despite subtracting principal L in part (c). Cutoff applications require an indifference convention."
+    "notes": "Source claim omits no-lending outside option despite subtracting principal L in part (c). Cutoff applications require an indifference convention.",
+    "solutionOriginal": "Below $i_s$, both types apply, and raising the rate to $i_s$ raises repayment without changing the pool. For $i_s<i<i_r$, only the risky type applies; raising the rate to $i_r$ raises expected repayment. Above $i_r$, neither applies, so the lender makes no loan and earns zero. Thus among positive lending outcomes only the two cutoffs are candidates. However, if both cutoff profits are negative, a rate above $i_r$ and no lending is optimal. The unqualified source assertion therefore omits a necessary outside option.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Within a range of interest rates that leaves the applicant pool unchanged, a higher rate increases expected receipts. This pushes candidate lending optima to the two participation cutoffs. But that argument only compares rates at which lending occurs. A profit-maximizing lender can also keep the principal and earn zero; it is essential to retain that option because the next part subtracts the original loan amount as a real cost."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Below $i_s$, both types apply, and raising the rate to $i_s$ raises repayment without changing the pool. For $i_s<i<i_r$, only the risky type applies; raising the rate to $i_r$ raises expected repayment.\n\nAbove $i_r$, neither applies, so the lender makes no loan and earns zero. Thus among positive lending outcomes only the two cutoffs are candidates.\n\nHowever, if both cutoff profits are negative, a rate above $i_r$ and no lending is optimal. The unqualified source assertion therefore omits a necessary outside option."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Source claim omits no-lending outside option despite subtracting principal L in part (c). Cutoff applications require an indifference convention."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q6c",
@@ -310,14 +523,25 @@
     "group": "B",
     "stem": "A moneylender has funds for one loan $L$ and faces two applicants, one safe and one risky, whose types he cannot identify. The safe project returns $R>L$ for sure; the risky project returns $R\\prime>R$ with probability $p$ and zero otherwise. Borrowers repay only when returns cover repayment; each knows his type. If both apply, the lender selects one by a fair coin. He lends his own resources and has zero opportunity cost. Show that expected profit at $i_r$ is $p(1+i_r)L-L$, and derive expected profit at $i_s$.",
     "answer": "$\\Pi_r=pR\\prime-L$; $\\Pi_s=(1+p)R/2-L$.",
-    "solution": "At $i_r$, only the risky borrower applies and repayment $R\\prime$ occurs with probability $p$, so expected net profit is $pR\\prime-L=p(1+i_r)L-L$. At $i_s$, both apply. With probability $1/2$ the loan goes to the safe type, repaying $R$ for sure; with probability $1/2$ it goes to the risky type, repaying $R$ with probability $p$. Expected repayment is $(1+p)R/2$; subtract principal $L$.",
+    "solution": "Construct expected receipts in the order events occur. First the rate determines who applies. If both apply, the fair coin selects the borrower type. Conditional on selecting a risky borrower, the project succeeds only with probability p. The principal L is paid out in every actual lending event, irrespective of type or success, so subtract it once after averaging receipts. This separates selection risk from default risk and prevents double-counting the loan cost.\n\nAt $i_r$, only the risky borrower applies and repayment $R\\prime$ occurs with probability $p$, so expected net profit is $pR\\prime-L=p(1+i_r)L-L$. At $i_s$, both apply.\n\nWith probability $1/2$ the loan goes to the safe type, repaying $R$ for sure; with probability $1/2$ it goes to the risky type, repaying $R$ with probability $p$. Expected repayment is $(1+p)R/2$; subtract principal $L$.",
     "hint": "Average over both borrower selection and project success.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "At $i_r$, only the risky borrower applies and repayment $R\\prime$ occurs with probability $p$, so expected net profit is $pR\\prime-L=p(1+i_r)L-L$. At $i_s$, both apply. With probability $1/2$ the loan goes to the safe type, repaying $R$ for sure; with probability $1/2$ it goes to the risky type, repaying $R$ with probability $p$. Expected repayment is $(1+p)R/2$; subtract principal $L$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Construct expected receipts in the order events occur. First the rate determines who applies. If both apply, the fair coin selects the borrower type. Conditional on selecting a risky borrower, the project succeeds only with probability p. The principal L is paid out in every actual lending event, irrespective of type or success, so subtract it once after averaging receipts. This separates selection risk from default risk and prevents double-counting the loan cost."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At $i_r$, only the risky borrower applies and repayment $R\\prime$ occurs with probability $p$, so expected net profit is $pR\\prime-L=p(1+i_r)L-L$. At $i_s$, both apply.\n\nWith probability $1/2$ the loan goes to the safe type, repaying $R$ for sure; with probability $1/2$ it goes to the risky type, repaying $R$ with probability $p$. Expected repayment is $(1+p)R/2$; subtract principal $L$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q6d",
@@ -326,14 +550,29 @@
     "group": "B",
     "stem": "A moneylender has funds for one loan $L$ and faces two applicants, one safe and one risky, whose types he cannot identify. The safe project returns $R>L$ for sure; the risky project returns $R\\prime>R$ with probability $p$ and zero otherwise. Borrowers repay only when returns cover repayment; each knows his type. If both apply, the lender selects one by a fair coin. He lends his own resources and has zero opportunity cost. Credit rationing means some willing borrowers cannot obtain loans and lenders do not raise rates to eliminate excess demand. Explain the assertion that a credit-rationing equilibrium occurs when $p<R/(2R\\prime-R)$.",
     "answer": "The inequality makes $i_s$ preferable to $i_r$. For actual lending also require $(1+p)R/2\\geq L$.",
-    "solution": "Comparing cutoff profits gives $\\Pi_s>\\Pi_r$ iff $(1+p)R/2>pR\\prime$, equivalently $p<R/(2R\\prime-R)$. At $i_s$, both applicants want the loan but only one is funded; raising the rate selects only the risky type and reduces expected profit. This is rationing provided lending is preferred to keeping funds, requiring $\\Pi_s\\geq0$. The source inequality alone is insufficient: $L=100,R=110,R\\prime=200,p=0.1$ satisfies it but gives $\\Pi_s=-39.5$ and $\\Pi_r=-80$, so no lending is optimal. Strictly positive $\\Pi_s$ avoids indifference with no lending.",
+    "solution": "The printed inequality compares the profit from lending to the mixed pool with lending only to the risky applicant. To call the resulting choice an equilibrium with rationing, it must also be optimal to lend at all. A numerical counterexample is an appropriate way to expose a missing participation condition: if both candidate loan profits are negative, their ranking is irrelevant because the lender selects zero lending and nobody receives a loan.\n\nComparing cutoff profits gives $\\Pi_s>\\Pi_r$ iff $(1+p)R/2>pR\\prime$, equivalently $p<R/(2R\\prime-R)$. At $i_s$, both applicants want the loan but only one is funded; raising the rate selects only the risky type and reduces expected profit.\n\nThis is rationing provided lending is preferred to keeping funds, requiring $\\Pi_s\\geq0$. The source inequality alone is insufficient: $L=100,R=110,R\\prime=200,p=0.1$ satisfies it but gives $\\Pi_s=-39.5$ and $\\Pi_r=-80$, so no lending is optimal.\n\nStrictly positive $\\Pi_s$ avoids indifference with no lending.\n\nFalse as an unconditional claim: missing lender participation condition; explicit counterexample supplied.",
     "hint": "Compare both loan profits and then compare the winner with zero.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "needs_review",
-    "notes": "False as an unconditional claim: missing lender participation condition; explicit counterexample supplied."
+    "notes": "False as an unconditional claim: missing lender participation condition; explicit counterexample supplied.",
+    "solutionOriginal": "Comparing cutoff profits gives $\\Pi_s>\\Pi_r$ iff $(1+p)R/2>pR\\prime$, equivalently $p<R/(2R\\prime-R)$. At $i_s$, both applicants want the loan but only one is funded; raising the rate selects only the risky type and reduces expected profit. This is rationing provided lending is preferred to keeping funds, requiring $\\Pi_s\\geq0$. The source inequality alone is insufficient: $L=100,R=110,R\\prime=200,p=0.1$ satisfies it but gives $\\Pi_s=-39.5$ and $\\Pi_r=-80$, so no lending is optimal. Strictly positive $\\Pi_s$ avoids indifference with no lending.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The printed inequality compares the profit from lending to the mixed pool with lending only to the risky applicant. To call the resulting choice an equilibrium with rationing, it must also be optimal to lend at all. A numerical counterexample is an appropriate way to expose a missing participation condition: if both candidate loan profits are negative, their ranking is irrelevant because the lender selects zero lending and nobody receives a loan."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Comparing cutoff profits gives $\\Pi_s>\\Pi_r$ iff $(1+p)R/2>pR\\prime$, equivalently $p<R/(2R\\prime-R)$. At $i_s$, both applicants want the loan but only one is funded; raising the rate selects only the risky type and reduces expected profit.\n\nThis is rationing provided lending is preferred to keeping funds, requiring $\\Pi_s\\geq0$. The source inequality alone is insufficient: $L=100,R=110,R\\prime=200,p=0.1$ satisfies it but gives $\\Pi_s=-39.5$ and $\\Pi_r=-80$, so no lending is optimal.\n\nStrictly positive $\\Pi_s$ avoids indifference with no lending."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "False as an unconditional claim: missing lender participation condition; explicit counterexample supplied."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7a",
@@ -342,14 +581,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Set up the utility maximization problem and show the choice variables.",
     "answer": "$\\max_{0<s_t<w_t}\\{\\log(w_t-s_t)+\\beta\\log[(1+r_{t+1})s_t]\\}$.",
-    "solution": "Choose $c_{1,t},c_{2,t+1}>0$ and $s_t$ to maximize the stated utility subject to the two budget constraints. Substituting both constraints yields the equivalent one-variable problem in the answer, assuming $1+r_{t+1}>0$.",
+    "solution": "There are three named quantities but only one independent choice. Once saving s is fixed, the two budget equalities determine both consumption levels. Positive logarithmic consumption requires 0<s<w and a positive gross return. Substituting the budgets creates an unconstrained one-dimensional maximization on this open interval, whose endpoint marginal utilities will later guarantee an interior optimum. Writing the domain is part of setting up the economic problem.\n\nChoose $c_{1,t},c_{2,t+1}>0$ and $s_t$ to maximize the stated utility subject to the two budget constraints. Substituting both constraints yields the equivalent one-variable problem in the answer, assuming $1+r_{t+1}>0$.",
     "hint": "Substitute both budget constraints into utility.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Choose $c_{1,t},c_{2,t+1}>0$ and $s_t$ to maximize the stated utility subject to the two budget constraints. Substituting both constraints yields the equivalent one-variable problem in the answer, assuming $1+r_{t+1}>0$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "There are three named quantities but only one independent choice. Once saving s is fixed, the two budget equalities determine both consumption levels. Positive logarithmic consumption requires 0<s<w and a positive gross return. Substituting the budgets creates an unconstrained one-dimensional maximization on this open interval, whose endpoint marginal utilities will later guarantee an interior optimum. Writing the domain is part of setting up the economic problem."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Choose $c_{1,t},c_{2,t+1}>0$ and $s_t$ to maximize the stated utility subject to the two budget constraints. Substituting both constraints yields the equivalent one-variable problem in the answer, assuming $1+r_{t+1}>0$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7b",
@@ -358,14 +608,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Write the first-order conditions, derive saving, and explain its dependence on the interest rate.",
     "answer": "$s_t=\\beta w_t/(1+\\beta)$, independent of $r_{t+1}$ holding wages fixed.",
-    "solution": "The derivative is $-1/(w_t-s_t)+\\beta/s_t=0$. Thus $\\beta(w_t-s_t)=s_t$, giving the answer. The second derivative is $-1/(w_t-s_t)^2-\\beta/s_t^2<0$, so the solution is the unique maximum. Since the interest rate appears only in the additive term $\\beta\\log(1+r_{t+1})$, it does not affect the optimal saving amount for positive gross return.",
+    "solution": "The second-period utility term decomposes as $\\beta\\ln[(1+r)s]=\\beta\\ln(1+r)+\\beta\\ln s$. Holding the wage fixed, a change in the return adds a constant to utility, leaving the saving argmax unchanged. The first-order condition formalizes this exact cancellation of income and substitution effects for logarithmic utility. It is not a general claim that saving never responds to interest, nor that consumption in old age is return-independent.\n\nThe derivative is $-1/(w_t-s_t)+\\beta/s_t=0$. Thus $\\beta(w_t-s_t)=s_t$, giving the answer.\n\nThe second derivative is $-1/(w_t-s_t)^2-\\beta/s_t^2<0$, so the solution is the unique maximum. Since the interest rate appears only in the additive term $\\beta\\log(1+r_{t+1})$, it does not affect the optimal saving amount for positive gross return.",
     "hint": "Log utility makes the return term additive.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The derivative is $-1/(w_t-s_t)+\\beta/s_t=0$. Thus $\\beta(w_t-s_t)=s_t$, giving the answer. The second derivative is $-1/(w_t-s_t)^2-\\beta/s_t^2<0$, so the solution is the unique maximum. Since the interest rate appears only in the additive term $\\beta\\log(1+r_{t+1})$, it does not affect the optimal saving amount for positive gross return.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The second-period utility term decomposes as $\\beta\\ln[(1+r)s]=\\beta\\ln(1+r)+\\beta\\ln s$. Holding the wage fixed, a change in the return adds a constant to utility, leaving the saving argmax unchanged. The first-order condition formalizes this exact cancellation of income and substitution effects for logarithmic utility. It is not a general claim that saving never responds to interest, nor that consumption in old age is return-independent."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The derivative is $-1/(w_t-s_t)+\\beta/s_t=0$. Thus $\\beta(w_t-s_t)=s_t$, giving the answer.\n\nThe second derivative is $-1/(w_t-s_t)^2-\\beta/s_t^2<0$, so the solution is the unique maximum. Since the interest rate appears only in the additive term $\\beta\\log(1+r_{t+1})$, it does not affect the optimal saving amount for positive gross return."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7c",
@@ -374,14 +635,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Production is $Y_t=AK_t^\\alpha L_t^{1-\\alpha}$, $0<\\alpha<1$, competitive factor prices and full capital depreciation. Derive the equilibrium wage $w_t$ in terms of $K_t$, remembering $L_t=1$.",
     "answer": "$w_t=(1-\\alpha)AK_t^\\alpha$.",
-    "solution": "The competitive wage equals $\\partial Y_t/\\partial L_t=(1-\\alpha)AK_t^\\alpha L_t^{-\\alpha}$. Unit labour supply makes $L_t=1$, giving the result.",
+    "solution": "The competitive wage is the marginal product of an additional unit of labour, holding capital fixed. Differentiate the aggregate production function before substituting the equilibrium labour supply:\n\n$$\\frac{\\partial Y}{\\partial L}=(1-\\alpha)AK^\\alpha L^{-\\alpha}.$$\n\nBecause population has mass one and everyone supplies one labour unit, aggregate L equals one. This is why the result can be expressed solely in K without an additional population denominator.\n\nThe competitive wage equals $\\partial Y_t/\\partial L_t=(1-\\alpha)AK_t^\\alpha L_t^{-\\alpha}$. Unit labour supply makes $L_t=1$, giving the result.",
     "hint": "Differentiate with respect to labour before substituting $L=1$.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The competitive wage equals $\\partial Y_t/\\partial L_t=(1-\\alpha)AK_t^\\alpha L_t^{-\\alpha}$. Unit labour supply makes $L_t=1$, giving the result.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The competitive wage is the marginal product of an additional unit of labour, holding capital fixed. Differentiate the aggregate production function before substituting the equilibrium labour supply:\n\n$$\\frac{\\partial Y}{\\partial L}=(1-\\alpha)AK^\\alpha L^{-\\alpha}.$$\n\nBecause population has mass one and everyone supplies one labour unit, aggregate L equals one. This is why the result can be expressed solely in K without an additional population denominator."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The competitive wage equals $\\partial Y_t/\\partial L_t=(1-\\alpha)AK_t^\\alpha L_t^{-\\alpha}$. Unit labour supply makes $L_t=1$, giving the result."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7d",
@@ -390,14 +662,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Production is $Y_t=AK_t^\\alpha L_t^{1-\\alpha}$, $0<\\alpha<1$, competitive factor prices and full capital depreciation. A fraction $0<\\theta<1$ of aggregate savings is lost during financial intermediation. Derive $K_{t+1}$ as a function of $K_t$.",
     "answer": "$K_{t+1}=BK_t^\\alpha$, $B=(1-\\theta)\\beta(1-\\alpha)A/(1+\\beta)$.",
-    "solution": "With full depreciation, next period capital equals newly intermediated saving: $K_{t+1}=(1-\\theta)s_t$. Using $s_t=\\beta w_t/(1+\\beta)$ and $w_t=(1-\\alpha)AK_t^\\alpha$ yields the stated law of motion.",
+    "solution": "Capital depreciates fully, so next period does not inherit a surviving fraction of today’s installed capital. Its whole capital stock must come from current saving that reaches production. First derive the saving share of wages, then the wage share of output, then apply the fraction 1-theta that survives intermediation. With a unit population individual and aggregate saving coincide, avoiding any extra population multiplier.\n\nWith full depreciation, next period capital equals newly intermediated saving: $K_{t+1}=(1-\\theta)s_t$. Using $s_t=\\beta w_t/(1+\\beta)$ and $w_t=(1-\\alpha)AK_t^\\alpha$ yields the stated law of motion.",
     "hint": "Only the fraction of saving that survives becomes capital.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With full depreciation, next period capital equals newly intermediated saving: $K_{t+1}=(1-\\theta)s_t$. Using $s_t=\\beta w_t/(1+\\beta)$ and $w_t=(1-\\alpha)AK_t^\\alpha$ yields the stated law of motion.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Capital depreciates fully, so next period does not inherit a surviving fraction of today’s installed capital. Its whole capital stock must come from current saving that reaches production. First derive the saving share of wages, then the wage share of output, then apply the fraction 1-theta that survives intermediation. With a unit population individual and aggregate saving coincide, avoiding any extra population multiplier."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "With full depreciation, next period capital equals newly intermediated saving: $K_{t+1}=(1-\\theta)s_t$. Using $s_t=\\beta w_t/(1+\\beta)$ and $w_t=(1-\\alpha)AK_t^\\alpha$ yields the stated law of motion."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7e",
@@ -406,14 +689,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Production is $Y_t=AK_t^\\alpha L_t^{1-\\alpha}$, $0<\\alpha<1$, competitive factor prices and full capital depreciation. A fraction $0<\\theta<1$ of aggregate savings is lost during financial intermediation. Derive steady-state capital.",
     "answer": "$K^*=[(1-\\theta)\\beta(1-\\alpha)A/(1+\\beta)]^{1/(1-\\alpha)}$.",
-    "solution": "Write the law of motion as $K_{t+1}=BK_t^\\alpha$. A positive fixed point satisfies $(K^*)^{1-\\alpha}=B$, hence the formula. Zero is also a mathematical fixed point if the zero-capital boundary is admitted, but does not permit positive log consumption.",
+    "solution": "A steady state is a fixed point of the capital transition, not a point where the current saving amount is zero. For positive K, dividing $K=BK^\\alpha$ by $K^\\alpha$ gives $K^{1-\\alpha}=B$. The exponent is positive because 0<alpha<1, so there is a unique positive solution. The zero fixed point is a separate boundary: it is mathematically stationary but cannot support the positive consumptions required by logarithmic utility.\n\nWrite the law of motion as $K_{t+1}=BK_t^\\alpha$. A positive fixed point satisfies $(K^*)^{1-\\alpha}=B$, hence the formula. Zero is also a mathematical fixed point if the zero-capital boundary is admitted, but does not permit positive log consumption.",
     "hint": "Solve the positive fixed-point equation.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Write the law of motion as $K_{t+1}=BK_t^\\alpha$. A positive fixed point satisfies $(K^*)^{1-\\alpha}=B$, hence the formula. Zero is also a mathematical fixed point if the zero-capital boundary is admitted, but does not permit positive log consumption.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A steady state is a fixed point of the capital transition, not a point where the current saving amount is zero. For positive K, dividing $K=BK^\\alpha$ by $K^\\alpha$ gives $K^{1-\\alpha}=B$. The exponent is positive because 0<alpha<1, so there is a unique positive solution. The zero fixed point is a separate boundary: it is mathematically stationary but cannot support the positive consumptions required by logarithmic utility."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Write the law of motion as $K_{t+1}=BK_t^\\alpha$. A positive fixed point satisfies $(K^*)^{1-\\alpha}=B$, hence the formula. Zero is also a mathematical fixed point if the zero-capital boundary is admitted, but does not permit positive log consumption."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q7f",
@@ -422,14 +716,25 @@
     "group": "C",
     "stem": "Identical agents of mass 1 live for youth and old age. Utility is $\\log c_{1,t}+\\beta\\log c_{2,t+1}$, $0<\\beta<1$. Each supplies one unit of labour when young, earning $w_t$, and faces $c_{1,t}+s_t=w_t$, $c_{2,t+1}=(1+r_{t+1})s_t$. Production is $Y_t=AK_t^\\alpha L_t^{1-\\alpha}$, $0<\\alpha<1$, competitive factor prices and full capital depreciation. A fraction $0<\\theta<1$ of aggregate savings is lost during financial intermediation. How does steady-state capital depend on financial-sector inefficiency $\\theta$?",
     "answer": "$\\partial K^*/\\partial\\theta=-K^*/[(1-\\alpha)(1-\\theta)]<0$.",
-    "solution": "Take logs of the positive steady state: $\\log K^*=[\\log(1-\\theta)+\\log(\\beta(1-\\alpha)A/(1+\\beta))]/(1-\\alpha)$. Differentiating gives the stated derivative. More intermediation losses reduce effective investment and steady-state capital.",
+    "solution": "The parameter theta is a loss rate, so the effective-investment coefficient is proportional to 1-theta. Raising theta must therefore lower the positive capital fixed point. Logarithmic differentiation is convenient because it turns the steady-state power into a constant multiplier. The elasticity of K with respect to surviving efficiency 1-theta is $1/(1-\\alpha)$, showing that the long-run capital response magnifies the direct investment loss.\n\nTake logs of the positive steady state: $\\log K^*=[\\log(1-\\theta)+\\log(\\beta(1-\\alpha)A/(1+\\beta))]/(1-\\alpha)$. Differentiating gives the stated derivative. More intermediation losses reduce effective investment and steady-state capital.",
     "hint": "Log-differentiate the steady-state expression.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Take logs of the positive steady state: $\\log K^*=[\\log(1-\\theta)+\\log(\\beta(1-\\alpha)A/(1+\\beta))]/(1-\\alpha)$. Differentiating gives the stated derivative. More intermediation losses reduce effective investment and steady-state capital.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The parameter theta is a loss rate, so the effective-investment coefficient is proportional to 1-theta. Raising theta must therefore lower the positive capital fixed point. Logarithmic differentiation is convenient because it turns the steady-state power into a constant multiplier. The elasticity of K with respect to surviving efficiency 1-theta is $1/(1-\\alpha)$, showing that the long-run capital response magnifies the direct investment loss."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Take logs of the positive steady state: $\\log K^*=[\\log(1-\\theta)+\\log(\\beta(1-\\alpha)A/(1+\\beta))]/(1-\\alpha)$. Differentiating gives the stated derivative. More intermediation losses reduce effective investment and steady-state capital."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q8a",
@@ -438,14 +743,25 @@
     "group": "C",
     "stem": "Consider $Y=K^\\alpha(AL)^{1-\\alpha}$, $\\alpha\\in[0,1]$, $\\dot K=sY-\\delta K$, $s,\\delta\\in[0,1]$, population growth $n>0$, $Z=K/(AL)$, and output per worker $Q=AZ^\\alpha$. Initially technology grows at the constant rate $g>0$. Derive $\\dot Z/Z$.",
     "answer": "$\\dot Z/Z=sZ^{\\alpha-1}-\\delta-g-n$.",
-    "solution": "Log differentiation gives $\\dot Z/Z=\\dot K/K-\\dot A/A-\\dot L/L$. Since $Y/K=Z^{\\alpha-1}$, substitute $\\dot K/K=sZ^{\\alpha-1}-\\delta$, technology growth $g$ and population growth $n$. The ratio formula is for $Z>0$.",
+    "solution": "Z divides capital by effective labour AL, so its proportional growth is capital growth minus both population and technology growth. Capital growth itself is saving times the output–capital ratio, less depreciation. Express that ratio in Z before combining the terms. Forgetting the technology term would treat Z as capital per person rather than capital per effective worker and would give the wrong steady-state dilution rate.\n\nLog differentiation gives $\\dot Z/Z=\\dot K/K-\\dot A/A-\\dot L/L$. Since $Y/K=Z^{\\alpha-1}$, substitute $\\dot K/K=sZ^{\\alpha-1}-\\delta$, technology growth $g$ and population growth $n$. The ratio formula is for $Z>0$.",
     "hint": "Differentiate $\\log Z$.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Log differentiation gives $\\dot Z/Z=\\dot K/K-\\dot A/A-\\dot L/L$. Since $Y/K=Z^{\\alpha-1}$, substitute $\\dot K/K=sZ^{\\alpha-1}-\\delta$, technology growth $g$ and population growth $n$. The ratio formula is for $Z>0$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Z divides capital by effective labour AL, so its proportional growth is capital growth minus both population and technology growth. Capital growth itself is saving times the output–capital ratio, less depreciation. Express that ratio in Z before combining the terms. Forgetting the technology term would treat Z as capital per person rather than capital per effective worker and would give the wrong steady-state dilution rate."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Log differentiation gives $\\dot Z/Z=\\dot K/K-\\dot A/A-\\dot L/L$. Since $Y/K=Z^{\\alpha-1}$, substitute $\\dot K/K=sZ^{\\alpha-1}-\\delta$, technology growth $g$ and population growth $n$. The ratio formula is for $Z>0$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q8b",
@@ -454,14 +770,25 @@
     "group": "C",
     "stem": "Consider $Y=K^\\alpha(AL)^{1-\\alpha}$, $\\alpha\\in[0,1]$, $\\dot K=sY-\\delta K$, $s,\\delta\\in[0,1]$, population growth $n>0$, $Z=K/(AL)$, and output per worker $Q=AZ^\\alpha$. Instead assume learning by doing, $\\dot A=\\gamma Q$. Show $\\dot Z=(s-\\gamma Z)Z^\\alpha-(\\delta+n)Z$.",
     "answer": "$\\dot Z=(s-\\gamma Z)Z^\\alpha-(\\delta+n)Z$.",
-    "solution": "Learning implies $\\dot A/A=\\gamma Q/A=\\gamma Z^\\alpha$. Replace $g$ by this endogenous technology growth rate in $\\dot Z/Z=sZ^{\\alpha-1}-\\delta-n-g$ and multiply by $Z$ to obtain the required law.",
+    "solution": "The new assumption specifies a change in the technology level, not a constant technology growth rate. Divide $\\dot A=\\gamma Q$ by A and use $Q=AZ^\\alpha$ to obtain the endogenous rate $\\dot A/A=\\gamma Z^\\alpha$. Only then substitute it into the growth accounting identity for Z. Multiplying by Z explains the additional power in the technology-dilution term $-\\gamma Z^{1+\\alpha}$.\n\nLearning implies $\\dot A/A=\\gamma Q/A=\\gamma Z^\\alpha$. Replace $g$ by this endogenous technology growth rate in $\\dot Z/Z=sZ^{\\alpha-1}-\\delta-n-g$ and multiply by $Z$ to obtain the required law.",
     "hint": "First express technology growth in terms of $Z$.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Learning implies $\\dot A/A=\\gamma Q/A=\\gamma Z^\\alpha$. Replace $g$ by this endogenous technology growth rate in $\\dot Z/Z=sZ^{\\alpha-1}-\\delta-n-g$ and multiply by $Z$ to obtain the required law.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The new assumption specifies a change in the technology level, not a constant technology growth rate. Divide $\\dot A=\\gamma Q$ by A and use $Q=AZ^\\alpha$ to obtain the endogenous rate $\\dot A/A=\\gamma Z^\\alpha$. Only then substitute it into the growth accounting identity for Z. Multiplying by Z explains the additional power in the technology-dilution term $-\\gamma Z^{1+\\alpha}$."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Learning implies $\\dot A/A=\\gamma Q/A=\\gamma Z^\\alpha$. Replace $g$ by this endogenous technology growth rate in $\\dot Z/Z=sZ^{\\alpha-1}-\\delta-n-g$ and multiply by $Z$ to obtain the required law."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q8c",
@@ -470,14 +797,25 @@
     "group": "C",
     "stem": "Consider $Y=K^\\alpha(AL)^{1-\\alpha}$, $\\alpha\\in[0,1]$, $\\dot K=sY-\\delta K$, $s,\\delta\\in[0,1]$, population growth $n>0$, $Z=K/(AL)$, and output per worker $Q=AZ^\\alpha$. With $\\dot A=\\gamma Q$, draw a diagram describing growth dynamics, with $Z$ on the horizontal axis and suitable functions on the vertical axis.",
     "answer": "For $0<\\alpha<1$, $s>0$, $\\gamma>0$, the unique positive steady state solves $s=\\gamma Z^*+(\\delta+n)(Z^*)^{1-\\alpha}$ and is stable.",
-    "solution": "Let $d=\\delta+n>0$. For $Z>0$, plot $sZ^{\\alpha-1}$ (strictly decreasing from infinity to zero) and $d+\\gamma Z^\\alpha$ (strictly increasing from $d$). Their unique intersection is $Z^*$. The vertical gap equals $\\dot Z/Z$: arrows point right below $Z^*$ and left above it. Equivalently plot $(s-\\gamma Z)Z^\\alpha$ and $dZ$. Endpoints require separate treatment: for $\\alpha=0$, $\\dot Z=s-(\\gamma+d)Z$ with $Z^*=s/(\\gamma+d)$; for $\\alpha=1$, $\\dot Z=(s-d)Z-\\gamma Z^2$, so a positive steady state exists only if $s>d$, at $(s-d)/\\gamma$. If $s=0$, no positive steady state exists.",
+    "solution": "For a phase diagram it is useful to divide the capital law by positive Z. Plot the investment-to-capital term on one side and effective dilution on the other:\n\n$$\\frac{\\dot Z}{Z}=sZ^{\\alpha-1}-[\\delta+n+\\gamma Z^\\alpha].$$\n\nIn the interior parameter case the first curve decreases while the second increases, giving exactly one positive intersection. Read stability from the sign of their vertical gap. Endpoint exponents change these curve shapes, so they must be handled separately rather than copied into the same strict-monotonicity proof.\n\nLet $d=\\delta+n>0$. For $Z>0$, plot $sZ^{\\alpha-1}$ (strictly decreasing from infinity to zero) and $d+\\gamma Z^\\alpha$ (strictly increasing from $d$).\n\nTheir unique intersection is $Z^*$. The vertical gap equals $\\dot Z/Z$: arrows point right below $Z^*$ and left above it.\n\nEquivalently plot $(s-\\gamma Z)Z^\\alpha$ and $dZ$. Endpoints require separate treatment: for $\\alpha=0$, $\\dot Z=s-(\\gamma+d)Z$ with $Z^*=s/(\\gamma+d)$; for $\\alpha=1$, $\\dot Z=(s-d)Z-\\gamma Z^2$, so a positive steady state exists only if $s>d$, at $(s-d)/\\gamma$.\n\nIf $s=0$, no positive steady state exists.",
     "hint": "Plot investment per unit capital against effective depreciation.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Source includes endpoints alpha=0,1 and s=0; standard interior phase diagram qualified accordingly. Positive learning coefficient gamma is assumed."
+    "notes": "Source includes endpoints alpha=0,1 and s=0; standard interior phase diagram qualified accordingly. Positive learning coefficient gamma is assumed.",
+    "solutionOriginal": "Let $d=\\delta+n>0$. For $Z>0$, plot $sZ^{\\alpha-1}$ (strictly decreasing from infinity to zero) and $d+\\gamma Z^\\alpha$ (strictly increasing from $d$). Their unique intersection is $Z^*$. The vertical gap equals $\\dot Z/Z$: arrows point right below $Z^*$ and left above it. Equivalently plot $(s-\\gamma Z)Z^\\alpha$ and $dZ$. Endpoints require separate treatment: for $\\alpha=0$, $\\dot Z=s-(\\gamma+d)Z$ with $Z^*=s/(\\gamma+d)$; for $\\alpha=1$, $\\dot Z=(s-d)Z-\\gamma Z^2$, so a positive steady state exists only if $s>d$, at $(s-d)/\\gamma$. If $s=0$, no positive steady state exists.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "For a phase diagram it is useful to divide the capital law by positive Z. Plot the investment-to-capital term on one side and effective dilution on the other:\n\n$$\\frac{\\dot Z}{Z}=sZ^{\\alpha-1}-[\\delta+n+\\gamma Z^\\alpha].$$\n\nIn the interior parameter case the first curve decreases while the second increases, giving exactly one positive intersection. Read stability from the sign of their vertical gap. Endpoint exponents change these curve shapes, so they must be handled separately rather than copied into the same strict-monotonicity proof."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Let $d=\\delta+n>0$. For $Z>0$, plot $sZ^{\\alpha-1}$ (strictly decreasing from infinity to zero) and $d+\\gamma Z^\\alpha$ (strictly increasing from $d$).\n\nTheir unique intersection is $Z^*$. The vertical gap equals $\\dot Z/Z$: arrows point right below $Z^*$ and left above it.\n\nEquivalently plot $(s-\\gamma Z)Z^\\alpha$ and $dZ$. Endpoints require separate treatment: for $\\alpha=0$, $\\dot Z=s-(\\gamma+d)Z$ with $Z^*=s/(\\gamma+d)$; for $\\alpha=1$, $\\dot Z=(s-d)Z-\\gamma Z^2$, so a positive steady state exists only if $s>d$, at $(s-d)/\\gamma$.\n\nIf $s=0$, no positive steady state exists."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q8d",
@@ -486,14 +824,25 @@
     "group": "C",
     "stem": "Consider $Y=K^\\alpha(AL)^{1-\\alpha}$, $\\alpha\\in[0,1]$, $\\dot K=sY-\\delta K$, $s,\\delta\\in[0,1]$, population growth $n>0$, $Z=K/(AL)$, and output per worker $Q=AZ^\\alpha$. With learning by doing, does a higher investment rate raise the balanced-growth rate, unlike the model without learning? Use the diagram to distinguish level effects and growth effects.",
     "answer": "For $0<\\alpha<1$, $s>0$, $\\gamma>0$, higher $s$ raises $Z^*$ and per-worker growth $g^*=\\gamma(Z^*)^\\alpha$.",
-    "solution": "In the phase diagram, raising $s$ shifts the declining curve $sZ^{\\alpha-1}$ up, moving its intersection with $d+\\gamma Z^\\alpha$ right. Since $s=\\gamma Z^*+d(Z^*)^{1-\\alpha}$ has a strictly increasing right-hand side, $Z^*$ rises. On the balanced-growth path, $Z$ is constant, so $Q=AZ^\\alpha$ grows at $g^*=\\gamma(Z^*)^\\alpha$, which therefore rises. Aggregate output grows at $n+g^*$. In the standard interior Solow model with exogenous $g$, changing $s$ changes the level but not long-run per-worker growth $g$. Endpoint qualifications: at $\\alpha=0$, $g^*=\\gamma$ is independent of $s$; at $\\alpha=1$, a positive steady state requires $s>d$ and then $g^*=s-d$. The usual exogenous-growth Solow comparison also presumes $0<\\alpha<1$.",
+    "solution": "Learning makes the technology growth rate depend on the steady-state capital intensity. Thus a permanent change in saving can change a growth rate even after the adjustment of Z is complete. With exogenous technology, the same saving change shifts only the level of capital per effective worker. In either model the level may grow during transition, so distinguish a temporary acceleration from a changed balanced-growth rate. The alpha=0 endpoint removes the channel because technology growth then equals gamma whatever Z is.\n\nIn the phase diagram, raising $s$ shifts the declining curve $sZ^{\\alpha-1}$ up, moving its intersection with $d+\\gamma Z^\\alpha$ right. Since $s=\\gamma Z^*+d(Z^*)^{1-\\alpha}$ has a strictly increasing right-hand side, $Z^*$ rises.\n\nOn the balanced-growth path, $Z$ is constant, so $Q=AZ^\\alpha$ grows at $g^*=\\gamma(Z^*)^\\alpha$, which therefore rises. Aggregate output grows at $n+g^*$.\n\nIn the standard interior Solow model with exogenous $g$, changing $s$ changes the level but not long-run per-worker growth $g$. Endpoint qualifications: at $\\alpha=0$, $g^*=\\gamma$ is independent of $s$; at $\\alpha=1$, a positive steady state requires $s>d$ and then $g^*=s-d$.\n\nThe usual exogenous-growth Solow comparison also presumes $0<\\alpha<1$.",
     "hint": "Read how the steady-state technology growth rate changes when the intersection moves.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Growth-effect claim is not universal over the source’s closed alpha interval; alpha=0 exception explicitly retained."
+    "notes": "Growth-effect claim is not universal over the source’s closed alpha interval; alpha=0 exception explicitly retained.",
+    "solutionOriginal": "In the phase diagram, raising $s$ shifts the declining curve $sZ^{\\alpha-1}$ up, moving its intersection with $d+\\gamma Z^\\alpha$ right. Since $s=\\gamma Z^*+d(Z^*)^{1-\\alpha}$ has a strictly increasing right-hand side, $Z^*$ rises. On the balanced-growth path, $Z$ is constant, so $Q=AZ^\\alpha$ grows at $g^*=\\gamma(Z^*)^\\alpha$, which therefore rises. Aggregate output grows at $n+g^*$. In the standard interior Solow model with exogenous $g$, changing $s$ changes the level but not long-run per-worker growth $g$. Endpoint qualifications: at $\\alpha=0$, $g^*=\\gamma$ is independent of $s$; at $\\alpha=1$, a positive steady state requires $s>d$ and then $g^*=s-d$. The usual exogenous-growth Solow comparison also presumes $0<\\alpha<1$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Learning makes the technology growth rate depend on the steady-state capital intensity. Thus a permanent change in saving can change a growth rate even after the adjustment of Z is complete. With exogenous technology, the same saving change shifts only the level of capital per effective worker. In either model the level may grow during transition, so distinguish a temporary acceleration from a changed balanced-growth rate. The alpha=0 endpoint removes the channel because technology growth then equals gamma whatever Z is."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "In the phase diagram, raising $s$ shifts the declining curve $sZ^{\\alpha-1}$ up, moving its intersection with $d+\\gamma Z^\\alpha$ right. Since $s=\\gamma Z^*+d(Z^*)^{1-\\alpha}$ has a strictly increasing right-hand side, $Z^*$ rises.\n\nOn the balanced-growth path, $Z$ is constant, so $Q=AZ^\\alpha$ grows at $g^*=\\gamma(Z^*)^\\alpha$, which therefore rises. Aggregate output grows at $n+g^*$.\n\nIn the standard interior Solow model with exogenous $g$, changing $s$ changes the level but not long-run per-worker growth $g$. Endpoint qualifications: at $\\alpha=0$, $g^*=\\gamma$ is independent of $s$; at $\\alpha=1$, a positive steady state requires $s>d$ and then $g^*=s-d$.\n\nThe usual exogenous-growth Solow comparison also presumes $0<\\alpha<1$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q9a",
@@ -502,14 +851,25 @@
     "group": "C",
     "stem": "A household lives from $t$ through $T$, maximizes $\\sum_{n=t}^T\\beta^{n-t}\\ln c_n$ with $0<\\beta<1$, earns income $y_n$, saves $s_n$, and faces constant gross return $R=1+r>0$. Its only activities are consuming and saving. Write all period budget constraints and combine them into a lifetime budget constraint with consumption on the left and income on the right.",
     "answer": "$c_n+s_n=y_n+Rs_{n-1}$; $\\sum_{n=t}^T c_n/R^{n-t}=\\sum_{n=t}^T y_n/R^{n-t}$.",
-    "solution": "Set initial wealth $s_{t-1}=0$ and terminal saving $s_T=0$ (no bequest). For each $n=t,\\ldots,T$, the budget is $c_n+s_n=y_n+Rs_{n-1}$. Divide by $R^{n-t}$ and sum. Intermediate saving terms cancel telescopically, and the endpoint terms vanish, giving the present-value budget in the answer.",
+    "solution": "Savings links consecutive period budgets. To add those budgets without counting the same transferred resources twice, discount period n by $R^{n-t}$. The discounted saving carried out of one period then cancels the discounted saving returned next period. Initial wealth and terminal assets are boundary terms, so specify them explicitly; zero initial wealth and no bequest are what make the final constraint contain only income and consumption.\n\nSet initial wealth $s_{t-1}=0$ and terminal saving $s_T=0$ (no bequest). For each $n=t,\\ldots,T$, the budget is $c_n+s_n=y_n+Rs_{n-1}$.\n\nDivide by $R^{n-t}$ and sum. Intermediate saving terms cancel telescopically, and the endpoint terms vanish, giving the present-value budget in the answer.",
     "hint": "Discount the period constraints so saving cancels.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending."
+    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending.",
+    "solutionOriginal": "Set initial wealth $s_{t-1}=0$ and terminal saving $s_T=0$ (no bequest). For each $n=t,\\ldots,T$, the budget is $c_n+s_n=y_n+Rs_{n-1}$. Divide by $R^{n-t}$ and sum. Intermediate saving terms cancel telescopically, and the endpoint terms vanish, giving the present-value budget in the answer.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "Savings links consecutive period budgets. To add those budgets without counting the same transferred resources twice, discount period n by $R^{n-t}$. The discounted saving carried out of one period then cancels the discounted saving returned next period. Initial wealth and terminal assets are boundary terms, so specify them explicitly; zero initial wealth and no bequest are what make the final constraint contain only income and consumption."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Set initial wealth $s_{t-1}=0$ and terminal saving $s_T=0$ (no bequest). For each $n=t,\\ldots,T$, the budget is $c_n+s_n=y_n+Rs_{n-1}$.\n\nDivide by $R^{n-t}$ and sum. Intermediate saving terms cancel telescopically, and the endpoint terms vanish, giving the present-value budget in the answer."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q9b",
@@ -518,14 +878,25 @@
     "group": "C",
     "stem": "A household lives from $t$ through $T$, maximizes $\\sum_{n=t}^T\\beta^{n-t}\\ln c_n$ with $0<\\beta<1$, earns income $y_n$, saves $s_n$, and faces constant gross return $R=1+r>0$. Its only activities are consuming and saving. Find the condition relating $\\beta$ and $r$ under which optimal consumption is constant, $\\widetilde C$, in every period.",
     "answer": "$\\beta(1+r)=1$.",
-    "solution": "The first-order conditions for the lifetime present-value budget are $\\beta^{n-t}/c_n=\\lambda R^{-(n-t)}$. Taking consecutive ratios gives $c_{n+1}=\\beta R c_n$. Hence a positive constant consumption path requires and, for the unconstrained optimum, is implied by $\\beta R=1$.",
+    "solution": "The optimum equates marginal utility per unit of present-value cost across dates. A future consumption unit costs 1/R of a current unit but is weighted by beta in utility. With logarithms this yields a constant growth factor beta R between adjacent consumption levels. Flat consumption is therefore a special balance of patience and market return, not an automatic consequence of concavity or a constant interest rate.\n\nThe first-order conditions for the lifetime present-value budget are $\\beta^{n-t}/c_n=\\lambda R^{-(n-t)}$. Taking consecutive ratios gives $c_{n+1}=\\beta R c_n$. Hence a positive constant consumption path requires and, for the unconstrained optimum, is implied by $\\beta R=1$.",
     "hint": "Use the Euler equation.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending."
+    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending.",
+    "solutionOriginal": "The first-order conditions for the lifetime present-value budget are $\\beta^{n-t}/c_n=\\lambda R^{-(n-t)}$. Taking consecutive ratios gives $c_{n+1}=\\beta R c_n$. Hence a positive constant consumption path requires and, for the unconstrained optimum, is implied by $\\beta R=1$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "The optimum equates marginal utility per unit of present-value cost across dates. A future consumption unit costs 1/R of a current unit but is weighted by beta in utility. With logarithms this yields a constant growth factor beta R between adjacent consumption levels. Flat consumption is therefore a special balance of patience and market return, not an automatic consequence of concavity or a constant interest rate."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The first-order conditions for the lifetime present-value budget are $\\beta^{n-t}/c_n=\\lambda R^{-(n-t)}$. Taking consecutive ratios gives $c_{n+1}=\\beta R c_n$. Hence a positive constant consumption path requires and, for the unconstrained optimum, is implied by $\\beta R=1$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q9c",
@@ -534,14 +905,25 @@
     "group": "C",
     "stem": "A household lives from $t$ through $T$, maximizes $\\sum_{n=t}^T\\beta^{n-t}\\ln c_n$ with $0<\\beta<1$, earns income $y_n$, saves $s_n$, and faces constant gross return $R=1+r>0$. Its only activities are consuming and saving. Assume $\\beta R=1$. (i) [3 marks] Calculate the change in constant consumption from a transitory income change in period $t$. (ii) [3 marks] Calculate the change from a transitory income change in period $t+k$ only.",
     "answer": "Let $H=\\sum_{j=0}^{T-t}R^{-j}$. For income increase $\\Delta$, (i) $\\Delta\\widetilde C=\\Delta/H$; (ii) $\\Delta\\widetilde C=R^{-k}\\Delta/H$.",
-    "solution": "Under constant consumption, the lifetime budget becomes $H\\widetilde C=\\sum_{j=0}^{T-t}R^{-j}y_{t+j}$. A one-period income change at $t$ raises its right side by $\\Delta$, while one at $t+k$ raises it by $R^{-k}\\Delta$. Divide each change by the unchanged annuity factor $H$.",
+    "solution": "When consumption is flat, one extra unit of that constant level costs the annuity factor $H=\\sum_{j=0}^{T-t}R^{-j}$ in present value. Convert an income shock to the same units before dividing by H. A current shock adds its full amount to wealth; an equally sized later shock adds only its discounted value. This distinguishes the size of an income change from the smaller consumption response financed over all remaining periods.\n\nUnder constant consumption, the lifetime budget becomes $H\\widetilde C=\\sum_{j=0}^{T-t}R^{-j}y_{t+j}$. A one-period income change at $t$ raises its right side by $\\Delta$, while one at $t+k$ raises it by $R^{-k}\\Delta$. Divide each change by the unchanged annuity factor $H$.",
     "hint": "Convert the income shock to present value.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending."
+    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending.",
+    "solutionOriginal": "Under constant consumption, the lifetime budget becomes $H\\widetilde C=\\sum_{j=0}^{T-t}R^{-j}y_{t+j}$. A one-period income change at $t$ raises its right side by $\\Delta$, while one at $t+k$ raises it by $R^{-k}\\Delta$. Divide each change by the unchanged annuity factor $H$.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "When consumption is flat, one extra unit of that constant level costs the annuity factor $H=\\sum_{j=0}^{T-t}R^{-j}$ in present value. Convert an income shock to the same units before dividing by H. A current shock adds its full amount to wealth; an equally sized later shock adds only its discounted value. This distinguishes the size of an income change from the smaller consumption response financed over all remaining periods."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Under constant consumption, the lifetime budget becomes $H\\widetilde C=\\sum_{j=0}^{T-t}R^{-j}y_{t+j}$. A one-period income change at $t$ raises its right side by $\\Delta$, while one at $t+k$ raises it by $R^{-k}\\Delta$. Divide each change by the unchanged annuity factor $H$."
+      }
+    ]
   },
   {
     "id": "2020-PEB-Q9d",
@@ -550,13 +932,24 @@
     "group": "C",
     "stem": "A household lives from $t$ through $T$, maximizes $\\sum_{n=t}^T\\beta^{n-t}\\ln c_n$ with $0<\\beta<1$, earns income $y_n$, saves $s_n$, and faces constant gross return $R=1+r>0$. Its only activities are consuming and saving. Assume $\\beta R=1$. For the same permanent income change in every remaining period, calculate the change in $\\widetilde C$ and compare it with a transitory change in period $t$ only.",
     "answer": "A permanent increase $\\Delta$ raises constant consumption by $\\Delta$, versus $\\Delta/H$ for a current transitory increase.",
-    "solution": "The permanent change raises lifetime present-value resources by $\\Delta\\sum_{j=0}^{T-t}R^{-j}=\\Delta H$. Dividing by the annuity factor raises consumption by exactly $\\Delta$. For more than one remaining period, $H>1$, so this exceeds the consumption response $\\Delta/H$ to the same-sized one-period increase; with only one remaining period they coincide.",
+    "solution": "A permanent income increase is an annuity itself, so its present value contains exactly the same H factor as a permanent consumption increase. Those factors cancel. For a one-period shock the income present value contains only one term, so spreading it over the rest of life gives a smaller response. The distinction vanishes only in the last period, when there is no future over which to spread resources.\n\nThe permanent change raises lifetime present-value resources by $\\Delta\\sum_{j=0}^{T-t}R^{-j}=\\Delta H$. Dividing by the annuity factor raises consumption by exactly $\\Delta$. For more than one remaining period, $H>1$, so this exceeds the consumption response $\\Delta/H$ to the same-sized one-period increase; with only one remaining period they coincide.",
     "hint": "The permanent shock affects every term of the annuity.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "MSQE 2020.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending."
+    "notes": "Source introductory sentence calls c_n income although the objective and subsequent questions use it as consumption. Solutions use c_n as consumption, zero initial wealth, no bequest and unrestricted intertemporal borrowing/lending.",
+    "solutionOriginal": "The permanent change raises lifetime present-value resources by $\\Delta\\sum_{j=0}^{T-t}R^{-j}=\\Delta H$. Dividing by the annuity factor raises consumption by exactly $\\Delta$. For more than one remaining period, $H>1$, so this exceeds the consumption response $\\Delta/H$ to the same-sized one-period increase; with only one remaining period they coincide.",
+    "solutionSteps": [
+      {
+        "title": "Set up the reasoning",
+        "body": "A permanent income increase is an annuity itself, so its present value contains exactly the same H factor as a permanent consumption increase. Those factors cancel. For a one-period shock the income present value contains only one term, so spreading it over the rest of life gives a smaller response. The distinction vanishes only in the last period, when there is no future over which to spread resources."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The permanent change raises lifetime present-value resources by $\\Delta\\sum_{j=0}^{T-t}R^{-j}=\\Delta H$. Dividing by the annuity factor raises consumption by exactly $\\Delta$. For more than one remaining period, $H>1$, so this exceeds the consumption response $\\Delta/H$ to the same-sized one-period increase; with only one remaining period they coincide."
+      }
+    ]
   }
 ]

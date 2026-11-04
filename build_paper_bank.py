@@ -30,6 +30,8 @@ for source in json.loads(official_manifest.read_text()):
     docs.append(doc);official_docs[(year,track)]=docid
 for d in docs:
     if d['filename']=='ISI 2022.pdf':d['notes']='The supplied compilation includes the first page of a 2023 paper at its end. It is not counted as 2022 content.'
+external_manifest=WORK/'external-documents.json'
+if external_manifest.exists():docs.extend(json.loads(external_manifest.read_text(encoding='utf-8')))
 
 source_defaults={2012:'msqe2012_merged.pdf',2013:'ISI MSQE 2013.pdf',2014:'ISI 2014.pdf',2015:'msqe2015_merged.pdf',2016:'MSQE-PEA-2016.pdf',2023:'ISI 2023.pdf',2024:'MSQE-PEB-2024.pdf'}
 topics={'Algebra','Linear algebra','Calculus','Probability','Statistics','Microeconomics','Macroeconomics'}
@@ -50,7 +52,8 @@ for f in sorted(question_dir.glob('*.json')):
             if q['status']=='verified':assert isinstance(q.get('correctIndex'),int) and 0<=q['correctIndex']<4,q['id']
         q['year']=year;q['paper']=track;q['paperId']=f'{year}-{track}'+('-'+variant if variant else '')
         q['kind']=q.get('sourceKind','sample' if year<=2015 else 'archive')
-        if (track=='PEA' and not variant or variant=='official') and (year,track) in official_docs:q['sourceDoc']=official_docs[(year,track)]
+        if year>=2025:q['sourceDoc']=f'external-{year}-{track.lower()}'
+        elif (track=='PEA' and not variant or variant=='official') and (year,track) in official_docs:q['sourceDoc']=official_docs[(year,track)]
         else:
             filename=q.get('sourceFile') or q.get('sourceFilename') or ('msqe2016_merged.pdf' if year==2016 and track=='PEB' else source_defaults.get(year))
             if filename not in by_name:
@@ -64,7 +67,7 @@ for f in sorted(question_dir.glob('*.json')):
     paper_rows[(year,track,variant)]=rows
 
 papers=[]
-for year in range(1998,2025):
+for year in range(1998,2027):
     for track in ['PEA','PEB']:
         qs=paper_rows.get((year,track,''),[])
         source_docs=[d['id'] for d in docs if d['year']==year and not ('PEA' in d['filename'] and track=='PEB') and not ('PEB' in d['filename'] and track=='PEA')]
@@ -80,7 +83,8 @@ for f in question_dir.glob('*.json'):
     if re.fullmatch(r'\d{4}-(pea|peb)(-(?:sample|official))?\.json',f.name) and f.resolve()!=(content/'questions'/f.name).resolve():shutil.copy2(f,content/'questions'/f.name)
 if inventory_path.resolve()!=(content/'source-inventory.json').resolve():shutil.copy2(inventory_path,content/'source-inventory.json')
 if official_manifest.resolve()!=(content/'official-sources.json').resolve():shutil.copy2(official_manifest,content/'official-sources.json')
-bank=dict(version=1,documents=docs,papers=papers,questions=all_questions,sourceFileCount=len(inventory),uniqueSourceCount=len(seen),years=27)
+if external_manifest.exists() and external_manifest.resolve()!=(content/'external-documents.json').resolve():shutil.copy2(external_manifest,content/'external-documents.json')
+bank=dict(version=2,documents=docs,papers=papers,questions=all_questions,sourceFileCount=len(inventory),uniqueSourceCount=len(seen),years=29)
 (OUT/'paper-bank.json').write_text(json.dumps(bank,ensure_ascii=False,indent=2),encoding='utf-8')
 (OUT/'paper-bank.js').write_text('globalThis.PAPER_BANK='+json.dumps(bank,ensure_ascii=False,separators=(',',':')).replace('<','\\u003c')+';\n',encoding='utf-8')
 coverage={k:bank[k] for k in ['sourceFileCount','uniqueSourceCount','years']}

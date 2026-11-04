@@ -9,12 +9,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) In a closed economy income tax is tY, government must balance its budget G=tY, consumption is proportional to disposable income and investment is exogenous. (i) Why is G endogenous? (ii) Compare its multiplier with fixed-G policy. (iii) How does higher t affect income? (b) C=100+1.3Y, I=500/r, money demand=150Y+100−1500r and money supply=2100. Is there an economically admissible IS–LM equilibrium?",
     "answer": "(a) G depends on Y; investment multiplier 1/[(1−c)(1−t)], larger than 1/[1−c(1−t)] for fixed G when t>0; higher t raises Y. (b) No equilibrium with Y≥0,r>0.",
-    "solution": "Let C=c(1−t)Y, 0<c<1,0≤t<1. Goods balance gives Y=c(1−t)Y+I+tY, hence Y=I/[(1−c)(1−t)]. G is endogenous because income determines tax revenue and spending. With G held exogenous, the autonomous-spending multiplier is 1/[1−c(1−t)]. Its denominator exceeds the balanced-budget denominator by t, so the latter multiplier is larger. Raising t shifts spending from households, who spend only fraction c, to government, who spends all receipts; dY/dt>0 for I>0. In (b), IS requires −.3Y=100+500/r, impossible for nonnegative Y and positive r. LM is r=Y/10−4/3. Even allowing negative r does not produce a nonnegative-Y intersection: substitution into IS yields .03Y²+9.6Y+1100/3=0, whose terms are all nonnegative for Y≥0.",
+    "solution": "Under a balanced-budget rule, government spending is a function of income rather than a fixed autonomous term. Insert this rule before calculating a multiplier. In part (b), check the economic sign restrictions before solving two nonlinear equations.\n\n$$\\begin{aligned}\nY&=c(1-t)Y+I+tY,\\\\\n(1-c)(1-t)Y&=I,\\\\\n\\frac{\\partial Y}{\\partial I}&=\\frac1{(1-c)(1-t)},\\\\\n\\text{part (b): }-0.3Y&=100+500/r.\n\\end{aligned}$$\n\nA higher tax rate transfers spending power from households, who spend only fraction $c$, to a government spending every receipt. This explains the positive output response in this particular policy rule. In part (b), the left side is nonpositive at $Y\\ge0$, while the right is positive at $r>0$; the contradiction already rules out an admissible equilibrium.\n\nLet C=c(1−t)Y, 0<c<1,0≤t<1. Goods balance gives Y=c(1−t)Y+I+tY, hence Y=I/[(1−c)(1−t)]. G is endogenous because income determines tax revenue and spending.\n\nWith G held exogenous, the autonomous-spending multiplier is 1/[1−c(1−t)]. Its denominator exceeds the balanced-budget denominator by t, so the latter multiplier is larger. Raising t shifts spending from households, who spend only fraction c, to government, who spends all receipts; dY/dt>0 for I>0.\n\nIn (b), IS requires −.3Y=100+500/r, impossible for nonnegative Y and positive r. LM is r=Y/10−4/3. Even allowing negative r does not produce a nonnegative-Y intersection: substitution into IS yields .03Y²+9.6Y+1100/3=0, whose terms are all nonnegative for Y≥0.\n\n(a) G depends on Y; investment multiplier 1/[(1−c)(1−t)], larger than 1/[1−c(1−t)] for fixed G when t>0; higher t raises Y. (b) No equilibrium with Y≥0,r>0.",
     "hint": "Substitute the budget rule into goods balance before comparing multipliers.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Under a balanced-budget rule, government spending is a function of income rather than a fixed autonomous term. Insert this rule before calculating a multiplier. In part (b), check the economic sign restrictions before solving two nonlinear equations."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nY&=c(1-t)Y+I+tY,\\\\\n(1-c)(1-t)Y&=I,\\\\\n\\frac{\\partial Y}{\\partial I}&=\\frac1{(1-c)(1-t)},\\\\\n\\text{part (b): }-0.3Y&=100+500/r.\n\\end{aligned}$$\n\nA higher tax rate transfers spending power from households, who spend only fraction $c$, to a government spending every receipt. This explains the positive output response in this particular policy rule. In part (b), the left side is nonpositive at $Y\\ge0$, while the right is positive at $r>0$; the contradiction already rules out an admissible equilibrium."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let C=c(1−t)Y, 0<c<1,0≤t<1. Goods balance gives Y=c(1−t)Y+I+tY, hence Y=I/[(1−c)(1−t)]. G is endogenous because income determines tax revenue and spending.\n\nWith G held exogenous, the autonomous-spending multiplier is 1/[1−c(1−t)]. Its denominator exceeds the balanced-budget denominator by t, so the latter multiplier is larger. Raising t shifts spending from households, who spend only fraction c, to government, who spends all receipts; dY/dt>0 for I>0.\n\nIn (b), IS requires −.3Y=100+500/r, impossible for nonnegative Y and positive r. LM is r=Y/10−4/3. Even allowing negative r does not produce a nonnegative-Y intersection: substitution into IS yields .03Y²+9.6Y+1100/3=0, whose terms are all nonnegative for Y≥0."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) G depends on Y; investment multiplier 1/[(1−c)(1−t)], larger than 1/[1−c(1−t)] for fixed G when t>0; higher t raises Y. (b) No equilibrium with Y≥0,r>0."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q2",
@@ -26,12 +44,30 @@
     "originalPaperCode": "ME II",
     "stem": "Two firms have cost C(q)=mq, inverse demands p₁=a−q₁−sq₂ and p₂=a−q₂−sq₁, where 0<s<1 and a>m>0. (a) Find Cournot quantities. (b) Derive direct demand functions. (c) Find Bertrand prices.",
     "answer": "Cournot q₁=q₂=(a−m)/(2+s). Interior direct demands qᵢ=[a(1−s)−pᵢ+spⱼ]/(1−s²). Bertrand p₁=p₂=[a(1−s)+m]/(2−s).",
-    "solution": "Cournot profit is (a−m−qᵢ−sqⱼ)qᵢ. Its first-order condition is 2qᵢ+sqⱼ=a−m, giving the symmetric quantities. Inverting the 2×2 inverse-demand system gives q₁=[a(1−s)−p₁+sp₂]/(1−s²) and its counterpart. These formulas apply when both demands are positive; outside that region nonnegativity requires appropriate corner demand. In Bertrand competition maximize (pᵢ−m)qᵢ. The interior first-order condition is a(1−s)−2pᵢ+spⱼ+m=0. Solving the two conditions gives p=[a(1−s)+m]/(2−s)>m and positive demand. Own-price profit curvature is −2/(1−s²)<0.",
+    "solution": "Quantity competition uses inverse demand directly. Price competition requires first solving the inverse-demand system for quantities, because each firm must know how its own price affects sales.\n\n$$\\begin{aligned}\n2q_i+sq_j&=a-m\\Longrightarrow q_i^C=\\frac{a-m}{2+s},\\\\\nq_i(p_i,p_j)&=\\frac{a(1-s)-p_i+sp_j}{1-s^2},\\\\\n\\frac{\\partial[(p_i-m)q_i]}{\\partial p_i}&=\n\\frac{a(1-s)-2p_i+sp_j+m}{1-s^2},\\\\\np_i^B&=\\frac{a(1-s)+m}{2-s}.\n\\end{aligned}$$\n\nThe symmetry of primitives lets us impose equal quantities or prices only after deriving individual first-order conditions. Own-decision profit curvature is negative in each problem, and the stated $a>m$, $0<s<1$ ensure the symmetric solutions are interior.\n\nCournot profit is (a−m−qᵢ−sqⱼ)qᵢ. Its first-order condition is 2qᵢ+sqⱼ=a−m, giving the symmetric quantities. Inverting the 2×2 inverse-demand system gives q₁=[a(1−s)−p₁+sp₂]/(1−s²) and its counterpart.\n\nThese formulas apply when both demands are positive; outside that region nonnegativity requires appropriate corner demand. In Bertrand competition maximize (pᵢ−m)qᵢ. The interior first-order condition is a(1−s)−2pᵢ+spⱼ+m=0.\n\nSolving the two conditions gives p=[a(1−s)+m]/(2−s)>m and positive demand. Own-price profit curvature is −2/(1−s²)<0.\n\nCournot q₁=q₂=(a−m)/(2+s). Interior direct demands qᵢ=[a(1−s)−pᵢ+spⱼ]/(1−s²). Bertrand p₁=p₂=[a(1−s)+m]/(2−s).",
     "hint": "Invert the inverse-demand matrix before solving the price game.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Quantity competition uses inverse demand directly. Price competition requires first solving the inverse-demand system for quantities, because each firm must know how its own price affects sales."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n2q_i+sq_j&=a-m\\Longrightarrow q_i^C=\\frac{a-m}{2+s},\\\\\nq_i(p_i,p_j)&=\\frac{a(1-s)-p_i+sp_j}{1-s^2},\\\\\n\\frac{\\partial[(p_i-m)q_i]}{\\partial p_i}&=\n\\frac{a(1-s)-2p_i+sp_j+m}{1-s^2},\\\\\np_i^B&=\\frac{a(1-s)+m}{2-s}.\n\\end{aligned}$$\n\nThe symmetry of primitives lets us impose equal quantities or prices only after deriving individual first-order conditions. Own-decision profit curvature is negative in each problem, and the stated $a>m$, $0<s<1$ ensure the symmetric solutions are interior."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Cournot profit is (a−m−qᵢ−sqⱼ)qᵢ. Its first-order condition is 2qᵢ+sqⱼ=a−m, giving the symmetric quantities. Inverting the 2×2 inverse-demand system gives q₁=[a(1−s)−p₁+sp₂]/(1−s²) and its counterpart.\n\nThese formulas apply when both demands are positive; outside that region nonnegativity requires appropriate corner demand. In Bertrand competition maximize (pᵢ−m)qᵢ. The interior first-order condition is a(1−s)−2pᵢ+spⱼ+m=0.\n\nSolving the two conditions gives p=[a(1−s)+m]/(2−s)>m and positive demand. Own-price profit curvature is −2/(1−s²)<0."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Cournot q₁=q₂=(a−m)/(2+s). Interior direct demands qᵢ=[a(1−s)−pᵢ+spⱼ]/(1−s²). Bertrand p₁=p₂=[a(1−s)+m]/(2−s)."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q3",
@@ -43,12 +79,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A monopolist has TC=5+3(Q_A+Q_B), inverse demands P_A=15−Q_A and P_B=25−2Q_B, and can discriminate across separated markets. Find prices, quantities, profit and deadweight loss. (b) An airline optimally sells 1500 business tickets at Rs 200 and 6000 economy tickets at Rs 80. Both demand curves are linear and MC=Rs 50. Derive both demands and find uniform-price equilibrium if discrimination is disallowed.",
     "answer": "(a) Q_A=6,P_A=9; Q_B=5.5,P_B=14; profit 91.5, deadweight loss 48.25. (b) P_b=350−0.1Q_b, P_e=110−0.005Q_e; uniform price 600/7≈85.714, Q_b=18500/7, Q_e=34000/7, total 7500.",
-    "solution": "(a) Set market marginal revenues equal to MC=3: 15−2Q_A=3 and 25−4Q_B=3. Profit is (9−3)6+(14−3)5.5−5=91.5. Efficient quantities at price 3 are 12 and 11. The lost-surplus triangles are (1/2)(12−6)(9−3)=18 and (1/2)(11−5.5)(14−3)=30.25, totaling 48.25. (b) If P=A−bQ, then MR=P−bQ=50 at the observed optimum. Business b=(200−50)/1500=.1,A=350; economy b=(80−50)/6000=.005,A=110. For a uniform price p≤110, total demand is Q=25500−210p. Maximizing (p−50)Q gives p=(25500+210·50)/420=600/7 and the stated market quantities. This earns profit 1875000/7≈267857, more than the best business-only regime (p=200,Q=1500,profit225000), so it is globally optimal.",
+    "solution": "For separated markets, equate each marginal revenue to the common marginal cost. For the airline, use the observed discriminatory optimum to recover the slope of each linear demand before aggregating.\n\n$$\\begin{aligned}\nMR_A=15-2Q_A&=3\\Longrightarrow Q_A=6,\\\\\nMR_B=25-4Q_B&=3\\Longrightarrow Q_B=11/2,\\\\\nb_j&=\\frac{P_j-MC}{Q_j},\\quad A_j=P_j+b_jQ_j,\\\\\nQ^{\\mathrm{uniform}}&=25500-210p,\\\\\n\\frac{d[(p-50)(25500-210p)]}{dp}&=36000-420p=0.\n\\end{aligned}$$\n\nThe fixed cost affects profit but not the market-specific quantity conditions. Deadweight loss compares each monopoly quantity with its own efficient quantity at $p=MC$. In the airline case, also compare the both-market solution with the best business-only solution, because a uniform price can exclude economy travellers.\n\n(a) Set market marginal revenues equal to MC=3: 15−2Q_A=3 and 25−4Q_B=3. Profit is (9−3)6+(14−3)5.5−5=91.5. Efficient quantities at price 3 are 12 and 11.\n\nThe lost-surplus triangles are (1/2)(12−6)(9−3)=18 and (1/2)(11−5.5)(14−3)=30.25, totaling 48.25. (b) If P=A−bQ, then MR=P−bQ=50 at the observed optimum. Business b=(200−50)/1500=.1,A=350; economy b=(80−50)/6000=.005,A=110.\n\nFor a uniform price p≤110, total demand is Q=25500−210p. Maximizing (p−50)Q gives p=(25500+210·50)/420=600/7 and the stated market quantities. This earns profit 1875000/7≈267857, more than the best business-only regime (p=200,Q=1500,profit225000), so it is globally optimal.\n\n(a) Q_A=6,P_A=9; Q_B=5.5,P_B=14; profit 91.5, deadweight loss 48.25. (b) P_b=350−0.1Q_b, P_e=110−0.005Q_e; uniform price 600/7≈85.714, Q_b=18500/7, Q_e=34000/7, total 7500.",
     "hint": "Use MR=MC separately, then check both segments of the aggregate uniform-price demand.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For separated markets, equate each marginal revenue to the common marginal cost. For the airline, use the observed discriminatory optimum to recover the slope of each linear demand before aggregating."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nMR_A=15-2Q_A&=3\\Longrightarrow Q_A=6,\\\\\nMR_B=25-4Q_B&=3\\Longrightarrow Q_B=11/2,\\\\\nb_j&=\\frac{P_j-MC}{Q_j},\\quad A_j=P_j+b_jQ_j,\\\\\nQ^{\\mathrm{uniform}}&=25500-210p,\\\\\n\\frac{d[(p-50)(25500-210p)]}{dp}&=36000-420p=0.\n\\end{aligned}$$\n\nThe fixed cost affects profit but not the market-specific quantity conditions. Deadweight loss compares each monopoly quantity with its own efficient quantity at $p=MC$. In the airline case, also compare the both-market solution with the best business-only solution, because a uniform price can exclude economy travellers."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Set market marginal revenues equal to MC=3: 15−2Q_A=3 and 25−4Q_B=3. Profit is (9−3)6+(14−3)5.5−5=91.5. Efficient quantities at price 3 are 12 and 11.\n\nThe lost-surplus triangles are (1/2)(12−6)(9−3)=18 and (1/2)(11−5.5)(14−3)=30.25, totaling 48.25. (b) If P=A−bQ, then MR=P−bQ=50 at the observed optimum. Business b=(200−50)/1500=.1,A=350; economy b=(80−50)/6000=.005,A=110.\n\nFor a uniform price p≤110, total demand is Q=25500−210p. Maximizing (p−50)Q gives p=(25500+210·50)/420=600/7 and the stated market quantities. This earns profit 1875000/7≈267857, more than the best business-only regime (p=200,Q=1500,profit225000), so it is globally optimal."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Q_A=6,P_A=9; Q_B=5.5,P_B=14; profit 91.5, deadweight loss 48.25. (b) P_b=350−0.1Q_b, P_e=110−0.005Q_e; uniform price 600/7≈85.714, Q_b=18500/7, Q_e=34000/7, total 7500."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q4",
@@ -60,12 +114,30 @@
     "originalPaperCode": "ME II",
     "stem": "A competitive economy has X₁=√(L₁K), X₂=√(L₂T), fixed positive K,T and total labour L₁+L₂=L, with labour mobile between sectors. Relative demand is D₁/D₂=γ(p₁/p₂)^−2. (a) Relate X₁/X₂ to p₁/p₂. (b) How does equilibrium relative price change when γ increases?",
     "answer": "Relative supply X₁/X₂=(K/T)(p₁/p₂); equilibrium p₁/p₂=(γT/K)^(1/3), which rises with γ.",
-    "solution": "Equal wages imply p₁√K/(2√L₁)=p₂√T/(2√L₂). Thus L₁/L₂=(p₁/p₂)²K/T. Substituting into the output ratio gives X₁/X₂=√[(L₁/L₂)(K/T)]=(p₁/p₂)K/T. Market clearing equates this to γ(p₁/p₂)^−2, so the relative price cubed is γT/K. Higher relative demand raises the relative price with elasticity 1/3.",
+    "solution": "Mobile labour earns the same wage in both sectors. Equalize the value marginal products, then use the resulting allocation ratio to obtain relative supply.\n\n$$\\begin{aligned}\n\\frac{p_1\\sqrt K}{2\\sqrt{L_1}}&=\\frac{p_2\\sqrt T}{2\\sqrt{L_2}},\\\\\n\\frac{L_1}{L_2}&=\\left(\\frac{p_1}{p_2}\\right)^2\\frac KT,\\\\\n\\frac{X_1}{X_2}&=\\frac KT\\frac{p_1}{p_2}\n=\\gamma\\left(\\frac{p_1}{p_2}\\right)^{-2},\\\\\n\\frac{p_1}{p_2}&=\\left(\\frac{\\gamma T}{K}\\right)^{1/3}.\n\\end{aligned}$$\n\nThe supply ratio rises with the relative price, whereas the demand ratio falls. Equating them produces a unique positive cube-root solution. Its elasticity with respect to the relative-demand parameter is $1/3$, so the price response is positive but less than proportional.\n\nEqual wages imply p₁√K/(2√L₁)=p₂√T/(2√L₂). Thus L₁/L₂=(p₁/p₂)²K/T. Substituting into the output ratio gives X₁/X₂=√[(L₁/L₂)(K/T)]=(p₁/p₂)K/T.\n\nMarket clearing equates this to γ(p₁/p₂)^−2, so the relative price cubed is γT/K. Higher relative demand raises the relative price with elasticity 1/3.\n\nRelative supply X₁/X₂=(K/T)(p₁/p₂); equilibrium p₁/p₂=(γT/K)^(1/3), which rises with γ.",
     "hint": "Equate value marginal products of mobile labour.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Mobile labour earns the same wage in both sectors. Equalize the value marginal products, then use the resulting allocation ratio to obtain relative supply."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\frac{p_1\\sqrt K}{2\\sqrt{L_1}}&=\\frac{p_2\\sqrt T}{2\\sqrt{L_2}},\\\\\n\\frac{L_1}{L_2}&=\\left(\\frac{p_1}{p_2}\\right)^2\\frac KT,\\\\\n\\frac{X_1}{X_2}&=\\frac KT\\frac{p_1}{p_2}\n=\\gamma\\left(\\frac{p_1}{p_2}\\right)^{-2},\\\\\n\\frac{p_1}{p_2}&=\\left(\\frac{\\gamma T}{K}\\right)^{1/3}.\n\\end{aligned}$$\n\nThe supply ratio rises with the relative price, whereas the demand ratio falls. Equating them produces a unique positive cube-root solution. Its elasticity with respect to the relative-demand parameter is $1/3$, so the price response is positive but less than proportional."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Equal wages imply p₁√K/(2√L₁)=p₂√T/(2√L₂). Thus L₁/L₂=(p₁/p₂)²K/T. Substituting into the output ratio gives X₁/X₂=√[(L₁/L₂)(K/T)]=(p₁/p₂)K/T.\n\nMarket clearing equates this to γ(p₁/p₂)^−2, so the relative price cubed is γT/K. Higher relative demand raises the relative price with elasticity 1/3."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Relative supply X₁/X₂=(K/T)(p₁/p₂); equilibrium p₁/p₂=(γT/K)^(1/3), which rises with γ."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q5",
@@ -77,12 +149,30 @@
     "originalPaperCode": "ME II",
     "stem": "An open IS–LM economy has flexible exchange rate e (domestic currency per foreign unit), no capital mobility, fixed domestic and foreign price levels P,P*, and balanced trade in equilibrium. The source prints TB=T̄+βP*/P−mY, T̄,β,m>0, while saying e adjusts to balance trade. (a) Derive the Y–r relation and compare it with closed-economy IS; describe LM. (b) What do higher G do to Y and e? (c) What does higher P* do to Y and e?",
     "answer": "The printed TB equation omits e and cannot determine its adjustment. If the intended term is βeP*/P, balanced trade gives the ordinary closed-economy IS; higher G raises Y,r and depreciates e, while higher P* leaves Y,r unchanged and lowers e proportionally.",
-    "solution": "Literally the printed TB=0 fixes Y=(T̄+βP*/P)/m independently of e. Since e appears nowhere, its comparative statics cannot be obtained, and arbitrary IS/LM shifts may be incompatible with that fixed Y. Conditional on inserting the usual omitted e, TB=0 gives e=P(mY−T̄)/(βP*), requiring mY>T̄ for a positive rate. Goods balance then becomes Y=C(Y−T)+I(r)+G, identical to closed-economy IS because net exports are zero. With ordinary increasing money demand in Y and decreasing demand in r, fixed real balances give an upward-sloping LM. A rise in G shifts this IS right: its intersection with LM has higher Y and r. The trade-balance formula then requires higher e, a depreciation, to offset increased imports. Higher P* leaves IS and LM unchanged and hence leaves Y,r unchanged; e falls in inverse proportion to P*, keeping eP*/P constant.",
+    "solution": "Balanced trade must be imposed alongside goods and money clearing. First read the printed trade equation literally: because it contains no exchange rate, it cannot determine exchange-rate adjustment.\n\n$$\\begin{aligned}\n\\text{printed }TB=0&\\Longrightarrow Y=\\frac{\\bar T+\\beta P^*/P}{m},\\\\\n\\text{conditional correction: }0&=\\bar T+\\beta eP^*/P-mY,\\\\\ne&=\\frac{P(mY-\\bar T)}{\\beta P^*},\\\\\nY&=C(Y-T)+I(r)+G.\n\\end{aligned}$$\n\nOnly after expressly adding the omitted exchange-rate term can one derive the conventional comparative statics. With zero net exports, the goods-market equation has the closed-economy form. A fiscal expansion raises income and imports, requiring depreciation to restore trade balance; a foreign-price rise can instead be offset entirely through the exchange rate.\n\nLiterally the printed TB=0 fixes Y=(T̄+βP*/P)/m independently of e. Since e appears nowhere, its comparative statics cannot be obtained, and arbitrary IS/LM shifts may be incompatible with that fixed Y. Conditional on inserting the usual omitted e, TB=0 gives e=P(mY−T̄)/(βP*), requiring mY>T̄ for a positive rate.\n\nGoods balance then becomes Y=C(Y−T)+I(r)+G, identical to closed-economy IS because net exports are zero. With ordinary increasing money demand in Y and decreasing demand in r, fixed real balances give an upward-sloping LM. A rise in G shifts this IS right: its intersection with LM has higher Y and r.\n\nThe trade-balance formula then requires higher e, a depreciation, to offset increased imports. Higher P* leaves IS and LM unchanged and hence leaves Y,r unchanged; e falls in inverse proportion to P*, keeping eP*/P constant.\n\nThe printed TB equation omits e and cannot determine its adjustment. If the intended term is βeP*/P, balanced trade gives the ordinary closed-economy IS; higher G raises Y,r and depreciates e, while higher P* leaves Y,r unchanged and lowers e proportionally.",
     "hint": "First check whether the exchange rate actually appears in the printed trade equation.",
     "topic": "Macroeconomics",
     "sourcePage": 12,
     "status": "needs_review",
-    "notes": "Visual inspection of PDF page 13 confirms that e is missing from the printed TB equation. Conditional intended equation is clearly distinguished."
+    "notes": "Visual inspection of PDF page 13 confirms that e is missing from the printed TB equation. Conditional intended equation is clearly distinguished.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Balanced trade must be imposed alongside goods and money clearing. First read the printed trade equation literally: because it contains no exchange rate, it cannot determine exchange-rate adjustment."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\text{printed }TB=0&\\Longrightarrow Y=\\frac{\\bar T+\\beta P^*/P}{m},\\\\\n\\text{conditional correction: }0&=\\bar T+\\beta eP^*/P-mY,\\\\\ne&=\\frac{P(mY-\\bar T)}{\\beta P^*},\\\\\nY&=C(Y-T)+I(r)+G.\n\\end{aligned}$$\n\nOnly after expressly adding the omitted exchange-rate term can one derive the conventional comparative statics. With zero net exports, the goods-market equation has the closed-economy form. A fiscal expansion raises income and imports, requiring depreciation to restore trade balance; a foreign-price rise can instead be offset entirely through the exchange rate."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Literally the printed TB=0 fixes Y=(T̄+βP*/P)/m independently of e. Since e appears nowhere, its comparative statics cannot be obtained, and arbitrary IS/LM shifts may be incompatible with that fixed Y. Conditional on inserting the usual omitted e, TB=0 gives e=P(mY−T̄)/(βP*), requiring mY>T̄ for a positive rate.\n\nGoods balance then becomes Y=C(Y−T)+I(r)+G, identical to closed-economy IS because net exports are zero. With ordinary increasing money demand in Y and decreasing demand in r, fixed real balances give an upward-sloping LM. A rise in G shifts this IS right: its intersection with LM has higher Y and r.\n\nThe trade-balance formula then requires higher e, a depreciation, to offset increased imports. Higher P* leaves IS and LM unchanged and hence leaves Y,r unchanged; e falls in inverse proportion to P*, keeping eP*/P constant."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The printed TB equation omits e and cannot determine its adjustment. If the intended term is βeP*/P, balanced trade gives the ordinary closed-economy IS; higher G raises Y,r and depreciates e, while higher P* leaves Y,r unchanged and lowers e proportionally."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q6",
@@ -94,12 +184,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Technologies Y=min(K/3,L/2) and Y=min(K/2,L/3) each have marginal cost Rs 20 at the same competitive factor prices. Find the expansion path for Y=K^(2/3)L^(1/3). (b) A consumer buys X at its market price. Compare market purchase of Y with an alternative providing a fixed free ration of Y through government shops. Is the ration necessarily better for (i) strictly convex indifference curves, (ii) perfect substitutes, (iii) perfect complements?",
     "answer": "(a) Factor prices both 4; expansion path K=2L. (b) Under a ration-only alternative with no supplementary Y purchases, none of the three preference types guarantees improvement; the ration quantity matters.",
-    "solution": "(a) With capital rental r and wage w, 3r+2w=20 and 2r+3w=20 give r=w=4. For Cobb–Douglas cost minimization MP_K/MP_L=2L/K=r/w=1, hence K=2L. (b) Let the ration be Ȳ, income M and X price pₓ; the free-ration allocation can have X=M/pₓ,Y=Ȳ. This may fail to match the original preferred bundle. For strictly convex preferences U=XY, M=pₓ=pᵧ=1, market optimum has utility 1/4, while free ration Ȳ=.1 yields utility .1. For substitutes U=X+Y, M=1,pₓ=2,pᵧ=1, market utility is 1 but the same ration gives .5+.1=.6. For complements U=min(X,Y), M=pₓ=pᵧ=1, market utility .5 exceeds ration utility .1. Large enough rations can improve each case. If supplementary Y purchases are permitted, the old affordable set is preserved (or expanded) and the consumer is weakly better off under all three types.",
+    "solution": "Each fixed-proportions technology gives a unit-cost equation in the same factor prices. The ration comparison requires an explicit feasible set: a free allotment replacing the market is different from an allotment that can be supplemented by purchases.\n\n$$\\begin{aligned}\n3r+2w&=20,\\qquad2r+3w=20,\\\\\nr=w&=4,\\\\\n\\frac{MP_K}{MP_L}&=\\frac{2L}{K}=\\frac rw=1,\\\\\nK&=2L.\n\\end{aligned}$$\n\nOnce factor prices are recovered, the cost-minimizing expansion path follows from equalizing technical and market substitution rates. For rationing, test whether the original optimal bundle remains affordable. It need not if purchases of the rationed good are prohibited, so preference curvature alone cannot guarantee a welfare improvement.\n\n(a) With capital rental r and wage w, 3r+2w=20 and 2r+3w=20 give r=w=4. For Cobb–Douglas cost minimization MP_K/MP_L=2L/K=r/w=1, hence K=2L. (b) Let the ration be Ȳ, income M and X price pₓ; the free-ration allocation can have X=M/pₓ,Y=Ȳ.\n\nThis may fail to match the original preferred bundle. For strictly convex preferences U=XY, M=pₓ=pᵧ=1, market optimum has utility 1/4, while free ration Ȳ=.1 yields utility .1. For substitutes U=X+Y, M=1,pₓ=2,pᵧ=1, market utility is 1 but the same ration gives .5+.1=.6.\n\nFor complements U=min(X,Y), M=pₓ=pᵧ=1, market utility .5 exceeds ration utility .1. Large enough rations can improve each case. If supplementary Y purchases are permitted, the old affordable set is preserved (or expanded) and the consumer is weakly better off under all three types.\n\n(a) Factor prices both 4; expansion path K=2L. (b) Under a ration-only alternative with no supplementary Y purchases, none of the three preference types guarantees improvement; the ration quantity matters.",
     "hint": "Infer factor prices from both unit-cost equations; compare affordable sets under rationing.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "The answer distinguishes ration-only supply from a free allocation with optional supplementary market purchases, which the source does not specify."
+    "notes": "The answer distinguishes ration-only supply from a free allocation with optional supplementary market purchases, which the source does not specify.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Each fixed-proportions technology gives a unit-cost equation in the same factor prices. The ration comparison requires an explicit feasible set: a free allotment replacing the market is different from an allotment that can be supplemented by purchases."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n3r+2w&=20,\\qquad2r+3w=20,\\\\\nr=w&=4,\\\\\n\\frac{MP_K}{MP_L}&=\\frac{2L}{K}=\\frac rw=1,\\\\\nK&=2L.\n\\end{aligned}$$\n\nOnce factor prices are recovered, the cost-minimizing expansion path follows from equalizing technical and market substitution rates. For rationing, test whether the original optimal bundle remains affordable. It need not if purchases of the rationed good are prohibited, so preference curvature alone cannot guarantee a welfare improvement."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) With capital rental r and wage w, 3r+2w=20 and 2r+3w=20 give r=w=4. For Cobb–Douglas cost minimization MP_K/MP_L=2L/K=r/w=1, hence K=2L. (b) Let the ration be Ȳ, income M and X price pₓ; the free-ration allocation can have X=M/pₓ,Y=Ȳ.\n\nThis may fail to match the original preferred bundle. For strictly convex preferences U=XY, M=pₓ=pᵧ=1, market optimum has utility 1/4, while free ration Ȳ=.1 yields utility .1. For substitutes U=X+Y, M=1,pₓ=2,pᵧ=1, market utility is 1 but the same ration gives .5+.1=.6.\n\nFor complements U=min(X,Y), M=pₓ=pᵧ=1, market utility .5 exceeds ration utility .1. Large enough rations can improve each case. If supplementary Y purchases are permitted, the old affordable set is preserved (or expanded) and the consumer is weakly better off under all three types."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Factor prices both 4; expansion path K=2L. (b) Under a ration-only alternative with no supplementary Y purchases, none of the three preference types guarantees improvement; the ration quantity matters."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q7",
@@ -111,12 +219,30 @@
     "originalPaperCode": "ME II",
     "stem": "Explain whether each statement is true or false: (a) If higher own price increases demand, higher income reduces demand; by the same argument, if higher own price reduces demand, higher income increases demand. (b) A farmer earns all income by selling his crop at an exogenous price and consumes more crop when that price rises; therefore the crop is normal. (c) If higher non-wage income reduces labour supplied, higher wages must increase labour supplied. (d) ISI student stipends are part of GDP.",
     "answer": "(a) First implication true under standard assumptions, converse false. (b) True under the usual fixed-harvest model. (c) False. (d) False for stipends treated as transfers.",
-    "solution": "(a) Slutsky gives x_p=h_p−x x_M, with h_p≤0. A positive x_p requires x_M<0, but negative x_p is possible for either normal or inferior goods, so the converse is invalid. (b) With a fixed harvest E and other-good price fixed, wealth is pE. Endowment Slutsky gives total dx/dp=h_p+(E−x)x_M. The farmer finances consumption from the harvest and has E−x≥0; therefore a positive total response requires x_M>0. If harvest itself responds to price, additional production assumptions are needed. (c) Normal leisure creates a negative income effect on labour; a wage rise also has a substitution effect toward work, so their net sign is ambiguous and labour supply may bend backward. (d) A stipend paid without a current productive service is a transfer, not payment for newly produced output. Educational services may enter GDP separately, but the transfer amount itself does not.",
+    "solution": "Use the Slutsky decomposition to distinguish a compensated substitution effect from an income effect. A producer-consumer also experiences an endowment-income effect when the price of the crop changes.\n\n$$\\begin{aligned}\nx_p&=h_p-x x_M,\\qquad h_p\\le0,\\\\\nx_p>0&\\Longrightarrow x_M<0,\\\\\n\\left.\\frac{dx}{dp}\\right|_{M=pE}&=h_p+(E-x)x_M.\n\\end{aligned}$$\n\nThe first implication is one-way: an ordinary downward-sloping demand can belong to a normal or an inferior good. For a fixed-harvest seller, a positive total own-price response requires a positive income effect because net crop sales are nonnegative. Labour choice has the same competing substitution and income forces; a wage increase therefore has no predetermined total sign.\n\n(a) Slutsky gives x_p=h_p−x x_M, with h_p≤0. A positive x_p requires x_M<0, but negative x_p is possible for either normal or inferior goods, so the converse is invalid. (b) With a fixed harvest E and other-good price fixed, wealth is pE.\n\nEndowment Slutsky gives total dx/dp=h_p+(E−x)x_M. The farmer finances consumption from the harvest and has E−x≥0; therefore a positive total response requires x_M>0. If harvest itself responds to price, additional production assumptions are needed.\n\n(c) Normal leisure creates a negative income effect on labour; a wage rise also has a substitution effect toward work, so their net sign is ambiguous and labour supply may bend backward. (d) A stipend paid without a current productive service is a transfer, not payment for newly produced output. Educational services may enter GDP separately, but the transfer amount itself does not.\n\n(a) First implication true under standard assumptions, converse false. (b) True under the usual fixed-harvest model. (c) False. (d) False for stipends treated as transfers.",
     "hint": "Apply Slutsky with fixed income versus endowment income; distinguish transfers from production.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "(b) assumes a fixed crop endowment. (d) is the standard national-accounting classification of a stipend as a transfer, rather than remuneration for services."
+    "notes": "(b) assumes a fixed crop endowment. (d) is the standard national-accounting classification of a stipend as a transfer, rather than remuneration for services.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use the Slutsky decomposition to distinguish a compensated substitution effect from an income effect. A producer-consumer also experiences an endowment-income effect when the price of the crop changes."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nx_p&=h_p-x x_M,\\qquad h_p\\le0,\\\\\nx_p>0&\\Longrightarrow x_M<0,\\\\\n\\left.\\frac{dx}{dp}\\right|_{M=pE}&=h_p+(E-x)x_M.\n\\end{aligned}$$\n\nThe first implication is one-way: an ordinary downward-sloping demand can belong to a normal or an inferior good. For a fixed-harvest seller, a positive total own-price response requires a positive income effect because net crop sales are nonnegative. Labour choice has the same competing substitution and income forces; a wage increase therefore has no predetermined total sign."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Slutsky gives x_p=h_p−x x_M, with h_p≤0. A positive x_p requires x_M<0, but negative x_p is possible for either normal or inferior goods, so the converse is invalid. (b) With a fixed harvest E and other-good price fixed, wealth is pE.\n\nEndowment Slutsky gives total dx/dp=h_p+(E−x)x_M. The farmer finances consumption from the harvest and has E−x≥0; therefore a positive total response requires x_M>0. If harvest itself responds to price, additional production assumptions are needed.\n\n(c) Normal leisure creates a negative income effect on labour; a wage rise also has a substitution effect toward work, so their net sign is ambiguous and labour supply may bend backward. (d) A stipend paid without a current productive service is a transfer, not payment for newly produced output. Educational services may enter GDP separately, but the transfer amount itself does not."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) First implication true under standard assumptions, converse false. (b) True under the usual fixed-harvest model. (c) False. (d) False for stipends treated as transfers."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q8",
@@ -128,12 +254,30 @@
     "originalPaperCode": "ME II",
     "stem": "In the Solow model Y=√(KL), saving rate is .2 and labour growth .05. (a) Find steady capital/labour ratio, output and saving growth and wage. (b) If saving rises to .4, find the new steady output growth. (c) Compare output growth during transition with growth in the new steady state.",
     "answer": "With zero depreciation: old k*=16, wage 2, output and saving growth 5%; new k*=64, wage 4 and long-run output growth still 5%. Transition growth is above 5% and converges to it.",
-    "solution": "No depreciation is supplied, so take δ=0. Per-worker dynamics are k̇=s√k−.05k. The old positive steady state satisfies √k=.2/.05=4, giving k=16 and competitive wage ∂Y/∂L=.5√k=2. With constant k, K,Y and S=sY all grow with L at 5%. Raising s to .4 gives k*=64 but does not alter long-run aggregate growth 5%. During adjustment from k=16, k rises, so g_Y=.05+(1/2)g_k>.05 until the limit. Immediately after the change g_K=s/√k=.10, hence g_Y=(g_K+g_L)/2=.075. As k approaches 64, g_Y approaches .05 from above; in continuous time the new steady state is approached asymptotically. If depreciation δ were specified, k*=[s/(.05+δ)]² and wages adjust accordingly.",
+    "solution": "Use capital per worker $k=K/L$. Because no depreciation rate is given, state the zero-depreciation convention before deriving numerical steady states.\n\n$$\\begin{aligned}\n\\dot k&=s\\sqrt k-0.05k,\\\\\nk^*&=(s/0.05)^2,\\qquad w^*=\\tfrac12\\sqrt{k^*},\\\\\ns=0.2:&\\quad k^*=16,\\quad w^*=2,\\\\\ns=0.4:&\\quad k^*=64,\\quad g_Y^*=0.05,\\\\\ng_Y&=0.05+\\tfrac12g_k.\n\\end{aligned}$$\n\nThe saving increase raises the level of capital and output per worker, not their long-run growth rates. During convergence $g_k>0$, so aggregate output grows faster than labour; this excess growth declines to zero as capital per worker approaches its new steady level.\n\nNo depreciation is supplied, so take δ=0. Per-worker dynamics are k̇=s√k−.05k. The old positive steady state satisfies √k=.2/.05=4, giving k=16 and competitive wage ∂Y/∂L=.5√k=2.\n\nWith constant k, K,Y and S=sY all grow with L at 5%. Raising s to .4 gives k*=64 but does not alter long-run aggregate growth 5%. During adjustment from k=16, k rises, so g_Y=.05+(1/2)g_k>.05 until the limit.\n\nImmediately after the change g_K=s/√k=.10, hence g_Y=(g_K+g_L)/2=.075. As k approaches 64, g_Y approaches .05 from above; in continuous time the new steady state is approached asymptotically. If depreciation δ were specified, k*=[s/(.05+δ)]² and wages adjust accordingly.\n\nWith zero depreciation: old k*=16, wage 2, output and saving growth 5%; new k*=64, wage 4 and long-run output growth still 5%. Transition growth is above 5% and converges to it.",
     "hint": "The saving rate changes the level of steady output per worker, not its long-run growth rate.",
     "topic": "Macroeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": "Depreciation is not stated; zero depreciation is used explicitly."
+    "notes": "Depreciation is not stated; zero depreciation is used explicitly.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use capital per worker $k=K/L$. Because no depreciation rate is given, state the zero-depreciation convention before deriving numerical steady states."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\dot k&=s\\sqrt k-0.05k,\\\\\nk^*&=(s/0.05)^2,\\qquad w^*=\\tfrac12\\sqrt{k^*},\\\\\ns=0.2:&\\quad k^*=16,\\quad w^*=2,\\\\\ns=0.4:&\\quad k^*=64,\\quad g_Y^*=0.05,\\\\\ng_Y&=0.05+\\tfrac12g_k.\n\\end{aligned}$$\n\nThe saving increase raises the level of capital and output per worker, not their long-run growth rates. During convergence $g_k>0$, so aggregate output grows faster than labour; this excess growth declines to zero as capital per worker approaches its new steady level."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "No depreciation is supplied, so take δ=0. Per-worker dynamics are k̇=s√k−.05k. The old positive steady state satisfies √k=.2/.05=4, giving k=16 and competitive wage ∂Y/∂L=.5√k=2.\n\nWith constant k, K,Y and S=sY all grow with L at 5%. Raising s to .4 gives k*=64 but does not alter long-run aggregate growth 5%. During adjustment from k=16, k rises, so g_Y=.05+(1/2)g_k>.05 until the limit.\n\nImmediately after the change g_K=s/√k=.10, hence g_Y=(g_K+g_L)/2=.075. As k approaches 64, g_Y approaches .05 from above; in continuous time the new steady state is approached asymptotically. If depreciation δ were specified, k*=[s/(.05+δ)]² and wages adjust accordingly."
+      },
+      {
+        "title": "Conclusion",
+        "body": "With zero depreciation: old k*=16, wage 2, output and saving growth 5%; new k*=64, wage 4 and long-run output growth still 5%. Transition growth is above 5% and converges to it."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q9",
@@ -145,12 +289,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A consumer has U=√[(x₁−s₁)(x₂−s₂)], s₁,s₂>0 and xᵢ≥sᵢ. Derive demands and budget shares under standard budget p₁x₁+p₂x₂≤M; are they linear in prices? (b) A symmetric utility function U(x₁,x₂)=U(x₂,x₁) is maximized subject to p(x₁+x₂)≤M. If the maximizer exists and is unique, prove x₁*=x₂*.",
     "answer": "(a) xᵢ=sᵢ+[M−p₁s₁−p₂s₂]/(2pᵢ); budget shares are 1/2+(pᵢsᵢ−pⱼsⱼ)/(2M), affine in prices at fixed M. Demands are generally nonlinear in prices. (b) Uniqueness plus symmetry forces equal quantities.",
-    "solution": "(a) Feasibility requires M≥p₁s₁+p₂s₂. For strictly positive discretionary income E=M−p₁s₁−p₂s₂, write zᵢ=xᵢ−sᵢ; maximize √(z₁z₂) with discretionary budget E, giving pᵢzᵢ=E/2. Thus x₁=M/(2p₁)+s₁/2−p₂s₂/(2p₁), with the analogous expression for x₂. These are not jointly linear in prices because of reciprocals and price ratios. But p₁x₁/M=1/2+(p₁s₁−p₂s₂)/(2M) and the other share is analogous, so shares are affine in prices holding M fixed. At E=0 the only feasible bundle is subsistence. (b) If (a,b) is optimal, (b,a) is feasible and gives equal utility by symmetry. If a≠b this supplies two distinct maximizers, contradicting uniqueness. Hence a=b without requiring differentiability or concavity.",
+    "solution": "Shift consumption variables by subsistence amounts and define discretionary income $E$. This turns the first part into an ordinary equal-share Cobb–Douglas allocation. For the second part, a symmetry argument is stronger than unnecessary calculus.\n\n$$\\begin{aligned}\nE&=M-p_1s_1-p_2s_2,\\qquad z_i=x_i-s_i,\\\\\np_iz_i&=E/2,\\\\\nx_i^*&=s_i+\\frac{E}{2p_i},\\\\\n\\frac{p_ix_i^*}{M}&=\\frac12+\\frac{p_is_i-p_js_j}{2M}.\n\\end{aligned}$$\n\nFeasibility must be checked before using the interior formula: $E<0$ permits no subsistence-feasible bundle, and $E=0$ fixes the unique subsistence bundle. Multiplying quantity demand by price removes its reciprocal term, which explains why budget shares can be affine in prices even when quantities are not.\n\n(a) Feasibility requires M≥p₁s₁+p₂s₂. For strictly positive discretionary income E=M−p₁s₁−p₂s₂, write zᵢ=xᵢ−sᵢ; maximize √(z₁z₂) with discretionary budget E, giving pᵢzᵢ=E/2. Thus x₁=M/(2p₁)+s₁/2−p₂s₂/(2p₁), with the analogous expression for x₂.\n\nThese are not jointly linear in prices because of reciprocals and price ratios. But p₁x₁/M=1/2+(p₁s₁−p₂s₂)/(2M) and the other share is analogous, so shares are affine in prices holding M fixed. At E=0 the only feasible bundle is subsistence.\n\n(b) If (a,b) is optimal, (b,a) is feasible and gives equal utility by symmetry. If a≠b this supplies two distinct maximizers, contradicting uniqueness. Hence a=b without requiring differentiability or concavity.\n\n(a) xᵢ=sᵢ+[M−p₁s₁−p₂s₂]/(2pᵢ); budget shares are 1/2+(pᵢsᵢ−pⱼsⱼ)/(2M), affine in prices at fixed M. Demands are generally nonlinear in prices. (b) Uniqueness plus symmetry forces equal quantities.",
     "hint": "Subtract subsistence expenditure; use swapping and uniqueness.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Shift consumption variables by subsistence amounts and define discretionary income $E$. This turns the first part into an ordinary equal-share Cobb–Douglas allocation. For the second part, a symmetry argument is stronger than unnecessary calculus."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nE&=M-p_1s_1-p_2s_2,\\qquad z_i=x_i-s_i,\\\\\np_iz_i&=E/2,\\\\\nx_i^*&=s_i+\\frac{E}{2p_i},\\\\\n\\frac{p_ix_i^*}{M}&=\\frac12+\\frac{p_is_i-p_js_j}{2M}.\n\\end{aligned}$$\n\nFeasibility must be checked before using the interior formula: $E<0$ permits no subsistence-feasible bundle, and $E=0$ fixes the unique subsistence bundle. Multiplying quantity demand by price removes its reciprocal term, which explains why budget shares can be affine in prices even when quantities are not."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Feasibility requires M≥p₁s₁+p₂s₂. For strictly positive discretionary income E=M−p₁s₁−p₂s₂, write zᵢ=xᵢ−sᵢ; maximize √(z₁z₂) with discretionary budget E, giving pᵢzᵢ=E/2. Thus x₁=M/(2p₁)+s₁/2−p₂s₂/(2p₁), with the analogous expression for x₂.\n\nThese are not jointly linear in prices because of reciprocals and price ratios. But p₁x₁/M=1/2+(p₁s₁−p₂s₂)/(2M) and the other share is analogous, so shares are affine in prices holding M fixed. At E=0 the only feasible bundle is subsistence.\n\n(b) If (a,b) is optimal, (b,a) is feasible and gives equal utility by symmetry. If a≠b this supplies two distinct maximizers, contradicting uniqueness. Hence a=b without requiring differentiability or concavity."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) xᵢ=sᵢ+[M−p₁s₁−p₂s₂]/(2pᵢ); budget shares are 1/2+(pᵢsᵢ−pⱼsⱼ)/(2M), affine in prices at fixed M. Demands are generally nonlinear in prices. (b) Uniqueness plus symmetry forces equal quantities."
+      }
+    ]
   },
   {
     "id": "2010-PEB-Q10",
@@ -162,11 +324,29 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Two people have U_A=x_A1^α+x_A2^α, 0<α<1, and U_B=x_B1+x_B2. Derive the contract curve and its properties. (b) A firm has MC=AC=4 and demand q=100−10p. (i) Maximize revenue subject to profit at least 80. (ii) What if the target is 100? (iii) What if marginal cost rises to 8?",
     "answer": "(a) Interior contract curve x_A1=x_A2, completed by boundary segments when one aggregate stock binds. (b)(i) q=40,p=6. (ii) Target100 infeasible (maximum profit90). (iii) At MC8, maximum profit10, so targets80 and100 are infeasible.",
-    "solution": "(a) Let total stocks be Ω₁,Ω₂>0. For any fixed total S=x_A1+x_A2, B utility is Ω₁+Ω₂−S. Strict concavity of t^α makes A prefer the most equal feasible division of S. Therefore efficient interior allocations have x_A1=x_A2. If Ω₁≤Ω₂, the complete curve is (t,t),0≤t≤Ω₁, plus (Ω₁,t),Ω₁≤t≤Ω₂; if Ω₂≤Ω₁, interchange labels. Any unequal nonboundary allocation permits a balancing transfer raising A utility without changing B utility. No point on the stated curve permits a Pareto improvement because raising A utility requires raising A total consumption and reducing B utility. (b) Inverse demand is p=10−q/10; revenue R=10q−q²/10, maximized without the constraint at q=50. Profit at MC4 is π=6q−q²/10. The target π≥80 restricts q to [20,40], where revenue is increasing; choose q=40,p=6. Maximum profit is 90 at q=30, so a target of 100 has no feasible output. At MC8, π=2q−q²/10 has maximum10 at q=10,p=9; thus even the old 80 target is impossible. If the profit constraint is dropped entirely, revenue maximization stays q=50,p=5 independently of cost, but would then lose money at MC8.",
+    "solution": "The linear-utility consumer cares only about the sum of her holdings. Fixing that sum fixes her utility, leaving the concave-utility consumer to choose the most balanced feasible bundle. In the revenue problem, distinguish the objective from the profit constraint.\n\n$$\\begin{aligned}\nR(q)&=10q-q^2/10,\\\\\n\\pi_4(q)&=6q-q^2/10,\\\\\n\\pi_4(q)\\ge80&\\Longleftrightarrow20\\le q\\le40,\\\\\nR\\prime(q)&=10-q/5>0\\quad(20\\le q\\le40),\\\\\n\\max_q\\pi_4(q)&=90,\\qquad\\max_q\\pi_8(q)=10.\n\\end{aligned}$$\n\nThe revenue maximum over the feasible profit interval is therefore its right endpoint, not the profit-maximizing quantity. Raising the profit target to $100$ makes the feasible set empty. Increasing marginal cost to eight makes even the original target unattainable; cost does not change the unconstrained revenue curve, but it changes feasibility.\n\n(a) Let total stocks be Ω₁,Ω₂>0. For any fixed total S=x_A1+x_A2, B utility is Ω₁+Ω₂−S. Strict concavity of t^α makes A prefer the most equal feasible division of S.\n\nTherefore efficient interior allocations have x_A1=x_A2. If Ω₁≤Ω₂, the complete curve is (t,t),0≤t≤Ω₁, plus (Ω₁,t),Ω₁≤t≤Ω₂; if Ω₂≤Ω₁, interchange labels. Any unequal nonboundary allocation permits a balancing transfer raising A utility without changing B utility.\n\nNo point on the stated curve permits a Pareto improvement because raising A utility requires raising A total consumption and reducing B utility. (b) Inverse demand is p=10−q/10; revenue R=10q−q²/10, maximized without the constraint at q=50. Profit at MC4 is π=6q−q²/10.\n\nThe target π≥80 restricts q to [20,40], where revenue is increasing; choose q=40,p=6. Maximum profit is 90 at q=30, so a target of 100 has no feasible output. At MC8, π=2q−q²/10 has maximum10 at q=10,p=9; thus even the old 80 target is impossible.\n\nIf the profit constraint is dropped entirely, revenue maximization stays q=50,p=5 independently of cost, but would then lose money at MC8.\n\n(a) Interior contract curve x_A1=x_A2, completed by boundary segments when one aggregate stock binds. (b)(i) q=40,p=6. (ii) Target100 infeasible (maximum profit90). (iii) At MC8, maximum profit10, so targets80 and100 are infeasible.",
     "hint": "For the contract curve, hold A’s total quantity fixed; for the firm, check profit feasibility before optimizing revenue.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The linear-utility consumer cares only about the sum of her holdings. Fixing that sum fixes her utility, leaving the concave-utility consumer to choose the most balanced feasible bundle. In the revenue problem, distinguish the objective from the profit constraint."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nR(q)&=10q-q^2/10,\\\\\n\\pi_4(q)&=6q-q^2/10,\\\\\n\\pi_4(q)\\ge80&\\Longleftrightarrow20\\le q\\le40,\\\\\nR\\prime(q)&=10-q/5>0\\quad(20\\le q\\le40),\\\\\n\\max_q\\pi_4(q)&=90,\\qquad\\max_q\\pi_8(q)=10.\n\\end{aligned}$$\n\nThe revenue maximum over the feasible profit interval is therefore its right endpoint, not the profit-maximizing quantity. Raising the profit target to $100$ makes the feasible set empty. Increasing marginal cost to eight makes even the original target unattainable; cost does not change the unconstrained revenue curve, but it changes feasibility."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Let total stocks be Ω₁,Ω₂>0. For any fixed total S=x_A1+x_A2, B utility is Ω₁+Ω₂−S. Strict concavity of t^α makes A prefer the most equal feasible division of S.\n\nTherefore efficient interior allocations have x_A1=x_A2. If Ω₁≤Ω₂, the complete curve is (t,t),0≤t≤Ω₁, plus (Ω₁,t),Ω₁≤t≤Ω₂; if Ω₂≤Ω₁, interchange labels. Any unequal nonboundary allocation permits a balancing transfer raising A utility without changing B utility.\n\nNo point on the stated curve permits a Pareto improvement because raising A utility requires raising A total consumption and reducing B utility. (b) Inverse demand is p=10−q/10; revenue R=10q−q²/10, maximized without the constraint at q=50. Profit at MC4 is π=6q−q²/10.\n\nThe target π≥80 restricts q to [20,40], where revenue is increasing; choose q=40,p=6. Maximum profit is 90 at q=30, so a target of 100 has no feasible output. At MC8, π=2q−q²/10 has maximum10 at q=10,p=9; thus even the old 80 target is impossible.\n\nIf the profit constraint is dropped entirely, revenue maximization stays q=50,p=5 independently of cost, but would then lose money at MC8."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Interior contract curve x_A1=x_A2, completed by boundary segments when one aggregate stock binds. (b)(i) q=40,p=6. (ii) Target100 infeasible (maximum profit90). (iii) At MC8, maximum profit10, so targets80 and100 are infeasible."
+      }
+    ]
   }
 ]

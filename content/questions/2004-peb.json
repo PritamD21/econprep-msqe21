@@ -9,7 +9,7 @@
     "originalPaperCode": "ME II",
     "stem": "U(x,y)=x+y and px+y=10. At p=1/2, what is the absolute own-price elasticity of demand for x?",
     "answer": "C:1.",
-    "solution": "Since p<1, x gives more utility per rupee, so the consumer spends all income on x: x=10/p. Differentiation gives signed elasticity (−10/p²)(p/(10/p))=−1, absolute value1.",
+    "solution": "Derive demand on the cheaper-good branch. Since p=1/2<1, good x gives more utility per rupee than y under U=x+y. The optimum spends all 10 on x, so x=10/p in a neighbourhood of this price. Its signed elasticity is \n(dx)/(dp)(p)/(x)=(-(10)/(p^2))(p)/(10/p)=-1.\n The absolute elasticity is one: C.",
     "hint": "Identify which perfect substitute is cheaper.",
     "topic": "Microeconomics",
     "sourcePage": 9,
@@ -20,6 +20,12 @@
       "1/2",
       "1",
       "∞"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Derive demand on the cheaper-good branch",
+        "body": "Since $p=1/2<1$, good $x$ gives more utility per rupee than $y$ under $U=x+y$. The optimum spends all 10 on $x$, so $x=10/p$ in a neighbourhood of this price. Its signed elasticity is $$\\frac{dx}{dp}\\frac px=\\left(-\\frac{10}{p^2}\\right)\\frac p{10/p}=-1.$$ The absolute elasticity is one: C."
+      }
     ]
   },
   {
@@ -32,7 +38,7 @@
     "originalPaperCode": "ME II",
     "stem": "Good x costs p locally and q<p in a distant market. Travel to the distant market costs C, and income I>C. Good y costs1 everywhere. For smooth downward-sloping convex indifference curves, if optimal x is x₀, which statement holds?",
     "answer": "C is possible under the literal assumptions: (p−q)x₀=C may hold at a corner but cannot hold at an interior crossing.",
-    "solution": "The local and distant budget lines are y=I−px and y=I−C−qx; they meet at x*=C/(p−q). At an interior crossing, the upper budget envelope has a slope increase from −p to−q. Smooth monotone utility cannot have a local maximum there: its derivative along the right branch exceeds that along the left by(p−q)U_y>0. Thus equality is impossible for an interior optimum, the likely intended answerB. However, the source permits corner optima. Take p=2,q=1,C=1,I=2 and U=x+0.1log(1+y). Its smooth strictly convex indifference curves meet both budget lines optimally at(x,y)=(1,0), satisfying(p−q)x=C. Other preferences at the same prices choose a different bundle. Therefore the literal question admits optionC; an interiority assumption is needed to assertB.",
+    "solution": "Find the crossing and explain the interior argument. The two budget lines are y=I-px and y=I-C-qx, crossing at x^*=C/(p-q). At an interior crossing, the upper envelope's slope becomes less negative, from -p to -q. Smooth increasing utility cannot have a local maximum there: the derivative along the right branch exceeds that along the left by (p-q)U_y>0. Thus the usual “never” answer is valid only for an interior optimum.\n\nCheck the corner omitted by that argument. Let p=2,q=1,C=1,I=2 and U=x+0.1log(1+y). These smooth downward-sloping strictly convex indifference curves support the corner (1,0) under both opportunities. It satisfies (p-q)x=C. Other preferences choose another bundle. Therefore equality can hold at a permitted boundary, making C possible under the literal assumptions. The missing interiority assumption is preserved as a review issue.",
     "hint": "Inspect the crossing of the two budget lines, including its endpoints.",
     "topic": "Microeconomics",
     "sourcePage": 9,
@@ -43,6 +49,16 @@
       "(p−q)x₀=C never",
       "Equality may or may not hold depending on preferences",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Find the crossing and explain the interior argument",
+        "body": "The two budget lines are $y=I-px$ and $y=I-C-qx$, crossing at $x^*=C/(p-q)$. At an interior crossing, the upper envelope's slope becomes less negative, from $-p$ to $-q$. Smooth increasing utility cannot have a local maximum there: the derivative along the right branch exceeds that along the left by $(p-q)U_y>0$. Thus the usual “never” answer is valid only for an interior optimum."
+      },
+      {
+        "title": "Check the corner omitted by that argument",
+        "body": "Let $p=2,q=1,C=1,I=2$ and $U=x+0.1\\log(1+y)$. These smooth downward-sloping strictly convex indifference curves support the corner $(1,0)$ under both opportunities. It satisfies $(p-q)x=C$. Other preferences choose another bundle. Therefore equality can hold at a permitted boundary, making C possible under the literal assumptions. The missing interiority assumption is preserved as a review issue."
+      }
     ]
   },
   {
@@ -55,7 +71,7 @@
     "originalPaperCode": "ME II",
     "stem": "For Q=min(L/(2a),K/(4b)), with a,b>0 and factor prices w,r, what is the cost function?",
     "answer": "D: (2aw+4br)Q.",
-    "solution": "Output Q requires at least L=2aQ and K=4bQ. With positive input prices, these minima are chosen, so cost is2awQ+4brQ. None of the first three options equals this expression.",
+    "solution": "Translate the Leontief technology into required inputs. Producing Q requires L≥2aQ and K≥4bQ. Positive factor prices make both inequalities bind at the cost minimum. Therefore \nC(Q)=w(2aQ)+r(4bQ)=(2aw+4br)Q.\n None of the first three expressions matches this total, so choose D.",
     "hint": "Use the fixed input requirements.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -66,6 +82,12 @@
       "4brQ",
       "(wa+2br)Q",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Translate the Leontief technology into required inputs",
+        "body": "Producing $Q$ requires $L\\ge2aQ$ and $K\\ge4bQ$. Positive factor prices make both inequalities bind at the cost minimum. Therefore $$C(Q)=w(2aQ)+r(4bQ)=(2aw+4br)Q.$$ None of the first three expressions matches this total, so choose D."
+      }
     ]
   },
   {
@@ -78,7 +100,7 @@
     "originalPaperCode": "ME II",
     "stem": "An economy has positive net borrowing from abroad during a period. Under the standard net-borrowing/current-account identity, what follows?",
     "answer": "C: Current-account surplus is negative.",
-    "solution": "Net foreign borrowing finances a current-account deficit: current account equals national saving minus investment, while net borrowing is investment minus saving. Thus positive net borrowing implies negative current account. It does not separately determine trade balance, net factor income or reserve changes. A positive particular loan inflow alone, as opposed to net foreign borrowing across all financial flows, would not suffice for this inference.",
+    "solution": "Use the net foreign borrowing identity. Under the standard meaning of total net foreign borrowing, CA=S-I while net borrowing is I-S. Positive net borrowing therefore means CA<0: C. It does not identify the sign of the trade balance alone, factor income or reserve accumulation. A particular positive loan inflow, rather than aggregate net borrowing, would not by itself imply this conclusion.",
     "hint": "Use the current-account identity.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
@@ -89,6 +111,12 @@
       "Net factor income from abroad is negative",
       "Current-account surplus is negative",
       "Foreign-exchange reserves necessarily rise"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use the net foreign borrowing identity",
+        "body": "Under the standard meaning of total net foreign borrowing, $CA=S-I$ while net borrowing is $I-S$. Positive net borrowing therefore means $CA<0$: C. It does not identify the sign of the trade balance alone, factor income or reserve accumulation. A particular positive loan inflow, rather than aggregate net borrowing, would not by itself imply this conclusion."
+      }
     ]
   },
   {
@@ -101,7 +129,7 @@
     "originalPaperCode": "ME II",
     "stem": "In a simple Keynesian economy G=tY always balances total income-tax receipts. What happens to Y if government raises t?",
     "answer": "A: Y increases under the usual proportional-consumption, exogenous-investment assumptions.",
-    "solution": "Let C=c(1−t)Y,0<c<1, and investment I>0 be fixed. Then Y=C+I+G gives Y=I/[(1−c)(1−t)], increasing in t for0≤t<1. Shifting one rupee from private disposable income to government spending raises expenditure because government spends the full rupee while households would have spent only c of it.",
+    "solution": "Substitute the balanced-budget rule. In the usual simple model take C=c(1-t)Y, fixed positive investment I, and G=tY. Then \nY=c(1-t)Y+I+tY ⇒ Y=(I)/((1-c)(1-t)).\n For 0<c<1 and 0≤ t<1, output increases with the tax rate: A. Government spends the full transferred rupee whereas households would have spent only fraction c.",
     "hint": "Substitute G=tY into goods equilibrium.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
@@ -112,6 +140,12 @@
       "Y decreases",
       "Y remains unchanged",
       "Y may increase or decrease"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Substitute the balanced-budget rule",
+        "body": "In the usual simple model take $C=c(1-t)Y$, fixed positive investment $I$, and $G=tY$. Then $$Y=c(1-t)Y+I+tY\\quad\\Rightarrow\\quad Y=\\frac I{(1-c)(1-t)}.$$ For $0<c<1$ and $0\\le t<1$, output increases with the tax rate: A. Government spends the full transferred rupee whereas households would have spent only fraction $c$."
+      }
     ]
   },
   {
@@ -124,7 +158,7 @@
     "originalPaperCode": "ME II",
     "stem": "Which statement is false? Under the conventional textbook treatment of public-debt interest, it is not a part of…",
     "answer": "D: “personal income” is the false exclusion.",
-    "solution": "Public-debt interest received by households contributes to personal income. In the textbook transfer-payment treatment used by this question, it is excluded from national income generated by current production and is not government consumption expenditure. Hence denying its inclusion in personal income is false. OptionA is read as saying it is not included in both income aggregates simultaneously; if instead “not part of both” means excluded from each, that wording is ambiguous.",
+    "solution": "Separate personal receipts from current production income. In the conventional textbook transfer treatment intended here, public-debt interest enters the receiving household's personal income but is not government consumption or income generated by current production. Thus saying it is not part of personal income is false: D. Option A is read as “not included in both aggregates simultaneously”; a reading that excludes it from each aggregate separately would introduce a wording ambiguity.",
     "hint": "Distinguish household receipts from income generated by current production.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
@@ -135,6 +169,12 @@
       "Government consumption expenditure",
       "National income",
       "Personal income"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Separate personal receipts from current production income",
+        "body": "In the conventional textbook transfer treatment intended here, public-debt interest enters the receiving household's personal income but is not government consumption or income generated by current production. Thus saying it is not part of personal income is false: D. Option A is read as “not included in both aggregates simultaneously”; a reading that excludes it from each aggregate separately would introduce a wording ambiguity."
+      }
     ]
   },
   {
@@ -147,12 +187,26 @@
     "originalPaperCode": "ME II",
     "stem": "Explain true/false: (i) Fixed gallons of gasoline per barrel of crude imply a gasoline/crude price ratio independent of crude production. (ii) Without money illusion, all price elasticities of a commodity determine its income elasticity. (iii) If both people have homothetic preferences, an Edgeworth-box contract curve is the straight line between origins.",
     "answer": "(i) False in general. (ii) True under differentiable degree-zero homogeneous demand. (iii) False.",
-    "solution": "(i) A fixed physical conversion coefficient does not determine market prices. With yield a and extra processing cost c per barrel, competitive gasoline price is(p_crude+c)/a, whose ratio to crude price is1/a+c/(a p_crude), varying when crude scarcity changes its price. (ii) No money illusion means xᵢ(λp,λM)=xᵢ(p,M). Euler’s theorem yields Σⱼpⱼ∂xᵢ/∂pⱼ+M∂xᵢ/∂M=0. Dividing by xᵢ gives income elasticity ηᵢ=−Σⱼεᵢⱼ. (iii) Different homothetic preferences need not have the same MRS along the diagonal. For totals(1,1), take U_A=√(xy) and U_B=x^(1/4)y^(3/4). Tangency yields y_A=x_A/(3−2x_A), a curved contract curve, not the diagonal.",
+    "solution": "A fixed yield does not establish a fixed price ratio. The first statement is false in general. Suppose one barrel produces a gallons and requires processing cost c. Even with competitive pricing, p_g=(p_o+c)/a, so \n(p_g)/(p_o)=(1)/(a)+(c)/(ap_o).\n This ratio changes when the crude price changes. A physical conversion coefficient alone does not determine equilibrium relative prices.\n\nDerive the elasticity restriction from no money illusion. No money illusion means demand is homogeneous of degree zero in all prices and income: x_i(λ p,λ M)=x_i(p,M). Differentiating at λ=1 and dividing by x_i gives \nΣ_jε_(ij)+η_i=0.\n Thus the second statement is true when the relevant derivatives exist: the income elasticity is minus the sum of all price elasticities.\n\nGive a counterexample with two homothetic preferences. The third statement is false: homothetic does not mean identical. In a unit Edgeworth box take U_A=√(xy) and U_B=x^(1/4)y^(3/4). Equality of their marginal rates of substitution gives \n(y_A)/(x_A)=(1-y_A)/(3(1-x_A)) ⇒ y_A=(x_A)/(3-2x_A).\n This is a curved contract curve rather than the diagonal, although both utilities are homothetic.",
     "hint": "Distinguish technology from pricing and apply homogeneity to demand.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "A fixed yield does not establish a fixed price ratio",
+        "body": "The first statement is false in general. Suppose one barrel produces $a$ gallons and requires processing cost $c$. Even with competitive pricing, $p_g=(p_o+c)/a$, so $$\\frac{p_g}{p_o}=\\frac1a+\\frac{c}{ap_o}.$$ This ratio changes when the crude price changes. A physical conversion coefficient alone does not determine equilibrium relative prices."
+      },
+      {
+        "title": "Derive the elasticity restriction from no money illusion",
+        "body": "No money illusion means demand is homogeneous of degree zero in all prices and income: $x_i(\\lambda p,\\lambda M)=x_i(p,M)$. Differentiating at $\\lambda=1$ and dividing by $x_i$ gives $$\\sum_j\\varepsilon_{ij}+\\eta_i=0.$$ Thus the second statement is true when the relevant derivatives exist: the income elasticity is minus the sum of all price elasticities."
+      },
+      {
+        "title": "Give a counterexample with two homothetic preferences",
+        "body": "The third statement is false: homothetic does not mean identical. In a unit Edgeworth box take $U_A=\\sqrt{xy}$ and $U_B=x^{1/4}y^{3/4}$. Equality of their marginal rates of substitution gives $$\\frac{y_A}{x_A}=\\frac{1-y_A}{3(1-x_A)}\\quad\\Rightarrow\\quad y_A=\\frac{x_A}{3-2x_A}.$$ This is a curved contract curve rather than the diagonal, although both utilities are homothetic."
+      }
+    ]
   },
   {
     "id": "2004-PEB-Q3",
@@ -164,12 +218,30 @@
     "originalPaperCode": "ME II",
     "stem": "Duopoly demand is P=10−q₁−q₂. For positive output, costs are C₁=1+2q₁ and C₂=1+4q₂; a firm producing nothing avoids its fixed cost. Find Cournot outputs and profits. What if firm2 fixed cost rises from1 to2?",
     "answer": "Initially q₁=10/3,q₂=4/3, profits91/9 and7/9. After firm2 fixed cost becomes2, equilibrium is q₁=4,q₂=0, profits15 and0.",
-    "solution": "Conditional on producing, first-order conditions are2q₁+q₂=8 and q₁+2q₂=6. They give(10/3,4/3). At each optimum operating profit equals qᵢ², so subtracting fixed cost1 gives91/9 and7/9, both positive. Raising firm2 fixed cost to2 makes its former net profit16/9−2=−2/9, so that interior solution is not an equilibrium. If firm2 exits, firm1 optimally chooses monopoly output4 and earns(10−4−2)4−1=15. Against q₁=4, firm2’s best positive output is1, with operating profit1<fixed cost2, so staying out is optimal. Thus(4,0) is the new equilibrium.",
+    "solution": "Solve conditional on both firms producing. With positive outputs the profits are (8-q_1-q_2)q_1-1 and (6-q_1-q_2)q_2-1. Their interior best-response conditions are \n2q_1+q_2=8, q_1+2q_2=6.\n They yield q_1=10/3, q_2=4/3.\n\nCheck the avoidable fixed costs. At a conditional optimum, operating profit equals q_i^2. Subtracting the fixed cost gives \nπ_1=100/9-1=91/9, π_2=16/9-1=7/9.\n Both are positive, so neither firm prefers the zero-output payoff of zero. The conditional interior solution is therefore an equilibrium.\n\nReconsider entry when firm 2’s fixed cost rises. With fixed cost 2, the old firm-2 output would earn 16/9-2=-2/9, so simply retaining the old first-order solution is incorrect. If firm 2 exits, firm 1’s monopoly best response is q_1=4. Against that quantity, firm 2’s best positive output is 1 and yields operating profit 1, less than its fixed cost 2.\n\nConfirm the new equilibrium and profits. Firm 2 therefore optimally stays out and firm 1 optimally produces 4. The new equilibrium is (q_1,q_2)=(4,0) with profits (15,0). This change is driven by the avoidable participation cost, not by a change in firm 2’s positive-output marginal cost.",
     "hint": "Check shutdown as well as the positive-output first-order conditions.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Solve conditional on both firms producing",
+        "body": "With positive outputs the profits are $(8-q_1-q_2)q_1-1$ and $(6-q_1-q_2)q_2-1$. Their interior best-response conditions are $$2q_1+q_2=8,\\qquad q_1+2q_2=6.$$ They yield $q_1=10/3$, $q_2=4/3$."
+      },
+      {
+        "title": "Check the avoidable fixed costs",
+        "body": "At a conditional optimum, operating profit equals $q_i^2$. Subtracting the fixed cost gives $$\\pi_1=100/9-1=91/9,\\qquad\\pi_2=16/9-1=7/9.$$ Both are positive, so neither firm prefers the zero-output payoff of zero. The conditional interior solution is therefore an equilibrium."
+      },
+      {
+        "title": "Reconsider entry when firm 2’s fixed cost rises",
+        "body": "With fixed cost 2, the old firm-2 output would earn $16/9-2=-2/9$, so simply retaining the old first-order solution is incorrect. If firm 2 exits, firm 1’s monopoly best response is $q_1=4$. Against that quantity, firm 2’s best positive output is 1 and yields operating profit 1, less than its fixed cost 2."
+      },
+      {
+        "title": "Confirm the new equilibrium and profits",
+        "body": "Firm 2 therefore optimally stays out and firm 1 optimally produces 4. The new equilibrium is $(q_1,q_2)=(4,0)$ with profits $(15,0)$. This change is driven by the avoidable participation cost, not by a change in firm 2’s positive-output marginal cost."
+      }
+    ]
   },
   {
     "id": "2004-PEB-Q4",
@@ -181,12 +253,26 @@
     "originalPaperCode": "ME II",
     "stem": "Group1 income is fixed800; its propensity to consume is.8 and propensity to import.4. Group2 consumes only domestic output with propensity.5. Investment is domestically produced and fixed600. (i) Find GDP. (ii) Group2 transfers100 to group1 and imports are capped250: find new GDP. (iii) Repeat with import cap400.",
     "answer": "Initial Y1040. After transfer with cap250, Y1240 (rise200). With cap400, Y1020 (fall20 from initial).",
-    "solution": "Initially C₁=.8·800=640, C₂=.5(Y−800), imports=.4·800=320. Goods balance Y=C₁+C₂+600−320 gives Y1040. After transfer, disposable incomes are900 andY−900. C₁=720 and C₂=.5(Y−900). Desired imports360 exceed cap250, so Y=720+.5(Y−900)+600−250, yielding1240. With cap400, imports360 are not constrained, so the same balance with−360 yields1020. The transfer changes consumption patterns but is not itself new GDP; the import cap changes the domestic share of spending.",
+    "solution": "Construct the original expenditure balance. Original consumption is C_1=0.8(800)=640 and C_2=0.5(Y-800). Imports are 0.4(800)=320. With domestic investment 600, \nY=640+0.5(Y-800)+600-320,\n giving Y=1040.\n\nApply the transfer and the binding import ceiling. The transfer makes disposable group incomes 900 and Y-900. Thus C_1=720, C_2=0.5(Y-900) and desired imports are 360. With a ceiling of 250, actual imports are 250. The new balance is \nY=720+0.5(Y-900)+600-250,\n so Y=1240, 200 above the original income.\n\nRepeat when the ceiling is relaxed. With a ceiling of 400, desired imports 360 are fully allowed. Replace 250 by 360 in the preceding equation to obtain Y=1020. This is 20 below the original 1040, and 220 below the binding-ceiling case. The transfer itself is not new production; it changes spending propensities, while the import rule changes how much spending falls on domestic goods.",
     "hint": "Track each group’s disposable income and subtract actual, capped imports.",
     "topic": "Macroeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Construct the original expenditure balance",
+        "body": "Original consumption is $C_1=0.8(800)=640$ and $C_2=0.5(Y-800)$. Imports are $0.4(800)=320$. With domestic investment 600, $$Y=640+0.5(Y-800)+600-320,$$ giving $Y=1040$."
+      },
+      {
+        "title": "Apply the transfer and the binding import ceiling",
+        "body": "The transfer makes disposable group incomes 900 and $Y-900$. Thus $C_1=720$, $C_2=0.5(Y-900)$ and desired imports are 360. With a ceiling of 250, actual imports are 250. The new balance is $$Y=720+0.5(Y-900)+600-250,$$ so $Y=1240$, 200 above the original income."
+      },
+      {
+        "title": "Repeat when the ceiling is relaxed",
+        "body": "With a ceiling of 400, desired imports 360 are fully allowed. Replace 250 by 360 in the preceding equation to obtain $Y=1020$. This is 20 below the original 1040, and 220 below the binding-ceiling case. The transfer itself is not new production; it changes spending propensities, while the import rule changes how much spending falls on domestic goods."
+      }
+    ]
   },
   {
     "id": "2004-PEB-Q5",
@@ -198,12 +284,30 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer buys electricity E and other goods O priced1. Electricity requires fixed charge R and a quantity-dependent per-unit price p=E/2. Utility is E+O and income I>R. (i) Describe the budget boundary. (ii) For R0,I1 find the optimum. (iii) Find the largest extractable fixed charge.",
     "answer": "Reading p as the price applied to all units: O=I−R−E²/2 when connected. At R0,I1: E1,O1/2. At I1 the maximal fixed charge is1/2, leaving the consumer indifferent to no connection.",
-    "solution": "With an all-units price p(E), total electricity spending is p(E)E=E²/2. Thus the connected budget is a downward parabola O=I−R−E²/2 for0<E≤√[2(I−R)], together with the no-connection option E0,O≤I if the fee is avoidable. For R0,I1, utility along the parabola is1+E−E²/2, uniquely maximized at E1,O1/2. The maximal gross surplus from access is max(E−E²/2)=1/2, so at I1 a charge R1/2 extracts it: E1,O0,U1 equals no-connection utility1. A charge just below1/2 ensures strict participation. More generally, with no borrowing and income I, R_max=1/2 if I≥1; for0<I<1 the affordability constraint yields R_max=I−I²/2 at E=I,O0. If p were intended as a marginal-block tariff, total spending would instead be E²/4 and the numerical answers would differ; the all-units interpretation is the literal per-unit-price reading.",
+    "solution": "Write the actual electricity bill. Treat p(E)=E/2 as the unit price applied to all units. Total usage expenditure is p(E)E=E^2/2, so a connected consumer faces \nO=I-R-(E^2)/(2), 0<E≤√(2(I-R)).\n If the connection fee is avoidable, the no-connection option (E,O)=(0,I) is also available. The connected frontier is a parabola rather than a straight budget line.\n\nOptimize usage at zero fee and income one. With R=0,I=1, utility along the frontier is 1+E-E^2/2. Its derivative 1-E vanishes at E=1, an affordable interior choice, and the second derivative is negative. Thus the optimum is (E,O)=(1,1/2).\n\nFind the consumer’s willingness to pay for access. The gross utility surplus from electricity is max_E(E-E^2/2)=1/2. At income one, a fixed fee R=1/2 leaves E=1,O=0 and utility 1, equal to the no-connection utility. Hence R_(max)=1/2; charge slightly less for strict participation.\n\nState affordability and tariff qualifications. For general income, the same fee is feasible if I≥1. If 0<I<1, the affordability constraint binds and the maximal fee is I-I^2/2, attained at E=I,O=0. A marginal-block tariff would require integrating the marginal price rather than multiplying by quantity; that is a different interpretation from the all-units price used here.",
     "hint": "The total bill is quantity times the all-units price, plus the connection fee.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": "The price function is interpreted as an all-units price rather than a marginal tariff; the continuation of I1 is used for the main fixed-charge answer."
+    "notes": "The price function is interpreted as an all-units price rather than a marginal tariff; the continuation of I1 is used for the main fixed-charge answer.",
+    "solutionSteps": [
+      {
+        "title": "Write the actual electricity bill",
+        "body": "Treat $p(E)=E/2$ as the unit price applied to all units. Total usage expenditure is $p(E)E=E^2/2$, so a connected consumer faces $$O=I-R-\\frac{E^2}{2},\\qquad0<E\\le\\sqrt{2(I-R)}.$$ If the connection fee is avoidable, the no-connection option $(E,O)=(0,I)$ is also available. The connected frontier is a parabola rather than a straight budget line."
+      },
+      {
+        "title": "Optimize usage at zero fee and income one",
+        "body": "With $R=0,I=1$, utility along the frontier is $1+E-E^2/2$. Its derivative $1-E$ vanishes at $E=1$, an affordable interior choice, and the second derivative is negative. Thus the optimum is $(E,O)=(1,1/2)$."
+      },
+      {
+        "title": "Find the consumer’s willingness to pay for access",
+        "body": "The gross utility surplus from electricity is $\\max_E(E-E^2/2)=1/2$. At income one, a fixed fee $R=1/2$ leaves $E=1,O=0$ and utility 1, equal to the no-connection utility. Hence $R_{max}=1/2$; charge slightly less for strict participation."
+      },
+      {
+        "title": "State affordability and tariff qualifications",
+        "body": "For general income, the same fee is feasible if $I\\ge1$. If $0<I<1$, the affordability constraint binds and the maximal fee is $I-I^2/2$, attained at $E=I,O=0$. A marginal-block tariff would require integrating the marginal price rather than multiplying by quantity; that is a different interpretation from the all-units price used here."
+      }
+    ]
   },
   {
     "id": "2004-PEB-Q6",
@@ -215,12 +319,26 @@
     "originalPaperCode": "ME II",
     "stem": "Income is25, prices are3 for x and4 for y, and U=12x+16y−x²−y² on x,y≥0. What happens to the optimum if income rises to50 or more?",
     "answer": "At income25, bundle(3,4). At income50 or more, bundle(6,8); any income above50 is left unspent.",
-    "solution": "Complete squares: U=100−(x−6)²−(y−8)². The unconstrained bliss point is(6,8), costing3·6+4·8=50. With income25, the closest feasible point to that bliss point lies on3x+4y25 and equals(6,8)−(3,4)=(3,4). At income50 the bliss point becomes affordable and maximizes utility100. Further income cannot improve on satiation, so the same bundle remains optimal with unspent income.",
+    "solution": "Locate the bliss point. Complete the squares: \nU(x,y)=100-(x-6)^2-(y-8)^2.\n The unconstrained maximum is therefore at (6,8), with utility 100. This point costs 3(6)+4(8)=50.\n\nFind the optimum at income 25. The problem is equivalent to finding the feasible point closest to (6,8). The budget boundary is 3x+4y=25. Projecting onto it gives \n(x,y)=(6,8)-(50-25)/(3^2+4^2)(3,4)=(3,4).\n This point is nonnegative and therefore is the constrained optimum.\n\nExplain the response to additional income. At income 50 the bliss point becomes affordable. At every income above 50 it is still the unique utility-maximizing bundle. The consumer leaves any excess income unspent instead of buying beyond satiation. Spending all income is not a general requirement when utility is not everywhere increasing.",
     "hint": "Locate the bliss point by completing squares.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Locate the bliss point",
+        "body": "Complete the squares: $$U(x,y)=100-(x-6)^2-(y-8)^2.$$ The unconstrained maximum is therefore at $(6,8)$, with utility 100. This point costs $3(6)+4(8)=50$."
+      },
+      {
+        "title": "Find the optimum at income 25",
+        "body": "The problem is equivalent to finding the feasible point closest to $(6,8)$. The budget boundary is $3x+4y=25$. Projecting onto it gives $$ (x,y)=(6,8)-\\frac{50-25}{3^2+4^2}(3,4)=(3,4).$$ This point is nonnegative and therefore is the constrained optimum."
+      },
+      {
+        "title": "Explain the response to additional income",
+        "body": "At income 50 the bliss point becomes affordable. At every income above 50 it is still the unique utility-maximizing bundle. The consumer leaves any excess income unspent instead of buying beyond satiation. Spending all income is not a general requirement when utility is not everywhere increasing."
+      }
+    ]
   },
   {
     "id": "2004-PEB-Q7",
@@ -232,11 +350,29 @@
     "originalPaperCode": "ME II",
     "stem": "IS–LM has desired private saving s=s(Y−tθY),0<s′<1; investment i=i(r),i′<0; money demand l(Y,r) with l_Y>0,l_r<0. Labour share θ, real money M/P, G and tax rate t are exogenous. (i) Can equilibrium tax collections tθY fall when t rises? (ii) If tax instead applies to all GNP, reformulate saving and reconsider.",
     "answer": "Under these assumptions equilibrium tax revenue strictly increases with t; no downward Laffer segment occurs. Replacing labour taxation by all-income taxation sets θ1 and leaves that conclusion intact.",
-    "solution": "Goods equilibrium is s((1−θt)Y)+θtY=i(r)+G, because private plus government saving equals investment. Along fixed-money LM, dr=k dY with k=−l_Y/l_r>0. Let a=s′ and D=a(1−θt)+θt−i′k>0. Differentiating gives dY/dt=−θY(1−a)/D<0. Revenue R=θtY has derivative dR/dt=θY[1−θt(1−a)/D]=θY(a−i′k)/D>0. Thus the negative income response never outweighs the direct rate effect in this model. If all income is taxed, saving becomes s((1−t)Y), tax revenue is tY and the same derivation with θ1 gives positive derivative Y(a−i′k)/[a(1−t)+t−i′k]. Therefore extending the tax base does not introduce a downward-sloping Laffer branch under these behavioural restrictions.",
+    "solution": "Include government saving in goods equilibrium. Private saving is s((1-θ t)Y), but government tax revenue is θ tY. With spending G, total saving equals investment: \ns((1-θ t)Y)+θ tY=i(r)+G.\n Omitting the tax term on this equation would give the wrong revenue response.\n\nDifferentiate along the unchanged money market. Let a=s', with 0<a<1, and k=-l_Y/l_r>0, so dr=k dY. Define \nD=a(1-θ t)+θ t-i'k>0.\n Differentiating the goods equation then gives \n(dY)/(dt)=-(θ Y(1-a))/(D)<0.\n A higher tax rate lowers equilibrium output in this model.\n\nDifferentiate collections rather than output alone. Tax revenue is R=θ tY. Its derivative is \n(dR)/(dt) =θ Y+θ t(dY)/(dt); =θ Y(a-i'k)/(D)>0.\n Output falls, but not enough to outweigh the direct effect of the higher rate. Hence this model has no downward-sloping Laffer segment under its stated behavioural assumptions.\n\nExtend the base to all factor income. With an all-income tax, private saving becomes s((1-t)Y) and receipts become tY. Set θ=1 throughout the derivation. Then \n(d(tY))/(dt)=Y(a-i'k)/(a(1-t)+t-i'k)>0.\n Broadening the tax base therefore does not reverse the conclusion. The signs assume positive income and economically admissible rates.",
     "hint": "Include government saving, differentiate both equilibrium conditions and then differentiate tax revenue.",
     "topic": "Macroeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "Assumes positive income, 0<θ≤1 and economically admissible tax rates0≤t<1."
+    "notes": "Assumes positive income, 0<θ≤1 and economically admissible tax rates0≤t<1.",
+    "solutionSteps": [
+      {
+        "title": "Include government saving in goods equilibrium",
+        "body": "Private saving is $s((1-\\theta t)Y)$, but government tax revenue is $\\theta tY$. With spending $G$, total saving equals investment: $$s((1-\\theta t)Y)+\\theta tY=i(r)+G.$$ Omitting the tax term on this equation would give the wrong revenue response."
+      },
+      {
+        "title": "Differentiate along the unchanged money market",
+        "body": "Let $a=s'$, with $0<a<1$, and $k=-l_Y/l_r>0$, so $dr=k\\,dY$. Define $$D=a(1-\\theta t)+\\theta t-i'k>0.$$ Differentiating the goods equation then gives $$\\frac{dY}{dt}=-\\frac{\\theta Y(1-a)}D<0.$$ A higher tax rate lowers equilibrium output in this model."
+      },
+      {
+        "title": "Differentiate collections rather than output alone",
+        "body": "Tax revenue is $R=\\theta tY$. Its derivative is $$\\begin{aligned}\\frac{dR}{dt}&=\\theta Y+\\theta t\\frac{dY}{dt}\\\\&=\\theta Y\\frac{a-i'k}{D}>0.\\end{aligned}$$ Output falls, but not enough to outweigh the direct effect of the higher rate. Hence this model has no downward-sloping Laffer segment under its stated behavioural assumptions."
+      },
+      {
+        "title": "Extend the base to all factor income",
+        "body": "With an all-income tax, private saving becomes $s((1-t)Y)$ and receipts become $tY$. Set $\\theta=1$ throughout the derivation. Then $$\\frac{d(tY)}{dt}=Y\\frac{a-i'k}{a(1-t)+t-i'k}>0.$$ Broadening the tax base therefore does not reverse the conclusion. The signs assume positive income and economically admissible rates."
+      }
+    ]
   }
 ]

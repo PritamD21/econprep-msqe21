@@ -9,12 +9,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Two competitive sectors produce the same good with Fᵢ(Lᵢ)=15√Lᵢ. Labour moves freely, and total labour is100. Find allocation. (b) All variable-factor prices and the output price double: what happens to short-run output and profit? (c) Year1 wheat production750 includes exports150 and unsold stock600; year2 has no production, old wheat is sold domestically and shirts250 are imported. Fill GDP=C+I+X−M.",
     "answer": "(a) L₁=L₂=50. (b) Output unchanged; profit doubles only if fixed cost also doubles or is zero. (c) Year1 (GDP,C,I,X,M)=(750,0,600,150,0); year2 (0,850,−600,0,250).",
-    "solution": "(a) Mobile labour equalizes value marginal products; identical technologies give 15/(2√L₁)=15/(2√L₂), hence equal halves. (b) Revenue and variable cost both double at every output, so the maximizer of pQ−VC(Q) is unchanged. With unchanged fixed cost F, new profit is 2(pQ−VC)−F=2π+F, not generally2π. If F doubles too, total profit doubles. (c) Unsold year1 goods enter inventory investment600. In year2, consuming those goods causes inventory disinvestment−600. Consumption is850 including imported shirts, and subtracting imports250 gives GDP0.",
+    "solution": "Allocate the mobile labour. Both sectors sell the same output at the same price. Competitive firms hire until the value marginal product equals the common wage. Therefore \n(15)/(2√(L_1))=(15)/(2√(L_2)), L_1+L_2=100.\n Identical technologies imply L_1=L_2=50.\n\nSeparate the output decision from the fixed-cost bill. Let original profit be π=pq-VC(q)-F. Doubling output and all variable-input prices doubles the function pq-VC(q) at every output, leaving its maximizer unchanged. If fixed cost stays F, new profit is \nπ'=2[pq-VC(q)]-F=2π+F.\n Profit doubles only when fixed cost also doubles, or is zero. A statement about variable prices alone does not establish that.\n\nRecord production and inventory investment. Year-1 wheat production is 750, including exports 150 and inventory investment 600. Thus (Y,C,I,X,M)=(750,0,600,150,0). In year 2, consumption is 600+250=850, inventories fall by 600 and imports are 250. Therefore Y_2=850-600-250=0, and the complete tuple is (0,850,-600,0,250). Counting the old wheat as new output would double count it.",
     "hint": "Equalize marginal products and distinguish variable from fixed cost and inventory changes.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": "Subpart (c) concerns macroeconomic accounting."
+    "notes": "Subpart (c) concerns macroeconomic accounting.",
+    "solutionSteps": [
+      {
+        "title": "Allocate the mobile labour",
+        "body": "Both sectors sell the same output at the same price. Competitive firms hire until the value marginal product equals the common wage. Therefore $$\\frac{15}{2\\sqrt{L_1}}=\\frac{15}{2\\sqrt{L_2}},\\qquad L_1+L_2=100.$$ Identical technologies imply $L_1=L_2=50$."
+      },
+      {
+        "title": "Separate the output decision from the fixed-cost bill",
+        "body": "Let original profit be $\\pi=pq-VC(q)-F$. Doubling output and all variable-input prices doubles the function $pq-VC(q)$ at every output, leaving its maximizer unchanged. If fixed cost stays $F$, new profit is $$\\pi'=2[pq-VC(q)]-F=2\\pi+F.$$ Profit doubles only when fixed cost also doubles, or is zero. A statement about variable prices alone does not establish that."
+      },
+      {
+        "title": "Record production and inventory investment",
+        "body": "Year-1 wheat production is 750, including exports 150 and inventory investment 600. Thus $(Y,C,I,X,M)=(750,0,600,150,0)$. In year 2, consumption is $600+250=850$, inventories fall by 600 and imports are 250. Therefore $Y_2=850-600-250=0$, and the complete tuple is $(0,850,-600,0,250)$. Counting the old wheat as new output would double count it."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q2",
@@ -26,12 +40,26 @@
     "originalPaperCode": "ME II",
     "stem": "A price-taking farmer has production F(L)=10√L−2L, four units of free family labour and cannot hire outside labour. (a) Find output. (b) Does a10% income tax change it? (c) Would he adopt F̃(L)=11√L−L−15 instead?",
     "answer": "(a) L=4, output12. (b) Unchanged. (c) No; the alternative’s maximum feasible output is3.",
-    "solution": "On0<L≤4, F′(L)=5/√L−2≥.5>0, so all four labour units are used and F(4)=20−8=12. A proportional tax scales positive revenue by .9 and leaves its maximizing L unchanged. The alternative derivative11/(2√L)−1 is positive throughout the feasible range, so its best feasible output is F̃(4)=22−4−15=3<12. Hence it is rejected. The unconstrained technology optima beyond L=4 are irrelevant because hiring is prohibited.",
+    "solution": "Respect the available family labour. The farmer maximizes output revenue with no labour expense, but cannot use more than four units. For 0<L≤4, \nF'(L)=(5)/(√(L))-2≥(1)/(2)>0.\n Output therefore rises throughout the feasible range and is maximized at L=4, giving F(4)=20-8=12.\n\nApply a proportional income tax. A 10% tax scales positive revenue by 0.9. It does not change the ranking of feasible labour choices, so the farmer still uses four units and produces 12. An unconstrained optimum beyond four units is irrelevant because outside hiring is prohibited.\n\nCompare technologies at their own feasible optima. For the alternative, F (alternative)'(L)=11/(2√(L))-1>0 over the same feasible range. Its best feasible output is therefore \nF (alternative)(4)=11(2)-4-15=3.\n Since 3 is below 12, the farmer rejects it. A larger leading coefficient alone is not enough to make the alternative better; its constant deduction matters.",
     "hint": "Respect the family-labour constraint before comparing technologies.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Respect the available family labour",
+        "body": "The farmer maximizes output revenue with no labour expense, but cannot use more than four units. For $0<L\\le4$, $$F'(L)=\\frac5{\\sqrt L}-2\\ge\\frac12>0.$$ Output therefore rises throughout the feasible range and is maximized at $L=4$, giving $F(4)=20-8=12$."
+      },
+      {
+        "title": "Apply a proportional income tax",
+        "body": "A 10% tax scales positive revenue by 0.9. It does not change the ranking of feasible labour choices, so the farmer still uses four units and produces 12. An unconstrained optimum beyond four units is irrelevant because outside hiring is prohibited."
+      },
+      {
+        "title": "Compare technologies at their own feasible optima",
+        "body": "For the alternative, $\\widetilde F'(L)=11/(2\\sqrt L)-1>0$ over the same feasible range. Its best feasible output is therefore $$\\widetilde F(4)=11(2)-4-15=3.$$ Since 3 is below 12, the farmer rejects it. A larger leading coefficient alone is not enough to make the alternative better; its constant deduction matters."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q3",
@@ -43,12 +71,26 @@
     "originalPaperCode": "ME II",
     "stem": "A zero-cost monopolist cannot discriminate. TypeI is one customer with demand Q_I=100−P for0≤P≤100. TypeII consists of n customers each demanding one unit only at prices at most5. Does the optimal price depend on n?",
     "answer": "Price50 if n<405; price5 if n>405; either price if n=405, assuming customers buy at reservation price.",
-    "solution": "For5<P≤100, only typeI buys, so revenue P(100−P) is maximized at50 with value2500. For0≤P≤5, total demand is100−P+n and revenue P(100+n−P) is strictly increasing on this range, so its maximum is at5 with value475+5n. Compare the two candidates:475+5n exceeds2500 exactly when n>405. Thus enough low-valuation customers switch the monopoly to a lower price. If customers refuse purchase at indifference, the low-price revenue is approached just below5.",
+    "solution": "Identify the two demand regimes. At a price above 5, only the first customer buys and revenue is R_H(P)=P(100-P). At a price at most 5, the additional n customers each buy one unit, so R_L(P)=P(100+n-P). Production costs are zero, making revenue the objective.\n\nOptimize within each regime. The high-price regime is maximized at P=50, giving revenue 2500. On 0≤ P≤5, the derivative 100+n-2P is positive, so the best low price is 5. Its revenue is 5(95+n)=475+5n. No other price in either regime can beat these respective candidates.\n\nCompare the candidates and state the threshold. Low-price sales are preferable exactly when \n475+5n>2500 ⇔ n>405.\n Thus charge 50 for n<405, charge 5 for n>405, and either price for n=405. This uses buying at reservation-value indifference; if type-II customers refuse at the tie, use a price just below 5 and the corresponding revenue limit.",
     "hint": "Compare the best high-price regime with the best low-price regime.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Identify the two demand regimes",
+        "body": "At a price above 5, only the first customer buys and revenue is $R_H(P)=P(100-P)$. At a price at most 5, the additional $n$ customers each buy one unit, so $R_L(P)=P(100+n-P)$. Production costs are zero, making revenue the objective."
+      },
+      {
+        "title": "Optimize within each regime",
+        "body": "The high-price regime is maximized at $P=50$, giving revenue 2500. On $0\\le P\\le5$, the derivative $100+n-2P$ is positive, so the best low price is 5. Its revenue is $5(95+n)=475+5n$. No other price in either regime can beat these respective candidates."
+      },
+      {
+        "title": "Compare the candidates and state the threshold",
+        "body": "Low-price sales are preferable exactly when $$475+5n>2500\\quad\\Leftrightarrow\\quad n>405.$$ Thus charge 50 for $n<405$, charge 5 for $n>405$, and either price for $n=405$. This uses buying at reservation-value indifference; if type-II customers refuse at the tie, use a price just below 5 and the corresponding revenue limit."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q4",
@@ -60,12 +102,26 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer has U(x,y)=xy, income100 and initial prices pₓ=5,pᵧ=10. Then pₓ rises to10, with other data fixed. Decompose price effects using Slutsky compensation.",
     "answer": "x: total−5, substitution−2.5, income−2.5. y: total0, substitution+2.5, income−2.5.",
-    "solution": "Equal expenditure shares give initial bundle(10,5) and final bundle(5,5). The old bundle costs10·10+10·5=150 at new prices, so Slutsky-compensated income is150. Its optimal bundle is(7.5,7.5). Substitution effect is compensated minus old=(−2.5,+2.5). Income effect is final minus compensated=(−2.5,−2.5). Their sum is the total change(−5,0).",
+    "solution": "Calculate uncompensated demand before and after the price change. For U=xy, half of income is spent on each good: x=M/(2p_x) and y=M/(2p_y). Consequently the initial bundle is (10,5) and the final bundle is (5,5). The total change is (-5,0).\n\nConstruct Slutsky compensation. Slutsky compensation makes the original bundle just affordable at the new prices. Its cost is \nM^c=10(10)+10(5)=150.\n At income 150 and the new equal prices, optimal demand is (7.5,7.5). This is a reoptimized bundle, not necessarily the original bundle.\n\nSeparate the two movements. The substitution effect moves from old demand to compensated demand; the income effect removes the compensation at the new prices: \nSE =(7.5,7.5)-(10,5)=(-2.5,2.5),; IE =(5,5)-(7.5,7.5)=(-2.5,-2.5),; PE =SE+IE=(-5,0).\n The unchanged final quantity of y therefore conceals two nonzero, offsetting effects.",
     "hint": "Raise income just enough to afford the original bundle at the new prices.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Calculate uncompensated demand before and after the price change",
+        "body": "For $U=xy$, half of income is spent on each good: $x=M/(2p_x)$ and $y=M/(2p_y)$. Consequently the initial bundle is $(10,5)$ and the final bundle is $(5,5)$. The total change is $(-5,0)$."
+      },
+      {
+        "title": "Construct Slutsky compensation",
+        "body": "Slutsky compensation makes the original bundle just affordable at the new prices. Its cost is $$M^c=10(10)+10(5)=150.$$ At income 150 and the new equal prices, optimal demand is $(7.5,7.5)$. This is a reoptimized bundle, not necessarily the original bundle."
+      },
+      {
+        "title": "Separate the two movements",
+        "body": "The substitution effect moves from old demand to compensated demand; the income effect removes the compensation at the new prices: $$\\begin{aligned}SE&=(7.5,7.5)-(10,5)=(-2.5,2.5),\\\\IE&=(5,5)-(7.5,7.5)=(-2.5,-2.5),\\\\PE&=SE+IE=(-5,0).\\end{aligned}$$ The unchanged final quantity of $y$ therefore conceals two nonzero, offsetting effects."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q5",
@@ -77,12 +133,30 @@
     "originalPaperCode": "ME II",
     "stem": "In a closed IS–LM economy, consumption depends on disposable income z=Y−T. Lump-sum taxes are T. Investment and speculative money demand decrease with interest r; transactions money demand depends on z rather than Y. What happens to private investment, private saving, government saving, disposable income and income when T rises, holding G and real money supply fixed?",
     "answer": "Disposable income falls, interest falls, investment rises, private saving falls, government saving rises. Total income Y has an ambiguous response.",
-    "solution": "Write goods balance z+T=C(z)+I(r)+G and money equilibrium L(z,r)=M/P, with0<C′<1,I′<0,L_z>0,L_r<0. Along LM, dr=k dz where k=−L_z/L_r>0. Differentiating goods balance gives D dz=−dT, with D=1−C′−I′k>0. Thus dz<0 and dr<0; I rises. Private saving S_p=z−C(z) falls by(1−C′)dz; government saving T−G rises one-for-one. But dY=dz+dT=(1−1/D)dT, whose sign depends on whether D is above or below1. Equivalently, income rises if the investment stimulus −I′k exceeds C′ and falls if it is smaller. The usual fixed-Y-transactions tax result cannot be applied unchanged.",
+    "solution": "Rewrite the model in disposable income. Let z=Y-T. Goods-market equilibrium becomes z+T=C(z)+I(r)+G, and money equilibrium is L(z,r)=M/P. Using z is essential here: transactions money demand is specified as a function of disposable income, not total output.\n\nDerive the joint equilibrium response. Write k=-L_z/L_r>0, so along the unchanged LM relation dr=k dz. Differentiating goods equilibrium gives \n[1-C'(z)-I'(r)k],dz =-dT,; D =1-C'-I'k>0,; (dz)/(dT) =-(1)/(D)<0.\n Interest also falls because dr=k dz.\n\nTrack investment and the two saving components. With I'<0, the fall in interest raises private investment. Private saving S_p=z-C(z) falls because dS_p=(1-C')dz<0. Government saving T-G increases by the tax rise, since spending is held fixed. Their sum adjusts to the higher investment level.\n\nExplain why total output has no fixed sign. Total income includes taxes: Y=z+T. Therefore \n(dY)/(dT)=1-(1)/(D)=(-C'-I'k)/(D).\n It is positive if the investment stimulus -I'k exceeds C', negative if it is smaller, and zero if they tie. Disposable income falls unambiguously, but total income need not. Applying the usual total-income money-demand model would miss this distinction.",
     "hint": "Rewrite the system in disposable income and derive the implied LM movement.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Rewrite the model in disposable income",
+        "body": "Let $z=Y-T$. Goods-market equilibrium becomes $z+T=C(z)+I(r)+G$, and money equilibrium is $L(z,r)=M/P$. Using $z$ is essential here: transactions money demand is specified as a function of disposable income, not total output."
+      },
+      {
+        "title": "Derive the joint equilibrium response",
+        "body": "Write $k=-L_z/L_r>0$, so along the unchanged LM relation $dr=k\\,dz$. Differentiating goods equilibrium gives $$\\begin{aligned}[1-C'(z)-I'(r)k],dz&=-dT,\\\\D&=1-C'-I'k>0,\\\\\\frac{dz}{dT}&=-\\frac1D<0.\\end{aligned}$$ Interest also falls because $dr=k\\,dz$."
+      },
+      {
+        "title": "Track investment and the two saving components",
+        "body": "With $I'<0$, the fall in interest raises private investment. Private saving $S_p=z-C(z)$ falls because $dS_p=(1-C')dz<0$. Government saving $T-G$ increases by the tax rise, since spending is held fixed. Their sum adjusts to the higher investment level."
+      },
+      {
+        "title": "Explain why total output has no fixed sign",
+        "body": "Total income includes taxes: $Y=z+T$. Therefore $$\\frac{dY}{dT}=1-\\frac1D=\\frac{-C'-I'k}{D}.$$ It is positive if the investment stimulus $-I'k$ exceeds $C'$, negative if it is smaller, and zero if they tie. Disposable income falls unambiguously, but total income need not. Applying the usual total-income money-demand model would miss this distinction."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q6",
@@ -94,12 +168,26 @@
     "originalPaperCode": "ME II",
     "stem": "A person likes bus distance x and dislikes smoke s, with utility U(x,s). (a) Describe plausible indifference-curve shapes. (b) Smoke is s=αx, α>0; fare is p per km and available income M. Describe the budget set in(s,x) space. (c) Characterize optimal travel: must all income be spent?",
     "answer": "Indifference curves slope upward. Feasible choices form the segment(s,x)=(αx,x),0≤x≤M/p. All, some or none of the income may be spent.",
-    "solution": "For a smooth indifference curve, U_x>0 and U_s<0 imply ds/dx=−U_x/U_s>0: additional travel requires tolerating additional smoke to keep utility fixed. Its curvature can be convex, linear or concave absent stronger assumptions on preferences. In a diagram with s horizontal and x vertical, feasibility is the ray x=s/α truncated at(αM/p,M/p), not an entire triangle because smoke cannot be chosen independently of travel. Maximize V(x)=U(x,αx) over0≤x≤M/p. An interior smooth solution obeys U_x+αU_s=0. Otherwise an endpoint may maximize utility. Because extra travel also causes a bad, V need not be increasing, so the optimal choice need not exhaust income.",
+    "solution": "Describe indifference between a good and a bad. Travel is desirable, so U_x>0; smoke is undesirable, so U_s<0. Along a smooth indifference curve, ds/dx=-U_x/U_s>0. More travel must therefore be accompanied by more tolerated smoke to keep utility fixed. Its curvature is not determined by these signs alone.\n\nCombine the technological linkage with affordability. Smoke cannot be chosen separately from travel: s=α x. The fare restriction is px≤ M. Thus the feasible set is \n{(s,x):s=α x, 0≤ x≤ M/p}.\n In a diagram with s horizontal and x vertical, this is a line segment ending at (α M/p,M/p), not the entire region below a budget line.\n\nCharacterize the optimum along that segment. Define V(x)=U(x,α x). An interior optimum satisfies V'(x)=U_x+α U_s=0, with an appropriate maximum condition. The optimal choice can also be either endpoint. Since increasing travel produces a bad as well as a good, V may turn downward before M/p; the consumer need not spend all income on travel.",
     "hint": "Combine the smoke linkage with the fare constraint.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Describe indifference between a good and a bad",
+        "body": "Travel is desirable, so $U_x>0$; smoke is undesirable, so $U_s<0$. Along a smooth indifference curve, $ds/dx=-U_x/U_s>0$. More travel must therefore be accompanied by more tolerated smoke to keep utility fixed. Its curvature is not determined by these signs alone."
+      },
+      {
+        "title": "Combine the technological linkage with affordability",
+        "body": "Smoke cannot be chosen separately from travel: $s=\\alpha x$. The fare restriction is $px\\le M$. Thus the feasible set is $$\\{(s,x):s=\\alpha x,\\ 0\\le x\\le M/p\\}.$$ In a diagram with $s$ horizontal and $x$ vertical, this is a line segment ending at $(\\alpha M/p,M/p)$, not the entire region below a budget line."
+      },
+      {
+        "title": "Characterize the optimum along that segment",
+        "body": "Define $V(x)=U(x,\\alpha x)$. An interior optimum satisfies $V'(x)=U_x+\\alpha U_s=0$, with an appropriate maximum condition. The optimal choice can also be either endpoint. Since increasing travel produces a bad as well as a good, $V$ may turn downward before $M/p$; the consumer need not spend all income on travel."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q7",
@@ -111,12 +199,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A household maximizes u=c^(2/3)h^(1/3), h+l=24, c=wl, with wage w>0. Find labour supply and its wage dependence. (b) In a one-good Keynesian economy, I=36, household consumption c=wl, fixed real wage w=4 and output y=24√l. Find output, employment and involuntary unemployment.",
     "answer": "(a) Labour supply16, independent of w. (b) Employment9, output72, involuntary unemployment7 labour units.",
-    "solution": "(a) Substitute c=w(24−h). Log utility gives(2/3)log[w(24−h)]+(1/3)log h. Its derivative condition −2/(24−h)+1/h=0 gives h=8,l=16; w only adds a constant to log utility. (b) Goods equilibrium24√l=4l+36 rearranges to(√l−3)²=0, so l=9 and y=72. At this employment, marginal product12/√l=4 matches the given wage, and consumption36 plus investment36 equals output72. Desired labour supply is16, so7 units are involuntarily unemployed.",
+    "solution": "Derive desired labour supply. Substitute h=24-l and c=wl into u=c^(2/3)h^(1/3). Equivalently maximize (2)/(3)log(wl)+(1)/(3)log(24-l). The interior condition is \n(2)/(l)-(1)/(24-l)=0,\n giving l=16 and leisure 8. The wage enters log utility only through a constant, so labour supply does not depend on w>0.\n\nCombine demand with the production function. At wage 4, consumption is 4l. Goods-market equilibrium requires \n24√(l) =4l+36,; 6√(l) =l+9,; (√(l)-3)^2 =0.\n Thus employment is 9 and output is 24(3)=72. Consumption and investment are each 36.\n\nCheck the wage and measure unemployment. The marginal product is 12/√(l), which equals the given wage 4 at l=9. The household would supply 16 labour units at that wage but only 9 are employed. Involuntary unemployment is therefore 16-9=7 units; it is not the difference between employment and the entire 24-hour time endowment.",
     "hint": "Find desired labour supply first, then combine expenditure and production.",
     "topic": "Macroeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Derive desired labour supply",
+        "body": "Substitute $h=24-l$ and $c=wl$ into $u=c^{2/3}h^{1/3}$. Equivalently maximize $\\tfrac23\\log(wl)+\\tfrac13\\log(24-l)$. The interior condition is $$\\frac2l-\\frac1{24-l}=0,$$ giving $l=16$ and leisure 8. The wage enters log utility only through a constant, so labour supply does not depend on $w>0$."
+      },
+      {
+        "title": "Combine demand with the production function",
+        "body": "At wage 4, consumption is $4l$. Goods-market equilibrium requires $$\\begin{aligned}24\\sqrt l&=4l+36,\\\\6\\sqrt l&=l+9,\\\\(\\sqrt l-3)^2&=0.\\end{aligned}$$ Thus employment is 9 and output is $24(3)=72$. Consumption and investment are each 36."
+      },
+      {
+        "title": "Check the wage and measure unemployment",
+        "body": "The marginal product is $12/\\sqrt l$, which equals the given wage 4 at $l=9$. The household would supply 16 labour units at that wage but only 9 are employed. Involuntary unemployment is therefore $16-9=7$ units; it is not the difference between employment and the entire 24-hour time endowment."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q8",
@@ -128,12 +230,30 @@
     "originalPaperCode": "ME II",
     "stem": "Two-period utility is (C₁^(1−θ)−1)/(1−θ)+(1/(1+ρ))(C₂^(1−θ)−1)/(1−θ), with printed restrictions 0<θ<1, ρ>0. Youth income is w from inelastic unit labour supply, saving is s and old-age income is (1+r)s. (i) Interpret θ as marginal-utility elasticity. (ii) State the optimization. (iii) Find saving. (iv) Explain how saving responds to r for θ below or above 1. (v) Give intuition.",
     "answer": "s=w/[1+(1+ρ)^(1/θ)(1+r)^((θ−1)/θ)]. It rises with r when θ<1, falls when θ>1, and is independent of r in the θ=1 log limit.",
-    "solution": "Marginal utility is C^(−θ), with signed consumption elasticity −θ and absolute elasticity θ. Maximize the stated utility over 0≤s≤w, substituting C₁=w−s and C₂=(1+r)s, assuming w>0 and r>−1. The interior first-order condition is (w−s)^(−θ)=(1+r)^(1−θ)s^(−θ)/(1+ρ). Solving gives the displayed formula. The interest derivative has sign 1−θ. The inverse θ is the elasticity of intertemporal substitution: for θ<1 substitution toward future consumption dominates, increasing saving; for θ>1 the income effect dominates, decreasing it. At θ=1 the logarithmic limit gives s=w/(2+ρ). The θ>1 comparison extends the formula beyond the source’s printed 0<θ<1 restriction.",
+    "solution": "Interpret the preference parameter and the budgets. For one-period CRRA utility, u'(C)=C^(-θ), so \n(dlog u'(C))/(dlog C)=-θ.\n Thus θ is the magnitude of the elasticity of marginal utility, not its signed value. Saving s gives budgets C_1=w-s and C_2=(1+r)s, with 0≤ s≤ w, w>0 and r>-1.\n\nDerive the Euler condition. Substitute the two budgets into lifetime utility and differentiate with respect to saving. At an interior optimum, \n(w-s)^(-θ) =(1+r)/(1+ρ)big[(1+r)sbig]^(-θ); =((1+r)^(1-θ))/(1+ρ)s^(-θ).\n This equates the marginal loss from giving up current consumption to the discounted marginal gain from the additional future consumption.\n\nSolve explicitly for saving. Rearranging the Euler condition yields \n((s)/(w-s))^θ =((1+r)^(1-θ))/(1+ρ),; s =(w)/(1+(1+ρ)^(1/θ)(1+r)^((θ-1)/θ)).\n With positive income the solution is strictly between zero and w, so both consumption quantities are positive.\n\nExplain the interest response and the source restriction. The derivative of saving has the sign of 1-θ. Saving rises with interest for θ<1 because intertemporal substitution dominates; it falls for θ>1 because the income effect dominates. In the logarithmic limit θ=1, saving is w/(2+ρ) and does not depend on interest. The source first imposes 0<θ<1 but later requests the θ>1 comparison. The latter is an explicitly stated extension of the formula beyond the printed restriction.",
     "hint": "Substitute the two consumption budgets and derive the Euler condition.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "needs_review",
-    "notes": "The printed restriction θ<1 conflicts with a later request to consider θ>1; the extension is stated explicitly. “Elasticity” means magnitude, since signed elasticity is −θ."
+    "notes": "The printed restriction θ<1 conflicts with a later request to consider θ>1; the extension is stated explicitly. “Elasticity” means magnitude, since signed elasticity is −θ.",
+    "solutionSteps": [
+      {
+        "title": "Interpret the preference parameter and the budgets",
+        "body": "For one-period CRRA utility, $u'(C)=C^{-\\theta}$, so $$\\frac{d\\log u'(C)}{d\\log C}=-\\theta.$$ Thus $\\theta$ is the magnitude of the elasticity of marginal utility, not its signed value. Saving $s$ gives budgets $C_1=w-s$ and $C_2=(1+r)s$, with $0\\le s\\le w$, $w>0$ and $r>-1$."
+      },
+      {
+        "title": "Derive the Euler condition",
+        "body": "Substitute the two budgets into lifetime utility and differentiate with respect to saving. At an interior optimum, $$\\begin{aligned}(w-s)^{-\\theta}&=\\frac{1+r}{1+\\rho}\\big[(1+r)s\\big]^{-\\theta}\\\\&=\\frac{(1+r)^{1-\\theta}}{1+\\rho}s^{-\\theta}.\\end{aligned}$$ This equates the marginal loss from giving up current consumption to the discounted marginal gain from the additional future consumption."
+      },
+      {
+        "title": "Solve explicitly for saving",
+        "body": "Rearranging the Euler condition yields $$\\begin{aligned}\\left(\\frac{s}{w-s}\\right)^{\\theta}&=\\frac{(1+r)^{1-\\theta}}{1+\\rho},\\\\s&=\\frac{w}{1+(1+\\rho)^{1/\\theta}(1+r)^{(\\theta-1)/\\theta}}.\\end{aligned}$$ With positive income the solution is strictly between zero and $w$, so both consumption quantities are positive."
+      },
+      {
+        "title": "Explain the interest response and the source restriction",
+        "body": "The derivative of saving has the sign of $1-\\theta$. Saving rises with interest for $\\theta<1$ because intertemporal substitution dominates; it falls for $\\theta>1$ because the income effect dominates. In the logarithmic limit $\\theta=1$, saving is $w/(2+\\rho)$ and does not depend on interest. The source first imposes $0<\\theta<1$ but later requests the $\\theta>1$ comparison. The latter is an explicitly stated extension of the formula beyond the printed restriction."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q9",
@@ -145,12 +265,30 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer has U(x₁,x₂)=min(2x₁,x₂). (i) Describe an indifference curve. (ii) At prices5,10 and income100, find the optimal bundle. (iii) Price1 rises to8: decompose the change in good1 into income and substitution effects.",
     "answer": "Initial bundle(4,8); final(25/7,50/7). Good1 total effect−3/7, substitution effect0 and income effect−3/7.",
-    "solution": "Utility levelu has kink at(x₁,x₂)=(u/2,u), with vertical and horizontal rays extending upward and rightward from the kink. Optimal quantities satisfy x₂=2x₁. Initially(5+20)x₁=100, so(4,8). With new price8,(8+20)x₁=100, so x₁=25/7 and x₂=50/7. Both Hicks and Slutsky compensation preserve the original kink bundle: its new expenditure is8·4+10·8=112. At compensated income112 the optimum remains(4,8), hence substitution effect is zero and the entire decline25/7−4=−3/7 is an income effect.",
+    "solution": "Identify the kink ratio. For U=min{2x_1,x_2}, utility level u has kink (u/2,u). An efficient purchased bundle satisfies x_2=2x_1; buying additional units of only one good leaves utility unchanged.\n\nFind the original and new Marshallian bundles. Initially the budget at the kink is (5+2×10)x_1=100, yielding (x_1,x_2)=(4,8). After the price rise, \n(8+20)x_1 =100,; x_1' =25/7, x_2'=50/7.\n\nCompensate at the new prices. The old kink bundle now costs 8(4)+10(8)=112. At this compensated income the optimal bundle remains (4,8). Both Hicks and Slutsky compensation give the same result for this fixed-proportion case: no change in the quantity ratio can save expenditure while preserving utility.\n\nAllocate the total change. The substitution effect for good 1 is zero. Its entire total change is the income effect: \nΔ x_1=(25)/(7)-4=-(3)/(7).\n A zero substitution effect does not mean the price increase has no consequence; it lowers the amount of the fixed-proportion bundle the original income can buy.",
     "hint": "Perfect complements retain the same optimal quantity ratio after a price change.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Identify the kink ratio",
+        "body": "For $U=\\min\\{2x_1,x_2\\}$, utility level $u$ has kink $(u/2,u)$. An efficient purchased bundle satisfies $x_2=2x_1$; buying additional units of only one good leaves utility unchanged."
+      },
+      {
+        "title": "Find the original and new Marshallian bundles",
+        "body": "Initially the budget at the kink is $(5+2\\cdot10)x_1=100$, yielding $(x_1,x_2)=(4,8)$. After the price rise, $$\\begin{aligned}(8+20)x_1&=100,\\\\x_1'&=25/7,\\qquad x_2'=50/7.\\end{aligned}$$"
+      },
+      {
+        "title": "Compensate at the new prices",
+        "body": "The old kink bundle now costs $8(4)+10(8)=112$. At this compensated income the optimal bundle remains $(4,8)$. Both Hicks and Slutsky compensation give the same result for this fixed-proportion case: no change in the quantity ratio can save expenditure while preserving utility."
+      },
+      {
+        "title": "Allocate the total change",
+        "body": "The substitution effect for good 1 is zero. Its entire total change is the income effect: $$\\Delta x_1=\\frac{25}{7}-4=-\\frac37.$$ A zero substitution effect does not mean the price increase has no consequence; it lowers the amount of the fixed-proportion bundle the original income can buy."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q10",
@@ -162,12 +300,30 @@
     "originalPaperCode": "ME II",
     "stem": "A competitive firm produces Y=K^0.25L^0.25. Labour can be hired weekly and capital monthly; a month is four weeks. Wage is10 per worker-week and capital rental10 per unit-month. (i) Find short- and long-run costs. (ii) At the beginning of January, output price is400. Find optimal long-run output and factor hires.",
     "answer": "If the production function measures weekly output y: weekly SR cost10y⁴/K̄+2.5K̄ and weekly LR cost10y². Optimal y=20 per week (80/month), L=200 workers and K=800. The output period must be specified.",
-    "solution": "Use a consistent weekly production interpretation. The monthly capital rental is2.5 per week. With fixed K̄, producing weekly y requires L=y⁴/K̄, so weekly accounting cost is10y⁴/K̄+2.5K̄. Long-run cost minimizes10L+2.5K subject to LK=y⁴. The optimum has K=4L, giving L=y²/2,K=2y² and weekly cost10y². Monthly profit is4[400y−10y²], maximized at y=20, so L=200,K=800 and monthly output80. Equivalently monthly cost for total Q=4y is(5/2)Q² and MR400 equals MC5Q at Q=80. If instead the printed Y is monthly output while L is a workforce retained all four weeks, monthly costs are40L+10K, giving LR cost40Y²; then optimal monthly Y=5,L=12.5,K=50. The source never assigns an output period to Y, so these distinct unit conventions must not be silently mixed.",
+    "solution": "Choose a consistent time unit before calculating costs. The statement gives labour cost per week and capital rent per month but leaves the output period unspecified. On a weekly-output interpretation write output as y and convert capital rent to 10/4=2.5 per unit-week. With capital fixed at K̄, the production constraint gives L=y^4/K̄.\n\nDerive weekly short-run and long-run costs. The weekly short-run accounting cost is 10y^4/K̄+2.5K̄. In the long run minimize 10L+2.5K subject to LK=y^4. The cost-minimizing ratio is K=4L, hence \nL=(y^2)/(2), K=2y^2, C_(LR,week)(y)=10y^2.\n Fixed-capital rent does not change the short-run marginal cost.\n\nMaximize profit under that convention. With output price 400, monthly profit is four times weekly operating profit: 4(400y-10y^2). The first-order condition gives y=20. Therefore labour is 200 each week, capital hired for the month is 800 and monthly output is 80. Equivalently the cost for monthly total Q=4y is C_(month)(Q)=(5)/(2)Q^2, whose marginal cost 5Q equals 400 at Q=80.\n\nState the alternative and preserve the source caveat. If the printed production function instead refers directly to monthly output Y with a workforce retained for four weeks, monthly factor prices are 40 and 10. Then minimized cost is 40Y^2 and the optimum is Y=5, L=12.5, K=50. These conventions cannot be mixed. Because the source never assigns a period to output, the record remains marked for review rather than asserting one interpretation as unconditional.",
     "hint": "Convert capital and labour prices to the same time period before minimizing cost.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "needs_review",
-    "notes": "Source gives weekly wages and monthly rentals but no time unit for output in the production function; conditional consistent conventions are supplied."
+    "notes": "Source gives weekly wages and monthly rentals but no time unit for output in the production function; conditional consistent conventions are supplied.",
+    "solutionSteps": [
+      {
+        "title": "Choose a consistent time unit before calculating costs",
+        "body": "The statement gives labour cost per week and capital rent per month but leaves the output period unspecified. On a weekly-output interpretation write output as $y$ and convert capital rent to $10/4=2.5$ per unit-week. With capital fixed at $\\bar K$, the production constraint gives $L=y^4/\\bar K$."
+      },
+      {
+        "title": "Derive weekly short-run and long-run costs",
+        "body": "The weekly short-run accounting cost is $10y^4/\\bar K+2.5\\bar K$. In the long run minimize $10L+2.5K$ subject to $LK=y^4$. The cost-minimizing ratio is $K=4L$, hence $$L=\\frac{y^2}{2},\\qquad K=2y^2,\\qquad C_{LR,week}(y)=10y^2.$$ Fixed-capital rent does not change the short-run marginal cost."
+      },
+      {
+        "title": "Maximize profit under that convention",
+        "body": "With output price 400, monthly profit is four times weekly operating profit: $4(400y-10y^2)$. The first-order condition gives $y=20$. Therefore labour is 200 each week, capital hired for the month is 800 and monthly output is 80. Equivalently the cost for monthly total $Q=4y$ is $C_{month}(Q)=\\tfrac52Q^2$, whose marginal cost $5Q$ equals 400 at $Q=80$."
+      },
+      {
+        "title": "State the alternative and preserve the source caveat",
+        "body": "If the printed production function instead refers directly to monthly output $Y$ with a workforce retained for four weeks, monthly factor prices are 40 and 10. Then minimized cost is $40Y^2$ and the optimum is $Y=5$, $L=12.5$, $K=50$. These conventions cannot be mixed. Because the source never assigns a period to output, the record remains marked for review rather than asserting one interpretation as unconditional."
+      }
+    ]
   },
   {
     "id": "2006-PEB-Q11",
@@ -179,11 +335,25 @@
     "originalPaperCode": "ME II",
     "stem": "In a neoclassical one-sector growth model, Y=√(KL), saving/investment is 30% of income, depreciation is 7% and labour growth is 3%. Find steady-state income per capita.",
     "answer": "Income per capita y*=3 (capital per worker k*=9).",
-    "solution": "Per worker y=√k. Steady investment must cover depreciation and dilution: .3√k=(.07+.03)k. For the positive steady state √k=3, so k=9 and y=3.",
+    "solution": "Express technology per worker. Divide Y=√(KL) by labour L and write k=K/L. Output per worker is y=√(k). With no technological growth, a positive steady state keeps k constant.\n\nEquate saving to break-even investment. The capital stock per worker loses resources through depreciation and through the need to equip additional workers. Hence \ns√(k) =(δ+n)k,; 0.3√(k) =(0.07+0.03)k.\n For k>0, divide by √(k) to obtain √(k)=3.\n\nRead off the requested income level. Thus k^*=9 and y^*=√(9)=3. The question asks for income per capita, so the answer is 3 rather than the capital-labour ratio 9. This is the positive steady state; the mathematical zero-capital state is not the economically relevant interior equilibrium.",
     "hint": "Set saving per worker equal to break-even investment.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Express technology per worker",
+        "body": "Divide $Y=\\sqrt{KL}$ by labour $L$ and write $k=K/L$. Output per worker is $y=\\sqrt{k}$. With no technological growth, a positive steady state keeps $k$ constant."
+      },
+      {
+        "title": "Equate saving to break-even investment",
+        "body": "The capital stock per worker loses resources through depreciation and through the need to equip additional workers. Hence $$\\begin{aligned}s\\sqrt{k}&=(\\delta+n)k,\\\\0.3\\sqrt{k}&=(0.07+0.03)k.\\end{aligned}$$ For $k>0$, divide by $\\sqrt{k}$ to obtain $\\sqrt{k}=3$."
+      },
+      {
+        "title": "Read off the requested income level",
+        "body": "Thus $k^*=9$ and $y^*=\\sqrt{9}=3$. The question asks for income per capita, so the answer is 3 rather than the capital-labour ratio 9. This is the positive steady state; the mathematical zero-capital state is not the economically relevant interior equilibrium."
+      }
+    ]
   }
 ]

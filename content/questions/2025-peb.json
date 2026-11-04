@@ -1,0 +1,412 @@
+[
+  {
+    "id": "2025-PEB-Q1a",
+    "number": "1(a)",
+    "stem": "A monopolist faces inverse demand $p=12-q$. Its cost is $2+q^2/2$ for positive output and zero when shut down. Find profit-maximizing output, deadweight loss and total social surplus.",
+    "answer": "$q_M=4$, $p_M=8$, deadweight loss $=4$, social surplus $=30$.",
+    "solution": "At positive output, revenue is $(12-q)q$. Therefore\n\n$$\\begin{aligned}\\pi(q)&=12q-\\frac32q^2-2,\\\\\\pi'(q)&=12-3q,\\qquad \\pi''(q)=-3<0.\\end{aligned}$$\n\nThe unique positive-output maximizer is q=4, with price 8 and profit 22. Since shutdown gives zero, paying the fixed cost and producing is worthwhile.\n\nTotal surplus is willingness to pay minus production cost, rather than monopoly revenue minus cost. At q=4,\n\n$$W_M=\\int_0^4(12-z)\\,dz-\\left(2+\\frac{4^2}{2}\\right)=40-10=30.$$\n\nEquivalently consumer surplus is $\\frac12(12-8)4=8$, and profit is 22. Adding them gives the same total.\n\nConditional on production, efficiency equates willingness to pay and marginal cost: $12-q=q$, so $q_E=6$. Efficient surplus is $\\int_0^6(12-2z)dz-2=34>0$, so the fixed cost should also be paid at the efficient allocation. Deadweight loss is therefore $34-30=4$, or directly $\\int_4^6(12-2z)dz=4$. The fixed cost cancels between the two active-production outcomes.",
+    "solutionSteps": [
+      {
+        "title": "Maximize profit and compare with shutdown",
+        "body": "At positive output, revenue is $(12-q)q$. Therefore\n\n$$\\begin{aligned}\\pi(q)&=12q-\\frac32q^2-2,\\\\\\pi'(q)&=12-3q,\\qquad \\pi''(q)=-3<0.\\end{aligned}$$\n\nThe unique positive-output maximizer is q=4, with price 8 and profit 22. Since shutdown gives zero, paying the fixed cost and producing is worthwhile."
+      },
+      {
+        "title": "Use real resource cost when measuring welfare",
+        "body": "Total surplus is willingness to pay minus production cost, rather than monopoly revenue minus cost. At q=4,\n\n$$W_M=\\int_0^4(12-z)\\,dz-\\left(2+\\frac{4^2}{2}\\right)=40-10=30.$$\n\nEquivalently consumer surplus is $\\frac12(12-8)4=8$, and profit is 22. Adding them gives the same total."
+      },
+      {
+        "title": "Identify the efficient benchmark",
+        "body": "Conditional on production, efficiency equates willingness to pay and marginal cost: $12-q=q$, so $q_E=6$. Efficient surplus is $\\int_0^6(12-2z)dz-2=34>0$, so the fixed cost should also be paid at the efficient allocation. Deadweight loss is therefore $34-30=4$, or directly $\\int_4^6(12-2z)dz=4$. The fixed cost cancels between the two active-production outcomes."
+      }
+    ],
+    "hint": "Find MR=MC, compare profit with shutdown, then compare total surplus with efficient output.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 8,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q1b",
+    "number": "1(b)",
+    "stem": "Keep $p_d=12-q_d$ and $C(Q)=2+Q^2/2$ for positive total production. Now domestic buyers can be perfectly price-discriminated, and unlimited exports earn 8 per unit. Find the optimum.",
+    "answer": "Domestic sales 4, exports 4, total output 8; profit 38 and domestic consumer surplus 0.",
+    "solution": "Under perfect discrimination, marginal domestic revenue is the buyer’s willingness to pay $12-q_d$; it is not the uniform-price marginal revenue $12-2q_d$. An exported unit always yields 8. Domestic units should therefore be supplied up to the point at which their willingness to pay equals the export alternative.\n\nWith positive exports,\n\n$$\\begin{aligned}12-q_d&=8&&\\Rightarrow q_d=4,\\\\MC(Q)=Q&=8&&\\Rightarrow Q=8.\\end{aligned}$$\n\nExports are the residual $8-4=4$, confirming that the positive-export calculation is consistent. The plant marginal cost depends on all production, not on domestic production alone.\n\nPerfectly discriminated domestic receipts are $\\int_0^4(12-z)dz=40$. Exports earn 32, while production costs $2+8^2/2=34$. Profit is $40+32-34=38>0$, so shutdown is inferior. Each domestic buyer is charged her willingness to pay, leaving zero consumer surplus under the usual acceptance-at-indifference convention. There is no single domestic transaction price; marginal domestic willingness to pay is 8.",
+    "solutionSteps": [
+      {
+        "title": "Allocate a marginal unit to the higher-value market",
+        "body": "Under perfect discrimination, marginal domestic revenue is the buyer’s willingness to pay $12-q_d$; it is not the uniform-price marginal revenue $12-2q_d$. An exported unit always yields 8. Domestic units should therefore be supplied up to the point at which their willingness to pay equals the export alternative."
+      },
+      {
+        "title": "Solve sales and total production separately",
+        "body": "With positive exports,\n\n$$\\begin{aligned}12-q_d&=8&&\\Rightarrow q_d=4,\\\\MC(Q)=Q&=8&&\\Rightarrow Q=8.\\end{aligned}$$\n\nExports are the residual $8-4=4$, confirming that the positive-export calculation is consistent. The plant marginal cost depends on all production, not on domestic production alone."
+      },
+      {
+        "title": "Compute receipts and verify participation",
+        "body": "Perfectly discriminated domestic receipts are $\\int_0^4(12-z)dz=40$. Exports earn 32, while production costs $2+8^2/2=34$. Profit is $40+32-34=38>0$, so shutdown is inferior. Each domestic buyer is charged her willingness to pay, leaving zero consumer surplus under the usual acceptance-at-indifference convention. There is no single domestic transaction price; marginal domestic willingness to pay is 8."
+      }
+    ],
+    "hint": "Under perfect discrimination, compare domestic marginal willingness to pay with the export price.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 6,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q1c",
+    "number": "1(c)",
+    "stem": "Two plants instead have costs $q_1^2/2$ and $q_2^2/2$. For demand $p=12-q$: (i) derive the aggregate cost and optimal uniform-price output; (ii) find the perfectly discriminating outcome. State how retaining the previous export outlet would change the result.",
+    "answer": "$C(q)=q^2/4$. Domestic-only: uniform output $24/5$ and price $36/5$; perfect discrimination output 8. Export-access alternatives are in the solution.",
+    "solution": "For any prescribed $q=q_1+q_2$, minimize $[q_1^2+(q-q_1)^2]/2$. The derivative is $2q_1-q$, so equal production $q_1=q_2=q/2$ minimizes cost. Thus\n\n$$C(q)=2\\left[\\frac12\\left(\\frac q2\\right)^2\\right]=\\frac{q^2}{4},\\qquad MC(q)=\\frac q2.$$\n\nFor positive q, using only one plant costs $q^2/2$, strictly more. No fixed setup cost is stated for these replacement plant technologies.\n\nProfit is $(12-q)q-q^2/4=12q-5q^2/4$. The first-order condition $12-(5/2)q=0$ gives $q=24/5$, split as $12/5$ per plant. Demand gives price $p=36/5$, and profit is $144/5$. Strict concavity verifies the maximum.\n\nMarginal revenue is now willingness to pay, so $12-q=q/2$, giving q=8 and four units per plant. Domestic receipts are $\\int_0^8(12-z)dz=64$ and cost is 16, so profit and total surplus are 48. Consumer surplus is extracted. The last buyer’s willingness to pay is 4.\n\nThe wording does not expressly remove the outlet introduced in part (b). If it remains, $MC(Q)=8$ implies total production Q=16. With domestic uniform pricing, $12-2q_d=8$ gives domestic sales 2, exports 14, domestic price 10 and profit 68. With perfect discrimination, $12-q_d=8$ gives domestic sales 4, exports 12 and profit 72. In both export cases each plant produces 8. These are distinct from the domestic-only interpretation, so the market assumption must be specified.",
+    "solutionSteps": [
+      {
+        "title": "Minimize the cost of producing a given total",
+        "body": "For any prescribed $q=q_1+q_2$, minimize $[q_1^2+(q-q_1)^2]/2$. The derivative is $2q_1-q$, so equal production $q_1=q_2=q/2$ minimizes cost. Thus\n\n$$C(q)=2\\left[\\frac12\\left(\\frac q2\\right)^2\\right]=\\frac{q^2}{4},\\qquad MC(q)=\\frac q2.$$\n\nFor positive q, using only one plant costs $q^2/2$, strictly more. No fixed setup cost is stated for these replacement plant technologies."
+      },
+      {
+        "title": "Uniform pricing with the domestic market alone",
+        "body": "Profit is $(12-q)q-q^2/4=12q-5q^2/4$. The first-order condition $12-(5/2)q=0$ gives $q=24/5$, split as $12/5$ per plant. Demand gives price $p=36/5$, and profit is $144/5$. Strict concavity verifies the maximum."
+      },
+      {
+        "title": "Perfect domestic discrimination",
+        "body": "Marginal revenue is now willingness to pay, so $12-q=q/2$, giving q=8 and four units per plant. Domestic receipts are $\\int_0^8(12-z)dz=64$ and cost is 16, so profit and total surplus are 48. Consumer surplus is extracted. The last buyer’s willingness to pay is 4."
+      },
+      {
+        "title": "If the export outlet is retained",
+        "body": "The wording does not expressly remove the outlet introduced in part (b). If it remains, $MC(Q)=8$ implies total production Q=16. With domestic uniform pricing, $12-2q_d=8$ gives domestic sales 2, exports 14, domestic price 10 and profit 68. With perfect discrimination, $12-q_d=8$ gives domestic sales 4, exports 12 and profit 72. In both export cases each plant produces 8. These are distinct from the domestic-only interpretation, so the market assumption must be specified."
+      }
+    ],
+    "hint": "Minimize plant costs at fixed total output before solving either pricing problem.",
+    "topic": "Microeconomics",
+    "sourcePage": 1,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 10,
+    "status": "needs_review",
+    "notes": "Part (c) does not explicitly say whether the world-market access from (b) is removed. Both interpretations are solved. The replacement plants have no printed fixed cost; the earlier 2 is not silently added.",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q2a",
+    "number": "2(a)",
+    "stem": "Two agents divide 100 rupees. Building a bridge costs 60: $d\\in\\{0,1\\}$, $x_1+x_2=100-60d$, $x_i\\geq0$, and $u_i=v_id+x_i$. For $(v_1,v_2)=(25,45)$, is the no-bridge allocation $(d,x_1,x_2)=(0,40,60)$ Pareto efficient?",
+    "answer": "No; $(1,20,20)$ makes both strictly better off.",
+    "solution": "Without the bridge, utilities equal cash holdings, so the target vector is (40,60). A bridge allocation must leave at least 15 rupees to agent 1 and 15 rupees to agent 2 to preserve those utilities:\n\n$$25+x_1\\geq40,\\qquad45+x_2\\geq60.$$\n\nThese minimum compensating amounts sum to 30, while 40 remains available after construction.\n\nChoose $x_1=x_2=20$. The new utility vector is $(25+20,45+20)=(45,65)$, strictly exceeding (40,60) in both coordinates. Because this is a feasible allocation and both agents improve, it directly disproves Pareto efficiency. A higher total surplus alone would not have been a complete proof; the explicit feasible compensation is what establishes the improvement.",
+    "solutionSteps": [
+      {
+        "title": "Translate the old allocation into utility targets",
+        "body": "Without the bridge, utilities equal cash holdings, so the target vector is (40,60). A bridge allocation must leave at least 15 rupees to agent 1 and 15 rupees to agent 2 to preserve those utilities:\n\n$$25+x_1\\geq40,\\qquad45+x_2\\geq60.$$\n\nThese minimum compensating amounts sum to 30, while 40 remains available after construction."
+      },
+      {
+        "title": "Exhibit a feasible strict improvement",
+        "body": "Choose $x_1=x_2=20$. The new utility vector is $(25+20,45+20)=(45,65)$, strictly exceeding (40,60) in both coordinates. Because this is a feasible allocation and both agents improve, it directly disproves Pareto efficiency. A higher total surplus alone would not have been a complete proof; the explicit feasible compensation is what establishes the improvement."
+      }
+    ],
+    "hint": "Look for a bridge allocation that compensates both original cash holdings.",
+    "topic": "Microeconomics",
+    "sourcePage": 2,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 5,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q2b",
+    "number": "2(b)",
+    "stem": "Two agents divide 100 rupees. Building a bridge costs 60: $d\\in\\{0,1\\}$, $x_1+x_2=100-60d$, $x_i\\geq0$, and $u_i=v_id+x_i$. For $(v_1,v_2)=(25,45)$, is $(0,70,30)$ Pareto efficient?",
+    "answer": "Yes, despite total bridge benefits exceeding its cost.",
+    "solution": "When d remains zero, the sum of cash and thus the sum of utilities stays 100. Raising one agent’s cash while keeping the other’s cash unchanged is impossible. Therefore no no-bridge reallocation can be a Pareto improvement.\n\nWith a bridge, only 40 rupees remain. Even giving all of them to agent 1 gives utility $25+40=65<70$. Thus every bridge allocation makes agent 1 worse off. These two cases exhaust the feasible decisions, so (0,70,30) is Pareto efficient.\n\nAlthough total valuation is $25+45=70>60$, transferring enough of the gain from agent 2 to agent 1 would require a negative cash allocation to agent 2. The nonnegative-cash constraint prevents that compensation.",
+    "solutionSteps": [
+      {
+        "title": "Check alternatives without a bridge",
+        "body": "When d remains zero, the sum of cash and thus the sum of utilities stays 100. Raising one agent’s cash while keeping the other’s cash unchanged is impossible. Therefore no no-bridge reallocation can be a Pareto improvement."
+      },
+      {
+        "title": "Check all allocations with a bridge",
+        "body": "With a bridge, only 40 rupees remain. Even giving all of them to agent 1 gives utility $25+40=65<70$. Thus every bridge allocation makes agent 1 worse off. These two cases exhaust the feasible decisions, so (0,70,30) is Pareto efficient.\n\nAlthough total valuation is $25+45=70>60$, transferring enough of the gain from agent 2 to agent 1 would require a negative cash allocation to agent 2. The nonnegative-cash constraint prevents that compensation."
+      }
+    ],
+    "hint": "How much utility could agent 1 obtain even with all the cash left after building?",
+    "topic": "Microeconomics",
+    "sourcePage": 2,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 5,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q2c",
+    "number": "2(c)",
+    "stem": "Two agents divide 100 rupees. Building a bridge costs 60: $d\\in\\{0,1\\}$, $x_1+x_2=100-60d$, $x_i\\geq0$, and $u_i=v_id+x_i$. Prove that any Pareto-efficient allocation with $d=1$ must satisfy $v_1+v_2\\geq60$.",
+    "answer": "If combined bridge valuation were below 60, abandoning it would permit a Pareto improvement.",
+    "solution": "Start with any built-bridge allocation (1,x1,x2), whose cash sum is 40. Suppose $v_1+v_2<60$ and define the positive excess resource amount\n\n$$D=60-(v_1+v_2)>0.$$\n\nAfter abandoning the bridge, 100 rupees are available. To preserve the original utilities, each agent would need cash $x_i+v_i$, whose sum is only $40+v_1+v_2=100-D$.\n\nGive the unbuilt allocation cash amounts $y_i=x_i+v_i+D/2$. They are nonnegative, sum to 100, and give agent i utility $y_i=v_i+x_i+D/2$, strictly above the built-bridge utility. Thus no built allocation can be efficient if combined valuation is below 60. Taking the contrapositive gives the requested necessary condition. It is not a claim that every allocation with valuation sum above 60 is efficient.",
+    "solutionSteps": [
+      {
+        "title": "Prove the contrapositive",
+        "body": "Start with any built-bridge allocation (1,x1,x2), whose cash sum is 40. Suppose $v_1+v_2<60$ and define the positive excess resource amount\n\n$$D=60-(v_1+v_2)>0.$$\n\nAfter abandoning the bridge, 100 rupees are available. To preserve the original utilities, each agent would need cash $x_i+v_i$, whose sum is only $40+v_1+v_2=100-D$."
+      },
+      {
+        "title": "Use the remaining resources to improve both agents",
+        "body": "Give the unbuilt allocation cash amounts $y_i=x_i+v_i+D/2$. They are nonnegative, sum to 100, and give agent i utility $y_i=v_i+x_i+D/2$, strictly above the built-bridge utility. Thus no built allocation can be efficient if combined valuation is below 60. Taking the contrapositive gives the requested necessary condition. It is not a claim that every allocation with valuation sum above 60 is efficient."
+      }
+    ],
+    "hint": "If combined valuation is below cost, show that abandoning the bridge can compensate both agents.",
+    "topic": "Microeconomics",
+    "sourcePage": 2,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 14,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q3a",
+    "number": "3(a)",
+    "stem": "Three boxes contain exclusively male records, exclusively female records, and a genuine mixture. Their labels say male, female and mixed, but all labels are wrong. Find the minimum observations needed to recover every true label and specify the sampling rule.",
+    "answer": "One observation, drawn from the box labelled mixed.",
+    "solution": "The box labelled mixed cannot actually contain a mixture. It must therefore be one of the two pure boxes. A single observation from it reveals its entire true type: a male observation identifies the pure-male box, and a female observation identifies the pure-female box.\n\nIf the mixed-labelled box is pure male, the female-labelled box cannot be female and cannot be male because that type is already assigned. It is mixed, leaving the male-labelled box as pure female. If the observation is female, reverse the gender names in this argument.\n\nZero observations cannot distinguish the two derangements of the three labels: both cyclic assignments are consistent with every label being wrong. One observation is therefore sufficient and also necessary.",
+    "solutionSteps": [
+      {
+        "title": "Use the information that every label is wrong",
+        "body": "The box labelled mixed cannot actually contain a mixture. It must therefore be one of the two pure boxes. A single observation from it reveals its entire true type: a male observation identifies the pure-male box, and a female observation identifies the pure-female box."
+      },
+      {
+        "title": "Deduce the other two labels without further sampling",
+        "body": "If the mixed-labelled box is pure male, the female-labelled box cannot be female and cannot be male because that type is already assigned. It is mixed, leaving the male-labelled box as pure female. If the observation is female, reverse the gender names in this argument.\n\nZero observations cannot distinguish the two derangements of the three labels: both cyclic assignments are consistent with every label being wrong. One observation is therefore sufficient and also necessary."
+      }
+    ],
+    "hint": "Sample the box labelled mixed; its actual contents cannot be mixed.",
+    "topic": "Algebra",
+    "sourcePage": 2,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 5,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q3b",
+    "number": "3(b)",
+    "stem": "Three students stand front-to-back, numbered 1–3. Hats are drawn uniformly without replacement from three red and two blue hats. Each sees only the hats ahead. In order 3,2,1, each truthfully announces whether her own colour is known; announcements are public. Find (i) $P(3\\text{ says no})$, (ii) $P(2\\text{ says no}\\mid3\\text{ says no})$, (iii) $P(1\\text{ says no}\\mid2,3\\text{ say no})$.",
+    "answer": "(i) $9/10$; (ii) $2/3$; (iii) 0.",
+    "solution": "There are only two blue hats. If students 1 and 2 are both blue, student 3 must be red. Any other visible pair leaves at least one red and one blue hat possible for her, so she cannot know. Under uniform assignment,\n\n$$P(3\\text{ says yes})=\\frac25\\frac14=\\frac1{10},\\qquad P(3\\text{ says no})=\\frac9{10}.$$\n\nHats, rather than colour patterns, are equiprobable; the colour patterns do not all have equal probabilities.\n\nAfter hearing student 3 say no, student 2 knows that the first two hats are not both blue. If she sees a blue hat on student 1, her own must be red and she says yes. If she sees red on student 1, both own colours remain possible and she says no. Thus both no announcements occur exactly when student 1 is red. Since a red first hat automatically rules out the blue–blue pair,\n\n$$P(2\\text{ says no}\\mid3\\text{ says no})=\\frac{P(1\\text{ red})}{P(3\\text{ says no})}=\\frac{3/5}{9/10}=\\frac23.$$\n\n\nHearing both previous students say no tells student 1 precisely the conclusion just established: her hat is red. She therefore says yes with certainty, so the requested probability of no is zero. This last inference uses public logical knowledge, not a fresh independent colour draw.",
+    "solutionSteps": [
+      {
+        "title": "Student 3 knows only after seeing two blue hats",
+        "body": "There are only two blue hats. If students 1 and 2 are both blue, student 3 must be red. Any other visible pair leaves at least one red and one blue hat possible for her, so she cannot know. Under uniform assignment,\n\n$$P(3\\text{ says yes})=\\frac25\\frac14=\\frac1{10},\\qquad P(3\\text{ says no})=\\frac9{10}.$$\n\nHats, rather than colour patterns, are equiprobable; the colour patterns do not all have equal probabilities."
+      },
+      {
+        "title": "Student 2 also uses the first announcement",
+        "body": "After hearing student 3 say no, student 2 knows that the first two hats are not both blue. If she sees a blue hat on student 1, her own must be red and she says yes. If she sees red on student 1, both own colours remain possible and she says no. Thus both no announcements occur exactly when student 1 is red. Since a red first hat automatically rules out the blue–blue pair,\n\n$$P(2\\text{ says no}\\mid3\\text{ says no})=\\frac{P(1\\text{ red})}{P(3\\text{ says no})}=\\frac{3/5}{9/10}=\\frac23.$$\n"
+      },
+      {
+        "title": "Student 1 infers her own colour",
+        "body": "Hearing both previous students say no tells student 1 precisely the conclusion just established: her hat is red. She therefore says yes with certainty, so the requested probability of no is zero. This last inference uses public logical knowledge, not a fresh independent colour draw."
+      }
+    ],
+    "hint": "Determine which visible pair lets student 3 know, then use that public announcement.",
+    "topic": "Probability",
+    "sourcePage": 3,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 18,
+    "status": "verified",
+    "notes": "The source states that hats are placed but does not explicitly specify the randomization. Numerical probabilities use the standard uniform-without-replacement interpretation; the final logical inference is unchanged.",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q4a",
+    "number": "4(a)",
+    "stem": "Count the real solutions of $(x^2-5x+6)(x^2-7x+12)=1$.",
+    "answer": "Exactly two: $x=3\\pm\\sqrt{(1+\\sqrt5)/2}$.",
+    "solution": "Factor the quadratics:\n\n$$\\begin{aligned}(x^2-5x+6)(x^2-7x+12)&=(x-2)(x-3)^2(x-4).\\end{aligned}$$\n\nThe factors are symmetric about x=3. Set y=x-3, so x-2=y+1 and x-4=y-1. The equation becomes $y^2(y+1)(y-1)=y^4-y^2=1$.\n\nSet z=y², which must be nonnegative. Then $z^2-z-1=0$, with roots $(1\\pm\\sqrt5)/2$. Only the positive root is allowed. It gives two distinct real y values, the positive and negative square roots, and hence exactly two x values. The discarded negative z cannot create any real solutions.",
+    "solutionSteps": [
+      {
+        "title": "Exploit the repeated factor",
+        "body": "Factor the quadratics:\n\n$$\\begin{aligned}(x^2-5x+6)(x^2-7x+12)&=(x-2)(x-3)^2(x-4).\\end{aligned}$$\n\nThe factors are symmetric about x=3. Set y=x-3, so x-2=y+1 and x-4=y-1. The equation becomes $y^2(y+1)(y-1)=y^4-y^2=1$."
+      },
+      {
+        "title": "Reduce to a quadratic with a nonnegative variable",
+        "body": "Set z=y², which must be nonnegative. Then $z^2-z-1=0$, with roots $(1\\pm\\sqrt5)/2$. Only the positive root is allowed. It gives two distinct real y values, the positive and negative square roots, and hence exactly two x values. The discarded negative z cannot create any real solutions."
+      }
+    ],
+    "hint": "Factor both quadratics and shift the variable by 3.",
+    "topic": "Algebra",
+    "sourcePage": 3,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 10,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q4bi",
+    "number": "4(bi)",
+    "stem": "A function is quasi-convex when $f(\\lambda x+(1-\\lambda)y)\\leq\\max\\{f(x),f(y)\\}$ for $\\lambda\\in[0,1]$. Prove that convexity implies this property.",
+    "answer": "Convexity bounds the function by a weighted average, and that average never exceeds the larger endpoint value.",
+    "solution": "For every allowed x,y and lambda, convexity says\n\n$$f(\\lambda x+(1-\\lambda)y)\\leq\\lambda f(x)+(1-\\lambda)f(y).$$\n\nThis is a stronger restriction than quasi-convexity because it uses a weighted average of endpoint values, rather than simply their maximum.\n\nLet $M=\\max\\{f(x),f(y)\\}$. Both endpoint values are at most M, and both weights are nonnegative. Therefore $\\lambda f(x)+(1-\\lambda)f(y)\\leq\\lambda M+(1-\\lambda)M=M$. Combining this with the first inequality gives quasi-convexity, including lambda=0 and lambda=1.",
+    "solutionSteps": [
+      {
+        "title": "Apply the convexity inequality first",
+        "body": "For every allowed x,y and lambda, convexity says\n\n$$f(\\lambda x+(1-\\lambda)y)\\leq\\lambda f(x)+(1-\\lambda)f(y).$$\n\nThis is a stronger restriction than quasi-convexity because it uses a weighted average of endpoint values, rather than simply their maximum."
+      },
+      {
+        "title": "Bound the weighted average by its largest term",
+        "body": "Let $M=\\max\\{f(x),f(y)\\}$. Both endpoint values are at most M, and both weights are nonnegative. Therefore $\\lambda f(x)+(1-\\lambda)f(y)\\leq\\lambda M+(1-\\lambda)M=M$. Combining this with the first inequality gives quasi-convexity, including lambda=0 and lambda=1."
+      }
+    ],
+    "hint": "Bound a convex combination of endpoint values by their maximum.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 5,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q4bii",
+    "number": "4(bii)",
+    "stem": "Prove that a nondecreasing real function is quasi-convex: $f(\\lambda x+(1-\\lambda)y)\\leq\\max\\{f(x),f(y)\\}$ for $0\\leq\\lambda\\leq1$.",
+    "answer": "The mixed argument lies between x and y, so monotonicity bounds its value by the larger endpoint value.",
+    "solution": "Without loss of generality take x≤y. A convex combination of them remains in the same interval:\n\n$$x\\leq\\lambda x+(1-\\lambda)y\\leq y.$$\n\nThis statement concerns the argument, not the curvature of f, and does not require continuity or differentiability.\n\nNondecreasing f gives $f(\\lambda x+(1-\\lambda)y)\\leq f(y)$. Since x≤y also implies f(x)≤f(y), the right side equals $\\max\\{f(x),f(y)\\}$. That is exactly quasi-convexity. A monotone function need not itself be convex, which is why this proof is independent of the previous part.",
+    "solutionSteps": [
+      {
+        "title": "Order the two endpoints",
+        "body": "Without loss of generality take x≤y. A convex combination of them remains in the same interval:\n\n$$x\\leq\\lambda x+(1-\\lambda)y\\leq y.$$\n\nThis statement concerns the argument, not the curvature of f, and does not require continuity or differentiability."
+      },
+      {
+        "title": "Use only monotonicity",
+        "body": "Nondecreasing f gives $f(\\lambda x+(1-\\lambda)y)\\leq f(y)$. Since x≤y also implies f(x)≤f(y), the right side equals $\\max\\{f(x),f(y)\\}$. That is exactly quasi-convexity. A monotone function need not itself be convex, which is why this proof is independent of the previous part."
+      }
+    ],
+    "hint": "The argument of f lies between x and y.",
+    "topic": "Calculus",
+    "sourcePage": 4,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 4,
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q5a",
+    "number": "5(a)",
+    "stem": "A worker has $u(c,l)=\\ln c+b(1-l)^{1-\\gamma}/(1-\\gamma)$, $b,\\gamma>0$, and consumes wage earnings: $c=wl$, $w>0$. Derive labour supply and its wage response; use the log-leisure limit when $\\gamma=1$.",
+    "answer": "The unique interior labour choice satisfies $(1-l)^\\gamma=bl$ and is independent of w.",
+    "solution": "For 0<l<1 and gamma different from 1,\n\n$$V(l)=\\ln w+\\ln l+\\frac{b(1-l)^{1-\\gamma}}{1-\\gamma}.$$\n\nThe wage appears only through the additive term ln w. Changing it therefore shifts the objective by a constant without changing which labour choice is best.\n\nThe first-order condition is\n\n$$\\frac1l-b(1-l)^{-\\gamma}=0\\quad\\Longleftrightarrow\\quad(1-l)^\\gamma=bl.$$\n\nThe derivative of V is strictly decreasing because $V''=-1/l^2-b\\gamma(1-l)^{-\\gamma-1}<0$. It tends to positive infinity near l=0 and negative infinity near l=1, ensuring a unique interior solution. Equivalently $(1-l)^\\gamma/l$ falls continuously from infinity to zero, so it meets b once.\n\nThe solution contains b and gamma but not w, so $dl^*/dw=0$. Here the substitution and income effects cancel exactly; this result follows from log consumption and labour income as the sole resource, not from all leisure preferences in general. At gamma=1 the displayed utility formula is undefined as written, but after subtracting the irrelevant divergent constant its limit is $\\ln c+b\\ln(1-l)$. The condition becomes $1-l=bl$, giving $l^*=1/(1+b)$, again wage-independent.",
+    "solutionSteps": [
+      {
+        "title": "Substitute the labour-income budget",
+        "body": "For 0<l<1 and gamma different from 1,\n\n$$V(l)=\\ln w+\\ln l+\\frac{b(1-l)^{1-\\gamma}}{1-\\gamma}.$$\n\nThe wage appears only through the additive term ln w. Changing it therefore shifts the objective by a constant without changing which labour choice is best."
+      },
+      {
+        "title": "Derive and verify the optimum",
+        "body": "The first-order condition is\n\n$$\\frac1l-b(1-l)^{-\\gamma}=0\\quad\\Longleftrightarrow\\quad(1-l)^\\gamma=bl.$$\n\nThe derivative of V is strictly decreasing because $V''=-1/l^2-b\\gamma(1-l)^{-\\gamma-1}<0$. It tends to positive infinity near l=0 and negative infinity near l=1, ensuring a unique interior solution. Equivalently $(1-l)^\\gamma/l$ falls continuously from infinity to zero, so it meets b once."
+      },
+      {
+        "title": "Interpret the wage response and the gamma-one case",
+        "body": "The solution contains b and gamma but not w, so $dl^*/dw=0$. Here the substitution and income effects cancel exactly; this result follows from log consumption and labour income as the sole resource, not from all leisure preferences in general. At gamma=1 the displayed utility formula is undefined as written, but after subtracting the irrelevant divergent constant its limit is $\\ln c+b\\ln(1-l)$. The condition becomes $1-l=bl$, giving $l^*=1/(1+b)$, again wage-independent."
+      }
+    ],
+    "hint": "Substitute c=wl and check whether wage changes the labour-dependent part of utility.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 8,
+    "status": "verified",
+    "notes": "The printed parameters allow gamma=1 although its displayed utility quotient is undefined there. The conventional log-leisure limiting extension is explicit.",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q5bi",
+    "number": "5(bi)",
+    "stem": "In two periods, maximize $\\ln c_1+2b\\sqrt{1-l_1}+\\beta[\\ln c_2+2b\\sqrt{1-l_2}]$, $b,\\beta>0$, with wages $w_1,w_2>0$ and free borrowing/saving at gross return $R=1+r>0$. There is no nonlabour income, and leisure is $q_i=1-l_i$. Find the optimal leisure ratio $q_1/q_2$ and determine how first-period labour responds to the relative wage $w_2/w_1$.",
+    "answer": "For interior labour, $q_1/q_2=[w_2/(\\beta Rw_1)]^2$. Raising the relative future wage weakly lowers first-period labour, strictly away from corners.",
+    "solution": "The lifetime budget is $c_1+c_2/R=w_1l_1+w_2l_2/R$. Replacing labour with 1 minus leisure gives full income\n\n$$c_1+w_1q_1+\\frac{c_2+w_2q_2}{R}=w_1+\\frac{w_2}{R}.$$\n\nLeisure is valuable but costly: each unit of period-1 leisure gives up w1 consumption units, and period-2 leisure has present-value cost w2/R.\n\nLet lambda be the multiplier on this budget. The four conditions are\n\n$$\\begin{aligned}\\frac1{c_1}&=\\lambda,&\\frac\\beta{c_2}&=\\frac\\lambda R,\\\\\\frac b{\\sqrt{q_1}}&=\\lambda w_1,&\\frac{\\beta b}{\\sqrt{q_2}}&=\\frac{\\lambda w_2}{R}.\\end{aligned}$$\n\nDividing the leisure conditions and rearranging gives $\\sqrt{q_1/q_2}=w_2/(\\beta Rw_1)$, hence the squared ratio. This calculation alone compares relative leisure; it is not by itself a proof about the absolute first-period labour level.\n\nWrite $z=w_2/(Rw_1)$ and $x=c_1/w_1$. The FOCs give $c_2=\\beta Rc_1$, $q_1=b^2x^2$ and $q_2=\\beta^2b^2x^2/z^2$. Substituting into the full-income constraint yields\n\n$$ (1+\\beta)x+b^2\\left(1+\\frac{\\beta^2}{z}\\right)x^2=1+z.$$\n\nImplicit differentiation gives\n\n$$\\frac{dx}{dz}=\\frac{1+b^2\\beta^2x^2/z^2}{1+\\beta+2b^2(1+\\beta^2/z)x}>0.$$\n\nConsequently q1 rises and $l_1=1-q_1$ falls as the relative future wage rises. Future earning opportunities permit less first-period work.\n\nIf 0≤li≤1 is imposed, leisure cannot exceed 1. The general conditions are $q_1=\\min\\{1,(bc_1/w_1)^2\\}$ and $q_2=\\min\\{1,(\\beta Rbc_1/w_2)^2\\}$, together with $c_2=\\beta Rc_1$ and the full-income budget. These determine a unique positive c1. The left-hand side is increasing in c1; at fixed c1 the period-2 leisure expenditure $\\min\\{w_2/R,\\beta^2Rb^2c_1^2/w_2\\}$ changes no faster than full income w2/R. Thus c1 and q1 are weakly increasing in w2, retaining the weak labour-supply conclusion. The simple squared ratio holds only while both leisure choices are interior.",
+    "solutionSteps": [
+      {
+        "title": "Rewrite labour choice as purchases of leisure",
+        "body": "The lifetime budget is $c_1+c_2/R=w_1l_1+w_2l_2/R$. Replacing labour with 1 minus leisure gives full income\n\n$$c_1+w_1q_1+\\frac{c_2+w_2q_2}{R}=w_1+\\frac{w_2}{R}.$$\n\nLeisure is valuable but costly: each unit of period-1 leisure gives up w1 consumption units, and period-2 leisure has present-value cost w2/R."
+      },
+      {
+        "title": "Obtain the ratio from the interior first-order conditions",
+        "body": "Let lambda be the multiplier on this budget. The four conditions are\n\n$$\\begin{aligned}\\frac1{c_1}&=\\lambda,&\\frac\\beta{c_2}&=\\frac\\lambda R,\\\\\\frac b{\\sqrt{q_1}}&=\\lambda w_1,&\\frac{\\beta b}{\\sqrt{q_2}}&=\\frac{\\lambda w_2}{R}.\\end{aligned}$$\n\nDividing the leisure conditions and rearranging gives $\\sqrt{q_1/q_2}=w_2/(\\beta Rw_1)$, hence the squared ratio. This calculation alone compares relative leisure; it is not by itself a proof about the absolute first-period labour level."
+      },
+      {
+        "title": "Show the absolute first-period labour response",
+        "body": "Write $z=w_2/(Rw_1)$ and $x=c_1/w_1$. The FOCs give $c_2=\\beta Rc_1$, $q_1=b^2x^2$ and $q_2=\\beta^2b^2x^2/z^2$. Substituting into the full-income constraint yields\n\n$$ (1+\\beta)x+b^2\\left(1+\\frac{\\beta^2}{z}\\right)x^2=1+z.$$\n\nImplicit differentiation gives\n\n$$\\frac{dx}{dz}=\\frac{1+b^2\\beta^2x^2/z^2}{1+\\beta+2b^2(1+\\beta^2/z)x}>0.$$\n\nConsequently q1 rises and $l_1=1-q_1$ falls as the relative future wage rises. Future earning opportunities permit less first-period work."
+      },
+      {
+        "title": "Account for nonnegative-labour constraints",
+        "body": "If 0≤li≤1 is imposed, leisure cannot exceed 1. The general conditions are $q_1=\\min\\{1,(bc_1/w_1)^2\\}$ and $q_2=\\min\\{1,(\\beta Rbc_1/w_2)^2\\}$, together with $c_2=\\beta Rc_1$ and the full-income budget. These determine a unique positive c1. The left-hand side is increasing in c1; at fixed c1 the period-2 leisure expenditure $\\min\\{w_2/R,\\beta^2Rb^2c_1^2/w_2\\}$ changes no faster than full income w2/R. Thus c1 and q1 are weakly increasing in w2, retaining the weak labour-supply conclusion. The simple squared ratio holds only while both leisure choices are interior."
+      }
+    ],
+    "hint": "Rewrite the lifetime budget using leisure, then divide its two leisure first-order conditions.",
+    "topic": "Microeconomics",
+    "sourcePage": 4,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 15,
+    "status": "verified",
+    "notes": "Interior ratio formula is qualified for zero-work corners; free intertemporal borrowing is assumed since no borrowing restriction is stated.",
+    "sourceKind": "archive"
+  },
+  {
+    "id": "2025-PEB-Q5bii",
+    "number": "5(bii)",
+    "stem": "In two periods, maximize $\\ln c_1+2b\\sqrt{1-l_1}+\\beta[\\ln c_2+2b\\sqrt{1-l_2}]$, $b,\\beta>0$, with wages $w_1,w_2>0$ and free borrowing/saving at gross return $R=1+r>0$. There is no nonlabour income, and leisure is $q_i=1-l_i$. Let $q^*=q_1/q_2$ and $w^*=w_2/w_1$. Calculate and interpret the elasticity of $q^*$ with respect to $w^*$.",
+    "answer": "The interior elasticity is 2.",
+    "solution": "For interior labour choices, the previous FOCs imply\n\n$$q^*=\\frac{(w^*)^2}{(\\beta R)^2}.$$\n\nHold the preference parameter beta and the interest factor R fixed. The logarithmic form is $\\ln q^*=2\\ln w^*-2\\ln(\\beta R)$.\n\nThe elasticity is\n\n$$\\frac{d\\ln q^*}{d\\ln w^*}=\\frac{dq^*}{dw^*}\\frac{w^*}{q^*}=2.$$\n\nA small 1% increase in the future-to-current wage ratio therefore increases the current-to-future leisure ratio by approximately 2%. The worker shifts labour relatively toward the better-paid future period. This is an elasticity of a leisure ratio, not an elasticity of l1 itself. If a zero-work corner binds, the clipped leisure conditions must be used and the elasticity need not remain 2.",
+    "solutionSteps": [
+      {
+        "title": "Write the ratio as a power function",
+        "body": "For interior labour choices, the previous FOCs imply\n\n$$q^*=\\frac{(w^*)^2}{(\\beta R)^2}.$$\n\nHold the preference parameter beta and the interest factor R fixed. The logarithmic form is $\\ln q^*=2\\ln w^*-2\\ln(\\beta R)$."
+      },
+      {
+        "title": "Differentiate logarithmically and interpret",
+        "body": "The elasticity is\n\n$$\\frac{d\\ln q^*}{d\\ln w^*}=\\frac{dq^*}{dw^*}\\frac{w^*}{q^*}=2.$$\n\nA small 1% increase in the future-to-current wage ratio therefore increases the current-to-future leisure ratio by approximately 2%. The worker shifts labour relatively toward the better-paid future period. This is an elasticity of a leisure ratio, not an elasticity of l1 itself. If a zero-work corner binds, the clipped leisure conditions must be used and the elasticity need not remain 2."
+      }
+    ],
+    "hint": "Take logarithms of the interior leisure-ratio formula before differentiating.",
+    "topic": "Microeconomics",
+    "sourcePage": 5,
+    "sourceFile": "official/2025-PEB.pdf",
+    "sourceUrl": "https://rsgclasses.com/wp-content/uploads/2026/02/MSQE-PEB-2025_watermark-Question.pdf",
+    "sourceType": "third-party paper reproduction",
+    "marks": 7,
+    "status": "verified",
+    "notes": "Elasticity 2 is an interior result; corner leisure constraints change the ratio formula.",
+    "sourceKind": "archive"
+  }
+]

@@ -9,7 +9,7 @@
     "originalPaperCode": "ME II",
     "stem": "Veena always consumes y=3x and pₓ=3pᵧ. She owns18 units x and78 units y, tradable at market prices, with no other income. How much x does she buy from the market?",
     "answer": "C:4 units of net x purchases.",
-    "solution": "Value the endowment in units of the y price: income is3·18+78=132. Her fixed ratio costs3x+3x=6x, so final x=22,y66. She buys22−18=4 units x and finances it by selling12 units y. Final consumption22 is not the requested net purchase.",
+    "solution": "Value the endowment and enforce the consumption ratio. Use the banana-like second good's price as numeraire. Wealth is 3(18)+78=132. With y=3x, spending is 3x+y=6x, so final consumption is x=22,y=66.\n\nAnswer the net-purchase question. Veena already owns 18 units of x, so market purchases are 22-18=4, option C. She sells 12 units of y to finance them. Final consumption 22 is not the requested quantity bought from the market.",
     "hint": "Value the endowment and distinguish final demand from net trade.",
     "topic": "Microeconomics",
     "sourcePage": 5,
@@ -20,6 +20,16 @@
       "6",
       "4",
       "Cannot determine without the absolute price of x"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Value the endowment and enforce the consumption ratio",
+        "body": "Use the banana-like second good's price as numeraire. Wealth is $3(18)+78=132$. With $y=3x$, spending is $3x+y=6x$, so final consumption is $x=22,y=66$."
+      },
+      {
+        "title": "Answer the net-purchase question",
+        "body": "Veena already owns 18 units of $x$, so market purchases are $22-18=4$, option C. She sells 12 units of $y$ to finance them. Final consumption 22 is not the requested quantity bought from the market."
+      }
     ]
   },
   {
@@ -32,7 +42,7 @@
     "originalPaperCode": "ME II",
     "stem": "Utility is U(C,M/P), depending on consumption C and real balances M/P. Budget is PC+M=M̄, where M̄ is initial nominal wealth. What is the substitution effect of higher P on C?",
     "answer": "A:Zero.",
-    "solution": "In real units the budget is C+M/P=M̄/P. Consumption and real balances always have the same relative price1, so higher P changes real wealth but not the relative price between utility arguments. Pure substitution effect is zero; any consumption change is a real-income effect.",
+    "solution": "Express the two utility arguments in real units. Divide PC+M=M̄ by P to obtain \nC+(M)/(P)=(M̄)/(P).\n Consumption and real balances always have relative price one. A higher P changes real wealth but does not change their relative price, so its pure substitution effect on consumption is zero. Choose A; any remaining demand change is an income effect.",
     "hint": "Divide the nominal budget by P.",
     "topic": "Microeconomics",
     "sourcePage": 5,
@@ -43,6 +53,12 @@
       "−1",
       "Indeterminate",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Express the two utility arguments in real units",
+        "body": "Divide $PC+M=\\bar M$ by $P$ to obtain $$C+\\frac MP=\\frac{\\bar M}P.$$ Consumption and real balances always have relative price one. A higher $P$ changes real wealth but does not change their relative price, so its pure substitution effect on consumption is zero. Choose A; any remaining demand change is an income effect."
+      }
     ]
   },
   {
@@ -55,7 +71,7 @@
     "originalPaperCode": "ME II",
     "stem": "A monopolist has no fixed cost, MC5 and demand D(p)=10/p if0<p≤10, zero ifp>10. Only integer outputs are possible. Find optimal output.",
     "answer": "B:1.",
-    "solution": "Positive output q≥1 can sell at p=10/q, generating revenue10. Profit is10−5q, largest at the smallest positive integerq1, where profit5 exceeds shutdown profit0.",
+    "solution": "Use revenue and the integer-output restriction. For any positive feasible integer quantity q, the inverse demand is p=10/q and revenue is 10. Profit is therefore 10-5q, greatest at the smallest positive integer q=1. That yields profit 5, above shutdown profit zero. Choose B. Sending output toward zero is not feasible because fractional production is forbidden.",
     "hint": "Revenue is constant across positive feasible integer outputs.",
     "topic": "Microeconomics",
     "sourcePage": 5,
@@ -66,6 +82,12 @@
       "1",
       "5",
       "10"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use revenue and the integer-output restriction",
+        "body": "For any positive feasible integer quantity $q$, the inverse demand is $p=10/q$ and revenue is 10. Profit is therefore $10-5q$, greatest at the smallest positive integer $q=1$. That yields profit 5, above shutdown profit zero. Choose B. Sending output toward zero is not feasible because fractional production is forbidden."
+      }
     ]
   },
   {
@@ -78,7 +100,7 @@
     "originalPaperCode": "ME II",
     "stem": "Domestic production of capital goods rises by100, of which80 are sold and20 unsold. Imports of capital goods simultaneously decline by30. Everything else is unchanged. By how much does GDP rise?",
     "answer": "D:100.",
-    "solution": "Domestic current production adds100 to GDP, including unsold inventory20. For expenditure accounting, domestic capital-goods purchases rise80, inventory investment rises20 and imported capital-goods purchases fall30, so total investment changes by70. Subtracting imports, whose change is−30, gives ΔGDP=70−(−30)=100. Adding the import decline to domestic production without adjusting investment would double count.",
+    "solution": "Include output inventories and imported investment consistently. Domestic capital-goods output adds 100, including the 20 not sold. Total investment rises by 80+20-30=70 because imported capital-goods purchases fall by 30. In expenditure accounting, \nΔ GDP=Δ I-Δ M=70-(-30)=100.\n Choose D. Adding the import decline directly to domestic output would count the import adjustment twice.",
     "hint": "Include inventories and remove imported investment consistently.",
     "topic": "Macroeconomics",
     "sourcePage": 5,
@@ -89,6 +111,12 @@
       "130",
       "70",
       "100"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Include output inventories and imported investment consistently",
+        "body": "Domestic capital-goods output adds 100, including the 20 not sold. Total investment rises by $80+20-30=70$ because imported capital-goods purchases fall by 30. In expenditure accounting, $$\\Delta GDP=\\Delta I-\\Delta M=70-(-30)=100.$$ Choose D. Adding the import decline directly to domestic output would count the import adjustment twice."
+      }
     ]
   },
   {
@@ -101,12 +129,26 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer buys X,Y. Y costs pᵧ; X can be bought at a high price p_H or a lower price p_L available only after t hours of search. He normally works8 hours daily at wage w. (i) Describe the budget set and an equilibrium choosing the lower price. (ii) Can higher w make him choose the higher price?",
     "answer": "Budget is the union of p_Hx+pᵧy≤8w and p_Lx+pᵧy≤(8−t)w, if search displaces work. Yes, higher wages can make shopping time too costly.",
-    "solution": "Assuming0<t<8 and search replaces paid work, high-price purchase preserves income8w, whereas searching costswt in foregone earnings. The two lines cross at x*=wt/(p_H−p_L); their upper envelope uses the high-price line below the crossing and the low-price line above it. Draw a highest indifference curve tangent to the exposed low-price branch to depict that choice. A wage rise increases the opportunity costwt. For a concrete switch, take pᵧ1,p_H2,p_L1,t1 and U=log x+y. When affordable, high-price optimum x=.5 gives indirect utility8w−1−log2; low-price optimum x1 gives7w−1. Searching is preferred iffw<log2. Thusw=.5 leads to searching, butw1 leads to high-price purchase. Homothetic preferences need not generate this switch because both budget sets scale together with w; possibility, not necessity, is the claim.",
+    "solution": "Value the search time. The cheaper shop saves money on each unit but requires t hours that could otherwise be worked. If search displaces paid work from an eight-hour day, high-price shopping leaves income 8w, while searching leaves (8-t)w. This opportunity-cost interpretation must be stated rather than treating search as free.\n\nDescribe the two budgets and their envelope. The alternatives are \np_Hx+p_yy≤8w, p_Lx+p_yy≤(8-t)w,\n where p_L<p_H. The lines cross at x^*=wt/(p_H-p_L). The high-price line is the exposed boundary for smaller quantities, and the low-price line for larger quantities. An optimum choosing the cheaper shop is a highest attainable indifference curve touching that exposed low-price branch.\n\nDemonstrate a wage-induced switch with an example. A higher wage increases the search cost wt, so a switch to the high-price shop is possible. Take p_y=1,p_H=2,p_L=1,t=1 and U=log x+y. At affordable interior choices, the high-price optimum has x=1/2 and indirect utility 8w-1-log2; the low-price optimum has x=1 and utility 7w-1. Search is preferred iff w<log2. Thus a wage rise from 0.5 to 1 switches the choice. This is a possibility result; homothetic preferences, for example, can give no switch when both opportunities simply scale with the wage.",
     "hint": "Price savings must compensate for foregone wages while searching.",
     "topic": "Microeconomics",
     "sourcePage": 5,
     "status": "verified",
-    "notes": "The source does not explicitly say search reduces paid work; this opportunity-cost interpretation is stated."
+    "notes": "The source does not explicitly say search reduces paid work; this opportunity-cost interpretation is stated.",
+    "solutionSteps": [
+      {
+        "title": "Value the search time",
+        "body": "The cheaper shop saves money on each unit but requires $t$ hours that could otherwise be worked. If search displaces paid work from an eight-hour day, high-price shopping leaves income $8w$, while searching leaves $(8-t)w$. This opportunity-cost interpretation must be stated rather than treating search as free."
+      },
+      {
+        "title": "Describe the two budgets and their envelope",
+        "body": "The alternatives are $$p_Hx+p_yy\\le8w,\\qquad p_Lx+p_yy\\le(8-t)w,$$ where $p_L<p_H$. The lines cross at $x^*=wt/(p_H-p_L)$. The high-price line is the exposed boundary for smaller quantities, and the low-price line for larger quantities. An optimum choosing the cheaper shop is a highest attainable indifference curve touching that exposed low-price branch."
+      },
+      {
+        "title": "Demonstrate a wage-induced switch with an example",
+        "body": "A higher wage increases the search cost $wt$, so a switch to the high-price shop is possible. Take $p_y=1,p_H=2,p_L=1,t=1$ and $U=\\log x+y$. At affordable interior choices, the high-price optimum has $x=1/2$ and indirect utility $8w-1-\\log2$; the low-price optimum has $x=1$ and utility $7w-1$. Search is preferred iff $w<\\log2$. Thus a wage rise from $0.5$ to 1 switches the choice. This is a possibility result; homothetic preferences, for example, can give no switch when both opportunities simply scale with the wage."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q3",
@@ -118,12 +160,26 @@
     "originalPaperCode": "ME II",
     "stem": "Telephone planA costs fixed500 plus2 per call; planB costs fixed1000 plus1 per call. Three consumers have identical incomes: one choosesA, oneB, one neither. (i) Describe budget contours and indifference curves for these choices. (ii) Could the non-subscriber have an ordinary Cobb–Douglas utility over calls and other consumption?",
     "answer": "With other consumption as numeraire: A gives o=M−500−2q, B gives o=M−1000−q; no subscription gives(q,o)=(0,M). The third cannot have Cobb–Douglas utility with strictly positive exponents when a positive-call plan is affordable.",
-    "solution": "The two plan lines intersect atq500,o=M−1500. A is cheaper below500 calls; B is cheaper above500. Draw the upper feasible envelope together with the separate no-subscription point(0,M). A highest attainable indifference curve can touchA for the first person, B for the second, or the no-subscription point for someone valuing calls little. For U=q^αo^β withα,β>0, no subscription gives utility0. A feasible positive-call, positive-other-consumption bundle gives positive utility, so it dominates. The shared income permits planB for another consumer and therefore makes such a positive bundle underA affordable. Hence an ordinary two-good Cobb–Douglas function cannot represent the third consumer’s stated choice; a shifted or satiation-based utility might.",
+    "solution": "Plot the two subscription opportunities. Let calls be q and other consumption, priced at one, be o. The two subscription frontiers are \no_A=M-500-2q, o_B=M-1000-q.\n They cross at q=500. Plan A is cheaper for fewer calls and plan B for more calls. Also include the no-subscription point (q,o)=(0,M); it is not obtained by paying a fixed fee and then making zero calls.\n\nRepresent the three observed choices. Consumers may have different indifference maps despite equal incomes. Draw a highest attainable indifference curve touching the exposed A branch for the first person, one touching the exposed B branch for the second, and one through the no-subscription point for the third. The third person values keeping the fixed fee more than access to calls at either tariff.\n\nTest ordinary Cobb–Douglas preferences. If the third consumer had U=q^α o^β with both exponents positive, no subscription would give utility zero. An affordable bundle with positive calls and positive other consumption would give positive utility. The common income supports the second consumer's B subscription, so it certainly supports such a positive bundle under A. Therefore the third person's non-subscription cannot be optimal under ordinary two-good Cobb–Douglas preferences. A utility with a nonessential calls good could represent it.",
     "hint": "Include the discrete no-subscription option outside the two subscription lines.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Plot the two subscription opportunities",
+        "body": "Let calls be $q$ and other consumption, priced at one, be $o$. The two subscription frontiers are $$o_A=M-500-2q,\\qquad o_B=M-1000-q.$$ They cross at $q=500$. Plan A is cheaper for fewer calls and plan B for more calls. Also include the no-subscription point $(q,o)=(0,M)$; it is not obtained by paying a fixed fee and then making zero calls."
+      },
+      {
+        "title": "Represent the three observed choices",
+        "body": "Consumers may have different indifference maps despite equal incomes. Draw a highest attainable indifference curve touching the exposed A branch for the first person, one touching the exposed B branch for the second, and one through the no-subscription point for the third. The third person values keeping the fixed fee more than access to calls at either tariff."
+      },
+      {
+        "title": "Test ordinary Cobb–Douglas preferences",
+        "body": "If the third consumer had $U=q^\\alpha o^\\beta$ with both exponents positive, no subscription would give utility zero. An affordable bundle with positive calls and positive other consumption would give positive utility. The common income supports the second consumer's B subscription, so it certainly supports such a positive bundle under A. Therefore the third person's non-subscription cannot be optimal under ordinary two-good Cobb–Douglas preferences. A utility with a nonessential calls good could represent it."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q4",
@@ -135,12 +191,34 @@
     "originalPaperCode": "ME II",
     "stem": "A buyer has one50-rupee note. Rice and pulses are sold at prices p_r,p_p. The rice seller gives change only if at least3kg rice is bought; the pulses seller never gives change. (i) Describe the budget. (ii) Find the optimum for fixed-proportion consumption. (iii) Find the maximum fee an outside money changer could charge. (iv) How does a pulses-price rise affect purchases and the fee?",
     "answer": "Under the standard rice-first/change interpretation, ordinary trade with both goods requires rice≥3. Let desired ratio be(r,p)=(az,bz). If the unconstrained rice demand is below3, z₀=(50−3p_r)/(bp_p), and maximal change fee is F_max=50−(ap_r+bp_p)z₀. In that binding region higher p_p reduces z₀ and raises F_max.",
-    "solution": "Assume3p_r≤50 and that rice purchase≥3 provides usable change for a subsequent pulse purchase. The attainable frontier for both goods is the ordinary line p_rr+p_pp=50 truncated tor≥3, plus one-good spending possibilities. Without the restriction, fixed-proportion demand would bez*=50/(ap_r+bp_p). Ifaz*≥3 this is attainable and the change service has no value. Ifaz*<3, buying minimum rice3 leaves pulses(50−3p_r)/p_p, so Leontief utility in bundle units isz₀=(50−3p_r)/(bp_p), with some rice wasted relative to the preferred ratio. Paying feeF restores a standard budget50−F and balanced consumptionz_F=(50−F)/(ap_r+bp_p). The highest acceptable fee solvesz_F=z₀, giving F_max=50−(ap_r+bp_p)z₀≥0. At exactly that fee the buyer is indifferent; a slightly smaller fee induces strict use. In the binding region and3p_r<50, dz₀/dp_p<0 and dF_max/dp_p=ap_r(50−3p_r)/(bp_p²)>0. Without changing money rice stays3 and pulses fall; with a fully extracting changer both balanced quantitiesaz₀,bz₀ fall. Cash denominations, the possibility of exact payments and the ratio are not supplied, so the answer is explicitly conditional rather than a unique numerical purchase.",
+    "solution": "State the cash interpretation and preferred ratio. The source does not specify cash denominations or exact-payment arrangements. Use the standard interpretation: buying at least 3 kg of rice produces usable change for a later pulse purchase. Let rice and pulse prices be p_r,p_p, and the preferred fixed proportions be (r,p)=(az,bz), with a,b>0. Assume 3p_r≤50.\n\nFind whether the minimum rice purchase binds. Without the change problem the balanced demand is z^*=50/(ap_r+bp_p). If az^*≥3, it is already attainable and the money-changing service has no value. If az^*<3, the ordinary optimum is excluded. On the relevant cash frontier rice must be at least 3, so buy rice 3 and spend the remainder on pulses.\n\nMeasure the utility of the restricted purchase. In the binding case, pulses are (50-3p_r)/p_p. The effective number of fixed-proportion consumption bundles is \nz_0=(50-3p_r)/(bp_p)<(3)/(a).\n The rice above az_0 is excess relative to the preferred ratio. The budget frontier is the ordinary line p_rr+p_pp=50 truncated at r≥3 for purchases of both goods, together with possible one-good cash purchases.\n\nCalculate the maximal acceptable fee. Paying fee F restores an ordinary budget of 50-F and permits balanced demand z_F=(50-F)/(ap_r+bp_p). The largest fee that leaves the consumer no worse off solves z_F=z_0: \nF_(max)=50-(ap_r+bp_p)z_0.\n At this fee the consumer is indifferent; a slightly smaller fee gives strict participation. If the original minimum does not bind, F_(max)=0.\n\nExplain the pulse-price comparative static. In the binding region, higher p_p lowers z_0. Moreover \n(dF_(max))/(dp_p)=(ap_r(50-3p_r))/(bp_p^2)>0\n when the remaining cash is positive. Without a changer, rice stays at 3 and pulses fall. With a fully extracting changer, both balanced quantities az_0,bz_0 fall. These are conditional symbolic conclusions, not a unique numerical purchase from an incomplete cash mechanism.",
     "hint": "Compare utility under the minimum-rice restriction with utility under an ordinary budget reduced by a fee.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "needs_review",
-    "notes": "Cash/change mechanics are incomplete, and prices and desired ratio are unspecified. The standard continuous-goods, rice-first interpretation is explicit; source repeats subpart label(iii)."
+    "notes": "Cash/change mechanics are incomplete, and prices and desired ratio are unspecified. The standard continuous-goods, rice-first interpretation is explicit; source repeats subpart label(iii).",
+    "solutionSteps": [
+      {
+        "title": "State the cash interpretation and preferred ratio",
+        "body": "The source does not specify cash denominations or exact-payment arrangements. Use the standard interpretation: buying at least 3 kg of rice produces usable change for a later pulse purchase. Let rice and pulse prices be $p_r,p_p$, and the preferred fixed proportions be $(r,p)=(az,bz)$, with $a,b>0$. Assume $3p_r\\le50$."
+      },
+      {
+        "title": "Find whether the minimum rice purchase binds",
+        "body": "Without the change problem the balanced demand is $z^*=50/(ap_r+bp_p)$. If $az^*\\ge3$, it is already attainable and the money-changing service has no value. If $az^*<3$, the ordinary optimum is excluded. On the relevant cash frontier rice must be at least 3, so buy rice 3 and spend the remainder on pulses."
+      },
+      {
+        "title": "Measure the utility of the restricted purchase",
+        "body": "In the binding case, pulses are $(50-3p_r)/p_p$. The effective number of fixed-proportion consumption bundles is $$z_0=\\frac{50-3p_r}{bp_p}<\\frac3a.$$ The rice above $az_0$ is excess relative to the preferred ratio. The budget frontier is the ordinary line $p_rr+p_pp=50$ truncated at $r\\ge3$ for purchases of both goods, together with possible one-good cash purchases."
+      },
+      {
+        "title": "Calculate the maximal acceptable fee",
+        "body": "Paying fee $F$ restores an ordinary budget of $50-F$ and permits balanced demand $z_F=(50-F)/(ap_r+bp_p)$. The largest fee that leaves the consumer no worse off solves $z_F=z_0$: $$F_{max}=50-(ap_r+bp_p)z_0.$$ At this fee the consumer is indifferent; a slightly smaller fee gives strict participation. If the original minimum does not bind, $F_{max}=0$."
+      },
+      {
+        "title": "Explain the pulse-price comparative static",
+        "body": "In the binding region, higher $p_p$ lowers $z_0$. Moreover $$\\frac{dF_{max}}{dp_p}=\\frac{ap_r(50-3p_r)}{bp_p^2}>0$$ when the remaining cash is positive. Without a changer, rice stays at 3 and pulses fall. With a fully extracting changer, both balanced quantities $az_0,bz_0$ fall. These are conditional symbolic conclusions, not a unique numerical purchase from an incomplete cash mechanism."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q5",
@@ -152,12 +230,26 @@
     "originalPaperCode": "ME II",
     "stem": "Each other street-garbage dumper imposes costa, so the external harm to a person is an, where n is the number of other dumpers and a>0. Dumping oneself yields benefitG and private costC/n, C>0. (a) Explain no dumping ifn0. (b) Find the threshold number of other dumpers making dumping optimal.",
     "answer": "ForG>0, dump iff n≥C/G; the least positive integer threshold is ceiling(C/G). It depends onC andG, not a. At n0 the printed costC/n requires a limiting convention.",
-    "solution": "Others’ harman is borne whether or not the person herself dumps, so it cancels from her comparison. The incremental payoff from dumping isG−C/n. Forn>0 this is nonnegative iff n≥C/G; equality gives indifference. Interpret the private cost as tending to infinity asn approaches0 from above, or define solitary dumping as prohibitively costly, to obtain the intended no-dumping result atn0. LiterallyC/0 is undefined, so the source needs that convention for part(a). A largerC raises the threshold, a largerG lowers it, and the external-damage coefficienta has no effect on this private threshold.",
+    "solution": "Compare only the payoff changed by one's own action. The harm an from the other dumpers is suffered whether or not this person dumps. It therefore cancels when comparing the two actions. The incremental private benefit from dumping is G-C/n for n>0. The social external damage matters for welfare but not for this private comparison.\n\nDerive the threshold. For positive gain G, dumping is privately optimal exactly when \nG-(C)/(n)≥0 ⇔ n≥(C)/(G).\n For integer numbers of other people, the smallest threshold is ⌈ C/G⌉. Equality means indifference. Larger C raises the threshold, larger G lowers it, and a does not enter it.\n\nHandle the zero-dumper case honestly. The printed expression C/n is undefined at n=0. The intended conclusion that nobody starts dumping requires defining solitary dumping as prohibitively costly, or using the limiting value C/n→+∞ as n↓0. Under that convention not dumping is optimal at zero others. This missing boundary definition is why the record retains its review flag.",
     "hint": "Compare the incremental private payoffs; others’ pollution is common to both options.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "needs_review",
-    "notes": "The printed costC/n is undefined atn0. Intended infinite-cost limiting interpretation is stated explicitly."
+    "notes": "The printed costC/n is undefined atn0. Intended infinite-cost limiting interpretation is stated explicitly.",
+    "solutionSteps": [
+      {
+        "title": "Compare only the payoff changed by one's own action",
+        "body": "The harm $an$ from the other dumpers is suffered whether or not this person dumps. It therefore cancels when comparing the two actions. The incremental private benefit from dumping is $G-C/n$ for $n>0$. The social external damage matters for welfare but not for this private comparison."
+      },
+      {
+        "title": "Derive the threshold",
+        "body": "For positive gain $G$, dumping is privately optimal exactly when $$G-\\frac Cn\\ge0\\quad\\Leftrightarrow\\quad n\\ge\\frac CG.$$ For integer numbers of other people, the smallest threshold is $\\lceil C/G\\rceil$. Equality means indifference. Larger $C$ raises the threshold, larger $G$ lowers it, and $a$ does not enter it."
+      },
+      {
+        "title": "Handle the zero-dumper case honestly",
+        "body": "The printed expression $C/n$ is undefined at $n=0$. The intended conclusion that nobody starts dumping requires defining solitary dumping as prohibitively costly, or using the limiting value $C/n\\to+\\infty$ as $n\\downarrow0$. Under that convention not dumping is optimal at zero others. This missing boundary definition is why the record retains its review flag."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q6",
@@ -169,12 +261,22 @@
     "originalPaperCode": "ME II",
     "stem": "Consumption depends only on income, investment only on interest, and G is exogenous. A unit rise in G shifts IS vertically upward by.5 at every income. Find dI/dr.",
     "answer": "dI/dr=−2.",
-    "solution": "IS isY=C(Y)+I(r)+G. HoldingY fixed while varyingG gives0=I′(r)dr+dG, so dr/dG=−1/I′. A unit increase shiftingr upward by.5 gives.5=−1/I′ and therefore I′=−2.",
+    "solution": "Interpret a vertical IS shift at fixed income. Start from Y=C(Y)+I(r)+G. When finding how far IS shifts vertically, hold Y fixed; consumption is then fixed too. Differentiation gives 0=I'(r) dr+dG. This is not a movement along the original IS curve.\n\nRecover the investment derivative. Therefore dr/dG=-1/I'(r). A one-unit government-spending increase raises the IS interest coordinate by 0.5, so \n0.5=-(1)/(I'(r)) ⇒ I'(r)=-2.\n The sign is economically consistent: a higher interest rate must reduce investment enough to offset the extra government spending while output is held fixed.",
     "hint": "Hold income fixed when interpreting the vertical shift.",
     "topic": "Macroeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Interpret a vertical IS shift at fixed income",
+        "body": "Start from $Y=C(Y)+I(r)+G$. When finding how far IS shifts vertically, hold $Y$ fixed; consumption is then fixed too. Differentiation gives $0=I'(r)\\,dr+dG$. This is not a movement along the original IS curve."
+      },
+      {
+        "title": "Recover the investment derivative",
+        "body": "Therefore $dr/dG=-1/I'(r)$. A one-unit government-spending increase raises the IS interest coordinate by 0.5, so $$0.5=-\\frac1{I'(r)}\\quad\\Rightarrow\\quad I'(r)=-2.$$ The sign is economically consistent: a higher interest rate must reduce investment enough to offset the extra government spending while output is held fixed."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q7",
@@ -186,12 +288,26 @@
     "originalPaperCode": "ME II",
     "stem": "In a simple Keynesian economy without government, planned investment is7. AtY0, consumption is one-half of planned aggregate demand. AtY30, unplanned inventory accumulation is5. Find the autonomous-spending multiplier.",
     "answer": "Multiplier30/19, assuming an affine consumption schedule.",
-    "solution": "LetC=a+bY andE=C+7. AtY0, a/(a+7)=1/2 givesa7 andE014. AtY30, output exceeds planned demand by5, soE(30)=25. Henceb=(25−14)/30=11/30. The autonomous-spending multiplier is1/(1−b)=30/19.",
+    "solution": "Recover autonomous consumption. Use the usual affine simple-Keynesian schedule C=a+bY, with planned investment 7. At zero output, planned demand is E_0=a+7. Consumption is half of that demand, so \n(a)/(a+7)=(1)/(2) ⇒ a=7, E_0=14.\n\nUse the unplanned inventory information. Unplanned inventory accumulation means production exceeds intended expenditure. At Y=30, accumulation 5 implies E(30)=25. Hence \n14+30b=25 ⇒ b=(11)/(30).\n Confusing inventory accumulation with excess demand would reverse this subtraction.\n\nCalculate the multiplier. The autonomous-spending multiplier is \n(1)/(1-b)=(1)/(1-11/30)=(30)/(19).\n The question's continuation is on PDF page 2, despite starting on page 6, so both pieces of source information are needed. Linearity is the standard simple-Keynesian interpretation used in obtaining a single slope from the observations.",
     "hint": "Unplanned inventory accumulation meansY exceeds planned demand.",
     "topic": "Macroeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": "Question starts on PDFpage6 and continues on PDFpage2 because of the booklet’s unusual scan order. Linear consumption is the usual simple-Keynesian interpretation."
+    "notes": "Question starts on PDFpage6 and continues on PDFpage2 because of the booklet’s unusual scan order. Linear consumption is the usual simple-Keynesian interpretation.",
+    "solutionSteps": [
+      {
+        "title": "Recover autonomous consumption",
+        "body": "Use the usual affine simple-Keynesian schedule $C=a+bY$, with planned investment 7. At zero output, planned demand is $E_0=a+7$. Consumption is half of that demand, so $$\\frac{a}{a+7}=\\frac12\\quad\\Rightarrow\\quad a=7,\\ E_0=14.$$"
+      },
+      {
+        "title": "Use the unplanned inventory information",
+        "body": "Unplanned inventory accumulation means production exceeds intended expenditure. At $Y=30$, accumulation 5 implies $E(30)=25$. Hence $$14+30b=25\\quad\\Rightarrow\\quad b=\\frac{11}{30}.$$ Confusing inventory accumulation with excess demand would reverse this subtraction."
+      },
+      {
+        "title": "Calculate the multiplier",
+        "body": "The autonomous-spending multiplier is $$\\frac1{1-b}=\\frac1{1-11/30}=\\frac{30}{19}.$$ The question's continuation is on PDF page 2, despite starting on page 6, so both pieces of source information are needed. Linearity is the standard simple-Keynesian interpretation used in obtaining a single slope from the observations."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q8",
@@ -203,12 +319,26 @@
     "originalPaperCode": "ME II",
     "stem": "A project costs200 now and pays100 per year from next year onward. Each year, conditional on survival, abandonment permanently occurs with probability1/4. At a10% annual discount rate, is investment profitable?",
     "answer": "Yes. If abandonment occurs before each payment, PV=1500/7≈214.286 and NPV=100/7≈14.286.",
-    "solution": "With survival probabilityq=.75 and discount factor1/1.1, expected year-t revenue is100qᵗ if the first payment also requires survival. PV=100Σ(t≥1)(q/1.1)ᵗ=100q/(1.1−q)=1500/7. Subtracting200 gives positive NPV100/7. If the first payment is guaranteed and abandonment is tested after payments, PV=100/(1.1−q)=2000/7 and NPV600/7, also positive. The investment recommendation is unchanged by this timing convention.",
+    "solution": "Model annual survival and payment timing. Treat the abandonment probability as a constant conditional hazard p=1/4. Then annual survival is q=3/4. If abandonment is tested before each payment, the probability of receiving the year-t payment is q^t, so expected revenue is 100q^t. The initial investment is paid now.\n\nSum the discounted expected stream. With discount rate 10%, \nPV =100Σ_(t=1)^∞((0.75)/(1.1))^t; =(100(0.75))/(1.1-0.75)=(1500)/(7).\n The geometric sum is finite because its ratio is below one. Net present value is 1500/7-200=100/7>0, so undertake the investment.\n\nCheck the alternative within-year timing. If the first payment is guaranteed and abandonment is tested only afterward, the stream starts with survival weight one instead. Then PV=100/(1.1-0.75)=2000/7 and NPV is 600/7, also positive. The source does not settle that timing, but the investment recommendation is robust to both standard conventions.",
     "hint": "Discount the survival-weighted geometric stream.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "status": "verified",
-    "notes": "Interprets abandonment probability as a constant conditional annual hazard; both common within-year payment timings give a positive NPV."
+    "notes": "Interprets abandonment probability as a constant conditional annual hazard; both common within-year payment timings give a positive NPV.",
+    "solutionSteps": [
+      {
+        "title": "Model annual survival and payment timing",
+        "body": "Treat the abandonment probability as a constant conditional hazard $p=1/4$. Then annual survival is $q=3/4$. If abandonment is tested before each payment, the probability of receiving the year-$t$ payment is $q^t$, so expected revenue is $100q^t$. The initial investment is paid now."
+      },
+      {
+        "title": "Sum the discounted expected stream",
+        "body": "With discount rate 10%, $$\\begin{aligned}PV&=100\\sum_{t=1}^{\\infty}\\left(\\frac{0.75}{1.1}\\right)^t\\\\&=\\frac{100(0.75)}{1.1-0.75}=\\frac{1500}{7}.\\end{aligned}$$ The geometric sum is finite because its ratio is below one. Net present value is $1500/7-200=100/7>0$, so undertake the investment."
+      },
+      {
+        "title": "Check the alternative within-year timing",
+        "body": "If the first payment is guaranteed and abandonment is tested only afterward, the stream starts with survival weight one instead. Then $PV=100/(1.1-0.75)=2000/7$ and NPV is $600/7$, also positive. The source does not settle that timing, but the investment recommendation is robust to both standard conventions."
+      }
+    ]
   },
   {
     "id": "2003-PEB-Q9",
@@ -220,11 +350,25 @@
     "originalPaperCode": "ME II",
     "stem": "A firm producesy=x₁x₂ with positive input pricesr₁,r₂. If minimized production cost is4, findy.",
     "answer": "y=4/(r₁r₂).",
-    "solution": "For targety, minimum cost ismin(r₁x₁+r₂x₂) subject tox₁x₂≥y. AM–GM givescost≥2√(r₁r₂y), attained whenr₁x₁=r₂x₂. Equating minimized cost4 givesr₁r₂y4, so y=4/(r₁r₂). At the optimum each input’s expenditure is2.",
+    "solution": "Formulate cost minimization. For a target output y, minimize r_1x_1+r_2x_2 subject to x_1x_2≥ y, where both input prices are positive. At the minimum the production constraint binds: buying unnecessary inputs would raise cost without being required for the target.\n\nDerive minimized cost. AM–GM gives \nr_1x_1+r_2x_2≥2√(r_1r_2x_1x_2)=2√(r_1r_2y).\n Equality is attainable when the two input expenditures are equal, r_1x_1=r_2x_2. Thus the lower bound is the cost function, not just an inequality.\n\nInvert the given cost level. Set minimized cost equal to 4: 2√(r_1r_2y)=4. Squaring gives r_1r_2y=4, hence y=4/(r_1r_2). At this optimum each input expenditure is 2, which provides a direct check on the total cost.",
     "hint": "Use AM–GM or equalize the two input expenditures.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Formulate cost minimization",
+        "body": "For a target output $y$, minimize $r_1x_1+r_2x_2$ subject to $x_1x_2\\ge y$, where both input prices are positive. At the minimum the production constraint binds: buying unnecessary inputs would raise cost without being required for the target."
+      },
+      {
+        "title": "Derive minimized cost",
+        "body": "AM–GM gives $$r_1x_1+r_2x_2\\ge2\\sqrt{r_1r_2x_1x_2}=2\\sqrt{r_1r_2y}.$$ Equality is attainable when the two input expenditures are equal, $r_1x_1=r_2x_2$. Thus the lower bound is the cost function, not just an inequality."
+      },
+      {
+        "title": "Invert the given cost level",
+        "body": "Set minimized cost equal to 4: $2\\sqrt{r_1r_2y}=4$. Squaring gives $r_1r_2y=4$, hence $y=4/(r_1r_2)$. At this optimum each input expenditure is 2, which provides a direct check on the total cost."
+      }
+    ]
   }
 ]

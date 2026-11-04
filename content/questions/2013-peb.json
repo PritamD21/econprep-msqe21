@@ -8,12 +8,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "An agent earns wage w while young and nothing while old. The agent lives for two periods, consumes in each, and has utility log c₁+log c₂. Lending or borrowing is possible at a constant net interest rate r. (a) Find saving while young. (b) What happens to saving when r rises?",
     "answer": "(a) s=w/2. (b) Saving is unchanged by r.",
-    "solution": "Let saving be s. Then c₁=w−s and c₂=(1+r)s, with w>0 and r>−1. Maximize log(w−s)+log[(1+r)s]. The first-order condition −1/(w−s)+1/s=0 gives s=w/2. The second derivative is negative. Since r enters utility only through the additive constant log(1+r), it does not change optimal saving. Old-age consumption rises with r, but the amount saved remains w/2.",
+    "solution": "Use saving as the single choice variable. Lending earns the gross return $1+r$, and positive log consumption requires $0<s<w$.\n\n$$\\begin{aligned}\nV(s)&=\\log(w-s)+\\log((1+r)s),\\\\\nV\\prime(s)&=-\\frac1{w-s}+\\frac1s=0,\\\\\ns^*&=w/2,\\\\\nV^{\\prime\\prime}(s)&=-\\frac1{(w-s)^2}-\\frac1{s^2}<0.\n\\end{aligned}$$\n\nWrite the future-consumption term as $\\log(1+r)+\\log s$. The return adds a constant to the objective rather than changing its slope in saving. This explains why optimal saving is unchanged even though future consumption increases with the interest rate.\n\nLet saving be s. Then c₁=w−s and c₂=(1+r)s, with w>0 and r>−1. Maximize log(w−s)+log[(1+r)s].\n\nThe first-order condition −1/(w−s)+1/s=0 gives s=w/2. The second derivative is negative. Since r enters utility only through the additive constant log(1+r), it does not change optimal saving.\n\nOld-age consumption rises with r, but the amount saved remains w/2.\n\n(a) s=w/2. (b) Saving is unchanged by r.",
     "hint": "Express both consumptions in terms of one saving variable s.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use saving as the single choice variable. Lending earns the gross return $1+r$, and positive log consumption requires $0<s<w$."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nV(s)&=\\log(w-s)+\\log((1+r)s),\\\\\nV\\prime(s)&=-\\frac1{w-s}+\\frac1s=0,\\\\\ns^*&=w/2,\\\\\nV^{\\prime\\prime}(s)&=-\\frac1{(w-s)^2}-\\frac1{s^2}<0.\n\\end{aligned}$$\n\nWrite the future-consumption term as $\\log(1+r)+\\log s$. The return adds a constant to the objective rather than changing its slope in saving. This explains why optimal saving is unchanged even though future consumption increases with the interest rate."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let saving be s. Then c₁=w−s and c₂=(1+r)s, with w>0 and r>−1. Maximize log(w−s)+log[(1+r)s].\n\nThe first-order condition −1/(w−s)+1/s=0 gives s=w/2. The second derivative is negative. Since r enters utility only through the additive constant log(1+r), it does not change optimal saving.\n\nOld-age consumption rises with r, but the amount saved remains w/2."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) s=w/2. (b) Saving is unchanged by r."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q2",
@@ -24,12 +42,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "Masala Dosa vendors have marginal cost Rs.15 per dosa and capacity 100 dosas per day. (a) At price Rs.20, how much does each sell? (b) If d(p)=4400−120p and each sells 100, how many vendors are present? (c) If the number is restricted to 20, find the market price. (d) With 20 vendors and permits, what is the maximum a vendor would pay for a permit?",
     "answer": "(a) 100 per day. (b) 20 vendors at p=20. (c) p=20. (d) Rs.500 per day of permit validity, before any fixed costs.",
-    "solution": "(a) Since price 20 exceeds marginal cost 15, a price-taking vendor produces at capacity, 100. (b) At p=20, demand is 4400−120·20=2000, requiring 2000/100=20 vendors. (c) With 20 capacity-constrained vendors, supply is 2000; clearing 4400−120p=2000 gives p=20. (d) Daily operating surplus is (20−15)·100=Rs.500. A one-day permit is therefore worth at most Rs.500. If the permit is valid indefinitely, its value is the discounted stream of those daily surpluses; no unique lump-sum value can be calculated without duration and discounting information.",
+    "solution": "A price-taking vendor compares price to marginal cost, but cannot exceed capacity. A permit is worth the operating surplus over its validity period, not automatically the surplus from one day.\n\n$$\\begin{aligned}\nq_i(20)&=100\\quad\\text{since }20>15,\\\\\nD(20)&=4400-120(20)=2000,\\\\\nn&=2000/100=20,\\\\\nV_{\\rm one\\ day}&=(20-15)100=500.\n\\end{aligned}$$\n\nThe restricted number of vendors happens to match the number already required at the given price, so the restriction does not change that market-clearing price. To value a longer-lived permit, discount its future daily surplus; the source must supply the time horizon and discount rate for a unique capitalized value.\n\n(a) Since price 20 exceeds marginal cost 15, a price-taking vendor produces at capacity, 100. (b) At p=20, demand is 4400−120·20=2000, requiring 2000/100=20 vendors. (c) With 20 capacity-constrained vendors, supply is 2000; clearing 4400−120p=2000 gives p=20.\n\n(d) Daily operating surplus is (20−15)·100=Rs.500. A one-day permit is therefore worth at most Rs.500. If the permit is valid indefinitely, its value is the discounted stream of those daily surpluses; no unique lump-sum value can be calculated without duration and discounting information.\n\n(a) 100 per day. (b) 20 vendors at p=20. (c) p=20. (d) Rs.500 per day of permit validity, before any fixed costs.",
     "hint": "Use each vendor’s capacity, then equate total capacity to demand.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": "Part (b) uses the price in part (a). Part (d) does not state permit duration; Rs.500 is a daily rental value, not automatically a perpetual-license price."
+    "notes": "Part (b) uses the price in part (a). Part (d) does not state permit duration; Rs.500 is a daily rental value, not automatically a perpetual-license price.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "A price-taking vendor compares price to marginal cost, but cannot exceed capacity. A permit is worth the operating surplus over its validity period, not automatically the surplus from one day."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nq_i(20)&=100\\quad\\text{since }20>15,\\\\\nD(20)&=4400-120(20)=2000,\\\\\nn&=2000/100=20,\\\\\nV_{\\rm one\\ day}&=(20-15)100=500.\n\\end{aligned}$$\n\nThe restricted number of vendors happens to match the number already required at the given price, so the restriction does not change that market-clearing price. To value a longer-lived permit, discount its future daily surplus; the source must supply the time horizon and discount rate for a unique capitalized value."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Since price 20 exceeds marginal cost 15, a price-taking vendor produces at capacity, 100. (b) At p=20, demand is 4400−120·20=2000, requiring 2000/100=20 vendors. (c) With 20 capacity-constrained vendors, supply is 2000; clearing 4400−120p=2000 gives p=20.\n\n(d) Daily operating surplus is (20−15)·100=Rs.500. A one-day permit is therefore worth at most Rs.500. If the permit is valid indefinitely, its value is the discounted stream of those daily surpluses; no unique lump-sum value can be calculated without duration and discounting information."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) 100 per day. (b) 20 vendors at p=20. (c) p=20. (d) Rs.500 per day of permit validity, before any fixed costs."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q3",
@@ -40,12 +76,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "A firm can hire a worker for a day at wage Rs.20. The worker can work at most 10 hours, producing either intermediate input 1 at 10 units per hour or input 2 at 20 units per hour. Final output is √(k₁k₂), and its price is Rs.1 per unit. Find the optimal hiring, production and sale decisions.",
     "answer": "Hire the worker; allocate 5 hours to each input, produce k₁=50 and k₂=100, and sell 50√2 units. Profit is 50√2−20 rupees.",
-    "solution": "Conditional on hiring, full use of the 10 hours is optimal because output increases with both inputs. Let h hours produce input 1 and 10−h produce input 2. Then k₁=10h and k₂=20(10−h), so output is √[200h(10−h)]. The product h(10−h) is maximized at h=5. Output and revenue are √5000=50√2≈70.71. Net profit is approximately Rs.50.71, exceeding the zero profit from not hiring; hence hire, produce, and sell all output.",
+    "solution": "Conditional on hiring, the wage is fixed for the day, so the worker should use all available hours productively. Choose the time allocated to the first intermediate input.\n\n$$\\begin{aligned}\nk_1&=10h,\\qquad k_2=20(10-h),\\quad0\\le h\\le10,\\\\\nq(h)^2&=200h(10-h)=5000-200(h-5)^2,\\\\\nh^*&=5,\\quad q^*=50\\sqrt2,\\\\\n\\pi^*&=50\\sqrt2-20>0.\n\\end{aligned}$$\n\nMaximizing output is equivalent to maximizing its square because the square-root transformation is increasing. Completing the square establishes a unique optimal time split. Finally compare the resulting net profit with zero from not hiring, since the conditional production optimum alone does not establish that employment is worthwhile.\n\nConditional on hiring, full use of the 10 hours is optimal because output increases with both inputs. Let h hours produce input 1 and 10−h produce input 2. Then k₁=10h and k₂=20(10−h), so output is √[200h(10−h)].\n\nThe product h(10−h) is maximized at h=5. Output and revenue are √5000=50√2≈70.71. Net profit is approximately Rs.50.71, exceeding the zero profit from not hiring; hence hire, produce, and sell all output.\n\nHire the worker; allocate 5 hours to each input, produce k₁=50 and k₂=100, and sell 50√2 units. Profit is 50√2−20 rupees.",
     "hint": "Write output as a function of the hours allocated to input 1.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": "The statement continues on PDF page 13."
+    "notes": "The statement continues on PDF page 13.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Conditional on hiring, the wage is fixed for the day, so the worker should use all available hours productively. Choose the time allocated to the first intermediate input."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nk_1&=10h,\\qquad k_2=20(10-h),\\quad0\\le h\\le10,\\\\\nq(h)^2&=200h(10-h)=5000-200(h-5)^2,\\\\\nh^*&=5,\\quad q^*=50\\sqrt2,\\\\\n\\pi^*&=50\\sqrt2-20>0.\n\\end{aligned}$$\n\nMaximizing output is equivalent to maximizing its square because the square-root transformation is increasing. Completing the square establishes a unique optimal time split. Finally compare the resulting net profit with zero from not hiring, since the conditional production optimum alone does not establish that employment is worthwhile."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Conditional on hiring, full use of the 10 hours is optimal because output increases with both inputs. Let h hours produce input 1 and 10−h produce input 2. Then k₁=10h and k₂=20(10−h), so output is √[200h(10−h)].\n\nThe product h(10−h) is maximized at h=5. Output and revenue are √5000=50√2≈70.71. Net profit is approximately Rs.50.71, exceeding the zero profit from not hiring; hence hire, produce, and sell all output."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Hire the worker; allocate 5 hours to each input, produce k₁=50 and k₂=100, and sell 50√2 units. Profit is 50√2−20 rupees."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q4",
@@ -56,12 +110,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "A monopolist may sell any amount to the government at Rs.100 per unit. Its government sales are positive, and it also sells to private buyers at Rs.150 per unit. Find private-market price elasticity of demand.",
     "answer": "Elasticity is −3 in signed form, or magnitude 3.",
-    "solution": "A unit sold privately forgoes a government sale at Rs.100. Thus private-market marginal revenue equals 100 at an interior optimum. With private price p=150 and demand elasticity magnitude ε, MR=p(1−1/ε). Therefore 150(1−1/ε)=100, giving 1/ε=1/3 and ε=3. The signed demand elasticity is −3.",
+    "solution": "Positive government sales make the government price the opportunity cost of allocating another unit to private buyers. Thus private marginal revenue must equal the government price at the interior allocation.\n\n$$\\begin{aligned}\nMR_{\\rm private}&=100,\\\\\nMR&=p\\left(1+\\frac1\\varepsilon\\right),\\quad\\varepsilon<0,\\\\\n100&=150\\left(1+\\frac1\\varepsilon\\right),\\\\\n\\varepsilon&=-3.\n\\end{aligned}$$\n\nThe signed elasticity is negative; its absolute value is three. This is the same marginal-revenue rule used for a monopolist selling in two markets, except one market here has constant price and hence constant marginal revenue.\n\nA unit sold privately forgoes a government sale at Rs.100. Thus private-market marginal revenue equals 100 at an interior optimum. With private price p=150 and demand elasticity magnitude ε, MR=p(1−1/ε).\n\nTherefore 150(1−1/ε)=100, giving 1/ε=1/3 and ε=3. The signed demand elasticity is −3.\n\nElasticity is −3 in signed form, or magnitude 3.",
     "hint": "The government outlet fixes the opportunity revenue of the marginal unit.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Positive government sales make the government price the opportunity cost of allocating another unit to private buyers. Thus private marginal revenue must equal the government price at the interior allocation."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nMR_{\\rm private}&=100,\\\\\nMR&=p\\left(1+\\frac1\\varepsilon\\right),\\quad\\varepsilon<0,\\\\\n100&=150\\left(1+\\frac1\\varepsilon\\right),\\\\\n\\varepsilon&=-3.\n\\end{aligned}$$\n\nThe signed elasticity is negative; its absolute value is three. This is the same marginal-revenue rule used for a monopolist selling in two markets, except one market here has constant price and hence constant marginal revenue."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "A unit sold privately forgoes a government sale at Rs.100. Thus private-market marginal revenue equals 100 at an interior optimum. With private price p=150 and demand elasticity magnitude ε, MR=p(1−1/ε).\n\nTherefore 150(1−1/ε)=100, giving 1/ε=1/3 and ε=3. The signed demand elasticity is −3."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Elasticity is −3 in signed form, or magnitude 3."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q5",
@@ -72,12 +144,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "For Y=K^αL^(1−α)−βK+θL, with 0<α<1, β>0 and θ>0, examine: (a) The production function has constant returns to scale. (b) Labour demand is defined for all nonnegative wages. (c) Capital demand is undefined when the price of capital services is zero.",
     "answer": "(a) True. (b) False. (c) False under the usual conditional input-demand interpretation.",
-    "solution": "(a) Scaling both inputs by t scales every term in Y by t, so Y(tK,tL)=tY(K,L). (b) Normalize output price to 1 and hold K>0 fixed. MPL=(1−α)(K/L)^α+θ, which is always above θ. For w≤θ, profit grows without bound as L grows, so there is no finite maximizing labour demand. For w>θ, L=K[(1−α)/(w−θ)]^(1/α). (c) Holding L>0 fixed, MPK=α(K/L)^(α−1)−β. At rental rate ρ≥0, K=L[α/(ρ+β)]^(1/(1−α)), which remains finite at ρ=0. Joint unconditional demands under CRS also require checking the zero-profit condition; the formulas above are conditional demands.",
+    "solution": "First test scaling of the whole production function. Then derive factor demands conditional on the other input; constant returns means unconditional profit maximization needs an additional zero-profit check.\n\n$$\\begin{aligned}\nF(tK,tL)&=tF(K,L),\\\\\nMP_L&=(1-\\alpha)(K/L)^\\alpha+\\theta,\\\\\nL^d&=K\\left(\\frac{1-\\alpha}{w-\\theta}\\right)^{1/\\alpha}\n\\quad(w>\\theta),\\\\\nK^d&=L\\left(\\frac\\alpha{\\rho+\\beta}\\right)^{1/(1-\\alpha)}.\n\\end{aligned}$$\n\nThe additive labour term puts a positive lower bound $\\theta$ on marginal product, so a finite labour demand fails when the wage is too low. In contrast, the negative linear capital term acts like an additional rental cost and keeps the conditional capital optimum finite even when the market rental is zero.\n\n(a) Scaling both inputs by t scales every term in Y by t, so Y(tK,tL)=tY(K,L). (b) Normalize output price to 1 and hold K>0 fixed. MPL=(1−α)(K/L)^α+θ, which is always above θ.\n\nFor w≤θ, profit grows without bound as L grows, so there is no finite maximizing labour demand. For w>θ, L=K[(1−α)/(w−θ)]^(1/α). (c) Holding L>0 fixed, MPK=α(K/L)^(α−1)−β.\n\nAt rental rate ρ≥0, K=L[α/(ρ+β)]^(1/(1−α)), which remains finite at ρ=0. Joint unconditional demands under CRS also require checking the zero-profit condition; the formulas above are conditional demands.\n\n(a) True. (b) False. (c) False under the usual conditional input-demand interpretation.",
     "hint": "Check homogeneity first, then compare each marginal product with its input price.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "Conditional input-demand calculations hold the other input fixed and normalize output price to one. The source does not explicitly distinguish conditional from joint CRS input demand."
+    "notes": "Conditional input-demand calculations hold the other input fixed and normalize output price to one. The source does not explicitly distinguish conditional from joint CRS input demand.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "First test scaling of the whole production function. Then derive factor demands conditional on the other input; constant returns means unconditional profit maximization needs an additional zero-profit check."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nF(tK,tL)&=tF(K,L),\\\\\nMP_L&=(1-\\alpha)(K/L)^\\alpha+\\theta,\\\\\nL^d&=K\\left(\\frac{1-\\alpha}{w-\\theta}\\right)^{1/\\alpha}\n\\quad(w>\\theta),\\\\\nK^d&=L\\left(\\frac\\alpha{\\rho+\\beta}\\right)^{1/(1-\\alpha)}.\n\\end{aligned}$$\n\nThe additive labour term puts a positive lower bound $\\theta$ on marginal product, so a finite labour demand fails when the wage is too low. In contrast, the negative linear capital term acts like an additional rental cost and keeps the conditional capital optimum finite even when the market rental is zero."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Scaling both inputs by t scales every term in Y by t, so Y(tK,tL)=tY(K,L). (b) Normalize output price to 1 and hold K>0 fixed. MPL=(1−α)(K/L)^α+θ, which is always above θ.\n\nFor w≤θ, profit grows without bound as L grows, so there is no finite maximizing labour demand. For w>θ, L=K[(1−α)/(w−θ)]^(1/α). (c) Holding L>0 fixed, MPK=α(K/L)^(α−1)−β.\n\nAt rental rate ρ≥0, K=L[α/(ρ+β)]^(1/(1−α)), which remains finite at ρ=0. Joint unconditional demands under CRS also require checking the zero-profit condition; the formulas above are conditional demands."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) True. (b) False. (c) False under the usual conditional input-demand interpretation."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q6",
@@ -88,12 +178,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "Technological progress halves labour required per unit of output in a simple Keynesian model where output is proportional to employment. What happens to equilibrium output and employment? Does the answer change if consumption expenditure is proportional to labour income and the wage rate is given?",
     "answer": "With consumption based on total income, output is unchanged and employment halves. With consumption based only on wage income at a fixed wage, both output and employment fall under the usual stable multiplier conditions.",
-    "solution": "Let a be labour required per unit, so N=aY. In the usual demand-determined model Y=A+cY, equilibrium is A/(1−c); technology does not enter aggregate expenditure. Replacing a by a/2 therefore leaves Y unchanged and halves N. In the modified model, C=cwN=cwaY, where A contains autonomous expenditure. Then Y=A/(1−cwa). After the technical improvement, Y′=A/(1−cwa/2). For A>0 and 0<cwa<1, the new denominator is larger, so Y′<Y. Employment becomes N′=(a/2)Y′, less than half its old level. The wage-income consumption channel reduces demand when labour input falls.",
+    "solution": "Let $a$ be labour required per unit of output and $A$ autonomous expenditure. Distinguish a model where consumption depends on all income from one where it depends only on labour earnings.\n\n$$\\begin{aligned}\nN&=aY,\\\\\n\\text{ordinary model: }Y&=A+cY=\\frac A{1-c},\\\\\n\\text{wage-income model: }Y&=A+cwaY=\\frac A{1-cwa},\\\\\na\\mapsto a/2:&\\quad Y^\\prime=\\frac A{1-cwa/2}<Y.\n\\end{aligned}$$\n\nIn the ordinary demand-determined model, productivity does not enter expenditure, so output is unchanged and employment halves. When wage earnings drive consumption, lower labour input reduces demand as well. Employment then falls by more than one-half because both labour per output unit and total output decrease.\n\nLet a be labour required per unit, so N=aY. In the usual demand-determined model Y=A+cY, equilibrium is A/(1−c); technology does not enter aggregate expenditure. Replacing a by a/2 therefore leaves Y unchanged and halves N.\n\nIn the modified model, C=cwN=cwaY, where A contains autonomous expenditure. Then Y=A/(1−cwa). After the technical improvement, Y′=A/(1−cwa/2).\n\nFor A>0 and 0<cwa<1, the new denominator is larger, so Y′<Y. Employment becomes N′=(a/2)Y′, less than half its old level. The wage-income consumption channel reduces demand when labour input falls.\n\nWith consumption based on total income, output is unchanged and employment halves. With consumption based only on wage income at a fixed wage, both output and employment fall under the usual stable multiplier conditions.",
     "hint": "Use N=aY and substitute wage income wN into consumption in the second model.",
     "topic": "Macroeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Let $a$ be labour required per unit of output and $A$ autonomous expenditure. Distinguish a model where consumption depends on all income from one where it depends only on labour earnings."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nN&=aY,\\\\\n\\text{ordinary model: }Y&=A+cY=\\frac A{1-c},\\\\\n\\text{wage-income model: }Y&=A+cwaY=\\frac A{1-cwa},\\\\\na\\mapsto a/2:&\\quad Y^\\prime=\\frac A{1-cwa/2}<Y.\n\\end{aligned}$$\n\nIn the ordinary demand-determined model, productivity does not enter expenditure, so output is unchanged and employment halves. When wage earnings drive consumption, lower labour input reduces demand as well. Employment then falls by more than one-half because both labour per output unit and total output decrease."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let a be labour required per unit, so N=aY. In the usual demand-determined model Y=A+cY, equilibrium is A/(1−c); technology does not enter aggregate expenditure. Replacing a by a/2 therefore leaves Y unchanged and halves N.\n\nIn the modified model, C=cwN=cwaY, where A contains autonomous expenditure. Then Y=A/(1−cwa). After the technical improvement, Y′=A/(1−cwa/2).\n\nFor A>0 and 0<cwa<1, the new denominator is larger, so Y′<Y. Employment becomes N′=(a/2)Y′, less than half its old level. The wage-income consumption channel reduces demand when labour input falls."
+      },
+      {
+        "title": "Conclusion",
+        "body": "With consumption based on total income, output is unchanged and employment halves. With consumption based only on wage income at a fixed wage, both output and employment fall under the usual stable multiplier conditions."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q7",
@@ -104,12 +212,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "Examine the statement: a positive investment multiplier does not exist in an open-economy simple Keynesian model when all investment goods are supplied through imports.",
     "answer": "There is no positive contemporaneous output multiplier: under matching investment imports, the multiplier is zero.",
-    "solution": "Write Y=C+I+G+X−M. Let consumption be C=A+cY, and imports M=M₀+mY+I because each extra unit of investment expenditure is spent entirely on an imported investment good. The +I and −I cancel, giving Y=(A+G+X−M₀)/(1−c+m). Hence ∂Y/∂I=0. The statement is valid if “does not exist” means no positive multiplier; mathematically the multiplier does exist and equals zero. This is a short-run demand result, not a claim about future capacity effects of imported capital.",
+    "solution": "National expenditure includes investment, but also subtracts imports. If every marginal unit of investment is imported, record the same expenditure in both places before calculating a multiplier.\n\n$$\\begin{aligned}\nY&=C+I+G+X-M,\\\\\nC&=A+cY,\\qquad M=M_0+mY+I,\\\\\n(1-c+m)Y&=A+G+X-M_0,\\\\\n\\frac{\\partial Y}{\\partial I}&=0.\n\\end{aligned}$$\n\nThe cancellation says that extra imported investment does not directly create demand for domestic output. It does not deny a possible future productivity gain from imported equipment. Mathematically a multiplier exists and equals zero; the phrase “does not exist” should be understood as “is not positive.”\n\nWrite Y=C+I+G+X−M. Let consumption be C=A+cY, and imports M=M₀+mY+I because each extra unit of investment expenditure is spent entirely on an imported investment good. The +I and −I cancel, giving Y=(A+G+X−M₀)/(1−c+m).\n\nHence ∂Y/∂I=0. The statement is valid if “does not exist” means no positive multiplier; mathematically the multiplier does exist and equals zero. This is a short-run demand result, not a claim about future capacity effects of imported capital.\n\nThere is no positive contemporaneous output multiplier: under matching investment imports, the multiplier is zero.",
     "hint": "Account for investment imports in M as well as investment spending in I.",
     "topic": "Macroeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "National expenditure includes investment, but also subtracts imports. If every marginal unit of investment is imported, record the same expenditure in both places before calculating a multiplier."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nY&=C+I+G+X-M,\\\\\nC&=A+cY,\\qquad M=M_0+mY+I,\\\\\n(1-c+m)Y&=A+G+X-M_0,\\\\\n\\frac{\\partial Y}{\\partial I}&=0.\n\\end{aligned}$$\n\nThe cancellation says that extra imported investment does not directly create demand for domestic output. It does not deny a possible future productivity gain from imported equipment. Mathematically a multiplier exists and equals zero; the phrase “does not exist” should be understood as “is not positive.”"
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Write Y=C+I+G+X−M. Let consumption be C=A+cY, and imports M=M₀+mY+I because each extra unit of investment expenditure is spent entirely on an imported investment good. The +I and −I cancel, giving Y=(A+G+X−M₀)/(1−c+m).\n\nHence ∂Y/∂I=0. The statement is valid if “does not exist” means no positive multiplier; mathematically the multiplier does exist and equals zero. This is a short-run demand result, not a claim about future capacity effects of imported capital."
+      },
+      {
+        "title": "Conclusion",
+        "body": "There is no positive contemporaneous output multiplier: under matching investment imports, the multiplier is zero."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q8",
@@ -120,12 +246,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "A consumer consumes two goods with additively separable utility U(x₁,x₂)=U₁(x₁)+U₂(x₂). The source says: “Suppose that the income elasticity is positive.” It is claimed that in this setup all goods are normal. Prove or disprove.",
     "answer": "The printed premise is incomplete. Additive separability alone does not imply all goods are normal; increasing, strictly concave component utilities at an interior optimum would imply normality.",
-    "solution": "The source does not say which good has positive income elasticity. If it means both goods, normality is true by definition. If it means only one good, additive separability by itself is insufficient. A counterexample is U=x₁²+log x₂ with unit prices and income m near 2. Its global optimum in that region is x₁=[m+√(m²−2)]/2 and x₂=[m−√(m²−2)]/2; differentiation gives dx₁/dm>0 but dx₂/dm<0. By contrast, if U₁′,U₂′>0 and U₁″,U₂″<0 at an interior optimum, the first-order conditions Uᵢ′=λpᵢ imply dxᵢ/dm=pᵢλₘ/Uᵢ″. Differentiating the budget yields λₘ=[p₁²/U₁″+p₂²/U₂″]^(−1)<0, so each dxᵢ/dm>0. The claim therefore needs a clarified premise or extra concavity assumptions.",
+    "solution": "An income elasticity is a property of a particular demand, so clarify which good the premise concerns. Additive separability alone says nothing about the curvature of its component utilities.\n\n$$\\begin{aligned}\nU_i\\prime(x_i)&=\\lambda p_i,\\\\\nU_i^{\\prime\\prime}(x_i)\\frac{dx_i}{dm}&=p_i\\lambda_m,\\\\\n\\lambda_m&=\\left[\\sum_i\\frac{p_i^2}{U_i^{\\prime\\prime}(x_i)}\\right]^{-1}<0\n\\quad\\text{if every }U_i^{\\prime\\prime}<0,\\\\\n\\frac{dx_i}{dm}&>0\\quad\\text{under those additional assumptions}.\n\\end{aligned}$$\n\nThis derivation proves normality under increasing, strictly concave separable utility at an interior optimum. Without concavity, the sign of the denominator and each component's response is no longer secured. Preserve the existing counterexample and the source ambiguity rather than using an unstated concavity assumption as a proof.\n\nThe source does not say which good has positive income elasticity. If it means both goods, normality is true by definition. If it means only one good, additive separability by itself is insufficient.\n\nA counterexample is U=x₁²+log x₂ with unit prices and income m near 2. Its global optimum in that region is x₁=[m+√(m²−2)]/2 and x₂=[m−√(m²−2)]/2; differentiation gives dx₁/dm>0 but dx₂/dm<0. By contrast, if U₁′,U₂′>0 and U₁″,U₂″<0 at an interior optimum, the first-order conditions Uᵢ′=λpᵢ imply dxᵢ/dm=pᵢλₘ/Uᵢ″.\n\nDifferentiating the budget yields λₘ=[p₁²/U₁″+p₂²/U₂″]^(−1)<0, so each dxᵢ/dm>0. The claim therefore needs a clarified premise or extra concavity assumptions.\n\nThe printed premise is incomplete. Additive separability alone does not imply all goods are normal; increasing, strictly concave component utilities at an interior optimum would imply normality.",
     "hint": "Differentiate the first-order conditions with respect to income, and check what curvature assumptions you need.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "status": "needs_review",
-    "notes": "Visual source inspection confirms the unspecific singular phrase “the income elasticity”. No missing concavity assumption has been silently added."
+    "notes": "Visual source inspection confirms the unspecific singular phrase “the income elasticity”. No missing concavity assumption has been silently added.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "An income elasticity is a property of a particular demand, so clarify which good the premise concerns. Additive separability alone says nothing about the curvature of its component utilities."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nU_i\\prime(x_i)&=\\lambda p_i,\\\\\nU_i^{\\prime\\prime}(x_i)\\frac{dx_i}{dm}&=p_i\\lambda_m,\\\\\n\\lambda_m&=\\left[\\sum_i\\frac{p_i^2}{U_i^{\\prime\\prime}(x_i)}\\right]^{-1}<0\n\\quad\\text{if every }U_i^{\\prime\\prime}<0,\\\\\n\\frac{dx_i}{dm}&>0\\quad\\text{under those additional assumptions}.\n\\end{aligned}$$\n\nThis derivation proves normality under increasing, strictly concave separable utility at an interior optimum. Without concavity, the sign of the denominator and each component's response is no longer secured. Preserve the existing counterexample and the source ambiguity rather than using an unstated concavity assumption as a proof."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The source does not say which good has positive income elasticity. If it means both goods, normality is true by definition. If it means only one good, additive separability by itself is insufficient.\n\nA counterexample is U=x₁²+log x₂ with unit prices and income m near 2. Its global optimum in that region is x₁=[m+√(m²−2)]/2 and x₂=[m−√(m²−2)]/2; differentiation gives dx₁/dm>0 but dx₂/dm<0. By contrast, if U₁′,U₂′>0 and U₁″,U₂″<0 at an interior optimum, the first-order conditions Uᵢ′=λpᵢ imply dxᵢ/dm=pᵢλₘ/Uᵢ″.\n\nDifferentiating the budget yields λₘ=[p₁²/U₁″+p₂²/U₂″]^(−1)<0, so each dxᵢ/dm>0. The claim therefore needs a clarified premise or extra concavity assumptions."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The printed premise is incomplete. Additive separability alone does not imply all goods are normal; increasing, strictly concave component utilities at an interior optimum would imply normality."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q9",
@@ -136,12 +280,30 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "Demand for X is x=10+m/(10pₓ), where m>0. Initially m=120 and pₓ=3; price falls to pₓ′=2. Find the price effect and decompose it into substitution and income effects.",
     "answer": "Total price effect: +2 units. Slutsky decomposition: substitution effect +1.3 units and income effect +0.7 units.",
-    "solution": "Initial demand is x₀=10+120/(10·3)=14; final demand is x₁=10+120/(10·2)=16, so the total effect is +2. Under Slutsky purchasing-power compensation, new income is mˢ=120+(2−3)·14=106, making the old bundle affordable at the new price. Compensated demand is xˢ=10+106/20=15.3. Thus substitution effect=xˢ−x₀=1.3 and income effect=x₁−xˢ=0.7. If Hicks utility compensation is requested instead, solve de/dp=10+e/(10p): e(p,u)=(100/9)p+C(u)p^(1/10). The initial condition gives e(2,u₀)=200/9+(260/3)(2/3)^(1/10)≈105.445, yielding Hicks effects approximately +1.2723 and +0.7277. Both decompositions add to +2, but use different compensation conventions.",
+    "solution": "Calculate the total price effect first. A finite Slutsky decomposition compensates income so that the original bundle is still affordable at the new price; this is different from holding utility exactly fixed.\n\n$$\\begin{aligned}\nx_0&=10+120/30=14,\\qquad x_1=10+120/20=16,\\\\\nm^S&=120+(2-3)14=106,\\\\\nx^S&=10+106/20=15.3,\\\\\nSE&=15.3-14=1.3,\\qquad IE=16-15.3=0.7.\n\\end{aligned}$$\n\nBoth components add to the observed increase of two units. Label the compensation convention because finite Hicks and Slutsky decompositions generally differ even though their infinitesimal versions agree at the starting point. The existing explanation provides the utility-compensated calculation as a separate alternative.\n\nInitial demand is x₀=10+120/(10·3)=14; final demand is x₁=10+120/(10·2)=16, so the total effect is +2. Under Slutsky purchasing-power compensation, new income is mˢ=120+(2−3)·14=106, making the old bundle affordable at the new price. Compensated demand is xˢ=10+106/20=15.3.\n\nThus substitution effect=xˢ−x₀=1.3 and income effect=x₁−xˢ=0.7. If Hicks utility compensation is requested instead, solve de/dp=10+e/(10p): e(p,u)=(100/9)p+C(u)p^(1/10). The initial condition gives e(2,u₀)=200/9+(260/3)(2/3)^(1/10)≈105.445, yielding Hicks effects approximately +1.2723 and +0.7277.\n\nBoth decompositions add to +2, but use different compensation conventions.\n\nTotal price effect: +2 units. Slutsky decomposition: substitution effect +1.3 units and income effect +0.7 units.",
     "hint": "For a Slutsky decomposition, adjust income so the original chosen bundle remains affordable after the price change.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": "The source does not specify Hicks or Slutsky compensation. Both are supplied; the simple +1.3/+0.7 answer is the Slutsky decomposition."
+    "notes": "The source does not specify Hicks or Slutsky compensation. Both are supplied; the simple +1.3/+0.7 answer is the Slutsky decomposition.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Calculate the total price effect first. A finite Slutsky decomposition compensates income so that the original bundle is still affordable at the new price; this is different from holding utility exactly fixed."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nx_0&=10+120/30=14,\\qquad x_1=10+120/20=16,\\\\\nm^S&=120+(2-3)14=106,\\\\\nx^S&=10+106/20=15.3,\\\\\nSE&=15.3-14=1.3,\\qquad IE=16-15.3=0.7.\n\\end{aligned}$$\n\nBoth components add to the observed increase of two units. Label the compensation convention because finite Hicks and Slutsky decompositions generally differ even though their infinitesimal versions agree at the starting point. The existing explanation provides the utility-compensated calculation as a separate alternative."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Initial demand is x₀=10+120/(10·3)=14; final demand is x₁=10+120/(10·2)=16, so the total effect is +2. Under Slutsky purchasing-power compensation, new income is mˢ=120+(2−3)·14=106, making the old bundle affordable at the new price. Compensated demand is xˢ=10+106/20=15.3.\n\nThus substitution effect=xˢ−x₀=1.3 and income effect=x₁−xˢ=0.7. If Hicks utility compensation is requested instead, solve de/dp=10+e/(10p): e(p,u)=(100/9)p+C(u)p^(1/10). The initial condition gives e(2,u₀)=200/9+(260/3)(2/3)^(1/10)≈105.445, yielding Hicks effects approximately +1.2723 and +0.7277.\n\nBoth decompositions add to +2, but use different compensation conventions."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Total price effect: +2 units. Slutsky decomposition: substitution effect +1.3 units and income effect +0.7 units."
+      }
+    ]
   },
   {
     "id": "2013-PEB-Q10",
@@ -152,11 +314,29 @@
     "sourceFile": "ISI MSQE 2013.pdf",
     "stem": "Consider an otherwise identical Solow growth model in which the entire income is consumed. (a) Analyse wages and the rental rate of capital over time. (b) Can the economy attain a steady-state equilibrium?",
     "answer": "With zero saving and positive capital dilution, capital per worker declines. Under fixed technology, the real wage falls and the rental return rises. There is no positive-capital steady state; the economy approaches the zero-capital boundary.",
-    "solution": "Entire income consumption means saving rate s=0. With fixed technology, capital per worker obeys k̇=−(n+δ)k. If n+δ>0 and initial k>0, k falls exponentially toward zero. For a twice-differentiable strictly concave intensive production function f, gross capital rental is f′(k), which rises as k falls; real wage is f(k)−kf′(k), whose derivative with respect to k is −kf″(k)>0, so wage falls as k falls. No positive k solves k̇=0; k=0 is a boundary steady state when f(0)=0, approached asymptotically from a positive initial stock. If n+δ=0, every initial k is stationary instead. With exogenous labour-augmenting technological progress g, effective-labour capital falls at rate n+δ+g; the wage per effective labour unit falls, but the actual wage also includes the growing productivity factor and need not fall. Directional wage claims therefore require the standard fixed-technology interpretation.",
+    "solution": "Consuming all output means $s=0$. The capital law is then driven entirely by depreciation and dilution from labour growth; use the intensive production function to study factor prices.\n\n$$\\begin{aligned}\n\\dot k&=-(n+\\delta)k,\\\\\nk(t)&=k(0)e^{-(n+\\delta)t},\\\\\n\\rho(k)&=f\\prime(k),\\qquad w(k)=f(k)-kf\\prime(k),\\\\\n\\rho\\prime(k)&=f^{\\prime\\prime}(k)<0,\\qquad\nw\\prime(k)=-kf^{\\prime\\prime}(k)>0.\n\\end{aligned}$$\n\nAs positive capital per worker falls, the gross marginal product of capital rises but the wage falls. No positive steady stock is sustainable when $n+\\delta>0$; the zero-stock boundary is approached instead. State the fixed-technology qualification, because productivity growth can alter the direction of the actual wage.\n\nEntire income consumption means saving rate s=0. With fixed technology, capital per worker obeys k̇=−(n+δ)k. If n+δ>0 and initial k>0, k falls exponentially toward zero.\n\nFor a twice-differentiable strictly concave intensive production function f, gross capital rental is f′(k), which rises as k falls; real wage is f(k)−kf′(k), whose derivative with respect to k is −kf″(k)>0, so wage falls as k falls. No positive k solves k̇=0; k=0 is a boundary steady state when f(0)=0, approached asymptotically from a positive initial stock. If n+δ=0, every initial k is stationary instead.\n\nWith exogenous labour-augmenting technological progress g, effective-labour capital falls at rate n+δ+g; the wage per effective labour unit falls, but the actual wage also includes the growing productivity factor and need not fall. Directional wage claims therefore require the standard fixed-technology interpretation.\n\nWith zero saving and positive capital dilution, capital per worker declines. Under fixed technology, the real wage falls and the rental return rises. There is no positive-capital steady state; the economy approaches the zero-capital boundary.",
     "hint": "Set s=0 in the Solow capital-accumulation equation, then use factor marginal products.",
     "topic": "Macroeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": "The source does not specify population growth, depreciation, or technological progress. The solution states the standard assumptions and the degenerate/technical-progress qualifications explicitly."
+    "notes": "The source does not specify population growth, depreciation, or technological progress. The solution states the standard assumptions and the degenerate/technical-progress qualifications explicitly.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Consuming all output means $s=0$. The capital law is then driven entirely by depreciation and dilution from labour growth; use the intensive production function to study factor prices."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\dot k&=-(n+\\delta)k,\\\\\nk(t)&=k(0)e^{-(n+\\delta)t},\\\\\n\\rho(k)&=f\\prime(k),\\qquad w(k)=f(k)-kf\\prime(k),\\\\\n\\rho\\prime(k)&=f^{\\prime\\prime}(k)<0,\\qquad\nw\\prime(k)=-kf^{\\prime\\prime}(k)>0.\n\\end{aligned}$$\n\nAs positive capital per worker falls, the gross marginal product of capital rises but the wage falls. No positive steady stock is sustainable when $n+\\delta>0$; the zero-stock boundary is approached instead. State the fixed-technology qualification, because productivity growth can alter the direction of the actual wage."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Entire income consumption means saving rate s=0. With fixed technology, capital per worker obeys k̇=−(n+δ)k. If n+δ>0 and initial k>0, k falls exponentially toward zero.\n\nFor a twice-differentiable strictly concave intensive production function f, gross capital rental is f′(k), which rises as k falls; real wage is f(k)−kf′(k), whose derivative with respect to k is −kf″(k)>0, so wage falls as k falls. No positive k solves k̇=0; k=0 is a boundary steady state when f(0)=0, approached asymptotically from a positive initial stock. If n+δ=0, every initial k is stationary instead.\n\nWith exogenous labour-augmenting technological progress g, effective-labour capital falls at rate n+δ+g; the wage per effective labour unit falls, but the actual wage also includes the growing productivity factor and need not fall. Directional wage claims therefore require the standard fixed-technology interpretation."
+      },
+      {
+        "title": "Conclusion",
+        "body": "With zero saving and positive capital dilution, capital per worker declines. Under fixed technology, the real wage falls and the rental return rises. There is no positive-capital steady state; the economy approaches the zero-capital boundary."
+      }
+    ]
   }
 ]

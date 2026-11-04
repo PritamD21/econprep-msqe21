@@ -4,7 +4,7 @@
     "number": "1(a)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. Find the equilibrium bribe per connection and social surplus.",
     "answer": "Bribe $=0.6$ per connection, output $=0.4$, social surplus $=0.12$.",
-    "solution": "With a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6. Social surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$. Bribes and taxes are domestic transfers when all recipients enter social welfare.",
+    "solution": "The government subsidy permits only 0.4 units, so the relevant bribe-revenue choice has a capacity constraint. A per-unit bribe acts as the buyer’s effective price even though the official price is zero. Find where the demand curve clears the capped quantity, then measure social surplus as willingness to pay less real production cost. Tax and bribe payments are transfers within the stated economy when all recipients enter social welfare.\n\nWith a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6.\n\nSocial surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$. Bribes and taxes are domestic transfers when all recipients enter social welfare.",
     "hint": "The supply cap binds before the bribe-revenue maximum.",
     "topic": "Microeconomics",
     "sourcePage": 1,
@@ -14,14 +14,25 @@
     "sourceNumber": "A1(a)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "With a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6. Social surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$. Bribes and taxes are domestic transfers when all recipients enter social welfare.",
+    "solutionSteps": [
+      {
+        "title": "Interpret the constrained public supply",
+        "body": "The government subsidy permits only 0.4 units, so the relevant bribe-revenue choice has a capacity constraint. A per-unit bribe acts as the buyer’s effective price even though the official price is zero. Find where the demand curve clears the capped quantity, then measure social surplus as willingness to pay less real production cost. Tax and bribe payments are transfers within the stated economy when all recipients enter social welfare."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "With a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6.\n\nSocial surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$. Bribes and taxes are domestic transfers when all recipients enter social welfare."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q1b",
     "number": "1(b)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. The agency is privatized and deregulated but remains a monopoly because entry costs are large relative to demand. Find new price, bribe and surplus, and compare with the public regime.",
     "answer": "Price $=0.75$, output $=0.25$, bribe $=0$, social surplus $=3/32=0.09375$.",
-    "solution": "The private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears. Total surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$. The official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero. Existing/sunk entry costs are excluded since their magnitude is not supplied.",
+    "solution": "Privatization removes the public quantity cap and subsidy but leaves monopoly power. The private firm now equates marginal revenue with its own marginal cost. A new official price can be compared with the old zero posted price, while the economic payment must instead be compared with the old bribe. Social surplus depends on the induced output and resource cost, so a decline in bribery alone does not establish a welfare improvement.\n\nThe private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears.\n\nTotal surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$. The official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero.\n\nExisting/sunk entry costs are excluded since their magnitude is not supplied.",
     "hint": "Compare monopoly output with the previous rationed output.",
     "topic": "Microeconomics",
     "sourcePage": 1,
@@ -31,14 +42,25 @@
     "sourceNumber": "A1(b)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "The private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears. Total surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$. The official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero. Existing/sunk entry costs are excluded since their magnitude is not supplied.",
+    "solutionSteps": [
+      {
+        "title": "Compare output before comparing prices",
+        "body": "Privatization removes the public quantity cap and subsidy but leaves monopoly power. The private firm now equates marginal revenue with its own marginal cost. A new official price can be compared with the old zero posted price, while the economic payment must instead be compared with the old bribe. Social surplus depends on the induced output and resource cost, so a decline in bribery alone does not establish a welfare improvement."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears.\n\nTotal surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$. The official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero.\n\nExisting/sunk entry costs are excluded since their magnitude is not supplied."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q1c",
     "number": "1(c)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. After privatization, innovation lowers marginal cost to $c$, $0<c<1/2$. For which c does privatization increase consumer surplus?",
     "answer": "Conventional demand-area consumer surplus rises iff $0<c<1/5$. Including the avoided public tax burden, consumers gain for every $0<c<1/2$.",
-    "solution": "Private monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$. Comparing these gives $(1-c)^2>0.64$, hence $c<0.2$. However, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$. If those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit.",
+    "solution": "The private monopoly’s new cost changes its chosen price and output, so first solve those choices as functions of c. Then compare the area under demand above the effective price. The public regime also explicitly taxes consumers to finance its subsidy. Whether that separately paid tax is included in the consumer-welfare comparison changes the benchmark, so present both conventions rather than silently treating a tax-financed service as costless to consumers.\n\nPrivate monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$.\n\nComparing these gives $(1-c)^2>0.64$, hence $c<0.2$. However, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$.\n\nIf those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit.\n\nTax-inclusive welfare and conventional price-demand consumer-surplus accounting give different ranges; source convention unspecified.",
     "hint": "Specify whether consumer surplus deducts the separately imposed subsidy-financing tax.",
     "topic": "Microeconomics",
     "sourcePage": 1,
@@ -48,14 +70,29 @@
     "sourceNumber": "A1(c)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Private monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$. Comparing these gives $(1-c)^2>0.64$, hence $c<0.2$. However, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$. If those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit.",
+    "solutionSteps": [
+      {
+        "title": "Specify the consumer-surplus accounting convention",
+        "body": "The private monopoly’s new cost changes its chosen price and output, so first solve those choices as functions of c. Then compare the area under demand above the effective price. The public regime also explicitly taxes consumers to finance its subsidy. Whether that separately paid tax is included in the consumer-welfare comparison changes the benchmark, so present both conventions rather than silently treating a tax-financed service as costless to consumers."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Private monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$.\n\nComparing these gives $(1-c)^2>0.64$, hence $c<0.2$. However, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$.\n\nIf those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Tax-inclusive welfare and conventional price-demand consumer-surplus accounting give different ranges; source convention unspecified."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q2a",
     "number": "2(a)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Find and justify the set of Pareto-optimal allocations.",
     "answer": "$(X_2,Y_2)=(t,t)$ and $(X_1,Y_1)=(10-t,12-t)$, $0\\leq t\\leq10$.",
-    "solution": "If consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$. At such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum. Every feasible diagonal allocation is therefore efficient.",
+    "solution": "Consumer 2 values only the minimum of the two goods. Any holding of one good above the other can be transferred away without reducing that consumer’s utility, while improving the additive-utility consumer. Efficiency therefore requires a balanced bundle for consumer 2. Once this restriction is imposed, show that improving either consumer would require taking valued resources from the other; this establishes sufficiency as well as necessity.\n\nIf consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$.\n\nAt such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum. Every feasible diagonal allocation is therefore efficient.",
     "hint": "Remove useless excess inputs from the complementary consumer.",
     "topic": "Microeconomics",
     "sourcePage": 1,
@@ -65,14 +102,25 @@
     "sourceNumber": "A2(a)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "If consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$. At such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum. Every feasible diagonal allocation is therefore efficient.",
+    "solutionSteps": [
+      {
+        "title": "Remove quantities that do not increase utility",
+        "body": "Consumer 2 values only the minimum of the two goods. Any holding of one good above the other can be transferred away without reducing that consumer’s utility, while improving the additive-utility consumer. Efficiency therefore requires a balanced bundle for consumer 2. Once this restriction is imposed, show that improving either consumer would require taking valued resources from the other; this establishes sufficiency as well as necessity."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "If consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$.\n\nAt such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum. Every feasible diagonal allocation is therefore efficient."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q2b",
     "number": "2(b)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Find and justify the competitive equilibrium.",
     "answer": "$p_X=p_Y>0$; allocation $(X_1,Y_1)=(5,7)$, $(X_2,Y_2)=(5,5)$.",
-    "solution": "At equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$. Both markets clear. If $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply. If $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1.",
+    "solution": "At unequal prices the additive-utility consumer buys only the cheaper good. The complementary consumer still wants a balanced bundle, which makes it impossible to clear both markets at those relative prices given the endowments. Equal prices make the first consumer indifferent across expenditure-equivalent mixes and permit the residual allocation that clears markets. Nominal price scaling does not change the equilibrium, so specify the relative price rather than a unique currency normalization.\n\nAt equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$.\n\nBoth markets clear. If $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply.\n\nIf $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1.",
     "hint": "Market clearing with a linear consumer pins down the relative price.",
     "topic": "Microeconomics",
     "sourcePage": 1,
@@ -82,14 +130,25 @@
     "sourceNumber": "A2(b)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "At equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$. Both markets clear. If $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply. If $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1.",
+    "solutionSteps": [
+      {
+        "title": "Use market clearing to identify the relative price",
+        "body": "At unequal prices the additive-utility consumer buys only the cheaper good. The complementary consumer still wants a balanced bundle, which makes it impossible to clear both markets at those relative prices given the endowments. Equal prices make the first consumer indifferent across expenditure-equivalent mixes and permit the residual allocation that clears markets. Nominal price scaling does not change the equilibrium, so specify the relative price rather than a unique currency normalization."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$.\n\nBoth markets clear. If $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply.\n\nIf $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q2c",
     "number": "2(c)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Are the competitive equilibria Pareto optimal?",
     "answer": "Yes.",
-    "solution": "The equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation.",
+    "solution": "A competitive allocation must first be derived from budgets and market clearing. Once available, test whether it belongs to the efficient set established earlier. Alternatively the first welfare theorem applies because preferences are locally nonsatiated and the competitive allocation is feasible. This conclusion is about absence of Pareto improvements; it does not claim the equilibrium gives an equal or otherwise socially preferred distribution of utility.\n\nThe equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation.",
     "hint": "Check the equilibrium against the efficient set.",
     "topic": "Microeconomics",
     "sourcePage": 2,
@@ -99,14 +158,25 @@
     "sourceNumber": "A2(c)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "The equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation.",
+    "solutionSteps": [
+      {
+        "title": "Check efficiency separately from individual affordability",
+        "body": "A competitive allocation must first be derived from budgets and market clearing. Once available, test whether it belongs to the efficient set established earlier. Alternatively the first welfare theorem applies because preferences are locally nonsatiated and the competitive allocation is feasible. This conclusion is about absence of Pareto improvements; it does not claim the equilibrium gives an equal or otherwise socially preferred distribution of utility."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q2d",
     "number": "2(d)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Now replace consumer 2’s preferences by lexicographic preferences: more X is always preferred regardless of Y, and at equal X more Y is preferred. Find all Pareto-optimal allocations.",
     "answer": "In consumer 2 coordinates: $Y_2=0$, $0\\leq X_2\\leq10$, or $X_2=10$, $0\\leq Y_2\\leq12$.",
-    "solution": "If $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient. On $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return. On $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too. Thus exactly the two stated edges are efficient.",
+    "solution": "Lexicographic preferences put any positive gain in X ahead of every possible change in Y. They do not have an ordinary differentiable utility representation, so an MRS-equality calculation is inappropriate. Construct a small exchange of X toward consumer 2 and Y toward consumer 1 when both relevant stocks are available. At a boundary that blocks this trade, check directly whether either consumer can improve without hurting the other.\n\nIf $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient.\n\nOn $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return. On $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too.\n\nThus exactly the two stated edges are efficient.",
     "hint": "Lexicographic preferences make an arbitrarily small gain in X outweigh any loss of Y.",
     "topic": "Microeconomics",
     "sourcePage": 2,
@@ -116,14 +186,25 @@
     "sourceNumber": "A2(d)",
     "group": "A",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "If $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient. On $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return. On $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too. Thus exactly the two stated edges are efficient.",
+    "solutionSteps": [
+      {
+        "title": "Use the lexicographic ranking before applying smooth methods",
+        "body": "Lexicographic preferences put any positive gain in X ahead of every possible change in Y. They do not have an ordinary differentiable utility representation, so an MRS-equality calculation is inappropriate. Construct a small exchange of X toward consumer 2 and Y toward consumer 1 when both relevant stocks are available. At a boundary that blocks this trade, check directly whether either consumer can improve without hurting the other."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "If $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient.\n\nOn $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return. On $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too.\n\nThus exactly the two stated edges are efficient."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q3a",
     "number": "3(a)",
     "stem": "A household supplies labour L to a competitive firm $Y=F(L)$ with $F\\prime>0,F\\prime\\prime<0$, receiving wages and all firm profits. Utility is $\\frac12\\ln C+\\frac12\\ln(M/P)-d(L)$, $d\\prime,d\\prime\\prime>0$. Budget: $PC+M=WL+\\Pi+\\bar M-PT$. Government budget: $M-\\bar M=P(G-T)$; goods clear at $Y=C+G$. Prove $0<dY/dG<1$ and $dC/dG<0$.",
     "answer": "$dY/dG=2F\\prime d\\prime/[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]\\in(0,1)$; $dC/dG=dY/dG-1<0$.",
-    "solution": "Household FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$. Differentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$. The bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$. Multiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls.",
+    "solution": "Household consumption and money first-order conditions imply equal spending on the two logarithmic utility arguments. The labour condition then relates labour disutility to the real wage and consumption. Combine this with the firm’s marginal-product wage and goods clearing to obtain an equation only in labour and G. Implicitly differentiating that real equation reveals why government purchases raise output by less than one for one and crowd out private consumption.\n\nHousehold FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$.\n\nDifferentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$. The bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$.\n\nMultiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls.",
     "hint": "Use real labour-market equilibrium to eliminate nominal quantities.",
     "topic": "Macroeconomics",
     "sourcePage": 2,
@@ -133,14 +214,25 @@
     "sourceNumber": "B1(a)",
     "group": "B",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Household FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$. Differentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$. The bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$. Multiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls.",
+    "solutionSteps": [
+      {
+        "title": "Separate real equilibrium from nominal money holdings",
+        "body": "Household consumption and money first-order conditions imply equal spending on the two logarithmic utility arguments. The labour condition then relates labour disutility to the real wage and consumption. Combine this with the firm’s marginal-product wage and goods clearing to obtain an equation only in labour and G. Implicitly differentiating that real equation reveals why government purchases raise output by less than one for one and crowd out private consumption."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Household FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$.\n\nDifferentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$. The bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$.\n\nMultiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q3b",
     "number": "3(b)",
     "stem": "A household supplies labour L to a competitive firm $Y=F(L)$ with $F\\prime>0,F\\prime\\prime<0$, receiving wages and all firm profits. Utility is $\\frac12\\ln C+\\frac12\\ln(M/P)-d(L)$, $d\\prime,d\\prime\\prime>0$. Budget: $PC+M=WL+\\Pi+\\bar M-PT$. Government budget: $M-\\bar M=P(G-T)$; goods clear at $Y=C+G$. Everything else fixed, show increasing initial nominal money $\\bar M$ raises P proportionately.",
     "answer": "$P=\\bar M/[Y-2G+T]$, so the price elasticity with respect to initial money is 1.",
-    "solution": "The real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$. Holding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances). A positive-price equilibrium requires the denominator positive.",
+    "solution": "The real labour-equilibrium equation contains no initial nominal money balance, so changing that balance does not alter its solution under the stated model. Money demand and the government budget then determine the price level required to support the same real choices. Keeping the tax and spending terms in their correct real units makes the resulting price expression proportional to initial money; a rise in nominal money is not an extra real resource here.\n\nThe real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$.\n\nHolding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances). A positive-price equilibrium requires the denominator positive.",
     "hint": "Combine money demand with the government budget after fixing the real allocation.",
     "topic": "Macroeconomics",
     "sourcePage": 2,
@@ -150,14 +242,25 @@
     "sourceNumber": "B1(b)",
     "group": "B",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "The real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$. Holding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances). A positive-price equilibrium requires the denominator positive.",
+    "solutionSteps": [
+      {
+        "title": "Hold the real allocation fixed when scaling nominal balances",
+        "body": "The real labour-equilibrium equation contains no initial nominal money balance, so changing that balance does not alter its solution under the stated model. Money demand and the government budget then determine the price level required to support the same real choices. Keeping the tax and spending terms in their correct real units makes the resulting price expression proportional to initial money; a rise in nominal money is not an extra real resource here."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$.\n\nHolding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances). A positive-price equilibrium requires the denominator positive."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q4a",
     "number": "4(a)",
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Initially $Y=2500,r=1/5$. What change in investment occurs before any output change?",
     "answer": "$r$ jumps to 2; investment falls from 290 to 200, a decline of 90.",
-    "solution": "Hold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes.",
+    "solution": "The question imposes different adjustment speeds. During the first movement output is still 2500, so only the interest rate may change to clear the money market. Solve that one equation at the fixed output, then feed the new rate into investment demand. Jumping immediately to the joint IS–LM intersection would describe the eventual equilibrium and miss the requested initial investment decline.\n\nHold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes.",
     "hint": "First clear only the fast-adjusting money market.",
     "topic": "Macroeconomics",
     "sourcePage": 3,
@@ -167,14 +270,25 @@
     "sourceNumber": "B2(a)",
     "group": "B",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Hold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes.",
+    "solutionSteps": [
+      {
+        "title": "Clear the fast market first",
+        "body": "The question imposes different adjustment speeds. During the first movement output is still 2500, so only the interest rate may change to clear the money market. Solve that one equation at the fixed output, then feed the new rate into investment demand. Jumping immediately to the joint IS–LM intersection would describe the eventual equilibrium and miss the requested initial investment decline."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Hold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes."
+      }
+    ]
   },
   {
     "id": "2018-PEB-OFFICIAL-Q4b",
     "number": "4(b)",
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Use a graph to explain the immediate adjustment from $Y=2500,r=0.2$.",
     "answer": "Move vertically upward at fixed $Y=2500$ to the LM point $r=2$.",
-    "solution": "With Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply. Draw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed. Thereafter the economy moves toward the intersection with IS, $Y=1680-200r$. Investment falls during the immediate jump.",
+    "solution": "Use output horizontally and interest vertically. An immediate interest adjustment at a fixed output is a vertical movement to LM, not a movement along IS. Only after the money market has cleared can slow goods-market adjustment move output toward the joint intersection. Label the original point, its fixed-output LM point, and the final intersection separately so the two stages cannot be confused.\n\nWith Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply.\n\nDraw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed. Thereafter the economy moves toward the intersection with IS, $Y=1680-200r$.\n\nInvestment falls during the immediate jump.",
     "hint": "Use a vertical movement for an interest-only short-run adjustment.",
     "topic": "Macroeconomics",
     "sourcePage": 3,
@@ -184,12 +298,23 @@
     "sourceNumber": "B2(b)",
     "group": "B",
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "With Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply. Draw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed. Thereafter the economy moves toward the intersection with IS, $Y=1680-200r$. Investment falls during the immediate jump.",
+    "solutionSteps": [
+      {
+        "title": "Represent the timing in the direction of the graph arrow",
+        "body": "Use output horizontally and interest vertically. An immediate interest adjustment at a fixed output is a vertical movement to LM, not a movement along IS. Only after the money market has cleared can slow goods-market adjustment move output toward the joint intersection. Label the original point, its fixed-output LM point, and the final intersection separately so the two stages cannot be confused."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "With Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply.\n\nDraw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed. Thereafter the economy moves toward the intersection with IS, $Y=1680-200r$.\n\nInvestment falls during the immediate jump."
+      }
+    ]
   },
   {
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Find simultaneous money/goods equilibrium $(r,Y)$ and compare investment with the initial point $r=0.2,Y=2500$.",
     "answer": "$Y=16400/9$, $r=-32/45$, $I=3020/9$; investment increases by $410/9$ relative to initial I=290.",
-    "solution": "Goods equilibrium gives $Y=1680-200r$ and money equilibrium $r=0.004Y-8$. Substitution yields $Y=16400/9$ and $r=-32/45$. Thus $I=300-50r=3020/9\\approx335.56$. Initial investment at $r=0.2$ is 290, giving an increase $3020/9-290=410/9\\approx45.56$. The immediate rate jump first lowers investment to 200 before the later output adjustment reverses it. The unrestricted linear model permits the negative equilibrium interest rate; no zero lower bound was imposed.",
+    "solution": "The interest rate first rises to clear money at the original output, but output subsequently falls and the interest rate declines along the LM relation. Solve the two equilibrium equations simultaneously for this final point. The source then asks for comparison with the original r=0.2, not the intermediate r=2. State both levels if useful, but compute the requested difference using the explicitly named original benchmark.\n\nGoods equilibrium gives $Y=1680-200r$ and money equilibrium $r=0.004Y-8$. Substitution yields $Y=16400/9$ and $r=-32/45$.\n\nThus $I=300-50r=3020/9\\approx335.56$. Initial investment at $r=0.2$ is 290, giving an increase $3020/9-290=410/9\\approx45.56$.\n\nThe immediate rate jump first lowers investment to 200 before the later output adjustment reverses it. The unrestricted linear model permits the negative equilibrium interest rate; no zero lower bound was imposed.",
     "hint": "Solve both market equations, then use the specified initial interest rate for comparison.",
     "topic": "Macroeconomics",
     "status": "verified",
@@ -201,12 +326,23 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 3,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Goods equilibrium gives $Y=1680-200r$ and money equilibrium $r=0.004Y-8$. Substitution yields $Y=16400/9$ and $r=-32/45$. Thus $I=300-50r=3020/9\\approx335.56$. Initial investment at $r=0.2$ is 290, giving an increase $3020/9-290=410/9\\approx45.56$. The immediate rate jump first lowers investment to 200 before the later output adjustment reverses it. The unrestricted linear model permits the negative equilibrium interest rate; no zero lower bound was imposed.",
+    "solutionSteps": [
+      {
+        "title": "Distinguish the final and intermediate investment comparisons",
+        "body": "The interest rate first rises to clear money at the original output, but output subsequently falls and the interest rate declines along the LM relation. Solve the two equilibrium equations simultaneously for this final point. The source then asks for comparison with the original r=0.2, not the intermediate r=2. State both levels if useful, but compute the requested difference using the explicitly named original benchmark."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Goods equilibrium gives $Y=1680-200r$ and money equilibrium $r=0.004Y-8$. Substitution yields $Y=16400/9$ and $r=-32/45$.\n\nThus $I=300-50r=3020/9\\approx335.56$. Initial investment at $r=0.2$ is 290, giving an increase $3020/9-290=410/9\\approx45.56$.\n\nThe immediate rate jump first lowers investment to 200 before the later output adjustment reverses it. The unrestricted linear model permits the negative equilibrium interest rate; no zero lower bound was imposed."
+      }
+    ]
   },
   {
     "stem": "For $x\\ne0$, define $f(x)=|x|/(2x)$. Can f(0) be defined so that $f:\\mathbb R\\to\\mathbb R$ is continuous at zero? Justify.",
     "answer": "No.",
-    "solution": "For positive x the function is 1/2; for negative x it is -1/2. Its right-hand limit at zero is therefore 1/2 and its left-hand limit -1/2. Because these differ, no two-sided limit exists and no assignment of f(0) can make it continuous.",
+    "solution": "The absolute value changes form at zero. For a positive argument it equals x, and for a negative argument it equals -x. This makes the expression constant on each side but with different constants. A choice of f(0) can repair a missing value only when the surrounding two-sided limit already exists; it cannot make two unequal one-sided limits agree.\n\nFor positive x the function is 1/2; for negative x it is -1/2. Its right-hand limit at zero is therefore 1/2 and its left-hand limit -1/2. Because these differ, no two-sided limit exists and no assignment of f(0) can make it continuous.",
     "hint": "Compare the two one-sided limits.",
     "topic": "Calculus",
     "status": "verified",
@@ -218,12 +354,23 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 3,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "For positive x the function is 1/2; for negative x it is -1/2. Its right-hand limit at zero is therefore 1/2 and its left-hand limit -1/2. Because these differ, no two-sided limit exists and no assignment of f(0) can make it continuous.",
+    "solutionSteps": [
+      {
+        "title": "Test both one-sided limits",
+        "body": "The absolute value changes form at zero. For a positive argument it equals x, and for a negative argument it equals -x. This makes the expression constant on each side but with different constants. A choice of f(0) can repair a missing value only when the surrounding two-sided limit already exists; it cannot make two unequal one-sided limits agree."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For positive x the function is 1/2; for negative x it is -1/2. Its right-hand limit at zero is therefore 1/2 and its left-hand limit -1/2. Because these differ, no two-sided limit exists and no assignment of f(0) can make it continuous."
+      }
+    ]
   },
   {
     "stem": "For $\\beta\\in[0,1]$, maximize $x(1-x)$ over $x\\in[0,\\beta]$. For which beta is the optimal solution $x^*=\\beta$?",
     "answer": "$0\\leq\\beta\\leq1/2$.",
-    "solution": "The derivative $1-2x$ is positive below 1/2 and negative above it. Thus $x^*=\\min\\{\\beta,1/2\\}$, including the singleton feasible set at beta=0. It equals the upper bound exactly for beta at most 1/2.",
+    "solution": "The concave quadratic x(1-x) rises up to x=1/2 and falls afterwards. If the allowed interval stops before the turning point, the best feasible choice is its right endpoint. If the interval extends beyond the turning point, the optimum stays at 1/2 instead of following the endpoint. Include beta=0 and beta=1/2 when translating this into an exact parameter range.\n\nThe derivative $1-2x$ is positive below 1/2 and negative above it. Thus $x^*=\\min\\{\\beta,1/2\\}$, including the singleton feasible set at beta=0. It equals the upper bound exactly for beta at most 1/2.",
     "hint": "Check whether the unconstrained maximizer lies inside the interval.",
     "topic": "Calculus",
     "status": "verified",
@@ -235,12 +382,23 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 3,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "The derivative $1-2x$ is positive below 1/2 and negative above it. Thus $x^*=\\min\\{\\beta,1/2\\}$, including the singleton feasible set at beta=0. It equals the upper bound exactly for beta at most 1/2.",
+    "solutionSteps": [
+      {
+        "title": "Check whether the unconstrained optimum is feasible",
+        "body": "The concave quadratic x(1-x) rises up to x=1/2 and falls afterwards. If the allowed interval stops before the turning point, the best feasible choice is its right endpoint. If the interval extends beyond the turning point, the optimum stays at 1/2 instead of following the endpoint. Include beta=0 and beta=1/2 when translating this into an exact parameter range."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The derivative $1-2x$ is positive below 1/2 and negative above it. Thus $x^*=\\min\\{\\beta,1/2\\}$, including the singleton feasible set at beta=0. It equals the upper bound exactly for beta at most 1/2."
+      }
+    ]
   },
   {
     "stem": "A firm produces products a,b at prices 3 and 2. Resources allow at most 10 total units, and a cannot exceed twice b. Find the revenue-maximizing production plan.",
     "answer": "$a=20/3$, $b=10/3$; revenue $=80/3$.",
-    "solution": "Maximize $3a+2b$ subject to $a+b\\leq10$, $a\\leq2b$, $a,b\\geq0$. Positive prices make the capacity constraint bind, so $b=10-a$ and revenue is $20+a$. Feasibility gives $a\\leq2(10-a)$, hence $a\\leq20/3$. Set a at this upper bound to maximize revenue, obtaining the stated quantities.",
+    "solution": "Positive output prices mean there is no reason to leave usable total capacity idle. On the full-capacity line, producing more of the higher-price product increases revenue, so push its quantity up until the production-ratio restriction binds. This converts a two-variable linear programme into a one-variable bound and shows why both constraints bind at the optimum rather than just supplying a candidate intersection.\n\nMaximize $3a+2b$ subject to $a+b\\leq10$, $a\\leq2b$, $a,b\\geq0$. Positive prices make the capacity constraint bind, so $b=10-a$ and revenue is $20+a$.\n\nFeasibility gives $a\\leq2(10-a)$, hence $a\\leq20/3$. Set a at this upper bound to maximize revenue, obtaining the stated quantities.",
     "hint": "Use all capacity and then favour the higher-price product as much as the ratio allows.",
     "topic": "Algebra",
     "status": "verified",
@@ -252,12 +410,23 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 3,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Maximize $3a+2b$ subject to $a+b\\leq10$, $a\\leq2b$, $a,b\\geq0$. Positive prices make the capacity constraint bind, so $b=10-a$ and revenue is $20+a$. Feasibility gives $a\\leq2(10-a)$, hence $a\\leq20/3$. Set a at this upper bound to maximize revenue, obtaining the stated quantities.",
+    "solutionSteps": [
+      {
+        "title": "Use the resource constraint to simplify revenue",
+        "body": "Positive output prices mean there is no reason to leave usable total capacity idle. On the full-capacity line, producing more of the higher-price product increases revenue, so push its quantity up until the production-ratio restriction binds. This converts a two-variable linear programme into a one-variable bound and shows why both constraints bind at the optimum rather than just supplying a candidate intersection."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Maximize $3a+2b$ subject to $a+b\\leq10$, $a\\leq2b$, $a,b\\geq0$. Positive prices make the capacity constraint bind, so $b=10-a$ and revenue is $20+a$.\n\nFeasibility gives $a\\leq2(10-a)$, hence $a\\leq20/3$. Set a at this upper bound to maximize revenue, obtaining the stated quantities."
+      }
+    ]
   },
   {
     "stem": "A marks a slip + with probability 1/3 and − otherwise. It passes successively to B,C,D, each independently flipping the current sign with probability 2/3 and keeping it with probability 1/3. Find (i) P(final + | initial +), (ii) P(final + | initial −), and (iii) P(initial + | final +).",
     "answer": "(i) $13/27$; (ii) $14/27$; (iii) $13/41$.",
-    "solution": "Starting at +, final + requires an even number of the three flips: zero flips has probability $(1/3)^3=1/27$, and two flips have probability $\\binom32(2/3)^2(1/3)=12/27$. Thus (i) is 13/27. Starting at −, final + requires odd parity, whose probability is $1-13/27=14/27$. Bayes gives (iii) $[(1/3)(13/27)]/[(1/3)(13/27)+(2/3)(14/27)]=13/41$.",
+    "solution": "After three independent sign-flip opportunities, the final sign agrees with the initial one exactly when the number of flips is even. Sum the zero-flip and two-flip probabilities for that event; its complement is the odd-flip probability. For the final question, weight these conditional probabilities by the unequal prior chances of A’s two initial signs. Treating those priors as one half would give the wrong posterior.\n\nStarting at +, final + requires an even number of the three flips: zero flips has probability $(1/3)^3=1/27$, and two flips have probability $\\binom32(2/3)^2(1/3)=12/27$. Thus (i) is 13/27.\n\nStarting at −, final + requires odd parity, whose probability is $1-13/27=14/27$. Bayes gives (iii) $[(1/3)(13/27)]/[(1/3)(13/27)+(2/3)(14/27)]=13/41$.",
     "hint": "Count flip parity, then apply Bayes’ rule.",
     "topic": "Probability",
     "status": "verified",
@@ -269,12 +438,23 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 4,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "Starting at +, final + requires an even number of the three flips: zero flips has probability $(1/3)^3=1/27$, and two flips have probability $\\binom32(2/3)^2(1/3)=12/27$. Thus (i) is 13/27. Starting at −, final + requires odd parity, whose probability is $1-13/27=14/27$. Bayes gives (iii) $[(1/3)(13/27)]/[(1/3)(13/27)+(2/3)(14/27)]=13/41$.",
+    "solutionSteps": [
+      {
+        "title": "Track flip parity, then reverse conditioning with Bayes",
+        "body": "After three independent sign-flip opportunities, the final sign agrees with the initial one exactly when the number of flips is even. Sum the zero-flip and two-flip probabilities for that event; its complement is the odd-flip probability. For the final question, weight these conditional probabilities by the unequal prior chances of A’s two initial signs. Treating those priors as one half would give the wrong posterior."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Starting at +, final + requires an even number of the three flips: zero flips has probability $(1/3)^3=1/27$, and two flips have probability $\\binom32(2/3)^2(1/3)=12/27$. Thus (i) is 13/27.\n\nStarting at −, final + requires odd parity, whose probability is $1-13/27=14/27$. Bayes gives (iii) $[(1/3)(13/27)]/[(1/3)(13/27)+(2/3)(14/27)]=13/41$."
+      }
+    ]
   },
   {
     "stem": "There are n distinct numbered houses, each painted blue or red. (i) Count all colourings. (ii) For $n\\geq4$ on a circle, exactly two houses must be blue and nonadjacent: count colourings. (iii) How does the count change if houses lie on a line?",
     "answer": "(i) $2^n$; (ii) $n(n-3)/2$; (iii) $(n-1)(n-2)/2$.",
-    "solution": "(i) Each of n labelled houses has two independent colour choices, yielding $2^n$. (ii) Choose the two blue houses in $\\binom n2$ ways and exclude the n adjacent pairs around the circle, giving $\\binom n2-n=n(n-3)/2$. (iii) A line has only n-1 adjacent pairs, so the answer is $\\binom n2-(n-1)=(n-1)(n-2)/2$. Houses are numbered, so rotations are distinct, not factored out.",
+    "solution": "Each numbered house is distinct, so rotations of a circular pattern are different colourings. With exactly two blue houses, choosing their locations uniquely determines the whole colouring. Start with all unordered blue pairs and subtract adjacent pairs. A circle has one additional adjacent pair joining its two displayed endpoints, whereas a line does not; that one counting difference explains the difference between the two formulas.\n\n(i) Each of n labelled houses has two independent colour choices, yielding $2^n$. (ii) Choose the two blue houses in $\\binom n2$ ways and exclude the n adjacent pairs around the circle, giving $\\binom n2-n=n(n-3)/2$.\n\n(iii) A line has only n-1 adjacent pairs, so the answer is $\\binom n2-(n-1)=(n-1)(n-2)/2$. Houses are numbered, so rotations are distinct, not factored out.",
     "hint": "Subtract forbidden adjacent pairs from all possible blue pairs.",
     "topic": "Algebra",
     "status": "verified",
@@ -286,6 +466,17 @@
     "sourceFile": "official/2018-PEB.pdf",
     "sourcePage": 4,
     "sourceUrl": "https://admission.isical.ac.in/PreviousQuestion/MSQE-PEB-2018.pdf",
-    "mainQuestionMarks": 25
+    "mainQuestionMarks": 25,
+    "solutionOriginal": "(i) Each of n labelled houses has two independent colour choices, yielding $2^n$. (ii) Choose the two blue houses in $\\binom n2$ ways and exclude the n adjacent pairs around the circle, giving $\\binom n2-n=n(n-3)/2$. (iii) A line has only n-1 adjacent pairs, so the answer is $\\binom n2-(n-1)=(n-1)(n-2)/2$. Houses are numbered, so rotations are distinct, not factored out.",
+    "solutionSteps": [
+      {
+        "title": "Use labelled-house counting rather than rotational equivalence",
+        "body": "Each numbered house is distinct, so rotations of a circular pattern are different colourings. With exactly two blue houses, choosing their locations uniquely determines the whole colouring. Start with all unordered blue pairs and subtract adjacent pairs. A circle has one additional adjacent pair joining its two displayed endpoints, whereas a line does not; that one counting difference explains the difference between the two formulas."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(i) Each of n labelled houses has two independent colour choices, yielding $2^n$. (ii) Choose the two blue houses in $\\binom n2$ ways and exclude the n adjacent pairs around the circle, giving $\\binom n2-n=n(n-3)/2$.\n\n(iii) A line has only n-1 adjacent pairs, so the answer is $\\binom n2-(n-1)=(n-1)(n-2)/2$. Houses are numbered, so rotations are distinct, not factored out."
+      }
+    ]
   }
 ]

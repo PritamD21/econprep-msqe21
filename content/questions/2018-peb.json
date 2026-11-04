@@ -17,7 +17,14 @@
     "sourcePage": 10,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "On the income-exhausting budget $y=5-x$, $0\\leq x\\leq5$, utility is $(x-10)(5-x)\\leq0$, with equality only when $x=5,y=0$. Thus option B is the unique optimum among income-exhausting bundles. Without the expenditure requirement, every feasible bundle with $y=0$ gives the same maximum zero.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "On the income-exhausting budget $y=5-x$, $0\\leq x\\leq5$, utility is $(x-10)(5-x)\\leq0$, with equality only when $x=5,y=0$. Thus option B is the unique optimum among income-exhausting bundles. Without the expenditure requirement, every feasible bundle with $y=0$ gives the same maximum zero."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q2",
@@ -37,7 +44,14 @@
     "sourcePage": 10,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Substitute $y=100-x$: $U_X=25+3x/4$ rises with $x$, while $U_Y=100-x/2$ falls. Their minimum is maximized at their intersection, $25+3x/4=100-x/2$, giving $x=60,y=40$ and welfare 70.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Substitute $y=100-x$: $U_X=25+3x/4$ rises with $x$, while $U_Y=100-x/2$ falls. Their minimum is maximized at their intersection, $25+3x/4=100-x/2$, giving $x=60,y=40$ and welfare 70."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q3",
@@ -51,13 +65,20 @@
     ],
     "correctIndex": 0,
     "answer": "A. $(15,0)$",
-    "solution": "The budget is $x+3y=15$. For $x\\geq y$ (equivalently $y\\leq15/4$), utility is $x+2y=15-y$, maximized at $y=0,x=15$. For $y\\geq15/4$, utility is $2x+y=30-5y$, whose maximum on that segment is $45/4<15$. Thus $(15,0)$ is optimal.",
+    "solution": "The budget is $x+3y=15$. For $x\\geq y$ (equivalently $y\\leq15/4$), utility is $x+2y=15-y$, maximized at $y=0,x=15$.\n\nFor $y\\geq15/4$, utility is $2x+y=30-5y$, whose maximum on that segment is $45/4<15$. Thus $(15,0)$ is optimal.",
     "hint": "Check both linear branches of the minimum on the budget.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The budget is $x+3y=15$. For $x\\geq y$ (equivalently $y\\leq15/4$), utility is $x+2y=15-y$, maximized at $y=0,x=15$. For $y\\geq15/4$, utility is $2x+y=30-5y$, whose maximum on that segment is $45/4<15$. Thus $(15,0)$ is optimal.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The budget is $x+3y=15$. For $x\\geq y$ (equivalently $y\\leq15/4$), utility is $x+2y=15-y$, maximized at $y=0,x=15$.\n\nFor $y\\geq15/4$, utility is $2x+y=30-5y$, whose maximum on that segment is $45/4<15$. Thus $(15,0)$ is optimal."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q4",
@@ -77,7 +98,14 @@
     "sourcePage": 11,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "The scan writes a lower-case g in utility; interpreted as the total public good described in the stem."
+    "notes": "The scan writes a lower-case g in utility; interpreted as the total public good described in the stem.",
+    "solutionOriginal": "With a monetary contribution $g_i$, $x_i=(M-g_i)/p$. Maximizing $(M-g_i)(g_i+g_j)/p$ yields best response $g_i=\\max\\{(M-g_j)/2,0\\}$. In symmetric equilibrium $2g_i+g_j=M$, so each contributes $M/3$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With a monetary contribution $g_i$, $x_i=(M-g_i)/p$. Maximizing $(M-g_i)(g_i+g_j)/p$ yields best response $g_i=\\max\\{(M-g_j)/2,0\\}$. In symmetric equilibrium $2g_i+g_j=M$, so each contributes $M/3$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q5",
@@ -97,7 +125,14 @@
     "sourcePage": 11,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Options C,D continue on page 12. Source calls the goods infinitely durable; the intended resource-stock interpretation is that storage does not depreciate but consumption uses the stock."
+    "notes": "Options C,D continue on page 12. Source calls the goods infinitely durable; the intended resource-stock interpretation is that storage does not depreciate but consumption uses the stock.",
+    "solutionOriginal": "The resource constraint is $\\sum_{t=0}^{\\infty}c_t\\leq X$. First-order conditions give $\\delta^t/c_t=\\lambda$, hence $c_t=\\delta^t/\\lambda$. Summing the geometric series and exhausting the stock yields $1/\\lambda=(1-\\delta)X$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The resource constraint is $\\sum_{t=0}^{\\infty}c_t\\leq X$. First-order conditions give $\\delta^t/c_t=\\lambda$, hence $c_t=\\delta^t/\\lambda$. Summing the geometric series and exhausting the stock yields $1/\\lambda=(1-\\delta)X$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q6",
@@ -117,7 +152,14 @@
     "sourcePage": 12,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "To produce $Q$, both $aK\\geq Q$ and $bL\\geq Q$ are required. With positive input prices, cost minimization uses $K=Q/a,L=Q/b$, giving $C(Q)=rQ/a+wQ/b$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "To produce $Q$, both $aK\\geq Q$ and $bL\\geq Q$ are required. With positive input prices, cost minimization uses $K=Q/a,L=Q/b$, giving $C(Q)=rQ/a+wQ/b$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q7",
@@ -131,13 +173,24 @@
     ],
     "correctIndex": 2,
     "answer": "C. Remain unchanged",
-    "solution": "Let labour price be $w$, material price $m$, inverse-demand intercept $a=A/b$ and slope $B=1/b$. Costs are $c_1=w+m,c_2=2w+m$. When both firms produce, $q_1=(a-2c_1+c_2)/(3B)=(a-m)/(3B)$, independent of $w$, and $\\pi_1=Bq_1^2$ is unchanged. This is the intended interior answer C. If a large wage rise makes firm 2 exit, firm 1 becomes a monopolist with $q_1=(a-w-m)/(2B)$ and its profit decreases as wage rises. Thus the stated answer needs the unstated interior/small-change condition.",
+    "solution": "Let labour price be $w$, material price $m$, inverse-demand intercept $a=A/b$ and slope $B=1/b$. Costs are $c_1=w+m,c_2=2w+m$.\n\nWhen both firms produce, $q_1=(a-2c_1+c_2)/(3B)=(a-m)/(3B)$, independent of $w$, and $\\pi_1=Bq_1^2$ is unchanged. This is the intended interior answer C.\n\nIf a large wage rise makes firm 2 exit, firm 1 becomes a monopolist with $q_1=(a-w-m)/(2B)$ and its profit decreases as wage rises. Thus the stated answer needs the unstated interior/small-change condition.\n\nC is valid while both firms remain active. No listed option exactly covers the unrestricted weak decrease (unchanged then falling); corner caveat retained.",
     "hint": "In the interior Cournot formula, the two cost effects exactly cancel for firm 1.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "needs_review",
-    "notes": "C is valid while both firms remain active. No listed option exactly covers the unrestricted weak decrease (unchanged then falling); corner caveat retained."
+    "notes": "C is valid while both firms remain active. No listed option exactly covers the unrestricted weak decrease (unchanged then falling); corner caveat retained.",
+    "solutionOriginal": "Let labour price be $w$, material price $m$, inverse-demand intercept $a=A/b$ and slope $B=1/b$. Costs are $c_1=w+m,c_2=2w+m$. When both firms produce, $q_1=(a-2c_1+c_2)/(3B)=(a-m)/(3B)$, independent of $w$, and $\\pi_1=Bq_1^2$ is unchanged. This is the intended interior answer C. If a large wage rise makes firm 2 exit, firm 1 becomes a monopolist with $q_1=(a-w-m)/(2B)$ and its profit decreases as wage rises. Thus the stated answer needs the unstated interior/small-change condition.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Let labour price be $w$, material price $m$, inverse-demand intercept $a=A/b$ and slope $B=1/b$. Costs are $c_1=w+m,c_2=2w+m$.\n\nWhen both firms produce, $q_1=(a-2c_1+c_2)/(3B)=(a-m)/(3B)$, independent of $w$, and $\\pi_1=Bq_1^2$ is unchanged. This is the intended interior answer C.\n\nIf a large wage rise makes firm 2 exit, firm 1 becomes a monopolist with $q_1=(a-w-m)/(2B)$ and its profit decreases as wage rises. Thus the stated answer needs the unstated interior/small-change condition."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "C is valid while both firms remain active. No listed option exactly covers the unrestricted weak decrease (unchanged then falling); corner caveat retained."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q8",
@@ -157,7 +210,14 @@
     "sourcePage": 12,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Strict decrease presumes firm 2 is active; zero-profit inactivity is a boundary case."
+    "notes": "Strict decrease presumes firm 2 is active; zero-profit inactivity is a boundary case.",
+    "solutionOriginal": "For both firms active, $q_2=(a-2c_2+c_1)/(3B)=(a-3w-m)/(3B)$, so $dq_2/dw=-1/B<0$. Since $\\pi_2=Bq_2^2$, profit strictly decreases until firm 2 exits, after which it is zero. Thus B is the intended active-firm answer; it is only weakly decreasing if exit or initial inactivity is admitted.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For both firms active, $q_2=(a-2c_2+c_1)/(3B)=(a-3w-m)/(3B)$, so $dq_2/dw=-1/B<0$. Since $\\pi_2=Bq_2^2$, profit strictly decreases until firm 2 exits, after which it is zero. Thus B is the intended active-firm answer; it is only weakly decreasing if exit or initial inactivity is admitted."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q9",
@@ -171,13 +231,20 @@
     ],
     "correctIndex": 0,
     "answer": "A. $P_m^*>P_m$",
-    "solution": "Initially $MR=20-2Q=MC=Q/2$, so $Q=8$ and $P_m=12$. With access to B, positive B sales imply marginal cost 6, hence total output 12. In A, set $MR_A=20-2Q_A=6$, yielding $Q_A=7$, $P_m^*=13$; sell the remaining 5 in B. Thus the monopoly price in A rises.",
+    "solution": "Initially $MR=20-2Q=MC=Q/2$, so $Q=8$ and $P_m=12$. With access to B, positive B sales imply marginal cost 6, hence total output 12.\n\nIn A, set $MR_A=20-2Q_A=6$, yielding $Q_A=7$, $P_m^*=13$; sell the remaining 5 in B. Thus the monopoly price in A rises.",
     "hint": "The competitive outlet sets the opportunity cost of selling another unit in A.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Initially $MR=20-2Q=MC=Q/2$, so $Q=8$ and $P_m=12$. With access to B, positive B sales imply marginal cost 6, hence total output 12. In A, set $MR_A=20-2Q_A=6$, yielding $Q_A=7$, $P_m^*=13$; sell the remaining 5 in B. Thus the monopoly price in A rises.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Initially $MR=20-2Q=MC=Q/2$, so $Q=8$ and $P_m=12$. With access to B, positive B sales imply marginal cost 6, hence total output 12.\n\nIn A, set $MR_A=20-2Q_A=6$, yielding $Q_A=7$, $P_m^*=13$; sell the remaining 5 in B. Thus the monopoly price in A rises."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q10",
@@ -197,7 +264,14 @@
     "sourcePage": 13,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For $p\\leq10$, revenue is $p^2$, increasing to 100. For $10<p<20$, revenue is $p(20-p)$, decreasing from its peak at 10. Thus the largest revenue is 100 at $p=10$, giving profit 50, above the no-production payoff zero.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For $p\\leq10$, revenue is $p^2$, increasing to 100. For $10<p<20$, revenue is $p(20-p)$, decreasing from its peak at 10. Thus the largest revenue is 100 at $p=10$, giving profit 50, above the no-production payoff zero."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q11",
@@ -217,7 +291,14 @@
     "sourcePage": 13,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For $Q=Q_1+Q_2$, $e=-p(Q_1\\prime+Q_2\\prime)/Q=(Q_1/Q)e_1+(Q_2/Q)e_2=ae_1+(1-a)e_2=a(e_1-e_2)+e_2$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For $Q=Q_1+Q_2$, $e=-p(Q_1\\prime+Q_2\\prime)/Q=(Q_1/Q)e_1+(Q_2/Q)e_2=ae_1+(1-a)e_2=a(e_1-e_2)+e_2$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q12",
@@ -231,13 +312,20 @@
     ],
     "correctIndex": 1,
     "answer": "B. $ (1/5,2/5)$ is one of many possible equilibrium price vectors",
-    "solution": "At any positive prices $p_x\\leq p_y$, A’s wealth is $100(p_x+p_y)$, so her optimal balanced bundle is $(100,100)$. B spends wealth $50p_x$ on the cheaper good X, buying $(50,0)$; at equal prices this is one of his optimal choices. These demands exhaust supplies $(150,100)$. In particular $(1/5,2/5)$ is an equilibrium, and many other ratios as well as nominal scalings work.",
+    "solution": "At any positive prices $p_x\\leq p_y$, A’s wealth is $100(p_x+p_y)$, so her optimal balanced bundle is $(100,100)$. B spends wealth $50p_x$ on the cheaper good X, buying $(50,0)$; at equal prices this is one of his optimal choices.\n\nThese demands exhaust supplies $(150,100)$. In particular $(1/5,2/5)$ is an equilibrium, and many other ratios as well as nominal scalings work.",
     "hint": "A’s balanced endowment already gives her optimal complementary bundle.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Options on user PDF page 14."
+    "notes": "Options on user PDF page 14.",
+    "solutionOriginal": "At any positive prices $p_x\\leq p_y$, A’s wealth is $100(p_x+p_y)$, so her optimal balanced bundle is $(100,100)$. B spends wealth $50p_x$ on the cheaper good X, buying $(50,0)$; at equal prices this is one of his optimal choices. These demands exhaust supplies $(150,100)$. In particular $(1/5,2/5)$ is an equilibrium, and many other ratios as well as nominal scalings work.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "At any positive prices $p_x\\leq p_y$, A’s wealth is $100(p_x+p_y)$, so her optimal balanced bundle is $(100,100)$. B spends wealth $50p_x$ on the cheaper good X, buying $(50,0)$; at equal prices this is one of his optimal choices.\n\nThese demands exhaust supplies $(150,100)$. In particular $(1/5,2/5)$ is an equilibrium, and many other ratios as well as nominal scalings work."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q13",
@@ -251,13 +339,20 @@
     ],
     "correctIndex": 0,
     "answer": "A. $240-30Q$ for $0\\leq Q\\leq4$, and $200-20Q$ for $4<Q\\leq10$",
-    "solution": "Public-good marginal benefits add vertically. Up to $Q=4$, the sum is $10(20-2Q)+10(4-Q)=240-30Q$. Above 4, B values are zero and the sum is $10(20-2Q)=200-20Q$. Both expressions agree at $Q=4$.",
+    "solution": "Public-good marginal benefits add vertically. Up to $Q=4$, the sum is $10(20-2Q)+10(4-Q)=240-30Q$.\n\nAbove 4, B values are zero and the sum is $10(20-2Q)=200-20Q$. Both expressions agree at $Q=4$.",
     "hint": "Sum willingness to pay at the same public-good quantity.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Public-good marginal benefits add vertically. Up to $Q=4$, the sum is $10(20-2Q)+10(4-Q)=240-30Q$. Above 4, B values are zero and the sum is $10(20-2Q)=200-20Q$. Both expressions agree at $Q=4$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Public-good marginal benefits add vertically. Up to $Q=4$, the sum is $10(20-2Q)+10(4-Q)=240-30Q$.\n\nAbove 4, B values are zero and the sum is $10(20-2Q)=200-20Q$. Both expressions agree at $Q=4$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q14",
@@ -277,7 +372,14 @@
     "sourcePage": 14,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "On the first branch, equating marginal benefit to 100 gives $Q=14/3>4$, outside that branch. On the second, $200-20Q=100$ gives $Q=5$, which is valid. Marginal benefit is above cost below 5 and below cost above it, so this is efficient.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "On the first branch, equating marginal benefit to 100 gives $Q=14/3>4$, outside that branch. On the second, $200-20Q=100$ gives $Q=5$, which is valid. Marginal benefit is above cost below 5 and below cost above it, so this is efficient."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q15",
@@ -291,13 +393,20 @@
     ],
     "correctIndex": 3,
     "answer": "D. $k>1$",
-    "solution": "Male inverse supply is $W_M=L_M^{1/k}$, with marginal wage expenditure $(1+1/k)W_M$. For females it is $2W_F$. Equalizing each to output value $p$ gives $W_M=pk/(k+1)$ and $W_F=p/2$. The inequality $W_M>W_F$ is equivalent to $k>1$.",
+    "solution": "Male inverse supply is $W_M=L_M^{1/k}$, with marginal wage expenditure $(1+1/k)W_M$. For females it is $2W_F$.\n\nEqualizing each to output value $p$ gives $W_M=pk/(k+1)$ and $W_F=p/2$. The inequality $W_M>W_F$ is equivalent to $k>1$.",
     "hint": "Equate marginal expenditure, rather than wage, to marginal revenue product.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Question and options continue onto page 15."
+    "notes": "Question and options continue onto page 15.",
+    "solutionOriginal": "Male inverse supply is $W_M=L_M^{1/k}$, with marginal wage expenditure $(1+1/k)W_M$. For females it is $2W_F$. Equalizing each to output value $p$ gives $W_M=pk/(k+1)$ and $W_F=p/2$. The inequality $W_M>W_F$ is equivalent to $k>1$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Male inverse supply is $W_M=L_M^{1/k}$, with marginal wage expenditure $(1+1/k)W_M$. For females it is $2W_F$.\n\nEqualizing each to output value $p$ gives $W_M=pk/(k+1)$ and $W_F=p/2$. The inequality $W_M>W_F$ is equivalent to $k>1$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q16",
@@ -317,7 +426,14 @@
     "sourcePage": 15,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The wage ranking gives $k>1$. Also $W_M=pk/(k+1)>p/2=W_F>1$. Therefore $L_M=W_M^k>W_M>W_F=L_F$, so more men are hired.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The wage ranking gives $k>1$. Also $W_M=pk/(k+1)>p/2=W_F>1$. Therefore $L_M=W_M^k>W_M>W_F=L_F$, so more men are hired."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q17",
@@ -337,7 +453,14 @@
     "sourcePage": 15,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The ratio equals $(p/2)/(pk/(k+1))=(k+1)/(2k)=1/2+1/(2k)$. Its derivative is $-1/(2k^2)<0$, so it falls independently of $p$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The ratio equals $(p/2)/(pk/(k+1))=(k+1)/(2k)=1/2+1/(2k)$. Its derivative is $-1/(2k^2)<0$, so it falls independently of $p$."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q18",
@@ -357,7 +480,14 @@
     "sourcePage": 15,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "$W_M=pk/(k+1)$ has derivative $p/(k+1)^2>0$, so it rises.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "$W_M=pk/(k+1)$ has derivative $p/(k+1)^2>0$, so it rises."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q19",
@@ -371,13 +501,24 @@
     ],
     "correctIndex": 1,
     "answer": "B. Every good has income elasticity exactly one",
-    "solution": "Under the intended increasing-transform interpretation, maximize $\\sum_i a_i\\ln x_i$ subject to $\\sum_i p_ix_i=M$. The FOCs imply $x_i=(a_i/\\sum_j a_j)M/p_i$, so each demand is proportional to income and its income elasticity is 1. The exponent does not change preferences on a domain where the transformation is real and increasing.",
+    "solution": "Under the intended increasing-transform interpretation, maximize $\\sum_i a_i\\ln x_i$ subject to $\\sum_i p_ix_i=M$. The FOCs imply $x_i=(a_i/\\sum_j a_j)M/p_i$, so each demand is proportional to income and its income elasticity is 1. The exponent does not change preferences on a domain where the transformation is real and increasing.\n\nOptions on page 16. For arbitrary positive quantities the log sum can be negative; a general noninteger power is then not real-valued. Answer assumes the intended increasing-transform domain.",
     "hint": "Recognize the log form of Cobb–Douglas preferences.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "needs_review",
-    "notes": "Options on page 16. For arbitrary positive quantities the log sum can be negative; a general noninteger power is then not real-valued. Answer assumes the intended increasing-transform domain."
+    "notes": "Options on page 16. For arbitrary positive quantities the log sum can be negative; a general noninteger power is then not real-valued. Answer assumes the intended increasing-transform domain.",
+    "solutionOriginal": "Under the intended increasing-transform interpretation, maximize $\\sum_i a_i\\ln x_i$ subject to $\\sum_i p_ix_i=M$. The FOCs imply $x_i=(a_i/\\sum_j a_j)M/p_i$, so each demand is proportional to income and its income elasticity is 1. The exponent does not change preferences on a domain where the transformation is real and increasing.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Under the intended increasing-transform interpretation, maximize $\\sum_i a_i\\ln x_i$ subject to $\\sum_i p_ix_i=M$. The FOCs imply $x_i=(a_i/\\sum_j a_j)M/p_i$, so each demand is proportional to income and its income elasticity is 1. The exponent does not change preferences on a domain where the transformation is real and increasing."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Options on page 16. For arbitrary positive quantities the log sum can be negative; a general noninteger power is then not real-valued. Answer assumes the intended increasing-transform domain."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q20",
@@ -397,7 +538,14 @@
     "sourcePage": 16,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Comparative advantage and relative wages determine which goods are produced in each country; there is no rule splitting an even number of goods equally. With positive employment, a country produces at least one good. It may produce as many as all $N$, for example when comparative-cost ratios tie or some goods are produced in both countries.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Comparative advantage and relative wages determine which goods are produced in each country; there is no rule splitting an even number of goods equally. With positive employment, a country produces at least one good. It may produce as many as all $N$, for example when comparative-cost ratios tie or some goods are produced in both countries."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q21",
@@ -411,13 +559,20 @@
     ],
     "correctIndex": 0,
     "answer": "A. Increase the real return to capital in both countries",
-    "solution": "In the standard large two-country model, the Rybczynski effect expands relative world supply of the labour-intensive good, lowering its relative price. Stolper–Samuelson then lowers the real wage and raises the real return to capital. Incomplete specialization and common technologies imply factor-price equalization, so the capital-return rise occurs in both countries. This uses the usual common homothetic-demand and continuing-diversification assumptions; if world prices were instead exogenously fixed for a small economy, factor returns would remain unchanged.",
+    "solution": "In the standard large two-country model, the Rybczynski effect expands relative world supply of the labour-intensive good, lowering its relative price. Stolper–Samuelson then lowers the real wage and raises the real return to capital.\n\nIncomplete specialization and common technologies imply factor-price equalization, so the capital-return rise occurs in both countries. This uses the usual common homothetic-demand and continuing-diversification assumptions; if world prices were instead exogenously fixed for a small economy, factor returns would remain unchanged.",
     "hint": "Combine Rybczynski, the change in relative goods prices, and Stolper–Samuelson.",
     "topic": "Microeconomics",
     "sourcePage": 16,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "A is the standard endogenous-world-price HO interpretation; the small-open-economy fixed-price experiment would differ."
+    "notes": "A is the standard endogenous-world-price HO interpretation; the small-open-economy fixed-price experiment would differ.",
+    "solutionOriginal": "In the standard large two-country model, the Rybczynski effect expands relative world supply of the labour-intensive good, lowering its relative price. Stolper–Samuelson then lowers the real wage and raises the real return to capital. Incomplete specialization and common technologies imply factor-price equalization, so the capital-return rise occurs in both countries. This uses the usual common homothetic-demand and continuing-diversification assumptions; if world prices were instead exogenously fixed for a small economy, factor returns would remain unchanged.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "In the standard large two-country model, the Rybczynski effect expands relative world supply of the labour-intensive good, lowering its relative price. Stolper–Samuelson then lowers the real wage and raises the real return to capital.\n\nIncomplete specialization and common technologies imply factor-price equalization, so the capital-return rise occurs in both countries. This uses the usual common homothetic-demand and continuing-diversification assumptions; if world prices were instead exogenously fixed for a small economy, factor returns would remain unchanged."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q22",
@@ -437,7 +592,14 @@
     "sourcePage": 16,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With the interest rate pegged, goods-market equilibrium $Y=C(Y)+I(\\bar r)+G$ fixes output demand independently of the price level. The central bank accommodates money demand at any price. Thus in the usual price–output graph, aggregate demand is vertical at the IS-determined output.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With the interest rate pegged, goods-market equilibrium $Y=C(Y)+I(\\bar r)+G$ fixes output demand independently of the price level. The central bank accommodates money demand at any price. Thus in the usual price–output graph, aggregate demand is vertical at the IS-determined output."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q23",
@@ -457,7 +619,14 @@
     "sourcePage": 17,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Interpretation is the traditional sticky-nominal-wage Keynesian model, not every modern Keynesian specification."
+    "notes": "Interpretation is the traditional sticky-nominal-wage Keynesian model, not every modern Keynesian specification.",
+    "solutionOriginal": "In the traditional Keynesian model with preset nominal wages and diminishing marginal product of labour, a demand-led fall in employment and output raises marginal product and the real wage $W/P=F\\prime(L)$. Equivalently the price decline against a sticky nominal wage raises $W/P$. Thus real wages are countercyclical in this particular model.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "In the traditional Keynesian model with preset nominal wages and diminishing marginal product of labour, a demand-led fall in employment and output raises marginal product and the real wage $W/P=F\\prime(L)$. Equivalently the price decline against a sticky nominal wage raises $W/P$. Thus real wages are countercyclical in this particular model."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q24",
@@ -471,13 +640,24 @@
     ],
     "correctIndex": 3,
     "answer": "D. Does not exist",
-    "solution": "An accounting identity between realized saving and investment holds for all realized outcomes and by itself supplies no goods-market equilibrium locus relating interest and income. An IS curve requires equality of planned saving and planned investment, with specified interest dependence. Thus as literally stated, the identity does not define an IS curve (D). If the author intended planned equilibrium equality with interest-sensitive investment, additional assumptions would instead yield the usual downward slope.",
+    "solution": "An accounting identity between realized saving and investment holds for all realized outcomes and by itself supplies no goods-market equilibrium locus relating interest and income. An IS curve requires equality of planned saving and planned investment, with specified interest dependence.\n\nThus as literally stated, the identity does not define an IS curve (D). If the author intended planned equilibrium equality with interest-sensitive investment, additional assumptions would instead yield the usual downward slope.\n\nThe word identically is essential; a planned-saving interpretation would change the question.",
     "hint": "Distinguish an ex post identity from a planned equilibrium condition.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "needs_review",
-    "notes": "The word identically is essential; a planned-saving interpretation would change the question."
+    "notes": "The word identically is essential; a planned-saving interpretation would change the question.",
+    "solutionOriginal": "An accounting identity between realized saving and investment holds for all realized outcomes and by itself supplies no goods-market equilibrium locus relating interest and income. An IS curve requires equality of planned saving and planned investment, with specified interest dependence. Thus as literally stated, the identity does not define an IS curve (D). If the author intended planned equilibrium equality with interest-sensitive investment, additional assumptions would instead yield the usual downward slope.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "An accounting identity between realized saving and investment holds for all realized outcomes and by itself supplies no goods-market equilibrium locus relating interest and income. An IS curve requires equality of planned saving and planned investment, with specified interest dependence.\n\nThus as literally stated, the identity does not define an IS curve (D). If the author intended planned equilibrium equality with interest-sensitive investment, additional assumptions would instead yield the usual downward slope."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "The word identically is essential; a planned-saving interpretation would change the question."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q25",
@@ -497,7 +677,14 @@
     "sourcePage": 17,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "At a steady state without technical progress, capital and output per worker are constant. Aggregate output grows at the same rate as labour, 2%. Per-worker consumption and the real wage remain constant.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "At a steady state without technical progress, capital and output per worker are constant. Aggregate output grows at the same rate as labour, 2%. Per-worker consumption and the real wage remain constant."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q26",
@@ -511,13 +698,20 @@
     ],
     "correctIndex": 1,
     "answer": "B. Declines",
-    "solution": "At a given income the transfer raises desired saving by $(s_2-s_1)\\Delta T>0$, reducing consumption demand. Under the usual stable Keynesian-cross condition $S_Y>I_Y>0$, equilibrium income falls: $\\Delta Y=-(s_2-s_1)\\Delta T/(S_Y-I_Y)<0$. Investment consequently falls, and aggregate equilibrium saving, equal to investment plus unchanged government balance, falls as well. This is the paradox-of-thrift mechanism with induced investment.",
+    "solution": "At a given income the transfer raises desired saving by $(s_2-s_1)\\Delta T>0$, reducing consumption demand. Under the usual stable Keynesian-cross condition $S_Y>I_Y>0$, equilibrium income falls: $\\Delta Y=-(s_2-s_1)\\Delta T/(S_Y-I_Y)<0$.\n\nInvestment consequently falls, and aggregate equilibrium saving, equal to investment plus unchanged government balance, falls as well. This is the paradox-of-thrift mechanism with induced investment.",
     "hint": "Follow the income adjustment, not just the immediate saving shift.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "B presumes the standard stability condition S_Y>I_Y. Without it the sign is not guaranteed by the literal sparse assumptions."
+    "notes": "B presumes the standard stability condition S_Y>I_Y. Without it the sign is not guaranteed by the literal sparse assumptions.",
+    "solutionOriginal": "At a given income the transfer raises desired saving by $(s_2-s_1)\\Delta T>0$, reducing consumption demand. Under the usual stable Keynesian-cross condition $S_Y>I_Y>0$, equilibrium income falls: $\\Delta Y=-(s_2-s_1)\\Delta T/(S_Y-I_Y)<0$. Investment consequently falls, and aggregate equilibrium saving, equal to investment plus unchanged government balance, falls as well. This is the paradox-of-thrift mechanism with induced investment.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "At a given income the transfer raises desired saving by $(s_2-s_1)\\Delta T>0$, reducing consumption demand. Under the usual stable Keynesian-cross condition $S_Y>I_Y>0$, equilibrium income falls: $\\Delta Y=-(s_2-s_1)\\Delta T/(S_Y-I_Y)<0$.\n\nInvestment consequently falls, and aggregate equilibrium saving, equal to investment plus unchanged government balance, falls as well. This is the paradox-of-thrift mechanism with induced investment."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q27",
@@ -537,7 +731,14 @@
     "sourcePage": 18,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Goods-market equilibrium gives $Y=\\bar C+I(r)$ (plus any fixed government demand). Since $I\\prime(r)<0$, $dY/dr<0$, so the locus is downward sloping in the usual interest–output diagram.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Goods-market equilibrium gives $Y=\\bar C+I(r)$ (plus any fixed government demand). Since $I\\prime(r)<0$, $dY/dr<0$, so the locus is downward sloping in the usual interest–output diagram."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q28",
@@ -557,7 +758,14 @@
     "sourcePage": 18,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Market clearing gives $100-5w=5w$, so $w=10$ and employment is 50. All 50 units voluntarily supplied are employed; the remaining 30 units of endowment are not offered at that wage and are voluntary nonemployment. Thus involuntary unemployment is zero.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Market clearing gives $100-5w=5w$, so $w=10$ and employment is 50. All 50 units voluntarily supplied are employed; the remaining 30 units of endowment are not offered at that wage and are voluntary nonemployment. Thus involuntary unemployment is zero."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q29",
@@ -571,13 +779,20 @@
     ],
     "correctIndex": 0,
     "answer": "A. 35",
-    "solution": "The binding wage floor gives labour demand 45 and supply 55. Employment is the short side, 45. Total unemployment relative to endowment is $80-45=35$: 10 units are involuntarily unemployed and 25 not supplied voluntarily. The question asks total, not just involuntary, unemployment.",
+    "solution": "The binding wage floor gives labour demand 45 and supply 55. Employment is the short side, 45.\n\nTotal unemployment relative to endowment is $80-45=35$: 10 units are involuntarily unemployed and 25 not supplied voluntarily. The question asks total, not just involuntary, unemployment.",
     "hint": "Use the endowment for total nonemployment and supply for involuntary unemployment.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The binding wage floor gives labour demand 45 and supply 55. Employment is the short side, 45. Total unemployment relative to endowment is $80-45=35$: 10 units are involuntarily unemployed and 25 not supplied voluntarily. The question asks total, not just involuntary, unemployment.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The binding wage floor gives labour demand 45 and supply 55. Employment is the short side, 45.\n\nTotal unemployment relative to endowment is $80-45=35$: 10 units are involuntarily unemployed and 25 not supplied voluntarily. The question asks total, not just involuntary, unemployment."
+      }
+    ]
   },
   {
     "id": "2018-PEB-Q30",
@@ -591,12 +806,19 @@
     ],
     "correctIndex": 2,
     "answer": "C. Increase $P$ more than proportionately",
-    "solution": "The real saving–investment equation fixes $r$ independently of $M$, and output is fixed. Thus $P=[M-L(\\bar r)]/(k\\bar y)$, so $dP/dM=1/(k\\bar y)$. With positive speculative demand, the elasticity is $(dP/dM)(M/P)=M/[M-L(\\bar r)]>1$. Hence prices rise more than proportionately. This conclusion uses positive $L(\\bar r)$ and $P$; if speculative demand were zero at equilibrium, the increase would be proportional.",
+    "solution": "The real saving–investment equation fixes $r$ independently of $M$, and output is fixed. Thus $P=[M-L(\\bar r)]/(k\\bar y)$, so $dP/dM=1/(k\\bar y)$.\n\nWith positive speculative demand, the elasticity is $(dP/dM)(M/P)=M/[M-L(\\bar r)]>1$. Hence prices rise more than proportionately.\n\nThis conclusion uses positive $L(\\bar r)$ and $P$; if speculative demand were zero at equilibrium, the increase would be proportional.",
     "hint": "Keep the fixed speculative demand term when computing percentage changes.",
     "topic": "Macroeconomics",
     "sourcePage": 18,
     "sourceFile": "ISI-2018-1.pdf",
     "status": "verified",
-    "notes": "Options on page 19; scan’s derivative condition for I is typographically malformed but the intended negative investment response is retained. More-than-proportional claim presumes positive speculative money demand."
+    "notes": "Options on page 19; scan’s derivative condition for I is typographically malformed but the intended negative investment response is retained. More-than-proportional claim presumes positive speculative money demand.",
+    "solutionOriginal": "The real saving–investment equation fixes $r$ independently of $M$, and output is fixed. Thus $P=[M-L(\\bar r)]/(k\\bar y)$, so $dP/dM=1/(k\\bar y)$. With positive speculative demand, the elasticity is $(dP/dM)(M/P)=M/[M-L(\\bar r)]>1$. Hence prices rise more than proportionately. This conclusion uses positive $L(\\bar r)$ and $P$; if speculative demand were zero at equilibrium, the increase would be proportional.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The real saving–investment equation fixes $r$ independently of $M$, and output is fixed. Thus $P=[M-L(\\bar r)]/(k\\bar y)$, so $dP/dM=1/(k\\bar y)$.\n\nWith positive speculative demand, the elasticity is $(dP/dM)(M/P)=M/[M-L(\\bar r)]>1$. Hence prices rise more than proportionately.\n\nThis conclusion uses positive $L(\\bar r)$ and $P$; if speculative demand were zero at equilibrium, the increase would be proportional."
+      }
+    ]
   }
 ]

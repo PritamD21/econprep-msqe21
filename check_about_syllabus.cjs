@@ -1,0 +1,13 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),crypto=require('crypto');
+const app=fs.readFileSync('dist/app.js','utf8'),index=fs.readFileSync('dist/index.html','utf8');
+const context={heading:(a,b)=>`<h1>${a}</h1><p>${b}</p>`};vm.createContext(context);
+const start=app.indexOf('function syllabus()'),end=app.indexOf('\nfunction toast',start);
+assert(start>=0&&end>start);
+vm.runInContext("const syllabusSource='https://admission.isical.ac.in/Syllabus/MSQE-Syllabus-2026.pdf';"+app.slice(start,end),context);
+const syllabus=vm.runInContext('syllabus()',context),about=vm.runInContext('about()',context);
+assert(syllabus.includes('syllabus/official-msqe-2026.png'));assert(syllabus.includes('syllabus/official-msqe-2026.pdf'));assert(!syllabus.includes('Summarized')&&!syllabus.includes('Topic overview'));assert(!syllabus.includes('<iframe'));
+const source=JSON.parse(fs.readFileSync('dist/syllabus/source.json','utf8'));
+assert(crypto.createHash('sha256').update(fs.readFileSync('dist/syllabus/official-msqe-2026.pdf')).digest('hex')===source.sha256);
+assert(about.includes('Economic Research Unit')&&about.includes('images/isi-kolkata.jpg')&&about.includes('Ravi Dwivedi')&&about.includes('CC BY-SA 4.0'));
+assert(fs.statSync('dist/images/isi-kolkata.jpg').size>10000);assert(index.includes('data-page="about"'));
+console.log('About page, licensed campus image, unchanged original syllabus bytes and full-page display passed.');

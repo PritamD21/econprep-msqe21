@@ -10,10 +10,28 @@
     "topic": "Microeconomics",
     "stem": "A firm is a monopolist at home with inverse demand $p=10-q$, can export at price5, and has total capacity100. Find its optimal production and sales plan when constant marginal cost is (a)4 and (b)6.",
     "answer": "At MC4: domestic sales2.5, exports97.5, domestic price7.5. At MC6: domestic sales2, exports0, domestic price8.",
-    "solution": "(a) Exporting earns a positive margin1, so all capacity is used. Assign a unit to the domestic market only while domestic marginal revenue exceeds the export price: $10-2q_d=5$ gives $q_d=2.5$. Export the remaining97.5. Profit is $7.5(2.5)+5(97.5)-4(100)=106.25$. (b) Exports lose1 per unit and are zero. Set domestic MR=MC:10−2q_d=6, giving q_d=2,p_d=8 and profit4. The capacity is slack.",
+    "solution": "Choose domestic and foreign sales separately, subject to total capacity. Exporting at a positive margin makes unused capacity costly; when exports lose money, the domestic marginal cost becomes the production cost instead.\n\n$$\\begin{aligned}\nMC=4:&\\quad q_d+q_f=100,\\quad MR_d=10-2q_d=5,\\\\\n&q_d=2.5,\\quad q_f=97.5,\\quad p_d=7.5,\\\\\nMC=6:&\\quad q_f=0,\\quad10-2q_d=6,\\\\\n&q_d=2,\\quad p_d=8.\n\\end{aligned}$$\n\nThe export price is the domestic opportunity cost only when an extra unit could profitably be exported. It should not replace marginal production cost in the second case, where export sales would generate a loss. This distinction explains why the same demand produces different domestic marginal conditions.\n\n(a) Exporting earns a positive margin1, so all capacity is used. Assign a unit to the domestic market only while domestic marginal revenue exceeds the export price: $10-2q_d=5$ gives $q_d=2.5$. Export the remaining97.5.\n\nProfit is $7.5(2.5)+5(97.5)-4(100)=106.25$. (b) Exports lose1 per unit and are zero. Set domestic MR=MC:10−2q_d=6, giving q_d=2,p_d=8 and profit4.\n\nThe capacity is slack.\n\nAt MC4: domestic sales2.5, exports97.5, domestic price7.5. At MC6: domestic sales2, exports0, domestic price8.",
     "hint": "When exports have a positive margin, the domestic opportunity cost is the export price.",
     "notes": "",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Choose domestic and foreign sales separately, subject to total capacity. Exporting at a positive margin makes unused capacity costly; when exports lose money, the domestic marginal cost becomes the production cost instead."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nMC=4:&\\quad q_d+q_f=100,\\quad MR_d=10-2q_d=5,\\\\\n&q_d=2.5,\\quad q_f=97.5,\\quad p_d=7.5,\\\\\nMC=6:&\\quad q_f=0,\\quad10-2q_d=6,\\\\\n&q_d=2,\\quad p_d=8.\n\\end{aligned}$$\n\nThe export price is the domestic opportunity cost only when an extra unit could profitably be exported. It should not replace marginal production cost in the second case, where export sales would generate a loss. This distinction explains why the same demand produces different domestic marginal conditions."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Exporting earns a positive margin1, so all capacity is used. Assign a unit to the domestic market only while domestic marginal revenue exceeds the export price: $10-2q_d=5$ gives $q_d=2.5$. Export the remaining97.5.\n\nProfit is $7.5(2.5)+5(97.5)-4(100)=106.25$. (b) Exports lose1 per unit and are zero. Set domestic MR=MC:10−2q_d=6, giving q_d=2,p_d=8 and profit4.\n\nThe capacity is slack."
+      },
+      {
+        "title": "Conclusion",
+        "body": "At MC4: domestic sales2.5, exports97.5, domestic price7.5. At MC6: domestic sales2, exports0, domestic price8."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q2",
@@ -26,10 +44,28 @@
     "topic": "Microeconomics",
     "stem": "(a) A consumer has utility $-[(10-a)^2+(10-b)^2]$, nonnegative quantities, and both prices1. Find optimal quantities for income40, then10. (b) A monopolist faces $q=60-p$ (q in thousands) and total cost $C=q^2/2$. Find the deadweight loss and the price ceiling that minimizes it.",
     "answer": "(a) (10,10), then(5,5). (b) Monopoly q20,p40; efficient q30,p30; DWL100 in the corresponding thousand-rupee units. Optimal ceiling30.",
-    "solution": "(a) The unconstrained bliss point(10,10) costs20 and is feasible with income40; the consumer need not spend the rest. With income10 the closest feasible point to(10,10) is(5,5), by symmetry or projection onto a+b=10. (b) Profit is $(60-q)q-q^2/2$, so MR=60−2q equals MC=q at q20. The efficient demand–MC intersection is60−q=q, hence q30,p30. The welfare loss is $\\int_{20}^{30}(60-2q)\\,dq=100$. A ceiling30 makes the profit-maximizing supply meet demand at q30 and eliminates the loss.",
+    "solution": "The consumer has a bliss point rather than globally nonsatiated preferences, so first check whether the ideal bundle is affordable. In the monopoly problem, compare the private first-order condition with the social demand–marginal-cost intersection.\n\n$$\\begin{aligned}\n\\text{consumer: }(a,b)^*&=(10,10)\\quad(M=40),\\\\\n(a,b)^*&=(5,5)\\quad(M=10),\\\\\nMR=60-2q&=MC=q\\Longrightarrow q_m=20,\\\\\n60-q&=q\\Longrightarrow q_e=30,\\quad p_e=30,\\\\\nDWL&=\\int_{20}^{30}(60-2q)\\,dq=100.\n\\end{aligned}$$\n\nThe low-income consumer minimizes squared distance from the bliss point on the budget boundary, while the high-income consumer leaves money unspent. A monopoly price ceiling at the efficient price makes demand and optimal supply meet at the efficient output, eliminating the lost-surplus triangle.\n\n(a) The unconstrained bliss point(10,10) costs20 and is feasible with income40; the consumer need not spend the rest. With income10 the closest feasible point to(10,10) is(5,5), by symmetry or projection onto a+b=10. (b) Profit is $(60-q)q-q^2/2$, so MR=60−2q equals MC=q at q20.\n\nThe efficient demand–MC intersection is60−q=q, hence q30,p30. The welfare loss is $\\int_{20}^{30}(60-2q)\\,dq=100$. A ceiling30 makes the profit-maximizing supply meet demand at q30 and eliminates the loss.\n\n(a) (10,10), then(5,5). (b) Monopoly q20,p40; efficient q30,p30; DWL100 in the corresponding thousand-rupee units. Optimal ceiling30.",
     "hint": "Check satiation in(a); compare monopoly marginal revenue with marginal cost in(b).",
     "notes": "",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The consumer has a bliss point rather than globally nonsatiated preferences, so first check whether the ideal bundle is affordable. In the monopoly problem, compare the private first-order condition with the social demand–marginal-cost intersection."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\text{consumer: }(a,b)^*&=(10,10)\\quad(M=40),\\\\\n(a,b)^*&=(5,5)\\quad(M=10),\\\\\nMR=60-2q&=MC=q\\Longrightarrow q_m=20,\\\\\n60-q&=q\\Longrightarrow q_e=30,\\quad p_e=30,\\\\\nDWL&=\\int_{20}^{30}(60-2q)\\,dq=100.\n\\end{aligned}$$\n\nThe low-income consumer minimizes squared distance from the bliss point on the budget boundary, while the high-income consumer leaves money unspent. A monopoly price ceiling at the efficient price makes demand and optimal supply meet at the efficient output, eliminating the lost-surplus triangle."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) The unconstrained bliss point(10,10) costs20 and is feasible with income40; the consumer need not spend the rest. With income10 the closest feasible point to(10,10) is(5,5), by symmetry or projection onto a+b=10. (b) Profit is $(60-q)q-q^2/2$, so MR=60−2q equals MC=q at q20.\n\nThe efficient demand–MC intersection is60−q=q, hence q30,p30. The welfare loss is $\\int_{20}^{30}(60-2q)\\,dq=100$. A ceiling30 makes the profit-maximizing supply meet demand at q30 and eliminates the loss."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) (10,10), then(5,5). (b) Monopoly q20,p40; efficient q30,p30; DWL100 in the corresponding thousand-rupee units. Optimal ceiling30."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q3",
@@ -42,10 +78,28 @@
     "topic": "Microeconomics",
     "stem": "(a) A cinema has150 seats. Student demand is $220-40P_s$ and non-student demand $140-20P_n$; a student-ID discount is available. Find maximum profit, and then the maximum if the two demand functions are interchanged. (b) Eleven traders each want at most one chicken, with utility $u_iD_i+m_i$. Their valuations are(10,8,7,4,3,1,3,3,5,6,8). Six indivisible chickens initially belong to traders6–11; everyone has25 units of money. Give a competitive equilibrium price and discuss uniqueness.",
     "answer": "(a) Revenue/profit532.5 with student price3.25 and non-student price4. After interchange:525 if only student discounts are allowed;532.5 if unrestricted group pricing is intended. (b) Any price in[4,5], for example4.5; the six highest valuations receive chickens. Price is not unique.",
-    "solution": "(a) With no variable costs specified, maximize ticket revenue. Let q_s,q_n be sales. The inverse demands are5.5−q_s/40 and7−q_n/20. The capacity binds: setting marginal revenues equal gives5.5−q_s/20=7−q_n/10 and q_s+q_n=150. Thus q_s90,q_n60; prices3.25,4; revenue292.5+240=532.5. After interchange, unrestricted discrimination swaps these prices between the groups and retains532.5, but charges students more. If the stated instrument is a student discount, impose P_s≤P_n. This constraint binds at uniform price3.5, yielding total sales150 and revenue525. (b) Sort valuations:10,8,8,7,6,5,4,3,3,3,1. Clearing six chickens requires the price between the sixth and seventh valuations,5 and4. At interior prices the allocation to traders1,2,3,9,10,11 is unique; endpoint indifference can be resolved to clear the market. Money allocations vary with the nonunique price.",
+    "solution": "At a full cinema, allocate scarce seats by equating marginal revenues, not by equating group prices. For chickens, rank willingness to pay: the price must separate the six eventual owners from the remaining five.\n\n$$\\begin{aligned}\n5.5-q_s/20&=7-q_n/10,\\qquad q_s+q_n=150,\\\\\n(q_s,q_n)&=(90,60),\\quad(p_s,p_n)=(3.25,4),\\\\\nR&=90(3.25)+60(4)=532.5,\\\\\n\\text{chicken values: }&10,8,8,7,6,5,4,3,3,3,1,\\\\\np_{\\rm chicken}&\\in[4,5].\n\\end{aligned}$$\n\nAfter the demand functions are swapped, unrestricted discrimination would charge students the higher price. If the admissible instrument is a student discount, enforce its inequality; the optimum then pools prices at the capacity-clearing uniform price. In the exchange economy, ownership affects money transfers but the six highest values identify the efficient final chicken allocation.\n\n(a) With no variable costs specified, maximize ticket revenue. Let q_s,q_n be sales. The inverse demands are5.5−q_s/40 and7−q_n/20.\n\nThe capacity binds: setting marginal revenues equal gives5.5−q_s/20=7−q_n/10 and q_s+q_n=150. Thus q_s90,q_n60; prices3.25,4; revenue292.5+240=532.5. After interchange, unrestricted discrimination swaps these prices between the groups and retains532.5, but charges students more.\n\nIf the stated instrument is a student discount, impose P_s≤P_n. This constraint binds at uniform price3.5, yielding total sales150 and revenue525. (b) Sort valuations:10,8,8,7,6,5,4,3,3,3,1.\n\nClearing six chickens requires the price between the sixth and seventh valuations,5 and4. At interior prices the allocation to traders1,2,3,9,10,11 is unique; endpoint indifference can be resolved to clear the market. Money allocations vary with the nonunique price.\n\n(a) Revenue/profit532.5 with student price3.25 and non-student price4. After interchange:525 if only student discounts are allowed;532.5 if unrestricted group pricing is intended. (b) Any price in[4,5], for example4.5; the six highest valuations receive chickens. Price is not unique.",
     "hint": "Use equal marginal revenues with a capacity multiplier; then check that the proposed student price really is a discount.",
     "notes": "Part(a)(ii) must distinguish a student-discount constraint from unrestricted group price discrimination. Production costs are not supplied; the revenue calculation assumes zero marginal admission cost and ignores sunk costs.",
-    "status": "needs_review"
+    "status": "needs_review",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "At a full cinema, allocate scarce seats by equating marginal revenues, not by equating group prices. For chickens, rank willingness to pay: the price must separate the six eventual owners from the remaining five."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n5.5-q_s/20&=7-q_n/10,\\qquad q_s+q_n=150,\\\\\n(q_s,q_n)&=(90,60),\\quad(p_s,p_n)=(3.25,4),\\\\\nR&=90(3.25)+60(4)=532.5,\\\\\n\\text{chicken values: }&10,8,8,7,6,5,4,3,3,3,1,\\\\\np_{\\rm chicken}&\\in[4,5].\n\\end{aligned}$$\n\nAfter the demand functions are swapped, unrestricted discrimination would charge students the higher price. If the admissible instrument is a student discount, enforce its inequality; the optimum then pools prices at the capacity-clearing uniform price. In the exchange economy, ownership affects money transfers but the six highest values identify the efficient final chicken allocation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) With no variable costs specified, maximize ticket revenue. Let q_s,q_n be sales. The inverse demands are5.5−q_s/40 and7−q_n/20.\n\nThe capacity binds: setting marginal revenues equal gives5.5−q_s/20=7−q_n/10 and q_s+q_n=150. Thus q_s90,q_n60; prices3.25,4; revenue292.5+240=532.5. After interchange, unrestricted discrimination swaps these prices between the groups and retains532.5, but charges students more.\n\nIf the stated instrument is a student discount, impose P_s≤P_n. This constraint binds at uniform price3.5, yielding total sales150 and revenue525. (b) Sort valuations:10,8,8,7,6,5,4,3,3,3,1.\n\nClearing six chickens requires the price between the sixth and seventh valuations,5 and4. At interior prices the allocation to traders1,2,3,9,10,11 is unique; endpoint indifference can be resolved to clear the market. Money allocations vary with the nonunique price."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Revenue/profit532.5 with student price3.25 and non-student price4. After interchange:525 if only student discounts are allowed;532.5 if unrestricted group pricing is intended. (b) Any price in[4,5], for example4.5; the six highest valuations receive chickens. Price is not unique."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q4",
@@ -58,10 +112,28 @@
     "topic": "Microeconomics",
     "stem": "(a) A monopolist has demand $p=20-q$, technology $q=\\min\\{L/2,K/3\\}$, wage and capital rental1, and available capital bounded above by $\\bar K$. Find q,p for capital bounds24 and18. (b) Define Samuelson’s WARP. (c) Show how WARP implies a nonpositive own-price substitution effect and the demand theorem.",
     "answer": "(a) For capital bound24: q7.5,p12.5; for bound18: q6,p14. (b,c) WARP prevents mutually affordable distinct choices; compensated own-price demand cannot move in the same direction as price. With a nonnegative income effect, uncompensated own-price demand also falls.",
-    "solution": "(a) Cost-minimizing inputs are L=2q,K=3q, giving C=5q and q≤K̄/3. Unconstrained profit(20−q)q−5q has optimum q7.5. A bound24 allows q≤8, so it is slack; a bound18 allows q≤6 and binds. This treats available capital as a bound on a variable paid-for input; if it is instead predetermined and fully paid for, the marginal-cost calculation differs. (b) If bundle x is chosen at prices p when distinct y was affordable, y cannot subsequently be chosen when x is affordable at its prices. In the usual unique-choice formulation, p·x≥p·y implies p′·x>p′·y when y is chosen at p′. (c) Choose y after changing prices and compensating income so the old x is just affordable: m′=p′·x. WARP implies p·(y−x)>0 whenever y≠x, while p′·(y−x)≤0. Subtract to obtain (p′−p)·(y−x)<0. With only one price changing, this gives a weakly nonpositive compensated own-price response, including zero change. Locally the Slutsky equation is ∂x_i/∂p_i=∂h_i/∂p_i−x_i∂x_i/∂m. Thus the ordinary demand theorem follows for a normal good. WARP alone does not rule out Giffen behavior when the income effect is negative.",
+    "solution": "The Leontief technology requires fixed input proportions. Treat available capital as an upper bound on a variable paid-for input, as in the existing answer. For revealed preference, use income compensation making the original bundle just affordable.\n\n$$\\begin{aligned}\nL=2q,\\ K=3q&\\Longrightarrow C(q)=5q,\\quad q\\le\\bar K/3,\\\\\n20-2q&=5\\Longrightarrow q_u=7.5,\\\\\n\\bar K=24:&\\quad q=7.5,\\qquad\\bar K=18:\\quad q=6,\\\\\np\\cdot(y-x)>0,\\ p^\\prime\\cdot(y-x)\\le0\n&\\Longrightarrow(p^\\prime-p)\\cdot(y-x)<0.\n\\end{aligned}$$\n\nThe capacity check distinguishes a slack bound from a binding one. The last inequality is the revealed-preference basis for a compensated law of demand: with only one price changed, quantity moves weakly in the opposite direction. The ordinary demand response additionally depends on the income effect, so WARP alone does not exclude Giffen goods.\n\n(a) Cost-minimizing inputs are L=2q,K=3q, giving C=5q and q≤K̄/3. Unconstrained profit(20−q)q−5q has optimum q7.5. A bound24 allows q≤8, so it is slack; a bound18 allows q≤6 and binds.\n\nThis treats available capital as a bound on a variable paid-for input; if it is instead predetermined and fully paid for, the marginal-cost calculation differs. (b) If bundle x is chosen at prices p when distinct y was affordable, y cannot subsequently be chosen when x is affordable at its prices. In the usual unique-choice formulation, p·x≥p·y implies p′·x>p′·y when y is chosen at p′.\n\n(c) Choose y after changing prices and compensating income so the old x is just affordable: m′=p′·x. WARP implies p·(y−x)>0 whenever y≠x, while p′·(y−x)≤0. Subtract to obtain (p′−p)·(y−x)<0.\n\nWith only one price changing, this gives a weakly nonpositive compensated own-price response, including zero change. Locally the Slutsky equation is ∂x_i/∂p_i=∂h_i/∂p_i−x_i∂x_i/∂m. Thus the ordinary demand theorem follows for a normal good.\n\nWARP alone does not rule out Giffen behavior when the income effect is negative.\n\n(a) For capital bound24: q7.5,p12.5; for bound18: q6,p14. (b,c) WARP prevents mutually affordable distinct choices; compensated own-price demand cannot move in the same direction as price. With a nonnegative income effect, uncompensated own-price demand also falls.",
     "hint": "First derive unit cost; for WARP compensate income to keep the old bundle affordable.",
     "notes": "The ordinary demand theorem needs an income-effect qualification. The source phrase about available capital is interpreted as an upper bound, not a sunk capital stock.",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The Leontief technology requires fixed input proportions. Treat available capital as an upper bound on a variable paid-for input, as in the existing answer. For revealed preference, use income compensation making the original bundle just affordable."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nL=2q,\\ K=3q&\\Longrightarrow C(q)=5q,\\quad q\\le\\bar K/3,\\\\\n20-2q&=5\\Longrightarrow q_u=7.5,\\\\\n\\bar K=24:&\\quad q=7.5,\\qquad\\bar K=18:\\quad q=6,\\\\\np\\cdot(y-x)>0,\\ p^\\prime\\cdot(y-x)\\le0\n&\\Longrightarrow(p^\\prime-p)\\cdot(y-x)<0.\n\\end{aligned}$$\n\nThe capacity check distinguishes a slack bound from a binding one. The last inequality is the revealed-preference basis for a compensated law of demand: with only one price changed, quantity moves weakly in the opposite direction. The ordinary demand response additionally depends on the income effect, so WARP alone does not exclude Giffen goods."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Cost-minimizing inputs are L=2q,K=3q, giving C=5q and q≤K̄/3. Unconstrained profit(20−q)q−5q has optimum q7.5. A bound24 allows q≤8, so it is slack; a bound18 allows q≤6 and binds.\n\nThis treats available capital as a bound on a variable paid-for input; if it is instead predetermined and fully paid for, the marginal-cost calculation differs. (b) If bundle x is chosen at prices p when distinct y was affordable, y cannot subsequently be chosen when x is affordable at its prices. In the usual unique-choice formulation, p·x≥p·y implies p′·x>p′·y when y is chosen at p′.\n\n(c) Choose y after changing prices and compensating income so the old x is just affordable: m′=p′·x. WARP implies p·(y−x)>0 whenever y≠x, while p′·(y−x)≤0. Subtract to obtain (p′−p)·(y−x)<0.\n\nWith only one price changing, this gives a weakly nonpositive compensated own-price response, including zero change. Locally the Slutsky equation is ∂x_i/∂p_i=∂h_i/∂p_i−x_i∂x_i/∂m. Thus the ordinary demand theorem follows for a normal good.\n\nWARP alone does not rule out Giffen behavior when the income effect is negative."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) For capital bound24: q7.5,p12.5; for bound18: q6,p14. (b,c) WARP prevents mutually affordable distinct choices; compensated own-price demand cannot move in the same direction as price. With a nonnegative income effect, uncompensated own-price demand also falls."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q5",
@@ -74,10 +146,28 @@
     "topic": "Microeconomics",
     "stem": "Two firms choose quantities simultaneously, with costs $C_i(q_i)=q_i$ and inverse demand $p=10-q_1-q_2$. (a) Define and solve the equilibrium and reaction functions. (b) Repeat when each firm has capacity2.",
     "answer": "(a) Cournot–Nash: q₁=q₂=3,p4,profit9 each. (b) q₁=q₂=2,p6,profit10 each.",
-    "solution": "A Cournot–Nash equilibrium consists of feasible quantities, each maximizing its firm’s profit holding the other fixed. Profit is $(9-q_i-q_j)q_i$, so the unconstrained reaction is $BR_i(q_j)=\\max\\{0,(9-q_j)/2\\}$. Solving the two interior reactions gives3 each. With capacity2, $BR_i(q_j)=\\min\\{2,\\max\\{0,(9-q_j)/2\\}\\}$. For every rival quantity in[0,2], the unconstrained optimum is at least3.5; thus each always chooses2 and this is the unique equilibrium.",
+    "solution": "A Cournot–Nash quantity is a best response to the rival's quantity. Derive the unconstrained response, and then project it onto the actual feasible interval when capacity is introduced.\n\n$$\\begin{aligned}\n\\pi_i&=(9-q_i-q_j)q_i,\\\\\nBR_i(q_j)&=\\max\\{0,(9-q_j)/2\\},\\\\\nq_1=q_2&=3\\quad\\text{without capacity},\\\\\nBR_i^{\\rm cap}(q_j)&=\\min\\{2,\\max\\{0,(9-q_j)/2\\}\\}=2\n\\quad(0\\le q_j\\le2).\n\\end{aligned}$$\n\nThe own-quantity second derivative is negative, so the response is a genuine profit maximum. In the capacity game the desired unconstrained quantity always exceeds two, whatever the rival does feasibly. Thus capacity output is a dominant best response and the constrained equilibrium is uniquely $(2,2)$.\n\nA Cournot–Nash equilibrium consists of feasible quantities, each maximizing its firm’s profit holding the other fixed. Profit is $(9-q_i-q_j)q_i$, so the unconstrained reaction is $BR_i(q_j)=\\max\\{0,(9-q_j)/2\\}$. Solving the two interior reactions gives3 each.\n\nWith capacity2, $BR_i(q_j)=\\min\\{2,\\max\\{0,(9-q_j)/2\\}\\}$. For every rival quantity in[0,2], the unconstrained optimum is at least3.5; thus each always chooses2 and this is the unique equilibrium.\n\n(a) Cournot–Nash: q₁=q₂=3,p4,profit9 each. (b) q₁=q₂=2,p6,profit10 each.",
     "hint": "Cap each ordinary Cournot best response at the feasible output limit.",
     "notes": "",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "A Cournot–Nash quantity is a best response to the rival's quantity. Derive the unconstrained response, and then project it onto the actual feasible interval when capacity is introduced."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi_i&=(9-q_i-q_j)q_i,\\\\\nBR_i(q_j)&=\\max\\{0,(9-q_j)/2\\},\\\\\nq_1=q_2&=3\\quad\\text{without capacity},\\\\\nBR_i^{\\rm cap}(q_j)&=\\min\\{2,\\max\\{0,(9-q_j)/2\\}\\}=2\n\\quad(0\\le q_j\\le2).\n\\end{aligned}$$\n\nThe own-quantity second derivative is negative, so the response is a genuine profit maximum. In the capacity game the desired unconstrained quantity always exceeds two, whatever the rival does feasibly. Thus capacity output is a dominant best response and the constrained equilibrium is uniquely $(2,2)$."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "A Cournot–Nash equilibrium consists of feasible quantities, each maximizing its firm’s profit holding the other fixed. Profit is $(9-q_i-q_j)q_i$, so the unconstrained reaction is $BR_i(q_j)=\\max\\{0,(9-q_j)/2\\}$. Solving the two interior reactions gives3 each.\n\nWith capacity2, $BR_i(q_j)=\\min\\{2,\\max\\{0,(9-q_j)/2\\}\\}$. For every rival quantity in[0,2], the unconstrained optimum is at least3.5; thus each always chooses2 and this is the unique equilibrium."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Cournot–Nash: q₁=q₂=3,p4,profit9 each. (b) q₁=q₂=2,p6,profit10 each."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q6",
@@ -90,12 +180,30 @@
     "topic": "Microeconomics",
     "stem": "(a) Under a rupee-for-rupee housing subsidy, the Lal family spends250 on housing and receives250 subsidy. A replacement policy offers an unrestricted lump sum250. Explain graphically which is preferred, whether indifference is possible, and how housing/other-good choices can change. (b) A patent monopolist has demand $p=100-X$ and cost $25+X^2$. Find its price/output. After the patent expires, identical firms can freely enter: find the long-run competitive price, industry output and number of firms.",
     "answer": "(a) The lump sum makes the old bundle affordable, so it is weakly preferred; it can be strictly preferred or indifferent. The choice is not uniquely determined without preferences. (b) Monopoly X25,p75. Long-run competition: each firm produces5, price10, industry output90,18 firms.",
-    "solution": "(a) Put housing h horizontally and other consumption c vertically. If the private income is M and the government matches out-of-pocket housing expenditure, the family’s effective budget is c+h/2≤M. Its old subsidy250 means total housing expenditure500 and its own payment250. The replacement budget is c+h≤M+250, a steeper line passing through the old choice. Since the old bundle remains feasible, maximization makes replacement utility at least as high. Smooth strictly convex preferences at an interior old tangency give strictly higher utility and substitution away from housing at the new optimum; kinks, corners or indifference can leave the old choice optimal. Hence an exact change in both quantities requires preferences, rather than an assertion based only on prices. (b) Monopoly MR=100−2X and MC=2X, so X25,p75,profit1225. Under free entry the minimum of AC=25/x+x is at x5, with minimum AC10. Thus p10, industry demand90 and firm count90/5=18; each earns zero economic profit.",
+    "solution": "For the policy comparison, show the new cash-transfer budget passes through the old chosen bundle. In the patent problem, separate monopoly marginal conditions from the free-entry zero-profit condition.\n\n$$\\begin{aligned}\n\\text{old budget: }c+h/2&\\le M,\\\\\n\\text{new budget: }c+h&\\le M+250,\\\\\n100-2X&=2X\\Longrightarrow X_m=25,\\quad p_m=75,\\\\\nAC(x)&=25/x+x,\\quad AC\\prime(x)=-25/x^2+1,\\\\\nx_f=5:&\\quad p_c=10,\\quad Q_c=90,\\quad n=18.\n\\end{aligned}$$\n\nAffordability of the old bundle establishes weak welfare improvement under the unrestricted transfer; the direction and strictness of quantity changes need preference assumptions. Free entry pins price to minimum average cost, not zero marginal cost or the old monopoly price. Divide industry demand by efficient firm scale to obtain the number of firms.\n\n(a) Put housing h horizontally and other consumption c vertically. If the private income is M and the government matches out-of-pocket housing expenditure, the family’s effective budget is c+h/2≤M. Its old subsidy250 means total housing expenditure500 and its own payment250.\n\nThe replacement budget is c+h≤M+250, a steeper line passing through the old choice. Since the old bundle remains feasible, maximization makes replacement utility at least as high. Smooth strictly convex preferences at an interior old tangency give strictly higher utility and substitution away from housing at the new optimum; kinks, corners or indifference can leave the old choice optimal.\n\nHence an exact change in both quantities requires preferences, rather than an assertion based only on prices. (b) Monopoly MR=100−2X and MC=2X, so X25,p75,profit1225. Under free entry the minimum of AC=25/x+x is at x5, with minimum AC10.\n\nThus p10, industry demand90 and firm count90/5=18; each earns zero economic profit.\n\n(a) The lump sum makes the old bundle affordable, so it is weakly preferred; it can be strictly preferred or indifferent. The choice is not uniquely determined without preferences. (b) Monopoly X25,p75. Long-run competition: each firm produces5, price10, industry output90,18 firms.",
     "hint": "Draw both budgets through the original subsidized bundle; minimize average cost for long-run entry.",
     "notes": "The housing graph uses a matching subsidy on private expenditure, and counts total housing spending as private plus government payments.",
     "status": "verified",
     "solutionImages": [
       "solution-diagrams/2014-peb-q6-budget.svg"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For the policy comparison, show the new cash-transfer budget passes through the old chosen bundle. In the patent problem, separate monopoly marginal conditions from the free-entry zero-profit condition."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\text{old budget: }c+h/2&\\le M,\\\\\n\\text{new budget: }c+h&\\le M+250,\\\\\n100-2X&=2X\\Longrightarrow X_m=25,\\quad p_m=75,\\\\\nAC(x)&=25/x+x,\\quad AC\\prime(x)=-25/x^2+1,\\\\\nx_f=5:&\\quad p_c=10,\\quad Q_c=90,\\quad n=18.\n\\end{aligned}$$\n\nAffordability of the old bundle establishes weak welfare improvement under the unrestricted transfer; the direction and strictness of quantity changes need preference assumptions. Free entry pins price to minimum average cost, not zero marginal cost or the old monopoly price. Divide industry demand by efficient firm scale to obtain the number of firms."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Put housing h horizontally and other consumption c vertically. If the private income is M and the government matches out-of-pocket housing expenditure, the family’s effective budget is c+h/2≤M. Its old subsidy250 means total housing expenditure500 and its own payment250.\n\nThe replacement budget is c+h≤M+250, a steeper line passing through the old choice. Since the old bundle remains feasible, maximization makes replacement utility at least as high. Smooth strictly convex preferences at an interior old tangency give strictly higher utility and substitution away from housing at the new optimum; kinks, corners or indifference can leave the old choice optimal.\n\nHence an exact change in both quantities requires preferences, rather than an assertion based only on prices. (b) Monopoly MR=100−2X and MC=2X, so X25,p75,profit1225. Under free entry the minimum of AC=25/x+x is at x5, with minimum AC10.\n\nThus p10, industry demand90 and firm count90/5=18; each earns zero economic profit."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) The lump sum makes the old bundle affordable, so it is weakly preferred; it can be strictly preferred or indifferent. The choice is not uniquely determined without preferences. (b) Monopoly X25,p75. Long-run competition: each firm produces5, price10, industry output90,18 firms."
+      }
     ]
   },
   {
@@ -109,10 +217,28 @@
     "topic": "Macroeconomics",
     "stem": "An economy has $Y_t=K_t^\\alpha N_t^{1-\\alpha}$ with constant employment N, $0<\\alpha<1$, capital law $K_{t+1}=(1-\\delta)K_t+I_t$ and $0\\le\\delta\\le1$. (a) Express output per worker. (b) Find the effect of the saving rate on steady-state output per worker. (c) Find the saving rate maximizing steady-state consumption per worker.",
     "answer": "$y=k^\\alpha$; for δ>0 and s>0, $y^*=(s/\\delta)^{\\alpha/(1-\\alpha)}$, with elasticity α/(1−α) to s. The golden-rule saving rate is α. At the allowed endpoint δ=0, no finite positive steady state exists for s>0.",
-    "solution": "(a) Divide production by N: y=Y/N=(K/N)^α=k^α. (b) With I=sY, steady state requires sk^α=δk. For δ>0,s>0, k*=(s/δ)^{1/(1−α)} and y*=(s/δ)^{α/(1−α)}. Therefore dy*/ds=[α/(1−α)]y*/s>0. (c) Steady consumption c*=(1−s)(s/δ)^{α/(1−α)}. Its log derivative is−1/(1−s)+[α/(1−α)]/s; setting zero yields s=α. Equivalently the golden rule αk^{α−1}=δ combined with the steady-state equation yields s=α. If δ=0 and s>0, capital keeps accumulating and these finite steady-state formulas do not apply.",
+    "solution": "Divide by fixed employment and solve the positive steady-state investment-replacement condition. Raising saving increases the steady output level, but maximizing consumption requires a separate calculation.\n\n$$\\begin{aligned}\ny&=k^\\alpha,\\qquad sk^{\\alpha}=\\delta k,\\\\\nk^*&=(s/\\delta)^{1/(1-\\alpha)},\\\\\nc^*&=(1-s)(s/\\delta)^{\\alpha/(1-\\alpha)},\\\\\n\\frac{d\\log c^*}{ds}&=-\\frac1{1-s}+\\frac\\alpha{(1-\\alpha)s}=0,\\\\\ns_{GR}&=\\alpha.\n\\end{aligned}$$\n\nTaking logarithms simplifies the derivative of the positive consumption expression. The optimum equates the sacrifice of current consumption from saving more with the proportional increase in future productive capacity. The finite positive formulas require $\\delta>0$; zero depreciation is a distinct case.\n\n(a) Divide production by N: y=Y/N=(K/N)^α=k^α. (b) With I=sY, steady state requires sk^α=δk. For δ>0,s>0, k*=(s/δ)^{1/(1−α)} and y*=(s/δ)^{α/(1−α)}.\n\nTherefore dy*/ds=[α/(1−α)]y*/s>0. (c) Steady consumption c*=(1−s)(s/δ)^{α/(1−α)}. Its log derivative is−1/(1−s)+[α/(1−α)]/s; setting zero yields s=α.\n\nEquivalently the golden rule αk^{α−1}=δ combined with the steady-state equation yields s=α. If δ=0 and s>0, capital keeps accumulating and these finite steady-state formulas do not apply.\n\n$y=k^\\alpha$; for δ>0 and s>0, $y^*=(s/\\delta)^{\\alpha/(1-\\alpha)}$, with elasticity α/(1−α) to s. The golden-rule saving rate is α. At the allowed endpoint δ=0, no finite positive steady state exists for s>0.",
     "hint": "Write the capital law per worker and set net accumulation to zero.",
     "notes": "The standard positive steady-state result requires δ>0; the printed δ=0 endpoint is handled separately.",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Divide by fixed employment and solve the positive steady-state investment-replacement condition. Raising saving increases the steady output level, but maximizing consumption requires a separate calculation."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\ny&=k^\\alpha,\\qquad sk^{\\alpha}=\\delta k,\\\\\nk^*&=(s/\\delta)^{1/(1-\\alpha)},\\\\\nc^*&=(1-s)(s/\\delta)^{\\alpha/(1-\\alpha)},\\\\\n\\frac{d\\log c^*}{ds}&=-\\frac1{1-s}+\\frac\\alpha{(1-\\alpha)s}=0,\\\\\ns_{GR}&=\\alpha.\n\\end{aligned}$$\n\nTaking logarithms simplifies the derivative of the positive consumption expression. The optimum equates the sacrifice of current consumption from saving more with the proportional increase in future productive capacity. The finite positive formulas require $\\delta>0$; zero depreciation is a distinct case."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Divide production by N: y=Y/N=(K/N)^α=k^α. (b) With I=sY, steady state requires sk^α=δk. For δ>0,s>0, k*=(s/δ)^{1/(1−α)} and y*=(s/δ)^{α/(1−α)}.\n\nTherefore dy*/ds=[α/(1−α)]y*/s>0. (c) Steady consumption c*=(1−s)(s/δ)^{α/(1−α)}. Its log derivative is−1/(1−s)+[α/(1−α)]/s; setting zero yields s=α.\n\nEquivalently the golden rule αk^{α−1}=δ combined with the steady-state equation yields s=α. If δ=0 and s>0, capital keeps accumulating and these finite steady-state formulas do not apply."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$y=k^\\alpha$; for δ>0 and s>0, $y^*=(s/\\delta)^{\\alpha/(1-\\alpha)}$, with elasticity α/(1−α) to s. The golden-rule saving rate is α. At the allowed endpoint δ=0, no finite positive steady state exists for s>0."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q8",
@@ -125,12 +251,30 @@
     "topic": "Macroeconomics",
     "stem": "In IS–LM with $I=I(i,Y)$, $I_i<0$ and $I_Y>0$, compare expansionary monetary and fiscal policy effects on investment in the short run and the medium run, when aggregate demand and supply adjust. Under which policy is medium-run investment higher?",
     "answer": "Short run: monetary expansion raises investment; fiscal expansion has an ambiguous net investment effect. Medium run with unchanged potential output: monetary policy is neutral, while fiscal expansion crowds out investment; investment is higher under monetary expansion.",
-    "solution": "At a fixed price level, monetary expansion shifts LM right/down: Y rises and i falls, so both I_Y dY and I_i di raise investment. Fiscal expansion shifts IS right: Y and i both rise, making the income effect positive and the interest effect negative; the overall sign needs parameter magnitudes. Graphically compare the new IS–LM intersections. In the medium run, under the standard vertical long-run supply/potential-output assumption, prices adjust so Y returns to its original potential. A permanent monetary expansion is absorbed into the price level, leaving real balances, i and I at their original values. With fiscal expansion, the higher spending at unchanged Y requires a higher interest rate on the new IS curve, and I decreases. Thus, for otherwise comparable initial conditions, medium-run investment is higher after monetary expansion than fiscal expansion. In AD–AS, each expansion initially moves AD right; wage/price adjustment shifts short-run AS until the potential-output line is reached.",
+    "solution": "Short-run prices are fixed, so an IS–LM shift changes both output and interest. In the medium run, the standard potential-output assumption fixes output again, and price adjustment changes the real money stock.\n\n$$\\begin{aligned}\ndI&=I_Y\\,dY+I_i\\,di,\\\\\n\\text{monetary, short run: }&dY>0,\\ di<0\\Longrightarrow dI>0,\\\\\n\\text{fiscal, short run: }&dY>0,\\ di>0\\Longrightarrow dI\\text{ ambiguous},\\\\\n\\text{medium run: }dY&=0,\\quad dI^{M}=0,\\quad dI^{G}<0.\n\\end{aligned}$$\n\nThe two short-run fiscal effects oppose each other, so their magnitudes matter. Monetary expansion eventually raises prices in proportion to nominal money and is neutral in real terms. Fiscal expansion at unchanged potential output instead crowds out private investment through a higher interest rate.\n\nAt a fixed price level, monetary expansion shifts LM right/down: Y rises and i falls, so both I_Y dY and I_i di raise investment. Fiscal expansion shifts IS right: Y and i both rise, making the income effect positive and the interest effect negative; the overall sign needs parameter magnitudes. Graphically compare the new IS–LM intersections.\n\nIn the medium run, under the standard vertical long-run supply/potential-output assumption, prices adjust so Y returns to its original potential. A permanent monetary expansion is absorbed into the price level, leaving real balances, i and I at their original values. With fiscal expansion, the higher spending at unchanged Y requires a higher interest rate on the new IS curve, and I decreases.\n\nThus, for otherwise comparable initial conditions, medium-run investment is higher after monetary expansion than fiscal expansion. In AD–AS, each expansion initially moves AD right; wage/price adjustment shifts short-run AS until the potential-output line is reached.\n\nShort run: monetary expansion raises investment; fiscal expansion has an ambiguous net investment effect. Medium run with unchanged potential output: monetary policy is neutral, while fiscal expansion crowds out investment; investment is higher under monetary expansion.",
     "hint": "For the short run write dI=I_Y dY+I_i di; then hold potential output fixed in the medium run.",
     "notes": "Uses the standard closed-economy IS–LM/AD–AS adjustment model with unchanged potential output.",
     "status": "verified",
     "solutionImages": [
       "solution-diagrams/2014-peb-q8-islm.svg"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Short-run prices are fixed, so an IS–LM shift changes both output and interest. In the medium run, the standard potential-output assumption fixes output again, and price adjustment changes the real money stock."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\ndI&=I_Y\\,dY+I_i\\,di,\\\\\n\\text{monetary, short run: }&dY>0,\\ di<0\\Longrightarrow dI>0,\\\\\n\\text{fiscal, short run: }&dY>0,\\ di>0\\Longrightarrow dI\\text{ ambiguous},\\\\\n\\text{medium run: }dY&=0,\\quad dI^{M}=0,\\quad dI^{G}<0.\n\\end{aligned}$$\n\nThe two short-run fiscal effects oppose each other, so their magnitudes matter. Monetary expansion eventually raises prices in proportion to nominal money and is neutral in real terms. Fiscal expansion at unchanged potential output instead crowds out private investment through a higher interest rate."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "At a fixed price level, monetary expansion shifts LM right/down: Y rises and i falls, so both I_Y dY and I_i di raise investment. Fiscal expansion shifts IS right: Y and i both rise, making the income effect positive and the interest effect negative; the overall sign needs parameter magnitudes. Graphically compare the new IS–LM intersections.\n\nIn the medium run, under the standard vertical long-run supply/potential-output assumption, prices adjust so Y returns to its original potential. A permanent monetary expansion is absorbed into the price level, leaving real balances, i and I at their original values. With fiscal expansion, the higher spending at unchanged Y requires a higher interest rate on the new IS curve, and I decreases.\n\nThus, for otherwise comparable initial conditions, medium-run investment is higher after monetary expansion than fiscal expansion. In AD–AS, each expansion initially moves AD right; wage/price adjustment shifts short-run AS until the potential-output line is reached."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Short run: monetary expansion raises investment; fiscal expansion has an ambiguous net investment effect. Medium run with unchanged potential output: monetary policy is neutral, while fiscal expansion crowds out investment; investment is higher under monetary expansion."
+      }
     ]
   },
   {
@@ -144,10 +288,28 @@
     "topic": "Macroeconomics",
     "stem": "Let $C=c_0+c_1(Y-T)$ and $I=b_0+b_1Y$, with positive parameters, $c_1,b_1<1$, and constant G. (a) Solve equilibrium output with fixed T. (b) Find the multiplier and its positivity condition. (c) Find output and saving responses to a change in b₀. (d) Replace fixed taxes with $T=t_0+t_1Y$, $0<t_1<1$; compare the b₀ multiplier.",
     "answer": "$Y=(c_0-c_1T+b_0+G)/(1-c_1-b_1)$. The multiplier is1/(1−c₁−b₁), positive iff c₁+b₁<1. Saving rises with b₀ under this stability condition. With proportional taxes the multiplier is1/[1−c₁(1−t₁)−b₁], which is smaller when both multipliers are positive.",
-    "solution": "Goods-market clearing Y=C+I+G gives (1−c₁−b₁)Y=c₀−c₁T+b₀+G. For nonzero denominator this yields(a); at denominator zero there is either no equilibrium or indeterminacy depending on autonomous spending. (b) Differentiate with respect to autonomous spending; a positive finite multiplier requires c₁+b₁<1. (c) dY/db₀=1/(1−c₁−b₁). Private saving S_p=Y−T−C has derivative (1−c₁)/(1−c₁−b₁). Public saving T−G is fixed, so national saving has the same change; it also equals dI/db₀=1+b₁/(1−c₁−b₁). (d) The denominator becomes1−c₁(1−t₁)−b₁=(1−c₁−b₁)+c₁t₁. Under the positive-multiplier condition in(b), this is larger, so automatic tax stabilization reduces the output response.",
+    "solution": "Collect every term proportional to income on the left of goods-market clearing. Differentiate saving as well as output, rather than assuming they have the same multiplier.\n\n$$\\begin{aligned}\n(1-c_1-b_1)Y&=c_0-c_1T+b_0+G,\\\\\n\\frac{dY}{db_0}&=\\frac1{1-c_1-b_1},\\\\\n\\frac{dS}{db_0}&=\\frac{1-c_1}{1-c_1-b_1},\\\\\nD_{\\rm proportional\\ tax}&=1-c_1-b_1+c_1t_1.\n\\end{aligned}$$\n\nThe induced consumption and investment coefficients together must be below one for a positive finite multiplier. Proportional taxation increases the denominator by $c_1t_1$, reducing the response. At a zero denominator, division is invalid and equilibrium may fail or be indeterminate depending on autonomous spending.\n\nGoods-market clearing Y=C+I+G gives (1−c₁−b₁)Y=c₀−c₁T+b₀+G. For nonzero denominator this yields(a); at denominator zero there is either no equilibrium or indeterminacy depending on autonomous spending. (b) Differentiate with respect to autonomous spending; a positive finite multiplier requires c₁+b₁<1.\n\n(c) dY/db₀=1/(1−c₁−b₁). Private saving S_p=Y−T−C has derivative (1−c₁)/(1−c₁−b₁). Public saving T−G is fixed, so national saving has the same change; it also equals dI/db₀=1+b₁/(1−c₁−b₁).\n\n(d) The denominator becomes1−c₁(1−t₁)−b₁=(1−c₁−b₁)+c₁t₁. Under the positive-multiplier condition in(b), this is larger, so automatic tax stabilization reduces the output response.\n\n$Y=(c_0-c_1T+b_0+G)/(1-c_1-b_1)$. The multiplier is1/(1−c₁−b₁), positive iff c₁+b₁<1. Saving rises with b₀ under this stability condition. With proportional taxes the multiplier is1/[1−c₁(1−t₁)−b₁], which is smaller when both multipliers are positive.",
     "hint": "Collect the income-dependent terms on the left; distinguish private from public saving.",
     "notes": "Multiplier sign and comparisons are conditional on the stability restriction, not implied by c₁<1 and b₁<1 separately.",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Collect every term proportional to income on the left of goods-market clearing. Differentiate saving as well as output, rather than assuming they have the same multiplier."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n(1-c_1-b_1)Y&=c_0-c_1T+b_0+G,\\\\\n\\frac{dY}{db_0}&=\\frac1{1-c_1-b_1},\\\\\n\\frac{dS}{db_0}&=\\frac{1-c_1}{1-c_1-b_1},\\\\\nD_{\\rm proportional\\ tax}&=1-c_1-b_1+c_1t_1.\n\\end{aligned}$$\n\nThe induced consumption and investment coefficients together must be below one for a positive finite multiplier. Proportional taxation increases the denominator by $c_1t_1$, reducing the response. At a zero denominator, division is invalid and equilibrium may fail or be indeterminate depending on autonomous spending."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Goods-market clearing Y=C+I+G gives (1−c₁−b₁)Y=c₀−c₁T+b₀+G. For nonzero denominator this yields(a); at denominator zero there is either no equilibrium or indeterminacy depending on autonomous spending. (b) Differentiate with respect to autonomous spending; a positive finite multiplier requires c₁+b₁<1.\n\n(c) dY/db₀=1/(1−c₁−b₁). Private saving S_p=Y−T−C has derivative (1−c₁)/(1−c₁−b₁). Public saving T−G is fixed, so national saving has the same change; it also equals dI/db₀=1+b₁/(1−c₁−b₁).\n\n(d) The denominator becomes1−c₁(1−t₁)−b₁=(1−c₁−b₁)+c₁t₁. Under the positive-multiplier condition in(b), this is larger, so automatic tax stabilization reduces the output response."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$Y=(c_0-c_1T+b_0+G)/(1-c_1-b_1)$. The multiplier is1/(1−c₁−b₁), positive iff c₁+b₁<1. Saving rises with b₀ under this stability condition. With proportional taxes the multiplier is1/[1−c₁(1−t₁)−b₁], which is smaller when both multipliers are positive."
+      }
+    ]
   },
   {
     "id": "2014-PEB-Q10",
@@ -160,9 +322,27 @@
     "topic": "Microeconomics",
     "stem": "An agent lives for three periods. When young she borrows e for education and obtains human capital h(e), with h′>0 and h″<0. When middle-aged she earns wh(e), repays Re, consumes c_M and saves for old age; gross borrowing/saving return R is exogenous. She consumes nothing when young and has utility $u(c_M)+\\beta u(c_O)$, $0<\\beta<1$. (a) Formulate the maximization and first-order conditions. (b) How does optimal education change with wage w and interest factor R?",
     "answer": "Maximize utility subject to $c_M+c_O/R=wh(e)-Re$. Interior FOCs: $u′(c_M)=\\beta R u′(c_O)$ and $wh′(e)=R$. Thus $de/dw=-h′/(wh″)>0$ and $de/dR=1/(wh″)<0$; human capital moves in the same direction.",
-    "solution": "Let old-age saving be s, so c_M+s+Re=wh(e), c_O=Rs. Eliminating s gives the present-value lifetime budget. With increasing concave u and interior positive consumption and education, use Lagrangian u(c_M)+βu(c_O)+λ[wh(e)−Re−c_M−c_O/R]. FOCs are u′(c_M)=λ, βu′(c_O)=λ/R and λ[wh′(e)−R]=0, with the budget binding. Since λ>0, education maximizes net lifetime resources independently of consumption timing: wh′(e)=R. Implicit differentiation yields the stated signs because h′>0,h″<0. The level of human capital h(e*) also increases with w and decreases with R. At a borrowing/education corner e=0 use wh′(0)≤R and weak rather than strict comparative statics.",
+    "solution": "Education changes net lifetime wealth before the household allocates consumption between middle and old age. Combine the two period budgets so that the education decision can be separated from consumption smoothing.\n\n$$\\begin{aligned}\nc_M+s+Re&=wh(e),\\qquad c_O=Rs,\\\\\nc_M+\\frac{c_O}{R}&=wh(e)-Re,\\\\\nu\\prime(c_M)&=\\beta R u\\prime(c_O),\\qquad wh\\prime(e)=R,\\\\\n\\frac{de^*}{dw}&=-\\frac{h\\prime(e)}{wh^{\\prime\\prime}(e)}>0,\\qquad\n\\frac{de^*}{dR}=\\frac1{wh^{\\prime\\prime}(e)}<0.\n\\end{aligned}$$\n\nBecause utility increases with wealth, the education first-order condition maximizes the right side of the lifetime budget. Strict concavity of human capital yields the comparative-static signs. If the optimum is at zero education, replace equality by the appropriate Kuhn–Tucker inequality and interpret these effects weakly.\n\nLet old-age saving be s, so c_M+s+Re=wh(e), c_O=Rs. Eliminating s gives the present-value lifetime budget. With increasing concave u and interior positive consumption and education, use Lagrangian u(c_M)+βu(c_O)+λ[wh(e)−Re−c_M−c_O/R].\n\nFOCs are u′(c_M)=λ, βu′(c_O)=λ/R and λ[wh′(e)−R]=0, with the budget binding. Since λ>0, education maximizes net lifetime resources independently of consumption timing: wh′(e)=R. Implicit differentiation yields the stated signs because h′>0,h″<0.\n\nThe level of human capital h(e*) also increases with w and decreases with R. At a borrowing/education corner e=0 use wh′(0)≤R and weak rather than strict comparative statics.\n\nMaximize utility subject to $c_M+c_O/R=wh(e)-Re$. Interior FOCs: $u'(c_M)=\\beta R u'(c_O)$ and $wh'(e)=R$. Thus $de/dw=-h'/(wh'')>0$ and $de/dR=1/(wh'')<0$; human capital moves in the same direction.",
     "hint": "Separate education’s maximization of lifetime wealth from allocation of wealth across consumption dates.",
     "notes": "The source does not state monotonicity/concavity of u; the standard optimum and positive multiplier use increasing concave utility and R>0.",
-    "status": "verified"
+    "status": "verified",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Education changes net lifetime wealth before the household allocates consumption between middle and old age. Combine the two period budgets so that the education decision can be separated from consumption smoothing."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nc_M+s+Re&=wh(e),\\qquad c_O=Rs,\\\\\nc_M+\\frac{c_O}{R}&=wh(e)-Re,\\\\\nu\\prime(c_M)&=\\beta R u\\prime(c_O),\\qquad wh\\prime(e)=R,\\\\\n\\frac{de^*}{dw}&=-\\frac{h\\prime(e)}{wh^{\\prime\\prime}(e)}>0,\\qquad\n\\frac{de^*}{dR}=\\frac1{wh^{\\prime\\prime}(e)}<0.\n\\end{aligned}$$\n\nBecause utility increases with wealth, the education first-order condition maximizes the right side of the lifetime budget. Strict concavity of human capital yields the comparative-static signs. If the optimum is at zero education, replace equality by the appropriate Kuhn–Tucker inequality and interpret these effects weakly."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let old-age saving be s, so c_M+s+Re=wh(e), c_O=Rs. Eliminating s gives the present-value lifetime budget. With increasing concave u and interior positive consumption and education, use Lagrangian u(c_M)+βu(c_O)+λ[wh(e)−Re−c_M−c_O/R].\n\nFOCs are u′(c_M)=λ, βu′(c_O)=λ/R and λ[wh′(e)−R]=0, with the budget binding. Since λ>0, education maximizes net lifetime resources independently of consumption timing: wh′(e)=R. Implicit differentiation yields the stated signs because h′>0,h″<0.\n\nThe level of human capital h(e*) also increases with w and decreases with R. At a borrowing/education corner e=0 use wh′(0)≤R and weak rather than strict comparative statics."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Maximize utility subject to $c_M+c_O/R=wh(e)-Re$. Interior FOCs: $u'(c_M)=\\beta R u'(c_O)$ and $wh'(e)=R$. Thus $de/dw=-h'/(wh'')>0$ and $de/dR=1/(wh'')<0$; human capital moves in the same direction."
+      }
+    ]
   }
 ]

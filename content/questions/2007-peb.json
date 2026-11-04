@@ -9,12 +9,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A cake of size 1 is cut into two pieces by person 1; person 2 chooses a piece first and person 1 receives the remainder. What cut is optimal for person 1? (b) Kamal has a free classical-concert ticket and values the concert at Rs 30. A competing film-music event costs Rs 200 and is worth Rs X to him. Which event, or neither, should he choose?",
     "answer": "(a) Equal halves. (b) Classical if X<230, film if X>230; indifferent at X=230.",
-    "solution": "(a) If the pieces have sizes z and 1−z, person 2 takes the larger; person 1 gets min(z,1−z), maximized at z=1/2. (b) Net benefits are 30 from classical, X−200 from film and zero from neither. Compare these numbers. The free ticket is treated as non-resalable, since no resale opportunity is specified.",
+    "solution": "Choose the cut by anticipating the chooser. Write the two cake sizes as z and 1-z, where 0≤ z≤1. Person 2 chooses the larger piece. Consequently person 1 receives min{z,1-z}, rather than being able to select the preferred piece herself.\n\nMaximize the guaranteed share. If z<1/2, increasing z improves the smaller piece. If z>1/2, decreasing z improves the smaller piece. Thus the unique best size division is z=1/2: each piece is one-half, and person 1 guarantees herself one-half.\n\nCompare the entertainment options on a common basis. The free concert still provides a benefit: its net benefit is Rs 30. The film event provides benefit X but requires a payment of Rs 200. Staying home is the zero-benefit benchmark. Hence \nB_(concert) =30,; B_(film) =X-200,; B_(neither) =0.\n\nState the decision and the tie. Choose the concert if X<230 and the film if X>230. At X=230 they give the same net benefit. Neither is optimal because the available concert has positive net benefit. This comparison assumes that the free ticket cannot be resold; the question supplies no resale opportunity.",
     "hint": "Use the chooser’s best response, then compare net benefits.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Choose the cut by anticipating the chooser",
+        "body": "Write the two cake sizes as $z$ and $1-z$, where $0\\le z\\le1$. Person 2 chooses the larger piece. Consequently person 1 receives $\\min\\{z,1-z\\}$, rather than being able to select the preferred piece herself."
+      },
+      {
+        "title": "Maximize the guaranteed share",
+        "body": "If $z<1/2$, increasing $z$ improves the smaller piece. If $z>1/2$, decreasing $z$ improves the smaller piece. Thus the unique best size division is $z=1/2$: each piece is one-half, and person 1 guarantees herself one-half."
+      },
+      {
+        "title": "Compare the entertainment options on a common basis",
+        "body": "The free concert still provides a benefit: its net benefit is Rs 30. The film event provides benefit $X$ but requires a payment of Rs 200. Staying home is the zero-benefit benchmark. Hence $$\\begin{aligned} B_{\\mathrm{concert}}&=30,\\\\ B_{\\mathrm{film}}&=X-200,\\\\ B_{\\mathrm{neither}}&=0.\\end{aligned}$$"
+      },
+      {
+        "title": "State the decision and the tie",
+        "body": "Choose the concert if $X<230$ and the film if $X>230$. At $X=230$ they give the same net benefit. Neither is optimal because the available concert has positive net benefit. This comparison assumes that the free ticket cannot be resold; the question supplies no resale opportunity."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q2",
@@ -26,12 +44,30 @@
     "originalPaperCode": "ME II",
     "stem": "Demand is P=300−Q and short-run competitive supply is P=−180+5Q. Find initial equilibrium and verify it is also on long-run supply P=60+2Q. Demand at every price then doubles. Find new demand and very-short-run, short-run and long-run equilibria. If a ceiling fixes price at the old equilibrium, find the shortage. Describe the diagram.",
     "answer": "Initial (Q,P)=(80,220). New demand P=300−Q/2. Very short run (80,260), short run (960/11,2820/11), long run (96,252). Ceiling shortage 80.",
-    "solution": "Initially 300−Q=−180+5Q gives Q=80,P=220, and 60+2·80=220. Doubling quantities gives Q=600−2P. With fixed immediate capacity 80, P=260. Intersecting new demand with short-run supply gives 480=5.5Q, hence Q=960/11 and P=2820/11. With long-run supply, 240=2.5Q gives Q=96,P=252. At ceiling P=220, new quantity demanded is 160 while supply is 80, giving shortage 80. Plot P vertically and Q horizontally: old/new demands share intercept 300, new demand is flatter; mark the four listed intersections and the horizontal ceiling at 220.",
+    "solution": "Find the initial competitive equilibrium. Equate the original demand price to the short-run supply price: \n300-Q =-180+5Q,; 6Q =480,; Q_0 =80, P_0=220.\n The long-run supply price at this same quantity is 60+2(80)=220, so the initial point is also a long-run equilibrium.\n\nTranslate a doubling of demand correctly. The original direct demand is Q=300-P. Doubling the quantity demanded at every price gives Q=600-2P, or P=300-Q/2. The intercept on the price axis stays 300; the slope changes. In the very short run quantity remains fixed at 80, so the new demand price is 300-80/2=260.\n\nAllow supply to adjust over the two horizons. For short-run adjustment, keep the original short-run supply curve. For long-run adjustment, use long-run supply: \n300-(1)/(2)Q =-180+5Q ⇒ Q_(SR)=(960)/(11), P_(SR)=(2820)/(11),; 300-(1)/(2)Q =60+2Q ⇒ Q_(LR)=96, P_(LR)=252.\n Price falls from its immediate level as production expands, but remains above the old price.\n\nInterpret the ceiling and describe the graph. At the old price ceiling P=220, new demand is 600-2(220)=160 while supply is 80. The shortage is therefore 160-80=80. In a graph with quantity horizontal and price vertical, show the old and flatter new demand curves, the two supply curves, the vertical immediate-supply line at 80 and the horizontal ceiling at 220. Mark the four equilibrium points calculated above.",
     "hint": "Doubling demand means doubling Q at each P.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Find the initial competitive equilibrium",
+        "body": "Equate the original demand price to the short-run supply price: $$\\begin{aligned}300-Q&=-180+5Q,\\\\6Q&=480,\\\\Q_0&=80,\\qquad P_0=220.\\end{aligned}$$ The long-run supply price at this same quantity is $60+2(80)=220$, so the initial point is also a long-run equilibrium."
+      },
+      {
+        "title": "Translate a doubling of demand correctly",
+        "body": "The original direct demand is $Q=300-P$. Doubling the quantity demanded at every price gives $Q=600-2P$, or $P=300-Q/2$. The intercept on the price axis stays 300; the slope changes. In the very short run quantity remains fixed at 80, so the new demand price is $300-80/2=260$."
+      },
+      {
+        "title": "Allow supply to adjust over the two horizons",
+        "body": "For short-run adjustment, keep the original short-run supply curve. For long-run adjustment, use long-run supply: $$\\begin{aligned}300-\\tfrac12Q&=-180+5Q &&\\Rightarrow Q_{SR}=\\frac{960}{11},\\ P_{SR}=\\frac{2820}{11},\\\\300-\\tfrac12Q&=60+2Q &&\\Rightarrow Q_{LR}=96,\\ P_{LR}=252.\\end{aligned}$$ Price falls from its immediate level as production expands, but remains above the old price."
+      },
+      {
+        "title": "Interpret the ceiling and describe the graph",
+        "body": "At the old price ceiling $P=220$, new demand is $600-2(220)=160$ while supply is 80. The shortage is therefore $160-80=80$. In a graph with quantity horizontal and price vertical, show the old and flatter new demand curves, the two supply curves, the vertical immediate-supply line at 80 and the horizontal ceiling at 220. Mark the four equilibrium points calculated above."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q3",
@@ -43,12 +79,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Year 1 produces wheat worth Rs 750, exports Rs 150 and holds the rest unsold. Year 2 has no production, consumes the old wheat domestically and imports shirts worth Rs 250. Fill GDP=C+I+X−M for both years. (b) In a linear IS–LM model an increase in government expenditure crowds out 50 units of investment. I′(r)=−50, LM slope dr/dY=1/250, IS slope −1/125. Government adjusts real money balances minimally to prevent this crowding out. Find total change in Y from initial to final equilibrium.",
     "answer": "(a) Year 1: (GDP,C,I,X,M)=(750,0,600,150,0); year 2: (0,850,−600,0,250). (b) ΔY=375.",
-    "solution": "(a) Unsold current output is inventory investment, so year-1 investment is 600. In year 2 consumption includes 600 wheat and 250 shirts; running down inventories contributes −600 and imports subtract 250, giving GDP zero. (b) Crowding out −50 with I′=−50 means interest initially rises by 1. Along the original LM, output therefore rises 250. To reverse that interest rise while staying on the shifted IS, output must rise a further 125 because its slope is −1/125. Thus monetary accommodation returning interest to its original level raises total output by 375.",
+    "solution": "Count output when it is produced, not when it is sold. In year 1, output worth 750 is produced. Exports account for 150 and the remaining 600 becomes an inventory asset. Unsold current output counts as investment, so \nY_1 =C_1+I_1+X_1-M_1; 750 =0+600+150-0.\n\nRemove the old inventory from year-2 production. Year-2 consumption is 600+250=850: old wheat plus imported shirts. Selling the old wheat runs down inventories by 600, so investment is -600. Imports must also be subtracted. Thus Y_2=850-600+0-250=0, consistent with the statement that no current production occurs.\n\nRecover the initial crowding-out movement. The fiscal expansion reduces investment by 50. Because dI/dr=-50, this means that interest initially rises by one unit. Along the unchanged LM curve, dr/dY=1/250, so this first movement raises output by 250.\n\nUndo the interest increase with monetary accommodation. To prevent investment crowding out, interest must return to its original level. The economy remains on the shifted IS curve, whose slope is -1/125. Moving down that IS curve by one interest unit raises output by another 125. Therefore \nΔ Y_(fiscal) =250,; Δ Y_(accommodation) =125,; Δ Y_(total) =375.\n The additional money supply is just enough to restore the original interest rate.",
     "hint": "Inventory changes count as investment; use the slopes to undo the interest increase.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Count output when it is produced, not when it is sold",
+        "body": "In year 1, output worth 750 is produced. Exports account for 150 and the remaining 600 becomes an inventory asset. Unsold current output counts as investment, so $$\\begin{aligned}Y_1&=C_1+I_1+X_1-M_1\\\\750&=0+600+150-0.\\end{aligned}$$"
+      },
+      {
+        "title": "Remove the old inventory from year-2 production",
+        "body": "Year-2 consumption is $600+250=850$: old wheat plus imported shirts. Selling the old wheat runs down inventories by 600, so investment is $-600$. Imports must also be subtracted. Thus $Y_2=850-600+0-250=0$, consistent with the statement that no current production occurs."
+      },
+      {
+        "title": "Recover the initial crowding-out movement",
+        "body": "The fiscal expansion reduces investment by 50. Because $dI/dr=-50$, this means that interest initially rises by one unit. Along the unchanged LM curve, $dr/dY=1/250$, so this first movement raises output by 250."
+      },
+      {
+        "title": "Undo the interest increase with monetary accommodation",
+        "body": "To prevent investment crowding out, interest must return to its original level. The economy remains on the shifted IS curve, whose slope is $-1/125$. Moving down that IS curve by one interest unit raises output by another 125. Therefore $$\\begin{aligned}\\Delta Y_{\\mathrm{fiscal}}&=250,\\\\\\Delta Y_{\\mathrm{accommodation}}&=125,\\\\\\Delta Y_{\\mathrm{total}}&=375.\\end{aligned}$$ The additional money supply is just enough to restore the original interest rate."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q4",
@@ -60,12 +114,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A consumer has income W and utility U(x₁,x₂,x₃)=x₁√(x₂x₃), with positive prices pᵢ. Set up the Lagrangian, derive interior first-order conditions and Marshallian demands. (b) F(K,L) has constant returns to scale, is symmetric in inputs, and F(1,1)=1. Each input costs Rs 2 and output sells at Rs 3. Without calculus, find optimal production.",
     "answer": "(a) x₁=W/(2p₁), x₂=W/(4p₂), x₃=W/(4p₃). (b) Zero output if concavity is additionally assumed; the stated properties alone are insufficient.",
-    "solution": "(a) Maximize log x₁+(1/2)log x₂+(1/2)log x₃ subject to Σpᵢxᵢ≤W. The log-utility Lagrangian is this expression +λ(W−Σpᵢxᵢ). First-order conditions are 1/x₁=λp₁, 1/(2x₂)=λp₂ and 1/(2x₃)=λp₃. Spending all W yields λ=2/W and the stated demands. (b) Under concavity and symmetry, F(K,L)≤F((K+L)/2,(K+L)/2)=(K+L)/2. Profit is at most 3(K+L)/2−2(K+L)≤0, so inactivity is optimal. Concavity is not printed, however. F(K,L)=max(K,L) satisfies all three printed conditions but allows unbounded positive profit by expanding one input. Hence no unique answer follows literally.",
+    "solution": "Set up the consumer problem. For positive income and prices, maximize U=x_1√(x_2x_3) subject to p_1x_1+p_2x_2+p_3x_3≤ W. Utility increases in each good, so the budget binds. Taking logarithms is an increasing transformation and simplifies the derivatives without changing the optimum.\n\nUse the first-order conditions to identify expenditure shares. The log-utility Lagrangian is \nL=log x_1+(1)/(2)log x_2+(1)/(2)log x_3+λ(W-Σ_(i=1)^3p_ix_i).\n Its interior conditions imply \np_1x_1 =(1)/(λ), p_2x_2 =(1)/(2λ), p_3x_3 =(1)/(2λ).\n Adding these expenditures gives λ=2/W. Thus x_1=W/(2p_1) and x_2=W/(4p_2), x_3=W/(4p_3). Concavity of log utility makes these conditions sufficient.\n\nDerive the intended production answer conditionally. If the production function is also concave, symmetry gives \nF(K,L)≤ F((K+L)/(2),(K+L)/(2))=(K+L)/(2).\n The equality uses constant returns and F(1,1)=1. Profit is then at most 3(K+L)/2-2(K+L)=-(K+L)/2, so zero production is optimal.\n\nExplain why the printed assumptions are insufficient. Concavity is not one of the stated properties. The counterexample F(K,L)=max{K,L} is symmetric, has constant returns and satisfies F(1,1)=1. Yet using only capital gives profit 3K-2K=K, which can be made arbitrarily large. Therefore part (b) does not have an unconditional zero-output conclusion; the missing concavity assumption must be disclosed.",
     "hint": "Use expenditure shares in (a); check whether concavity is actually among the assumptions in (b).",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "status": "needs_review",
-    "notes": "Production subpart lacks concavity or convex-technology assumption needed for the intended zero-output result."
+    "notes": "Production subpart lacks concavity or convex-technology assumption needed for the intended zero-output result.",
+    "solutionSteps": [
+      {
+        "title": "Set up the consumer problem",
+        "body": "For positive income and prices, maximize $U=x_1\\sqrt{x_2x_3}$ subject to $p_1x_1+p_2x_2+p_3x_3\\le W$. Utility increases in each good, so the budget binds. Taking logarithms is an increasing transformation and simplifies the derivatives without changing the optimum."
+      },
+      {
+        "title": "Use the first-order conditions to identify expenditure shares",
+        "body": "The log-utility Lagrangian is $$\\mathcal L=\\log x_1+\\tfrac12\\log x_2+\\tfrac12\\log x_3+\\lambda\\!\\left(W-\\sum_{i=1}^{3}p_ix_i\\right).$$ Its interior conditions imply $$\\begin{aligned}p_1x_1&=\\frac1\\lambda, &p_2x_2&=\\frac1{2\\lambda}, &p_3x_3&=\\frac1{2\\lambda}.\\end{aligned}$$ Adding these expenditures gives $\\lambda=2/W$. Thus $x_1=W/(2p_1)$ and $x_2=W/(4p_2)$, $x_3=W/(4p_3)$. Concavity of log utility makes these conditions sufficient."
+      },
+      {
+        "title": "Derive the intended production answer conditionally",
+        "body": "If the production function is also concave, symmetry gives $$F(K,L)\\le F\\!\\left(\\frac{K+L}{2},\\frac{K+L}{2}\\right)=\\frac{K+L}{2}.$$ The equality uses constant returns and $F(1,1)=1$. Profit is then at most $3(K+L)/2-2(K+L)=-(K+L)/2$, so zero production is optimal."
+      },
+      {
+        "title": "Explain why the printed assumptions are insufficient",
+        "body": "Concavity is not one of the stated properties. The counterexample $F(K,L)=\\max\\{K,L\\}$ is symmetric, has constant returns and satisfies $F(1,1)=1$. Yet using only capital gives profit $3K-2K=K$, which can be made arbitrarily large. Therefore part (b) does not have an unconditional zero-output conclusion; the missing concavity assumption must be disclosed."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q5",
@@ -77,12 +149,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A monopolist sells a positive amount to government at Rs 100 per unit and also to private buyers at Rs 150. Find private demand elasticity. (b) Mrs Pathak always uses 50 g sugar per 20 g tea. Monthly budget Rs 55; sugar costs 2 paisa per 10 g and tea 50 paisa per 10 g. Find monthly quantities. (c) In IS–LM, a tax change moves (Y,r) from (3000,4%) to (3500,6%). Money-demand income derivative is 0.25; all relations are linear and money supply is unchanged. Find the change in real money demand from a one-percentage-point rate increase.",
     "answer": "(a) Absolute elasticity 3. (b) Tea 1000 g, sugar 2500 g. (c) Money demand falls by 62.5 per percentage point.",
-    "solution": "(a) Positive government sales imply marginal revenue from the private market equals 100. Thus 150(1−1/ε)=100 and ε=3 (signed elasticity −3). (b) One fixed-ratio bundle costs 20 g tea × Rs .05/g +50 g sugar × Rs .002/g=Rs 1.10. Rs 55 buys 50 bundles. (c) With unchanged real balances, 0=.25(500)+Lᵣ(2 percentage points). Therefore Lᵣ=−62.5 per percentage point, or −6250 if r is measured as a decimal.",
+    "solution": "Equate marginal revenues across the monopolist’s outlets. Positive sales to government at the fixed price 100 mean that the marginal revenue from that outlet is 100. At an interior allocation, private-market marginal revenue must equal it. If ε>0 is the absolute private demand elasticity, \n150(1-(1)/(ε))=100 ⇒ ε=3.\n The signed price elasticity is -3.\n\nPrice one fixed-proportion tea bundle. One bundle contains 20 g of tea and 50 g of sugar. The prices per gram are Rs 0.05 and Rs 0.002, respectively. The cost is therefore 20(0.05)+50(0.002)=1.10. A budget of 55 buys 50 bundles: tea demand is 1,000 g and sugar demand is 2,500 g. Extra sugar or tea alone has no value under the fixed-ratio preference.\n\nUse the unchanged money-market equilibrium. The tax change does not change real money supply, so the rise in money demand due to income must be offset by the interest change. Income rises by 500 and interest by two percentage points: \n0 =0.25(500)+L_r(2),; L_r =-62.5 per percentage point.\n If interest is written as a decimal, the same derivative is -6250 per unit of the decimal rate. Keeping the rate units explicit prevents a factor-of-100 error.",
     "hint": "Equate marginal revenues; price a fixed-ratio bundle; use money-market equilibrium.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": "Subpart (c) is macroeconomics; rate units are explicitly distinguished."
+    "notes": "Subpart (c) is macroeconomics; rate units are explicitly distinguished.",
+    "solutionSteps": [
+      {
+        "title": "Equate marginal revenues across the monopolist’s outlets",
+        "body": "Positive sales to government at the fixed price 100 mean that the marginal revenue from that outlet is 100. At an interior allocation, private-market marginal revenue must equal it. If $\\varepsilon>0$ is the absolute private demand elasticity, $$150\\!\\left(1-\\frac1\\varepsilon\\right)=100\\quad\\Rightarrow\\quad\\varepsilon=3.$$ The signed price elasticity is $-3$."
+      },
+      {
+        "title": "Price one fixed-proportion tea bundle",
+        "body": "One bundle contains 20 g of tea and 50 g of sugar. The prices per gram are Rs 0.05 and Rs 0.002, respectively. The cost is therefore $20(0.05)+50(0.002)=1.10$. A budget of 55 buys 50 bundles: tea demand is 1,000 g and sugar demand is 2,500 g. Extra sugar or tea alone has no value under the fixed-ratio preference."
+      },
+      {
+        "title": "Use the unchanged money-market equilibrium",
+        "body": "The tax change does not change real money supply, so the rise in money demand due to income must be offset by the interest change. Income rises by 500 and interest by two percentage points: $$\\begin{aligned}0&=0.25(500)+L_r(2),\\\\L_r&=-62.5\\quad\\text{per percentage point}.\\end{aligned}$$ If interest is written as a decimal, the same derivative is $-6250$ per unit of the decimal rate. Keeping the rate units explicit prevents a factor-of-100 error."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q6",
@@ -94,12 +180,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) One unit of corn requires 0.1 corn, 0.3 machines and 5 labour-hours; one machine requires 0.4 corn, 0.6 machines and 20 labour-hours. (i) Final demand is 48 corn and zero machines: find gross outputs and labour. (ii) At wage Rs 2/hour, find prices equaling average production costs. (b) Consumers A and B each spend income W on x,y, with utilities U_A=x+y and U_B=x²+y². Compare their demands.",
     "answer": "(a) Gross corn 80, machines 60, labour 1600 hours; corn price 200/3 and machine price 500/3. (b) Same demands at unequal prices; different demand correspondences when prices tie.",
-    "solution": "(a) Let C,M be gross outputs. Balance equations are .9C−.4M=48 and −.3C+.4M=0, giving C=80,M=60. Labour is 5C+20M=1600. Cost pricing gives .9p_C−.3p_M=10 and −.4p_C+.4p_M=40, hence p_M=p_C+100 and p_C=200/3. (b) For unequal positive prices both consumers spend all W on the cheaper good. A has perfect-substitute preferences. B maximizes a convex quadratic along the budget segment, so also chooses an endpoint, with the cheaper endpoint yielding larger utility. If p_x=p_y, A accepts every budget-line bundle, whereas B accepts only the two endpoints.",
+    "solution": "Write the gross-output balances. Let C and M be gross corn and machine output. Production must cover intermediate requirements as well as final demand: \nC =0.1C+0.4M+48,; M =0.3C+0.6M.\n The second equation gives M=0.75C; substituting into the first gives C=80 and M=60. Required labour is 5(80)+20(60)=1600 hours.\n\nInclude intermediate inputs in cost prices. At wage 2, unit costs equal prices: \np_C =0.1p_C+0.3p_M+10,; p_M =0.4p_C+0.6p_M+40.\n The second equation implies p_M=p_C+100. The first then gives 0.6p_C=40, so p_C=200/3 and p_M=500/3. Ignoring intermediate inputs would understate both prices.\n\nCompare the two consumers away from tied prices. For U_A=x+y, all spending goes to the cheaper good. For U_B=x^2+y^2, utility is convex along a linear budget segment, so its maximum is at an endpoint. The endpoint utilities are (W/p_x)^2 and (W/p_y)^2, again selecting the cheaper good. Thus at unequal positive prices their demands coincide.\n\nHandle the price tie separately. When p_x=p_y, consumer A is indifferent among every bundle on the budget line because x+y is constant. Consumer B instead maximizes x^2+y^2 at the two corners only; any nontrivial split gives lower utility. Their demand correspondences therefore differ at the tie, even though their demands agree at unequal prices.",
     "hint": "Separate gross from final outputs, and compare utilities at budget endpoints.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Write the gross-output balances",
+        "body": "Let $C$ and $M$ be gross corn and machine output. Production must cover intermediate requirements as well as final demand: $$\\begin{aligned}C&=0.1C+0.4M+48,\\\\M&=0.3C+0.6M.\\end{aligned}$$ The second equation gives $M=0.75C$; substituting into the first gives $C=80$ and $M=60$. Required labour is $5(80)+20(60)=1600$ hours."
+      },
+      {
+        "title": "Include intermediate inputs in cost prices",
+        "body": "At wage 2, unit costs equal prices: $$\\begin{aligned}p_C&=0.1p_C+0.3p_M+10,\\\\p_M&=0.4p_C+0.6p_M+40.\\end{aligned}$$ The second equation implies $p_M=p_C+100$. The first then gives $0.6p_C=40$, so $p_C=200/3$ and $p_M=500/3$. Ignoring intermediate inputs would understate both prices."
+      },
+      {
+        "title": "Compare the two consumers away from tied prices",
+        "body": "For $U_A=x+y$, all spending goes to the cheaper good. For $U_B=x^2+y^2$, utility is convex along a linear budget segment, so its maximum is at an endpoint. The endpoint utilities are $(W/p_x)^2$ and $(W/p_y)^2$, again selecting the cheaper good. Thus at unequal positive prices their demands coincide."
+      },
+      {
+        "title": "Handle the price tie separately",
+        "body": "When $p_x=p_y$, consumer A is indifferent among every bundle on the budget line because $x+y$ is constant. Consumer B instead maximizes $x^2+y^2$ at the two corners only; any nontrivial split gives lower utility. Their demand correspondences therefore differ at the tie, even though their demands agree at unequal prices."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q7",
@@ -111,12 +215,30 @@
     "originalPaperCode": "ME II",
     "stem": "In an open Keynesian model without government, C=0.8Y, desired imports=0.3Y, I=100+0.4Y and exports=100. (i) Imports cannot exceed 450: derive aggregate demand and find equilibrium graphically. (ii) Repeat with import cap 615 and discuss stability.",
     "answer": "Cap 450: no equilibrium. Cap 615: equilibria Y=2000 (stable) and Y=2075 (unstable).",
-    "solution": "With cap B, AD=200+1.2Y−min(.3Y,B). It has slope .9 below Y=B/.3 and 1.2 above it. For B=450 the kink is at Y=1500: lower-branch intersection is Y=2000, outside that branch; upper-branch intersection is Y=1250, also outside. The graph lies above the 45° line everywhere (its minimum AD−Y is 50), so no equilibrium exists. For B=615 the kink is 2050. Lower-branch equilibrium 2000 is valid; upper AD=−415+1.2Y gives equilibrium 2075, also valid. Under ordinary Keynesian quantity adjustment, slope .9 gives stability at 2000 and slope 1.2 instability at 2075. Plot both continuous branches against the 45° line.",
+    "solution": "Build aggregate demand with the import ceiling. With ceiling B, actual imports are min{0.3Y,B}. Therefore \nAD(Y)=200+1.2Y-min{0.3Y,B}.\n Below Y=B/0.3, the slope is 0.9. Above that kink imports stop increasing, so the slope becomes 1.2. Solve each branch and then check whether its solution belongs to that branch.\n\nShow why a ceiling of 450 gives no equilibrium. The kink is at Y=1500. The lower branch AD=200+0.9Y would intersect the 45-degree line at 2000, outside its permitted range. The upper branch AD=-250+1.2Y would intersect at 1250, also outside its range. At the kink, the minimum gap AD-Y is 50. Thus the entire demand curve lies above the 45-degree line and there is no equilibrium.\n\nFind both equilibria when the ceiling is 615. Now the kink is Y=2050. The lower-branch solution Y=2000 is valid. On the upper branch, \nY=-415+1.2Y ⇒ Y=2075,\n which is also valid. It would be incorrect to report only the first intersection.\n\nExplain stability using the direction of adjustment. Under the standard adjustment rule, output rises if planned expenditure exceeds output and falls if it is smaller. At Y=2000, the local expenditure slope 0.9 is less than one, so deviations are reversed and the equilibrium is stable. At Y=2075, slope 1.2 exceeds one, so deviations grow and the equilibrium is unstable. The piecewise graph crosses the 45-degree line once on each side of the kink.",
     "hint": "Solve branch by branch and verify each solution lies on its branch.",
     "topic": "Macroeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Build aggregate demand with the import ceiling",
+        "body": "With ceiling $B$, actual imports are $\\min\\{0.3Y,B\\}$. Therefore $$AD(Y)=200+1.2Y-\\min\\{0.3Y,B\\}.$$ Below $Y=B/0.3$, the slope is 0.9. Above that kink imports stop increasing, so the slope becomes 1.2. Solve each branch and then check whether its solution belongs to that branch."
+      },
+      {
+        "title": "Show why a ceiling of 450 gives no equilibrium",
+        "body": "The kink is at $Y=1500$. The lower branch $AD=200+0.9Y$ would intersect the 45-degree line at 2000, outside its permitted range. The upper branch $AD=-250+1.2Y$ would intersect at 1250, also outside its range. At the kink, the minimum gap $AD-Y$ is 50. Thus the entire demand curve lies above the 45-degree line and there is no equilibrium."
+      },
+      {
+        "title": "Find both equilibria when the ceiling is 615",
+        "body": "Now the kink is $Y=2050$. The lower-branch solution $Y=2000$ is valid. On the upper branch, $$Y=-415+1.2Y\\quad\\Rightarrow\\quad Y=2075,$$ which is also valid. It would be incorrect to report only the first intersection."
+      },
+      {
+        "title": "Explain stability using the direction of adjustment",
+        "body": "Under the standard adjustment rule, output rises if planned expenditure exceeds output and falls if it is smaller. At $Y=2000$, the local expenditure slope 0.9 is less than one, so deviations are reversed and the equilibrium is stable. At $Y=2075$, slope 1.2 exceeds one, so deviations grow and the equilibrium is unstable. The piecewise graph crosses the 45-degree line once on each side of the kink."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q8",
@@ -128,12 +250,30 @@
     "originalPaperCode": "ME II",
     "stem": "Two-period utility is (C₁^(1−θ)−1)/(1−θ)+(1/(1+ρ))(C₂^(1−θ)−1)/(1−θ), with printed restrictions 0<θ<1, ρ>0. Youth income is w from inelastic unit labour supply, saving is s and old-age income is (1+r)s. (i) Interpret θ as marginal-utility elasticity. (ii) State the optimization. (iii) Find saving. (iv) Explain how saving responds to r for θ below or above 1. (v) Give intuition.",
     "answer": "s=w/[1+(1+ρ)^(1/θ)(1+r)^((θ−1)/θ)]. It rises with r when θ<1, falls when θ>1, and is independent of r in the θ=1 log limit.",
-    "solution": "Marginal utility is C^(−θ), with signed consumption elasticity −θ and absolute elasticity θ. Maximize the stated utility over 0≤s≤w, substituting C₁=w−s and C₂=(1+r)s, assuming w>0 and r>−1. The interior first-order condition is (w−s)^(−θ)=(1+r)^(1−θ)s^(−θ)/(1+ρ). Solving gives the displayed formula. The interest derivative has sign 1−θ. The inverse θ is the elasticity of intertemporal substitution: for θ<1 substitution toward future consumption dominates, increasing saving; for θ>1 the income effect dominates, decreasing it. At θ=1 the logarithmic limit gives s=w/(2+ρ). The θ>1 comparison extends the formula beyond the source’s printed 0<θ<1 restriction.",
+    "solution": "Interpret the preference parameter and the budgets. For one-period CRRA utility, u'(C)=C^(-θ), so \n(dlog u'(C))/(dlog C)=-θ.\n Thus θ is the magnitude of the elasticity of marginal utility, not its signed value. Saving s gives budgets C_1=w-s and C_2=(1+r)s, with 0≤ s≤ w, w>0 and r>-1.\n\nDerive the Euler condition. Substitute the two budgets into lifetime utility and differentiate with respect to saving. At an interior optimum, \n(w-s)^(-θ) =(1+r)/(1+ρ)big[(1+r)sbig]^(-θ); =((1+r)^(1-θ))/(1+ρ)s^(-θ).\n This equates the marginal loss from giving up current consumption to the discounted marginal gain from the additional future consumption.\n\nSolve explicitly for saving. Rearranging the Euler condition yields \n((s)/(w-s))^θ =((1+r)^(1-θ))/(1+ρ),; s =(w)/(1+(1+ρ)^(1/θ)(1+r)^((θ-1)/θ)).\n With positive income the solution is strictly between zero and w, so both consumption quantities are positive.\n\nExplain the interest response and the source restriction. The derivative of saving has the sign of 1-θ. Saving rises with interest for θ<1 because intertemporal substitution dominates; it falls for θ>1 because the income effect dominates. In the logarithmic limit θ=1, saving is w/(2+ρ) and does not depend on interest. The source first imposes 0<θ<1 but later requests the θ>1 comparison. The latter is an explicitly stated extension of the formula beyond the printed restriction.",
     "hint": "Substitute the two consumption budgets and derive the Euler condition.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "status": "needs_review",
-    "notes": "The printed restriction θ<1 conflicts with a later request to consider θ>1; the extension is stated explicitly. “Elasticity” means magnitude, since signed elasticity is −θ."
+    "notes": "The printed restriction θ<1 conflicts with a later request to consider θ>1; the extension is stated explicitly. “Elasticity” means magnitude, since signed elasticity is −θ.",
+    "solutionSteps": [
+      {
+        "title": "Interpret the preference parameter and the budgets",
+        "body": "For one-period CRRA utility, $u'(C)=C^{-\\theta}$, so $$\\frac{d\\log u'(C)}{d\\log C}=-\\theta.$$ Thus $\\theta$ is the magnitude of the elasticity of marginal utility, not its signed value. Saving $s$ gives budgets $C_1=w-s$ and $C_2=(1+r)s$, with $0\\le s\\le w$, $w>0$ and $r>-1$."
+      },
+      {
+        "title": "Derive the Euler condition",
+        "body": "Substitute the two budgets into lifetime utility and differentiate with respect to saving. At an interior optimum, $$\\begin{aligned}(w-s)^{-\\theta}&=\\frac{1+r}{1+\\rho}\\big[(1+r)s\\big]^{-\\theta}\\\\&=\\frac{(1+r)^{1-\\theta}}{1+\\rho}s^{-\\theta}.\\end{aligned}$$ This equates the marginal loss from giving up current consumption to the discounted marginal gain from the additional future consumption."
+      },
+      {
+        "title": "Solve explicitly for saving",
+        "body": "Rearranging the Euler condition yields $$\\begin{aligned}\\left(\\frac{s}{w-s}\\right)^{\\theta}&=\\frac{(1+r)^{1-\\theta}}{1+\\rho},\\\\s&=\\frac{w}{1+(1+\\rho)^{1/\\theta}(1+r)^{(\\theta-1)/\\theta}}.\\end{aligned}$$ With positive income the solution is strictly between zero and $w$, so both consumption quantities are positive."
+      },
+      {
+        "title": "Explain the interest response and the source restriction",
+        "body": "The derivative of saving has the sign of $1-\\theta$. Saving rises with interest for $\\theta<1$ because intertemporal substitution dominates; it falls for $\\theta>1$ because the income effect dominates. In the logarithmic limit $\\theta=1$, saving is $w/(2+\\rho)$ and does not depend on interest. The source first imposes $0<\\theta<1$ but later requests the $\\theta>1$ comparison. The latter is an explicitly stated extension of the formula beyond the printed restriction."
+      }
+    ]
   },
   {
     "id": "2007-PEB-Q9",
@@ -145,11 +285,25 @@
     "originalPaperCode": "ME II",
     "stem": "In a neoclassical one-sector growth model, Y=√(KL), saving/investment is 30% of income, depreciation is 7% and labour growth is 3%. Find steady-state income per capita.",
     "answer": "Income per capita y*=3 (capital per worker k*=9).",
-    "solution": "Per worker y=√k. Steady investment must cover depreciation and dilution: .3√k=(.07+.03)k. For the positive steady state √k=3, so k=9 and y=3.",
+    "solution": "Express technology per worker. Divide Y=√(KL) by labour L and write k=K/L. Output per worker is y=√(k). With no technological growth, a positive steady state keeps k constant.\n\nEquate saving to break-even investment. The capital stock per worker loses resources through depreciation and through the need to equip additional workers. Hence \ns√(k) =(δ+n)k,; 0.3√(k) =(0.07+0.03)k.\n For k>0, divide by √(k) to obtain √(k)=3.\n\nRead off the requested income level. Thus k^*=9 and y^*=√(9)=3. The question asks for income per capita, so the answer is 3 rather than the capital-labour ratio 9. This is the positive steady state; the mathematical zero-capital state is not the economically relevant interior equilibrium.",
     "hint": "Set saving per worker equal to break-even investment.",
     "topic": "Macroeconomics",
     "sourcePage": 14,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Express technology per worker",
+        "body": "Divide $Y=\\sqrt{KL}$ by labour $L$ and write $k=K/L$. Output per worker is $y=\\sqrt{k}$. With no technological growth, a positive steady state keeps $k$ constant."
+      },
+      {
+        "title": "Equate saving to break-even investment",
+        "body": "The capital stock per worker loses resources through depreciation and through the need to equip additional workers. Hence $$\\begin{aligned}s\\sqrt{k}&=(\\delta+n)k,\\\\0.3\\sqrt{k}&=(0.07+0.03)k.\\end{aligned}$$ For $k>0$, divide by $\\sqrt{k}$ to obtain $\\sqrt{k}=3$."
+      },
+      {
+        "title": "Read off the requested income level",
+        "body": "Thus $k^*=9$ and $y^*=\\sqrt{9}=3$. The question asks for income per capita, so the answer is 3 rather than the capital-labour ratio 9. This is the positive steady state; the mathematical zero-capital state is not the economically relevant interior equilibrium."
+      }
+    ]
   }
 ]

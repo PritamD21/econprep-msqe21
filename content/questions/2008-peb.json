@@ -9,12 +9,30 @@
     "originalPaperCode": "ME II",
     "stem": "Two people have utilities Uᴬ=Xᴬ and Uᴮ=(Xᴮ)²+(Yᴮ)². A owns 10 units of Y and B owns 10 units of X. (a) Describe their indifference curves. (b) Locate the endowment in an Edgeworth box. (c) Find the Pareto-optimal allocations.",
     "answer": "A has vertical indifference curves; B has quarter-circles. The endowment is A:(0,10), B:(10,0). The Pareto set is Yᴬ=0, 0≤Xᴬ≤10; the endowment is not efficient.",
-    "solution": "(a) A values only X, so Uᴬ=k is the vertical line Xᴬ=k. B’s curves are (Xᴮ)²+(Yᴮ)²=k, quarter-circles in B’s nonnegative quadrant, with higher utility farther from B’s origin. (b) Use a 10×10 box with A’s origin at the lower-left; the endowment is (Xᴬ,Yᴬ)=(0,10), the upper-left corner. (c) If A holds any Y while B has positive Y, transferring A’s Y to B improves B without hurting A. Thus any efficient allocation except a possible zero-Y-for-B boundary must have Yᴬ=0. Along Yᴬ=0, B has Yᴮ=10; giving A more X would reduce B’s X and strictly lower B’s utility unless B already has X=0, so no Pareto improvement is available. If B initially has Yᴮ=0 and Xᴮ=10, then Uᴮ=100. Maintaining that utility while not reducing A’s X=0 requires Xᴮ²+Yᴮ²≥100 within the box; either keep the endowment, or give B all Y and no X, which makes A strictly better off at Xᴬ=10. Therefore the endowment is actually Pareto dominated by A:(10,0), B:(0,10). The only Pareto-optimal set is Yᴬ=0, 0≤Xᴬ≤10.",
+    "solution": "Use A's holdings $(x,y)$ as coordinates. Feasibility then determines B's holdings as $(10-x,10-y)$. Pareto comparisons must keep A's $x$ from falling; A is indifferent to every change in $y$.\n\n$$\\begin{aligned}\nU_A&=x, &U_B&=(10-x)^2+(10-y)^2,\\\\\n\\text{feasible set: }&0\\le x\\le10, &0&\\le y\\le10,\\\\\ny>0&\\Longrightarrow U_B(x,0)>U_B(x,y),\\\\\ny=0&\\Longrightarrow U_B=(10-x)^2+100.\n\\end{aligned}$$\n\nTransferring all of A's $Y$ to B strictly benefits B whenever $y>0$, including the boundary where B initially holds no $Y$. On the bottom edge, an increase in A's $X$ reduces B's utility, so neither can gain without hurting the other. This establishes both necessity and sufficiency of the entire bottom edge.\n\n(a) A values only X, so Uᴬ=k is the vertical line Xᴬ=k. B’s curves are (Xᴮ)²+(Yᴮ)²=k, quarter-circles in B’s nonnegative quadrant, with higher utility farther from B’s origin. (b) Use a 10×10 box with A’s origin at the lower-left; the endowment is (Xᴬ,Yᴬ)=(0,10), the upper-left corner.\n\n(c) If A holds any Y while B has positive Y, transferring A’s Y to B improves B without hurting A. Thus any efficient allocation except a possible zero-Y-for-B boundary must have Yᴬ=0. Along Yᴬ=0, B has Yᴮ=10; giving A more X would reduce B’s X and strictly lower B’s utility unless B already has X=0, so no Pareto improvement is available.\n\nIf B initially has Yᴮ=0 and Xᴮ=10, then Uᴮ=100. Maintaining that utility while not reducing A’s X=0 requires Xᴮ²+Yᴮ²≥100 within the box; either keep the endowment, or give B all Y and no X, which makes A strictly better off at Xᴬ=10. Therefore the endowment is actually Pareto dominated by A:(10,0), B:(0,10).\n\nThe only Pareto-optimal set is Yᴬ=0, 0≤Xᴬ≤10.\n\nA has vertical indifference curves; B has quarter-circles. The endowment is A:(0,10), B:(10,0). The Pareto set is Yᴬ=0, 0≤Xᴬ≤10; the endowment is not efficient.",
     "hint": "A does not value Y, so consider transferring Y to B, including the boundary case where B initially has no Y.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": "The solution explicitly checks the boundary because B’s utility is convex. Efficient allocations are the bottom edge in A coordinates; the initial endowment is not efficient."
+    "notes": "The solution explicitly checks the boundary because B’s utility is convex. Efficient allocations are the bottom edge in A coordinates; the initial endowment is not efficient.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use A's holdings $(x,y)$ as coordinates. Feasibility then determines B's holdings as $(10-x,10-y)$. Pareto comparisons must keep A's $x$ from falling; A is indifferent to every change in $y$."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nU_A&=x, &U_B&=(10-x)^2+(10-y)^2,\\\\\n\\text{feasible set: }&0\\le x\\le10, &0&\\le y\\le10,\\\\\ny>0&\\Longrightarrow U_B(x,0)>U_B(x,y),\\\\\ny=0&\\Longrightarrow U_B=(10-x)^2+100.\n\\end{aligned}$$\n\nTransferring all of A's $Y$ to B strictly benefits B whenever $y>0$, including the boundary where B initially holds no $Y$. On the bottom edge, an increase in A's $X$ reduces B's utility, so neither can gain without hurting the other. This establishes both necessity and sufficiency of the entire bottom edge."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) A values only X, so Uᴬ=k is the vertical line Xᴬ=k. B’s curves are (Xᴮ)²+(Yᴮ)²=k, quarter-circles in B’s nonnegative quadrant, with higher utility farther from B’s origin. (b) Use a 10×10 box with A’s origin at the lower-left; the endowment is (Xᴬ,Yᴬ)=(0,10), the upper-left corner.\n\n(c) If A holds any Y while B has positive Y, transferring A’s Y to B improves B without hurting A. Thus any efficient allocation except a possible zero-Y-for-B boundary must have Yᴬ=0. Along Yᴬ=0, B has Yᴮ=10; giving A more X would reduce B’s X and strictly lower B’s utility unless B already has X=0, so no Pareto improvement is available.\n\nIf B initially has Yᴮ=0 and Xᴮ=10, then Uᴮ=100. Maintaining that utility while not reducing A’s X=0 requires Xᴮ²+Yᴮ²≥100 within the box; either keep the endowment, or give B all Y and no X, which makes A strictly better off at Xᴬ=10. Therefore the endowment is actually Pareto dominated by A:(10,0), B:(0,10).\n\nThe only Pareto-optimal set is Yᴬ=0, 0≤Xᴬ≤10."
+      },
+      {
+        "title": "Conclusion",
+        "body": "A has vertical indifference curves; B has quarter-circles. The endowment is A:(0,10), B:(10,0). The Pareto set is Yᴬ=0, 0≤Xᴬ≤10; the endowment is not efficient."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q2",
@@ -26,12 +44,30 @@
     "originalPaperCode": "ME II",
     "stem": "Output is Y=UN^α, 0<α<1, and labour demand equates marginal product to W/P. Define u=log α+(1/α)log U, p=log P, w=log W, y=log Y. (a) Derive aggregate supply. (b) Use w=θp, 0≤θ≤1, and y=m−p to solve y in terms of m,u. (c) Discuss monetary effects under partial/full indexation. (d) How does indexation affect supply-shock sensitivity?",
     "answer": "Aggregate supply: y=[α/(1−α)](p−w+u). Equilibrium: y=α[(1−θ)m+u]/(1−αθ). Money affects output for θ<1, not θ=1; real-shock sensitivity increases with θ.",
-    "solution": "Labour demand gives αUN^(α−1)=W/P, so log N=[log α+log U+p−w]/(1−α). Substitution in log Y=log U+α log N yields y=α(p−w+u)/(1−α). With w=θp and demand p=m−y, solve y=α[(1−θ)(m−y)+u]/(1−α) to obtain y=α[(1−θ)m+u]/(1−αθ). The coefficient on money is α(1−θ)/(1−αθ), positive under partial indexation and zero under full indexation. The coefficient on the real shock is α/(1−αθ), whose derivative with respect to θ is α²/(1−αθ)²>0. Stronger indexation suppresses the real-wage adjustment through prices, increasing output sensitivity to a real shock.",
+    "solution": "Firms hire labour until its marginal product equals the actual real wage. Take logarithms only after writing that first-order condition; the definition of $u$ collects the technology constants.\n\n$$\\begin{aligned}\n\\alpha U N^{\\alpha-1}&=W/P,\\\\\n(1-\\alpha)\\log N&=\\log\\alpha+\\log U+p-w,\\\\\ny&=\\frac{\\alpha}{1-\\alpha}(p-w+u),\\\\\n(1-\\alpha\\theta)y&=\\alpha(1-\\theta)m+\\alpha u.\n\\end{aligned}$$\n\nSubstituting the indexation rule makes the real wage depend on the unindexed fraction of the price level. Then use aggregate demand $p=m-y$ and collect every term containing $y$ on the left. The resulting coefficients reveal separately the monetary-demand channel and the real-supply-shock channel.\n\nLabour demand gives αUN^(α−1)=W/P, so log N=[log α+log U+p−w]/(1−α). Substitution in log Y=log U+α log N yields y=α(p−w+u)/(1−α). With w=θp and demand p=m−y, solve y=α[(1−θ)(m−y)+u]/(1−α) to obtain y=α[(1−θ)m+u]/(1−αθ).\n\nThe coefficient on money is α(1−θ)/(1−αθ), positive under partial indexation and zero under full indexation. The coefficient on the real shock is α/(1−αθ), whose derivative with respect to θ is α²/(1−αθ)²>0. Stronger indexation suppresses the real-wage adjustment through prices, increasing output sensitivity to a real shock.\n\nAggregate supply: y=[α/(1−α)](p−w+u). Equilibrium: y=α[(1−θ)m+u]/(1−αθ). Money affects output for θ<1, not θ=1; real-shock sensitivity increases with θ.",
     "hint": "Take logarithms of the marginal-product condition and eliminate p using aggregate demand.",
     "topic": "Macroeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Firms hire labour until its marginal product equals the actual real wage. Take logarithms only after writing that first-order condition; the definition of $u$ collects the technology constants."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\alpha U N^{\\alpha-1}&=W/P,\\\\\n(1-\\alpha)\\log N&=\\log\\alpha+\\log U+p-w,\\\\\ny&=\\frac{\\alpha}{1-\\alpha}(p-w+u),\\\\\n(1-\\alpha\\theta)y&=\\alpha(1-\\theta)m+\\alpha u.\n\\end{aligned}$$\n\nSubstituting the indexation rule makes the real wage depend on the unindexed fraction of the price level. Then use aggregate demand $p=m-y$ and collect every term containing $y$ on the left. The resulting coefficients reveal separately the monetary-demand channel and the real-supply-shock channel."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Labour demand gives αUN^(α−1)=W/P, so log N=[log α+log U+p−w]/(1−α). Substitution in log Y=log U+α log N yields y=α(p−w+u)/(1−α). With w=θp and demand p=m−y, solve y=α[(1−θ)(m−y)+u]/(1−α) to obtain y=α[(1−θ)m+u]/(1−αθ).\n\nThe coefficient on money is α(1−θ)/(1−αθ), positive under partial indexation and zero under full indexation. The coefficient on the real shock is α/(1−αθ), whose derivative with respect to θ is α²/(1−αθ)²>0. Stronger indexation suppresses the real-wage adjustment through prices, increasing output sensitivity to a real shock."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Aggregate supply: y=[α/(1−α)](p−w+u). Equilibrium: y=α[(1−θ)m+u]/(1−αθ). Money affects output for θ<1, not θ=1; real-shock sensitivity increases with θ."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q3",
@@ -43,12 +79,30 @@
     "originalPaperCode": "ME II",
     "stem": "Two firms have fixed inventories 40 and 80. Demand is p=a−q₁−q₂, where a is observed as either 100 or 200. They simultaneously decide how much output to destroy, paying 10 per unit destroyed, and sell the remainder. The source asks to show destruction is independent of the other firm’s choice, that firm 2 always destroys some output, and that firm 1 destroys output exactly when a=100.",
     "answer": "Those requested claims do not follow from the printed model. At a=100 the Nash quantities are q₁=q₂=110/3, with destruction 10/3 and 130/3. At a=200 both sell their full inventories and destroy nothing.",
-    "solution": "Let Kᵢ be inventory and qᵢ∈[0,Kᵢ] sales. Profit is (a−qᵢ−qⱼ)qᵢ−10(Kᵢ−qᵢ). Its marginal derivative is a+10−2qᵢ−qⱼ, so the best response is qᵢ=min{Kᵢ,max{0,(a+10−qⱼ)/2}} and explicitly depends on the other firm’s sales. For a=100 the unconstrained Cournot solution is q₁=q₂=110/3, below both capacities; destruction is 40−110/3=10/3 and 80−110/3=130/3. For a=200, at (40,80) both marginal derivatives are positive at their caps, so neither wants to reduce sales. Thus firm 2 does not always destroy. A different payoff or cost assumption is needed to prove the printed assertions.",
+    "solution": "Choose sales rather than destruction as the decision variable. With inventory $K_i$, destruction is $K_i-q_i$; its cost belongs in profit even though the inventory itself is already available.\n\n$$\\begin{aligned}\n\\pi_i&=(a-q_i-q_j)q_i-10(K_i-q_i),\\\\\n\\frac{\\partial\\pi_i}{\\partial q_i}&=a+10-2q_i-q_j,\\\\\nBR_i(q_j)&=\\min\\{K_i,\\max\\{0,(a+10-q_j)/2\\}\\},\\\\\na=100:&\\quad q_1=q_2=110/3,\\\\\na=200:&\\quad(q_1,q_2)=(40,80).\n\\end{aligned}$$\n\nThe own-sales second derivative is $-2$, so the clipped first-order solution is the global best response. Its explicit dependence on $q_j$ is enough to disprove the first requested assertion. Evaluate the best responses at the two demand states rather than assuming the source's intended destruction pattern.\n\nLet Kᵢ be inventory and qᵢ∈[0,Kᵢ] sales. Profit is (a−qᵢ−qⱼ)qᵢ−10(Kᵢ−qᵢ). Its marginal derivative is a+10−2qᵢ−qⱼ, so the best response is qᵢ=min{Kᵢ,max{0,(a+10−qⱼ)/2}} and explicitly depends on the other firm’s sales.\n\nFor a=100 the unconstrained Cournot solution is q₁=q₂=110/3, below both capacities; destruction is 40−110/3=10/3 and 80−110/3=130/3. For a=200, at (40,80) both marginal derivatives are positive at their caps, so neither wants to reduce sales. Thus firm 2 does not always destroy.\n\nA different payoff or cost assumption is needed to prove the printed assertions.\n\nThose requested claims do not follow from the printed model. At a=100 the Nash quantities are q₁=q₂=110/3, with destruction 10/3 and 130/3. At a=200 both sell their full inventories and destroy nothing.",
     "hint": "Write profit in terms of sales and deduct destruction cost before computing best responses.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "needs_review",
-    "notes": "Visual inspection confirms demand p=a−q, capacities 40/80, a=100 or 200, and positive destruction cost 10. These contradict the requested assertions."
+    "notes": "Visual inspection confirms demand p=a−q, capacities 40/80, a=100 or 200, and positive destruction cost 10. These contradict the requested assertions.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Choose sales rather than destruction as the decision variable. With inventory $K_i$, destruction is $K_i-q_i$; its cost belongs in profit even though the inventory itself is already available."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi_i&=(a-q_i-q_j)q_i-10(K_i-q_i),\\\\\n\\frac{\\partial\\pi_i}{\\partial q_i}&=a+10-2q_i-q_j,\\\\\nBR_i(q_j)&=\\min\\{K_i,\\max\\{0,(a+10-q_j)/2\\}\\},\\\\\na=100:&\\quad q_1=q_2=110/3,\\\\\na=200:&\\quad(q_1,q_2)=(40,80).\n\\end{aligned}$$\n\nThe own-sales second derivative is $-2$, so the clipped first-order solution is the global best response. Its explicit dependence on $q_j$ is enough to disprove the first requested assertion. Evaluate the best responses at the two demand states rather than assuming the source's intended destruction pattern."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let Kᵢ be inventory and qᵢ∈[0,Kᵢ] sales. Profit is (a−qᵢ−qⱼ)qᵢ−10(Kᵢ−qᵢ). Its marginal derivative is a+10−2qᵢ−qⱼ, so the best response is qᵢ=min{Kᵢ,max{0,(a+10−qⱼ)/2}} and explicitly depends on the other firm’s sales.\n\nFor a=100 the unconstrained Cournot solution is q₁=q₂=110/3, below both capacities; destruction is 40−110/3=10/3 and 80−110/3=130/3. For a=200, at (40,80) both marginal derivatives are positive at their caps, so neither wants to reduce sales. Thus firm 2 does not always destroy.\n\nA different payoff or cost assumption is needed to prove the printed assertions."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Those requested claims do not follow from the printed model. At a=100 the Nash quantities are q₁=q₂=110/3, with destruction 10/3 and 130/3. At a=200 both sell their full inventories and destroy nothing."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q4",
@@ -60,12 +114,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Two competitive goods X,Y each require one unit of labour per unit output. Labour is mobile; a representative consumer has U=√(XY), income 100, and labour supply is 10. Find the wage. (b) An economy has Y=min{K,L}, fixed capital endowment 100, and labour supply Lˢ=50w. Find competitive wage and capital rent.",
     "answer": "(a) w=10. (b) With output price normalized to 1 and unused capital allowed, w=1, capital rent=0, L=Y=50.",
-    "solution": "(a) Zero profit implies pₓ=pᵧ=w. Equal Cobb–Douglas expenditure shares give X=Y=50/w. Total labour demand is X+Y=100/w; clearing against 10 yields w=10 and X=Y=5. (b) A unit of output needs one unit of each input. With nonnegative capital rent and unit output price, zero profit requires w+ρ=1 for active production. Labour supply is at most 50 when w≤1, so the capital stock 100 is abundant and some is unused. Complementary slackness implies ρ=0, hence w=1 and L=50. More generally, for output price p, w=min{p,2}, ρ=max{p−2,0}, and L=min{50p,100}. Requiring all 100 capital units to be used at price 1 would incorrectly imply a negative rent.",
+    "solution": "For part (a), one unit of labour produces one unit of either good, so zero profit ties both goods prices to the common wage. For part (b), distinguish capital available from capital actually used; excess fixed capital can have zero rent.\n\n$$\\begin{aligned}\np_X=p_Y&=w, &X=Y&=50/w,\\\\\nX+Y=10&\\Longrightarrow w=10,\\\\\n\\text{part (b): }w+\\rho&=1, &L&=50w,\\\\\nK^{\\mathrm{available}}=100>50&\\Longrightarrow\\rho=0,\\quad w=1.\n\\end{aligned}$$\n\nEqual expenditure shares clear both goods markets in the first economy. In the Leontief economy, a positive capital rent would require all capital to be scarce and employed. But with unit output price the wage cannot exceed one, so labour supply cannot reach the 100 units needed to use all capital. Complementary slackness therefore fixes rent at zero.\n\n(a) Zero profit implies pₓ=pᵧ=w. Equal Cobb–Douglas expenditure shares give X=Y=50/w. Total labour demand is X+Y=100/w; clearing against 10 yields w=10 and X=Y=5.\n\n(b) A unit of output needs one unit of each input. With nonnegative capital rent and unit output price, zero profit requires w+ρ=1 for active production. Labour supply is at most 50 when w≤1, so the capital stock 100 is abundant and some is unused.\n\nComplementary slackness implies ρ=0, hence w=1 and L=50. More generally, for output price p, w=min{p,2}, ρ=max{p−2,0}, and L=min{50p,100}. Requiring all 100 capital units to be used at price 1 would incorrectly imply a negative rent.\n\n(a) w=10. (b) With output price normalized to 1 and unused capital allowed, w=1, capital rent=0, L=Y=50.",
     "hint": "Use zero-profit unit costs, and do not force the abundant fixed capital to be fully employed.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "status": "verified",
-    "notes": "Part (b) does not state the final-good price; the answer uses that good as numeraire."
+    "notes": "Part (b) does not state the final-good price; the answer uses that good as numeraire.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For part (a), one unit of labour produces one unit of either good, so zero profit ties both goods prices to the common wage. For part (b), distinguish capital available from capital actually used; excess fixed capital can have zero rent."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\np_X=p_Y&=w, &X=Y&=50/w,\\\\\nX+Y=10&\\Longrightarrow w=10,\\\\\n\\text{part (b): }w+\\rho&=1, &L&=50w,\\\\\nK^{\\mathrm{available}}=100>50&\\Longrightarrow\\rho=0,\\quad w=1.\n\\end{aligned}$$\n\nEqual expenditure shares clear both goods markets in the first economy. In the Leontief economy, a positive capital rent would require all capital to be scarce and employed. But with unit output price the wage cannot exceed one, so labour supply cannot reach the 100 units needed to use all capital. Complementary slackness therefore fixes rent at zero."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Zero profit implies pₓ=pᵧ=w. Equal Cobb–Douglas expenditure shares give X=Y=50/w. Total labour demand is X+Y=100/w; clearing against 10 yields w=10 and X=Y=5.\n\n(b) A unit of output needs one unit of each input. With nonnegative capital rent and unit output price, zero profit requires w+ρ=1 for active production. Labour supply is at most 50 when w≤1, so the capital stock 100 is abundant and some is unused.\n\nComplementary slackness implies ρ=0, hence w=1 and L=50. More generally, for output price p, w=min{p,2}, ρ=max{p−2,0}, and L=min{50p,100}. Requiring all 100 capital units to be used at price 1 would incorrectly imply a negative rent."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) w=10. (b) With output price normalized to 1 and unused capital allowed, w=1, capital rent=0, L=Y=50."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q5",
@@ -77,12 +149,30 @@
     "originalPaperCode": "ME II",
     "stem": "An economy has labour supply W/Pᵉ=N^σ, σ>0, production Y=N^α, 0<α<1, and labour demand W/P equal to marginal product. Derive labour demand, express log Y=log Y*+λ(log P−log Pᵉ), and explain the model.",
     "answer": "Nᵈ=(αP/W)^(1/(1−α)), λ=α/(1+σ−α), and Y*=α^[α/(1+σ−α)]. This is a price-misperception aggregate-supply model.",
-    "solution": "Profit maximization gives W/P=αN^(α−1), hence Nᵈ=(αP/W)^(1/(1−α)). At labour-market clearing, PᵉN^σ=PαN^(α−1), so N^(1+σ−α)=αP/Pᵉ. Taking logs and multiplying by α gives log Y=[α/(1+σ−α)]log α+[α/(1+σ−α)](log P−log Pᵉ). Thus λ=α/(1+σ−α) and the expected-price-equals-actual-price output is Y*=α^[α/(1+σ−α)]. The model generates a short-run output response to price surprises because labour supply uses expected real wages while firms respond to actual real wages; correctly anticipated proportional price changes leave output at Y*.",
+    "solution": "Workers supply labour using expected purchasing power, whereas firms demand labour using the actual output price. Equate the two nominal-wage expressions before substituting into production.\n\n$$\\begin{aligned}\nW&=P^eN^\\sigma=P\\alpha N^{\\alpha-1},\\\\\nN^{1+\\sigma-\\alpha}&=\\alpha P/P^e,\\\\\n\\log Y&=\\frac{\\alpha\\log\\alpha}{1+\\sigma-\\alpha}\n+\\frac{\\alpha}{1+\\sigma-\\alpha}(\\log P-\\log P^e).\n\\end{aligned}$$\n\nThe coefficient on the price surprise is positive because $1+\\sigma-\\alpha>0$. An unexpectedly high actual price lowers the actual wage relative to workers' expectations and supports more employment. If prices are correctly anticipated, the surprise term disappears and output equals its natural benchmark.\n\nProfit maximization gives W/P=αN^(α−1), hence Nᵈ=(αP/W)^(1/(1−α)). At labour-market clearing, PᵉN^σ=PαN^(α−1), so N^(1+σ−α)=αP/Pᵉ. Taking logs and multiplying by α gives log Y=[α/(1+σ−α)]log α+[α/(1+σ−α)](log P−log Pᵉ).\n\nThus λ=α/(1+σ−α) and the expected-price-equals-actual-price output is Y*=α^[α/(1+σ−α)]. The model generates a short-run output response to price surprises because labour supply uses expected real wages while firms respond to actual real wages; correctly anticipated proportional price changes leave output at Y*.\n\nNᵈ=(αP/W)^(1/(1−α)), λ=α/(1+σ−α), and Y*=α^[α/(1+σ−α)]. This is a price-misperception aggregate-supply model.",
     "hint": "Eliminate W between labour supply and the marginal-product condition.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
     "status": "verified",
-    "notes": "Parts (a)–(c) continue on PDF page 11."
+    "notes": "Parts (a)–(c) continue on PDF page 11.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Workers supply labour using expected purchasing power, whereas firms demand labour using the actual output price. Equate the two nominal-wage expressions before substituting into production."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nW&=P^eN^\\sigma=P\\alpha N^{\\alpha-1},\\\\\nN^{1+\\sigma-\\alpha}&=\\alpha P/P^e,\\\\\n\\log Y&=\\frac{\\alpha\\log\\alpha}{1+\\sigma-\\alpha}\n+\\frac{\\alpha}{1+\\sigma-\\alpha}(\\log P-\\log P^e).\n\\end{aligned}$$\n\nThe coefficient on the price surprise is positive because $1+\\sigma-\\alpha>0$. An unexpectedly high actual price lowers the actual wage relative to workers' expectations and supports more employment. If prices are correctly anticipated, the surprise term disappears and output equals its natural benchmark."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Profit maximization gives W/P=αN^(α−1), hence Nᵈ=(αP/W)^(1/(1−α)). At labour-market clearing, PᵉN^σ=PαN^(α−1), so N^(1+σ−α)=αP/Pᵉ. Taking logs and multiplying by α gives log Y=[α/(1+σ−α)]log α+[α/(1+σ−α)](log P−log Pᵉ).\n\nThus λ=α/(1+σ−α) and the expected-price-equals-actual-price output is Y*=α^[α/(1+σ−α)]. The model generates a short-run output response to price surprises because labour supply uses expected real wages while firms respond to actual real wages; correctly anticipated proportional price changes leave output at Y*."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Nᵈ=(αP/W)^(1/(1−α)), λ=α/(1+σ−α), and Y*=α^[α/(1+σ−α)]. This is a price-misperception aggregate-supply model."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q6",
@@ -94,12 +184,30 @@
     "originalPaperCode": "ME II",
     "stem": "An IS–LM model has C=200+0.5Yᴰ, I=150−1000r, T=200, G=250, money demand 2Y−4000i and real money supply 1600. The printed interest relation is i=r−Πᵉ, despite calling i nominal, r real, and Πᵉ expected inflation. Find equilibrium (a) for Πᵉ=0, (b) after a temporary 2% money increase, and (c) after a permanent 2% increase also raising expected inflation by 2%.",
     "answer": "(a) Y=900, r=i=0.05. (b) Y=908, r=i=0.046. (c) Literal printed sign: Y=888, r=0.056, i=0.036. Standard Fisher sign: Y=928, r=0.036, i=0.056.",
-    "solution": "Goods clearing gives Y=1000−2000r. Initially LM is Y=800+2000i; with Πᵉ=0, r=i, giving Y=900 and both rates 0.05. A 2% nominal money rise at fixed current P makes real supply 1632, so LM becomes Y=816+2000i. If expected inflation stays zero, Y=908 and rates are 0.046. For part (c), applying the source literally, i=r−0.02, so LM is Y=776+2000r; the solution is r=0.056, i=0.036, Y=888. However, the standard Fisher approximation is i=r+Πᵉ, not the printed minus sign. With that corrected relation, LM is Y=856+2000r and the solution is r=0.036, i=0.056, Y=928. The equation must be corrected or expressly adopted before choosing between these answers.",
+    "solution": "Derive IS from the goods-market identity and LM from real money-market clearing. Keep nominal interest $i$ distinct from real interest $r$; only the relation between them changes when expected inflation changes.\n\n$$\\begin{aligned}\nY&=200+0.5(Y-200)+150-1000r+250,\\\\\nY&=1000-2000r,\\\\\nY&=\\frac{M/P}{2}+2000i,\\\\\nM/P=1600:&\\quad Y=900,\\quad i=r=0.05,\\\\\nM/P=1632,\\ i=r:&\\quad Y=908,\\quad r=0.046.\n\\end{aligned}$$\n\nThe initial equilibrium and temporary-money case use zero expected inflation, so both interest concepts coincide. In the permanent-money case, write a separate LM equation for each possible Fisher sign. This prevents a typographical convention from being mistaken for an economic conclusion.\n\nGoods clearing gives Y=1000−2000r. Initially LM is Y=800+2000i; with Πᵉ=0, r=i, giving Y=900 and both rates 0.05. A 2% nominal money rise at fixed current P makes real supply 1632, so LM becomes Y=816+2000i.\n\nIf expected inflation stays zero, Y=908 and rates are 0.046. For part (c), applying the source literally, i=r−0.02, so LM is Y=776+2000r; the solution is r=0.056, i=0.036, Y=888. However, the standard Fisher approximation is i=r+Πᵉ, not the printed minus sign.\n\nWith that corrected relation, LM is Y=856+2000r and the solution is r=0.036, i=0.056, Y=928. The equation must be corrected or expressly adopted before choosing between these answers.\n\n(a) Y=900, r=i=0.05. (b) Y=908, r=i=0.046. (c) Literal printed sign: Y=888, r=0.056, i=0.036. Standard Fisher sign: Y=928, r=0.036, i=0.056.",
     "hint": "Derive IS and LM first, then check the sign in the nominal-real interest relationship.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "status": "needs_review",
-    "notes": "Visual source inspection confirms i=r−Πᵉ. Both the literal mathematical solution and standard-Fisher correction are disclosed."
+    "notes": "Visual source inspection confirms i=r−Πᵉ. Both the literal mathematical solution and standard-Fisher correction are disclosed.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Derive IS from the goods-market identity and LM from real money-market clearing. Keep nominal interest $i$ distinct from real interest $r$; only the relation between them changes when expected inflation changes."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nY&=200+0.5(Y-200)+150-1000r+250,\\\\\nY&=1000-2000r,\\\\\nY&=\\frac{M/P}{2}+2000i,\\\\\nM/P=1600:&\\quad Y=900,\\quad i=r=0.05,\\\\\nM/P=1632,\\ i=r:&\\quad Y=908,\\quad r=0.046.\n\\end{aligned}$$\n\nThe initial equilibrium and temporary-money case use zero expected inflation, so both interest concepts coincide. In the permanent-money case, write a separate LM equation for each possible Fisher sign. This prevents a typographical convention from being mistaken for an economic conclusion."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Goods clearing gives Y=1000−2000r. Initially LM is Y=800+2000i; with Πᵉ=0, r=i, giving Y=900 and both rates 0.05. A 2% nominal money rise at fixed current P makes real supply 1632, so LM becomes Y=816+2000i.\n\nIf expected inflation stays zero, Y=908 and rates are 0.046. For part (c), applying the source literally, i=r−0.02, so LM is Y=776+2000r; the solution is r=0.056, i=0.036, Y=888. However, the standard Fisher approximation is i=r+Πᵉ, not the printed minus sign.\n\nWith that corrected relation, LM is Y=856+2000r and the solution is r=0.036, i=0.056, Y=928. The equation must be corrected or expressly adopted before choosing between these answers."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Y=900, r=i=0.05. (b) Y=908, r=i=0.046. (c) Literal printed sign: Y=888, r=0.056, i=0.036. Standard Fisher sign: Y=928, r=0.036, i=0.056."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q7",
@@ -111,12 +219,30 @@
     "originalPaperCode": "ME II",
     "stem": "A potential salesman is efficient with probability 0.25 and inefficient with probability 0.75. Sale probabilities are 0.8 and 0.4. The firm earns 1000 from a sale, zero otherwise. (a) Find expected profit if wage is 100 regardless of success. (b) Replace the wage by commission t% of 1000 on success only. Each salesman knows his type and can earn 80 elsewhere. Choose t to maximize firm profit.",
     "answer": "(a) Expected profit is 400. (b) With one randomly drawn candidate and no replacement after refusal, t=20%; with costless repeated recruitment until an accepting candidate is found, t=10%.",
-    "solution": "(a) Overall sale probability is 0.25·0.8+0.75·0.4=0.5, so expected net profit is 1000·0.5−100=400. (b) Let τ=t/100. Efficient types accept if 800τ≥80, requiring τ≥0.10; inefficient types accept if 400τ≥80, requiring τ≥0.20. With a single prior-drawn candidate, offering τ=0.10 attracts the efficient type only and gives ex ante profit 0.25·0.8·1000·0.9=180. Offering τ=0.20 attracts either type and gives 0.5·1000·0.8=400, so 20% is best under that protocol. If instead the firm can freely keep searching until someone accepts, a 10% offer selects only efficient workers; conditional profit per eventual hire is 0.8·1000·0.9=720 and is better than attracting both types. The recruitment/replacement protocol is not specified, so the two expected-profit concepts must not be conflated.",
+    "solution": "First average sale probabilities over the two types. Under commission, work with the fraction $\\tau=t/100$ and impose each type's participation constraint separately; the employer's recruitment protocol determines which expected profit is relevant.\n\n$$\\begin{aligned}\nP(\\mathrm{sale})&=0.25(0.8)+0.75(0.4)=0.5,\\\\\n\\pi_{\\mathrm{fixed}}&=1000(0.5)-100=400,\\\\\n800\\tau\\ge80&\\Longleftrightarrow\\tau\\ge0.1,\\\\\n400\\tau\\ge80&\\Longleftrightarrow\\tau\\ge0.2,\\\\\n\\pi(0.1)&=0.25(0.8)(900)=180,\\\\\n\\pi(0.2)&=0.5(800)=400.\n\\end{aligned}$$\n\nBetween the two participation thresholds only efficient applicants accept; above the second both types accept, while higher commission only reduces profit within each region. Thus it is enough to compare the lowest feasible commission in each region. If rejected applicants can be replaced freely, condition on an eventual accepting hire instead of multiplying by the original type probability.\n\n(a) Overall sale probability is 0.25·0.8+0.75·0.4=0.5, so expected net profit is 1000·0.5−100=400. (b) Let τ=t/100. Efficient types accept if 800τ≥80, requiring τ≥0.10; inefficient types accept if 400τ≥80, requiring τ≥0.20.\n\nWith a single prior-drawn candidate, offering τ=0.10 attracts the efficient type only and gives ex ante profit 0.25·0.8·1000·0.9=180. Offering τ=0.20 attracts either type and gives 0.5·1000·0.8=400, so 20% is best under that protocol. If instead the firm can freely keep searching until someone accepts, a 10% offer selects only efficient workers; conditional profit per eventual hire is 0.8·1000·0.9=720 and is better than attracting both types.\n\nThe recruitment/replacement protocol is not specified, so the two expected-profit concepts must not be conflated.\n\n(a) Expected profit is 400. (b) With one randomly drawn candidate and no replacement after refusal, t=20%; with costless repeated recruitment until an accepting candidate is found, t=10%.",
     "hint": "Compute each type’s participation threshold before comparing the firm’s expected profits.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "status": "needs_review",
-    "notes": "The source does not specify whether the firm gets one candidate or may search costlessly among repeated candidates; the optimal commission depends on that distinction. The statement continues on PDF page 12."
+    "notes": "The source does not specify whether the firm gets one candidate or may search costlessly among repeated candidates; the optimal commission depends on that distinction. The statement continues on PDF page 12.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "First average sale probabilities over the two types. Under commission, work with the fraction $\\tau=t/100$ and impose each type's participation constraint separately; the employer's recruitment protocol determines which expected profit is relevant."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nP(\\mathrm{sale})&=0.25(0.8)+0.75(0.4)=0.5,\\\\\n\\pi_{\\mathrm{fixed}}&=1000(0.5)-100=400,\\\\\n800\\tau\\ge80&\\Longleftrightarrow\\tau\\ge0.1,\\\\\n400\\tau\\ge80&\\Longleftrightarrow\\tau\\ge0.2,\\\\\n\\pi(0.1)&=0.25(0.8)(900)=180,\\\\\n\\pi(0.2)&=0.5(800)=400.\n\\end{aligned}$$\n\nBetween the two participation thresholds only efficient applicants accept; above the second both types accept, while higher commission only reduces profit within each region. Thus it is enough to compare the lowest feasible commission in each region. If rejected applicants can be replaced freely, condition on an eventual accepting hire instead of multiplying by the original type probability."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Overall sale probability is 0.25·0.8+0.75·0.4=0.5, so expected net profit is 1000·0.5−100=400. (b) Let τ=t/100. Efficient types accept if 800τ≥80, requiring τ≥0.10; inefficient types accept if 400τ≥80, requiring τ≥0.20.\n\nWith a single prior-drawn candidate, offering τ=0.10 attracts the efficient type only and gives ex ante profit 0.25·0.8·1000·0.9=180. Offering τ=0.20 attracts either type and gives 0.5·1000·0.8=400, so 20% is best under that protocol. If instead the firm can freely keep searching until someone accepts, a 10% offer selects only efficient workers; conditional profit per eventual hire is 0.8·1000·0.9=720 and is better than attracting both types.\n\nThe recruitment/replacement protocol is not specified, so the two expected-profit concepts must not be conflated."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Expected profit is 400. (b) With one randomly drawn candidate and no replacement after refusal, t=20%; with costless repeated recruitment until an accepting candidate is found, t=10%."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q8",
@@ -128,12 +254,30 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Boat builders i=1,…,100 can each make at most 12 boats. Their cost is 11+iy for y>0, zero at y=0. At price 25, how many produce and what total output results? (b) Low and high customer groups have inverse demands p₁=10−q₁ and p₂=2(10−q₂). A monopolist has C(q)=4q², q=q₁+q₂. Find optimal uniform pricing and quantities, then optimal type-specific prices if IDs permit discrimination.",
     "answer": "(a) 24 builders produce 12 each: 288 boats. (b) Uniform optimum p=50/3, q₁=0, q₂=5/3. Discrimination does not increase profit: the low group remains excluded, and p₂=50/3.",
-    "solution": "(a) Producing a positive quantity yields profit (25−i)y−11. If profitable, it is maximized at capacity 12. Positive operation requires 12(25−i)>11, which holds exactly for integer i=1,…,24; total output is 24·12=288. (b) For 10≤p≤20 only high-demand customers buy, q₂=10−p/2. Write revenue as (20−2q₂)q₂; subtract cost 4q₂² to get profit 20q₂−6q₂², maximized at q₂=5/3 and p=50/3. In the lower-price region p≤10, total demand is q=20−1.5p≥5 and profit falls over that region, so it cannot beat the high-price solution. With price discrimination, common marginal cost is 8(q₁+q₂). At q₁=0 and q₂=5/3 it equals 40/3, exceeding the low group’s maximum willingness to pay 10. Serving that group is therefore unprofitable even when identifiable. Set any p₁≥10 to exclude it, and p₂=50/3. Profit is 50/3 in either regime.",
+    "solution": "For each builder, compare the best positive-production profit with shutdown profit zero. For the monopoly, aggregate demand changes formula at price ten, so optimize separately in each price region and then compare.\n\n$$\\begin{aligned}\n\\pi_i(12)&=12(25-i)-11>0\\Longleftrightarrow i\\le24,\\\\\nQ_{\\mathrm{boats}}&=24(12)=288,\\\\\n\\pi_{\\mathrm{high\\ only}}(q)&=(20-2q)q-4q^2=20q-6q^2,\\\\\n\\pi\\prime(q)&=20-12q=0\\Longrightarrow q=5/3,\\\\\nMC&=8q=40/3>10.\n\\end{aligned}$$\n\nThe capacity bound makes every active builder operate at full scale. In the monopoly calculation, the final marginal-cost comparison is crucial: at the high-group optimum, even the low group's first unit is worth less than marginal cost. Identification alone therefore cannot make serving that group profitable.\n\n(a) Producing a positive quantity yields profit (25−i)y−11. If profitable, it is maximized at capacity 12. Positive operation requires 12(25−i)>11, which holds exactly for integer i=1,…,24; total output is 24·12=288.\n\n(b) For 10≤p≤20 only high-demand customers buy, q₂=10−p/2. Write revenue as (20−2q₂)q₂; subtract cost 4q₂² to get profit 20q₂−6q₂², maximized at q₂=5/3 and p=50/3. In the lower-price region p≤10, total demand is q=20−1.5p≥5 and profit falls over that region, so it cannot beat the high-price solution.\n\nWith price discrimination, common marginal cost is 8(q₁+q₂). At q₁=0 and q₂=5/3 it equals 40/3, exceeding the low group’s maximum willingness to pay 10. Serving that group is therefore unprofitable even when identifiable.\n\nSet any p₁≥10 to exclude it, and p₂=50/3. Profit is 50/3 in either regime.\n\n(a) 24 builders produce 12 each: 288 boats. (b) Uniform optimum p=50/3, q₁=0, q₂=5/3. Discrimination does not increase profit: the low group remains excluded, and p₂=50/3.",
     "hint": "For boats compare capacity profit with zero. For discrimination, check whether an interior two-market solution gives a negative low-market quantity.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For each builder, compare the best positive-production profit with shutdown profit zero. For the monopoly, aggregate demand changes formula at price ten, so optimize separately in each price region and then compare."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi_i(12)&=12(25-i)-11>0\\Longleftrightarrow i\\le24,\\\\\nQ_{\\mathrm{boats}}&=24(12)=288,\\\\\n\\pi_{\\mathrm{high\\ only}}(q)&=(20-2q)q-4q^2=20q-6q^2,\\\\\n\\pi\\prime(q)&=20-12q=0\\Longrightarrow q=5/3,\\\\\nMC&=8q=40/3>10.\n\\end{aligned}$$\n\nThe capacity bound makes every active builder operate at full scale. In the monopoly calculation, the final marginal-cost comparison is crucial: at the high-group optimum, even the low group's first unit is worth less than marginal cost. Identification alone therefore cannot make serving that group profitable."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(a) Producing a positive quantity yields profit (25−i)y−11. If profitable, it is maximized at capacity 12. Positive operation requires 12(25−i)>11, which holds exactly for integer i=1,…,24; total output is 24·12=288.\n\n(b) For 10≤p≤20 only high-demand customers buy, q₂=10−p/2. Write revenue as (20−2q₂)q₂; subtract cost 4q₂² to get profit 20q₂−6q₂², maximized at q₂=5/3 and p=50/3. In the lower-price region p≤10, total demand is q=20−1.5p≥5 and profit falls over that region, so it cannot beat the high-price solution.\n\nWith price discrimination, common marginal cost is 8(q₁+q₂). At q₁=0 and q₂=5/3 it equals 40/3, exceeding the low group’s maximum willingness to pay 10. Serving that group is therefore unprofitable even when identifiable.\n\nSet any p₁≥10 to exclude it, and p₂=50/3. Profit is 50/3 in either regime."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) 24 builders produce 12 each: 288 boats. (b) Uniform optimum p=50/3, q₁=0, q₂=5/3. Discrimination does not increase profit: the low group remains excluded, and p₂=50/3."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q9",
@@ -145,12 +289,30 @@
     "originalPaperCode": "ME II",
     "stem": "A 4×4 grid is labelled by rows 1,2,3,4; 5,6,7,8; 9,10,11,12; 13,14,15,16. Players alternate selecting a remaining square and deleting it and all remaining squares above and to its right, including the selected row/column northeast rectangle. For example selecting 7 deletes 3,4,7,8; selecting 9 deletes 1 through 12. Whoever deletes the last square loses. Give a winning first-player strategy.",
     "answer": "First select square 10. Thereafter mirror the opponent’s moves between the left column and bottom row, leaving square 13 for the opponent.",
-    "solution": "Square 13 is the bottom-left poison square: selecting it removes every remaining square and loses. First selecting 10 deletes 2,3,4,6,7,8,10,11,12, leaving an L with squares 1,5,9,13 in its vertical arm and 13,14,15,16 in its horizontal arm. The arms beyond 13 have equal lengths. If the opponent selects an arm square, respond at its reflection across the diagonal from 13 to 4: pair 1↔16, 5↔15, and 9↔14. Each response deletes the same number of squares from the other arm, restoring symmetry and never deleting 13. Eventually the opponent faces square 13 alone and must delete the last square, losing.",
+    "solution": "This is a losing-last-move game, so preserve the bottom-left square as a poison square. The first move should create a position in which every non-poison move has a distinct symmetric reply.\n\n$$\\begin{aligned}\n\\text{first move}&=10,\\\\\n\\text{remaining set}&=\\{1,5,9,13,14,15,16\\},\\\\\n\\text{response pairs}&:(1,16),\\ (5,15),\\ (9,14).\n\\end{aligned}$$\n\nAfter move 10 the board is an L with equal arms. A move on one arm shortens only that arm, and the reflected move shortens the other by the same amount. The responder never chooses square 13. Because every pair of turns restores symmetry, the opponent eventually faces only the poison square.\n\nSquare 13 is the bottom-left poison square: selecting it removes every remaining square and loses. First selecting 10 deletes 2,3,4,6,7,8,10,11,12, leaving an L with squares 1,5,9,13 in its vertical arm and 13,14,15,16 in its horizontal arm. The arms beyond 13 have equal lengths.\n\nIf the opponent selects an arm square, respond at its reflection across the diagonal from 13 to 4: pair 1↔16, 5↔15, and 9↔14. Each response deletes the same number of squares from the other arm, restoring symmetry and never deleting 13. Eventually the opponent faces square 13 alone and must delete the last square, losing.\n\nFirst select square 10. Thereafter mirror the opponent’s moves between the left column and bottom row, leaving square 13 for the opponent.",
     "hint": "Create equal horizontal and vertical arms around the bottom-left poison square.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "The deletion examples define a northeast rectangle, despite the source’s occasional use of the word “square”."
+    "notes": "The deletion examples define a northeast rectangle, despite the source’s occasional use of the word “square”.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "This is a losing-last-move game, so preserve the bottom-left square as a poison square. The first move should create a position in which every non-poison move has a distinct symmetric reply."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\text{first move}&=10,\\\\\n\\text{remaining set}&=\\{1,5,9,13,14,15,16\\},\\\\\n\\text{response pairs}&:(1,16),\\ (5,15),\\ (9,14).\n\\end{aligned}$$\n\nAfter move 10 the board is an L with equal arms. A move on one arm shortens only that arm, and the reflected move shortens the other by the same amount. The responder never chooses square 13. Because every pair of turns restores symmetry, the opponent eventually faces only the poison square."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Square 13 is the bottom-left poison square: selecting it removes every remaining square and loses. First selecting 10 deletes 2,3,4,6,7,8,10,11,12, leaving an L with squares 1,5,9,13 in its vertical arm and 13,14,15,16 in its horizontal arm. The arms beyond 13 have equal lengths.\n\nIf the opponent selects an arm square, respond at its reflection across the diagonal from 13 to 4: pair 1↔16, 5↔15, and 9↔14. Each response deletes the same number of squares from the other arm, restoring symmetry and never deleting 13. Eventually the opponent faces square 13 alone and must delete the last square, losing."
+      },
+      {
+        "title": "Conclusion",
+        "body": "First select square 10. Thereafter mirror the opponent’s moves between the left column and bottom row, leaving square 13 for the opponent."
+      }
+    ]
   },
   {
     "id": "2008-PEB-Q10",
@@ -162,11 +324,29 @@
     "originalPaperCode": "ME II",
     "stem": "(i) A spends an annual car budget 100000 on petrol P and other car expenditure M (price 1). At petrol price 40 he buys P=1000. Petrol price rises to 50 and government transfers 10000. (a) State the new budget. (b) What happens to P? (c) Is he better or worse off? Use revealed preference rather than a utility function. (iii) B earns 500 today and 500 tomorrow and initially neither saves nor borrows at a common interest rate of 15%. Loan interest rises to 30% and bond interest falls to 5%. State his new budget and whether he saves or borrows.",
     "answer": "(i) 50P+M=110000; petrol demand weakly falls and welfare weakly improves. (iii) The budget kinks at (500,500), and the old no-trade choice remains optimal: borrowing and lending are both zero.",
-    "solution": "(i) The original bundle is (P,M)=(1000,60000). It costs 50·1000+60000=110000 at the new price, exactly the new income, so the old choice remains affordable. Any newly chosen bundle on the new budget with P>1000 would cost 40P+M=110000−10P<100000 at old prices and would have been strictly affordable before. Revealed preference therefore rules out a strict increase in compensated petrol demand under the usual rational choice assumptions; it weakly decreases. Since the old bundle is still feasible, the consumer cannot be worse off and may be strictly better off. (iii) Let c₁,c₂ be consumption today and tomorrow. For c₁≤500, c₂=500+1.05(500−c₁); for c₁≥500, c₂=500−1.30(c₁−500), with nonnegative consumption and bundles below these boundaries feasible. Both new branches lie inside the old 15% budget except at the endowment (500,500). The previously optimal endowment remains feasible and all new alternatives were available previously, so no borrowing or lending is needed: c₁=c₂=500.",
+    "solution": "For petrol, the transfer is exactly the increase in the cost of the original bundle. This is a compensated-price comparison, so reveal preferences by pricing a hypothetical new bundle at the old prices. For intertemporal choice, compare entire feasible sets.\n\n$$\\begin{aligned}\n(P_0,M_0)&=(1000,60000),\\\\\n50P+M&=110000,\\\\\n40P+M&=110000-10P<100000\\quad\\text{if }P>1000,\\\\\nc_2&=500+1.05(500-c_1)\\quad(c_1\\le500),\\\\\nc_2&=500-1.30(c_1-500)\\quad(c_1\\ge500).\n\\end{aligned}$$\n\nAn increase in compensated petrol demand would make the new bundle strictly cheaper than the old budget when evaluated at old prices, creating the revealed-preference contradiction. The original bundle remains feasible, which gives the welfare comparison directly. In the saving problem both new budget branches move inward around the original optimum, so the no-trade endowment remains optimal.\n\n(i) The original bundle is (P,M)=(1000,60000). It costs 50·1000+60000=110000 at the new price, exactly the new income, so the old choice remains affordable. Any newly chosen bundle on the new budget with P>1000 would cost 40P+M=110000−10P<100000 at old prices and would have been strictly affordable before.\n\nRevealed preference therefore rules out a strict increase in compensated petrol demand under the usual rational choice assumptions; it weakly decreases. Since the old bundle is still feasible, the consumer cannot be worse off and may be strictly better off. (iii) Let c₁,c₂ be consumption today and tomorrow.\n\nFor c₁≤500, c₂=500+1.05(500−c₁); for c₁≥500, c₂=500−1.30(c₁−500), with nonnegative consumption and bundles below these boundaries feasible. Both new branches lie inside the old 15% budget except at the endowment (500,500). The previously optimal endowment remains feasible and all new alternatives were available previously, so no borrowing or lending is needed: c₁=c₂=500.\n\n(i) 50P+M=110000; petrol demand weakly falls and welfare weakly improves. (iii) The budget kinks at (500,500), and the old no-trade choice remains optimal: borrowing and lending are both zero.",
     "hint": "Check whether the old chosen bundle is still feasible and whether the new opportunity set expands or shrinks.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "status": "verified",
-    "notes": "The source labels the second scenario “(iii)” without an intervening “(ii)”; that numbering is preserved in the stem. Weak rather than strict welfare/quantity comparisons cover corner or kink choices."
+    "notes": "The source labels the second scenario “(iii)” without an intervening “(ii)”; that numbering is preserved in the stem. Weak rather than strict welfare/quantity comparisons cover corner or kink choices.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For petrol, the transfer is exactly the increase in the cost of the original bundle. This is a compensated-price comparison, so reveal preferences by pricing a hypothetical new bundle at the old prices. For intertemporal choice, compare entire feasible sets."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n(P_0,M_0)&=(1000,60000),\\\\\n50P+M&=110000,\\\\\n40P+M&=110000-10P<100000\\quad\\text{if }P>1000,\\\\\nc_2&=500+1.05(500-c_1)\\quad(c_1\\le500),\\\\\nc_2&=500-1.30(c_1-500)\\quad(c_1\\ge500).\n\\end{aligned}$$\n\nAn increase in compensated petrol demand would make the new bundle strictly cheaper than the old budget when evaluated at old prices, creating the revealed-preference contradiction. The original bundle remains feasible, which gives the welfare comparison directly. In the saving problem both new budget branches move inward around the original optimum, so the no-trade endowment remains optimal."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "(i) The original bundle is (P,M)=(1000,60000). It costs 50·1000+60000=110000 at the new price, exactly the new income, so the old choice remains affordable. Any newly chosen bundle on the new budget with P>1000 would cost 40P+M=110000−10P<100000 at old prices and would have been strictly affordable before.\n\nRevealed preference therefore rules out a strict increase in compensated petrol demand under the usual rational choice assumptions; it weakly decreases. Since the old bundle is still feasible, the consumer cannot be worse off and may be strictly better off. (iii) Let c₁,c₂ be consumption today and tomorrow.\n\nFor c₁≤500, c₂=500+1.05(500−c₁); for c₁≥500, c₂=500−1.30(c₁−500), with nonnegative consumption and bundles below these boundaries feasible. Both new branches lie inside the old 15% budget except at the endowment (500,500). The previously optimal endowment remains feasible and all new alternatives were available previously, so no borrowing or lending is needed: c₁=c₂=500."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(i) 50P+M=110000; petrol demand weakly falls and welfare weakly improves. (iii) The budget kinks at (500,500), and the old no-trade choice remains optimal: borrowing and lending are both zero."
+      }
+    ]
   }
 ]

@@ -4,293 +4,671 @@
     "number": "1(a)",
     "stem": "A consumer has income 20 and utility $u(x_1,x_2)=2x_1+32x_2-3x_2^2$ over nonnegative quantities. Both prices are 1. Find the optimal bundle.",
     "answer": "$(x_1,x_2)=(15,5)$.",
-    "solution": "Because utility rises in $x_1$, exhaust the budget: $x_1=20-x_2$. Utility is $40+30x_2-3x_2^2$, a strictly concave quadratic maximized by $30-6x_2=0$. Thus $x_2=5,x_1=15$, feasible in the nonnegative budget.",
+    "solution": "Utility is strictly increasing in good 1, so all income is spent. Substituting the budget leaves a one-variable concave problem; check that its stationary point satisfies both nonnegativity constraints.\n\n$$\\begin{aligned}\nx_1&=20-x_2,\\quad0\\le x_2\\le20,\\\\\nu(x_2)&=40+30x_2-3x_2^2,\\\\\nu\\prime(x_2)&=30-6x_2=0\\Longrightarrow x_2=5,\\\\\nu^{\\prime\\prime}(x_2)&=-6<0,\\qquad x_1=15.\n\\end{aligned}$$\n\nThe negative second derivative makes the feasible critical point the unique global maximum. This substitution method automatically accounts for the opportunity cost of good 2 in terms of the constant marginal utility from good 1.\n\nBecause utility rises in $x_1$, exhaust the budget: $x_1=20-x_2$. Utility is $40+30x_2-3x_2^2$, a strictly concave quadratic maximized by $30-6x_2=0$. Thus $x_2=5,x_1=15$, feasible in the nonnegative budget.\n\n$(x_1,x_2)=(15,5)$.",
     "hint": "Substitute the budget into utility.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Utility is strictly increasing in good 1, so all income is spent. Substituting the budget leaves a one-variable concave problem; check that its stationary point satisfies both nonnegativity constraints."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nx_1&=20-x_2,\\quad0\\le x_2\\le20,\\\\\nu(x_2)&=40+30x_2-3x_2^2,\\\\\nu\\prime(x_2)&=30-6x_2=0\\Longrightarrow x_2=5,\\\\\nu^{\\prime\\prime}(x_2)&=-6<0,\\qquad x_1=15.\n\\end{aligned}$$\n\nThe negative second derivative makes the feasible critical point the unique global maximum. This substitution method automatically accounts for the opportunity cost of good 2 in terms of the constant marginal utility from good 1."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Because utility rises in $x_1$, exhaust the budget: $x_1=20-x_2$. Utility is $40+30x_2-3x_2^2$, a strictly concave quadratic maximized by $30-6x_2=0$. Thus $x_2=5,x_1=15$, feasible in the nonnegative budget."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$(x_1,x_2)=(15,5)$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q1b",
     "number": "1(b)",
     "stem": "A consumer has income 20 and utility $u(x_1,x_2)=2x_1+32x_2-3x_2^2$ over nonnegative quantities. Now price 2 rises to 4 and price 1 stays 1. Find the new optimal bundle.",
     "answer": "$(x_1,x_2)=(4,4)$.",
-    "solution": "Use $x_1=20-4x_2$, giving utility $40+24x_2-3x_2^2$. Its derivative vanishes at $x_2=4$, so $x_1=4$. The maximum utility is $8+128-48=88$.",
+    "solution": "The new price changes the budget slope, so repeat the constrained optimization rather than holding the old quantities fixed. One unit of good 2 now displaces four units of good 1.\n\n$$\\begin{aligned}\nx_1&=20-4x_2,\\quad0\\le x_2\\le5,\\\\\nu(x_2)&=40+24x_2-3x_2^2,\\\\\nu\\prime(x_2)&=24-6x_2=0\\Longrightarrow x_2=4,\\\\\nx_1&=4,\\qquad u^*=88.\n\\end{aligned}$$\n\nThe loss of marginal utility from displaced good 1 rises from two to eight per unit of good 2. The interior condition therefore reduces demand for good 2 from five to four. Verify that the residual spending on good 1 stays nonnegative.\n\nUse $x_1=20-4x_2$, giving utility $40+24x_2-3x_2^2$. Its derivative vanishes at $x_2=4$, so $x_1=4$. The maximum utility is $8+128-48=88$.\n\n$(x_1,x_2)=(4,4)$.",
     "hint": "The higher price reduces the linear net benefit of good 2.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The new price changes the budget slope, so repeat the constrained optimization rather than holding the old quantities fixed. One unit of good 2 now displaces four units of good 1."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nx_1&=20-4x_2,\\quad0\\le x_2\\le5,\\\\\nu(x_2)&=40+24x_2-3x_2^2,\\\\\nu\\prime(x_2)&=24-6x_2=0\\Longrightarrow x_2=4,\\\\\nx_1&=4,\\qquad u^*=88.\n\\end{aligned}$$\n\nThe loss of marginal utility from displaced good 1 rises from two to eight per unit of good 2. The interior condition therefore reduces demand for good 2 from five to four. Verify that the residual spending on good 1 stays nonnegative."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Use $x_1=20-4x_2$, giving utility $40+24x_2-3x_2^2$. Its derivative vanishes at $x_2=4$, so $x_1=4$. The maximum utility is $8+128-48=88$."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$(x_1,x_2)=(4,4)$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q1c",
     "number": "1(c)",
     "stem": "A consumer has income 20 and utility $u(x_1,x_2)=2x_1+32x_2-3x_2^2$ over nonnegative quantities. How much extra income restores welfare after price 2 rises from 1 to 4?",
     "answer": "Compensating income $=27/2=13.5$.",
-    "solution": "Initial utility at $(15,5)$ is 115. At the new prices, with income m and an interior optimum, $x_2=4$ and indirect utility is $2m+48$. Setting this to 115 gives $m=67/2=33.5$, so compensation is $33.5-20=13.5$. The compensated bundle $(17.5,4)$ is feasible.",
+    "solution": "Compensating variation restores the original utility at the new prices. Use total compensated income as an unknown, and only subtract the old income after solving the utility-restoration equation.\n\n$$\\begin{aligned}\nu_0&=2(15)+32(5)-3(5)^2=115,\\\\\nx_2^*(m;1,4)&=4,\\quad x_1^*=m-16,\\\\\nv(m;1,4)&=2m+48,\\\\\n2m+48=115&\\Longrightarrow m=33.5,\\\\\nCV&=33.5-20=13.5.\n\\end{aligned}$$\n\nThe compensated optimum is interior, so the same good-2 first-order condition remains valid. The resulting bundle has positive good 1 and exactly restores utility, providing a feasibility check on the expenditure calculation.\n\nInitial utility at $(15,5)$ is 115. At the new prices, with income m and an interior optimum, $x_2=4$ and indirect utility is $2m+48$. Setting this to 115 gives $m=67/2=33.5$, so compensation is $33.5-20=13.5$.\n\nThe compensated bundle $(17.5,4)$ is feasible.\n\nCompensating income $=27/2=13.5$.",
     "hint": "At the compensated optimum each extra income unit raises utility by 2.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Compensating variation restores the original utility at the new prices. Use total compensated income as an unknown, and only subtract the old income after solving the utility-restoration equation."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nu_0&=2(15)+32(5)-3(5)^2=115,\\\\\nx_2^*(m;1,4)&=4,\\quad x_1^*=m-16,\\\\\nv(m;1,4)&=2m+48,\\\\\n2m+48=115&\\Longrightarrow m=33.5,\\\\\nCV&=33.5-20=13.5.\n\\end{aligned}$$\n\nThe compensated optimum is interior, so the same good-2 first-order condition remains valid. The resulting bundle has positive good 1 and exactly restores utility, providing a feasibility check on the expenditure calculation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Initial utility at $(15,5)$ is 115. At the new prices, with income m and an interior optimum, $x_2=4$ and indirect utility is $2m+48$. Setting this to 115 gives $m=67/2=33.5$, so compensation is $33.5-20=13.5$.\n\nThe compensated bundle $(17.5,4)$ is feasible."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Compensating income $=27/2=13.5$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q2a",
     "number": "2(a)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. Find the equilibrium bribe per connection and social surplus.",
     "answer": "Bribe $=0.6$ per connection, output $=0.4$, social surplus $=0.12$.",
-    "solution": "With a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6. Social surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$. Bribes and taxes are domestic transfers when all recipients enter social welfare.",
+    "solution": "The bureaucrats maximize bribe receipts, while society counts willingness to pay minus real production cost. Keep these objectives distinct; bribes redistribute purchasing power but do not use resources.\n\n$$\\begin{aligned}\nb&=1-q,\\quad0\\le q\\le0.4,\\\\\nR_B(q)&=q(1-q),\\qquad R_B\\prime=1-2q>0,\\\\\nq^*&=0.4,\\quad b^*=0.6,\\\\\nTS&=\\int_0^{0.4}(1-q)\\,dq-0.5(0.4)=0.12.\n\\end{aligned}$$\n\nThe unconstrained bribe-revenue maximum would require more than the permitted capacity, so the cap binds. Count the real subsidy-financed production cost once; including both taxes and costs as separate losses would double-count the same resources.\n\nWith a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6. Social surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$.\n\nBribes and taxes are domestic transfers when all recipients enter social welfare.\n\nBribe $=0.6$ per connection, output $=0.4$, social surplus $=0.12$.",
     "hint": "The supply cap binds before the bribe-revenue maximum.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The bureaucrats maximize bribe receipts, while society counts willingness to pay minus real production cost. Keep these objectives distinct; bribes redistribute purchasing power but do not use resources."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nb&=1-q,\\quad0\\le q\\le0.4,\\\\\nR_B(q)&=q(1-q),\\qquad R_B\\prime=1-2q>0,\\\\\nq^*&=0.4,\\quad b^*=0.6,\\\\\nTS&=\\int_0^{0.4}(1-q)\\,dq-0.5(0.4)=0.12.\n\\end{aligned}$$\n\nThe unconstrained bribe-revenue maximum would require more than the permitted capacity, so the cap binds. Count the real subsidy-financed production cost once; including both taxes and costs as separate losses would double-count the same resources."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "With a uniform bribe b and demand $q=1-b$, bureaucratic receipts are $bq=q(1-q)$, increasing over $0\\leq q\\leq0.4$. Supply is therefore at the cap 0.4, with bribe 0.6. Social surplus is gross benefit minus real production cost: $\\int_0^{0.4}(1-q)dq-(1/2)(0.4)=0.32-0.20=0.12$.\n\nBribes and taxes are domestic transfers when all recipients enter social welfare."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Bribe $=0.6$ per connection, output $=0.4$, social surplus $=0.12$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q2b",
     "number": "2(b)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. The agency is privatized and deregulated but remains a monopoly because entry costs are large relative to demand. Find new price, bribe and surplus, and compare with the public regime.",
     "answer": "Price $=0.75$, output $=0.25$, bribe $=0$, social surplus $=3/32=0.09375$.",
-    "solution": "The private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears. Total surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$. The official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero. Existing/sunk entry costs are excluded since their magnitude is not supplied.",
+    "solution": "After privatization, the seller pays the marginal production cost directly and chooses the monopoly quantity. A higher official price can coincide with lower corruption but also lower total surplus.\n\n$$\\begin{aligned}\n\\pi(q)&=(1-q)q-\\tfrac12q=\\tfrac12q-q^2,\\\\\n\\pi\\prime(q)&=\\tfrac12-2q=0\\Longrightarrow q^*=1/4,\\\\\np^*&=3/4,\\qquad b^*=0,\\\\\nTS&=\\int_0^{1/4}(1-q-1/2)\\,dq=3/32.\n\\end{aligned}$$\n\nThe quantity falls from $0.4$ to $0.25$, even though the separate bribe disappears. Compare effective consumer payments, not just the previously zero posted fee, and compare real surplus using the same accounting convention in both regimes.\n\nThe private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears. Total surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$.\n\nThe official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero. Existing/sunk entry costs are excluded since their magnitude is not supplied.\n\nPrice $=0.75$, output $=0.25$, bribe $=0$, social surplus $=3/32=0.09375$.",
     "hint": "Compare monopoly output with the previous rationed output.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "After privatization, the seller pays the marginal production cost directly and chooses the monopoly quantity. A higher official price can coincide with lower corruption but also lower total surplus."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi(q)&=(1-q)q-\\tfrac12q=\\tfrac12q-q^2,\\\\\n\\pi\\prime(q)&=\\tfrac12-2q=0\\Longrightarrow q^*=1/4,\\\\\np^*&=3/4,\\qquad b^*=0,\\\\\nTS&=\\int_0^{1/4}(1-q-1/2)\\,dq=3/32.\n\\end{aligned}$$\n\nThe quantity falls from $0.4$ to $0.25$, even though the separate bribe disappears. Compare effective consumer payments, not just the previously zero posted fee, and compare real surplus using the same accounting convention in both regimes."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The private monopolist sets $MR=1-2q=MC=1/2$, giving $q=1/4,p=3/4$. Separate bureaucratic bribery disappears. Total surplus is $\\int_0^{1/4}(1-q-1/2)dq=3/32$, below the public-regime $3/25=0.12$.\n\nThe official posted price rises from zero, the effective connection payment rises from 0.6 to 0.75, and bribery falls to zero. Existing/sunk entry costs are excluded since their magnitude is not supplied."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Price $=0.75$, output $=0.25$, bribe $=0$, social surplus $=3/32=0.09375$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q2c",
     "number": "2(c)",
     "stem": "A public monopoly supplies internet with inverse demand $p=1-q$ and marginal cost 1/2. Official connection price is zero; tax-funded subsidy covers cost for at most 0.4 units. Bureaucrats can collect bribes but cannot supply more than 0.4. After privatization, innovation lowers marginal cost to $c$, $0<c<1/2$. For which c does privatization increase consumer surplus?",
     "answer": "Conventional demand-area consumer surplus rises iff $0<c<1/5$. Including the avoided public tax burden, consumers gain for every $0<c<1/2$.",
-    "solution": "Private monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$. Comparing these gives $(1-c)^2>0.64$, hence $c<0.2$. However, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$. If those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit.",
+    "solution": "Derive the private monopoly output as a function of the improved marginal cost. Then compare consumer surplus triangles, while separately identifying whether taxes paid by consumers are included in the benchmark.\n\n$$\\begin{aligned}\nq^*(c)&=(1-c)/2,\\quad p^*(c)=(1+c)/2,\\\\\nCS_{\\rm private}&=\\tfrac12[q^*(c)]^2=(1-c)^2/8,\\\\\nCS_{\\rm public}&=\\tfrac12(0.4)^2=0.08,\\\\\nCS_{\\rm private}>CS_{\\rm public}&\\Longleftrightarrow c<1/5.\n\\end{aligned}$$\n\nThe threshold is a comparison of conventional demand-area consumer surplus. The existing source caveat matters: if the public tax burden also enters consumers' welfare and disappears after privatization, it changes the comparison. Present both accounting conventions instead of silently treating taxes as irrelevant to consumers while counting them elsewhere.\n\nPrivate monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$. Comparing these gives $(1-c)^2>0.64$, hence $c<0.2$.\n\nHowever, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$. If those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit.\n\nConventional demand-area consumer surplus rises iff $0<c<1/5$. Including the avoided public tax burden, consumers gain for every $0<c<1/2$.",
     "hint": "Specify whether consumer surplus deducts the separately imposed subsidy-financing tax.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "needs_review",
-    "notes": "Tax-inclusive welfare and conventional price-demand consumer-surplus accounting give different ranges; source convention unspecified."
+    "notes": "Tax-inclusive welfare and conventional price-demand consumer-surplus accounting give different ranges; source convention unspecified.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Derive the private monopoly output as a function of the improved marginal cost. Then compare consumer surplus triangles, while separately identifying whether taxes paid by consumers are included in the benchmark."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nq^*(c)&=(1-c)/2,\\quad p^*(c)=(1+c)/2,\\\\\nCS_{\\rm private}&=\\tfrac12[q^*(c)]^2=(1-c)^2/8,\\\\\nCS_{\\rm public}&=\\tfrac12(0.4)^2=0.08,\\\\\nCS_{\\rm private}>CS_{\\rm public}&\\Longleftrightarrow c<1/5.\n\\end{aligned}$$\n\nThe threshold is a comparison of conventional demand-area consumer surplus. The existing source caveat matters: if the public tax burden also enters consumers' welfare and disappears after privatization, it changes the comparison. Present both accounting conventions instead of silently treating taxes as irrelevant to consumers while counting them elsewhere."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Private monopoly output is $(1-c)/2$ and demand-area consumer surplus is $(1-c)^2/8$. Public-regime demand-area surplus net of bribes is $(0.4)^2/2=0.08$. Comparing these gives $(1-c)^2>0.64$, hence $c<0.2$.\n\nHowever, the source expressly funds public cost with taxes on consumers: public taxes total 0.2, so tax-inclusive consumer welfare is $0.08-0.2=-0.12$. If those taxes disappear on privatization, positive private demand-area surplus exceeds that benchmark for every permitted c. Both conclusions are reported because the question leaves the surplus/tax accounting convention implicit."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Conventional demand-area consumer surplus rises iff $0<c<1/5$. Including the avoided public tax burden, consumers gain for every $0<c<1/2$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q3a",
     "number": "3(a)",
     "stem": "A circular state of radius $r>0$ has a uniformly distributed unit population. Travel costs k per distance, $k>0$, and shoppers must return home. Each resident has income/willingness to pay 10 for one good. Outside price is p and inside price is $p(1+t)<10$ due to an entry tax rate t. Imports otherwise have zero transport cost. What proportion evades the tax by shopping outside?",
     "answer": "Let $z=pt$ and $a=2kr$. For $0\\leq z\\leq a$, evasion share $=1-(1-z/a)^2$; for $z\\geq a$, it is 1.",
-    "solution": "A resident at radial distance rho must travel at least $r-\\rho$ to cross the nearest border, costing round-trip $2k(r-\\rho)$. Evasion is cheaper when $2k(r-\\rho)<pt=z$. Thus evaders occupy the outer annulus of thickness $z/(2k)$, whose population share is its area divided by $\\pi r^2$: $1-[1-z/(2kr)]^2$. If the thickness reaches r, everyone evades apart from measure-zero ties.",
+    "solution": "Uniform population over area implies that an evading boundary band must be measured as an annulus, not as a fraction of the radius. Use the closest point on the border and include the return trip.\n\n$$\\begin{aligned}\nz&=pt,\\quad a=2kr,\\\\\n2k(r-\\rho)<z&\\Longleftrightarrow\\rho>r-z/(2k),\\\\\nE(z)&=\\frac{\\pi r^2-\\pi[r-z/(2k)]^2}{\\pi r^2}\n=1-(1-z/a)^2\\quad(0\\le z\\le a).\n\\end{aligned}$$\n\nOnce the travel-cost saving covers the trip from the centre, the whole population evades up to measure-zero ties. Clipping the annulus formula at this boundary avoids assigning a physically impossible population share when the tax is large.\n\nA resident at radial distance rho must travel at least $r-\\rho$ to cross the nearest border, costing round-trip $2k(r-\\rho)$. Evasion is cheaper when $2k(r-\\rho)<pt=z$. Thus evaders occupy the outer annulus of thickness $z/(2k)$, whose population share is its area divided by $\\pi r^2$: $1-[1-z/(2kr)]^2$.\n\nIf the thickness reaches r, everyone evades apart from measure-zero ties.\n\nLet $z=pt$ and $a=2kr$. For $0\\leq z\\leq a$, evasion share $=1-(1-z/a)^2$; for $z\\geq a$, it is 1.",
     "hint": "Use the round-trip distance to the nearest point on the circumference.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Uniform population over area implies that an evading boundary band must be measured as an annulus, not as a fraction of the radius. Use the closest point on the border and include the return trip."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nz&=pt,\\quad a=2kr,\\\\\n2k(r-\\rho)<z&\\Longleftrightarrow\\rho>r-z/(2k),\\\\\nE(z)&=\\frac{\\pi r^2-\\pi[r-z/(2k)]^2}{\\pi r^2}\n=1-(1-z/a)^2\\quad(0\\le z\\le a).\n\\end{aligned}$$\n\nOnce the travel-cost saving covers the trip from the centre, the whole population evades up to measure-zero ties. Clipping the annulus formula at this boundary avoids assigning a physically impossible population share when the tax is large."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "A resident at radial distance rho must travel at least $r-\\rho$ to cross the nearest border, costing round-trip $2k(r-\\rho)$. Evasion is cheaper when $2k(r-\\rho)<pt=z$. Thus evaders occupy the outer annulus of thickness $z/(2k)$, whose population share is its area divided by $\\pi r^2$: $1-[1-z/(2kr)]^2$.\n\nIf the thickness reaches r, everyone evades apart from measure-zero ties."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Let $z=pt$ and $a=2kr$. For $0\\leq z\\leq a$, evasion share $=1-(1-z/a)^2$; for $z\\geq a$, it is 1."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q3b",
     "number": "3(b)",
     "stem": "A circular state of radius $r>0$ has a uniformly distributed unit population. Travel costs k per distance, $k>0$, and shoppers must return home. Each resident has income/willingness to pay 10 for one good. Outside price is p and inside price is $p(1+t)<10$ due to an entry tax rate t. Imports otherwise have zero transport cost. Find the welfare-maximizing tax and the necessary and sufficient conditions for it to equal the revenue-maximizing tax.",
     "answer": "Welfare is maximized at t=0. With positive p,k,r and the stated positive willingness-to-pay slack, every revenue-maximizing positive-feasible tax differs from zero.",
-    "solution": "Taxes are transfers inside the state, whereas evasion travel is a real resource cost. At zero tax nobody incurs that cost, so total welfare $10-p$ is maximal. For $0\\leq z\\leq a=2kr$, revenue is $R(z)=z(1-z/a)^2$, with derivative $(1-z/a)(1-3z/a)$. Its unconstrained maximum is at $z=a/3$, i.e. $t=2kr/(3p)>0$. If the reservation-price restriction binds, use the largest admissible z approaching $10-p$ instead; this is still positive when p<10. Thus under the stated nondegenerate positive parameters the two optima never coincide. Coincidence requires removing every feasible positive-revenue tax, e.g. zero willingness-to-pay slack in a weakly closed constraint; such a degeneracy lies outside $p(1+t)<10$ with positive p. Strict price inequality can mean a revenue supremum rather than an attained maximum at the cap.",
+    "solution": "Domestic tax payments are transfers in total state welfare; border travel consumes resources. Revenue, however, depends on both the tax per non-evader and the remaining non-evading population.\n\n$$\\begin{aligned}\nR(z)&=z(1-z/a)^2,\\qquad a=2kr,\\\\\nR\\prime(z)&=(1-z/a)(1-3z/a),\\\\\nz_R&=a/3,\\qquad t_R=a/(3p),\\\\\nt_W&=0.\n\\end{aligned}$$\n\nAny positive tax induces a band of residents to incur avoidable travel costs, whereas zero tax does not. A positive revenue-maximizing tax therefore differs from the welfare optimum in the nondegenerate case. Also check the reservation-price cap; a strict upper bound can yield only a supremum rather than an attained maximizer.\n\nTaxes are transfers inside the state, whereas evasion travel is a real resource cost. At zero tax nobody incurs that cost, so total welfare $10-p$ is maximal. For $0\\leq z\\leq a=2kr$, revenue is $R(z)=z(1-z/a)^2$, with derivative $(1-z/a)(1-3z/a)$.\n\nIts unconstrained maximum is at $z=a/3$, i.e. $t=2kr/(3p)>0$. If the reservation-price restriction binds, use the largest admissible z approaching $10-p$ instead; this is still positive when p<10. Thus under the stated nondegenerate positive parameters the two optima never coincide.\n\nCoincidence requires removing every feasible positive-revenue tax, e.g. zero willingness-to-pay slack in a weakly closed constraint; such a degeneracy lies outside $p(1+t)<10$ with positive p. Strict price inequality can mean a revenue supremum rather than an attained maximum at the cap.\n\nWelfare is maximized at t=0. With positive p,k,r and the stated positive willingness-to-pay slack, every revenue-maximizing positive-feasible tax differs from zero.",
     "hint": "A revenue transfer cannot offset the social waste of tax-evasion travel.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": "Assumes tax revenue belongs to residents’ social welfare, nonnegative tax rates and positive outside price. Strict reservation bound can prevent attainment of a constrained revenue maximum."
+    "notes": "Assumes tax revenue belongs to residents’ social welfare, nonnegative tax rates and positive outside price. Strict reservation bound can prevent attainment of a constrained revenue maximum.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Domestic tax payments are transfers in total state welfare; border travel consumes resources. Revenue, however, depends on both the tax per non-evader and the remaining non-evading population."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nR(z)&=z(1-z/a)^2,\\qquad a=2kr,\\\\\nR\\prime(z)&=(1-z/a)(1-3z/a),\\\\\nz_R&=a/3,\\qquad t_R=a/(3p),\\\\\nt_W&=0.\n\\end{aligned}$$\n\nAny positive tax induces a band of residents to incur avoidable travel costs, whereas zero tax does not. A positive revenue-maximizing tax therefore differs from the welfare optimum in the nondegenerate case. Also check the reservation-price cap; a strict upper bound can yield only a supremum rather than an attained maximizer."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Taxes are transfers inside the state, whereas evasion travel is a real resource cost. At zero tax nobody incurs that cost, so total welfare $10-p$ is maximal. For $0\\leq z\\leq a=2kr$, revenue is $R(z)=z(1-z/a)^2$, with derivative $(1-z/a)(1-3z/a)$.\n\nIts unconstrained maximum is at $z=a/3$, i.e. $t=2kr/(3p)>0$. If the reservation-price restriction binds, use the largest admissible z approaching $10-p$ instead; this is still positive when p<10. Thus under the stated nondegenerate positive parameters the two optima never coincide.\n\nCoincidence requires removing every feasible positive-revenue tax, e.g. zero willingness-to-pay slack in a weakly closed constraint; such a degeneracy lies outside $p(1+t)<10$ with positive p. Strict price inequality can mean a revenue supremum rather than an attained maximum at the cap."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Welfare is maximized at t=0. With positive p,k,r and the stated positive willingness-to-pay slack, every revenue-maximizing positive-feasible tax differs from zero."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q3c",
     "number": "3(c)",
     "stem": "A circular state of radius $r>0$ has a uniformly distributed unit population. Travel costs k per distance, $k>0$, and shoppers must return home. Each resident has income/willingness to pay 10 for one good. Outside price is p and inside price is $p(1+t)<10$ due to an entry tax rate t. Imports otherwise have zero transport cost. Suppose the revenue-maximizing tax is initially positive. Find the elasticity of optimized tax revenue with respect to outside price p when the minister always optimizes the tax.",
     "answer": "If the reservation bound is slack, elasticity is 0 because $R^*=8kr/27$. With a binding bound the elasticity is generally negative.",
-    "solution": "For an interior optimum $z^*=pt^*=2kr/3$, tax rate adjusts inversely with p. Maximized revenue is $(2kr/3)(2/3)^2=8kr/27$, independent of p, so elasticity is zero. This requires $p+2kr/3<10$. If instead the willingness-to-pay bound is binding in its closed-limit interpretation, write $z=10-p<a/3$. Revenue is $z(1-z/a)^2$ and the elasticity is $p[-1/z+2/(a-z)]=p(3z-a)/[z(a-z)]<0$. Thus positivity of the optimal tax alone does not guarantee the zero-elasticity answer without the interior condition.",
+    "solution": "Optimize with respect to the rupee tax wedge $z=pt$, not directly with respect to the rate. Then distinguish an interior revenue maximum from one constrained by willingness to pay.\n\n$$\\begin{aligned}\nz^*&=a/3,\\qquad R^*=\\frac a3\\left(\\frac23\\right)^2\n=\\frac{4a}{27}=\\frac{8kr}{27},\\\\\n\\frac{d\\log R^*}{d\\log p}&=0\\quad\\text{if }p+a/3<10,\\\\\nz=10-p:&\\quad\\frac{d\\log R}{d\\log p}\n=\\frac{p(3z-a)}{z(a-z)}.\n\\end{aligned}$$\n\nAt an interior optimum, the minister offsets a change in outside price by changing the tax rate so that the rupee wedge stays constant. If the reservation-price boundary binds, that adjustment is unavailable and the envelope derivative is generally negative. A merely positive tax does not identify which regime applies.\n\nFor an interior optimum $z^*=pt^*=2kr/3$, tax rate adjusts inversely with p. Maximized revenue is $(2kr/3)(2/3)^2=8kr/27$, independent of p, so elasticity is zero. This requires $p+2kr/3<10$.\n\nIf instead the willingness-to-pay bound is binding in its closed-limit interpretation, write $z=10-p<a/3$. Revenue is $z(1-z/a)^2$ and the elasticity is $p[-1/z+2/(a-z)]=p(3z-a)/[z(a-z)]<0$. Thus positivity of the optimal tax alone does not guarantee the zero-elasticity answer without the interior condition.\n\nIf the reservation bound is slack, elasticity is 0 because $R^*=8kr/27$. With a binding bound the elasticity is generally negative.",
     "hint": "Optimize the tax-inclusive markup z=pt rather than t directly.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Literal assumption of a positive optimum does not itself ensure the reservation-price cap is slack; both cases retained."
+    "notes": "Literal assumption of a positive optimum does not itself ensure the reservation-price cap is slack; both cases retained.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Optimize with respect to the rupee tax wedge $z=pt$, not directly with respect to the rate. Then distinguish an interior revenue maximum from one constrained by willingness to pay."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nz^*&=a/3,\\qquad R^*=\\frac a3\\left(\\frac23\\right)^2\n=\\frac{4a}{27}=\\frac{8kr}{27},\\\\\n\\frac{d\\log R^*}{d\\log p}&=0\\quad\\text{if }p+a/3<10,\\\\\nz=10-p:&\\quad\\frac{d\\log R}{d\\log p}\n=\\frac{p(3z-a)}{z(a-z)}.\n\\end{aligned}$$\n\nAt an interior optimum, the minister offsets a change in outside price by changing the tax rate so that the rupee wedge stays constant. If the reservation-price boundary binds, that adjustment is unavailable and the envelope derivative is generally negative. A merely positive tax does not identify which regime applies."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For an interior optimum $z^*=pt^*=2kr/3$, tax rate adjusts inversely with p. Maximized revenue is $(2kr/3)(2/3)^2=8kr/27$, independent of p, so elasticity is zero. This requires $p+2kr/3<10$.\n\nIf instead the willingness-to-pay bound is binding in its closed-limit interpretation, write $z=10-p<a/3$. Revenue is $z(1-z/a)^2$ and the elasticity is $p[-1/z+2/(a-z)]=p(3z-a)/[z(a-z)]<0$. Thus positivity of the optimal tax alone does not guarantee the zero-elasticity answer without the interior condition."
+      },
+      {
+        "title": "Conclusion",
+        "body": "If the reservation bound is slack, elasticity is 0 because $R^*=8kr/27$. With a binding bound the elasticity is generally negative."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q4a",
     "number": "4(a)",
     "stem": "Two zero-cost Cournot firms face differentiated inverse demands $p_1=a_1-b_{11}q_1-b_{12}q_2$ and $p_2=a_2-b_{21}q_1-b_{22}q_2$, all coefficients positive. Find outputs assuming both are positive.",
     "answer": "For $D=4b_{11}b_{22}-b_{12}b_{21}\\ne0$, $q_1=(2a_1b_{22}-a_2b_{12})/D$, $q_2=(2a_2b_{11}-a_1b_{21})/D$.",
-    "solution": "Each firm’s strictly concave own-quantity profit gives FOCs $2b_{11}q_1+b_{12}q_2=a_1$ and $b_{21}q_1+2b_{22}q_2=a_2$. Solving the linear system gives the displayed expressions when its determinant is nonzero. If $D=0$, there is no unique interior formula: proportional consistent equations yield an interval of positive solutions; inconsistent equations yield none.",
+    "solution": "Each firm treats rival output as fixed. Own-price and cross-price slopes enter different positions in the two first-order conditions, so preserve their indices while solving the simultaneous system.\n\n$$\\begin{aligned}\n2b_{11}q_1+b_{12}q_2&=a_1,\\\\\nb_{21}q_1+2b_{22}q_2&=a_2,\\\\\nD&=4b_{11}b_{22}-b_{12}b_{21},\\\\\nq_1&=\\frac{2a_1b_{22}-a_2b_{12}}D,\\quad\nq_2=\\frac{2a_2b_{11}-a_1b_{21}}D.\n\\end{aligned}$$\n\nOwn-quantity profit curvature is negative because the own-demand coefficients are positive. These formulas therefore give mutual best responses whenever both quantities are positive and $D\\ne0$. The singular case must be checked as a system of equations, not evaluated by division by zero.\n\nEach firm’s strictly concave own-quantity profit gives FOCs $2b_{11}q_1+b_{12}q_2=a_1$ and $b_{21}q_1+2b_{22}q_2=a_2$. Solving the linear system gives the displayed expressions when its determinant is nonzero. If $D=0$, there is no unique interior formula: proportional consistent equations yield an interval of positive solutions; inconsistent equations yield none.\n\nFor $D=4b_{11}b_{22}-b_{12}b_{21}\\ne0$, $q_1=(2a_1b_{22}-a_2b_{12})/D$, $q_2=(2a_2b_{11}-a_1b_{21})/D$.",
     "hint": "Solve the simultaneous Cournot first-order conditions without assuming the determinant’s sign.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Each firm treats rival output as fixed. Own-price and cross-price slopes enter different positions in the two first-order conditions, so preserve their indices while solving the simultaneous system."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n2b_{11}q_1+b_{12}q_2&=a_1,\\\\\nb_{21}q_1+2b_{22}q_2&=a_2,\\\\\nD&=4b_{11}b_{22}-b_{12}b_{21},\\\\\nq_1&=\\frac{2a_1b_{22}-a_2b_{12}}D,\\quad\nq_2=\\frac{2a_2b_{11}-a_1b_{21}}D.\n\\end{aligned}$$\n\nOwn-quantity profit curvature is negative because the own-demand coefficients are positive. These formulas therefore give mutual best responses whenever both quantities are positive and $D\\ne0$. The singular case must be checked as a system of equations, not evaluated by division by zero."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Each firm’s strictly concave own-quantity profit gives FOCs $2b_{11}q_1+b_{12}q_2=a_1$ and $b_{21}q_1+2b_{22}q_2=a_2$. Solving the linear system gives the displayed expressions when its determinant is nonzero. If $D=0$, there is no unique interior formula: proportional consistent equations yield an interval of positive solutions; inconsistent equations yield none."
+      },
+      {
+        "title": "Conclusion",
+        "body": "For $D=4b_{11}b_{22}-b_{12}b_{21}\\ne0$, $q_1=(2a_1b_{22}-a_2b_{12})/D$, $q_2=(2a_2b_{11}-a_1b_{21})/D$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q4b",
     "number": "4(b)",
     "stem": "Two zero-cost Cournot firms face differentiated inverse demands $p_1=a_1-b_{11}q_1-b_{12}q_2$ and $p_2=a_2-b_{21}q_1-b_{22}q_2$, all coefficients positive. Give necessary and sufficient parameter conditions for an equilibrium with both firms producing positive output.",
     "answer": "For $D\\ne0$, both displayed output numerators must have the same sign as D. A consistent $D=0$ system also has positive interior solutions.",
-    "solution": "Let $N_1=2a_1b_{22}-a_2b_{12}$, $N_2=2a_2b_{11}-a_1b_{21}$. Since own profits are strictly concave, an interior solution of the FOCs is a Nash equilibrium. Thus for $D\\ne0$, necessary and sufficient conditions are $N_1/D>0,N_2/D>0$: either all three are positive, or D and both numerators are negative. For $D=0$, consistency requires $a_2=b_{21}a_1/(2b_{11})$ (equivalently both N vanish); then the positive portion of $2b_{11}q_1+b_{12}q_2=a_1$ consists of interior equilibria. The customary stable-unique interior case adds $D>0$ and both N positive. Omitting D<0 and singular cases would require an extra stability/uniqueness restriction not stated in the question.",
+    "solution": "An interior Nash equilibrium requires positive quantities, but it does not by itself require stable best-response dynamics. Keep the determinant sign cases separate.\n\n$$\\begin{aligned}\nN_1&=2a_1b_{22}-a_2b_{12},\\qquad N_2=2a_2b_{11}-a_1b_{21},\\\\\nD\\ne0:&\\quad N_1/D>0,\\quad N_2/D>0,\\\\\nD=0:&\\quad a_2=\\frac{b_{21}a_1}{2b_{11}}\n\\quad\\text{for consistency}.\n\\end{aligned}$$\n\nFor a nonsingular system, each numerator must have the same sign as the determinant. Restricting all three to be positive would discard mathematically valid unstable interior equilibria without a stated stability assumption. A consistent singular system instead admits the positive portion of a common reaction line.\n\nLet $N_1=2a_1b_{22}-a_2b_{12}$, $N_2=2a_2b_{11}-a_1b_{21}$. Since own profits are strictly concave, an interior solution of the FOCs is a Nash equilibrium. Thus for $D\\ne0$, necessary and sufficient conditions are $N_1/D>0,N_2/D>0$: either all three are positive, or D and both numerators are negative.\n\nFor $D=0$, consistency requires $a_2=b_{21}a_1/(2b_{11})$ (equivalently both N vanish); then the positive portion of $2b_{11}q_1+b_{12}q_2=a_1$ consists of interior equilibria. The customary stable-unique interior case adds $D>0$ and both N positive. Omitting D<0 and singular cases would require an extra stability/uniqueness restriction not stated in the question.\n\nFor $D\\ne0$, both displayed output numerators must have the same sign as D. A consistent $D=0$ system also has positive interior solutions.",
     "hint": "Positive quantities do not by themselves imply a positive determinant.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": "Conditions refer to existence of an interior Nash equilibrium; in D<0 cases corner equilibria can coexist."
+    "notes": "Conditions refer to existence of an interior Nash equilibrium; in D<0 cases corner equilibria can coexist.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "An interior Nash equilibrium requires positive quantities, but it does not by itself require stable best-response dynamics. Keep the determinant sign cases separate."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nN_1&=2a_1b_{22}-a_2b_{12},\\qquad N_2=2a_2b_{11}-a_1b_{21},\\\\\nD\\ne0:&\\quad N_1/D>0,\\quad N_2/D>0,\\\\\nD=0:&\\quad a_2=\\frac{b_{21}a_1}{2b_{11}}\n\\quad\\text{for consistency}.\n\\end{aligned}$$\n\nFor a nonsingular system, each numerator must have the same sign as the determinant. Restricting all three to be positive would discard mathematically valid unstable interior equilibria without a stated stability assumption. A consistent singular system instead admits the positive portion of a common reaction line."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let $N_1=2a_1b_{22}-a_2b_{12}$, $N_2=2a_2b_{11}-a_1b_{21}$. Since own profits are strictly concave, an interior solution of the FOCs is a Nash equilibrium. Thus for $D\\ne0$, necessary and sufficient conditions are $N_1/D>0,N_2/D>0$: either all three are positive, or D and both numerators are negative.\n\nFor $D=0$, consistency requires $a_2=b_{21}a_1/(2b_{11})$ (equivalently both N vanish); then the positive portion of $2b_{11}q_1+b_{12}q_2=a_1$ consists of interior equilibria. The customary stable-unique interior case adds $D>0$ and both N positive. Omitting D<0 and singular cases would require an extra stability/uniqueness restriction not stated in the question."
+      },
+      {
+        "title": "Conclusion",
+        "body": "For $D\\ne0$, both displayed output numerators must have the same sign as D. A consistent $D=0$ system also has positive interior solutions."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q4c",
     "number": "4(c)",
     "stem": "Two zero-cost Cournot firms face differentiated inverse demands $p_1=a_1-b_{11}q_1-b_{12}q_2$ and $p_2=a_2-b_{21}q_1-b_{22}q_2$, all coefficients positive. Under what restrictions does this become the standard homogeneous-good Cournot model?",
     "answer": "$a_1=a_2=a>0$, $b_{11}=b_{12}=b_{21}=b_{22}=b>0$.",
-    "solution": "A homogeneous product has one market price $p=a-b(q_1+q_2)$ regardless of which firm supplies an additional unit. Comparing coefficients in both inverse demands gives exactly the stated equalities; the resulting symmetric zero-cost Cournot output is $a/(3b)$ per firm.",
+    "solution": "A homogeneous product has one inverse market demand depending only on total output. Equate that expression to each differentiated inverse-demand equation coefficient by coefficient.\n\n$$\\begin{aligned}\np_1=p_2&=a-b(q_1+q_2),\\\\\na_1=a_2&=a,\\\\\nb_{11}=b_{12}=b_{21}=b_{22}&=b,\\\\\nq_1^*=q_2^*&=a/(3b).\n\\end{aligned}$$\n\nThe equality of cross and own slopes reflects perfect substitutability: one additional unit changes market price equally regardless of its producer. Equal intercepts ensure there is no remaining firm-specific willingness-to-pay advantage.\n\nA homogeneous product has one market price $p=a-b(q_1+q_2)$ regardless of which firm supplies an additional unit. Comparing coefficients in both inverse demands gives exactly the stated equalities; the resulting symmetric zero-cost Cournot output is $a/(3b)$ per firm.\n\n$a_1=a_2=a>0$, $b_{11}=b_{12}=b_{21}=b_{22}=b>0$.",
     "hint": "The two prices must coincide for every possible quantity pair.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "A homogeneous product has one inverse market demand depending only on total output. Equate that expression to each differentiated inverse-demand equation coefficient by coefficient."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\np_1=p_2&=a-b(q_1+q_2),\\\\\na_1=a_2&=a,\\\\\nb_{11}=b_{12}=b_{21}=b_{22}&=b,\\\\\nq_1^*=q_2^*&=a/(3b).\n\\end{aligned}$$\n\nThe equality of cross and own slopes reflects perfect substitutability: one additional unit changes market price equally regardless of its producer. Equal intercepts ensure there is no remaining firm-specific willingness-to-pay advantage."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "A homogeneous product has one market price $p=a-b(q_1+q_2)$ regardless of which firm supplies an additional unit. Comparing coefficients in both inverse demands gives exactly the stated equalities; the resulting symmetric zero-cost Cournot output is $a/(3b)$ per firm."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$a_1=a_2=a>0$, $b_{11}=b_{12}=b_{21}=b_{22}=b>0$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q5a",
     "number": "5(a)",
     "stem": "A product monopolist and labour monopsonist has $Q=L=L_M+L_F$, inverse demand $p=A-Q/2$, and labour supplies $L_i=w_i^{\\epsilon_i}$, $\\epsilon_i>0$, with $\\epsilon_M\\epsilon_F=1$. Both groups are hired and the male wage is twice the female wage. Find the male labour-supply elasticity exactly.",
     "answer": "$\\epsilon_M=2$ and $\\epsilon_F=1/2$.",
-    "solution": "Let common marginal revenue product be $v=MR=A-Q$. Marginal expenditure on type i is $(1+1/\\epsilon_i)w_i$, so $w_i=v\\epsilon_i/(1+\\epsilon_i)$. Substitute $\\epsilon_F=1/\\epsilon_M$; the wage ratio becomes $w_M/w_F=\\epsilon_M$. The observed ratio 2 therefore gives the result.",
+    "solution": "A monopsonist equates marginal labour expenditure, not the wage, to the common marginal revenue product. Invert each group's labour supply to differentiate its wage bill.\n\n$$\\begin{aligned}\nL_i&=w_i^{\\epsilon_i},\\quad\nME_i=(1+1/\\epsilon_i)w_i,\\\\\nw_i&=v\\frac{\\epsilon_i}{1+\\epsilon_i},\\quad v=MR=A-Q,\\\\\n\\epsilon_F=1/\\epsilon_M&\\Longrightarrow w_M/w_F=\\epsilon_M=2.\n\\end{aligned}$$\n\nThe reciprocal-elasticity restriction collapses the wage ratio to a single elasticity. It also gives the female elasticity immediately. The more elastic group receives the higher wage because the monopsony wedge between its wage and marginal expenditure is smaller.\n\nLet common marginal revenue product be $v=MR=A-Q$. Marginal expenditure on type i is $(1+1/\\epsilon_i)w_i$, so $w_i=v\\epsilon_i/(1+\\epsilon_i)$. Substitute $\\epsilon_F=1/\\epsilon_M$; the wage ratio becomes $w_M/w_F=\\epsilon_M$.\n\nThe observed ratio 2 therefore gives the result.\n\n$\\epsilon_M=2$ and $\\epsilon_F=1/2$.",
     "hint": "The relative monopsony markdown depends on supply elasticities.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "A monopsonist equates marginal labour expenditure, not the wage, to the common marginal revenue product. Invert each group's labour supply to differentiate its wage bill."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nL_i&=w_i^{\\epsilon_i},\\quad\nME_i=(1+1/\\epsilon_i)w_i,\\\\\nw_i&=v\\frac{\\epsilon_i}{1+\\epsilon_i},\\quad v=MR=A-Q,\\\\\n\\epsilon_F=1/\\epsilon_M&\\Longrightarrow w_M/w_F=\\epsilon_M=2.\n\\end{aligned}$$\n\nThe reciprocal-elasticity restriction collapses the wage ratio to a single elasticity. It also gives the female elasticity immediately. The more elastic group receives the higher wage because the monopsony wedge between its wage and marginal expenditure is smaller."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let common marginal revenue product be $v=MR=A-Q$. Marginal expenditure on type i is $(1+1/\\epsilon_i)w_i$, so $w_i=v\\epsilon_i/(1+\\epsilon_i)$. Substitute $\\epsilon_F=1/\\epsilon_M$; the wage ratio becomes $w_M/w_F=\\epsilon_M$.\n\nThe observed ratio 2 therefore gives the result."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$\\epsilon_M=2$ and $\\epsilon_F=1/2$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q5b",
     "number": "5(b)",
     "stem": "A product monopolist and labour monopsonist has $Q=L=L_M+L_F$, inverse demand $p=A-Q/2$, and labour supplies $L_i=w_i^{\\epsilon_i}$, $\\epsilon_i>0$, with $\\epsilon_M\\epsilon_F=1$. Both groups are hired and the male wage is twice the female wage. As output-demand intercept A increases, what happens to male labour income as a share of total labour income? Prove it.",
     "answer": "The male labour-income share strictly increases.",
-    "solution": "Using the elasticities, $w_M=2v/3,w_F=v/3$, hence $L_M=(2v/3)^2$ and $L_F=(v/3)^{1/2}$. Male and female wage bills are $(2v/3)^3$ and $(v/3)^{3/2}$. Their ratio is a positive constant times $v^{3/2}$, strictly increasing in v. Since $v=A-Q$, equilibrium satisfies $A=v+4v^2/9+\\sqrt{v/3}$, whose right side is strictly increasing for $v>0$. Therefore v rises with A, so the male/female bill ratio and male share rise.",
+    "solution": "Insert the elasticities from part (a) into wages, employment and wage bills. To prove the share rises, it is enough to show the male-to-female wage-bill ratio rises.\n\n$$\\begin{aligned}\nw_M&=2v/3,\\quad w_F=v/3,\\\\\nB_M&=(2v/3)^3,\\qquad B_F=(v/3)^{3/2},\\\\\nB_M/B_F&=\\frac8{3^{3/2}}v^{3/2},\\\\\nA&=v+4v^2/9+\\sqrt{v/3}.\n\\end{aligned}$$\n\nThe last equation has a strictly increasing right side, so higher demand intercept $A$ increases the common marginal revenue product $v$. Male employment responds more elastically, making its wage bill rise faster. A rising positive bill ratio also raises the male fraction $B_M/(B_M+B_F)$.\n\nUsing the elasticities, $w_M=2v/3,w_F=v/3$, hence $L_M=(2v/3)^2$ and $L_F=(v/3)^{1/2}$. Male and female wage bills are $(2v/3)^3$ and $(v/3)^{3/2}$. Their ratio is a positive constant times $v^{3/2}$, strictly increasing in v.\n\nSince $v=A-Q$, equilibrium satisfies $A=v+4v^2/9+\\sqrt{v/3}$, whose right side is strictly increasing for $v>0$. Therefore v rises with A, so the male/female bill ratio and male share rise.\n\nThe male labour-income share strictly increases.",
     "hint": "Express wages, employment and wage bills using the common marginal revenue product.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Insert the elasticities from part (a) into wages, employment and wage bills. To prove the share rises, it is enough to show the male-to-female wage-bill ratio rises."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nw_M&=2v/3,\\quad w_F=v/3,\\\\\nB_M&=(2v/3)^3,\\qquad B_F=(v/3)^{3/2},\\\\\nB_M/B_F&=\\frac8{3^{3/2}}v^{3/2},\\\\\nA&=v+4v^2/9+\\sqrt{v/3}.\n\\end{aligned}$$\n\nThe last equation has a strictly increasing right side, so higher demand intercept $A$ increases the common marginal revenue product $v$. Male employment responds more elastically, making its wage bill rise faster. A rising positive bill ratio also raises the male fraction $B_M/(B_M+B_F)$."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Using the elasticities, $w_M=2v/3,w_F=v/3$, hence $L_M=(2v/3)^2$ and $L_F=(v/3)^{1/2}$. Male and female wage bills are $(2v/3)^3$ and $(v/3)^{3/2}$. Their ratio is a positive constant times $v^{3/2}$, strictly increasing in v.\n\nSince $v=A-Q$, equilibrium satisfies $A=v+4v^2/9+\\sqrt{v/3}$, whose right side is strictly increasing for $v>0$. Therefore v rises with A, so the male/female bill ratio and male share rise."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The male labour-income share strictly increases."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q6a",
     "number": "6(a)",
     "stem": "A household supplies labour L to a competitive firm $Y=F(L)$ with $F\\prime>0,F\\prime\\prime<0$, receiving wages and all firm profits. Utility is $\\frac12\\ln C+\\frac12\\ln(M/P)-d(L)$, $d\\prime,d\\prime\\prime>0$. Budget: $PC+M=WL+\\Pi+\\bar M-PT$. Government budget: $M-\\bar M=P(G-T)$; goods clear at $Y=C+G$. Prove $0<dY/dG<1$ and $dC/dG<0$.",
     "answer": "$dY/dG=2F\\prime d\\prime/[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]\\in(0,1)$; $dC/dG=dY/dG-1<0$.",
-    "solution": "Household FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$. Differentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$. The bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$. Multiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls.",
+    "solution": "Combine household and firm first-order conditions to eliminate nominal variables. Goods-market clearing then leaves one real equilibrium equation in employment and government spending.\n\n$$\\begin{aligned}\nM&=PC,\\quad W/P=F\\prime(L),\\quad C=F(L)-G,\\\\\n2[F(L)-G]d\\prime(L)&=F\\prime(L),\\\\\nD\\frac{dL}{dG}&=2d\\prime(L),\\\\\nD&=2F\\prime d\\prime+2Cd^{\\prime\\prime}-F^{\\prime\\prime},\\\\\n\\frac{dY}{dG}&=\\frac{2F\\prime d\\prime}{D}\\in(0,1).\n\\end{aligned}$$\n\nThe denominator exceeds the positive numerator because disutility is strictly convex and production strictly concave. Thus labour and output increase, but not enough to match the public spending increase. The residual consumption response is $dC/dG=dY/dG-1<0$.\n\nHousehold FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$. Differentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$.\n\nThe bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$. Multiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls.\n\n$dY/dG=2F\\prime d\\prime/[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]\\in(0,1)$; $dC/dG=dY/dG-1<0$.",
     "hint": "Use real labour-market equilibrium to eliminate nominal quantities.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Combine household and firm first-order conditions to eliminate nominal variables. Goods-market clearing then leaves one real equilibrium equation in employment and government spending."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nM&=PC,\\quad W/P=F\\prime(L),\\quad C=F(L)-G,\\\\\n2[F(L)-G]d\\prime(L)&=F\\prime(L),\\\\\nD\\frac{dL}{dG}&=2d\\prime(L),\\\\\nD&=2F\\prime d\\prime+2Cd^{\\prime\\prime}-F^{\\prime\\prime},\\\\\n\\frac{dY}{dG}&=\\frac{2F\\prime d\\prime}{D}\\in(0,1).\n\\end{aligned}$$\n\nThe denominator exceeds the positive numerator because disutility is strictly convex and production strictly concave. Thus labour and output increase, but not enough to match the public spending increase. The residual consumption response is $dC/dG=dY/dG-1<0$."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Household FOCs give $M=PC$ and $d\\prime(L)=W/(2PC)$. Firm optimality gives $W/P=F\\prime(L)$, so real equilibrium satisfies $2[F(L)-G]d\\prime(L)=F\\prime(L)$. Differentiate in G: $[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]dL/dG=2d\\prime$.\n\nThe bracket D is positive and exceeds $2F\\prime d\\prime$, because $C>0,d\\prime\\prime>0,F\\prime\\prime<0$. Multiplying by $F\\prime>0$ gives $0<dY/dG<1$. Since $C=Y-G$, consumption falls."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$dY/dG=2F\\prime d\\prime/[2F\\prime d\\prime+2C d\\prime\\prime-F\\prime\\prime]\\in(0,1)$; $dC/dG=dY/dG-1<0$."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q6b",
     "number": "6(b)",
     "stem": "A household supplies labour L to a competitive firm $Y=F(L)$ with $F\\prime>0,F\\prime\\prime<0$, receiving wages and all firm profits. Utility is $\\frac12\\ln C+\\frac12\\ln(M/P)-d(L)$, $d\\prime,d\\prime\\prime>0$. Budget: $PC+M=WL+\\Pi+\\bar M-PT$. Government budget: $M-\\bar M=P(G-T)$; goods clear at $Y=C+G$. Everything else fixed, show increasing initial nominal money $\\bar M$ raises P proportionately.",
     "answer": "$P=\\bar M/[Y-2G+T]$, so the price elasticity with respect to initial money is 1.",
-    "solution": "The real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$. Holding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances). A positive-price equilibrium requires the denominator positive.",
+    "solution": "The real first-order condition does not contain initial nominal balances. Once the real allocation is determined, use household money demand and the government budget to recover the price level.\n\n$$\\begin{aligned}\nM&=PC,\\\\\nM-\\bar M&=P(G-T),\\\\\n\\bar M&=P(C-G+T)=P(Y-2G+T),\\\\\nP&=\\frac{\\bar M}{Y-2G+T},\\qquad\n\\frac{d\\log P}{d\\log\\bar M}=1.\n\\end{aligned}$$\n\nHolding real policies fixed holds the denominator fixed. Nominal balances therefore scale the price level proportionately rather than changing employment or consumption. The required positive denominator is an equilibrium-existence condition, not something that can be ignored when solving for $P$.\n\nThe real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$. Holding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances).\n\nA positive-price equilibrium requires the denominator positive.\n\n$P=\\bar M/[Y-2G+T]$, so the price elasticity with respect to initial money is 1.",
     "hint": "Combine money demand with the government budget after fixing the real allocation.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The real first-order condition does not contain initial nominal balances. Once the real allocation is determined, use household money demand and the government budget to recover the price level."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nM&=PC,\\\\\nM-\\bar M&=P(G-T),\\\\\n\\bar M&=P(C-G+T)=P(Y-2G+T),\\\\\nP&=\\frac{\\bar M}{Y-2G+T},\\qquad\n\\frac{d\\log P}{d\\log\\bar M}=1.\n\\end{aligned}$$\n\nHolding real policies fixed holds the denominator fixed. Nominal balances therefore scale the price level proportionately rather than changing employment or consumption. The required positive denominator is an equilibrium-existence condition, not something that can be ignored when solving for $P$."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The real equilibrium equation $2[F(L)-G]d\\prime=F\\prime$ determines L,Y,C independently of nominal money. Household demand gives $M=PC$; government budget then yields $PC-\\bar M=P(G-T)$, hence $\\bar M=P(C-G+T)=P(Y-2G+T)$. Holding real policy and the resulting real allocation fixed, doubling initial money doubles P (and compatible nominal wage and final balances).\n\nA positive-price equilibrium requires the denominator positive."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$P=\\bar M/[Y-2G+T]$, so the price elasticity with respect to initial money is 1."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q7a",
     "number": "7(a)",
     "stem": "In continuous-time Solow without technological progress, the proposed intensive production function is $f(k)=k^4-6k^3+11k^2-6k=k(k-1)(k-2)(k-3)$, $k=K/L$. State the standard assumptions on extensive production F(K,L) and identify violations.",
     "answer": "The polynomial violates nonnegative output, monotonicity/concavity and Inada conditions, although $F(K,L)=Lf(K/L)$ can be made constant returns.",
-    "solution": "Standard neoclassical Solow assumes nonnegative output, essential inputs, degree-one homogeneity, positive diminishing marginal products and appropriate Inada limits. Here f is negative for $0<k<1$ and $2<k<3$. Also $f\\prime(0)=-6$, not positive/infinite, and $f\\prime(k)\\to\\infty$ as k grows, not zero. Its second derivative $12k^2-36k+22$ changes sign and is positive for sufficiently large k, violating global concavity. Defining extensive F as $Lf(K/L)$ ensures degree-one homogeneity but cannot repair those economic defects or global positive labour marginal product.",
+    "solution": "Check each neoclassical assumption separately; degree-one homogeneity of an extensive construction does not imply positive or concave intensive production.\n\n$$\\begin{aligned}\nf(k)&=k(k-1)(k-2)(k-3),\\\\\nf\\prime(0)&=-6,\\qquad\\lim_{k\\to\\infty}f\\prime(k)=\\infty,\\\\\nf^{\\prime\\prime}(k)&=12k^2-36k+22,\\\\\nF(K,L)&=Lf(K/L)\\Longrightarrow F(tK,tL)=tF(K,L).\n\\end{aligned}$$\n\nThe factorization identifies negative-output intervals immediately, while the derivatives reject positive diminishing marginal products and the usual Inada limits. Homogeneity survives by construction, but cannot rescue the other economic assumptions. The later dynamic analysis must therefore be described as a formal mathematical exercise.\n\nStandard neoclassical Solow assumes nonnegative output, essential inputs, degree-one homogeneity, positive diminishing marginal products and appropriate Inada limits. Here f is negative for $0<k<1$ and $2<k<3$. Also $f\\prime(0)=-6$, not positive/infinite, and $f\\prime(k)\\to\\infty$ as k grows, not zero.\n\nIts second derivative $12k^2-36k+22$ changes sign and is positive for sufficiently large k, violating global concavity. Defining extensive F as $Lf(K/L)$ ensures degree-one homogeneity but cannot repair those economic defects or global positive labour marginal product.\n\nThe polynomial violates nonnegative output, monotonicity/concavity and Inada conditions, although $F(K,L)=Lf(K/L)$ can be made constant returns.",
     "hint": "Check the roots, the derivatives at zero and the leading term at infinity.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Check each neoclassical assumption separately; degree-one homogeneity of an extensive construction does not imply positive or concave intensive production."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nf(k)&=k(k-1)(k-2)(k-3),\\\\\nf\\prime(0)&=-6,\\qquad\\lim_{k\\to\\infty}f\\prime(k)=\\infty,\\\\\nf^{\\prime\\prime}(k)&=12k^2-36k+22,\\\\\nF(K,L)&=Lf(K/L)\\Longrightarrow F(tK,tL)=tF(K,L).\n\\end{aligned}$$\n\nThe factorization identifies negative-output intervals immediately, while the derivatives reject positive diminishing marginal products and the usual Inada limits. Homogeneity survives by construction, but cannot rescue the other economic assumptions. The later dynamic analysis must therefore be described as a formal mathematical exercise."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Standard neoclassical Solow assumes nonnegative output, essential inputs, degree-one homogeneity, positive diminishing marginal products and appropriate Inada limits. Here f is negative for $0<k<1$ and $2<k<3$. Also $f\\prime(0)=-6$, not positive/infinite, and $f\\prime(k)\\to\\infty$ as k grows, not zero.\n\nIts second derivative $12k^2-36k+22$ changes sign and is positive for sufficiently large k, violating global concavity. Defining extensive F as $Lf(K/L)$ ensures degree-one homogeneity but cannot repair those economic defects or global positive labour marginal product."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The polynomial violates nonnegative output, monotonicity/concavity and Inada conditions, although $F(K,L)=Lf(K/L)$ can be made constant returns."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q7b",
     "number": "7(b)",
     "stem": "In continuous-time Solow without technological progress, the proposed intensive production function is $f(k)=k^4-6k^3+11k^2-6k=k(k-1)(k-2)(k-3)$, $k=K/L$. Graphically show that for suitable n+delta there are three steady-state equilibria.",
     "answer": "Three positive equilibria exist when $0<(n+\\delta)/s<2/(3\\sqrt3)$, with saving $s>0$; zero is an additional mathematical fixed point.",
-    "solution": "The Solow law is $\\dot k=sf(k)-(n+\\delta)k$. Positive equilibria satisfy $h(k)=(k-1)(k-2)(k-3)=(n+\\delta)/s=c$. Writing $u=k-2$, $h=u^3-u$ has a positive local maximum $2/(3\\sqrt3)$ at $k=2-1/\\sqrt3$. Plot h and a horizontal line $0<c<2/(3\\sqrt3)$, for example c=0.1. It cuts h twice between 1 and 2 and once above 3. These are the three positive fixed points; k=0 also solves the un-divided equation. Thus the phrase three steady states needs a positive-capital qualification, and the polynomial remains economically invalid where output is negative.",
+    "solution": "For a positive steady state, divide the stationary capital law by $sk$ and plot a cubic against a horizontal line. Keep the undivided equation in mind so the zero boundary is not accidentally lost.\n\n$$\\begin{aligned}\n\\dot k&=sk[h(k)-c],\\qquad c=(n+\\delta)/s,\\\\\nh(k)&=(k-1)(k-2)(k-3)=(k-2)^3-(k-2),\\\\\n\\max_{1<k<2}h(k)&=\\frac2{3\\sqrt3},\\\\\n0<c<\\frac2{3\\sqrt3}&\\Longrightarrow\\text{three positive crossings}.\n\\end{aligned}$$\n\nThe cubic has a positive hump between one and two and rises without bound above three. A horizontal line below the hump crosses twice in the first interval and once beyond three. The original equation also vanishes at zero, so “three” refers to positive equilibria only.\n\nThe Solow law is $\\dot k=sf(k)-(n+\\delta)k$. Positive equilibria satisfy $h(k)=(k-1)(k-2)(k-3)=(n+\\delta)/s=c$. Writing $u=k-2$, $h=u^3-u$ has a positive local maximum $2/(3\\sqrt3)$ at $k=2-1/\\sqrt3$.\n\nPlot h and a horizontal line $0<c<2/(3\\sqrt3)$, for example c=0.1. It cuts h twice between 1 and 2 and once above 3. These are the three positive fixed points; k=0 also solves the un-divided equation.\n\nThus the phrase three steady states needs a positive-capital qualification, and the polynomial remains economically invalid where output is negative.\n\nThree positive equilibria exist when $0<(n+\\delta)/s<2/(3\\sqrt3)$, with saving $s>0$; zero is an additional mathematical fixed point.",
     "hint": "Divide the fixed-point equation by positive k and graph the resulting cubic.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "needs_review",
-    "notes": "A saving rate is implicit in the Solow model but not restated by the question. Three means positive equilibria; zero is a fourth mathematical fixed point."
+    "notes": "A saving rate is implicit in the Solow model but not restated by the question. Three means positive equilibria; zero is a fourth mathematical fixed point.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For a positive steady state, divide the stationary capital law by $sk$ and plot a cubic against a horizontal line. Keep the undivided equation in mind so the zero boundary is not accidentally lost."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\dot k&=sk[h(k)-c],\\qquad c=(n+\\delta)/s,\\\\\nh(k)&=(k-1)(k-2)(k-3)=(k-2)^3-(k-2),\\\\\n\\max_{1<k<2}h(k)&=\\frac2{3\\sqrt3},\\\\\n0<c<\\frac2{3\\sqrt3}&\\Longrightarrow\\text{three positive crossings}.\n\\end{aligned}$$\n\nThe cubic has a positive hump between one and two and rises without bound above three. A horizontal line below the hump crosses twice in the first interval and once beyond three. The original equation also vanishes at zero, so “three” refers to positive equilibria only."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The Solow law is $\\dot k=sf(k)-(n+\\delta)k$. Positive equilibria satisfy $h(k)=(k-1)(k-2)(k-3)=(n+\\delta)/s=c$. Writing $u=k-2$, $h=u^3-u$ has a positive local maximum $2/(3\\sqrt3)$ at $k=2-1/\\sqrt3$.\n\nPlot h and a horizontal line $0<c<2/(3\\sqrt3)$, for example c=0.1. It cuts h twice between 1 and 2 and once above 3. These are the three positive fixed points; k=0 also solves the un-divided equation.\n\nThus the phrase three steady states needs a positive-capital qualification, and the polynomial remains economically invalid where output is negative."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Three positive equilibria exist when $0<(n+\\delta)/s<2/(3\\sqrt3)$, with saving $s>0$; zero is an additional mathematical fixed point."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q7c",
     "number": "7(c)",
     "stem": "In continuous-time Solow without technological progress, the proposed intensive production function is $f(k)=k^4-6k^3+11k^2-6k=k(k-1)(k-2)(k-3)$, $k=K/L$. Classify the local stability of the three positive steady states and discuss global stability.",
     "answer": "Ordered positive roots: first unstable, second locally stable, third unstable. None is globally stable on all nonnegative capital.",
-    "solution": "For c in the three-root range, $\\dot k=sk[h(k)-c]$. Starting near zero, h-c is negative; it changes sign from negative to positive at the first root, positive to negative at the second and negative to positive at the third. Thus arrows point away from roots 1 and 3 and toward root 2. The zero boundary is locally attracting mathematically. Initial capital above root 3 increases without converging to the middle root, while sufficiently small capital approaches zero. Therefore no single positive root attracts every initial state. This classification concerns the formal ODE despite the proposed production function’s negative-output regions.",
+    "solution": "Use a phase line for the one-dimensional capital law. Label the ordered positive roots $k_1<k_2<k_3$ and determine signs between them rather than guessing stability from the graph's shape.\n\n$$\\begin{aligned}\n\\dot k&=sk[h(k)-c],\\\\\n\\operatorname{sgn}\\dot k&=(-,+,-,+)\n\\quad\\text{on }(0,k_1),(k_1,k_2),(k_2,k_3),(k_3,\\infty),\\\\\nk_1,k_3&:\\text{ unstable},\\qquad k_2:\\text{ locally stable}.\n\\end{aligned}$$\n\nThe middle root attracts only states inside its basin. Low capital moves toward the zero boundary and sufficiently high capital moves upward without returning, so local stability is not global stability. These are properties of the proposed differential equation despite its economically invalid production regions.\n\nFor c in the three-root range, $\\dot k=sk[h(k)-c]$. Starting near zero, h-c is negative; it changes sign from negative to positive at the first root, positive to negative at the second and negative to positive at the third. Thus arrows point away from roots 1 and 3 and toward root 2.\n\nThe zero boundary is locally attracting mathematically. Initial capital above root 3 increases without converging to the middle root, while sufficiently small capital approaches zero. Therefore no single positive root attracts every initial state.\n\nThis classification concerns the formal ODE despite the proposed production function’s negative-output regions.\n\nOrdered positive roots: first unstable, second locally stable, third unstable. None is globally stable on all nonnegative capital.",
     "hint": "Read the sign of net investment between successive roots.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use a phase line for the one-dimensional capital law. Label the ordered positive roots $k_1<k_2<k_3$ and determine signs between them rather than guessing stability from the graph's shape."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\dot k&=sk[h(k)-c],\\\\\n\\operatorname{sgn}\\dot k&=(-,+,-,+)\n\\quad\\text{on }(0,k_1),(k_1,k_2),(k_2,k_3),(k_3,\\infty),\\\\\nk_1,k_3&:\\text{ unstable},\\qquad k_2:\\text{ locally stable}.\n\\end{aligned}$$\n\nThe middle root attracts only states inside its basin. Low capital moves toward the zero boundary and sufficiently high capital moves upward without returning, so local stability is not global stability. These are properties of the proposed differential equation despite its economically invalid production regions."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For c in the three-root range, $\\dot k=sk[h(k)-c]$. Starting near zero, h-c is negative; it changes sign from negative to positive at the first root, positive to negative at the second and negative to positive at the third. Thus arrows point away from roots 1 and 3 and toward root 2.\n\nThe zero boundary is locally attracting mathematically. Initial capital above root 3 increases without converging to the middle root, while sufficiently small capital approaches zero. Therefore no single positive root attracts every initial state.\n\nThis classification concerns the formal ODE despite the proposed production function’s negative-output regions."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Ordered positive roots: first unstable, second locally stable, third unstable. None is globally stable on all nonnegative capital."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q8a",
     "number": "8(a)",
     "stem": "A discrete-time Solow economy has $K_{t+1}=(1-\\delta)K_t+I_t$, $0\\leq\\delta\\leq1$, and resource identity $Y_t=C_t+I_t+G_t$. Government spending is $G_t=\\sigma Y_t$, $\\sigma\\in[0,1]$, and consumption is $C_t=(\\phi-\\lambda\\sigma)Y_t$, $\\lambda\\in[0,1]$. Derive the effect of higher sigma on the steady state.",
     "answer": "Effective investment share is $a(\\sigma)=1-\\phi-(1-\\lambda)\\sigma$; higher sigma weakly reduces steady-state capital and output.",
-    "solution": "The resource identity gives $I_t=a(\\sigma)Y_t$. Under the standard fixed-labour Solow technology $Y=F(K)$ unaffected by government spending, steady state satisfies $\\delta K^*=aF(K^*)$. For an interior positive steady state, differentiate: $[\\delta-aF\\prime]dK^*/d\\sigma=-(1-\\lambda)F$. Concavity and the steady-state equation make the bracket $a[F(K^*)/K^*-F\\prime(K^*)]>0$. Thus capital falls strictly if $\\lambda<1$ and otherwise is unchanged. Feasibility requires nonnegative consumption and investment shares. If the phrase output is augmented by government spending intends an additional productive effect of G in F, its form is unspecified and no general sign follows.",
+    "solution": "Use the resource identity to identify the effective investment share. Government expenditure is a diversion of output here, not an additional production input unless a separate technology explicitly says otherwise.\n\n$$\\begin{aligned}\nI_t&=a(\\sigma)Y_t,\\quad a(\\sigma)=1-\\phi-(1-\\lambda)\\sigma,\\\\\n\\delta K^*&=a(\\sigma)F(K^*),\\\\\n[\\delta-aF\\prime]\\frac{dK^*}{d\\sigma}&=-(1-\\lambda)F,\\\\\n\\delta-aF\\prime&=a\\left[\\frac{F(K^*)}{K^*}-F\\prime(K^*)\\right]>0.\n\\end{aligned}$$\n\nStrict concavity puts average product above marginal product, establishing the denominator sign. A larger government share weakly lowers the investment share and the steady capital stock, with equality when $\\lambda=1$. Nonnegative consumption and investment shares remain necessary for the proposed policy to be feasible.\n\nThe resource identity gives $I_t=a(\\sigma)Y_t$. Under the standard fixed-labour Solow technology $Y=F(K)$ unaffected by government spending, steady state satisfies $\\delta K^*=aF(K^*)$. For an interior positive steady state, differentiate: $[\\delta-aF\\prime]dK^*/d\\sigma=-(1-\\lambda)F$.\n\nConcavity and the steady-state equation make the bracket $a[F(K^*)/K^*-F\\prime(K^*)]>0$. Thus capital falls strictly if $\\lambda<1$ and otherwise is unchanged. Feasibility requires nonnegative consumption and investment shares.\n\nIf the phrase output is augmented by government spending intends an additional productive effect of G in F, its form is unspecified and no general sign follows.\n\nEffective investment share is $a(\\sigma)=1-\\phi-(1-\\lambda)\\sigma$; higher sigma weakly reduces steady-state capital and output.",
     "hint": "Derive the residual investment share before using the Solow steady state.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Comparative statics assume standard production unaffected by G, positive feasible investment, fixed labour and a positive interior steady state. Boundary lambda=1 gives equality."
+    "notes": "Comparative statics assume standard production unaffected by G, positive feasible investment, fixed labour and a positive interior steady state. Boundary lambda=1 gives equality.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use the resource identity to identify the effective investment share. Government expenditure is a diversion of output here, not an additional production input unless a separate technology explicitly says otherwise."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nI_t&=a(\\sigma)Y_t,\\quad a(\\sigma)=1-\\phi-(1-\\lambda)\\sigma,\\\\\n\\delta K^*&=a(\\sigma)F(K^*),\\\\\n[\\delta-aF\\prime]\\frac{dK^*}{d\\sigma}&=-(1-\\lambda)F,\\\\\n\\delta-aF\\prime&=a\\left[\\frac{F(K^*)}{K^*}-F\\prime(K^*)\\right]>0.\n\\end{aligned}$$\n\nStrict concavity puts average product above marginal product, establishing the denominator sign. A larger government share weakly lowers the investment share and the steady capital stock, with equality when $\\lambda=1$. Nonnegative consumption and investment shares remain necessary for the proposed policy to be feasible."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The resource identity gives $I_t=a(\\sigma)Y_t$. Under the standard fixed-labour Solow technology $Y=F(K)$ unaffected by government spending, steady state satisfies $\\delta K^*=aF(K^*)$. For an interior positive steady state, differentiate: $[\\delta-aF\\prime]dK^*/d\\sigma=-(1-\\lambda)F$.\n\nConcavity and the steady-state equation make the bracket $a[F(K^*)/K^*-F\\prime(K^*)]>0$. Thus capital falls strictly if $\\lambda<1$ and otherwise is unchanged. Feasibility requires nonnegative consumption and investment shares.\n\nIf the phrase output is augmented by government spending intends an additional productive effect of G in F, its form is unspecified and no general sign follows."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Effective investment share is $a(\\sigma)=1-\\phi-(1-\\lambda)\\sigma$; higher sigma weakly reduces steady-state capital and output."
+      }
+    ]
   },
   {
     "id": "2015-PEB-Q8b",
     "number": "8(b)",
     "stem": "A discrete-time Solow economy has $K_{t+1}=(1-\\delta)K_t+I_t$, $0\\leq\\delta\\leq1$, and resource identity $Y_t=C_t+I_t+G_t$. Government spending is $G_t=\\sigma Y_t$, $\\sigma\\in[0,1]$, and consumption is $C_t=(\\phi-\\lambda\\sigma)Y_t$, $\\lambda\\in[0,1]$. Does higher sigma lower capital in every period along the transition? Prove the claim.",
     "answer": "From the same initial capital, the high-sigma path is weakly below the low-sigma path; strictly below from period 1 if lambda<1 and output is positive.",
-    "solution": "Let $T_\\sigma(K)=(1-\\delta)K+a(\\sigma)F(K)$. With nonnegative a and monotone F, this map is increasing in K. If $\\sigma_H>\\sigma_L$, then $a_H\\leq a_L$, so $T_H(K)\\leq T_L(K)$ at every K. Starting from the same K0, suppose inductively $K_t^H\\leq K_t^L$. Then $K_{t+1}^H=T_H(K_t^H)\\leq T_H(K_t^L)\\leq T_L(K_t^L)=K_{t+1}^L$. This establishes the ordering. For $\\lambda=1$ the maps coincide, and at date zero the states are equal, so an unconditional strict-lower-in-every-period claim is false. Productive-government or different-initial-state assumptions would require a different comparison.",
+    "solution": "Compare the two transition maps point by point, starting from identical initial capital. A steady-state comparison alone does not prove that the entire paths are ordered.\n\n$$\\begin{aligned}\nT_\\sigma(K)&=(1-\\delta)K+a(\\sigma)F(K),\\\\\n\\sigma_H>\\sigma_L&\\Longrightarrow T_H(K)\\le T_L(K),\\\\\nK_t^H\\le K_t^L&\\Longrightarrow\nT_H(K_t^H)\\le T_H(K_t^L)\\le T_L(K_t^L).\n\\end{aligned}$$\n\nThe middle inequality uses monotonicity in capital; the second uses the lower investment share under the high-spending policy. Induction extends the ordering from the common initial state to every later date. A strict claim needs positive output and $\\lambda<1$; equality at date zero and identical maps when $\\lambda=1$ must be retained.\n\nLet $T_\\sigma(K)=(1-\\delta)K+a(\\sigma)F(K)$. With nonnegative a and monotone F, this map is increasing in K. If $\\sigma_H>\\sigma_L$, then $a_H\\leq a_L$, so $T_H(K)\\leq T_L(K)$ at every K.\n\nStarting from the same K0, suppose inductively $K_t^H\\leq K_t^L$. Then $K_{t+1}^H=T_H(K_t^H)\\leq T_H(K_t^L)\\leq T_L(K_t^L)=K_{t+1}^L$. This establishes the ordering.\n\nFor $\\lambda=1$ the maps coincide, and at date zero the states are equal, so an unconditional strict-lower-in-every-period claim is false. Productive-government or different-initial-state assumptions would require a different comparison.\n\nFrom the same initial capital, the high-sigma path is weakly below the low-sigma path; strictly below from period 1 if lambda<1 and output is positive.",
     "hint": "Use monotonicity of both capital transition maps to prove an induction.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "msqe2015_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Compare the two transition maps point by point, starting from identical initial capital. A steady-state comparison alone does not prove that the entire paths are ordered."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nT_\\sigma(K)&=(1-\\delta)K+a(\\sigma)F(K),\\\\\n\\sigma_H>\\sigma_L&\\Longrightarrow T_H(K)\\le T_L(K),\\\\\nK_t^H\\le K_t^L&\\Longrightarrow\nT_H(K_t^H)\\le T_H(K_t^L)\\le T_L(K_t^L).\n\\end{aligned}$$\n\nThe middle inequality uses monotonicity in capital; the second uses the lower investment share under the high-spending policy. Induction extends the ordering from the common initial state to every later date. A strict claim needs positive output and $\\lambda<1$; equality at date zero and identical maps when $\\lambda=1$ must be retained."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let $T_\\sigma(K)=(1-\\delta)K+a(\\sigma)F(K)$. With nonnegative a and monotone F, this map is increasing in K. If $\\sigma_H>\\sigma_L$, then $a_H\\leq a_L$, so $T_H(K)\\leq T_L(K)$ at every K.\n\nStarting from the same K0, suppose inductively $K_t^H\\leq K_t^L$. Then $K_{t+1}^H=T_H(K_t^H)\\leq T_H(K_t^L)\\leq T_L(K_t^L)=K_{t+1}^L$. This establishes the ordering.\n\nFor $\\lambda=1$ the maps coincide, and at date zero the states are equal, so an unconditional strict-lower-in-every-period claim is false. Productive-government or different-initial-state assumptions would require a different comparison."
+      },
+      {
+        "title": "Conclusion",
+        "body": "From the same initial capital, the high-sigma path is weakly below the low-sigma path; strictly below from period 1 if lambda<1 and output is positive."
+      }
+    ]
   }
 ]

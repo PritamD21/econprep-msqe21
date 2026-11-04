@@ -12,4 +12,11 @@ vm.runInContext(`test={paperId:'2020-PEA',track:'PEA',index:0,answers:{},reviewe
 assert(nodes.get('#content').innerHTML.includes('question-images/2020-PEA-Q1'));assert((nodes.get('#content').innerHTML.match(/type="radio"/g)||[]).length===4);
 vm.runInContext(`test={paperId:'2020-PEB',track:'PEB',index:0,answers:{},reviewed:{},helpUsed:{},startedAt:Date.now(),end:Date.now()+60000,tab:'hint',done:false};renderTest();`,ctx);
 const html=nodes.get('#content').innerHTML;assert(html.includes('hint-panel'));assert(!/textarea|type="radio"|contenteditable/.test(html));assert(html.includes('A1'));
+ctx.readingQuestion=bank.questions.find(q=>q.paperId==='2025-PEB'&&q.solutionSteps?.length);
+const worked=vm.runInContext('worked(readingQuestion)',ctx);assert(worked.includes('solution-step'));assert(worked.includes('<p>'));assert(!worked.includes('<br>'));assert(worked.includes('begin{aligned}'));
+assert.equal(vm.runInContext("paragraphs('First paragraph.\\n\\nSecond paragraph.')",ctx),'<p>First paragraph.</p><p>Second paragraph.</p>');
+const index=fs.readFileSync('dist/index.html','utf8');assert(!index.includes('data-page="practice"'));assert(!index.includes('Mock tests'));assert(index.includes('Pritam Das'));
+for(const p of ['2025-PEA','2025-PEB','2026-PEA','2026-PEB'])assert(bank.papers.find(x=>x.id===p)?.itemCount>0,p);
+for(const q of bank.questions.filter(q=>q.year===2026&&q.paper==='PEA'&&q.status==='verified'))assert(q.correctIndex===q.officialKeyIndex,q.id);
 console.log('Real bank grading excludes flagged items; image MCQs and grouped PEB hint-only practice render correctly.');
+console.log('Structured paragraphs, aligned equations, recent papers, official-key checks and the single paper-library navigation passed.');

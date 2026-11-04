@@ -4,475 +4,1087 @@
     "number": "1(i)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Find and justify the set of Pareto-optimal allocations.",
     "answer": "$(X_2,Y_2)=(t,t)$ and $(X_1,Y_1)=(10-t,12-t)$, $0\\leq t\\leq10$.",
-    "solution": "If consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$. At such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum. Every feasible diagonal allocation is therefore efficient.",
+    "solution": "Use consumer 2's holdings $(x,y)$ to parameterize allocations. Consumer 1 receives the residual aggregate resources, so a transfer comparison can be made without introducing prices.\n\n$$\\begin{aligned}\n(X_1,Y_1)&=(10-x,12-y),\\\\\nU_1&=22-x-y,\\qquad U_2=\\min\\{x,y\\},\\\\\nx>y&\\Longrightarrow\\text{transfer }x-y\\text{ units of X to consumer 1},\\\\\nx=y=t&\\Longrightarrow0\\le t\\le10.\n\\end{aligned}$$\n\nAny excess above the complementary consumer's bottleneck can be transferred without reducing her utility, proving equality of her holdings is necessary. On the diagonal, increasing her utility consumes more of both resources and reduces the other consumer's sum, establishing sufficiency as well.\n\nIf consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$. At such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum.\n\nEvery feasible diagonal allocation is therefore efficient.\n\n$(X_2,Y_2)=(t,t)$ and $(X_1,Y_1)=(10-t,12-t)$, $0\\leq t\\leq10$.",
     "hint": "Remove useless excess inputs from the complementary consumer.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use consumer 2's holdings $(x,y)$ to parameterize allocations. Consumer 1 receives the residual aggregate resources, so a transfer comparison can be made without introducing prices."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n(X_1,Y_1)&=(10-x,12-y),\\\\\nU_1&=22-x-y,\\qquad U_2=\\min\\{x,y\\},\\\\\nx>y&\\Longrightarrow\\text{transfer }x-y\\text{ units of X to consumer 1},\\\\\nx=y=t&\\Longrightarrow0\\le t\\le10.\n\\end{aligned}$$\n\nAny excess above the complementary consumer's bottleneck can be transferred without reducing her utility, proving equality of her holdings is necessary. On the diagonal, increasing her utility consumes more of both resources and reduces the other consumer's sum, establishing sufficiency as well."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "If consumer 2 holds unequal amounts, transferring any excess above the smaller amount to consumer 1 leaves consumer 2’s utility unchanged and improves consumer 1. Hence efficiency requires $X_2=Y_2=t$. At such an allocation, raising consumer 2’s utility requires increasing both goods and therefore lowers consumer 1’s sum; improving consumer 1 by taking either good lowers consumer 2’s minimum.\n\nEvery feasible diagonal allocation is therefore efficient."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$(X_2,Y_2)=(t,t)$ and $(X_1,Y_1)=(10-t,12-t)$, $0\\leq t\\leq10$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q1ii",
     "number": "1(ii)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Find and justify the competitive equilibrium.",
     "answer": "$p_X=p_Y>0$; allocation $(X_1,Y_1)=(5,7)$, $(X_2,Y_2)=(5,5)$.",
-    "solution": "At equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$. Both markets clear. If $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply. If $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1.",
+    "solution": "Compute endowment wealth at a candidate relative price and clear both markets. The linear consumer buys only a strictly cheaper good, whereas the complementary consumer chooses equal quantities.\n\n$$\\begin{aligned}\np_X=p_Y=p&\\Longrightarrow m_1=12p,\\quad m_2=10p,\\\\\nX_2=Y_2&=\\frac{10p}{2p}=5,\\\\\n(X_1,Y_1)&=(10,12)-(5,5)=(5,7).\n\\end{aligned}$$\n\nEqual prices allow consumer 1 to accept the residual bundle because its total quantity is twelve. To show this is the complete equilibrium, rule out unequal-price cases using the linear consumer's corner demand and the complementary consumer's required matched quantities. Price scaling is arbitrary, so only the relative price is identified.\n\nAt equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$. Both markets clear.\n\nIf $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply. If $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1.\n\n$p_X=p_Y>0$; allocation $(X_1,Y_1)=(5,7)$, $(X_2,Y_2)=(5,5)$.",
     "hint": "Market clearing with a linear consumer pins down the relative price.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Compute endowment wealth at a candidate relative price and clear both markets. The linear consumer buys only a strictly cheaper good, whereas the complementary consumer chooses equal quantities."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\np_X=p_Y=p&\\Longrightarrow m_1=12p,\\quad m_2=10p,\\\\\nX_2=Y_2&=\\frac{10p}{2p}=5,\\\\\n(X_1,Y_1)&=(10,12)-(5,5)=(5,7).\n\\end{aligned}$$\n\nEqual prices allow consumer 1 to accept the residual bundle because its total quantity is twelve. To show this is the complete equilibrium, rule out unequal-price cases using the linear consumer's corner demand and the complementary consumer's required matched quantities. Price scaling is arbitrary, so only the relative price is identified."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "At equal prices, wealths are proportional to 12 and 10. Consumer 2 demands $(5,5)$; consumer 1 is indifferent among all bundles with sum 12, including the remaining $(5,7)$. Both markets clear.\n\nIf $p_X<p_Y$, consumer 1 buys only X, so consumer 2 must absorb all 12 Y and would demand 12 X too, exceeding supply. If $p_X>p_Y$, consumer 1 buys only Y, so consumer 2 must absorb all 10 X, requiring a balanced bundle costing $10(p_X+p_Y)$, above her wealth $6p_X+4p_Y$. Thus no unequal positive-price ratio clears; zero-price cases also fail finite optimality for consumer 1."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$p_X=p_Y>0$; allocation $(X_1,Y_1)=(5,7)$, $(X_2,Y_2)=(5,5)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q1iii",
     "number": "1(iii)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Are the competitive equilibria Pareto optimal?",
     "answer": "Yes.",
-    "solution": "The equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation.",
+    "solution": "Check the actual equilibrium against the efficient allocation set derived earlier. This gives a direct proof before invoking a general welfare theorem.\n\n$$\\begin{aligned}\n(X_2,Y_2)^{CE}&=(5,5),\\\\\n\\mathcal P&=\\{(t,t):0\\le t\\le10\\},\\\\\n(5,5)&\\in\\mathcal P.\n\\end{aligned}$$\n\nConsumer 2 has no useless excess good at equilibrium. Raising her utility requires taking both goods from consumer 1; raising consumer 1's sum takes at least one bottleneck good from consumer 2. Hence no Pareto improvement exists. Local nonsatiation also supplies the standard first-welfare-theorem justification.\n\nThe equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation.\n\nYes.",
     "hint": "Check the equilibrium against the efficient set.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Check the actual equilibrium against the efficient allocation set derived earlier. This gives a direct proof before invoking a general welfare theorem."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n(X_2,Y_2)^{CE}&=(5,5),\\\\\n\\mathcal P&=\\{(t,t):0\\le t\\le10\\},\\\\\n(5,5)&\\in\\mathcal P.\n\\end{aligned}$$\n\nConsumer 2 has no useless excess good at equilibrium. Raising her utility requires taking both goods from consumer 1; raising consumer 1's sum takes at least one bottleneck good from consumer 2. Hence no Pareto improvement exists. Local nonsatiation also supplies the standard first-welfare-theorem justification."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The equilibrium gives consumer 2 equal amounts, $X_2=Y_2=5$, which belongs to the efficient set derived in part (i). Alternatively, both consumers have locally nonsatiated preferences, so the first welfare theorem applies to the competitive allocation."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Yes."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q1iv",
     "number": "1(iv)",
     "stem": "An exchange economy has two consumers and goods X,Y. Utilities are $U_1=X_1+Y_1$ and $U_2=\\min\\{X_2,Y_2\\}$. Initial endowments are $(4,8)$ and $(6,4)$, so total resources are $(10,12)$. Now replace consumer 2’s preferences by lexicographic preferences: more X is always preferred regardless of Y, and at equal X more Y is preferred. Find all Pareto-optimal allocations.",
     "answer": "In consumer 2 coordinates: $Y_2=0$, $0\\leq X_2\\leq10$, or $X_2=10$, $0\\leq Y_2\\leq12$.",
-    "solution": "If $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient. On $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return. On $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too. Thus exactly the two stated edges are efficient.",
+    "solution": "Lexicographic preferences compare X first, so no finite Y compensation offsets an X loss for consumer 2. This changes the efficient set from a diagonal to two boundary edges.\n\n$$\\begin{aligned}\nX_2<10,\\ Y_2>0:&\\quad\n(X_2,Y_2)\\mapsto(X_2+\\varepsilon,Y_2-\\varepsilon),\\\\\n\\Delta U_1&=-\\varepsilon+\\varepsilon=0,\\\\\n\\mathcal P&=\\{Y_2=0\\}\\cup\\{X_2=10\\}\n\\quad\\text{within the feasible box}.\n\\end{aligned}$$\n\nThe compensated swap is a strict lexicographic gain whenever both transfers are feasible, eliminating every interior point off the two edges. On either remaining edge, a gain for consumer 1 necessarily reduces consumer 2's prioritized X or, at unchanged X, her Y; the reverse gain reduces consumer 1's resource sum.\n\nIf $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient. On $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return.\n\nOn $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too. Thus exactly the two stated edges are efficient.\n\nIn consumer 2 coordinates: $Y_2=0$, $0\\leq X_2\\leq10$, or $X_2=10$, $0\\leq Y_2\\leq12$.",
     "hint": "Lexicographic preferences make an arbitrarily small gain in X outweigh any loss of Y.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Lexicographic preferences compare X first, so no finite Y compensation offsets an X loss for consumer 2. This changes the efficient set from a diagonal to two boundary edges."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nX_2<10,\\ Y_2>0:&\\quad\n(X_2,Y_2)\\mapsto(X_2+\\varepsilon,Y_2-\\varepsilon),\\\\\n\\Delta U_1&=-\\varepsilon+\\varepsilon=0,\\\\\n\\mathcal P&=\\{Y_2=0\\}\\cup\\{X_2=10\\}\n\\quad\\text{within the feasible box}.\n\\end{aligned}$$\n\nThe compensated swap is a strict lexicographic gain whenever both transfers are feasible, eliminating every interior point off the two edges. On either remaining edge, a gain for consumer 1 necessarily reduces consumer 2's prioritized X or, at unchanged X, her Y; the reverse gain reduces consumer 1's resource sum."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "If $X_2<10$ and $Y_2>0$, transfer a small $\\epsilon$ of X from consumer 1 to consumer 2 and $\\epsilon$ of Y back. Consumer 1’s sum is unchanged while consumer 2 strictly improves lexicographically; hence the allocation is inefficient. On $Y_2=0$, improving consumer 2 requires more X or more Y, which necessarily lowers consumer 1’s sum because consumer 2 has no Y to return.\n\nOn $X_2=10$, reducing consumer 2’s X harms her regardless of compensation; with X fixed, any Y transfer toward consumer 1 harms her too. Thus exactly the two stated edges are efficient."
+      },
+      {
+        "title": "Conclusion",
+        "body": "In consumer 2 coordinates: $Y_2=0$, $0\\leq X_2\\leq10$, or $X_2=10$, $0\\leq Y_2\\leq12$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q2a",
     "number": "2(a)",
     "stem": "A monopolist sells domestically at inverse demand $p_d=10-q_d$ and can export unlimited quantities at price 4. A single plant has cost $C(q)=q^2/4$. Find total output, domestic sales and exports.",
     "answer": "$q=8$, $q_d=3$, exports $=5$; domestic price $=7$.",
-    "solution": "With positive exports, marginal production cost equals the export price: $q/2=4$, so total output is 8. The opportunity cost of selling in the domestic market is also 4; set domestic marginal revenue $10-2q_d=4$, giving $q_d=3$. The remaining 5 units are exported, confirming the positive-export condition.",
+    "solution": "Exports at a fixed positive price give a constant marginal revenue. Find total production from marginal cost, then allocate output domestically until domestic marginal revenue matches that export opportunity.\n\n$$\\begin{aligned}\nMC(q)&=q/2=4\\Longrightarrow q=8,\\\\\nMR_d(q_d)&=10-2q_d=4\\Longrightarrow q_d=3,\\\\\nq_f&=q-q_d=5,\\qquad p_d=10-3=7.\n\\end{aligned}$$\n\nThe resulting positive export quantity validates the condition used to equate marginal cost with the world price. Domestic price exceeds four because the monopolist restricts home sales; it equates marginal revenue, not domestic price, to the export opportunity cost.\n\nWith positive exports, marginal production cost equals the export price: $q/2=4$, so total output is 8. The opportunity cost of selling in the domestic market is also 4; set domestic marginal revenue $10-2q_d=4$, giving $q_d=3$. The remaining 5 units are exported, confirming the positive-export condition.\n\n$q=8$, $q_d=3$, exports $=5$; domestic price $=7$.",
     "hint": "The export price fixes both marginal production cost and the domestic sales opportunity cost.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Exports at a fixed positive price give a constant marginal revenue. Find total production from marginal cost, then allocate output domestically until domestic marginal revenue matches that export opportunity."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nMC(q)&=q/2=4\\Longrightarrow q=8,\\\\\nMR_d(q_d)&=10-2q_d=4\\Longrightarrow q_d=3,\\\\\nq_f&=q-q_d=5,\\qquad p_d=10-3=7.\n\\end{aligned}$$\n\nThe resulting positive export quantity validates the condition used to equate marginal cost with the world price. Domestic price exceeds four because the monopolist restricts home sales; it equates marginal revenue, not domestic price, to the export opportunity cost."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "With positive exports, marginal production cost equals the export price: $q/2=4$, so total output is 8. The opportunity cost of selling in the domestic market is also 4; set domestic marginal revenue $10-2q_d=4$, giving $q_d=3$. The remaining 5 units are exported, confirming the positive-export condition."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$q=8$, $q_d=3$, exports $=5$; domestic price $=7$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q2b",
     "number": "2(b)",
     "stem": "A monopolist sells domestically at inverse demand $p_d=10-q_d$ and can export unlimited quantities at price 4. A single plant has cost $C(q)=q^2/4$. Find domestic and world welfare at this equilibrium.",
     "answer": "Domestic welfare $=59/2=29.5$; attributable world surplus is also 29.5 with the perfectly elastic export-demand representation.",
-    "solution": "Domestic consumer surplus is $(10-7)3/2=9/2$. Profit is $7(3)+4(5)-8^2/4=25$. If the firm is domestically owned, domestic welfare is $25+9/2=59/2$. For world surplus attributable to this production, domestic gross benefit is $\\int_0^3(10-q)dq=51/2$, exported output has marginal world value $4(5)=20$, and resource cost is 16. The sum is again $59/2$. Foreign buyer surplus on the incremental units is zero under a horizontal inverse-demand curve at 4. Absolute welfare in the rest of the world cannot be inferred without its inframarginal demand and supply.",
+    "solution": "For national welfare, add home consumer surplus and domestically owned profit. Export receipts are already included in profit, so do not add them again. A world-surplus calculation instead starts from gross benefits and real cost.\n\n$$\\begin{aligned}\nCS_d&=\\tfrac12(10-7)3=9/2,\\\\\n\\pi&=7(3)+4(5)-8^2/4=25,\\\\\nW_d&=CS_d+\\pi=59/2,\\\\\nW_{\\rm attributable}&=\\int_0^3(10-q)\\,dq+4(5)-16=59/2.\n\\end{aligned}$$\n\nThe horizontal foreign demand representation gives zero incremental foreign consumer surplus on the units attributed to this firm. Thus the two measures coincide under that representation. It does not identify total foreign welfare from all inframarginal consumption or other producers.\n\nDomestic consumer surplus is $(10-7)3/2=9/2$. Profit is $7(3)+4(5)-8^2/4=25$. If the firm is domestically owned, domestic welfare is $25+9/2=59/2$.\n\nFor world surplus attributable to this production, domestic gross benefit is $\\int_0^3(10-q)dq=51/2$, exported output has marginal world value $4(5)=20$, and resource cost is 16. The sum is again $59/2$. Foreign buyer surplus on the incremental units is zero under a horizontal inverse-demand curve at 4.\n\nAbsolute welfare in the rest of the world cannot be inferred without its inframarginal demand and supply.\n\nDomestic welfare $=59/2=29.5$; attributable world surplus is also 29.5 with the perfectly elastic export-demand representation.",
     "hint": "Include export revenue in domestic profit, but treat payments as transfers in world accounting.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Domestic ownership and absence of additional export-market externalities assumed; total pre-existing rest-of-world surplus is unspecified."
+    "notes": "Domestic ownership and absence of additional export-market externalities assumed; total pre-existing rest-of-world surplus is unspecified.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For national welfare, add home consumer surplus and domestically owned profit. Export receipts are already included in profit, so do not add them again. A world-surplus calculation instead starts from gross benefits and real cost."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nCS_d&=\\tfrac12(10-7)3=9/2,\\\\\n\\pi&=7(3)+4(5)-8^2/4=25,\\\\\nW_d&=CS_d+\\pi=59/2,\\\\\nW_{\\rm attributable}&=\\int_0^3(10-q)\\,dq+4(5)-16=59/2.\n\\end{aligned}$$\n\nThe horizontal foreign demand representation gives zero incremental foreign consumer surplus on the units attributed to this firm. Thus the two measures coincide under that representation. It does not identify total foreign welfare from all inframarginal consumption or other producers."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Domestic consumer surplus is $(10-7)3/2=9/2$. Profit is $7(3)+4(5)-8^2/4=25$. If the firm is domestically owned, domestic welfare is $25+9/2=59/2$.\n\nFor world surplus attributable to this production, domestic gross benefit is $\\int_0^3(10-q)dq=51/2$, exported output has marginal world value $4(5)=20$, and resource cost is 16. The sum is again $59/2$. Foreign buyer surplus on the incremental units is zero under a horizontal inverse-demand curve at 4.\n\nAbsolute welfare in the rest of the world cannot be inferred without its inframarginal demand and supply."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Domestic welfare $=59/2=29.5$; attributable world surplus is also 29.5 with the perfectly elastic export-demand representation."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q3i",
     "number": "3(i)",
     "stem": "A consumer has $U(E,B)=3E+B$, butter price 1 and income $I>R$. Electricity requires fixed charge R. Under the first scheme, the per-unit price applying to all E is 1 if $E\\leq1/2$ and 2 if $E>1/2$. Draw the budget frontier.",
     "answer": "For $0<E\\leq1/2$, $B=I-R-E$; for $E>1/2$, $B=I-R-2E$, restricted to $B\\geq0$.",
-    "solution": "Plot E horizontally and B vertically. Positive-use branches start below $I-R$ with slopes -1 and -2 respectively. At $E=1/2$ the lower-price point is $B=I-R-1/2$; immediately to its right the upper envelope drops toward $B=I-R-1$. Thus the all-unit price change creates a discontinuity, not a continuous kink. If the fixed charge is paid only when electricity is used, the no-electricity point $(0,I)$ is also available; if it is an unavoidable rental, the intercept is $(0,I-R)$. Discard negative-B portions when income is too low.",
+    "solution": "An all-unit tariff applies the higher unit price to the entire electricity quantity once the threshold is crossed. It therefore creates a jump, unlike a conventional marginal block tariff.\n\n$$\\begin{aligned}\n0<E\\le1/2:&\\quad B=I-R-E,\\\\\nE>1/2:&\\quad B=I-R-2E,\\\\\nB(1/2)&=I-R-1/2,\\\\\n\\lim_{E\\downarrow1/2,\\ E>1/2}B(E)&=I-R-1.\n\\end{aligned}$$\n\nPlot both branches only where butter consumption is nonnegative. Their different values at the threshold show the downward discontinuity of the budget frontier. The availability of $(0,I)$ depends on whether the fixed charge is avoidable when no electricity is used; retain that convention explicitly.\n\nPlot E horizontally and B vertically. Positive-use branches start below $I-R$ with slopes -1 and -2 respectively. At $E=1/2$ the lower-price point is $B=I-R-1/2$; immediately to its right the upper envelope drops toward $B=I-R-1$.\n\nThus the all-unit price change creates a discontinuity, not a continuous kink. If the fixed charge is paid only when electricity is used, the no-electricity point $(0,I)$ is also available; if it is an unavoidable rental, the intercept is $(0,I-R)$. Discard negative-B portions when income is too low.\n\nFor $0<E\\leq1/2$, $B=I-R-E$; for $E>1/2$, $B=I-R-2E$, restricted to $B\\geq0$.",
     "hint": "An all-unit tariff re-prices the first half-unit once the threshold is crossed.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": "Whether the connection fee is avoided at E=0 is not expressly stated; both boundary conventions noted."
+    "notes": "Whether the connection fee is avoided at E=0 is not expressly stated; both boundary conventions noted.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "An all-unit tariff applies the higher unit price to the entire electricity quantity once the threshold is crossed. It therefore creates a jump, unlike a conventional marginal block tariff."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n0<E\\le1/2:&\\quad B=I-R-E,\\\\\nE>1/2:&\\quad B=I-R-2E,\\\\\nB(1/2)&=I-R-1/2,\\\\\n\\lim_{E\\downarrow1/2,\\ E>1/2}B(E)&=I-R-1.\n\\end{aligned}$$\n\nPlot both branches only where butter consumption is nonnegative. Their different values at the threshold show the downward discontinuity of the budget frontier. The availability of $(0,I)$ depends on whether the fixed charge is avoidable when no electricity is used; retain that convention explicitly."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Plot E horizontally and B vertically. Positive-use branches start below $I-R$ with slopes -1 and -2 respectively. At $E=1/2$ the lower-price point is $B=I-R-1/2$; immediately to its right the upper envelope drops toward $B=I-R-1$.\n\nThus the all-unit price change creates a discontinuity, not a continuous kink. If the fixed charge is paid only when electricity is used, the no-electricity point $(0,I)$ is also available; if it is an unavoidable rental, the intercept is $(0,I-R)$. Discard negative-B portions when income is too low."
+      },
+      {
+        "title": "Conclusion",
+        "body": "For $0<E\\leq1/2$, $B=I-R-E$; for $E>1/2$, $B=I-R-2E$, restricted to $B\\geq0$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q3ii",
     "number": "3(ii)",
     "stem": "A consumer has $U(E,B)=3E+B$, butter price 1 and income $I>R$. Electricity requires fixed charge R. Under the first scheme, the per-unit price applying to all E is 1 if $E\\leq1/2$ and 2 if $E>1/2$. For $R=0,I=1$, find optimal E and B.",
     "answer": "$E=1/2$, $B=1/2$.",
-    "solution": "On the first branch, $U=3E+1-E=1+2E$, so utility increases up to $E=1/2$, where it is 2. The expensive branch requires $E>1/2$ but $2E\\leq1$, leaving no feasible positive interval. Thus the threshold bundle is optimal.",
+    "solution": "Optimize separately over the tariff branches, including their feasibility. The income constraint may eliminate a branch before a first-order condition is relevant.\n\n$$\\begin{aligned}\nR=0,\\ I=1:\\quad B&=1-E\\quad(0<E\\le1/2),\\\\\nU&=3E+B=1+2E,\\\\\nE>1/2:&\\quad B=1-2E<0,\\\\\n(E^*,B^*)&=(1/2,1/2).\n\\end{aligned}$$\n\nUtility rises along the entire cheap branch and is maximized at its endpoint. The expensive all-unit branch has no feasible point with nonnegative butter at this income, so there is no candidate on that side of the discontinuity.\n\nOn the first branch, $U=3E+1-E=1+2E$, so utility increases up to $E=1/2$, where it is 2. The expensive branch requires $E>1/2$ but $2E\\leq1$, leaving no feasible positive interval. Thus the threshold bundle is optimal.\n\n$E=1/2$, $B=1/2$.",
     "hint": "Check feasibility of the expensive-price branch before optimizing it.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Optimize separately over the tariff branches, including their feasibility. The income constraint may eliminate a branch before a first-order condition is relevant."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nR=0,\\ I=1:\\quad B&=1-E\\quad(0<E\\le1/2),\\\\\nU&=3E+B=1+2E,\\\\\nE>1/2:&\\quad B=1-2E<0,\\\\\n(E^*,B^*)&=(1/2,1/2).\n\\end{aligned}$$\n\nUtility rises along the entire cheap branch and is maximized at its endpoint. The expensive all-unit branch has no feasible point with nonnegative butter at this income, so there is no candidate on that side of the discontinuity."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "On the first branch, $U=3E+1-E=1+2E$, so utility increases up to $E=1/2$, where it is 2. The expensive branch requires $E>1/2$ but $2E\\leq1$, leaving no feasible positive interval. Thus the threshold bundle is optimal."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$E=1/2$, $B=1/2$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q3iii",
     "number": "3(iii)",
     "stem": "A consumer has $U(E,B)=3E+B$ and butter price 1. A different electricity scheme charges fixed R, price 1 for the first half-unit and price 2 only for additional units. Find the optimal bundle for $R=1,I=3$.",
     "answer": "$E=5/4$, $B=0$.",
-    "solution": "After paying rent, variable spending is 2. Up to $E=1/2$, $B=2-E$. Above it, the bill is $1/2+2(E-1/2)=2E-1/2$, so $B=5/2-2E$. Utility has slope $3-1=2$ on the first segment and $3-2=1$ on the second, so it increases until all remaining resources are used on electricity. Setting $B=0$ gives $E=5/4$. This also beats the no-connection bundle, whose utility is 3.",
+    "solution": "This scheme charges two only on units beyond the first half-unit. Write the cumulative electricity bill before subtracting it from disposable income after the fixed charge.\n\n$$\\begin{aligned}\nI-R&=2,\\\\\n\\text{bill}(E)&=\\begin{cases}E,&E\\le1/2,\\\\2E-1/2,&E>1/2,\\end{cases}\\\\\nB&=\\begin{cases}2-E,&E\\le1/2,\\\\5/2-2E,&E>1/2,\\end{cases}\\\\\nB=0&\\Longrightarrow E=5/4.\n\\end{aligned}$$\n\nAlong the first segment the utility gain from electricity net of displaced butter is two per unit; along the second it is still positive at one. Thus the consumer buys electricity until butter reaches zero. Comparing with the no-connection option verifies that paying the fixed charge is worthwhile.\n\nAfter paying rent, variable spending is 2. Up to $E=1/2$, $B=2-E$. Above it, the bill is $1/2+2(E-1/2)=2E-1/2$, so $B=5/2-2E$.\n\nUtility has slope $3-1=2$ on the first segment and $3-2=1$ on the second, so it increases until all remaining resources are used on electricity. Setting $B=0$ gives $E=5/4$. This also beats the no-connection bundle, whose utility is 3.\n\n$E=5/4$, $B=0$.",
     "hint": "With an incremental block tariff the frontier is continuous.",
     "topic": "Microeconomics",
     "sourcePage": 14,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "This scheme charges two only on units beyond the first half-unit. Write the cumulative electricity bill before subtracting it from disposable income after the fixed charge."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nI-R&=2,\\\\\n\\text{bill}(E)&=\\begin{cases}E,&E\\le1/2,\\\\2E-1/2,&E>1/2,\\end{cases}\\\\\nB&=\\begin{cases}2-E,&E\\le1/2,\\\\5/2-2E,&E>1/2,\\end{cases}\\\\\nB=0&\\Longrightarrow E=5/4.\n\\end{aligned}$$\n\nAlong the first segment the utility gain from electricity net of displaced butter is two per unit; along the second it is still positive at one. Thus the consumer buys electricity until butter reaches zero. Comparing with the no-connection option verifies that paying the fixed charge is worthwhile."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "After paying rent, variable spending is 2. Up to $E=1/2$, $B=2-E$. Above it, the bill is $1/2+2(E-1/2)=2E-1/2$, so $B=5/2-2E$.\n\nUtility has slope $3-1=2$ on the first segment and $3-2=1$ on the second, so it increases until all remaining resources are used on electricity. Setting $B=0$ gives $E=5/4$. This also beats the no-connection bundle, whose utility is 3."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$E=5/4$, $B=0$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q4i",
     "number": "4(i)",
     "stem": "A magazine monopolist earns $R(q)=qp(q)+A(q)$ from sales and advertising. Here $p\\prime<0$, $A\\prime>0$ and cost $c\\prime>0$; all functions are twice differentiable. Derive the profit-maximizing outcome.",
     "answer": "An interior optimum satisfies $p+qp\\prime+A\\prime=c\\prime$, with the appropriate second-order and global checks.",
-    "solution": "Profit is $\\pi(q)=qp(q)+A(q)-c(q)$ for $q\\geq0$. Its derivative is $p+qp\\prime+A\\prime-c\\prime$. Set this to zero at an interior candidate; a sufficient strict local condition is $2p\\prime+qp\\prime\\prime+A\\prime\\prime-c\\prime\\prime<0$. Compare all stationary candidates with boundaries and shutdown to find the global maximum. The stated slope assumptions alone do not guarantee existence or uniqueness. Once $q^*$ is chosen, the circulation price is $p(q^*)$.",
+    "solution": "The magazine has two revenue sources, both depending on circulation. Include advertising in marginal revenue, then distinguish necessary interior conditions from sufficient curvature and global conditions.\n\n$$\\begin{aligned}\n\\pi(q)&=qp(q)+A(q)-c(q),\\\\\n\\pi\\prime(q)&=p(q)+qp\\prime(q)+A\\prime(q)-c\\prime(q),\\\\\n\\pi\\prime(q^*)&=0,\\\\\n\\pi^{\\prime\\prime}(q^*)&=2p\\prime+qp^{\\prime\\prime}+A^{\\prime\\prime}-c^{\\prime\\prime}<0\n\\quad\\text{for a strict local maximum}.\n\\end{aligned}$$\n\nA root of the marginal-profit equation is only a candidate. The given first-derivative signs do not establish global concavity, so compare feasible stationary points, boundaries and shutdown before claiming a unique profit maximum. The selling price is recovered from inverse demand after selecting circulation.\n\nProfit is $\\pi(q)=qp(q)+A(q)-c(q)$ for $q\\geq0$. Its derivative is $p+qp\\prime+A\\prime-c\\prime$. Set this to zero at an interior candidate; a sufficient strict local condition is $2p\\prime+qp\\prime\\prime+A\\prime\\prime-c\\prime\\prime<0$.\n\nCompare all stationary candidates with boundaries and shutdown to find the global maximum. The stated slope assumptions alone do not guarantee existence or uniqueness. Once $q^*$ is chosen, the circulation price is $p(q^*)$.\n\nAn interior optimum satisfies $p+qp\\prime+A\\prime=c\\prime$, with the appropriate second-order and global checks.",
     "hint": "Advertising revenue is another marginal return to circulation.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The magazine has two revenue sources, both depending on circulation. Include advertising in marginal revenue, then distinguish necessary interior conditions from sufficient curvature and global conditions."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi(q)&=qp(q)+A(q)-c(q),\\\\\n\\pi\\prime(q)&=p(q)+qp\\prime(q)+A\\prime(q)-c\\prime(q),\\\\\n\\pi\\prime(q^*)&=0,\\\\\n\\pi^{\\prime\\prime}(q^*)&=2p\\prime+qp^{\\prime\\prime}+A^{\\prime\\prime}-c^{\\prime\\prime}<0\n\\quad\\text{for a strict local maximum}.\n\\end{aligned}$$\n\nA root of the marginal-profit equation is only a candidate. The given first-derivative signs do not establish global concavity, so compare feasible stationary points, boundaries and shutdown before claiming a unique profit maximum. The selling price is recovered from inverse demand after selecting circulation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Profit is $\\pi(q)=qp(q)+A(q)-c(q)$ for $q\\geq0$. Its derivative is $p+qp\\prime+A\\prime-c\\prime$. Set this to zero at an interior candidate; a sufficient strict local condition is $2p\\prime+qp\\prime\\prime+A\\prime\\prime-c\\prime\\prime<0$.\n\nCompare all stationary candidates with boundaries and shutdown to find the global maximum. The stated slope assumptions alone do not guarantee existence or uniqueness. Once $q^*$ is chosen, the circulation price is $p(q^*)$."
+      },
+      {
+        "title": "Conclusion",
+        "body": "An interior optimum satisfies $p+qp\\prime+A\\prime=c\\prime$, with the appropriate second-order and global checks."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q4ii",
     "number": "4(ii)",
     "stem": "A magazine monopolist earns $R(q)=qp(q)+A(q)$ from sales and advertising. Here $p\\prime<0$, $A\\prime>0$ and cost $c\\prime>0$; all functions are twice differentiable. Must the marginal revenue curve slope downward?",
     "answer": "No.",
-    "solution": "Total marginal revenue is $MR=p+qp\\prime+A\\prime$, whose derivative is $2p\\prime+qp\\prime\\prime+A\\prime\\prime$. Its sign is unrestricted by the assumptions. For example $p=10-q$, $A=2q^2$ gives $MR=10+2q$, increasing for positive q. With cost $c=2q^2$, profit is $10q-q^2$ and still has a finite interior maximum, showing that increasing MR need not prevent profit maximization.",
+    "solution": "Differentiate total marginal revenue rather than the cover-price revenue alone. Advertising curvature can overturn the downward slope associated with a linear subscription demand.\n\n$$\\begin{aligned}\nMR(q)&=p+qp\\prime+A\\prime,\\\\\nMR\\prime(q)&=2p\\prime+qp^{\\prime\\prime}+A^{\\prime\\prime},\\\\\np=10-q,\\ A=2q^2:&\\quad MR=10+2q,\\quad MR\\prime=2>0.\n\\end{aligned}$$\n\nThe assumptions constrain the signs of $p\\prime$ and $A\\prime$, but not the second derivatives that determine the slope. The explicit example proves a rising marginal-revenue curve is possible; the existing cost example also shows such a curve can coexist with a finite optimum.\n\nTotal marginal revenue is $MR=p+qp\\prime+A\\prime$, whose derivative is $2p\\prime+qp\\prime\\prime+A\\prime\\prime$. Its sign is unrestricted by the assumptions. For example $p=10-q$, $A=2q^2$ gives $MR=10+2q$, increasing for positive q.\n\nWith cost $c=2q^2$, profit is $10q-q^2$ and still has a finite interior maximum, showing that increasing MR need not prevent profit maximization.\n\nNo.",
     "hint": "Demand slopes do not determine advertising-revenue curvature.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Differentiate total marginal revenue rather than the cover-price revenue alone. Advertising curvature can overturn the downward slope associated with a linear subscription demand."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nMR(q)&=p+qp\\prime+A\\prime,\\\\\nMR\\prime(q)&=2p\\prime+qp^{\\prime\\prime}+A^{\\prime\\prime},\\\\\np=10-q,\\ A=2q^2:&\\quad MR=10+2q,\\quad MR\\prime=2>0.\n\\end{aligned}$$\n\nThe assumptions constrain the signs of $p\\prime$ and $A\\prime$, but not the second derivatives that determine the slope. The explicit example proves a rising marginal-revenue curve is possible; the existing cost example also shows such a curve can coexist with a finite optimum."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Total marginal revenue is $MR=p+qp\\prime+A\\prime$, whose derivative is $2p\\prime+qp\\prime\\prime+A\\prime\\prime$. Its sign is unrestricted by the assumptions. For example $p=10-q$, $A=2q^2$ gives $MR=10+2q$, increasing for positive q.\n\nWith cost $c=2q^2$, profit is $10q-q^2$ and still has a finite interior maximum, showing that increasing MR need not prevent profit maximization."
+      },
+      {
+        "title": "Conclusion",
+        "body": "No."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q4iii",
     "number": "4(iii)",
     "stem": "A magazine monopolist earns $R(q)=qp(q)+A(q)$ from sales and advertising. Here $p\\prime<0$, $A\\prime>0$ and cost $c\\prime>0$; all functions are twice differentiable. Can the magazine price be below marginal production cost?",
     "answer": "Yes, if marginal advertising income is sufficiently large.",
-    "solution": "The FOC implies $p-c\\prime=-qp\\prime-A\\prime$. Thus $p<c\\prime$ iff $A\\prime>-qp\\prime$. Example: $p=10-q$, $A=10q$, $c=q^2$. Profit is $20q-2q^2$, maximized at $q=5$, where $p=5$ and $MC=10$. Advertising subsidizes circulation below production marginal cost.",
+    "solution": "At an interior optimum, rearrange the first-order condition to compare cover price with marginal production cost. Advertising can compensate the firm for selling copies at a low price.\n\n$$\\begin{aligned}\np-c\\prime&=-qp\\prime-A\\prime,\\\\\np<c\\prime&\\Longleftrightarrow A\\prime>-qp\\prime,\\\\\np=10-q,\\ A=10q,\\ c=q^2:&\\quad q^*=5,\\quad p^*=5<MC=10.\n\\end{aligned}$$\n\nThe conventional monopoly markup term $-qp\\prime$ is positive, but the marginal advertising contribution subtracts from the required cover-price margin. If that contribution is large enough, below-marginal-cost circulation remains profit maximizing rather than indicating irrational pricing.\n\nThe FOC implies $p-c\\prime=-qp\\prime-A\\prime$. Thus $p<c\\prime$ iff $A\\prime>-qp\\prime$. Example: $p=10-q$, $A=10q$, $c=q^2$.\n\nProfit is $20q-2q^2$, maximized at $q=5$, where $p=5$ and $MC=10$. Advertising subsidizes circulation below production marginal cost.\n\nYes, if marginal advertising income is sufficiently large.",
     "hint": "Rearrange the combined revenue first-order condition.",
     "topic": "Microeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "At an interior optimum, rearrange the first-order condition to compare cover price with marginal production cost. Advertising can compensate the firm for selling copies at a low price."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\np-c\\prime&=-qp\\prime-A\\prime,\\\\\np<c\\prime&\\Longleftrightarrow A\\prime>-qp\\prime,\\\\\np=10-q,\\ A=10q,\\ c=q^2:&\\quad q^*=5,\\quad p^*=5<MC=10.\n\\end{aligned}$$\n\nThe conventional monopoly markup term $-qp\\prime$ is positive, but the marginal advertising contribution subtracts from the required cover-price margin. If that contribution is large enough, below-marginal-cost circulation remains profit maximizing rather than indicating irrational pricing."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The FOC implies $p-c\\prime=-qp\\prime-A\\prime$. Thus $p<c\\prime$ iff $A\\prime>-qp\\prime$. Example: $p=10-q$, $A=10q$, $c=q^2$.\n\nProfit is $20q-2q^2$, maximized at $q=5$, where $p=5$ and $MC=10$. Advertising subsidizes circulation below production marginal cost."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Yes, if marginal advertising income is sufficiently large."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q5i",
     "number": "5(i)",
     "stem": "A Solow-style economy has $Y_t=A_tF(K_t,H_t)$, with F homogeneous of degree 1, essential inputs and the usual concavity/Inada properties. Technology is $A_t=A_0(1+\\alpha)^t$, $\\alpha>0$, labour $H_{t+1}=(1+n)H_t$, $n>0$, and capital $K_{t+1}=(1-\\delta)K_t+I_t$. For $y_t=Y_t/H_t$ and $k_t=K_t/H_t$, show $y_t=A_tf(k_t)$ where $f(k)=F(k,1)$.",
     "answer": "$y_t=A_tf(k_t)$.",
-    "solution": "By degree-one homogeneity, $F(K_t,H_t)/H_t=F(K_t/H_t,1)=f(k_t)$. Dividing aggregate output by labour gives the stated formula.",
+    "solution": "Constant returns allows aggregate inputs to be normalized by labour. Apply homogeneity to the production function, not to the time-varying technology multiplier.\n\n$$\\begin{aligned}\nF(K_t,H_t)&=H_tF(K_t/H_t,1),\\\\\nk_t&=K_t/H_t,\\qquad f(k_t)=F(k_t,1),\\\\\ny_t=Y_t/H_t&=A_tf(k_t).\n\\end{aligned}$$\n\nThe intensive function records output per worker from capital per worker at unit labour. Hicks-neutral productivity remains a multiplicative factor in this normalization; it is not absorbed into $k_t$ unless a different effective-labour definition is introduced.\n\nBy degree-one homogeneity, $F(K_t,H_t)/H_t=F(K_t/H_t,1)=f(k_t)$. Dividing aggregate output by labour gives the stated formula.\n\n$y_t=A_tf(k_t)$.",
     "hint": "Normalize the homogeneous production function by labour.",
     "topic": "Macroeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 2,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Constant returns allows aggregate inputs to be normalized by labour. Apply homogeneity to the production function, not to the time-varying technology multiplier."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nF(K_t,H_t)&=H_tF(K_t/H_t,1),\\\\\nk_t&=K_t/H_t,\\qquad f(k_t)=F(k_t,1),\\\\\ny_t=Y_t/H_t&=A_tf(k_t).\n\\end{aligned}$$\n\nThe intensive function records output per worker from capital per worker at unit labour. Hicks-neutral productivity remains a multiplicative factor in this normalization; it is not absorbed into $k_t$ unless a different effective-labour definition is introduced."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "By degree-one homogeneity, $F(K_t,H_t)/H_t=F(K_t/H_t,1)=f(k_t)$. Dividing aggregate output by labour gives the stated formula."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$y_t=A_tf(k_t)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q5ii",
     "number": "5(ii)",
     "stem": "A Solow-style economy has $Y_t=A_tF(K_t,H_t)$, with F homogeneous of degree 1, essential inputs and the usual concavity/Inada properties. Technology is $A_t=A_0(1+\\alpha)^t$, $\\alpha>0$, labour $H_{t+1}=(1+n)H_t$, $n>0$, and capital $K_{t+1}=(1-\\delta)K_t+I_t$. For $i_t=I_t/H_t$, show $k_{t+1}=[(1-\\delta)k_t+i_t]/(1+n)$.",
     "answer": "$k_{t+1}=[(1-\\delta)k_t+i_t]/(1+n)$.",
-    "solution": "Divide $K_{t+1}=(1-\\delta)K_t+I_t$ by $H_{t+1}=(1+n)H_t$. Replace the numerator quantities divided by $H_t$ with their per-worker definitions.",
+    "solution": "Capital per worker next period uses next period's labour force in the denominator. Dividing by current labour alone would miss dilution caused by population growth.\n\n$$\\begin{aligned}\nk_{t+1}&=\\frac{K_{t+1}}{H_{t+1}}\n=\\frac{(1-\\delta)K_t+I_t}{(1+n)H_t},\\\\\n&=\\frac{(1-\\delta)k_t+i_t}{1+n}.\n\\end{aligned}$$\n\nThe numerator combines surviving capital and new investment per current worker; the denominator spreads it over the larger next-period workforce. This distinction is why a discrete-time law contains the gross labour-growth factor rather than simply subtracting $n$ without derivation.\n\nDivide $K_{t+1}=(1-\\delta)K_t+I_t$ by $H_{t+1}=(1+n)H_t$. Replace the numerator quantities divided by $H_t$ with their per-worker definitions.\n\n$k_{t+1}=[(1-\\delta)k_t+i_t]/(1+n)$.",
     "hint": "Use next period’s labour in the denominator.",
     "topic": "Macroeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Capital per worker next period uses next period's labour force in the denominator. Dividing by current labour alone would miss dilution caused by population growth."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nk_{t+1}&=\\frac{K_{t+1}}{H_{t+1}}\n=\\frac{(1-\\delta)K_t+I_t}{(1+n)H_t},\\\\\n&=\\frac{(1-\\delta)k_t+i_t}{1+n}.\n\\end{aligned}$$\n\nThe numerator combines surviving capital and new investment per current worker; the denominator spreads it over the larger next-period workforce. This distinction is why a discrete-time law contains the gross labour-growth factor rather than simply subtracting $n$ without derivation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Divide $K_{t+1}=(1-\\delta)K_t+I_t$ by $H_{t+1}=(1+n)H_t$. Replace the numerator quantities divided by $H_t$ with their per-worker definitions."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$k_{t+1}=[(1-\\delta)k_t+i_t]/(1+n)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q5iii",
     "number": "5(iii)",
     "stem": "A Solow-style economy has $Y_t=A_tF(K_t,H_t)$, with F homogeneous of degree 1, essential inputs and the usual concavity/Inada properties. Technology is $A_t=A_0(1+\\alpha)^t$, $\\alpha>0$, labour $H_{t+1}=(1+n)H_t$, $n>0$, and capital $K_{t+1}=(1-\\delta)K_t+I_t$. The source writes saving as $s_t=\\sigma y_t$, $\\sigma\\in[0,1]$. For $\\alpha=0$, derive the positive steady-state capital condition and count nonzero steady states.",
     "answer": "$\\sigma A_0f(k^*)=(n+\\delta)k^*$; exactly one positive steady state if $\\sigma>0$, none if $\\sigma=0$.",
-    "solution": "Interpret $s_t$ as the saving amount per worker, so investment per worker is $i_t=\\sigma y_t$. At constant technology the fixed-point equation is $(1+n)k^*=(1-\\delta)k^*+\\sigma A_0f(k^*)$. For positive capital this becomes $f(k^*)/k^*=(n+\\delta)/(\\sigma A_0)$. Essential inputs and strict concavity make $f(k)/k$ decreasing, and the standard Inada limits give a unique crossing for $\\sigma>0$. With zero saving and $n+\\delta>0$, no positive fixed point exists.",
+    "solution": "At constant technology, substitute saving-financed investment into the per-worker law and impose the fixed-point condition. Treat the saving amount and the saving rate as different objects.\n\n$$\\begin{aligned}\ni_t&=\\sigma A_0f(k_t),\\\\\n(1+n)k^*&=(1-\\delta)k^*+\\sigma A_0f(k^*),\\\\\n\\frac{f(k^*)}{k^*}&=\\frac{n+\\delta}{\\sigma A_0}\\quad(\\sigma>0).\n\\end{aligned}$$\n\nAverage product decreases under strict concavity and essential capital, so the horizontal positive replacement threshold has at most one crossing. Standard Inada limits supply existence of that crossing. With zero saving there is no positive crossing because population growth and depreciation dilute capital without replacement.\n\nInterpret $s_t$ as the saving amount per worker, so investment per worker is $i_t=\\sigma y_t$. At constant technology the fixed-point equation is $(1+n)k^*=(1-\\delta)k^*+\\sigma A_0f(k^*)$. For positive capital this becomes $f(k^*)/k^*=(n+\\delta)/(\\sigma A_0)$.\n\nEssential inputs and strict concavity make $f(k)/k$ decreasing, and the standard Inada limits give a unique crossing for $\\sigma>0$. With zero saving and $n+\\delta>0$, no positive fixed point exists.\n\n$\\sigma A_0f(k^*)=(n+\\delta)k^*$; exactly one positive steady state if $\\sigma>0$, none if $\\sigma=0$.",
     "hint": "For positive capital divide the steady-state equation by k.",
     "topic": "Macroeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": "Source calls s_t a savings rate although sigma*y_t is a saving amount; rate sigma is used."
+    "notes": "Source calls s_t a savings rate although sigma*y_t is a saving amount; rate sigma is used.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "At constant technology, substitute saving-financed investment into the per-worker law and impose the fixed-point condition. Treat the saving amount and the saving rate as different objects."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\ni_t&=\\sigma A_0f(k_t),\\\\\n(1+n)k^*&=(1-\\delta)k^*+\\sigma A_0f(k^*),\\\\\n\\frac{f(k^*)}{k^*}&=\\frac{n+\\delta}{\\sigma A_0}\\quad(\\sigma>0).\n\\end{aligned}$$\n\nAverage product decreases under strict concavity and essential capital, so the horizontal positive replacement threshold has at most one crossing. Standard Inada limits supply existence of that crossing. With zero saving there is no positive crossing because population growth and depreciation dilute capital without replacement."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Interpret $s_t$ as the saving amount per worker, so investment per worker is $i_t=\\sigma y_t$. At constant technology the fixed-point equation is $(1+n)k^*=(1-\\delta)k^*+\\sigma A_0f(k^*)$. For positive capital this becomes $f(k^*)/k^*=(n+\\delta)/(\\sigma A_0)$.\n\nEssential inputs and strict concavity make $f(k)/k$ decreasing, and the standard Inada limits give a unique crossing for $\\sigma>0$. With zero saving and $n+\\delta>0$, no positive fixed point exists."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$\\sigma A_0f(k^*)=(n+\\delta)k^*$; exactly one positive steady state if $\\sigma>0$, none if $\\sigma=0$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q5iv",
     "number": "5(iv)",
     "stem": "A Solow-style economy has $Y_t=A_tF(K_t,H_t)$, with F homogeneous of degree 1, essential inputs and the usual concavity/Inada properties. Technology is $A_t=A_0(1+\\alpha)^t$, $\\alpha>0$, labour $H_{t+1}=(1+n)H_t$, $n>0$, and capital $K_{t+1}=(1-\\delta)K_t+I_t$. For $\\alpha=0$, derive gross capital-per-worker growth $\\gamma_t=k_{t+1}/k_t$ and the sign of $d\\gamma_t/dk_t$, with saving amount $\\sigma y_t$.",
     "answer": "$\\gamma(k)=[1-\\delta+\\sigma A_0f(k)/k]/(1+n)$; its derivative is negative for $\\sigma>0$.",
-    "solution": "Substitute investment $\\sigma A_0f(k_t)$ into the capital law and divide by positive $k_t$. Differentiating gives $\\gamma\\prime(k)=\\sigma A_0[kf\\prime(k)-f(k)]/[(1+n)k^2]$. Strict concavity and $f(0)=0$ imply $kf\\prime(k)<f(k)$, so the derivative is negative when saving is positive. For $\\sigma=0$ it is zero. Poorer economies with the same parameters then have faster proportional capital accumulation.",
+    "solution": "Divide the capital recurrence by current positive capital to obtain a proportional, rather than absolute, growth measure. Its dependence on capital comes through average product.\n\n$$\\begin{aligned}\n\\gamma(k)&=\\frac{1-\\delta+\\sigma A_0f(k)/k}{1+n},\\\\\n\\gamma\\prime(k)&=\\frac{\\sigma A_0}{1+n}\n\\frac{kf\\prime(k)-f(k)}{k^2},\\\\\nf(0)=0,\\ f^{\\prime\\prime}<0&\\Longrightarrow kf\\prime(k)<f(k).\n\\end{aligned}$$\n\nThe tangent slope is below the slope of the chord from the origin for a strictly concave production function. Consequently the gross capital growth factor falls with capital when saving is positive. This is a conditional convergence result for economies with the same technology and structural parameters.\n\nSubstitute investment $\\sigma A_0f(k_t)$ into the capital law and divide by positive $k_t$. Differentiating gives $\\gamma\\prime(k)=\\sigma A_0[kf\\prime(k)-f(k)]/[(1+n)k^2]$. Strict concavity and $f(0)=0$ imply $kf\\prime(k)<f(k)$, so the derivative is negative when saving is positive.\n\nFor $\\sigma=0$ it is zero. Poorer economies with the same parameters then have faster proportional capital accumulation.\n\n$\\gamma(k)=[1-\\delta+\\sigma A_0f(k)/k]/(1+n)$; its derivative is negative for $\\sigma>0$.",
     "hint": "Concavity makes the average product exceed the marginal product.",
     "topic": "Macroeconomics",
     "sourcePage": 15,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Divide the capital recurrence by current positive capital to obtain a proportional, rather than absolute, growth measure. Its dependence on capital comes through average product."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\gamma(k)&=\\frac{1-\\delta+\\sigma A_0f(k)/k}{1+n},\\\\\n\\gamma\\prime(k)&=\\frac{\\sigma A_0}{1+n}\n\\frac{kf\\prime(k)-f(k)}{k^2},\\\\\nf(0)=0,\\ f^{\\prime\\prime}<0&\\Longrightarrow kf\\prime(k)<f(k).\n\\end{aligned}$$\n\nThe tangent slope is below the slope of the chord from the origin for a strictly concave production function. Consequently the gross capital growth factor falls with capital when saving is positive. This is a conditional convergence result for economies with the same technology and structural parameters."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Substitute investment $\\sigma A_0f(k_t)$ into the capital law and divide by positive $k_t$. Differentiating gives $\\gamma\\prime(k)=\\sigma A_0[kf\\prime(k)-f(k)]/[(1+n)k^2]$. Strict concavity and $f(0)=0$ imply $kf\\prime(k)<f(k)$, so the derivative is negative when saving is positive.\n\nFor $\\sigma=0$ it is zero. Poorer economies with the same parameters then have faster proportional capital accumulation."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$\\gamma(k)=[1-\\delta+\\sigma A_0f(k)/k]/(1+n)$; its derivative is negative for $\\sigma>0$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q5v",
     "number": "5(v)",
     "stem": "A Solow-style economy has $Y_t=A_tF(K_t,H_t)$, with F homogeneous of degree 1, essential inputs and the usual concavity/Inada properties. Technology is $A_t=A_0(1+\\alpha)^t$, $\\alpha>0$, labour $H_{t+1}=(1+n)H_t$, $n>0$, and capital $K_{t+1}=(1-\\delta)K_t+I_t$. Let $f(k)=k^\\theta$, $0<\\theta<1$, $A_0=1$, $\\alpha>0$ and positive saving. Show that along a balanced-growth path, capital and output per worker have the same gross growth rate.",
     "answer": "$k_{t+1}/k_t=y_{t+1}/y_t=(1+\\alpha)^{1/(1-\\theta)}$.",
-    "solution": "For constant gross capital growth g, the capital recurrence requires $A_tk_t^{\\theta-1}$ to be constant. Its period ratio is $(1+\\alpha)g^{\\theta-1}$, so $g^{1-\\theta}=1+\\alpha$. Output per worker $y_t=A_tk_t^\\theta$ then has gross growth $(1+\\alpha)g^\\theta=g$. Thus both grow at the displayed rate; Hicks-neutral technology is amplified by the Cobb–Douglas exponent.",
+    "solution": "On a balanced-growth path, let capital per worker have a constant gross growth factor $g$. The recurrence requires the technology-adjusted average product to remain constant over time.\n\n$$\\begin{aligned}\nA_tk_t^{\\theta-1}&=\\text{constant},\\\\\n\\frac{A_{t+1}k_{t+1}^{\\theta-1}}{A_tk_t^{\\theta-1}}\n&=(1+\\alpha)g^{\\theta-1}=1,\\\\\ng&=(1+\\alpha)^{1/(1-\\theta)},\\\\\n\\frac{y_{t+1}}{y_t}&=(1+\\alpha)g^\\theta=g.\n\\end{aligned}$$\n\nTechnology directly raises output, but it also induces capital accumulation. The same factor therefore governs capital and output per worker on the balanced path. This is a gross growth factor, so subtract one if a net percentage growth rate is requested.\n\nFor constant gross capital growth g, the capital recurrence requires $A_tk_t^{\\theta-1}$ to be constant. Its period ratio is $(1+\\alpha)g^{\\theta-1}$, so $g^{1-\\theta}=1+\\alpha$. Output per worker $y_t=A_tk_t^\\theta$ then has gross growth $(1+\\alpha)g^\\theta=g$.\n\nThus both grow at the displayed rate; Hicks-neutral technology is amplified by the Cobb–Douglas exponent.\n\n$k_{t+1}/k_t=y_{t+1}/y_t=(1+\\alpha)^{1/(1-\\theta)}$.",
     "hint": "Keep the investment-to-capital term constant on the balanced path.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "On a balanced-growth path, let capital per worker have a constant gross growth factor $g$. The recurrence requires the technology-adjusted average product to remain constant over time."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nA_tk_t^{\\theta-1}&=\\text{constant},\\\\\n\\frac{A_{t+1}k_{t+1}^{\\theta-1}}{A_tk_t^{\\theta-1}}\n&=(1+\\alpha)g^{\\theta-1}=1,\\\\\ng&=(1+\\alpha)^{1/(1-\\theta)},\\\\\n\\frac{y_{t+1}}{y_t}&=(1+\\alpha)g^\\theta=g.\n\\end{aligned}$$\n\nTechnology directly raises output, but it also induces capital accumulation. The same factor therefore governs capital and output per worker on the balanced path. This is a gross growth factor, so subtract one if a net percentage growth rate is requested."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For constant gross capital growth g, the capital recurrence requires $A_tk_t^{\\theta-1}$ to be constant. Its period ratio is $(1+\\alpha)g^{\\theta-1}$, so $g^{1-\\theta}=1+\\alpha$. Output per worker $y_t=A_tk_t^\\theta$ then has gross growth $(1+\\alpha)g^\\theta=g$.\n\nThus both grow at the displayed rate; Hicks-neutral technology is amplified by the Cobb–Douglas exponent."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$k_{t+1}/k_t=y_{t+1}/y_t=(1+\\alpha)^{1/(1-\\theta)}$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q6i",
     "number": "6(i)",
     "stem": "Aggregate supply is $P_t=P_t^e(1+\\mu)(1-\\alpha u_t+z)$, $\\mu>0$, with markup and unemployment benefits constant. The source asks to derive $\\pi_t=\\pi_t^e+(\\mu+z)-\\alpha u_t$, calling $\\pi_t=(P_{t-1}-P_t)/P_t$ and $\\pi_t^e=(P_{t+1}^e-P_t)/P_t$. Derive and interpret the claimed equation.",
     "answer": "The printed definitions do not imply the claim. With conventional same-period inflation definitions it is a first-order expectations-augmented Phillips approximation.",
-    "solution": "Use conventional $1+\\pi_t=P_t/P_{t-1}$ and $1+\\pi_t^e=P_t^e/P_{t-1}$. The exact relation is $1+\\pi_t=(1+\\pi_t^e)(1+\\mu)(1-\\alpha u_t+z)$. Ignoring products of small rates/markup terms gives $\\pi_t\\approx\\pi_t^e+\\mu+z-\\alpha u_t$, the expectations-augmented Phillips curve: inflation rises with expectations, markup and benefits, and falls with unemployment. The source instead reverses the sign/denominator of actual inflation and shifts expected inflation to t+1, so its requested derivation is not valid literally.",
+    "solution": "Before manipulating inflation, make actual and expected price changes use the same base period. The source's reversed actual-inflation formula and shifted expectation cannot generate the familiar Phillips equation literally.\n\n$$\\begin{aligned}\n1+\\pi_t&=P_t/P_{t-1},\\quad1+\\pi_t^e=P_t^e/P_{t-1},\\\\\n1+\\pi_t&=(1+\\pi_t^e)(1+\\mu)(1-\\alpha u_t+z),\\\\\n\\pi_t&\\approx\\pi_t^e+\\mu+z-\\alpha u_t.\n\\end{aligned}$$\n\nThe final line discards products of small terms, so it is an approximation, not an exact identity. It shows how expected inflation and wage-setting pressure raise inflation, while unemployment restrains it. Preserve the source-definition issue alongside this conditional conventional derivation.\n\nUse conventional $1+\\pi_t=P_t/P_{t-1}$ and $1+\\pi_t^e=P_t^e/P_{t-1}$. The exact relation is $1+\\pi_t=(1+\\pi_t^e)(1+\\mu)(1-\\alpha u_t+z)$. Ignoring products of small rates/markup terms gives $\\pi_t\\approx\\pi_t^e+\\mu+z-\\alpha u_t$, the expectations-augmented Phillips curve: inflation rises with expectations, markup and benefits, and falls with unemployment.\n\nThe source instead reverses the sign/denominator of actual inflation and shifts expected inflation to t+1, so its requested derivation is not valid literally.\n\nThe printed definitions do not imply the claim. With conventional same-period inflation definitions it is a first-order expectations-augmented Phillips approximation.",
     "hint": "Check inflation timing and signs before linearizing the price-setting equation.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 8,
     "status": "needs_review",
-    "notes": "Printed definitions are inconsistent and the target requires a first-order approximation; no exact proof possible as written."
+    "notes": "Printed definitions are inconsistent and the target requires a first-order approximation; no exact proof possible as written.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Before manipulating inflation, make actual and expected price changes use the same base period. The source's reversed actual-inflation formula and shifted expectation cannot generate the familiar Phillips equation literally."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n1+\\pi_t&=P_t/P_{t-1},\\quad1+\\pi_t^e=P_t^e/P_{t-1},\\\\\n1+\\pi_t&=(1+\\pi_t^e)(1+\\mu)(1-\\alpha u_t+z),\\\\\n\\pi_t&\\approx\\pi_t^e+\\mu+z-\\alpha u_t.\n\\end{aligned}$$\n\nThe final line discards products of small terms, so it is an approximation, not an exact identity. It shows how expected inflation and wage-setting pressure raise inflation, while unemployment restrains it. Preserve the source-definition issue alongside this conditional conventional derivation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Use conventional $1+\\pi_t=P_t/P_{t-1}$ and $1+\\pi_t^e=P_t^e/P_{t-1}$. The exact relation is $1+\\pi_t=(1+\\pi_t^e)(1+\\mu)(1-\\alpha u_t+z)$. Ignoring products of small rates/markup terms gives $\\pi_t\\approx\\pi_t^e+\\mu+z-\\alpha u_t$, the expectations-augmented Phillips curve: inflation rises with expectations, markup and benefits, and falls with unemployment.\n\nThe source instead reverses the sign/denominator of actual inflation and shifts expected inflation to t+1, so its requested derivation is not valid literally."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The printed definitions do not imply the claim. With conventional same-period inflation definitions it is a first-order expectations-augmented Phillips approximation."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q6ii",
     "number": "6(ii)",
     "stem": "Aggregate supply is $P_t=P_t^e(1+\\mu)(1-\\alpha u_t+z)$, $\\mu>0$, with markup and unemployment benefits constant. Using the approximate Phillips equation $\\pi_t=\\pi_t^e+\\mu+z-\\alpha u_t$, assume $\\pi_t^e=\\theta\\pi_{t-1}$, $\\theta>0$. Name and interpret the equation for $\\theta=1$ and $\\theta\\ne1$.",
     "answer": "$\\pi_t=\\theta\\pi_{t-1}+\\mu+z-\\alpha u_t$; backward-looking/adaptive inflation expectations.",
-    "solution": "Substitute the expectation rule. Equivalently $\\Delta\\pi_t=(\\theta-1)\\pi_{t-1}+\\mu+z-\\alpha u_t$. For $\\theta=1$, expected inflation equals last period’s actual inflation and unemployment determines inflation acceleration. For other theta, expectations only partially carry past inflation when $0<\\theta<1$ and over-extrapolate it for $\\theta>1$; lagged inflation affects the acceleration independently of unemployment.",
+    "solution": "Insert the backward-looking expectation rule into the approximate Phillips curve. Rewriting it as inflation change makes the special unit-coefficient case transparent.\n\n$$\\begin{aligned}\n\\pi_t&=\\theta\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n\\Delta\\pi_t&=(\\theta-1)\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n\\theta=1:&\\quad\\Delta\\pi_t=\\mu+z-\\alpha u_t.\n\\end{aligned}$$\n\nWith unit carryover, unemployment determines inflation acceleration rather than the inflation level. A coefficient below one only partially incorporates past inflation, while one above one extrapolates it more than fully. State that this interpretation inherits the approximation used to derive the original relation.\n\nSubstitute the expectation rule. Equivalently $\\Delta\\pi_t=(\\theta-1)\\pi_{t-1}+\\mu+z-\\alpha u_t$. For $\\theta=1$, expected inflation equals last period’s actual inflation and unemployment determines inflation acceleration.\n\nFor other theta, expectations only partially carry past inflation when $0<\\theta<1$ and over-extrapolate it for $\\theta>1$; lagged inflation affects the acceleration independently of unemployment.\n\n$\\pi_t=\\theta\\pi_{t-1}+\\mu+z-\\alpha u_t$; backward-looking/adaptive inflation expectations.",
     "hint": "Substitute the expectation rule and subtract lagged inflation.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": "Uses the conventional approximate equation discussed in part (i), rather than the inconsistent printed definitions."
+    "notes": "Uses the conventional approximate equation discussed in part (i), rather than the inconsistent printed definitions.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Insert the backward-looking expectation rule into the approximate Phillips curve. Rewriting it as inflation change makes the special unit-coefficient case transparent."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi_t&=\\theta\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n\\Delta\\pi_t&=(\\theta-1)\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n\\theta=1:&\\quad\\Delta\\pi_t=\\mu+z-\\alpha u_t.\n\\end{aligned}$$\n\nWith unit carryover, unemployment determines inflation acceleration rather than the inflation level. A coefficient below one only partially incorporates past inflation, while one above one extrapolates it more than fully. State that this interpretation inherits the approximation used to derive the original relation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Substitute the expectation rule. Equivalently $\\Delta\\pi_t=(\\theta-1)\\pi_{t-1}+\\mu+z-\\alpha u_t$. For $\\theta=1$, expected inflation equals last period’s actual inflation and unemployment determines inflation acceleration.\n\nFor other theta, expectations only partially carry past inflation when $0<\\theta<1$ and over-extrapolate it for $\\theta>1$; lagged inflation affects the acceleration independently of unemployment."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$\\pi_t=\\theta\\pi_{t-1}+\\mu+z-\\alpha u_t$; backward-looking/adaptive inflation expectations."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q6iii",
     "number": "6(iii)",
     "stem": "Aggregate supply is $P_t=P_t^e(1+\\mu)(1-\\alpha u_t+z)$, $\\mu>0$, with markup and unemployment benefits constant. With $\\pi_t^e=\\pi_{t-1}$, derive natural unemployment and express the inflation change relative to it.",
     "answer": "In the approximate equation, $u_n=(\\mu+z)/\\alpha$ and $\\Delta\\pi_t=-\\alpha(u_t-u_n)$.",
-    "solution": "At constant inflation under the approximate Phillips curve, $0=\\mu+z-\\alpha u_n$. Rearranging gives the natural rate and then $\\Delta\\pi_t=-\\alpha(u_t-u_n)$. Unemployment below it accelerates inflation; above it decelerates inflation. For comparison, retaining the exact multiplicative price equation and equal actual/expected steady inflation yields $(1+\\mu)(1-\\alpha u_n+z)=1$, giving exact $u_n=[z+\\mu/(1+\\mu)]/\\alpha$. The simpler formula is a first-order approximation.",
+    "solution": "The natural rate here means unemployment consistent with nonaccelerating inflation under the unit-lag expectation rule. Set the change, not the level, of inflation to zero.\n\n$$\\begin{aligned}\n0&=\\mu+z-\\alpha u_n,\\\\\nu_n&=(\\mu+z)/\\alpha,\\\\\n\\Delta\\pi_t&=-\\alpha(u_t-u_n).\n\\end{aligned}$$\n\nThis expression separates the structural unemployment benchmark from cyclical unemployment. Below the benchmark inflation accelerates, and above it inflation decelerates. The exact multiplicative price-setting equation has a slightly different benchmark; retain that distinction instead of calling the first-order formula exact.\n\nAt constant inflation under the approximate Phillips curve, $0=\\mu+z-\\alpha u_n$. Rearranging gives the natural rate and then $\\Delta\\pi_t=-\\alpha(u_t-u_n)$. Unemployment below it accelerates inflation; above it decelerates inflation.\n\nFor comparison, retaining the exact multiplicative price equation and equal actual/expected steady inflation yields $(1+\\mu)(1-\\alpha u_n+z)=1$, giving exact $u_n=[z+\\mu/(1+\\mu)]/\\alpha$. The simpler formula is a first-order approximation.\n\nIn the approximate equation, $u_n=(\\mu+z)/\\alpha$ and $\\Delta\\pi_t=-\\alpha(u_t-u_n)$.",
     "hint": "Define the natural rate by nonaccelerating inflation.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": "Approximation and source inflation-definition caveat retained from (i)."
+    "notes": "Approximation and source inflation-definition caveat retained from (i).",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "The natural rate here means unemployment consistent with nonaccelerating inflation under the unit-lag expectation rule. Set the change, not the level, of inflation to zero."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n0&=\\mu+z-\\alpha u_n,\\\\\nu_n&=(\\mu+z)/\\alpha,\\\\\n\\Delta\\pi_t&=-\\alpha(u_t-u_n).\n\\end{aligned}$$\n\nThis expression separates the structural unemployment benchmark from cyclical unemployment. Below the benchmark inflation accelerates, and above it inflation decelerates. The exact multiplicative price-setting equation has a slightly different benchmark; retain that distinction instead of calling the first-order formula exact."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "At constant inflation under the approximate Phillips curve, $0=\\mu+z-\\alpha u_n$. Rearranging gives the natural rate and then $\\Delta\\pi_t=-\\alpha(u_t-u_n)$. Unemployment below it accelerates inflation; above it decelerates inflation.\n\nFor comparison, retaining the exact multiplicative price equation and equal actual/expected steady inflation yields $(1+\\mu)(1-\\alpha u_n+z)=1$, giving exact $u_n=[z+\\mu/(1+\\mu)]/\\alpha$. The simpler formula is a first-order approximation."
+      },
+      {
+        "title": "Conclusion",
+        "body": "In the approximate equation, $u_n=(\\mu+z)/\\alpha$ and $\\Delta\\pi_t=-\\alpha(u_t-u_n)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q6iv",
     "number": "6(iv)",
     "stem": "Aggregate supply is $P_t=P_t^e(1+\\mu)(1-\\alpha u_t+z)$, $\\mu>0$, with markup and unemployment benefits constant. With expected inflation tied to last period’s inflation, model wage indexation and determine whether it increases unemployment’s effect on inflation.",
     "answer": "For indexed share $\\lambda$, $\\Delta\\pi_t=-[\\alpha/(1-\\lambda)](u_t-u_n)$; indexation amplifies the response.",
-    "solution": "Let a share $\\lambda$ of wages respond to current inflation and the remainder to $\\pi_{t-1}$. Substitute effective inflation expectations $\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}$ into the approximate Phillips curve. Moving indexed inflation to the left gives $(1-\\lambda)\\Delta\\pi_t=\\mu+z-\\alpha u_t$. Thus the response magnitude rises from alpha to $\\alpha/(1-\\lambda)$ for $0<\\lambda<1$; the approximate natural rate is unchanged.",
+    "solution": "Let indexed wages respond to current inflation and unindexed wages use lagged inflation. The indexed component introduces current inflation on both sides of the Phillips relation.\n\n$$\\begin{aligned}\n\\pi_t&=\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n(1-\\lambda)\\Delta\\pi_t&=-\\alpha(u_t-u_n),\\\\\n\\Delta\\pi_t&=-\\frac\\alpha{1-\\lambda}(u_t-u_n)\n\\quad(0\\le\\lambda<1).\n\\end{aligned}$$\n\nMoving the current-inflation feedback to the left reveals the amplification factor. The structural natural rate is unchanged, but a given unemployment gap produces a larger inflation change. Complete indexation requires a separate limiting analysis because division by $1-\\lambda$ then fails.\n\nLet a share $\\lambda$ of wages respond to current inflation and the remainder to $\\pi_{t-1}$. Substitute effective inflation expectations $\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}$ into the approximate Phillips curve. Moving indexed inflation to the left gives $(1-\\lambda)\\Delta\\pi_t=\\mu+z-\\alpha u_t$.\n\nThus the response magnitude rises from alpha to $\\alpha/(1-\\lambda)$ for $0<\\lambda<1$; the approximate natural rate is unchanged.\n\nFor indexed share $\\lambda$, $\\Delta\\pi_t=-[\\alpha/(1-\\lambda)](u_t-u_n)$; indexation amplifies the response.",
     "hint": "Indexation feeds current inflation back into wage setting.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Let indexed wages respond to current inflation and unindexed wages use lagged inflation. The indexed component introduces current inflation on both sides of the Phillips relation."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\pi_t&=\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}+\\mu+z-\\alpha u_t,\\\\\n(1-\\lambda)\\Delta\\pi_t&=-\\alpha(u_t-u_n),\\\\\n\\Delta\\pi_t&=-\\frac\\alpha{1-\\lambda}(u_t-u_n)\n\\quad(0\\le\\lambda<1).\n\\end{aligned}$$\n\nMoving the current-inflation feedback to the left reveals the amplification factor. The structural natural rate is unchanged, but a given unemployment gap produces a larger inflation change. Complete indexation requires a separate limiting analysis because division by $1-\\lambda$ then fails."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Let a share $\\lambda$ of wages respond to current inflation and the remainder to $\\pi_{t-1}$. Substitute effective inflation expectations $\\lambda\\pi_t+(1-\\lambda)\\pi_{t-1}$ into the approximate Phillips curve. Moving indexed inflation to the left gives $(1-\\lambda)\\Delta\\pi_t=\\mu+z-\\alpha u_t$.\n\nThus the response magnitude rises from alpha to $\\alpha/(1-\\lambda)$ for $0<\\lambda<1$; the approximate natural rate is unchanged."
+      },
+      {
+        "title": "Conclusion",
+        "body": "For indexed share $\\lambda$, $\\Delta\\pi_t=-[\\alpha/(1-\\lambda)](u_t-u_n)$; indexation amplifies the response."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q7i",
     "number": "7(i)",
     "stem": "A consumer maximizes $u(c_1)+u(c_2)/(1+\\delta)$, with $c_i>1$. The printed budget is $c_1+c_2/(1+\\delta)=Y_1+Y_2/(1+r)\\equiv W$, although r is the market interest rate. For $u(c)=\\log c$, find a condition for consumption smoothing.",
     "answer": "Literal printed budget: $c_1=c_2$ for every feasible r. Intended market budget: smoothing requires $r=\\delta$.",
-    "solution": "Using the literal budget, the FOCs are $1/c_1=\\lambda$ and $1/[(1+\\delta)c_2]=\\lambda/(1+\\delta)$, so $c_1=c_2$ independently of r. If the consumption discount denominator in the budget is corrected to $1+r$, the Euler equation becomes $c_2/c_1=(1+r)/(1+\\delta)$, and equal consumption occurs iff $r=\\delta$. The second interpretation matches the later questions but is a source correction, not the printed problem.",
+    "solution": "Keep the subjective discount rate and the market interest rate distinct. Write first-order conditions for the literal printed budget before displaying the conventional corrected market-budget result.\n\n$$\\begin{aligned}\n\\text{literal: }\\frac1{c_1}&=\\lambda,\\qquad\n\\frac1{(1+\\delta)c_2}=\\frac\\lambda{1+\\delta},\\\\\n&\\Longrightarrow c_1=c_2,\\\\\n\\text{market budget: }\\frac{c_2}{c_1}&=\\frac{1+r}{1+\\delta},\\\\\nc_1=c_2&\\Longleftrightarrow r=\\delta\\quad\\text{in the market-budget version}.\n\\end{aligned}$$\n\nThe literal budget prices future consumption using the same factor as utility discounting, so smoothing holds mechanically, independent of the interest rate entering wealth. The conventional interpretation instead balances impatience against the return to saving. Neither interpretation should be silently substituted for the other.\n\nUsing the literal budget, the FOCs are $1/c_1=\\lambda$ and $1/[(1+\\delta)c_2]=\\lambda/(1+\\delta)$, so $c_1=c_2$ independently of r. If the consumption discount denominator in the budget is corrected to $1+r$, the Euler equation becomes $c_2/c_1=(1+r)/(1+\\delta)$, and equal consumption occurs iff $r=\\delta$. The second interpretation matches the later questions but is a source correction, not the printed problem.\n\nLiteral printed budget: $c_1=c_2$ for every feasible r. Intended market budget: smoothing requires $r=\\delta$.",
     "hint": "Compare the budget discount rate with the utility discount rate.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "needs_review",
-    "notes": "Source budget uses 1+delta where a standard market constraint uses 1+r. Both literal and intended answers retained."
+    "notes": "Source budget uses 1+delta where a standard market constraint uses 1+r. Both literal and intended answers retained.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Keep the subjective discount rate and the market interest rate distinct. Write first-order conditions for the literal printed budget before displaying the conventional corrected market-budget result."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\text{literal: }\\frac1{c_1}&=\\lambda,\\qquad\n\\frac1{(1+\\delta)c_2}=\\frac\\lambda{1+\\delta},\\\\\n&\\Longrightarrow c_1=c_2,\\\\\n\\text{market budget: }\\frac{c_2}{c_1}&=\\frac{1+r}{1+\\delta},\\\\\nc_1=c_2&\\Longleftrightarrow r=\\delta\\quad\\text{in the market-budget version}.\n\\end{aligned}$$\n\nThe literal budget prices future consumption using the same factor as utility discounting, so smoothing holds mechanically, independent of the interest rate entering wealth. The conventional interpretation instead balances impatience against the return to saving. Neither interpretation should be silently substituted for the other."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Using the literal budget, the FOCs are $1/c_1=\\lambda$ and $1/[(1+\\delta)c_2]=\\lambda/(1+\\delta)$, so $c_1=c_2$ independently of r. If the consumption discount denominator in the budget is corrected to $1+r$, the Euler equation becomes $c_2/c_1=(1+r)/(1+\\delta)$, and equal consumption occurs iff $r=\\delta$. The second interpretation matches the later questions but is a source correction, not the printed problem."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Literal printed budget: $c_1=c_2$ for every feasible r. Intended market budget: smoothing requires $r=\\delta$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q7ii",
     "number": "7(ii)",
     "stem": "A consumer maximizes $u(c_1)+u(c_2)/(1+\\delta)$, with $c_i>1$. The printed budget is $c_1+c_2/(1+\\delta)=Y_1+Y_2/(1+r)\\equiv W$, although r is the market interest rate. Plot future-biased and present-biased consumption with c2 vertical and c1 horizontal.",
     "answer": "The literal log problem always smooths. For the intended market budget: future bias if $r>\\delta$, present bias if $r<\\delta$.",
-    "solution": "With the standard corrected budget, draw the line $c_2=(1+r)(W-c_1)$, intercepts $(W,0)$ and $(0,(1+r)W)$, and the 45-degree line $c_2=c_1$. The optimal log-utility tangency satisfies $c_2/c_1=(1+r)/(1+\\delta)$. For $r>\\delta$, place it above the diagonal (future consumption larger); for $r<\\delta$, below. With the source’s literal slope $-(1+\\delta)$, the optimum lies on the diagonal in every case, so the two requested bias diagrams cannot both arise.",
+    "solution": "Use future consumption on the vertical axis, draw the market budget through the income endowment, and add the equal-consumption diagonal. The Euler ratio identifies the side of that diagonal containing the optimum.\n\n$$\\begin{aligned}\nc_2&=(1+r)(W-c_1),\\\\\n\\text{budget slope}&=-(1+r),\\\\\n\\frac{c_2^*}{c_1^*}&=\\frac{1+r}{1+\\delta},\\\\\nr>\\delta&\\Longrightarrow c_2^*>c_1^*,\\qquad\nr<\\delta\\Longrightarrow c_2^*<c_1^*.\n\\end{aligned}$$\n\nThe first case lies above the diagonal and has larger future consumption; the second lies below. These requested bias diagrams use the conventional market budget. The literal printed budget instead places every log-utility optimum on the diagonal, which is why its inconsistency must stay visible.\n\nWith the standard corrected budget, draw the line $c_2=(1+r)(W-c_1)$, intercepts $(W,0)$ and $(0,(1+r)W)$, and the 45-degree line $c_2=c_1$. The optimal log-utility tangency satisfies $c_2/c_1=(1+r)/(1+\\delta)$. For $r>\\delta$, place it above the diagonal (future consumption larger); for $r<\\delta$, below.\n\nWith the source’s literal slope $-(1+\\delta)$, the optimum lies on the diagonal in every case, so the two requested bias diagrams cannot both arise.\n\nThe literal log problem always smooths. For the intended market budget: future bias if $r>\\delta$, present bias if $r<\\delta$.",
     "hint": "Draw the 45-degree line to distinguish the two consumption tilts.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "needs_review",
-    "notes": "Requested contrast is incompatible with the literal printed budget; diagram given conditional on the standard correction."
+    "notes": "Requested contrast is incompatible with the literal printed budget; diagram given conditional on the standard correction.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use future consumption on the vertical axis, draw the market budget through the income endowment, and add the equal-consumption diagonal. The Euler ratio identifies the side of that diagonal containing the optimum."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nc_2&=(1+r)(W-c_1),\\\\\n\\text{budget slope}&=-(1+r),\\\\\n\\frac{c_2^*}{c_1^*}&=\\frac{1+r}{1+\\delta},\\\\\nr>\\delta&\\Longrightarrow c_2^*>c_1^*,\\qquad\nr<\\delta\\Longrightarrow c_2^*<c_1^*.\n\\end{aligned}$$\n\nThe first case lies above the diagonal and has larger future consumption; the second lies below. These requested bias diagrams use the conventional market budget. The literal printed budget instead places every log-utility optimum on the diagonal, which is why its inconsistency must stay visible."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "With the standard corrected budget, draw the line $c_2=(1+r)(W-c_1)$, intercepts $(W,0)$ and $(0,(1+r)W)$, and the 45-degree line $c_2=c_1$. The optimal log-utility tangency satisfies $c_2/c_1=(1+r)/(1+\\delta)$. For $r>\\delta$, place it above the diagonal (future consumption larger); for $r<\\delta$, below.\n\nWith the source’s literal slope $-(1+\\delta)$, the optimum lies on the diagonal in every case, so the two requested bias diagrams cannot both arise."
+      },
+      {
+        "title": "Conclusion",
+        "body": "The literal log problem always smooths. For the intended market budget: future bias if $r>\\delta$, present bias if $r<\\delta$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q7iii",
     "number": "7(iii)",
     "stem": "A consumer maximizes $u(c_1)+u(c_2)/(1+\\delta)$, with $c_i>1$. The printed budget is $c_1+c_2/(1+\\delta)=Y_1+Y_2/(1+r)\\equiv W$, although r is the market interest rate. Assume consumption smoothing and solve for $c_1^*=c_1(r,Y_1,Y_2)$, interpreting it.",
     "answer": "Intended market budget with $r=\\delta$: $c_1^*=c_2^*=[(1+r)Y_1+Y_2]/(2+r)$.",
-    "solution": "For the standard market present-value budget, equal consumption C satisfies $C+C/(1+r)=Y_1+Y_2/(1+r)$. Solve for C to obtain the annuitized lifetime-income expression. It averages both incomes with present-value weights, allowing borrowing/saving to smooth consumption. Under the literal source budget instead, equal consumption is $C=(1+\\delta)[Y_1+Y_2/(1+r)]/(2+\\delta)$; it equals the displayed standard formula only when $r=\\delta$. Results require the solution to satisfy the imposed $c_i>1$.",
+    "solution": "Once smoothing is justified under the market-budget interpretation, substitute a common consumption level into lifetime resources. This computes an annuity, not an unweighted arithmetic mean of the two incomes.\n\n$$\\begin{aligned}\nC+\\frac C{1+r}&=Y_1+\\frac{Y_2}{1+r},\\\\\n(2+r)C&=(1+r)Y_1+Y_2,\\\\\nc_1^*=c_2^*&=\\frac{(1+r)Y_1+Y_2}{2+r}.\n\\end{aligned}$$\n\nThe higher weight on first-period income reflects its availability one period earlier. Borrowing or saving moves the household from its income endowment to the affordable constant-consumption point. Check the imposed $c_i>1$ domain and retain the different formula for the literal printed discounting convention.\n\nFor the standard market present-value budget, equal consumption C satisfies $C+C/(1+r)=Y_1+Y_2/(1+r)$. Solve for C to obtain the annuitized lifetime-income expression. It averages both incomes with present-value weights, allowing borrowing/saving to smooth consumption.\n\nUnder the literal source budget instead, equal consumption is $C=(1+\\delta)[Y_1+Y_2/(1+r)]/(2+\\delta)$; it equals the displayed standard formula only when $r=\\delta$. Results require the solution to satisfy the imposed $c_i>1$.\n\nIntended market budget with $r=\\delta$: $c_1^*=c_2^*=[(1+r)Y_1+Y_2]/(2+r)$.",
     "hint": "Use the budget to convert lifetime wealth into a constant consumption annuity.",
     "topic": "Macroeconomics",
     "sourcePage": 16,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Conditional standard-budget answer accompanied by the literal alternative; see part (i)."
+    "notes": "Conditional standard-budget answer accompanied by the literal alternative; see part (i).",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Once smoothing is justified under the market-budget interpretation, substitute a common consumption level into lifetime resources. This computes an annuity, not an unweighted arithmetic mean of the two incomes."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nC+\\frac C{1+r}&=Y_1+\\frac{Y_2}{1+r},\\\\\n(2+r)C&=(1+r)Y_1+Y_2,\\\\\nc_1^*=c_2^*&=\\frac{(1+r)Y_1+Y_2}{2+r}.\n\\end{aligned}$$\n\nThe higher weight on first-period income reflects its availability one period earlier. Borrowing or saving moves the household from its income endowment to the affordable constant-consumption point. Check the imposed $c_i>1$ domain and retain the different formula for the literal printed discounting convention."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For the standard market present-value budget, equal consumption C satisfies $C+C/(1+r)=Y_1+Y_2/(1+r)$. Solve for C to obtain the annuitized lifetime-income expression. It averages both incomes with present-value weights, allowing borrowing/saving to smooth consumption.\n\nUnder the literal source budget instead, equal consumption is $C=(1+\\delta)[Y_1+Y_2/(1+r)]/(2+\\delta)$; it equals the displayed standard formula only when $r=\\delta$. Results require the solution to satisfy the imposed $c_i>1$."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Intended market budget with $r=\\delta$: $c_1^*=c_2^*=[(1+r)Y_1+Y_2]/(2+r)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q7iv",
     "number": "7(iv)",
     "stem": "A consumer maximizes $u(c_1)+u(c_2)/(1+\\delta)$, with $c_i>1$. The printed budget is $c_1+c_2/(1+\\delta)=Y_1+Y_2/(1+r)\\equiv W$, although r is the market interest rate. Define permanent income $Y_P$ as a constant income stream $(Y_P,Y_P)$ with the same lifetime wealth as $(Y_1,Y_2)$. Relate $c_1,c_2,Y_P$ and interpret graphically.",
     "answer": "$Y_P=[(1+r)Y_1+Y_2]/(2+r)$; with the intended market budget and smoothing, $c_1=c_2=Y_P$.",
-    "solution": "Equate $Y_P+Y_P/(1+r)=Y_1+Y_2/(1+r)$ to derive permanent income. Under standard smoothing, this is exactly the constant consumption affordable from lifetime resources. Graphically the market budget through the income point intersects the 45-degree line at $(Y_P,Y_P)$, and the equal-consumption optimum lies there. The literal budget uses a different discount rate for consumption, so its constant optimum equals YP only if $r=\\delta$; that printed inconsistency must not be silently ignored.",
+    "solution": "Permanent income is defined by equality of present values, independently of preferences. Only after calculating it should one invoke consumption smoothing to identify it with actual consumption.\n\n$$\\begin{aligned}\nY_P+\\frac{Y_P}{1+r}&=Y_1+\\frac{Y_2}{1+r},\\\\\nY_P&=\\frac{(1+r)Y_1+Y_2}{2+r},\\\\\n\\text{market budget and smoothing}&\\Longrightarrow c_1^*=c_2^*=Y_P.\n\\end{aligned}$$\n\nGraphically this is the intersection of the lifetime budget and the 45-degree line. It remains the same permanent-income definition even when preferences imply a nonconstant consumption path. The printed budget with a different consumption discount factor does not generally identify its optimum with this market-valued annuity.\n\nEquate $Y_P+Y_P/(1+r)=Y_1+Y_2/(1+r)$ to derive permanent income. Under standard smoothing, this is exactly the constant consumption affordable from lifetime resources. Graphically the market budget through the income point intersects the 45-degree line at $(Y_P,Y_P)$, and the equal-consumption optimum lies there.\n\nThe literal budget uses a different discount rate for consumption, so its constant optimum equals YP only if $r=\\delta$; that printed inconsistency must not be silently ignored.\n\n$Y_P=[(1+r)Y_1+Y_2]/(2+r)$; with the intended market budget and smoothing, $c_1=c_2=Y_P$.",
     "hint": "Locate the annuity-equivalent income on the 45-degree line.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": "Budget inconsistency from part (i) affects the equality with permanent income."
+    "notes": "Budget inconsistency from part (i) affects the equality with permanent income.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Permanent income is defined by equality of present values, independently of preferences. Only after calculating it should one invoke consumption smoothing to identify it with actual consumption."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nY_P+\\frac{Y_P}{1+r}&=Y_1+\\frac{Y_2}{1+r},\\\\\nY_P&=\\frac{(1+r)Y_1+Y_2}{2+r},\\\\\n\\text{market budget and smoothing}&\\Longrightarrow c_1^*=c_2^*=Y_P.\n\\end{aligned}$$\n\nGraphically this is the intersection of the lifetime budget and the 45-degree line. It remains the same permanent-income definition even when preferences imply a nonconstant consumption path. The printed budget with a different consumption discount factor does not generally identify its optimum with this market-valued annuity."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Equate $Y_P+Y_P/(1+r)=Y_1+Y_2/(1+r)$ to derive permanent income. Under standard smoothing, this is exactly the constant consumption affordable from lifetime resources. Graphically the market budget through the income point intersects the 45-degree line at $(Y_P,Y_P)$, and the equal-consumption optimum lies there.\n\nThe literal budget uses a different discount rate for consumption, so its constant optimum equals YP only if $r=\\delta$; that printed inconsistency must not be silently ignored."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$Y_P=[(1+r)Y_1+Y_2]/(2+r)$; with the intended market budget and smoothing, $c_1=c_2=Y_P$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q8i",
     "number": "8(i)",
     "stem": "A cake of size 1 is divided as $\\alpha+\\beta=1$, $0\\leq\\alpha,\\beta\\leq1$, between A and B, initially with utilities $u_A=\\alpha,u_B=\\beta$. Find the Pareto-optimal allocations.",
     "answer": "Every feasible full division is Pareto optimal.",
-    "solution": "Increasing either person’s share necessarily reduces the other’s, and both utilities strictly rise in own share. Hence no feasible division permits a Pareto improvement.",
+    "solution": "Every full division is feasible on the line segment joining the two all-cake allocations. Both people strictly prefer a larger own share, so any reallocation has opposite utility effects.\n\n$$\\begin{aligned}\n\\alpha+\\beta&=1,\\\\\n\\Delta u_A&=\\Delta\\alpha=-\\Delta\\beta,\\\\\n\\Delta u_B&=\\Delta\\beta,\\\\\n\\Delta u_A\\ge0,\\ \\Delta u_B\\ge0&\\Longrightarrow\n\\Delta u_A=\\Delta u_B=0.\n\\end{aligned}$$\n\nA strict Pareto gain is therefore impossible from any full division, including unequal divisions and the endpoints. Pareto efficiency does not rank these allocations by fairness; it only rules out an improvement that harms nobody.\n\nIncreasing either person’s share necessarily reduces the other’s, and both utilities strictly rise in own share. Hence no feasible division permits a Pareto improvement.\n\nEvery feasible full division is Pareto optimal.",
     "hint": "The entire cake is already allocated.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Every full division is feasible on the line segment joining the two all-cake allocations. Both people strictly prefer a larger own share, so any reallocation has opposite utility effects."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n\\alpha+\\beta&=1,\\\\\n\\Delta u_A&=\\Delta\\alpha=-\\Delta\\beta,\\\\\n\\Delta u_B&=\\Delta\\beta,\\\\\n\\Delta u_A\\ge0,\\ \\Delta u_B\\ge0&\\Longrightarrow\n\\Delta u_A=\\Delta u_B=0.\n\\end{aligned}$$\n\nA strict Pareto gain is therefore impossible from any full division, including unequal divisions and the endpoints. Pareto efficiency does not rank these allocations by fairness; it only rules out an improvement that harms nobody."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Increasing either person’s share necessarily reduces the other’s, and both utilities strictly rise in own share. Hence no feasible division permits a Pareto improvement."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Every feasible full division is Pareto optimal."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q8ii",
     "number": "8(ii)",
     "stem": "A cake of size 1 is divided as $\\alpha+\\beta=1$, $0\\leq\\alpha,\\beta\\leq1$, between A and B, initially with utilities $u_A=\\alpha,u_B=\\beta$. A cuts the cake into two pieces and B chooses a piece, leaving A the other. How should A cut?",
     "answer": "Into equal halves.",
-    "solution": "If piece sizes are z and 1-z, B chooses $\\max(z,1-z)$, leaving A $\\min(z,1-z)$. This minimum is maximized at $z=1/2$, ensuring A one half.",
+    "solution": "Work backward from the chooser's action. B takes the larger piece, so A chooses the cut to maximize the smaller piece left for her.\n\n$$\\begin{aligned}\nu_A(z)&=\\min\\{z,1-z\\},\\\\\n\\min\\{z,1-z\\}&\\le\\frac{z+(1-z)}2=\\frac12,\\\\\nz^*&=1/2.\n\\end{aligned}$$\n\nAny unequal cut leaves A strictly less than half after B chooses. Equal halves attain the upper bound regardless of how B resolves the tie. This backward-induction guarantee is stronger than an assumption that the chooser will behave generously.\n\nIf piece sizes are z and 1-z, B chooses $\\max(z,1-z)$, leaving A $\\min(z,1-z)$. This minimum is maximized at $z=1/2$, ensuring A one half.\n\nInto equal halves.",
     "hint": "A receives the smaller piece under selfish preferences.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Work backward from the chooser's action. B takes the larger piece, so A chooses the cut to maximize the smaller piece left for her."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nu_A(z)&=\\min\\{z,1-z\\},\\\\\n\\min\\{z,1-z\\}&\\le\\frac{z+(1-z)}2=\\frac12,\\\\\nz^*&=1/2.\n\\end{aligned}$$\n\nAny unequal cut leaves A strictly less than half after B chooses. Equal halves attain the upper bound regardless of how B resolves the tie. This backward-induction guarantee is stronger than an assumption that the chooser will behave generously."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "If piece sizes are z and 1-z, B chooses $\\max(z,1-z)$, leaving A $\\min(z,1-z)$. This minimum is maximized at $z=1/2$, ensuring A one half."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Into equal halves."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q8iii",
     "number": "8(iii)",
     "stem": "A cake of size 1 is divided as $\\alpha+\\beta=1$, $0\\leq\\alpha,\\beta\\leq1$, between A and B, initially with utilities $u_A=\\alpha,u_B=\\beta$. Now A is altruistic, with $u_A=\\alpha+\\mu\\beta$. (a) For $0<\\mu<1$, do efficiency or cut-and-choose answers change? (b) What if $\\mu>1$?",
     "answer": "(a) Neither changes. (b) Only $(\\alpha,\\beta)=(0,1)$ is efficient; A cuts pieces of sizes 0 and 1.",
-    "solution": "Using $\\alpha=1-\\beta$, A’s utility is $1+(\\mu-1)\\beta$. For $0<\\mu<1$, A still prefers a larger own share, so preferences conflict, all divisions are efficient and A maximizes the smaller retained share by halving. If $\\mu>1$, both A and B prefer increasing beta. Giving any remaining A share to B improves both, so only beta=1 is efficient. In cut-and-choose A now wants B to take the largest possible piece, achieved by a zero–one cut.",
+    "solution": "Use the full-division constraint to express both utilities in B's share. The sign of the altruism coefficient minus one determines whether the two people's interests conflict or align.\n\n$$\\begin{aligned}\nu_A&=1+(\\mu-1)\\beta,\\qquad u_B=\\beta,\\\\\n0<\\mu<1:&\\quad\\frac{du_A}{d\\beta}<0<\\frac{du_B}{d\\beta},\\\\\n\\mu>1:&\\quad\\frac{du_A}{d\\beta}>0,\\quad\\frac{du_B}{d\\beta}>0.\n\\end{aligned}$$\n\nWhen A still values her own cake more, every full division remains efficient and she protects her smaller retained piece by halving. With stronger altruism, giving B more improves both people, so only the all-to-B allocation is efficient. A can implement that through cut-and-choose by making one piece the entire cake.\n\nUsing $\\alpha=1-\\beta$, A’s utility is $1+(\\mu-1)\\beta$. For $0<\\mu<1$, A still prefers a larger own share, so preferences conflict, all divisions are efficient and A maximizes the smaller retained share by halving. If $\\mu>1$, both A and B prefer increasing beta.\n\nGiving any remaining A share to B improves both, so only beta=1 is efficient. In cut-and-choose A now wants B to take the largest possible piece, achieved by a zero–one cut.\n\n(a) Neither changes. (b) Only $(\\alpha,\\beta)=(0,1)$ is efficient; A cuts pieces of sizes 0 and 1.",
     "hint": "Express A’s altruistic utility in terms of B’s share alone.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Use the full-division constraint to express both utilities in B's share. The sign of the altruism coefficient minus one determines whether the two people's interests conflict or align."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nu_A&=1+(\\mu-1)\\beta,\\qquad u_B=\\beta,\\\\\n0<\\mu<1:&\\quad\\frac{du_A}{d\\beta}<0<\\frac{du_B}{d\\beta},\\\\\n\\mu>1:&\\quad\\frac{du_A}{d\\beta}>0,\\quad\\frac{du_B}{d\\beta}>0.\n\\end{aligned}$$\n\nWhen A still values her own cake more, every full division remains efficient and she protects her smaller retained piece by halving. With stronger altruism, giving B more improves both people, so only the all-to-B allocation is efficient. A can implement that through cut-and-choose by making one piece the entire cake."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Using $\\alpha=1-\\beta$, A’s utility is $1+(\\mu-1)\\beta$. For $0<\\mu<1$, A still prefers a larger own share, so preferences conflict, all divisions are efficient and A maximizes the smaller retained share by halving. If $\\mu>1$, both A and B prefer increasing beta.\n\nGiving any remaining A share to B improves both, so only beta=1 is efficient. In cut-and-choose A now wants B to take the largest possible piece, achieved by a zero–one cut."
+      },
+      {
+        "title": "Conclusion",
+        "body": "(a) Neither changes. (b) Only $(\\alpha,\\beta)=(0,1)$ is efficient; A cuts pieces of sizes 0 and 1."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q9i",
     "number": "9(i)",
     "stem": "A firm produces $f(x_1,x_2,x_3,x_4)=\\min\\{x_1,x_2\\}+\\min\\{x_3,x_4\\}$. For one output unit and input prices 1,2,3,4 respectively, find optimal factor demands.",
     "answer": "$(x_1,x_2,x_3,x_4)=(1,1,0,0)$.",
-    "solution": "A unit through the first complementary pair costs $1+2=3$; through the second costs $3+4=7$. Use only the cheaper pair in exactly equal quantities, yielding the stated unique demands at positive prices.",
+    "solution": "Interpret each complementary pair as a production process. Waste within a pair raises cost without increasing process output, so its two inputs are optimally equal.\n\n$$\\begin{aligned}\nc_a&=p_1+p_2=3,\\qquad c_b=p_3+p_4=7,\\\\\nq_a+q_b&=1,\\\\\n\\min_{q_a,q_b\\ge0}(3q_a+7q_b)&=3\n\\quad\\text{at }(q_a,q_b)=(1,0),\\\\\n(x_1,x_2,x_3,x_4)&=(1,1,0,0).\n\\end{aligned}$$\n\nThe two processes are perfect substitutes at the output level even though inputs are complements within each process. Comparing their unit costs identifies the least-cost process without solving four separate interior first-order conditions.\n\nA unit through the first complementary pair costs $1+2=3$; through the second costs $3+4=7$. Use only the cheaper pair in exactly equal quantities, yielding the stated unique demands at positive prices.\n\n$(x_1,x_2,x_3,x_4)=(1,1,0,0)$.",
     "hint": "Treat the technology as two substitute fixed-proportion processes.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Interpret each complementary pair as a production process. Waste within a pair raises cost without increasing process output, so its two inputs are optimally equal."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nc_a&=p_1+p_2=3,\\qquad c_b=p_3+p_4=7,\\\\\nq_a+q_b&=1,\\\\\n\\min_{q_a,q_b\\ge0}(3q_a+7q_b)&=3\n\\quad\\text{at }(q_a,q_b)=(1,0),\\\\\n(x_1,x_2,x_3,x_4)&=(1,1,0,0).\n\\end{aligned}$$\n\nThe two processes are perfect substitutes at the output level even though inputs are complements within each process. Comparing their unit costs identifies the least-cost process without solving four separate interior first-order conditions."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "A unit through the first complementary pair costs $1+2=3$; through the second costs $3+4=7$. Use only the cheaper pair in exactly equal quantities, yielding the stated unique demands at positive prices."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$(x_1,x_2,x_3,x_4)=(1,1,0,0)$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q9ii",
     "number": "9(ii)",
     "stem": "A firm produces $f(x_1,x_2,x_3,x_4)=\\min\\{x_1,x_2\\}+\\min\\{x_3,x_4\\}$. Derive the cost function.",
     "answer": "At given prices, $C(q)=3q$; generally $C(q;p)=q\\min\\{p_1+p_2,p_3+p_4\\}$.",
-    "solution": "Write process outputs $q_a=\\min(x_1,x_2)$ and $q_b=\\min(x_3,x_4)$, with $q_a+q_b=q$. Avoiding wasted inputs gives pair costs $(p_1+p_2)q_a+(p_3+p_4)q_b$. Allocate all output to the cheaper process; if costs tie, any split is optimal. At the stated prices the first process has cost 3 per unit.",
+    "solution": "For any output level, first minimize inputs within each process and then allocate total output across processes. This two-stage formulation makes the global cost bound immediate.\n\n$$\\begin{aligned}\nc(q_a,q_b)&=(p_1+p_2)q_a+(p_3+p_4)q_b,\\\\\nq_a+q_b&=q,\\\\\nC(q;p)&=q\\min\\{p_1+p_2,p_3+p_4\\},\\\\\nC(q;1,2,3,4)&=3q.\n\\end{aligned}$$\n\nIf the two unit costs differ, all production uses the cheaper process. If they tie, any process-output split has the same total cost. The piecewise linear cost formula therefore covers corner solutions and ties, not just the prices specified in part (i).\n\nWrite process outputs $q_a=\\min(x_1,x_2)$ and $q_b=\\min(x_3,x_4)$, with $q_a+q_b=q$. Avoiding wasted inputs gives pair costs $(p_1+p_2)q_a+(p_3+p_4)q_b$. Allocate all output to the cheaper process; if costs tie, any split is optimal.\n\nAt the stated prices the first process has cost 3 per unit.\n\nAt given prices, $C(q)=3q$; generally $C(q;p)=q\\min\\{p_1+p_2,p_3+p_4\\}$.",
     "hint": "Compare unit costs of the two alternative processes.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "For any output level, first minimize inputs within each process and then allocate total output across processes. This two-stage formulation makes the global cost bound immediate."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nc(q_a,q_b)&=(p_1+p_2)q_a+(p_3+p_4)q_b,\\\\\nq_a+q_b&=q,\\\\\nC(q;p)&=q\\min\\{p_1+p_2,p_3+p_4\\},\\\\\nC(q;1,2,3,4)&=3q.\n\\end{aligned}$$\n\nIf the two unit costs differ, all production uses the cheaper process. If they tie, any process-output split has the same total cost. The piecewise linear cost formula therefore covers corner solutions and ties, not just the prices specified in part (i)."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Write process outputs $q_a=\\min(x_1,x_2)$ and $q_b=\\min(x_3,x_4)$, with $q_a+q_b=q$. Avoiding wasted inputs gives pair costs $(p_1+p_2)q_a+(p_3+p_4)q_b$. Allocate all output to the cheaper process; if costs tie, any split is optimal.\n\nAt the stated prices the first process has cost 3 per unit."
+      },
+      {
+        "title": "Conclusion",
+        "body": "At given prices, $C(q)=3q$; generally $C(q;p)=q\\min\\{p_1+p_2,p_3+p_4\\}$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q9iii",
     "number": "9(iii)",
     "stem": "A firm produces $f(x_1,x_2,x_3,x_4)=\\min\\{x_1,x_2\\}+\\min\\{x_3,x_4\\}$. What returns to scale does this technology exhibit?",
     "answer": "Constant returns to scale.",
-    "solution": "For any scale factor $t\\geq0$, each minimum scales linearly: $\\min(tx_1,tx_2)=t\\min(x_1,x_2)$. Therefore $f(tx)=tf(x)$, which is degree-one homogeneity.",
+    "solution": "Test returns to scale by multiplying every input by the same nonnegative factor. The minimum of two scaled nonnegative inputs scales by that factor.\n\n$$\\begin{aligned}\nf(tx_1,tx_2,tx_3,tx_4)&=\n\\min\\{tx_1,tx_2\\}+\\min\\{tx_3,tx_4\\},\\\\\n&=t\\min\\{x_1,x_2\\}+t\\min\\{x_3,x_4\\},\\\\\n&=tf(x_1,x_2,x_3,x_4).\n\\end{aligned}$$\n\nThis is exactly degree-one homogeneity, so doubling all inputs doubles output. It is a technological statement and should not be confused with diminishing marginal products along an individual input direction, especially at Leontief kinks.\n\nFor any scale factor $t\\geq0$, each minimum scales linearly: $\\min(tx_1,tx_2)=t\\min(x_1,x_2)$. Therefore $f(tx)=tf(x)$, which is degree-one homogeneity.\n\nConstant returns to scale.",
     "hint": "Scale both minimum terms.",
     "topic": "Microeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Test returns to scale by multiplying every input by the same nonnegative factor. The minimum of two scaled nonnegative inputs scales by that factor."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nf(tx_1,tx_2,tx_3,tx_4)&=\n\\min\\{tx_1,tx_2\\}+\\min\\{tx_3,tx_4\\},\\\\\n&=t\\min\\{x_1,x_2\\}+t\\min\\{x_3,x_4\\},\\\\\n&=tf(x_1,x_2,x_3,x_4).\n\\end{aligned}$$\n\nThis is exactly degree-one homogeneity, so doubling all inputs doubles output. It is a technological statement and should not be confused with diminishing marginal products along an individual input direction, especially at Leontief kinks."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For any scale factor $t\\geq0$, each minimum scales linearly: $\\min(tx_1,tx_2)=t\\min(x_1,x_2)$. Therefore $f(tx)=tf(x)$, which is degree-one homogeneity."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Constant returns to scale."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q10a",
     "number": "10(a)",
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Initially $Y=2500,r=1/5$. What change in investment occurs before any output change?",
     "answer": "$r$ jumps to 2; investment falls from 290 to 200, a decline of 90.",
-    "solution": "Hold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes.",
+    "solution": "Money-market adjustment is immediate while output is fixed initially. Find the interest rate that clears money demand at the initial output before using the investment equation.\n\n$$\\begin{aligned}\n0.25(2500)-62.5r&=500,\\\\\nr_{\\rm immediate}&=2,\\\\\nI_{\\rm before}&=300-50(0.2)=290,\\\\\nI_{\\rm immediate}&=300-50(2)=200,\\\\\n\\Delta I&=-90.\n\\end{aligned}$$\n\nThe initial point has excess money demand. The interest rate must rise, lowering interest-sensitive investment before the slower goods-market adjustment changes output. Do not jump directly to simultaneous equilibrium when the question specifically asks for the immediate stage.\n\nHold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes.\n\n$r$ jumps to 2; investment falls from 290 to 200, a decline of 90.",
     "hint": "First clear only the fast-adjusting money market.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Money-market adjustment is immediate while output is fixed initially. Find the interest rate that clears money demand at the initial output before using the investment equation."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\n0.25(2500)-62.5r&=500,\\\\\nr_{\\rm immediate}&=2,\\\\\nI_{\\rm before}&=300-50(0.2)=290,\\\\\nI_{\\rm immediate}&=300-50(2)=200,\\\\\n\\Delta I&=-90.\n\\end{aligned}$$\n\nThe initial point has excess money demand. The interest rate must rise, lowering interest-sensitive investment before the slower goods-market adjustment changes output. Do not jump directly to simultaneous equilibrium when the question specifically asks for the immediate stage."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Hold output at 2500 and clear the money market: $625-62.5r=500$, so $r=2$. Initial investment is $300-50(0.2)=290$; after the immediate rate adjustment it is $300-50(2)=200$. Thus $\\Delta I=-90$ before output changes."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$r$ jumps to 2; investment falls from 290 to 200, a decline of 90."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q10b",
     "number": "10(b)",
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Use a graph to explain the immediate adjustment from $Y=2500,r=0.2$.",
     "answer": "Move vertically upward at fixed $Y=2500$ to the LM point $r=2$.",
-    "solution": "With Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply. Draw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed. Thereafter the economy moves toward the intersection with IS, $Y=1680-200r$. Investment falls during the immediate jump.",
+    "solution": "Place output horizontally and interest vertically. Use the money equation to draw LM, then show an arrow at the fixed initial output to its money-clearing rate.\n\n$$\\begin{aligned}\nLM:\\quad r&=0.004Y-8,\\\\\n(Y,r)_{\\rm initial}&=(2500,0.2),\\\\\n(Y,r)_{\\rm after\\ jump}&=(2500,2),\\\\\nIS:\\quad Y&=1680-200r.\n\\end{aligned}$$\n\nThe initial point lies below LM, where money demand exceeds supply. A vertical upward arrow represents the fast interest adjustment. Only afterward should the diagram show output and interest moving toward the IS–LM intersection; separating these arrows makes the timing assumption visible.\n\nWith Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply. Draw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed.\n\nThereafter the economy moves toward the intersection with IS, $Y=1680-200r$. Investment falls during the immediate jump.\n\nMove vertically upward at fixed $Y=2500$ to the LM point $r=2$.",
     "hint": "Use a vertical movement for an interest-only short-run adjustment.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Place output horizontally and interest vertically. Use the money equation to draw LM, then show an arrow at the fixed initial output to its money-clearing rate."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nLM:\\quad r&=0.004Y-8,\\\\\n(Y,r)_{\\rm initial}&=(2500,0.2),\\\\\n(Y,r)_{\\rm after\\ jump}&=(2500,2),\\\\\nIS:\\quad Y&=1680-200r.\n\\end{aligned}$$\n\nThe initial point lies below LM, where money demand exceeds supply. A vertical upward arrow represents the fast interest adjustment. Only afterward should the diagram show output and interest moving toward the IS–LM intersection; separating these arrows makes the timing assumption visible."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "With Y on the horizontal axis and r vertically, draw LM as $r=0.004Y-8$. The initial point $(2500,0.2)$ lies below LM, where money demand exceeds supply. Draw a vertical arrow upward to $(2500,2)$: the rate rises while slow output is fixed.\n\nThereafter the economy moves toward the intersection with IS, $Y=1680-200r$. Investment falls during the immediate jump."
+      },
+      {
+        "title": "Conclusion",
+        "body": "Move vertically upward at fixed $Y=2500$ to the LM point $r=2$."
+      }
+    ]
   },
   {
     "id": "2016-PEB-Q10c",
     "number": "10(c)",
     "stem": "An IS–LM model has $C=90+0.75Y$, $G=30$, $I=300-50r$, real money demand $0.25Y-62.5r$ and real supply 500. Money-market disequilibrium adjusts immediately through r; output adjusts more slowly. Find simultaneous equilibrium $(r,Y)$. Compare investment there with the source’s stated comparison point $r=2,Y=2500$.",
     "answer": "$Y=16400/9$, $r=-32/45$, $I=3020/9$; investment rises by $1220/9$ relative to $I=200$ at r=2.",
-    "solution": "Goods equilibrium gives $Y=90+0.75Y+300-50r+30$, hence $Y=1680-200r$. Money equilibrium is $r=0.004Y-8$. Combining gives $1.8Y=3280$, so $Y=16400/9$ and $r=-32/45$. Then $I=300-50r=3020/9\\approx335.56$. At the explicitly printed comparison r=2, I=200, so the difference is $1220/9\\approx135.56$. Relative to the original pre-adjustment r=0.2, the rise would instead be $410/9$. A zero lower bound is not imposed; adding one would invalidate this unrestricted intersection.",
+    "solution": "Now impose both market-clearing equations. Keep the requested comparison point at interest two separate from the original pre-adjustment point at interest $0.2$.\n\n$$\\begin{aligned}\nY&=90+0.75Y+300-50r+30=1680-200r,\\\\\nr&=0.004Y-8,\\\\\n1.8Y&=3280\\Longrightarrow Y=16400/9,\\\\\nr&=-32/45,\\qquad I=3020/9,\\\\\nI-I(r=2)&=3020/9-200=1220/9.\n\\end{aligned}$$\n\nThe algebraic intersection has a negative interest rate because the supplied linear money-demand and investment functions are unrestricted. Adding a zero lower bound would change the model and invalidate that intersection. Report the requested investment change relative to the explicitly stated comparison rate rather than silently switching baselines.\n\nGoods equilibrium gives $Y=90+0.75Y+300-50r+30$, hence $Y=1680-200r$. Money equilibrium is $r=0.004Y-8$. Combining gives $1.8Y=3280$, so $Y=16400/9$ and $r=-32/45$.\n\nThen $I=300-50r=3020/9\\approx335.56$. At the explicitly printed comparison r=2, I=200, so the difference is $1220/9\\approx135.56$. Relative to the original pre-adjustment r=0.2, the rise would instead be $410/9$.\n\nA zero lower bound is not imposed; adding one would invalidate this unrestricted intersection.\n\n$Y=16400/9$, $r=-32/45$, $I=3020/9$; investment rises by $1220/9$ relative to $I=200$ at r=2.",
     "hint": "Solve the two linear market equations and track which benchmark the question specifies.",
     "topic": "Macroeconomics",
     "sourcePage": 17,
     "sourceFile": "msqe2016_merged.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": "Part (c) explicitly compares r=2, unlike part (a)’s initial r=1/5; both comparisons distinguished."
+    "notes": "Part (c) explicitly compares r=2, unlike part (a)’s initial r=1/5; both comparisons distinguished.",
+    "solutionSteps": [
+      {
+        "title": "Set up the problem",
+        "body": "Now impose both market-clearing equations. Keep the requested comparison point at interest two separate from the original pre-adjustment point at interest $0.2$."
+      },
+      {
+        "title": "Work through the equations",
+        "body": "$$\\begin{aligned}\nY&=90+0.75Y+300-50r+30=1680-200r,\\\\\nr&=0.004Y-8,\\\\\n1.8Y&=3280\\Longrightarrow Y=16400/9,\\\\\nr&=-32/45,\\qquad I=3020/9,\\\\\nI-I(r=2)&=3020/9-200=1220/9.\n\\end{aligned}$$\n\nThe algebraic intersection has a negative interest rate because the supplied linear money-demand and investment functions are unrestricted. Adding a zero lower bound would change the model and invalidate that intersection. Report the requested investment change relative to the explicitly stated comparison rate rather than silently switching baselines."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Goods equilibrium gives $Y=90+0.75Y+300-50r+30$, hence $Y=1680-200r$. Money equilibrium is $r=0.004Y-8$. Combining gives $1.8Y=3280$, so $Y=16400/9$ and $r=-32/45$.\n\nThen $I=300-50r=3020/9\\approx335.56$. At the explicitly printed comparison r=2, I=200, so the difference is $1220/9\\approx135.56$. Relative to the original pre-adjustment r=0.2, the rise would instead be $410/9$.\n\nA zero lower bound is not imposed; adding one would invalidate this unrestricted intersection."
+      },
+      {
+        "title": "Conclusion",
+        "body": "$Y=16400/9$, $r=-32/45$, $I=3020/9$; investment rises by $1220/9$ relative to $I=200$ at r=2."
+      }
+    ]
   }
 ]

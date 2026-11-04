@@ -9,7 +9,7 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer consumes only two goods. If good1 has income elasticity1.2, what is the income elasticity of good2?",
     "answer": "C:Less than1, assuming positive budget shares and an exhausted budget.",
-    "solution": "Differentiating the budget identity at fixed prices givesw₁η₁+w₂η₂=1, withw₁+w₂=1 and both shares positive. Henceη₂=(1−1.2w₁)/(1−w₁)=1−.2w₁/(1−w₁)<1. It may even be negative.",
+    "solution": "Use income-elasticity adding-up. Let the positive budget shares be w_1,w_2, with w_1+w_2=1. Differentiating an exhausted budget at fixed prices gives w_1η_1+w_2η_2=1. Hence \nη_2=(1-1.2w_1)/(1-w_1)=1-(0.2w_1)/(1-w_1)<1.\n Choose C. The second good's elasticity can even be negative; it is not constrained to lie between one and 1.2.",
     "hint": "Income elasticities have a budget-share weighted average of one.",
     "topic": "Microeconomics",
     "sourcePage": 5,
@@ -20,6 +20,12 @@
       "Less than1.2 but greater than1",
       "Less than1",
       "Exactly1.2"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use income-elasticity adding-up",
+        "body": "Let the positive budget shares be $w_1,w_2$, with $w_1+w_2=1$. Differentiating an exhausted budget at fixed prices gives $w_1\\eta_1+w_2\\eta_2=1$. Hence $$\\eta_2=\\frac{1-1.2w_1}{1-w_1}=1-\\frac{0.2w_1}{1-w_1}<1.$$ Choose C. The second good's elasticity can even be negative; it is not constrained to lie between one and 1.2."
+      }
     ]
   },
   {
@@ -32,7 +38,7 @@
     "originalPaperCode": "ME II",
     "stem": "If government taxes10% of a monopolist’s profit, the monopolist will…",
     "answer": "C:Not change output.",
-    "solution": "A proportional pure-profit tax changes the objective fromπ(q) to.9π(q). Multiplication by a positive constant preserves the maximizing output and price; it reduces after-tax profit rather than changing marginal incentives.",
+    "solution": "Compare the taxed and untaxed objectives. A proportional 10% pure-profit tax changes the objective from π(q) to 0.9π(q). Because 0.9 is positive, every ranking of quantities is unchanged. The monopolist therefore chooses the same profit-maximizing output: C. This is different from a tax on each output unit or on sales revenue, which changes marginal incentives.",
     "hint": "Compare the before- and after-tax objective functions.",
     "topic": "Microeconomics",
     "sourcePage": 6,
@@ -43,6 +49,12 @@
       "Decrease output by10%",
       "Not change output",
       "Decrease output by less than10%"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Compare the taxed and untaxed objectives",
+        "body": "A proportional 10% pure-profit tax changes the objective from $\\pi(q)$ to $0.9\\pi(q)$. Because 0.9 is positive, every ranking of quantities is unchanged. The monopolist therefore chooses the same profit-maximizing output: C. This is different from a tax on each output unit or on sales revenue, which changes marginal incentives."
+      }
     ]
   },
   {
@@ -55,7 +67,7 @@
     "originalPaperCode": "ME II",
     "stem": "Which transaction is excluded from GDP: paid domestic cooking/cleaning; purchase of a new personal car; a leisure flight; or purchase of100 company shares?",
     "answer": "D:Purchase of shares.",
-    "solution": "The first three purchase current final goods or services and are consumption expenditure, subject to the domestic-production adjustment for imports. Shares are financial claims, so buying them is not expenditure on current real output. Any separately purchased brokerage service is a distinct transaction.",
+    "solution": "Distinguish new production from a financial claim. Paid domestic services, a newly produced personal car and a leisure flight purchase current goods or services. A purchase of company shares instead changes the ownership of financial claims. Thus choose D: the value of the shares is excluded from GDP. A separately charged financial-intermediation or brokerage service could count, but it is not the share-purchase amount itself.",
     "hint": "Distinguish financial ownership from new production.",
     "topic": "Macroeconomics",
     "sourcePage": 6,
@@ -66,6 +78,12 @@
       "A new personal car",
       "A leisure flight",
       "100 company shares"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Distinguish new production from a financial claim",
+        "body": "Paid domestic services, a newly produced personal car and a leisure flight purchase current goods or services. A purchase of company shares instead changes the ownership of financial claims. Thus choose D: the value of the shares is excluded from GDP. A separately charged financial-intermediation or brokerage service could count, but it is not the share-purchase amount itself."
+      }
     ]
   },
   {
@@ -78,7 +96,7 @@
     "originalPaperCode": "ME II",
     "stem": "GroupA receives income shareα and groupB the rest. A has a higher propensity to consume and a lower income-related propensity to demand money. In IS–LM, what happens when income shifts fromA toB?",
     "answer": "D:Output decreases, while interest may rise or fall.",
-    "solution": "Redistribution towardB lowers aggregate consumption at anyY, shiftingIS left. It also raises money demand at anyY,r, shiftingLM upward/left. Both shifts reduce equilibrium output. IS contraction pushes interest down while increased money demand pushes it up, so the net interest response depends on relative strengths.",
+    "solution": "Shift both markets rather than just consumption. Redistribution from A to B lowers consumption at each income because B's consumption propensity is smaller: IS shifts left. It also raises money demand at each income and interest rate because B's income-related money propensity is larger: LM shifts upward/left. Both changes reduce output. The IS shift lowers interest while the LM shift raises it, so the combined interest response is ambiguous. Choose D.",
     "hint": "Track the separate shifts ofIS andLM.",
     "topic": "Macroeconomics",
     "sourcePage": 6,
@@ -89,6 +107,12 @@
       "Y decreases,r rises",
       "Y may rise or fall,r falls",
       "Y decreases,r may rise or fall"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Shift both markets rather than just consumption",
+        "body": "Redistribution from A to B lowers consumption at each income because B's consumption propensity is smaller: IS shifts left. It also raises money demand at each income and interest rate because B's income-related money propensity is larger: LM shifts upward/left. Both changes reduce output. The IS shift lowers interest while the LM shift raises it, so the combined interest response is ambiguous. Choose D."
+      }
     ]
   },
   {
@@ -101,12 +125,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A consumer always uses two spoons sugar per cup tea. Sugar costs p₁ per spoon, tea p₂ per cup, and income isy. Find demands. (b) Show which two utilities yield identical demands: (i)√(x₁x₂), (ii)x₁²x₂, (iii)log x₁+log x₂.",
     "answer": "(a) Tea=y/(2p₁+p₂), sugar=2y/(2p₁+p₂). (b) Utilities(i) and(iii) have demandsxᵢ=y/(2pᵢ). Utility(ii) spends2/3 of income on good1 and1/3 on good2.",
-    "solution": "(a) Let tea bet; sugar is2t, so budget(2p₁+p₂)t=y. (b) On positive quantities, log x₁+log x₂=log(x₁x₂)=2log√(x₁x₂), a strictly increasing transformation of utility(i). Thus they represent identical preferences and each spends half of income on each good. For(ii), maximizing2log x₁+log x₂ gives demands2y/(3p₁) andy/(3p₂), generally different.",
+    "solution": "Apply the tea-sugar fixed proportions. Let tea consumption be t cups. Sugar is then 2t spoons. Each complete consumption bundle costs 2p_1+p_2, so \nt=(y)/(2p_1+p_2), sugar=(2y)/(2p_1+p_2).\n Buying an unmatched extra quantity of either component does not improve utility.\n\nIdentify the identical preferences. On positive quantities, \nlog x_1+log x_2=log(x_1x_2)=2log√(x_1x_2).\n This is a strictly increasing transformation of utility (i), so (i) and (iii) rank every positive bundle the same way. At positive income and prices their common demands are x_1=y/(2p_1) and x_2=y/(2p_2).\n\nShow why the remaining utility differs. For utility (ii), x_1^2x_2, take logarithms to maximize 2log x_1+log x_2. Its first-order conditions give expenditure shares 2/3 and 1/3: \nx_1=(2y)/(3p_1), x_2=(y)/(3p_2).\n These generally differ from the half-income demands, establishing that exactly the first and third functions share the same demands.",
     "hint": "Use the fixed ratio and then compare utility functions through monotone transformations.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Apply the tea-sugar fixed proportions",
+        "body": "Let tea consumption be $t$ cups. Sugar is then $2t$ spoons. Each complete consumption bundle costs $2p_1+p_2$, so $$t=\\frac{y}{2p_1+p_2},\\qquad\\text{sugar}=\\frac{2y}{2p_1+p_2}.$$ Buying an unmatched extra quantity of either component does not improve utility."
+      },
+      {
+        "title": "Identify the identical preferences",
+        "body": "On positive quantities, $$\\log x_1+\\log x_2=\\log(x_1x_2)=2\\log\\sqrt{x_1x_2}.$$ This is a strictly increasing transformation of utility (i), so (i) and (iii) rank every positive bundle the same way. At positive income and prices their common demands are $x_1=y/(2p_1)$ and $x_2=y/(2p_2)$."
+      },
+      {
+        "title": "Show why the remaining utility differs",
+        "body": "For utility (ii), $x_1^2x_2$, take logarithms to maximize $2\\log x_1+\\log x_2$. Its first-order conditions give expenditure shares $2/3$ and $1/3$: $$x_1=\\frac{2y}{3p_1},\\qquad x_2=\\frac{y}{3p_2}.$$ These generally differ from the half-income demands, establishing that exactly the first and third functions share the same demands."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q3",
@@ -118,12 +156,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A short-run profit-maximizing firm uses variable inputx₁ and fixed inputx₂. If the price ofx₂ falls, what happens tox₁ and profit? (b) A monopolist’s marginal cost rises5% and its price rises5%. Give a condition making this profit maximizing.",
     "answer": "(a) Variable input choice is unchanged and profit increases by the fall in the fixed-input bill. (b) Constant-elasticity demand with absolute elasticityε>1 and constant marginal cost gives this proportional markup rule.",
-    "solution": "(a) Profit ispf(x₁,K̄)−w₁x₁−w₂K̄. Changingw₂ alters only the constant term, so the maximizingx₁ is unchanged, while profit rises by−K̄Δw₂ forΔw₂<0. (b) With isoelastic demandq=Ap^(−ε),ε>1, and constant marginal costc, the first-order condition isp(1−1/ε)=c. Thusp=εc/(ε−1), so multiplyingc by1.05 multiplies the optimalp by1.05. More generally it suffices that the profit-maximizing price-cost markup remain unchanged over this adjustment.",
+    "solution": "Separate the variable decision from fixed-input expenditure. With the fixed factor held at x̄_2, write profit as pf(x_1,x̄_2)-w_1x_1-w_2x̄_2. Lowering w_2 changes only the final constant term. It does not alter the first-order condition pf_1=w_1 or the ranking of different feasible x_1 choices. Variable-input demand and output are therefore unchanged.\n\nMeasure the profit gain. At the unchanged input choice, the fall in the fixed-factor payment raises profit by -x̄_2Δ w_2>0. This is a short-run result. If the quantity of the second factor could change, it would no longer be a fixed-cost-only comparison.\n\nGive a sufficient condition for proportional cost pass-through. Suppose monopoly demand is isoelastic, q=Ap^(-ε) with ε>1, and marginal cost is constant at c. Profit maximization implies \np(1-(1)/(ε))=c ⇒ p=(ε)/(ε-1)c.\n The markup factor stays fixed, so a 5% increase in marginal cost causes a 5% increase in the optimal price. This is a sufficient condition, not a claim that every demand curve has full proportional pass-through.",
     "hint": "Fixed-input costs do not affect a short-run marginal choice; constant elasticity gives a constant markup.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Separate the variable decision from fixed-input expenditure",
+        "body": "With the fixed factor held at $\\bar x_2$, write profit as $pf(x_1,\\bar x_2)-w_1x_1-w_2\\bar x_2$. Lowering $w_2$ changes only the final constant term. It does not alter the first-order condition $pf_1=w_1$ or the ranking of different feasible $x_1$ choices. Variable-input demand and output are therefore unchanged."
+      },
+      {
+        "title": "Measure the profit gain",
+        "body": "At the unchanged input choice, the fall in the fixed-factor payment raises profit by $-\\bar x_2\\Delta w_2>0$. This is a short-run result. If the quantity of the second factor could change, it would no longer be a fixed-cost-only comparison."
+      },
+      {
+        "title": "Give a sufficient condition for proportional cost pass-through",
+        "body": "Suppose monopoly demand is isoelastic, $q=Ap^{-\\varepsilon}$ with $\\varepsilon>1$, and marginal cost is constant at $c$. Profit maximization implies $$p\\left(1-\\frac1\\varepsilon\\right)=c\\quad\\Rightarrow\\quad p=\\frac{\\varepsilon}{\\varepsilon-1}c.$$ The markup factor stays fixed, so a 5% increase in marginal cost causes a 5% increase in the optimal price. This is a sufficient condition, not a claim that every demand curve has full proportional pass-through."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q4",
@@ -135,12 +187,22 @@
     "originalPaperCode": "ME II",
     "stem": "A competitive two-product firm hasC(q₁,q₂)=2q₁²+q₁q₂+2q₂². Output prices are12 and18. Find profit-maximizing quantities.",
     "answer": "q₁=2,q₂=4; profit48.",
-    "solution": "Profit is12q₁+18q₂−2q₁²−q₁q₂−2q₂². First-order conditions4q₁+q₂=12 andq₁+4q₂=18 yield(2,4). The profit Hessian[[-4,-1],[-1,-4]] has negative eigenvalues−5,−3, so this positive stationary point is the unique global maximum. Revenue96 minus cost48 gives profit48.",
+    "solution": "Write the joint-profit first-order conditions. Profit is 12q_1+18q_2-2q_1^2-q_1q_2-2q_2^2. Each output affects the marginal cost of the other through the interaction term. Thus \n12-4q_1-q_2 =0,; 18-q_1-4q_2 =0.\n Solving the two equations gives q_1=2, q_2=4.\n\nVerify that the stationary point is the maximum. The profit Hessian is [-4 -1; -1 -4], with eigenvalues -5 and -3. It is negative definite, so profit is strictly concave and the positive stationary point is the unique global maximum. Revenue is 96 and production cost 48, leaving profit 48.",
     "hint": "Equate each output price to its marginal joint cost and check concavity.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Write the joint-profit first-order conditions",
+        "body": "Profit is $12q_1+18q_2-2q_1^2-q_1q_2-2q_2^2$. Each output affects the marginal cost of the other through the interaction term. Thus $$\\begin{aligned}12-4q_1-q_2&=0,\\\\18-q_1-4q_2&=0.\\end{aligned}$$ Solving the two equations gives $q_1=2$, $q_2=4$."
+      },
+      {
+        "title": "Verify that the stationary point is the maximum",
+        "body": "The profit Hessian is $\\begin{pmatrix}-4&-1\\\\-1&-4\\end{pmatrix}$, with eigenvalues $-5$ and $-3$. It is negative definite, so profit is strictly concave and the positive stationary point is the unique global maximum. Revenue is 96 and production cost 48, leaving profit 48."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q5",
@@ -152,12 +214,26 @@
     "originalPaperCode": "ME II",
     "stem": "Each other street-garbage dumper imposes costa, so the external harm to a person is an, where n is the number of other dumpers and a>0. Dumping oneself yields benefitG and private costC/n, C>0. (a) Explain no dumping ifn0. (b) Find the threshold number of other dumpers making dumping optimal.",
     "answer": "ForG>0, dump iff n≥C/G; the least positive integer threshold is ceiling(C/G). It depends onC andG, not a. At n0 the printed costC/n requires a limiting convention.",
-    "solution": "Others’ harman is borne whether or not the person herself dumps, so it cancels from her comparison. The incremental payoff from dumping isG−C/n. Forn>0 this is nonnegative iff n≥C/G; equality gives indifference. Interpret the private cost as tending to infinity asn approaches0 from above, or define solitary dumping as prohibitively costly, to obtain the intended no-dumping result atn0. LiterallyC/0 is undefined, so the source needs that convention for part(a). A largerC raises the threshold, a largerG lowers it, and the external-damage coefficienta has no effect on this private threshold.",
+    "solution": "Compare only the payoff changed by one's own action. The harm an from the other dumpers is suffered whether or not this person dumps. It therefore cancels when comparing the two actions. The incremental private benefit from dumping is G-C/n for n>0. The social external damage matters for welfare but not for this private comparison.\n\nDerive the threshold. For positive gain G, dumping is privately optimal exactly when \nG-(C)/(n)≥0 ⇔ n≥(C)/(G).\n For integer numbers of other people, the smallest threshold is ⌈ C/G⌉. Equality means indifference. Larger C raises the threshold, larger G lowers it, and a does not enter it.\n\nHandle the zero-dumper case honestly. The printed expression C/n is undefined at n=0. The intended conclusion that nobody starts dumping requires defining solitary dumping as prohibitively costly, or using the limiting value C/n→+∞ as n↓0. Under that convention not dumping is optimal at zero others. This missing boundary definition is why the record retains its review flag.",
     "hint": "Compare the incremental private payoffs; others’ pollution is common to both options.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "needs_review",
-    "notes": "The printed costC/n is undefined atn0. Intended infinite-cost limiting interpretation is stated explicitly."
+    "notes": "The printed costC/n is undefined atn0. Intended infinite-cost limiting interpretation is stated explicitly.",
+    "solutionSteps": [
+      {
+        "title": "Compare only the payoff changed by one's own action",
+        "body": "The harm $an$ from the other dumpers is suffered whether or not this person dumps. It therefore cancels when comparing the two actions. The incremental private benefit from dumping is $G-C/n$ for $n>0$. The social external damage matters for welfare but not for this private comparison."
+      },
+      {
+        "title": "Derive the threshold",
+        "body": "For positive gain $G$, dumping is privately optimal exactly when $$G-\\frac Cn\\ge0\\quad\\Leftrightarrow\\quad n\\ge\\frac CG.$$ For integer numbers of other people, the smallest threshold is $\\lceil C/G\\rceil$. Equality means indifference. Larger $C$ raises the threshold, larger $G$ lowers it, and $a$ does not enter it."
+      },
+      {
+        "title": "Handle the zero-dumper case honestly",
+        "body": "The printed expression $C/n$ is undefined at $n=0$. The intended conclusion that nobody starts dumping requires defining solitary dumping as prohibitively costly, or using the limiting value $C/n\\to+\\infty$ as $n\\downarrow0$. Under that convention not dumping is optimal at zero others. This missing boundary definition is why the record retains its review flag."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q6",
@@ -169,12 +245,22 @@
     "originalPaperCode": "ME II",
     "stem": "Consumption depends only on income, investment only on interest, and G is exogenous. A unit rise in G shifts IS vertically upward by.5 at every income. Find dI/dr.",
     "answer": "dI/dr=−2.",
-    "solution": "IS isY=C(Y)+I(r)+G. HoldingY fixed while varyingG gives0=I′(r)dr+dG, so dr/dG=−1/I′. A unit increase shiftingr upward by.5 gives.5=−1/I′ and therefore I′=−2.",
+    "solution": "Interpret a vertical IS shift at fixed income. Start from Y=C(Y)+I(r)+G. When finding how far IS shifts vertically, hold Y fixed; consumption is then fixed too. Differentiation gives 0=I'(r) dr+dG. This is not a movement along the original IS curve.\n\nRecover the investment derivative. Therefore dr/dG=-1/I'(r). A one-unit government-spending increase raises the IS interest coordinate by 0.5, so \n0.5=-(1)/(I'(r)) ⇒ I'(r)=-2.\n The sign is economically consistent: a higher interest rate must reduce investment enough to offset the extra government spending while output is held fixed.",
     "hint": "Hold income fixed when interpreting the vertical shift.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Interpret a vertical IS shift at fixed income",
+        "body": "Start from $Y=C(Y)+I(r)+G$. When finding how far IS shifts vertically, hold $Y$ fixed; consumption is then fixed too. Differentiation gives $0=I'(r)\\,dr+dG$. This is not a movement along the original IS curve."
+      },
+      {
+        "title": "Recover the investment derivative",
+        "body": "Therefore $dr/dG=-1/I'(r)$. A one-unit government-spending increase raises the IS interest coordinate by 0.5, so $$0.5=-\\frac1{I'(r)}\\quad\\Rightarrow\\quad I'(r)=-2.$$ The sign is economically consistent: a higher interest rate must reduce investment enough to offset the extra government spending while output is held fixed."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q7",
@@ -186,12 +272,26 @@
     "originalPaperCode": "ME II",
     "stem": "In a closed Keynesian economy, outputY=f(N), withf′>0>f″. ConsumptionC=aY,0<a<1; autonomous investment isĪ, aggregate expenditureE=C+Ī, and equilibriumY=E. Find the employment multiplierdN/dĪ.",
     "answer": "dN/dĪ=1/[(1−a)f′(N)]>0.",
-    "solution": "Goods equilibrium gives(1−a)Y=Ī, so dY/dĪ=1/(1−a). SinceY=f(N),dY=f′(N)dN. Combining givesdN/dĪ=1/[(1−a)f′(N)]. With diminishing marginal labour productivity, a given output expansion requires more additional employment at higherN.",
+    "solution": "Obtain the output multiplier. Goods equilibrium is Y=aY+Ī, so (1-a)Y=Ī. Differentiating with respect to autonomous investment gives dY/dĪ=1/(1-a). This is an output response, not yet an employment response.\n\nConvert additional output into required employment. Technology gives Y=f(N) with f'(N)>0. Hence dY=f'(N)dN. Combining the two relationships yields \n(dN)/(dĪ)=(1)/((1-a)f'(N))>0.\n The derivative is evaluated at the starting equilibrium employment.\n\nInterpret diminishing productivity. Because f''(N)<0, the marginal product falls as employment expands. A given additional amount of output then requires more additional labour at higher employment. Thus the employment multiplier need not be constant even when the income multiplier is constant.",
     "hint": "Combine the income multiplier with the inverse marginal product of labour.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Obtain the output multiplier",
+        "body": "Goods equilibrium is $Y=aY+\\bar I$, so $(1-a)Y=\\bar I$. Differentiating with respect to autonomous investment gives $dY/d\\bar I=1/(1-a)$. This is an output response, not yet an employment response."
+      },
+      {
+        "title": "Convert additional output into required employment",
+        "body": "Technology gives $Y=f(N)$ with $f'(N)>0$. Hence $dY=f'(N)dN$. Combining the two relationships yields $$\\frac{dN}{d\\bar I}=\\frac{1}{(1-a)f'(N)}>0.$$ The derivative is evaluated at the starting equilibrium employment."
+      },
+      {
+        "title": "Interpret diminishing productivity",
+        "body": "Because $f''(N)<0$, the marginal product falls as employment expands. A given additional amount of output then requires more additional labour at higher employment. Thus the employment multiplier need not be constant even when the income multiplier is constant."
+      }
+    ]
   },
   {
     "id": "2002-PEB-Q8",
@@ -203,11 +303,25 @@
     "originalPaperCode": "ME II",
     "stem": "Visible beginning only: IS–LM withC=a+bY,a>0,0<b<1, exogenous investmentI₀ andG₀, and real money demandL=kY−gr,k,g>0. The supplied scan ends immediately after this setup; the remaining assumptions and requested subparts are missing.",
     "answer": "Source incomplete; no full question or unqualified final answer can be reconstructed.",
-    "solution": "The visible goods-market setup alone impliesY=(a+I₀+G₀)/(1−b). If a real-money-supply value were supplied, money balance would determine r=(kY−M/P)/g. However, the PDF stops mid-sentence before supplying the rest of the question. These identities are the only derivations supported by the visible source; missing comparative-static instructions are not invented.",
+    "solution": "Separate the visible setup from the missing question. The final supplied PDF spread shows only C=a+bY, exogenous I_0,G_0 and money demand L=kY-gr. It ends mid-sentence before the remaining assumptions and the requested subparts. A similar question in another year cannot establish the missing wording.\n\nDerive only what the visible equations support. The goods market alone implies \nY=(a+I_0+G_0)/(1-b).\n If a real-money-supply value were supplied, the money equation would then imply r=(kY-M/P)/g. These are consequences of the visible setup, but they do not answer unseen instructions.\n\nPreserve the incomplete-source status. The missing continuation is needed before any further comparative-static calculation can be identified as an answer to this particular paper. This record remains marked for review; no unseen subparts, parameter values or requested changes have been invented.",
     "hint": "Obtain the missing continuation before attempting unseen subparts.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "status": "needs_review",
-    "notes": "PDF has7 pages; its final scanned spread ends at printed bookletpage11 with Q8 incomplete. Similar questions in other years do not establish the missing wording."
+    "notes": "PDF has7 pages; its final scanned spread ends at printed bookletpage11 with Q8 incomplete. Similar questions in other years do not establish the missing wording.",
+    "solutionSteps": [
+      {
+        "title": "Separate the visible setup from the missing question",
+        "body": "The final supplied PDF spread shows only $C=a+bY$, exogenous $I_0,G_0$ and money demand $L=kY-gr$. It ends mid-sentence before the remaining assumptions and the requested subparts. A similar question in another year cannot establish the missing wording."
+      },
+      {
+        "title": "Derive only what the visible equations support",
+        "body": "The goods market alone implies $$Y=\\frac{a+I_0+G_0}{1-b}.$$ If a real-money-supply value were supplied, the money equation would then imply $r=(kY-M/P)/g$. These are consequences of the visible setup, but they do not answer unseen instructions."
+      },
+      {
+        "title": "Preserve the incomplete-source status",
+        "body": "The missing continuation is needed before any further comparative-static calculation can be identified as an answer to this particular paper. This record remains marked for review; no unseen subparts, parameter values or requested changes have been invented."
+      }
+    ]
   }
 ]

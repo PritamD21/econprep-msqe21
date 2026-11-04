@@ -9,7 +9,7 @@
     "originalPaperCode": "ME II",
     "stem": "As one moves downward along a demand curve, absolute price elasticity will fall if…",
     "answer": "D is the familiar straight-line case, but B (downward and concave) also suffices under the usual interpretation. The item has more than one sufficient option.",
-    "solution": "For inverse demandP(Q)>0 withP′<0, elasticity isε=−P/(QP′). Log differentiation givesε′/ε=P′/P−1/Q−P″/P′. If the inverse demand is concaveP″≤0, all terms are nonpositive and the first two strictly negative, so elasticity falls asQ increases. This covers a downward straight line as well. If “demand function” instead meansQ(P), concavity also givesdε/dP>0 and therefore decliningε asP falls. Hence merely downward slope is insufficient, and convexity does not guarantee the claim, but both B and D can support it.",
+    "solution": "Differentiate elasticity rather than slope. For positive inverse demand P(Q) with P'<0, absolute elasticity is ε=-P/(QP'). Hence \n(ε')/(ε)=(P')/(P)-(1)/(Q)-(P'')/(P').\n A downward straight line makes this expression negative. But a downward concave inverse demand, P''≤0, also makes all three terms nonpositive, with the first two strictly negative.\n\nExplain the multiple-sufficient-option problem. Thus both the concave option B and the straight-line option D ensure falling elasticity over the positive range under the usual smooth interpretation. Concavity of direct demand Q(P) also gives the same direction as price falls. Merely saying downward slope is insufficient. The item therefore lacks a unique sufficient-condition key; its review status is retained.",
     "hint": "Differentiate elasticity, rather than confusing elasticity with slope.",
     "topic": "Microeconomics",
     "sourcePage": 6,
@@ -20,6 +20,16 @@
       "Downward sloping and concave",
       "Downward sloping and convex",
       "Downward sloping and a straight line"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Differentiate elasticity rather than slope",
+        "body": "For positive inverse demand $P(Q)$ with $P'<0$, absolute elasticity is $\\varepsilon=-P/(QP')$. Hence $$\\frac{\\varepsilon'}{\\varepsilon}=\\frac{P'}P-\\frac1Q-\\frac{P''}{P'}.$$ A downward straight line makes this expression negative. But a downward concave inverse demand, $P''\\le0$, also makes all three terms nonpositive, with the first two strictly negative."
+      },
+      {
+        "title": "Explain the multiple-sufficient-option problem",
+        "body": "Thus both the concave option B and the straight-line option D ensure falling elasticity over the positive range under the usual smooth interpretation. Concavity of direct demand $Q(P)$ also gives the same direction as price falls. Merely saying downward slope is insufficient. The item therefore lacks a unique sufficient-condition key; its review status is retained."
+      }
     ]
   },
   {
@@ -32,7 +42,7 @@
     "originalPaperCode": "ME II",
     "stem": "Monopoly demandP=20−Q, costC=15+10Q. A lump-sum tax15 is imposed. What tax revenue is collected?",
     "answer": "Intended D:0 if the monopolist can avoid the levy and fixed costs by exiting. If the lump-sum tax is unavoidable, revenue is B:15.",
-    "solution": "Without the levy, MR20−2Q equalsMC10 atQ5,P15, givingprofit75−65=10. A15 levy exceeds that profit, so if continued participation is voluntary and exit avoids all operating fixed commitments and the levy, the firm exits and tax revenue is0. If the levy truly must be paid independently of output or continued operation, it leaves the marginal output choice unchanged and yields government revenue15. If production fixed cost is sunk while the levy is avoidable, shutdown comparison also differs. The question does not state those incidence/exit rules, so the conditional distinction is required.",
+    "solution": "Calculate monopoly profit before the levy. With demand P=20-Q and marginal cost 10, MR=20-2Q=10 gives Q=5,P=15. Revenue is 75 and the stated total production cost is 15+10(5)=65, leaving pretax profit 10. A levy of 15 exceeds that profit.\n\nMake the shutdown and tax-liability assumptions explicit. If exiting avoids the levy and the operating fixed commitment, the firm exits and tax revenue is zero, the intended D. If the levy is truly unavoidable regardless of operation, it does not alter the marginal output choice and government collects 15, B. Sunk versus avoidable production fixed costs can also change the participation comparison. Since the source does not specify these rules, an unconditional tax-revenue answer would conceal an economically important assumption.",
     "hint": "Compute pretax profit and then ask whether shutdown avoids the tax.",
     "topic": "Microeconomics",
     "sourcePage": 6,
@@ -43,6 +53,16 @@
       "15",
       "10",
       "0"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Calculate monopoly profit before the levy",
+        "body": "With demand $P=20-Q$ and marginal cost 10, $MR=20-2Q=10$ gives $Q=5,P=15$. Revenue is 75 and the stated total production cost is $15+10(5)=65$, leaving pretax profit 10. A levy of 15 exceeds that profit."
+      },
+      {
+        "title": "Make the shutdown and tax-liability assumptions explicit",
+        "body": "If exiting avoids the levy and the operating fixed commitment, the firm exits and tax revenue is zero, the intended D. If the levy is truly unavoidable regardless of operation, it does not alter the marginal output choice and government collects 15, B. Sunk versus avoidable production fixed costs can also change the participation comparison. Since the source does not specify these rules, an unconditional tax-revenue answer would conceal an economically important assumption."
+      }
     ]
   },
   {
@@ -55,7 +75,7 @@
     "originalPaperCode": "ME II",
     "stem": "On Christmas Eve a florist has unsold Christmas trees, originally costing5 each. Unsold trees are discarded at zero cost after that day. What pricing objective maximizes profit now?",
     "answer": "C:Choose a price maximizing total receipts.",
-    "solution": "The purchase costs have already been incurred and cannot be changed by today’s sales. There is no salvage value and no disposal cost. Therefore today’s variable contribution equals revenue, and maximizing total receipts maximizes final profit. Selling every tree or keeping price above the historical cost5 need not maximize receipts.",
+    "solution": "Ignore historical costs in the current disposal decision. The trees have already been purchased and unsold stock will be discarded at no value or cost. Those acquisition costs are sunk. Current final profit therefore differs from today's receipts only by a constant. Choose C: the revenue-maximizing price. Selling every tree, maximizing margin per tree, or insisting on a price above 5 need not maximize the total receipts.",
     "hint": "Ignore sunk acquisition costs in the current pricing decision.",
     "topic": "Microeconomics",
     "sourcePage": 6,
@@ -66,6 +86,12 @@
       "Just low enough to sell every tree",
       "Maximum total receipts",
       "A price greater than5"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Ignore historical costs in the current disposal decision",
+        "body": "The trees have already been purchased and unsold stock will be discarded at no value or cost. Those acquisition costs are sunk. Current final profit therefore differs from today's receipts only by a constant. Choose C: the revenue-maximizing price. Selling every tree, maximizing margin per tree, or insisting on a price above 5 need not maximize the total receipts."
+      }
     ]
   },
   {
@@ -78,7 +104,7 @@
     "originalPaperCode": "ME II",
     "stem": "The open Keynesian model hasC=a+bY, autonomousG,I,X and importsM=.1Y. Which is necessarily false: MPC>1, MPC<1, .5<MPC<.7, or none of these?",
     "answer": "Under the conventional extra assumption0<b<1, A is false. The printed equations alone only requireb<1.1 for positive equilibrium and do not rule out1<b<1.1.",
-    "solution": "Goods equilibrium isY=a+bY+G+I+X−.1Y, soY=(a+G+I+X)/(1.1−b). With positive autonomous spending, positiveY requiresb<1.1, not necessarilyb<1. The standard psychological assumption0<b<1 would makeA the intended answer, but it is not explicitly printed. For exampleb1.05 gives a positive, stable expenditure slope b−.1=.95 whileMPC exceeds1. Thus under the displayed algebra none ofA,B,C is necessarily false. The choice depends on whether the standard additional MPC bound is intended.",
+    "solution": "Derive the restriction implied by the displayed model. With imports 0.1Y, goods equilibrium is \nY=a+bY+G+I+X-0.1Y ⇒ Y=(a+G+I+X)/(1.1-b).\n Positive equilibrium income with positive autonomous expenditure requires b<1.1, not necessarily b<1. For example b=1.05 gives a stable expenditure slope b-0.1=0.95 despite an MPC above one.\n\nDistinguish the conventional extra assumption. If the usual psychological assumption 0<b<1 is imposed, A is necessarily false and is the intended textbook choice. The printed equations do not explicitly impose it. Under their literal algebra, none of the first three proposed MPC ranges is necessarily false. The record preserves this assumption-dependent distinction and remains marked for review.",
     "hint": "Separate an assumed MPC restriction from a condition derived from the displayed equations.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
@@ -89,6 +115,16 @@
       "MPC<1",
       ".5<MPC<.7",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Derive the restriction implied by the displayed model",
+        "body": "With imports $0.1Y$, goods equilibrium is $$Y=a+bY+G+I+X-0.1Y\\quad\\Rightarrow\\quad Y=\\frac{a+G+I+X}{1.1-b}.$$ Positive equilibrium income with positive autonomous expenditure requires $b<1.1$, not necessarily $b<1$. For example $b=1.05$ gives a stable expenditure slope $b-0.1=0.95$ despite an MPC above one."
+      },
+      {
+        "title": "Distinguish the conventional extra assumption",
+        "body": "If the usual psychological assumption $0<b<1$ is imposed, A is necessarily false and is the intended textbook choice. The printed equations do not explicitly impose it. Under their literal algebra, none of the first three proposed MPC ranges is necessarily false. The record preserves this assumption-dependent distinction and remains marked for review."
+      }
     ]
   },
   {
@@ -101,12 +137,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) Marginal cost isMC(Q)=a+bQ+cQ², witha,b,c>0. DeriveAVC and describeMC/AVC in one diagram. (b) Productionq=xy and both input prices1. If minimized cost is4, findq.",
     "answer": "(a) AVC=a+(b/2)Q+(c/3)Q², increasing and belowMC forQ>0. (b) q4.",
-    "solution": "(a) Variable cost is the integral from0 toQ ofMC: VC=aQ+(b/2)Q²+(c/3)Q³. Divide byQ to getAVC. Both curves start at vertical intercepta and rise convexly. Their difference is(b/2)Q+(2c/3)Q²>0 for positive output. MC therefore lies aboveAVC; with all coefficients positive there is noU-shaped minimum away from zero. (b) ByAM–GM, costx+y≥2√(xy)=2√q, attained atx=y. Set minimized cost4 to getq4 and input demandsx=y2.",
+    "solution": "Integrate marginal cost from zero output. Variable cost is the integral of marginal cost, taking variable cost at zero to be zero: \nVC(Q)=∫_0^Q(a+bz+cz^2) dz=aQ+(b)/(2)Q^2+(c)/(3)Q^3.\n A fixed cost, if any, is not part of this integral or of average variable cost.\n\nDescribe average and marginal variable cost. Dividing by positive output gives AVC=a+(b/2)Q+(c/3)Q^2. Both MC and AVC start at intercept a and increase convexly because all three coefficients are positive. Their difference \nMC-AVC=(b)/(2)Q+(2c)/(3)Q^2>0\n puts MC above AVC for every positive output. These are not U-shaped curves under the stated coefficient signs.\n\nInvert minimized input cost in part (b). With q=xy and unit input prices, cost is x+y≥2√(xy)=2√(q), with equality at x=y. Thus minimized cost is 2√(q). Setting it to 4 gives q=4, attained at x=y=2. Equality is feasible, so the AM–GM bound really is the minimum.",
     "hint": "Integrate marginal cost and applyAM–GM.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Integrate marginal cost from zero output",
+        "body": "Variable cost is the integral of marginal cost, taking variable cost at zero to be zero: $$VC(Q)=\\int_0^Q(a+bz+cz^2)\\,dz=aQ+\\frac b2Q^2+\\frac c3Q^3.$$ A fixed cost, if any, is not part of this integral or of average variable cost."
+      },
+      {
+        "title": "Describe average and marginal variable cost",
+        "body": "Dividing by positive output gives $AVC=a+(b/2)Q+(c/3)Q^2$. Both MC and AVC start at intercept $a$ and increase convexly because all three coefficients are positive. Their difference $$MC-AVC=\\frac b2Q+\\frac{2c}{3}Q^2>0$$ puts MC above AVC for every positive output. These are not U-shaped curves under the stated coefficient signs."
+      },
+      {
+        "title": "Invert minimized input cost in part (b)",
+        "body": "With $q=xy$ and unit input prices, cost is $x+y\\ge2\\sqrt{xy}=2\\sqrt q$, with equality at $x=y$. Thus minimized cost is $2\\sqrt q$. Setting it to 4 gives $q=4$, attained at $x=y=2$. Equality is feasible, so the AM–GM bound really is the minimum."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q3",
@@ -118,12 +168,22 @@
     "originalPaperCode": "ME II",
     "stem": "A short-run monopolist operates two plants withTC₁=ax₁²+bx₁+c andTC₂=ax₂²+dx₂+e, all coefficients positive. Both plants produce at the optimum. Show that the higher-output plant has lower average variable cost.",
     "answer": "At the common marginal costm, AVCᵢ=m−axᵢ, so higherxᵢ means lowerAVCᵢ.",
-    "solution": "Optimal allocation of a given total output equalizes plant marginal costs:2ax₁+b=2ax₂+d=m (also equal to the monopoly’s marginal revenue). Plant1AVC=ax₁+b=m−ax₁; plant2AVC=ax₂+d=m−ax₂. Sincea>0, ifx₁>x₂ thenAVC₁<AVC₂, and conversely. Fixed costsc,e have no role in these variable-cost comparisons.",
+    "solution": "Use the common marginal-cost condition. Because both plants are active, profit maximization allocates total output so their marginal costs are equal: \n2ax_1+b=2ax_2+d=m.\n The common value m also equals marginal revenue from the combined output. Otherwise output could be shifted from the higher-marginal-cost plant to the lower-cost one to raise profit.\n\nExpress each average variable cost in that common value. The fixed costs c,e do not enter AVC. From the marginal-cost equalities, \nAVC_1 =ax_1+b=m-ax_1,; AVC_2 =ax_2+d=m-ax_2.\n Since a>0, the larger x_i has the smaller AVC. This result depends on the common quadratic coefficient, not just on the generic equality of marginal costs.",
     "hint": "Express each linear cost coefficient using the common marginal cost.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Use the common marginal-cost condition",
+        "body": "Because both plants are active, profit maximization allocates total output so their marginal costs are equal: $$2ax_1+b=2ax_2+d=m.$$ The common value $m$ also equals marginal revenue from the combined output. Otherwise output could be shifted from the higher-marginal-cost plant to the lower-cost one to raise profit."
+      },
+      {
+        "title": "Express each average variable cost in that common value",
+        "body": "The fixed costs $c,e$ do not enter AVC. From the marginal-cost equalities, $$\\begin{aligned}AVC_1&=ax_1+b=m-ax_1,\\\\AVC_2&=ax_2+d=m-ax_2.\\end{aligned}$$ Since $a>0$, the larger $x_i$ has the smaller AVC. This result depends on the common quadratic coefficient, not just on the generic equality of marginal costs."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q4",
@@ -135,12 +195,26 @@
     "originalPaperCode": "ME II",
     "stem": "Project1 costs1000 now and pays100 per year forever from next year. Project2 costs2000 now and also pays100 per year forever from next year. Draw investment demand in rupees for all market interest rates.",
     "answer": "For independent projects: investment3000 if0<r<5%;1000 if5%<r<10%;0 ifr>10%. At the cutoff rates the respective project has zeroNPV.",
-    "solution": "At positive interest r, each perpetual100 stream hasPV100/r. Project1 is profitable whenr<.10; project2 whenr<.05. If projects are independent and each can be undertaken once, invest in both below5%, only the first between5% and10%, and neither above10%. Thus the investment-demand graph is a downward step function, with horizontal quantity thresholds3000,1000,0. At5% investment can be1000 or3000 depending on whether the zeroNPV second project is chosen; at10% it can be0 or1000. At nonpositive rates the ordinary finite perpetuity formula fails, but both positive streams have unbounded undiscounted present value and both are attractive. If projects are mutually exclusive, project2 is dominated by project1 and the3000 step is absent; independence is therefore stated.",
+    "solution": "Discount the perpetual returns. At a positive market rate r, a payment of 100 from next year forever has present value 100/r. The projects differ only in their initial outlays: 1000 and 2000. Project 1 therefore has positive NPV below 10%, while project 2 has positive NPV below 5%.\n\nConstruct the investment-demand steps. Assuming the two projects are independent and each can be undertaken once, \nI(r)=3000, 0<r<0.05,; 1000, 0.05<r<0.10,; 0, r>0.10.\n Investment is measured by the current outlay, so undertaking both means 3000 rather than the sum of their annual returns.\n\nHandle the cutoff rates and project interpretation. At 5% the second project has zero NPV, giving investment either 1000 or 3000 depending on the tie decision. At 10% the first has zero NPV, giving either 0 or 1000. If projects were mutually exclusive, the more expensive identical-return project would be dominated and there would be no 3000 step. That is why independence is an explicit assumption. The ordinary finite perpetuity formula is not valid at nonpositive rates.",
     "hint": "Compare the perpetuity present value with each setup cost.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": "The step-demand answer assumes independent one-time projects, not mutually exclusive alternatives."
+    "notes": "The step-demand answer assumes independent one-time projects, not mutually exclusive alternatives.",
+    "solutionSteps": [
+      {
+        "title": "Discount the perpetual returns",
+        "body": "At a positive market rate $r$, a payment of 100 from next year forever has present value $100/r$. The projects differ only in their initial outlays: 1000 and 2000. Project 1 therefore has positive NPV below 10%, while project 2 has positive NPV below 5%."
+      },
+      {
+        "title": "Construct the investment-demand steps",
+        "body": "Assuming the two projects are independent and each can be undertaken once, $$I(r)=\\begin{cases}3000,&0<r<0.05,\\\\1000,&0.05<r<0.10,\\\\0,&r>0.10.\\end{cases}$$ Investment is measured by the current outlay, so undertaking both means 3000 rather than the sum of their annual returns."
+      },
+      {
+        "title": "Handle the cutoff rates and project interpretation",
+        "body": "At 5% the second project has zero NPV, giving investment either 1000 or 3000 depending on the tie decision. At 10% the first has zero NPV, giving either 0 or 1000. If projects were mutually exclusive, the more expensive identical-return project would be dominated and there would be no 3000 step. That is why independence is an explicit assumption. The ordinary finite perpetuity formula is not valid at nonpositive rates."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q5",
@@ -152,12 +226,26 @@
     "originalPaperCode": "ME II",
     "stem": "Poor people earn500/month and consume all. Middle-class people earn2000 and consume1500. Rich people earn10000 and consume80%. (a)20% of people are poor,50% middle class: find aggregate average propensity to save. (b) Equal numbers move poor→middle and middle→rich: what happens toAPS?",
     "answer": "(a) APS17/82≈20.732%. (b) It increases slightly under the stated class incomes and saving rules.",
-    "solution": "Use income weights rather than averaging individual saving ratios. Per person in the initial population, income is.2·500+.5·2000+.3·10000=4100 and saving is.2·0+.5·500+.3·2000=850. HenceAPS850/4100=17/82. If fractionh moves on each ladder, poor share becomes.2−h, middle share stays.5, rich share becomes.3+h. New income is4100+9500h and saving850+2000h. The derivative of their ratio has numerator2000·4100−9500·850=125000>0, soAPS rises for feasible0<h≤.2. The incremental saving/income ratio2000/9500 is slightly above the initialAPS.",
+    "solution": "Aggregate income and saving separately. The poor save zero, middle-class people save 2000-1500=500 and rich people save 0.2(10000)=2000. With population shares (0.2,0.5,0.3), per-person aggregate totals are \nY =0.2(500)+0.5(2000)+0.3(10000)=4100,; S =0.2(0)+0.5(500)+0.3(2000)=850.\n Therefore APS is 850/4100=17/82, about 20.732%. Averaging the three class saving ratios directly would use the wrong weights.\n\nTrack both equal population movements. Let fraction h move from poor to middle, and the same fraction from middle to rich. The middle share stays 0.5, while poor and rich shares become 0.2-h and 0.3+h. Income is then 4100+9500h and saving is 850+2000h.\n\nDetermine the direction of the ratio. Differentiate the new APS: \n(d)/(dh)(850+2000h)/(4100+9500h)=(2000(4100)-9500(850))/((4100+9500h)^2)=(125000)/((4100+9500h)^2)>0.\n APS rises slightly for feasible positive h. The result is not obtained by comparing only the middle-class saving rate with the rich rate; the two simultaneous transitions change aggregate income as well.",
     "hint": "Aggregate total saving divided by total income; middle-class population is unchanged by equal opposing flows.",
     "topic": "Macroeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Aggregate income and saving separately",
+        "body": "The poor save zero, middle-class people save $2000-1500=500$ and rich people save $0.2(10000)=2000$. With population shares $(0.2,0.5,0.3)$, per-person aggregate totals are $$\\begin{aligned}Y&=0.2(500)+0.5(2000)+0.3(10000)=4100,\\\\S&=0.2(0)+0.5(500)+0.3(2000)=850.\\end{aligned}$$ Therefore APS is $850/4100=17/82$, about 20.732%. Averaging the three class saving ratios directly would use the wrong weights."
+      },
+      {
+        "title": "Track both equal population movements",
+        "body": "Let fraction $h$ move from poor to middle, and the same fraction from middle to rich. The middle share stays 0.5, while poor and rich shares become $0.2-h$ and $0.3+h$. Income is then $4100+9500h$ and saving is $850+2000h$."
+      },
+      {
+        "title": "Determine the direction of the ratio",
+        "body": "Differentiate the new APS: $$\\frac d{dh}\\frac{850+2000h}{4100+9500h}=\\frac{2000(4100)-9500(850)}{(4100+9500h)^2}=\\frac{125000}{(4100+9500h)^2}>0.$$ APS rises slightly for feasible positive $h$. The result is not obtained by comparing only the middle-class saving rate with the rich rate; the two simultaneous transitions change aggregate income as well."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q6",
@@ -169,12 +257,30 @@
     "originalPaperCode": "ME II",
     "stem": "A shop offers either a fixed meal80g rice+50g dal for15, or freely chosen quantities at1 per10g rice and2 per10g dal. R chooses the fixed meal; S orders120g rice+15g dal, also costing15. (a) Describe indifference-curve diagrams. (b) With fixed-meal and rice prices unchanged but a higher dal price, must they change choices?",
     "answer": "R’s fixed meal remains optimal. S’s response is not uniquely determined from rationality alone; with a fixed15 food budget the old quantity bundle becomes unaffordable and must change.",
-    "solution": "With rice horizontal and dal vertical, the à-la-carte15 budget is.1r+.2d=15. S’s choice(120,15) lies on it. The fixed-meal option(80,50) lies beyond that line because its à-la-carte cost18 exceeds15. Draw R’s highest attainable indifference curve through the package and S’s through the chosen line point. When dal price rises at fixed income and other prices, the à-la-carte opportunity set contracts while the package remains available. Since R chose the package from the larger old set, it remains a maximizer in the smaller new set. S’s old full bundle including any other consumption is no longer affordable at the same spending allocation; S may shift along the à-la-carte set or switch to the package. With a fixed15 budget devoted exclusively to food, S cannot retain(120,15). If other consumption can be reduced, the food quantities alone need not change: more information on preferences is needed.",
+    "solution": "Describe the two food opportunities. Using rice grams r and dal grams d, the à-la-carte expenditure is 0.1r+0.2d. S's order (120,15) costs 15. The fixed meal (80,50) also costs 15, but would cost 18 at the separate prices, so it appears as a distinct package point beyond the à-la-carte 15-budget line.\n\nExplain the observed preferences graphically. R's highest attainable indifference curve passes through the package point, while S's passes through the chosen point on the separate-purchase line. Different preferences can support these different choices at the same expenditure. One cannot infer a unique indifference curve or a fixed consumption ratio merely from one observed order.\n\nApply revealed preference to R after the dal price rises. The unchanged package remains affordable at the same cost, whereas the à-la-carte opportunity set contracts when dal becomes dearer. Since R chose the package from the larger old set, it remains a maximizer in the smaller new set. No newly attractive alternative has been created.\n\nState precisely what can be inferred for S. At a fixed 15 food budget, the old S bundle now costs more than 15 and is unavailable, so S must change the order or switch to the package. If other consumption can be reduced, S could retain the food quantities by spending more on them. Rationality alone does not identify S's new food quantities or guarantee a switch to the fixed meal. The source does not state that the entire available income is the 15 spent on this order.",
     "hint": "Use revealed preference for the unchanged package and distinguish a fixed food budget from total income.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Source does not specify a fixed total food budget or preferences beyond rationality; the conditional answer avoids asserting a unique S response."
+    "notes": "Source does not specify a fixed total food budget or preferences beyond rationality; the conditional answer avoids asserting a unique S response.",
+    "solutionSteps": [
+      {
+        "title": "Describe the two food opportunities",
+        "body": "Using rice grams $r$ and dal grams $d$, the à-la-carte expenditure is $0.1r+0.2d$. S's order $(120,15)$ costs 15. The fixed meal $(80,50)$ also costs 15, but would cost 18 at the separate prices, so it appears as a distinct package point beyond the à-la-carte 15-budget line."
+      },
+      {
+        "title": "Explain the observed preferences graphically",
+        "body": "R's highest attainable indifference curve passes through the package point, while S's passes through the chosen point on the separate-purchase line. Different preferences can support these different choices at the same expenditure. One cannot infer a unique indifference curve or a fixed consumption ratio merely from one observed order."
+      },
+      {
+        "title": "Apply revealed preference to R after the dal price rises",
+        "body": "The unchanged package remains affordable at the same cost, whereas the à-la-carte opportunity set contracts when dal becomes dearer. Since R chose the package from the larger old set, it remains a maximizer in the smaller new set. No newly attractive alternative has been created."
+      },
+      {
+        "title": "State precisely what can be inferred for S",
+        "body": "At a fixed 15 food budget, the old S bundle now costs more than 15 and is unavailable, so S must change the order or switch to the package. If other consumption can be reduced, S could retain the food quantities by spending more on them. Rationality alone does not identify S's new food quantities or guarantee a switch to the fixed meal. The source does not state that the entire available income is the 15 spent on this order."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q7",
@@ -186,12 +292,26 @@
     "originalPaperCode": "ME II",
     "stem": "A consumer hasU(x₁,x₂)=x₁x₂, income650 and pricesp₁8,p₂2. Club membership lowers only good1’s price by50%. What is the maximum fee the consumer would just pay?",
     "answer": "F_max=650−325√2≈190.381.",
-    "solution": "Cobb–Douglas demands spend half of available income on each good, so indirect utility isM²/(4p₁p₂). Without the club it is650²/64. With feeF andp₁4 it is(650−F)²/32. Indifference requires(650−F)²=650²/2. Taking the positive available-income root gives650−F=650/√2, henceF=650−325√2. A smaller fee creates a strict gain.",
+    "solution": "Calculate the original indirect utility. For U=x_1x_2, maximizing utility at income M and positive prices gives half-income demands and indirect utility V=M^2/(4p_1p_2). Before joining the club, \nV_0=(650^2)/(4(8)(2))=(650^2)/(64).\n The scanned source says income 650, which matters for the fee calculation.\n\nInclude both the discount and the membership fee. After paying fee F, available spending is 650-F and the new good-1 price is 4. Therefore V_1=(650-F)^2/32. The fee cannot be evaluated by applying the price saving to the old bundle alone, because the consumer reoptimizes purchases.\n\nSolve the participation condition. The largest acceptable fee equates the two indirect utilities: \n((650-F)^2)/(32) =(650^2)/(64),; 650-F =(650)/(√(2)),; F_(max) =650-325√(2)≈190.381.\n Take the positive remaining-income root. At the maximum the consumer is indifferent; any smaller fee yields a strict gain.",
     "hint": "Equalize indirect utilities before and after paying the fee.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Visual inspection confirms the scanned income isRs650, notRs600 as the broken text extraction suggests."
+    "notes": "Visual inspection confirms the scanned income isRs650, notRs600 as the broken text extraction suggests.",
+    "solutionSteps": [
+      {
+        "title": "Calculate the original indirect utility",
+        "body": "For $U=x_1x_2$, maximizing utility at income $M$ and positive prices gives half-income demands and indirect utility $V=M^2/(4p_1p_2)$. Before joining the club, $$V_0=\\frac{650^2}{4(8)(2)}=\\frac{650^2}{64}.$$ The scanned source says income 650, which matters for the fee calculation."
+      },
+      {
+        "title": "Include both the discount and the membership fee",
+        "body": "After paying fee $F$, available spending is $650-F$ and the new good-1 price is 4. Therefore $V_1=(650-F)^2/32$. The fee cannot be evaluated by applying the price saving to the old bundle alone, because the consumer reoptimizes purchases."
+      },
+      {
+        "title": "Solve the participation condition",
+        "body": "The largest acceptable fee equates the two indirect utilities: $$\\begin{aligned}\\frac{(650-F)^2}{32}&=\\frac{650^2}{64},\\\\650-F&=\\frac{650}{\\sqrt2},\\\\F_{max}&=650-325\\sqrt2\\approx190.381.\\end{aligned}$$ Take the positive remaining-income root. At the maximum the consumer is indifferent; any smaller fee yields a strict gain."
+      }
+    ]
   },
   {
     "id": "2000-PEB-Q8",
@@ -203,11 +323,25 @@
     "originalPaperCode": "ME II",
     "stem": "A farmer owns1000 bushels now. Setting aside100 bushels yields110 next year. Utility isW=C₀C₁. With no capital market, how much should he consume in each year?",
     "answer": "C₀500,C₁550.",
-    "solution": "Ifs bushels are planted or stored for the stated return, C₀1000−s andC₁1.1s. MaximizeW=1.1s(1000−s) over0≤s≤1000. Its derivative1.1(1000−2s) vanishes ats500, and the second derivative is negative. Therefore consume500 now and550 next year.",
+    "solution": "Write the physical intertemporal budget. If s bushels are set aside now, current consumption is C_0=1000-s and future consumption is C_1=1.1s. With no capital market the farmer cannot transfer resources by borrowing; the only transfer mechanism is this physical return, with 0≤ s≤1000.\n\nMaximize the product of consumption quantities. Substitute the budgets into utility: \nW(s)=1.1s(1000-s).\n Its derivative is 1.1(1000-2s) and its second derivative is -2.2. The unique maximum is therefore at s=500.\n\nReport consumption and distinguish the annotation. The farmer consumes 500 bushels now and 1.1(500)=550 next year. The printed question contains only this no-capital-market part. A handwritten borrowing extension on the scan is not treated as an official subpart or as an instruction to supply extra assumptions.",
     "hint": "Substitute the physical return into the intertemporal resource constraint.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Only printed subpart(a) is included. A handwritten borrowing-at5% extension appears below it but is not treated as an official question or instruction."
+    "notes": "Only printed subpart(a) is included. A handwritten borrowing-at5% extension appears below it but is not treated as an official question or instruction.",
+    "solutionSteps": [
+      {
+        "title": "Write the physical intertemporal budget",
+        "body": "If $s$ bushels are set aside now, current consumption is $C_0=1000-s$ and future consumption is $C_1=1.1s$. With no capital market the farmer cannot transfer resources by borrowing; the only transfer mechanism is this physical return, with $0\\le s\\le1000$."
+      },
+      {
+        "title": "Maximize the product of consumption quantities",
+        "body": "Substitute the budgets into utility: $$W(s)=1.1s(1000-s).$$ Its derivative is $1.1(1000-2s)$ and its second derivative is $-2.2$. The unique maximum is therefore at $s=500$."
+      },
+      {
+        "title": "Report consumption and distinguish the annotation",
+        "body": "The farmer consumes 500 bushels now and $1.1(500)=550$ next year. The printed question contains only this no-capital-market part. A handwritten borrowing extension on the scan is not treated as an official subpart or as an instruction to supply extra assumptions."
+      }
+    ]
   }
 ]

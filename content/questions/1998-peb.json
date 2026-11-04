@@ -10,12 +10,26 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "Prove or disprove: (a) If a good’s price-offer curve is parallel to its quantity axis over a range, its demand curve is straight over that range. (b) Marginal product must fall with employment whenever marginal product exceeds average product.",
     "answer": "Both statements are false.",
-    "solution": "(a) Letx be the good whose price varies; a horizontal price-offer curve means the other quantity staysy₀ while incomeM and its pricep_y stay fixed. The budget impliesp_xx=M−p_yy₀, sox=(M−p_yy₀)/p_x, a rectangular-hyperbola demand, not a straight line except degenerate cases. (b) For outputF(L), average productA=F(L)/L has derivativeA′=(MP−AP)/L. ThusMP>AP impliesAP is rising, not thatMP is falling. CounterexampleF(L)=L² givesMP2L>APL whileMP itself increases.",
+    "solution": "Test the price-offer assertion using the budget identity. Suppose the price-offer curve is horizontal in (x,y) space while p_x varies, so the chosen other-good quantity remains y_0. With unchanged income and p_y, the budget gives \np_xx=M-p_yy_0 ⇒ x=(M-p_yy_0)/(p_x).\n This is a rectangular-hyperbola demand over the range, not a straight line except for a degenerate zero-spending case. The first assertion is false.\n\nDifferentiate average product correctly. If output is F(L), then AP=F(L)/L and MP=F'(L). Differentiating average product gives \n(dAP)/(dL)=(MP-AP)/(L).\n Thus MP>AP establishes that average product is increasing; it says nothing by itself about whether marginal product is increasing or decreasing.\n\nProvide a decisive counterexample. For F(L)=L^2 at positive labour, MP=2L>AP=L, yet dMP/dL=2>0. Marginal product rises rather than falls. This disproves the second assertion without relying on a particular sketch of an S-shaped production function.",
     "hint": "Derive demand from the budget and distinguish the slopes of marginal and average product.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Test the price-offer assertion using the budget identity",
+        "body": "Suppose the price-offer curve is horizontal in $(x,y)$ space while $p_x$ varies, so the chosen other-good quantity remains $y_0$. With unchanged income and $p_y$, the budget gives $$p_xx=M-p_yy_0\\quad\\Rightarrow\\quad x=\\frac{M-p_yy_0}{p_x}.$$ This is a rectangular-hyperbola demand over the range, not a straight line except for a degenerate zero-spending case. The first assertion is false."
+      },
+      {
+        "title": "Differentiate average product correctly",
+        "body": "If output is $F(L)$, then $AP=F(L)/L$ and $MP=F'(L)$. Differentiating average product gives $$\\frac{dAP}{dL}=\\frac{MP-AP}{L}.$$ Thus $MP>AP$ establishes that average product is increasing; it says nothing by itself about whether marginal product is increasing or decreasing."
+      },
+      {
+        "title": "Provide a decisive counterexample",
+        "body": "For $F(L)=L^2$ at positive labour, $MP=2L>AP=L$, yet $dMP/dL=2>0$. Marginal product rises rather than falls. This disproves the second assertion without relying on a particular sketch of an S-shaped production function."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q2",
@@ -28,12 +42,26 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "Utility over applesa and bananasb isW=a²+b². Prices are2 and1, income20. (i) Find the full-budget bundleX whereMRS equals the price ratio. Compare it with the all-apple bundleY and all-banana bundleZ. (ii) Find the optimum.",
     "answer": "X=(8,4),W80;Y=(10,0),W100;Z=(0,20),W400. The optimum isZ, not the tangency.",
-    "solution": "MRS=W_a/W_b=a/b. Equality to2 impliesa2b; budget2a+b20 then givesb4,a8. The two corners give utility100 and400, both exceeding80. Along the budgetb20−2a, utility is5a²−80a+400, a convex quadratic on0≤a≤10. Its stationary pointa8 is a minimum; the maximum occurs at an endpoint and is400 ata0,b20. The question itself invokes zero-good corner bundles, so the nonnegative boundary is included despite its earliera,b>0 notation.",
+    "solution": "Find the full-budget tangency. The utility derivatives are W_a=2a and W_b=2b, so the marginal rate of substitution is a/b. Matching the price ratio 2 gives a=2b. With 2a+b=20, the tangency is X=(8,4) and utility W(X)=80. These conditions identify a stationary bundle, not automatically a maximum.\n\nCompare the endpoint bundles. All-apple spending gives Y=(10,0) with utility 100. All-banana spending gives Z=(0,20) with utility 400. Both outperform the tangency. The boundary is part of the comparison because the question explicitly asks for these all-one-good bundles despite earlier positive-quantity notation.\n\nEstablish the global optimum. Substitute b=20-2a into utility: \nW(a)=a^2+(20-2a)^2=5a^2-80a+400, 0≤ a≤10.\n This is convex, so its stationary point at a=8 is a minimum and its maximum occurs at an endpoint. Comparing 100 with 400 selects (a,b)=(0,20). The exercise shows why a tangency is insufficient for nonconvex preferences.",
     "hint": "A tangency need not maximize utility when preferences are not convex.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Boundary bundles explicitly requested by the source are included, notwithstanding the earlier positive-quantity notation."
+    "notes": "Boundary bundles explicitly requested by the source are included, notwithstanding the earlier positive-quantity notation.",
+    "solutionSteps": [
+      {
+        "title": "Find the full-budget tangency",
+        "body": "The utility derivatives are $W_a=2a$ and $W_b=2b$, so the marginal rate of substitution is $a/b$. Matching the price ratio 2 gives $a=2b$. With $2a+b=20$, the tangency is $X=(8,4)$ and utility $W(X)=80$. These conditions identify a stationary bundle, not automatically a maximum."
+      },
+      {
+        "title": "Compare the endpoint bundles",
+        "body": "All-apple spending gives $Y=(10,0)$ with utility 100. All-banana spending gives $Z=(0,20)$ with utility 400. Both outperform the tangency. The boundary is part of the comparison because the question explicitly asks for these all-one-good bundles despite earlier positive-quantity notation."
+      },
+      {
+        "title": "Establish the global optimum",
+        "body": "Substitute $b=20-2a$ into utility: $$W(a)=a^2+(20-2a)^2=5a^2-80a+400,\\qquad0\\le a\\le10.$$ This is convex, so its stationary point at $a=8$ is a minimum and its maximum occurs at an endpoint. Comparing 100 with 400 selects $(a,b)=(0,20)$. The exercise shows why a tangency is insufficient for nonconvex preferences."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q3",
@@ -46,12 +74,26 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "Two people share total stocks1kg rice and1kg dal, with identical utilityU=min(x,y). (a) Describe the indifference map. (b) Are these allocations efficient: (i) A(.3,.4), B remainder; (ii) A(.6,.6), B remainder? (c) Give a Pareto improvement for any inefficient allocation.",
     "answer": "L-shaped indifference curves. (i) Inefficient: change toA(.35,.35),B(.65,.65), strictly improving both. (ii) Efficient.",
-    "solution": "A utility levelu has kink(u,u), a vertical rayx=u,y≥u and horizontal rayy=u,x≥u. In(i) utilities are.3 and.6. Redistribute soA has(.35,.35) andB(.65,.65), using the same total stocks and raising both utilities by.05. In(ii), utilities are.6 and.4. For any feasible allocation, min(x_A,y_A)+min(x_B,y_B)≤1, so a Pareto improvement would require a utility sum above1, impossible. More generally the efficient allocations for equal aggregate stocks lie on the equal-quantity diagonal for each person.",
+    "solution": "Draw and interpret the indifference curves. For U=min{x,y}, utility u has kink (u,u) and horizontal and vertical rays from it. Only matched quantities of rice and dal raise utility; extra units of one alone are redundant. The allocation subparts call the second good wheat, but the setup identifies it as dal; it is the same second good for this calculation.\n\nImprove the first allocation. Initially A=(0.3,0.4) and B=(0.7,0.6), giving utilities 0.3 and 0.6. A has surplus dal and B surplus rice. Exchange 0.05 of A's dal for 0.05 of B's rice. The new bundles are A=(0.35,0.35) and B=(0.65,0.65), raising both utilities by 0.05. Hence the first allocation is inefficient.\n\nProve efficiency of the second allocation. At A=(0.6,0.6) and B=(0.4,0.4), utilities sum to 1. For every feasible allocation, \nmin{x_A,y_A}+min{x_B,y_B}≤1,\n because total quantities of each good are only one. A Pareto improvement would have to raise this utility sum above one, which is impossible. Thus the second allocation is efficient, regardless of whether its distribution is judged fair.",
     "hint": "Look for unmatched excess goods and bound the sum of Leontief utilities.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "The allocation subparts say“wheat” although the setup says“dal”; the second good is consistently treated as the setup’s dal, with that source typo disclosed."
+    "notes": "The allocation subparts say“wheat” although the setup says“dal”; the second good is consistently treated as the setup’s dal, with that source typo disclosed.",
+    "solutionSteps": [
+      {
+        "title": "Draw and interpret the indifference curves",
+        "body": "For $U=\\min\\{x,y\\}$, utility $u$ has kink $(u,u)$ and horizontal and vertical rays from it. Only matched quantities of rice and dal raise utility; extra units of one alone are redundant. The allocation subparts call the second good wheat, but the setup identifies it as dal; it is the same second good for this calculation."
+      },
+      {
+        "title": "Improve the first allocation",
+        "body": "Initially $A=(0.3,0.4)$ and $B=(0.7,0.6)$, giving utilities 0.3 and 0.6. A has surplus dal and B surplus rice. Exchange 0.05 of A's dal for 0.05 of B's rice. The new bundles are $A=(0.35,0.35)$ and $B=(0.65,0.65)$, raising both utilities by 0.05. Hence the first allocation is inefficient."
+      },
+      {
+        "title": "Prove efficiency of the second allocation",
+        "body": "At $A=(0.6,0.6)$ and $B=(0.4,0.4)$, utilities sum to 1. For every feasible allocation, $$\\min\\{x_A,y_A\\}+\\min\\{x_B,y_B\\}\\le1,$$ because total quantities of each good are only one. A Pareto improvement would have to raise this utility sum above one, which is impossible. Thus the second allocation is efficient, regardless of whether its distribution is judged fair."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q4",
@@ -64,12 +106,22 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "A consumer hasu=xy, budget2x+3y=36 and quantity restrictionx≤10, with nonnegative consumption. Find the utility-maximizing bundle.",
     "answer": "x9,y6. The cap does not bind.",
-    "solution": "Substitute y=(36−2x)/3 to obtainu=12x−(2/3)x² on0≤x≤10. Its derivative12−(4/3)x vanishes atx9, within the cap, and the second derivative is−4/3<0. Thusy6 and maximum utility54. Equivalently, half the budget goes to each good under Cobb–Douglas preferences.",
+    "solution": "Find the unconstrained desired consumption. For product utility xy at positive prices, equal expenditure shares give 2x=18 and 3y=18. The candidate is therefore (x,y)=(9,6), which satisfies the added cap x≤10. The ration constraint is present but not binding.\n\nVerify the maximum directly over the capped range. On the budget, y=(36-2x)/3, so \nu(x)=12x-(2)/(3)x^2, 0≤ x≤10.\n The derivative vanishes at x=9 and the second derivative is -4/3<0. Hence this is the unique maximum, with utility 54. Imposing x=10 merely because a cap is mentioned would unnecessarily reduce utility.",
     "hint": "Find the unconstrained demand before checking the ration cap.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Visual source confirms budget2x+3y36; broken extraction can lose the leading2."
+    "notes": "Visual source confirms budget2x+3y36; broken extraction can lose the leading2.",
+    "solutionSteps": [
+      {
+        "title": "Find the unconstrained desired consumption",
+        "body": "For product utility $xy$ at positive prices, equal expenditure shares give $2x=18$ and $3y=18$. The candidate is therefore $(x,y)=(9,6)$, which satisfies the added cap $x\\le10$. The ration constraint is present but not binding."
+      },
+      {
+        "title": "Verify the maximum directly over the capped range",
+        "body": "On the budget, $y=(36-2x)/3$, so $$u(x)=12x-\\frac23x^2,\\qquad0\\le x\\le10.$$ The derivative vanishes at $x=9$ and the second derivative is $-4/3<0$. Hence this is the unique maximum, with utility 54. Imposing $x=10$ merely because a cap is mentioned would unnecessarily reduce utility."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q5",
@@ -81,13 +133,23 @@
     "originalPaperCode": "ME II",
     "stem": "Industry inverse demand isP=a−Q and aggregate marginal costMC=Q,a>0. Compute monopoly deadweight loss relative to perfect competition with the same marginal-cost curve.",
     "answer": "Deadweight lossa²/36.",
-    "solution": "Competition equatesP=MC: a−Q=Q, givingQ_c=a/2. Monopoly equatesMR=a−2Q withMC=Q, givingQ_m=a/3. AtQ_m the demand-minus-cost gap isa−2a/3=a/3. The surplus-loss triangle has widtha/2−a/3=a/6 and heighta/3, soDWL=(1/2)(a/6)(a/3)=a²/36.",
+    "solution": "Find the competitive and monopoly quantities. Competition equates willingness to pay to marginal cost: a-Q=Q, giving Q_C=a/2. A monopolist instead equates marginal revenue a-2Q to marginal cost Q, giving Q_M=a/3. Using P=MC for the monopoly would miss its withholding incentive.\n\nIntegrate the missing gains from trade. Between Q_M and Q_C, marginal willingness to pay exceeds marginal cost by a-2Q. Thus \nDWL =∫_(a/3)^(a/2)(a-2Q) dQ; =(1)/(2)((a)/(2)-(a)/(3))((a)/(3))=(a^2)/(36).\n Monopoly profit transfers are not part of this efficiency loss; only the forgone surplus on unproduced units is lost.",
     "hint": "Compare marginal willingness to pay with marginal cost over the missing output range.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
     "notes": "",
-    "sourceLabel": "1998–99 sample booklet"
+    "sourceLabel": "1998–99 sample booklet",
+    "solutionSteps": [
+      {
+        "title": "Find the competitive and monopoly quantities",
+        "body": "Competition equates willingness to pay to marginal cost: $a-Q=Q$, giving $Q_C=a/2$. A monopolist instead equates marginal revenue $a-2Q$ to marginal cost $Q$, giving $Q_M=a/3$. Using $P=MC$ for the monopoly would miss its withholding incentive."
+      },
+      {
+        "title": "Integrate the missing gains from trade",
+        "body": "Between $Q_M$ and $Q_C$, marginal willingness to pay exceeds marginal cost by $a-2Q$. Thus $$\\begin{aligned}DWL&=\\int_{a/3}^{a/2}(a-2Q)\\,dQ\\\\&=\\frac12\\left(\\frac a2-\\frac a3\\right)\\left(\\frac a3\\right)=\\frac{a^2}{36}.\\end{aligned}$$ Monopoly profit transfers are not part of this efficiency loss; only the forgone surplus on unproduced units is lost."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q6",
@@ -100,12 +162,26 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "A simple Keynesian model has investmentI=I₀+bY and savingS=sY, with1>s>b>0. How much does total equilibrium saving change for a small change in the marginal propensity to saves?",
     "answer": "dS=−bI₀/(s−b)² ds. A higher saving propensity lowers equilibrium total saving.",
-    "solution": "EquilibriumS=I gives(s−b)Y=I₀, soY=I₀/(s−b). ThereforeS=sI₀/(s−b). Differentiating yieldsdS/ds=I₀[(s−b)−s]/(s−b)²=−bI₀/(s−b)²<0 forI₀>0. Increased thrift reduces income sufficiently to cut induced investment; equilibrium saving follows investment downward. Ifb0, total saving would instead remainI₀.",
+    "solution": "Solve the investment-saving equilibrium. Equilibrium requires sY=I_0+bY. Since s>b, \nY=(I_0)/(s-b), S=sY=(sI_0)/(s-b).\n Saving must be evaluated after income adjusts, not at the old income.\n\nDifferentiate the equilibrium level of saving. Holding I_0 and b fixed, \n(dS)/(ds)=I_0((s-b)-s)/((s-b)^2)=-(bI_0)/((s-b)^2).\n Therefore a small change ds gives dS=-bI_0 ds/(s-b)^2. For positive autonomous investment, greater thrift reduces total equilibrium saving.\n\nExplain the induced-investment channel. A higher saving propensity lowers consumption and output. Because investment increases with output, that income contraction also reduces investment. In the new equilibrium saving follows investment downward. If b=0, the usual fixed-investment paradox of thrift instead leaves total saving unchanged at I_0.",
     "hint": "Differentiate equilibrium saving after solving for income.",
     "topic": "Macroeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Solve the investment-saving equilibrium",
+        "body": "Equilibrium requires $sY=I_0+bY$. Since $s>b$, $$Y=\\frac{I_0}{s-b},\\qquad S=sY=\\frac{sI_0}{s-b}.$$ Saving must be evaluated after income adjusts, not at the old income."
+      },
+      {
+        "title": "Differentiate the equilibrium level of saving",
+        "body": "Holding $I_0$ and $b$ fixed, $$\\frac{dS}{ds}=I_0\\frac{(s-b)-s}{(s-b)^2}=-\\frac{bI_0}{(s-b)^2}.$$ Therefore a small change $ds$ gives $dS=-bI_0\\,ds/(s-b)^2$. For positive autonomous investment, greater thrift reduces total equilibrium saving."
+      },
+      {
+        "title": "Explain the induced-investment channel",
+        "body": "A higher saving propensity lowers consumption and output. Because investment increases with output, that income contraction also reduces investment. In the new equilibrium saving follows investment downward. If $b=0$, the usual fixed-investment paradox of thrift instead leaves total saving unchanged at $I_0$."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q7",
@@ -117,13 +193,27 @@
     "originalPaperCode": "ME II",
     "stem": "There are100 competitive firms withq=√x. Derive industry supply if(a) input supply is horizontal at input price10,(b) total input supply is vertical at100 units.",
     "answer": "(a) Q=5P, upward sloping. (b) Q100, vertical, with input priceP/2 for positive output priceP.",
-    "solution": "With input pricew, a firm choosesq to maximizePq−wq², givingq=P/(2w). In(a),w10, so eachq=P/20 and100 firms supplyQ5P. In(b), symmetry and diminishing returns allocate the100 input units equally: eachx1,q1, totalQ100. The firm conditionP/(2√x)=w givesw=P/2, so input price adjusts to the output price while total output remains fixed. Zero-price degeneracies aside, the output supply curve is vertical at100.",
+    "solution": "Derive supply conditional on the input price. With q=√(x), producing q requires x=q^2. At input price w, a competitive firm maximizes Pq-wq^2. The first-order condition P=2wq gives q=P/(2w), with a negative profit second derivative. Aggregate output from 100 identical firms is Q=50P/w.\n\nHold the input price fixed in case (a). At the horizontal input supply price w=10, industry supply becomes Q=5P. In a price-vertical, quantity-horizontal diagram this is upward sloping, with inverse supply P=Q/5. Each firm can expand input use at the unchanged input price, but its own diminishing product generates increasing marginal cost.\n\nClear the constrained input market in case (b). If total input is 100, symmetry and strict concavity allocate one unit to each firm. Each then produces one output unit, so total output is 100. The optimality condition implies w=P/2 at this allocation. The input price, rather than aggregate output, adjusts to output price. Hence the industry's supply is vertical at Q=100 for positive output prices.",
     "hint": "First derive input-price-conditional firm supply, then clear the input market.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
     "notes": "",
-    "sourceLabel": "1998–99 sample booklet"
+    "sourceLabel": "1998–99 sample booklet",
+    "solutionSteps": [
+      {
+        "title": "Derive supply conditional on the input price",
+        "body": "With $q=\\sqrt x$, producing $q$ requires $x=q^2$. At input price $w$, a competitive firm maximizes $Pq-wq^2$. The first-order condition $P=2wq$ gives $q=P/(2w)$, with a negative profit second derivative. Aggregate output from 100 identical firms is $Q=50P/w$."
+      },
+      {
+        "title": "Hold the input price fixed in case (a)",
+        "body": "At the horizontal input supply price $w=10$, industry supply becomes $Q=5P$. In a price-vertical, quantity-horizontal diagram this is upward sloping, with inverse supply $P=Q/5$. Each firm can expand input use at the unchanged input price, but its own diminishing product generates increasing marginal cost."
+      },
+      {
+        "title": "Clear the constrained input market in case (b)",
+        "body": "If total input is 100, symmetry and strict concavity allocate one unit to each firm. Each then produces one output unit, so total output is 100. The optimality condition implies $w=P/2$ at this allocation. The input price, rather than aggregate output, adjusts to output price. Hence the industry's supply is vertical at $Q=100$ for positive output prices."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q8a",
@@ -135,7 +225,7 @@
     "originalPaperCode": "ME II",
     "stem": "In a simple Keynesian model, private investment increases with aggregate income. Relative to1/MPS, what is the autonomous-spending multiplier?",
     "answer": "B:Greater than1/MPS under the stable-equilibrium condition.",
-    "solution": "With savingS=sY and investmentI=I₀+vY,v>0, equilibrium gives(s−v)Y=I₀. The multiplier is1/(s−v), greater than1/s when0<v<s. Ifv≥s, the standard stable multiplier comparison fails; the conventional question implicitly assumes stability.",
+    "solution": "Include induced investment in the equilibrium slope. With saving S=sY and investment I=I_0+vY, equilibrium gives (s-v)Y=I_0. For a stable model with 0<v<s, the autonomous-spending multiplier is \n(1)/(s-v)>(1)/(s).\n Choose B. Positive investment feedback magnifies the spending rounds; stability is needed for the standard positive multiplier comparison.",
     "hint": "Induced investment adds a second positive expenditure feedback.",
     "topic": "Macroeconomics",
     "sourcePage": 9,
@@ -147,7 +237,13 @@
       "Equal to1/MPS",
       "Equal to1/(1−MPS)"
     ],
-    "sourceLabel": "1998–99 sample booklet"
+    "sourceLabel": "1998–99 sample booklet",
+    "solutionSteps": [
+      {
+        "title": "Include induced investment in the equilibrium slope",
+        "body": "With saving $S=sY$ and investment $I=I_0+vY$, equilibrium gives $(s-v)Y=I_0$. For a stable model with $0<v<s$, the autonomous-spending multiplier is $$\\frac1{s-v}>\\frac1s.$$ Choose B. Positive investment feedback magnifies the spending rounds; stability is needed for the standard positive multiplier comparison."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q8b",
@@ -159,7 +255,7 @@
     "originalPaperCode": "ME II",
     "stem": "A farmer owns100 units of rice, consumes some and sells the rest for vegetables. If rice price rises with vegetable price fixed, how does his budget line change?",
     "answer": "A:Rotates outward about the unchanged rice-axis intercept.",
-    "solution": "Let consumptions ber,v. The endowment budget isp_rr+p_vv=100p_r, orv=(p_r/p_v)(100−r). The rice intercept is always100, while the vegetable intercept100p_r/p_v rises withp_r. Thus the line rotates outward around the rice endowment point.",
+    "solution": "Write the endowment budget. If consumed rice is r and vegetables are v, the budget is p_rr+p_vv=100p_r, or \nv=(p_r)/(p_v)(100-r).\n A rise in rice price leaves the rice intercept 100 unchanged while increasing the vegetable intercept 100p_r/p_v. The line rotates outward about the rice endowment point: A.",
     "hint": "Account for the higher value of the rice endowment as well as its price.",
     "topic": "Microeconomics",
     "sourcePage": 9,
@@ -171,7 +267,13 @@
       "Unchanged",
       "Inward with unchanged rice-axis intercept"
     ],
-    "sourceLabel": "1998–99 sample booklet"
+    "sourceLabel": "1998–99 sample booklet",
+    "solutionSteps": [
+      {
+        "title": "Write the endowment budget",
+        "body": "If consumed rice is $r$ and vegetables are $v$, the budget is $p_rr+p_vv=100p_r$, or $$v=\\frac{p_r}{p_v}(100-r).$$ A rise in rice price leaves the rice intercept 100 unchanged while increasing the vegetable intercept $100p_r/p_v$. The line rotates outward about the rice endowment point: A."
+      }
+    ]
   },
   {
     "id": "1998-PEB-Q8c",
@@ -184,7 +286,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "A monopolist hasC=1.1+2Q and inverse demandP=4−Q. What is equilibrium output?",
     "answer": "B:1 if the fixed cost1.1 is unavoidable atQ0. A:0 if shutting down avoids that fixed cost.",
-    "solution": "For positive output profit is(4−Q)Q−1.1−2Q=2Q−Q²−1.1, maximized atQ1 with profit−.1. If the stated cost function also applies atQ0, shutdown profit is−1.1, so producing1 is better despite the accounting loss. If instead1.1 is an avoidable operating cost and no output incurs no cost, shutdown profit0 beats−.1 and equilibrium output is0. The source does not specify the fixed-cost treatment, so these economically different interpretations must be separated.",
+    "solution": "Find the best positive-output choice. The profit expression for positive production is \nπ(Q)=(4-Q)Q-(1.1+2Q)=2Q-Q^2-1.1.\n It is maximized at Q=1, where profit is -0.1. A loss at the positive-output optimum does not by itself establish shutdown; the shutdown payoff must also be specified.\n\nCompare the two fixed-cost conventions. If the stated fixed cost is unavoidable even at zero output, shutdown gives -1.1, so producing one unit is better and B applies. If producing zero avoids the 1.1 cost, shutdown gives zero and A applies. The source does not state avoidability, so it supports these conditional answers rather than a unique unqualified key. The review flag is retained.",
     "hint": "Compare the optimal positive-output profit with the correctly defined shutdown payoff.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -195,6 +297,16 @@
       "1",
       "2",
       "3"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Find the best positive-output choice",
+        "body": "The profit expression for positive production is $$\\pi(Q)=(4-Q)Q-(1.1+2Q)=2Q-Q^2-1.1.$$ It is maximized at $Q=1$, where profit is $-0.1$. A loss at the positive-output optimum does not by itself establish shutdown; the shutdown payoff must also be specified."
+      },
+      {
+        "title": "Compare the two fixed-cost conventions",
+        "body": "If the stated fixed cost is unavoidable even at zero output, shutdown gives $-1.1$, so producing one unit is better and B applies. If producing zero avoids the 1.1 cost, shutdown gives zero and A applies. The source does not state avoidability, so it supports these conditional answers rather than a unique unqualified key. The review flag is retained."
+      }
     ]
   },
   {
@@ -208,7 +320,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "In a simple Keynesian economyC=20+.9Y andI=G=20. Find equilibriumGDP.",
     "answer": "B:600.",
-    "solution": "Goods balanceY=C+I+G givesY=20+.9Y+20+20. Thus.1Y60 andY600. Autonomous expenditure is60 and the multiplier10.",
+    "solution": "Add all autonomous expenditure components. Goods balance is Y=C+I+G=20+0.9Y+20+20. Thus 0.1Y=60 and Y=600, option B. The autonomous consumption intercept counts in addition to investment and government spending; omitting it would give the wrong equilibrium.",
     "hint": "Add all three autonomous spending terms.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
@@ -219,6 +331,12 @@
       "600",
       "360",
       "540"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Add all autonomous expenditure components",
+        "body": "Goods balance is $Y=C+I+G=20+0.9Y+20+20$. Thus $0.1Y=60$ and $Y=600$, option B. The autonomous consumption intercept counts in addition to investment and government spending; omitting it would give the wrong equilibrium."
+      }
     ]
   },
   {
@@ -232,7 +350,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "There are100 barbers, each capable of100 haircuts daily. Initial demand2000−100p and equilibrium price10. Demand becomes3000−100p. With free entry/exit and other things unchanged, what happens to long-run price?",
     "answer": "C:Price stays10 in the usual constant-cost competitive-industry model.",
-    "solution": "Free entry drives long-run price to the minimum sustainable average cost. If firms have the same unchanged costs and input prices, that cost remains10 despite higher market demand. Quantity at that price rises from1000 to2000, supplied through entry or additional capacity utilization as appropriate. The number of barbers and their maximum capacity alone do not identify their cost curves; unchanged long-run price uses the standard constant-cost-industry interpretation of“other things unchanged”. If expansion changed input costs, a different price response could occur.",
+    "solution": "Use free entry and unchanged long-run unit costs. Under the intended constant-cost competitive-industry interpretation, free entry makes price equal the minimum sustainable average cost. If technology and input prices remain unchanged, that price stays 10. Demand at 10 rises from 1000 to 2000 haircuts, accommodated through industry adjustment rather than a permanent price increase. Choose C. The listed capacities alone do not identify costs, so this conclusion uses the standard “other things unchanged” cost assumption.",
     "hint": "Long-run free-entry price is governed by costs rather than demand alone.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -243,6 +361,12 @@
       "Rises but may not double",
       "Unchanged",
       "Falls to5"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use free entry and unchanged long-run unit costs",
+        "body": "Under the intended constant-cost competitive-industry interpretation, free entry makes price equal the minimum sustainable average cost. If technology and input prices remain unchanged, that price stays 10. Demand at 10 rises from 1000 to 2000 haircuts, accommodated through industry adjustment rather than a permanent price increase. Choose C. The listed capacities alone do not identify costs, so this conclusion uses the standard “other things unchanged” cost assumption."
+      }
     ]
   },
   {
@@ -256,7 +380,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "A competitive firm in short-run equilibrium uses variable inputA and fixed inputB. Which holds: (A)P=MC; (B)P=price(A)/MP_A; (C)P>AVC; (D)all?",
     "answer": "IntendedD for an active interior firm strictly above shutdown. At the shutdown boundaryP=AVC, the strict inequalityC fails.",
-    "solution": "For a differentiable active firm choosing an interior output, profit maximization givesP=MC. With one variable input, an extra output unit costsw_A/MP_A, soMC=w_A/MP_A andB is the same marginal condition. Operating requiresP≥AVC at the chosen output, with equality possible when the firm is indifferent to shutdown. ThusP>AVC andD require excluding that boundary. A firm in a zero-output short-run equilibrium need not satisfy the interior equalities either. The source does not state an active-above-shutdown assumption, so an unconditional all-of-the-above key is too strong.",
+    "solution": "Identify the interior marginal conditions. For an active differentiable competitive firm, P=MC. With one variable input A at price w_A, an additional output unit requires 1/MP_A input units, giving MC=w_A/MP_A. Thus A and B express the same interior optimality condition.\n\nCheck the strict shutdown inequality. Operating requires P≥ AVC at the chosen output, not always P>AVC. Equality is possible at shutdown indifference, so C and consequently “all of the above” need the additional strictly-above-shutdown assumption. A zero-output equilibrium need not satisfy the interior equalities either. D is the intended active-interior answer, but the record remains flagged because the source does not state those qualifications.",
     "hint": "Check the weak shutdown inequality before treating it as strict.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -267,6 +391,16 @@
       "P=price ofA/MP_A",
       "P>AVC",
       "All of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Identify the interior marginal conditions",
+        "body": "For an active differentiable competitive firm, $P=MC$. With one variable input A at price $w_A$, an additional output unit requires $1/MP_A$ input units, giving $MC=w_A/MP_A$. Thus A and B express the same interior optimality condition."
+      },
+      {
+        "title": "Check the strict shutdown inequality",
+        "body": "Operating requires $P\\ge AVC$ at the chosen output, not always $P>AVC$. Equality is possible at shutdown indifference, so C and consequently “all of the above” need the additional strictly-above-shutdown assumption. A zero-output equilibrium need not satisfy the interior equalities either. D is the intended active-interior answer, but the record remains flagged because the source does not state those qualifications."
+      }
     ]
   },
   {
@@ -280,7 +414,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "In a below-full-employment economy, rich households save a higher fraction than poor households and investment is autonomous. Redistribute income from rich to poor. What happens to aggregate saving and income in the new simple-Keynesian equilibrium?",
     "answer": "D:None of the listed combinations. Income rises but equilibrium aggregate saving remains equal to fixed investment.",
-    "solution": "At a given income the redistribution lowers desired saving and raises consumption. With idle resources, the higher spending raises equilibrium income. Yet final goods-market equilibrium still requires total savingS=I, and autonomous investment has not changed. Thus income rises until aggregate saving returns to the same investment level; it neither rises nor falls in the new equilibrium. OptionsA,B andC all incorrectly assert a saving change.",
+    "solution": "Distinguish desired saving at old income from equilibrium saving. Redistributing income toward poorer, lower-saving households raises consumption at the original income. In a below-full-employment Keynesian model, this increases equilibrium output. However final goods equilibrium still requires S=I, and autonomous investment is unchanged. Income therefore rises while total equilibrium saving remains fixed. None of A–C states that combination, so choose D.",
     "hint": "Distinguish the initial saving-schedule shift from the final equilibrium saving level.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
@@ -291,6 +425,12 @@
       "Saving falls and income rises",
       "Saving and income both rise",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Distinguish desired saving at old income from equilibrium saving",
+        "body": "Redistributing income toward poorer, lower-saving households raises consumption at the original income. In a below-full-employment Keynesian model, this increases equilibrium output. However final goods equilibrium still requires $S=I$, and autonomous investment is unchanged. Income therefore rises while total equilibrium saving remains fixed. None of A–C states that combination, so choose D."
+      }
     ]
   },
   {
@@ -304,7 +444,7 @@
     "sourceLabel": "1998–99 sample booklet",
     "stem": "In the historical question’s standard money-multiplier framework, a reduction in commercial banks’ cash reserve ratio would normally…",
     "answer": "B:Increase money supply.",
-    "solution": "A lower required-reserve ratio permits a given reserve base to support more deposits and lending, other things equal. In the simplest model with no currency leakage or excess reserves, the deposit multiplier is1/rr, so reducingrr raises it. Actual bank lending also depends on demand and other constraints, but the normal textbook direction is expansionary.",
+    "solution": "Apply the textbook reserve-multiplier direction. For a given reserve base, reducing the required cash reserve ratio allows banks to support more deposits and lending. In the simplest model the multiplier is 1/rr, increasing as rr falls. Thus the normal other-things-equal direction is an increase in money supply: B. Actual lending also depends on other constraints, but the historical question asks for the standard model's normal direction, not a claim about current RBI actions.",
     "hint": "Compare deposits supportable by a fixed reserve base.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
@@ -315,6 +455,12 @@
       "Increase money supply",
       "Have no effect on money supply",
       "Reduce commercial-bank profit"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Apply the textbook reserve-multiplier direction",
+        "body": "For a given reserve base, reducing the required cash reserve ratio allows banks to support more deposits and lending. In the simplest model the multiplier is $1/rr$, increasing as $rr$ falls. Thus the normal other-things-equal direction is an increase in money supply: B. Actual lending also depends on other constraints, but the historical question asks for the standard model's normal direction, not a claim about current RBI actions."
+      }
     ]
   }
 ]

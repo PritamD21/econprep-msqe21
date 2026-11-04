@@ -9,12 +9,26 @@
     "originalPaperCode": "ME II",
     "stem": "(a) A cake of size1 is divided among n>1 people. Is equal division the only Pareto-optimal allocation? (b) Classify these transactions for GDP and consumption/investment: paying someone for cooking and cleaning at home; buying a new car for personal use; flying Delhi–Kolkata to attend Durga Puja; buying100 company shares directly online; building a house.",
     "answer": "(a) No: every complete allocation is Pareto optimal if each person prefers more cake. (b) Paid domestic services, personal car and personal flight are consumption; share purchase is excluded as a financial transaction; new-house construction is residential investment.",
-    "solution": "(a) With strictly increasing individual utility in own cake, all allocations xᵢ≥0 with Σxᵢ=1 are efficient: giving someone more requires taking cake from someone else. Equal division is one efficient allocation, but so is giving all cake to one person. Equity and Pareto efficiency are different criteria. (b) Paid cooking/cleaning is a newly produced household service and counts as consumption, unlike unpaid own-household work. A new personal car is consumer-durable consumption; a leisure flight is service consumption. Buying existing or newly issued shares changes financial ownership and is not purchase of current final output; separately charged brokerage services can enter GDP. Construction of a new house is fixed residential investment, even when bought for the owner’s personal use. Imported content is offset through imports in domestic GDP.",
+    "solution": "Distinguish efficiency from equality. If each person strictly prefers more own cake, every allocation x_i≥0 with Σ_i x_i=1 is Pareto efficient. Giving one person more would require taking cake from somebody else. Equal division is therefore an efficient allocation, but giving all cake to one person is efficient too. A distributional fairness criterion is separate from Pareto efficiency.\n\nClassify purchases of current goods and services. Paid household cooking and cleaning are consumption services. A new car bought for personal use is consumption of a durable good, and the leisure flight is consumption of a transport service. Their inclusion concerns current production; any imported content is offset through the imports component of domestic GDP.\n\nSeparate financial assets from residential investment. Buying shares transfers financial claims and is not itself production of a current final good or service. A separately purchased brokerage service could count, but the value of the shares does not. Building a new house is residential fixed investment, even when the purchaser intends to live in it personally. The everyday word “investment” for shares is not the national-accounts expenditure category.",
     "hint": "Efficiency asks whether any improvement is possible, not whether shares are equal; distinguish real production from financial transactions.",
     "topic": "Microeconomics",
     "sourcePage": 6,
     "status": "verified",
-    "notes": "Subpart (b) is national-income accounting; ordinary domestic production and strictly increasing preferences in cake are assumed."
+    "notes": "Subpart (b) is national-income accounting; ordinary domestic production and strictly increasing preferences in cake are assumed.",
+    "solutionSteps": [
+      {
+        "title": "Distinguish efficiency from equality",
+        "body": "If each person strictly prefers more own cake, every allocation $x_i\\ge0$ with $\\sum_i x_i=1$ is Pareto efficient. Giving one person more would require taking cake from somebody else. Equal division is therefore an efficient allocation, but giving all cake to one person is efficient too. A distributional fairness criterion is separate from Pareto efficiency."
+      },
+      {
+        "title": "Classify purchases of current goods and services",
+        "body": "Paid household cooking and cleaning are consumption services. A new car bought for personal use is consumption of a durable good, and the leisure flight is consumption of a transport service. Their inclusion concerns current production; any imported content is offset through the imports component of domestic GDP."
+      },
+      {
+        "title": "Separate financial assets from residential investment",
+        "body": "Buying shares transfers financial claims and is not itself production of a current final good or service. A separately purchased brokerage service could count, but the value of the shares does not. Building a new house is residential fixed investment, even when the purchaser intends to live in it personally. The everyday word “investment” for shares is not the national-accounts expenditure category."
+      }
+    ]
   },
   {
     "id": "2005-PEB-Q2",
@@ -26,12 +40,30 @@
     "originalPaperCode": "ME II",
     "stem": "Roses must be sold on the day they bloom. Growing costs are already sunk; demand is P=α−Q, α>0. (a) A monopolist has1000 roses: find sales and price. (b) Ten sellers each have100 roses, α≥1100: find equilibrium. (c) Numerous price-taking sellers have1000 roses in total: find competitive sales and price.",
     "answer": "(a) Q=min(α/2,1000), P=α−Q. (b) Under capacity-constrained Cournot competition all sell100: Q1000,P=α−1000. (c) Q=min(α,1000), P=max(α−1000,0).",
-    "solution": "(a) With no avoidable growing cost, maximize (α−Q)Q over0≤Q≤1000; the unconstrained maximizer is α/2. (b) If each seller takes rival quantities as fixed, best response is qᵢ=min(100,max(0,(α−Q_−i)/2)). At rivals’ total900, α≥1100 implies the desired quantity is at least100, so all capacities bind. The symmetric equilibrium has total1000 and priceα−1000. (c) Price-taking sellers offer their available roses whenever price is positive. If α≥1000, all1000 sell atα−1000. If0<α<1000, market-clearing consumption isα at zero price, with surplus roses unsold or discarded. At α=1000 price is zero and full supply can be absorbed.",
+    "solution": "Treat the growing costs as sunk. The available roses have already been grown and have no value after today. The selling decision therefore maximizes current revenue subject to the number available; the historical growing cost is not a marginal cost of selling an additional rose today.\n\nSolve the single seller’s constrained problem. The monopolist chooses 0≤ Q≤1000 to maximize (α-Q)Q. The unconstrained maximum is at Q=α/2. Thus \nQ_M=min{α/2,1000}, P_M=α-Q_M,\n for α>0. When demand is sufficiently high, the physical stock rather than marginal revenue limits sales.\n\nCheck each strategic seller’s capacity. Under a Cournot interpretation, seller i chooses \nq_i=min{100,max[0,(α-Q_(-i))/(2)]}.\n If all other sellers supply 900, the best unconstrained quantity is (α-900)/2≥100 when α≥1100. Hence each sells all 100, giving total 1000 and price α-1000.\n\nCompare competitive sales. Price-taking sellers supply their available stock at a positive price. If α≥1000, all 1000 sell and P=α-1000. If 0<α<1000, demand can absorb only α at a nonnegative price: the price is zero and excess roses are unsold. The ten-seller strategic assumption is stated explicitly because the source does not name a game for that case.",
     "hint": "Sunk growing costs do not enter the day’s sales decision, but physical capacities do.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": "Part (b) uses the standard Cournot interpretation for ten strategic sellers; the source does not explicitly name their strategic choice variable."
+    "notes": "Part (b) uses the standard Cournot interpretation for ten strategic sellers; the source does not explicitly name their strategic choice variable.",
+    "solutionSteps": [
+      {
+        "title": "Treat the growing costs as sunk",
+        "body": "The available roses have already been grown and have no value after today. The selling decision therefore maximizes current revenue subject to the number available; the historical growing cost is not a marginal cost of selling an additional rose today."
+      },
+      {
+        "title": "Solve the single seller’s constrained problem",
+        "body": "The monopolist chooses $0\\le Q\\le1000$ to maximize $(\\alpha-Q)Q$. The unconstrained maximum is at $Q=\\alpha/2$. Thus $$Q_M=\\min\\{\\alpha/2,1000\\},\\qquad P_M=\\alpha-Q_M,$$ for $\\alpha>0$. When demand is sufficiently high, the physical stock rather than marginal revenue limits sales."
+      },
+      {
+        "title": "Check each strategic seller’s capacity",
+        "body": "Under a Cournot interpretation, seller $i$ chooses $$q_i=\\min\\left\\{100,\\max\\left[0,\\frac{\\alpha-Q_{-i}}2\\right]\\right\\}.$$ If all other sellers supply 900, the best unconstrained quantity is $(\\alpha-900)/2\\ge100$ when $\\alpha\\ge1100$. Hence each sells all 100, giving total 1000 and price $\\alpha-1000$."
+      },
+      {
+        "title": "Compare competitive sales",
+        "body": "Price-taking sellers supply their available stock at a positive price. If $\\alpha\\ge1000$, all 1000 sell and $P=\\alpha-1000$. If $0<\\alpha<1000$, demand can absorb only $\\alpha$ at a nonnegative price: the price is zero and excess roses are unsold. The ten-seller strategic assumption is stated explicitly because the source does not name a game for that case."
+      }
+    ]
   },
   {
     "id": "2005-PEB-Q3",
@@ -43,12 +75,30 @@
     "originalPaperCode": "ME II",
     "stem": "Laxmi buys rice, cabbage and potatoes. On very low-income days she buys only rice; she never buys vegetables without rice. When she buys vegetables, she chooses only the cheaper vegetable per kg. Vegetable prices vary; rice price is fixed. Give a suitable utility function and explain.",
     "answer": "One example is U(r,c,p)=r exp[β(c+p)], β>0, for nonnegative quantities.",
-    "solution": "For r>0 this represents the same preferences as log r+β(c+p). Cabbage and potatoes are perfect substitutes, so with unequal prices any vegetable spending goes to the cheaper one. Let its price be v and rice price be p_r. Maximize log r+βz subject to p_rr+vz=M. If M≤v/β, the optimum is r=M/p_r,z=0: low income goes entirely to rice. If M>v/β, the optimum is r=v/(βp_r)>0 and z=(M−v/β)/v>0. Zero rice yields U=0, whereas any positive rice with M>0 gives positive utility, so a vegetable-only bundle is never optimal. Equal vegetable prices allow either vegetable or mixtures; the source only requires choice of the cheaper when prices differ. This is an example, not a uniquely identified preference representation.",
+    "solution": "Construct a preference representation. Let r,c,p denote rice, cabbage and potatoes. One suitable utility is \nU(r,c,p)=rexp{β(c+p)}, β>0.\n For positive rice this is equivalent to log r+β(c+p). The two vegetables are perfect substitutes, while rice has arbitrarily high marginal utility near zero.\n\nExplain the choice of vegetable. Let v be the cheaper vegetable’s price and p_r the rice price. Because cabbage and potatoes enter as their sum, all vegetable spending goes to the cheaper one when prices differ. If they tie, either vegetable or a mixture is optimal; the observed rule for a strictly cheaper vegetable is satisfied.\n\nShow the low-income rice-only region. Writing total vegetables as z, maximize log r+β z subject to p_rr+vz=M. The interior condition gives r=v/(β p_r). This is affordable with positive vegetables only when M>v/β. Therefore \nM≤ v/β : r=M/p_r, z=0,; M>v/β : r=v/(β p_r), z=(M-v/β)/v.\n\nCheck that vegetables alone are never chosen. At zero rice the proposed utility is zero, whereas any affordable positive rice quantity gives positive utility when income is positive. Hence the consumer never chooses vegetables without rice. This construction reproduces the stated patterns, but the observations do not identify a unique utility function.",
     "hint": "Make vegetables perfect substitutes and give rice very high marginal utility near zero.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Construct a preference representation",
+        "body": "Let $r,c,p$ denote rice, cabbage and potatoes. One suitable utility is $$U(r,c,p)=r\\exp\\{\\beta(c+p)\\},\\qquad\\beta>0.$$ For positive rice this is equivalent to $\\log r+\\beta(c+p)$. The two vegetables are perfect substitutes, while rice has arbitrarily high marginal utility near zero."
+      },
+      {
+        "title": "Explain the choice of vegetable",
+        "body": "Let $v$ be the cheaper vegetable’s price and $p_r$ the rice price. Because cabbage and potatoes enter as their sum, all vegetable spending goes to the cheaper one when prices differ. If they tie, either vegetable or a mixture is optimal; the observed rule for a strictly cheaper vegetable is satisfied."
+      },
+      {
+        "title": "Show the low-income rice-only region",
+        "body": "Writing total vegetables as $z$, maximize $\\log r+\\beta z$ subject to $p_rr+vz=M$. The interior condition gives $r=v/(\\beta p_r)$. This is affordable with positive vegetables only when $M>v/\\beta$. Therefore $$\\begin{aligned}M\\le v/\\beta &: \\quad r=M/p_r,\\ z=0,\\\\M>v/\\beta &: \\quad r=v/(\\beta p_r),\\ z=(M-v/\\beta)/v.\\end{aligned}$$"
+      },
+      {
+        "title": "Check that vegetables alone are never chosen",
+        "body": "At zero rice the proposed utility is zero, whereas any affordable positive rice quantity gives positive utility when income is positive. Hence the consumer never chooses vegetables without rice. This construction reproduces the stated patterns, but the observations do not identify a unique utility function."
+      }
+    ]
   },
   {
     "id": "2005-PEB-Q4",
@@ -60,12 +110,22 @@
     "originalPaperCode": "ME II",
     "stem": "In a closed Keynesian economy without government, saving is initially proportional to income and the marginal propensity to invest is0.3. After a parallel downward shift in saving, equilibrium saving increases by12. Find the income change.",
     "answer": "Income rises by40.",
-    "solution": "At both equilibria saving equals investment. Therefore the observed change in equilibrium saving12 equals the change in investment. The investment schedule is unchanged and ΔI=.3ΔY, so ΔY=12/.3=40. The size of the downward saving shift and the initial saving propensity are not needed. A stable standard model would also require the marginal propensity to save to exceed .3.",
+    "solution": "Use equilibrium saving equal to investment. Before and after the saving-schedule shift, goods-market equilibrium requires S=I. Therefore an increase of 12 in equilibrium saving is also an increase of 12 in equilibrium investment. This is a comparison of final equilibria, not saving at the original income.\n\nApply the unchanged investment slope. Investment rises by 0.3 for each additional income unit, so \nΔ S=Δ I=0.3Δ Y=12.\n Hence Δ Y=40. The original saving propensity and the size of the parallel shift are not needed for this calculation. A standard stable model additionally requires the saving slope to exceed 0.3.",
     "hint": "Use equilibrium S=I before and after the shift.",
     "topic": "Macroeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Use equilibrium saving equal to investment",
+        "body": "Before and after the saving-schedule shift, goods-market equilibrium requires $S=I$. Therefore an increase of 12 in equilibrium saving is also an increase of 12 in equilibrium investment. This is a comparison of final equilibria, not saving at the original income."
+      },
+      {
+        "title": "Apply the unchanged investment slope",
+        "body": "Investment rises by 0.3 for each additional income unit, so $$\\Delta S=\\Delta I=0.3\\Delta Y=12.$$ Hence $\\Delta Y=40$. The original saving propensity and the size of the parallel shift are not needed for this calculation. A standard stable model additionally requires the saving slope to exceed 0.3."
+      }
+    ]
   },
   {
     "id": "2005-PEB-Q5",
@@ -77,11 +137,25 @@
     "originalPaperCode": "ME II",
     "stem": "IS–LM has C=a+bY, a>0,0<b<1, exogenous I₀,G₀ and money demand L=kY−gr, k,g>0. Nominal money is M₀, initial price P₀. (i) Set up equilibrium equations. (ii) How does a rise to P₁>P₀ affect Y and r?",
     "answer": "Y*=(a+I₀+G₀)/(1−b), unchanged by the price rise. r*=[kY*−M₀/P]/g rises by(M₀/g)(1/P₀−1/P₁).",
-    "solution": "IS is Y=a+bY+I₀+G₀, fixing output regardless of interest because investment is exogenous. It is vertical in the usual(Y,r) plane. LM is M₀/P=kY−gr, or r=(kY−M₀/P)/g. A higher price lowers real money supply and shifts LM upward/leftward. Its intersection with the vertical IS therefore has the same Y and a higher r, with the exact increase given above. There is no investment crowding-out channel in this particular specification.",
+    "solution": "Solve the goods market first. IS equilibrium is Y=a+bY+I_0+G_0. Because none of its spending components depends on interest, it fixes \nY^*=(a+I_0+G_0)/(1-b).\n Thus IS is vertical in a graph with output horizontal and interest vertical.\n\nUse money equilibrium to find interest. The LM equation is M_0/P=kY-gr, giving r=(kY-M_0/P)/g. Substituting the goods-market income identifies the equilibrium interest rate. The money equation adjusts interest to clear the market; it does not change the already fixed goods-market income in this specification.\n\nEvaluate the price increase exactly. When the price level rises from P_0 to P_1>P_0, real balances fall and LM shifts upward/leftward. The vertical IS keeps output unchanged, while \nΔ r=(M_0)/(g)((1)/(P_0)-(1)/(P_1))>0.\n There is no investment crowding-out feedback here because investment is explicitly exogenous.",
     "hint": "Notice that no goods-market component depends on interest.",
     "topic": "Macroeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Solve the goods market first",
+        "body": "IS equilibrium is $Y=a+bY+I_0+G_0$. Because none of its spending components depends on interest, it fixes $$Y^*=\\frac{a+I_0+G_0}{1-b}.$$ Thus IS is vertical in a graph with output horizontal and interest vertical."
+      },
+      {
+        "title": "Use money equilibrium to find interest",
+        "body": "The LM equation is $M_0/P=kY-gr$, giving $r=(kY-M_0/P)/g$. Substituting the goods-market income identifies the equilibrium interest rate. The money equation adjusts interest to clear the market; it does not change the already fixed goods-market income in this specification."
+      },
+      {
+        "title": "Evaluate the price increase exactly",
+        "body": "When the price level rises from $P_0$ to $P_1>P_0$, real balances fall and LM shifts upward/leftward. The vertical IS keeps output unchanged, while $$\\Delta r=\\frac{M_0}{g}\\left(\\frac1{P_0}-\\frac1{P_1}\\right)>0.$$ There is no investment crowding-out feedback here because investment is explicitly exogenous."
+      }
+    ]
   }
 ]

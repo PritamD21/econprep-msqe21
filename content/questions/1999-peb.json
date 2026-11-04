@@ -9,12 +9,30 @@
     "originalPaperCode": "ME II",
     "stem": "Murthy’s utility isf(√q₁+√q₂),f′>0, for idli and vara; only integer pieces are sold. Initial prices1,2. (a) He bought6 of each. Was this optimal within the same spending? Find the optimum. (b) Next day each item costs1.50. Can he attain the previous day’s optimal utility without spending more?",
     "answer": "(a) No; optimum is12 idli and3 vara, costing18. (b) Impossible within18. The best new affordable bundles are(6,6), below the previous optimum’s utility.",
-    "solution": "Becausef is increasing maximize√q₁+√q₂. The initial order costs18. The continuous first-order ratio givesq₁=4q₂; the budgetq₁+2q₂18 then gives(12,3), already integer and therefore the integer optimum. Its index is3√3≈5.196, above2√6≈4.899 from(6,6). At new equal prices1.50, spending18 permits at most12 pieces in total. Concavity makes their sum of roots largest at equal division(6,6), whose index2√6 remains below3√3. Hence the requested combination of satisfaction and spending is unattainable. At least14 total integer pieces are needed to weakly reach the old index, since even the most balanced13-piece split has√6+√7<3√3;14 balanced pieces cost21. Exact equality is possible with(12,3)or(3,12), costing22.50.",
+    "solution": "Remove the increasing outer transformation. Because f'>0, maximizing f(√(q_1)+√(q_2)) is equivalent to maximizing its inner index. The initial order costs 6+2(6)=18, so the comparison budget is q_1+2q_2≤18, with integer quantities.\n\nFind and verify the first-day optimum. The continuous interior condition is \n(1/(2√(q_1)))/(1/(2√(q_2)))=(1)/(2) ⇒ q_1=4q_2.\n Together with the binding budget this gives (q_1,q_2)=(12,3). The inner utility is strictly concave, so it is the continuous maximum. Since it is already an integer bundle, it is also the integer maximum. Its index is 3√(3), exceeding the initial order's 2√(6).\n\nCheck the second-day spending limit. At the new price 1.50 per piece, a budget of 18 permits at most 12 pieces in total. For any given total number of pieces, concavity of the square root makes the index greatest when the pieces are divided as equally as possible. Thus the best affordable order is (6,6), giving index 2√(6)<3√(3).\n\nExplain the infeasibility rather than inventing a bundle. No second-day order can provide the previous day's optimal satisfaction while spending at most 18. At least 14 integer pieces are needed even to weakly exceed the old index: the best 13-piece split gives √(6)+√(7)<3√(3), whereas 14 balanced pieces exceed it and cost 21. Exact equality is achieved by (12,3) or (3,12) at cost 22.50. The failure is a genuine feasibility result from the stated prices and indivisibility.",
     "hint": "Use monotone transformation, then respect the indivisible-piece budget.",
     "topic": "Microeconomics",
     "sourcePage": 8,
     "status": "verified",
-    "notes": "Visual inspection confirms the revised priceRs1.50, rather than1.60. The infeasibility in part(b) follows from the stated data."
+    "notes": "Visual inspection confirms the revised priceRs1.50, rather than1.60. The infeasibility in part(b) follows from the stated data.",
+    "solutionSteps": [
+      {
+        "title": "Remove the increasing outer transformation",
+        "body": "Because $f'>0$, maximizing $f(\\sqrt{q_1}+\\sqrt{q_2})$ is equivalent to maximizing its inner index. The initial order costs $6+2(6)=18$, so the comparison budget is $q_1+2q_2\\le18$, with integer quantities."
+      },
+      {
+        "title": "Find and verify the first-day optimum",
+        "body": "The continuous interior condition is $$\\frac{1/(2\\sqrt{q_1})}{1/(2\\sqrt{q_2})}=\\frac12\\quad\\Rightarrow\\quad q_1=4q_2.$$ Together with the binding budget this gives $(q_1,q_2)=(12,3)$. The inner utility is strictly concave, so it is the continuous maximum. Since it is already an integer bundle, it is also the integer maximum. Its index is $3\\sqrt3$, exceeding the initial order's $2\\sqrt6$."
+      },
+      {
+        "title": "Check the second-day spending limit",
+        "body": "At the new price 1.50 per piece, a budget of 18 permits at most 12 pieces in total. For any given total number of pieces, concavity of the square root makes the index greatest when the pieces are divided as equally as possible. Thus the best affordable order is $(6,6)$, giving index $2\\sqrt6<3\\sqrt3$."
+      },
+      {
+        "title": "Explain the infeasibility rather than inventing a bundle",
+        "body": "No second-day order can provide the previous day's optimal satisfaction while spending at most 18. At least 14 integer pieces are needed even to weakly exceed the old index: the best 13-piece split gives $\\sqrt6+\\sqrt7<3\\sqrt3$, whereas 14 balanced pieces exceed it and cost 21. Exact equality is achieved by $(12,3)$ or $(3,12)$ at cost 22.50. The failure is a genuine feasibility result from the stated prices and indivisibility."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q2",
@@ -26,12 +44,26 @@
     "originalPaperCode": "ME II",
     "stem": "Four sisters share farm output equally among those working. Output with1,2,3,4 sisters is1500,2500,3300,4000. Each may instead earn1110 in the city. How many migrate when maximizing(a) individual income,(b) family income?",
     "answer": "(a) Two migrate, two remain. (b) Three migrate, one remains.",
-    "solution": "Farm average incomes are1500,1250,1100,1000. At two farm workers each gets1250>1110 and will stay, while a migrant joining them would get1100<1110, so two on the farm is the individual-choice equilibrium. For family optimization compare total incomes: no farm workers4440; one farm worker1500+3·1110=4830; two2500+2·1110=4720; three3300+1110=4410; four4000. The maximum4830 uses one farm worker and three migrants. Equivalently the first worker’s marginal product1500 exceeds the city wage, while the second’s1000 does not.",
+    "solution": "Compute average farm earnings for private decisions. Sharing output equally gives farm incomes per worker of 1500, 1250, 1100 and 1000 when one through four sisters work. The city option is 1110. With two on the farm each earns 1250 and does not want to leave; a third entrant would earn only 1100 and does not want to join. Therefore two stay and two migrate in the individual-choice equilibrium.\n\nCompare total family incomes. For zero through four farm workers, total income including city earnings is \nn=0: 4440,; n=1: 1500+3(1110)=4830,; n=2: 2500+2(1110)=4720,; n=3: 3300+1110=4410,; n=4: 4000.\n The family optimum has only one sister farming and three migrating.\n\nExplain the difference between the criteria. A private entrant compares her farm average product with the city wage. The family instead compares each worker's marginal addition to farm output with the city earnings forgone. The second farm worker adds only 2500-1500=1000, below 1110, even though each of two farm workers receives 1250. This sharing externality explains the excessive farm employment under separate choices.",
     "hint": "Private entrants compare average product; the family compares marginal product.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Compute average farm earnings for private decisions",
+        "body": "Sharing output equally gives farm incomes per worker of 1500, 1250, 1100 and 1000 when one through four sisters work. The city option is 1110. With two on the farm each earns 1250 and does not want to leave; a third entrant would earn only 1100 and does not want to join. Therefore two stay and two migrate in the individual-choice equilibrium."
+      },
+      {
+        "title": "Compare total family incomes",
+        "body": "For zero through four farm workers, total income including city earnings is $$\\begin{aligned}n=0:&\\quad4440,\\\\n=1:&\\quad1500+3(1110)=4830,\\\\n=2:&\\quad2500+2(1110)=4720,\\\\n=3:&\\quad3300+1110=4410,\\\\n=4:&\\quad4000.\\end{aligned}$$ The family optimum has only one sister farming and three migrating."
+      },
+      {
+        "title": "Explain the difference between the criteria",
+        "body": "A private entrant compares her farm average product with the city wage. The family instead compares each worker's marginal addition to farm output with the city earnings forgone. The second farm worker adds only $2500-1500=1000$, below 1110, even though each of two farm workers receives 1250. This sharing externality explains the excessive farm employment under separate choices."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q3",
@@ -43,12 +75,26 @@
     "originalPaperCode": "ME II",
     "stem": "There are100 competitive firms withq=√x. Derive industry supply if(a) input supply is horizontal at input price10,(b) total input supply is vertical at100 units.",
     "answer": "(a) Q=5P, upward sloping. (b) Q100, vertical, with input priceP/2 for positive output priceP.",
-    "solution": "With input pricew, a firm choosesq to maximizePq−wq², givingq=P/(2w). In(a),w10, so eachq=P/20 and100 firms supplyQ5P. In(b), symmetry and diminishing returns allocate the100 input units equally: eachx1,q1, totalQ100. The firm conditionP/(2√x)=w givesw=P/2, so input price adjusts to the output price while total output remains fixed. Zero-price degeneracies aside, the output supply curve is vertical at100.",
+    "solution": "Derive supply conditional on the input price. With q=√(x), producing q requires x=q^2. At input price w, a competitive firm maximizes Pq-wq^2. The first-order condition P=2wq gives q=P/(2w), with a negative profit second derivative. Aggregate output from 100 identical firms is Q=50P/w.\n\nHold the input price fixed in case (a). At the horizontal input supply price w=10, industry supply becomes Q=5P. In a price-vertical, quantity-horizontal diagram this is upward sloping, with inverse supply P=Q/5. Each firm can expand input use at the unchanged input price, but its own diminishing product generates increasing marginal cost.\n\nClear the constrained input market in case (b). If total input is 100, symmetry and strict concavity allocate one unit to each firm. Each then produces one output unit, so total output is 100. The optimality condition implies w=P/2 at this allocation. The input price, rather than aggregate output, adjusts to output price. Hence the industry's supply is vertical at Q=100 for positive output prices.",
     "hint": "First derive input-price-conditional firm supply, then clear the input market.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Derive supply conditional on the input price",
+        "body": "With $q=\\sqrt x$, producing $q$ requires $x=q^2$. At input price $w$, a competitive firm maximizes $Pq-wq^2$. The first-order condition $P=2wq$ gives $q=P/(2w)$, with a negative profit second derivative. Aggregate output from 100 identical firms is $Q=50P/w$."
+      },
+      {
+        "title": "Hold the input price fixed in case (a)",
+        "body": "At the horizontal input supply price $w=10$, industry supply becomes $Q=5P$. In a price-vertical, quantity-horizontal diagram this is upward sloping, with inverse supply $P=Q/5$. Each firm can expand input use at the unchanged input price, but its own diminishing product generates increasing marginal cost."
+      },
+      {
+        "title": "Clear the constrained input market in case (b)",
+        "body": "If total input is 100, symmetry and strict concavity allocate one unit to each firm. Each then produces one output unit, so total output is 100. The optimality condition implies $w=P/2$ at this allocation. The input price, rather than aggregate output, adjusts to output price. Hence the industry's supply is vertical at $Q=100$ for positive output prices."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q4",
@@ -60,12 +106,22 @@
     "originalPaperCode": "ME II",
     "stem": "Industry inverse demand isP=a−Q and aggregate marginal costMC=Q,a>0. Compute monopoly deadweight loss relative to perfect competition with the same marginal-cost curve.",
     "answer": "Deadweight lossa²/36.",
-    "solution": "Competition equatesP=MC: a−Q=Q, givingQ_c=a/2. Monopoly equatesMR=a−2Q withMC=Q, givingQ_m=a/3. AtQ_m the demand-minus-cost gap isa−2a/3=a/3. The surplus-loss triangle has widtha/2−a/3=a/6 and heighta/3, soDWL=(1/2)(a/6)(a/3)=a²/36.",
+    "solution": "Find the competitive and monopoly quantities. Competition equates willingness to pay to marginal cost: a-Q=Q, giving Q_C=a/2. A monopolist instead equates marginal revenue a-2Q to marginal cost Q, giving Q_M=a/3. Using P=MC for the monopoly would miss its withholding incentive.\n\nIntegrate the missing gains from trade. Between Q_M and Q_C, marginal willingness to pay exceeds marginal cost by a-2Q. Thus \nDWL =∫_(a/3)^(a/2)(a-2Q) dQ; =(1)/(2)((a)/(2)-(a)/(3))((a)/(3))=(a^2)/(36).\n Monopoly profit transfers are not part of this efficiency loss; only the forgone surplus on unproduced units is lost.",
     "hint": "Compare marginal willingness to pay with marginal cost over the missing output range.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Find the competitive and monopoly quantities",
+        "body": "Competition equates willingness to pay to marginal cost: $a-Q=Q$, giving $Q_C=a/2$. A monopolist instead equates marginal revenue $a-2Q$ to marginal cost $Q$, giving $Q_M=a/3$. Using $P=MC$ for the monopoly would miss its withholding incentive."
+      },
+      {
+        "title": "Integrate the missing gains from trade",
+        "body": "Between $Q_M$ and $Q_C$, marginal willingness to pay exceeds marginal cost by $a-2Q$. Thus $$\\begin{aligned}DWL&=\\int_{a/3}^{a/2}(a-2Q)\\,dQ\\\\&=\\frac12\\left(\\frac a2-\\frac a3\\right)\\left(\\frac a3\\right)=\\frac{a^2}{36}.\\end{aligned}$$ Monopoly profit transfers are not part of this efficiency loss; only the forgone surplus on unproduced units is lost."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q5",
@@ -77,12 +133,30 @@
     "originalPaperCode": "ME II",
     "stem": "A farmer owns1000 bushels, with a physical return110 next year for each100 set aside. UtilityW=C₀C₁. (a) Without a capital market find consumption. (b) He can borrow any amount at5% annually only to finance current consumption: find consumption in both years.",
     "answer": "(a) C₀500,C₁550. (b) Set aside all1000, borrow11000/21≈523.810 for current consumption; C₀11000/21,C₁550.",
-    "solution": "(a) With investmentS, C₀1000−S,C₁1.1S; maximizing1.1S(1000−S) givesS500. (b) LetB be borrowing, restricted to consumption, so0≤S≤1000, C₀1000−S+B andC₁1.1S−1.05B. Present-value resources at the borrowing rate areC₀+C₁/1.05=1000+(1.1/1.05−1)S, increasing inS. Thus chooseS1000; this borrowing restriction prevents using loans to plant more than the original stock. ThenC₀B andC₁1100−1.05B. MaximizingB(1100−1.05B) givesB1100/2.1=11000/21, leavingC₁550. Current consumption rises while future consumption stays550. Without the “only current consumption” restriction, unlimited borrowing for a10% physical return against5% financing would create unbounded arbitrage.",
+    "solution": "Solve the no-borrowing case. With physical investment S, current and future consumption are 1000-S and 1.1S. Maximizing 1.1S(1000-S) gives S=500, so (C_0,C_1)=(500,550).\n\nApply the restriction on what borrowed resources may finance. Let borrowing be B≥0. It may finance current consumption but cannot be added to physical investment, so 0≤ S≤1000. The budgets are \nC_0=1000-S+B, C_1=1.1S-1.05B.\n Combining them at the financing rate gives C_0+C_1/1.05=1000+(1.1/1.05-1)S. Because the coefficient on S is positive, resources for consumption are maximized by setting aside all 1000 owned bushels.\n\nChoose consumption timing after the investment decision. With S=1000, current consumption equals borrowing and future consumption is 1100-1.05B. Maximize \nW(B)=B(1100-1.05B).\n The derivative 1100-2.1B vanishes at B=11000/21. This gives C_0=11000/21≈523.810 and C_1=550, both positive, so the solution is feasible.\n\nExplain why unlimited borrowing does not imply unlimited output here. The loan-use restriction prevents investing borrowed corn in the 10% physical-return technology. Without that restriction, financing at 5% and reinvesting at 10% would produce unbounded arbitrage in this linear model. With it, the original stock caps physical investment and yields the finite consumption solution above. The printed continuation is on PDF page 7, before the question's start in scan order.",
     "hint": "Use the borrowing-use restriction and optimize physical investment before consumption timing.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "status": "verified",
-    "notes": "Part(b) continues on PDFpage7, before the question’s start in the supplied scan order."
+    "notes": "Part(b) continues on PDFpage7, before the question’s start in the supplied scan order.",
+    "solutionSteps": [
+      {
+        "title": "Solve the no-borrowing case",
+        "body": "With physical investment $S$, current and future consumption are $1000-S$ and $1.1S$. Maximizing $1.1S(1000-S)$ gives $S=500$, so $(C_0,C_1)=(500,550)$."
+      },
+      {
+        "title": "Apply the restriction on what borrowed resources may finance",
+        "body": "Let borrowing be $B\\ge0$. It may finance current consumption but cannot be added to physical investment, so $0\\le S\\le1000$. The budgets are $$C_0=1000-S+B,\\qquad C_1=1.1S-1.05B.$$ Combining them at the financing rate gives $C_0+C_1/1.05=1000+(1.1/1.05-1)S$. Because the coefficient on $S$ is positive, resources for consumption are maximized by setting aside all 1000 owned bushels."
+      },
+      {
+        "title": "Choose consumption timing after the investment decision",
+        "body": "With $S=1000$, current consumption equals borrowing and future consumption is $1100-1.05B$. Maximize $$W(B)=B(1100-1.05B).$$ The derivative $1100-2.1B$ vanishes at $B=11000/21$. This gives $C_0=11000/21\\approx523.810$ and $C_1=550$, both positive, so the solution is feasible."
+      },
+      {
+        "title": "Explain why unlimited borrowing does not imply unlimited output here",
+        "body": "The loan-use restriction prevents investing borrowed corn in the 10% physical-return technology. Without that restriction, financing at 5% and reinvesting at 10% would produce unbounded arbitrage in this linear model. With it, the original stock caps physical investment and yields the finite consumption solution above. The printed continuation is on PDF page 7, before the question's start in scan order."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q6",
@@ -94,12 +168,30 @@
     "originalPaperCode": "ME II",
     "stem": "A small country faces world pricep_w. One domestic producer has increasingMC, sells both at home and abroad, and is protected against imports by tariffT per unit. Show that raisingT cannot lower exports. When are exports constant?",
     "answer": "With positive exports total output is fixed byMC=p_w. Higher tariff weakly raises domestic monopoly price, weakly lowers domestic sales and therefore weakly raises exports. Exports are constant once the import-price ceiling is nonbinding.",
-    "solution": "Because the producer exports at the fixed world price, an extra unit can always earnp_w; interior total productionQ* satisfiesMC(Q*)=p_w, independent ofT. For givenQ*, allocating a unit to the home market instead of exports has opportunity costp_w. The home monopoly therefore chooses its preferred price against domestic demand subject to the import-parity ceilingp_h≤p_w+T. RaisingT relaxes that ceiling: under ordinary downward demand and a single-peaked domestic profit objective, the home price weakly rises toward its unconstrained optimum and home sales weakly fall. Export quantityE=Q*−q_h thus cannot decline. If the ceiling already exceeds the unconstrained domestic monopoly price (MR_h=p_w), further tariff increases do not affecthome sales or exports. More generally unchanged domestic quantity, for example on an inelastic segment, also leaves exports constant.",
+    "solution": "Use exports to pin down total production. The producer can sell an additional unit abroad at the fixed world price p_w. With positive export sales and increasing marginal cost, its total output satisfies MC(Q^*)=p_w. Neither the world price nor the technology changes when the home tariff changes, so this total quantity is fixed while exports remain positive.\n\nTreat home sales as an allocation with an opportunity cost. Selling a unit domestically forgoes the world-price export receipt. The producer therefore chooses domestic sales to maximize domestic revenue minus p_wq_h, subject to the import-parity price ceiling p_h≤ p_w+T. The unconstrained domestic choice has MR_h=p_w.\n\nRelax the tariff ceiling and infer exports. With a regular downward home demand and single-peaked domestic objective, a higher tariff relaxes the ceiling and weakly raises the chosen home price toward its unconstrained monopoly level. Home quantity weakly falls. Since exports are E=Q^*-q_h, they weakly increase and cannot decrease.\n\nIdentify when exports remain unchanged. If the import-price ceiling is already above the unconstrained domestic monopoly price, further tariff increases do not change the home choice, so exports remain constant. Any other reason home quantity stays fixed also produces constant exports. The conclusion is conditional on positive exports being maintained and the standard price-ceiling interpretation of protection.",
     "hint": "Exports pin down marginal cost and total production; the tariff changes only the home allocation.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": "Uses the standard import-parity-price-ceiling and regular domestic-demand interpretation, with positive exports maintained."
+    "notes": "Uses the standard import-parity-price-ceiling and regular domestic-demand interpretation, with positive exports maintained.",
+    "solutionSteps": [
+      {
+        "title": "Use exports to pin down total production",
+        "body": "The producer can sell an additional unit abroad at the fixed world price $p_w$. With positive export sales and increasing marginal cost, its total output satisfies $MC(Q^*)=p_w$. Neither the world price nor the technology changes when the home tariff changes, so this total quantity is fixed while exports remain positive."
+      },
+      {
+        "title": "Treat home sales as an allocation with an opportunity cost",
+        "body": "Selling a unit domestically forgoes the world-price export receipt. The producer therefore chooses domestic sales to maximize domestic revenue minus $p_wq_h$, subject to the import-parity price ceiling $p_h\\le p_w+T$. The unconstrained domestic choice has $MR_h=p_w$."
+      },
+      {
+        "title": "Relax the tariff ceiling and infer exports",
+        "body": "With a regular downward home demand and single-peaked domestic objective, a higher tariff relaxes the ceiling and weakly raises the chosen home price toward its unconstrained monopoly level. Home quantity weakly falls. Since exports are $E=Q^*-q_h$, they weakly increase and cannot decrease."
+      },
+      {
+        "title": "Identify when exports remain unchanged",
+        "body": "If the import-price ceiling is already above the unconstrained domestic monopoly price, further tariff increases do not change the home choice, so exports remain constant. Any other reason home quantity stays fixed also produces constant exports. The conclusion is conditional on positive exports being maintained and the standard price-ceiling interpretation of protection."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q7",
@@ -111,12 +203,26 @@
     "originalPaperCode": "ME II",
     "stem": "There are100 identical competitive firms withq=x and price-taking behaviour in the input market. Derive industry supply if(a) input price is10 at any quantity,(b) aggregate input supply is fixed100.",
     "answer": "(a) Horizontal output supply atP10. (b) Vertical supply atQ100, with input price equal toP.",
-    "solution": "The technology converts one input unit into one output unit. At constant input pricew, profit is(P−w)q. ForP<w supply is0; forP=w any nonnegative output is optimal; forP>w there is no finite unconstrained optimum. Thus a competitive industry with perfectly elastic input supply at10 has horizontal supplyP10. If total input is fixed100 and positive output prices induce its full use, total output must equal100. Input-market competition bidsw up toP, leaving zero per-unit profit; distribution of the input among firms does not affect aggregate output because production is linear.",
+    "solution": "Use the one-for-one production technology. Because q=x, input price w is also unit output cost. A price-taking firm's profit is (P-w)q. If P<w it supplies zero; if P=w any nonnegative quantity is optimal; if P>w and inputs are unlimited there is no finite optimum. A constant-returns supply correspondence is therefore important here.\n\nDerive supply with elastic input availability. When the input is available at w=10 at any quantity, competitive output supply is horizontal at P=10. It is not an upward-sloping quadratic-cost supply curve: the firm has neither diminishing input productivity nor a rising input price in this case.\n\nDerive supply with fixed aggregate input. If the industry has exactly 100 units of input and positive output prices induce their full use, its output is exactly 100. Input-market bidding makes w=P, leaving zero per-unit profit. How those units are divided among firms does not affect total output under the linear technology. Industry supply is thus vertical at Q=100.",
     "hint": "With constant returns, output supply may be horizontal rather than a single-valued quantity function.",
     "topic": "Microeconomics",
     "sourcePage": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionSteps": [
+      {
+        "title": "Use the one-for-one production technology",
+        "body": "Because $q=x$, input price $w$ is also unit output cost. A price-taking firm's profit is $(P-w)q$. If $P<w$ it supplies zero; if $P=w$ any nonnegative quantity is optimal; if $P>w$ and inputs are unlimited there is no finite optimum. A constant-returns supply correspondence is therefore important here."
+      },
+      {
+        "title": "Derive supply with elastic input availability",
+        "body": "When the input is available at $w=10$ at any quantity, competitive output supply is horizontal at $P=10$. It is not an upward-sloping quadratic-cost supply curve: the firm has neither diminishing input productivity nor a rising input price in this case."
+      },
+      {
+        "title": "Derive supply with fixed aggregate input",
+        "body": "If the industry has exactly 100 units of input and positive output prices induce their full use, its output is exactly 100. Input-market bidding makes $w=P$, leaving zero per-unit profit. How those units are divided among firms does not affect total output under the linear technology. Industry supply is thus vertical at $Q=100$."
+      }
+    ]
   },
   {
     "id": "1999-PEB-Q8a",
@@ -128,7 +234,7 @@
     "originalPaperCode": "ME II",
     "stem": "In a simple Keynesian model, private investment increases with aggregate income. Relative to1/MPS, what is the autonomous-spending multiplier?",
     "answer": "B:Greater than1/MPS under the stable-equilibrium condition.",
-    "solution": "With savingS=sY and investmentI=I₀+vY,v>0, equilibrium gives(s−v)Y=I₀. The multiplier is1/(s−v), greater than1/s when0<v<s. Ifv≥s, the standard stable multiplier comparison fails; the conventional question implicitly assumes stability.",
+    "solution": "Include induced investment in the equilibrium slope. With saving S=sY and investment I=I_0+vY, equilibrium gives (s-v)Y=I_0. For a stable model with 0<v<s, the autonomous-spending multiplier is \n(1)/(s-v)>(1)/(s).\n Choose B. Positive investment feedback magnifies the spending rounds; stability is needed for the standard positive multiplier comparison.",
     "hint": "Induced investment adds a second positive expenditure feedback.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
@@ -139,6 +245,12 @@
       "Greater than1/MPS",
       "Equal to1/MPS",
       "Equal to1/(1−MPS)"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Include induced investment in the equilibrium slope",
+        "body": "With saving $S=sY$ and investment $I=I_0+vY$, equilibrium gives $(s-v)Y=I_0$. For a stable model with $0<v<s$, the autonomous-spending multiplier is $$\\frac1{s-v}>\\frac1s.$$ Choose B. Positive investment feedback magnifies the spending rounds; stability is needed for the standard positive multiplier comparison."
+      }
     ]
   },
   {
@@ -151,7 +263,7 @@
     "originalPaperCode": "ME II",
     "stem": "A farmer owns100 units of rice, consumes some and sells the rest for vegetables. If rice price rises with vegetable price fixed, how does his budget line change?",
     "answer": "A:Rotates outward about the unchanged rice-axis intercept.",
-    "solution": "Let consumptions ber,v. The endowment budget isp_rr+p_vv=100p_r, orv=(p_r/p_v)(100−r). The rice intercept is always100, while the vegetable intercept100p_r/p_v rises withp_r. Thus the line rotates outward around the rice endowment point.",
+    "solution": "Write the endowment budget. If consumed rice is r and vegetables are v, the budget is p_rr+p_vv=100p_r, or \nv=(p_r)/(p_v)(100-r).\n A rise in rice price leaves the rice intercept 100 unchanged while increasing the vegetable intercept 100p_r/p_v. The line rotates outward about the rice endowment point: A.",
     "hint": "Account for the higher value of the rice endowment as well as its price.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -162,6 +274,12 @@
       "Outward with unchanged vegetable-axis intercept",
       "Unchanged",
       "Inward with unchanged rice-axis intercept"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Write the endowment budget",
+        "body": "If consumed rice is $r$ and vegetables are $v$, the budget is $p_rr+p_vv=100p_r$, or $$v=\\frac{p_r}{p_v}(100-r).$$ A rise in rice price leaves the rice intercept 100 unchanged while increasing the vegetable intercept $100p_r/p_v$. The line rotates outward about the rice endowment point: A."
+      }
     ]
   },
   {
@@ -174,7 +292,7 @@
     "originalPaperCode": "ME II",
     "stem": "A new firm sells50000 of output and carries7000 of unsold finished goods into next year. It buys30000 of intermediate goods, of which2000 remain unused. Find value added.",
     "answer": "D:29000.",
-    "solution": "Output produced is sales plus finished-goods inventory increase50000+7000=57000. Intermediate goods actually used cost30000−2000=28000; the unused stock is not current intermediate consumption. Value added is57000−28000=29000.",
+    "solution": "Measure output produced and inputs actually used. Production value is sales plus the finished-goods inventory increase: 50000+7000=57000. Intermediate consumption is purchases minus unused input inventory: 30000-2000=28000. Value added is therefore \n57000-28000=29000,\n option D. Neither sales alone nor intermediate purchases alone is the correct flow for this calculation.",
     "hint": "Measure production rather than sales, and input use rather than purchases.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
@@ -185,6 +303,12 @@
       "25000",
       "27000",
       "29000"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Measure output produced and inputs actually used",
+        "body": "Production value is sales plus the finished-goods inventory increase: $50000+7000=57000$. Intermediate consumption is purchases minus unused input inventory: $30000-2000=28000$. Value added is therefore $$57000-28000=29000,$$ option D. Neither sales alone nor intermediate purchases alone is the correct flow for this calculation."
+      }
     ]
   },
   {
@@ -197,7 +321,7 @@
     "originalPaperCode": "ME II",
     "stem": "An economy has100 labour units and1000 capital units. Each output unit needs.5 labour and4 capital. Every household’sAPC=MPC1/2. What autonomous expenditure sustains maximum feasible output?",
     "answer": "A:100 output units.",
-    "solution": "The production limit ismin(100/.5,1000/4)=min(200,250)=200, with labour binding. Aggregate consumption isY/2. AtY200, planned expenditureY/2+A equalsY only ifA100. Equivalently, multiplier2 times autonomous expenditure100 generates200.",
+    "solution": "Find the binding productive capacity. Labour can support 100/0.5=200 output units, while capital can support 1000/4=250. Hence maximum feasible production is 200, limited by labour. With consumption Y/2, equilibrium at that output needs autonomous expenditure \nA=Y-C=200-100=100.\n Choose A. The spending multiplier alone does not determine the capacity ceiling.",
     "hint": "Find the binding factor capacity before applying the multiplier.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
@@ -208,6 +332,12 @@
       "125",
       "150",
       "200"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Find the binding productive capacity",
+        "body": "Labour can support $100/0.5=200$ output units, while capital can support $1000/4=250$. Hence maximum feasible production is 200, limited by labour. With consumption $Y/2$, equilibrium at that output needs autonomous expenditure $$A=Y-C=200-100=100.$$ Choose A. The spending multiplier alone does not determine the capacity ceiling."
+      }
     ]
   },
   {
@@ -220,7 +350,7 @@
     "originalPaperCode": "ME II",
     "stem": "A competitive firm pays output taxt and has costC(q,k)+K, withC_k<0,C_q>0,C_qq>0. If efficiency parameterk rises whilet is fixed, what is necessarily true?",
     "answer": "C:Optimized after-tax profit increases.",
-    "solution": "Profit isπ=(P−t)q−C(q,k)−K. Keeping the old quantity fixed, higherk lowers variable cost becauseC_k<0, increasing profit; reoptimization cannot reduce that gain. At a regular interior optimum the envelope theorem givesdπ*/dk=−C_k>0. The output response depends onC_qk, not specified, so total taxtq may rise or fall. Lower total cost does not by itself imply a lower marginal cost at every quantity.",
+    "solution": "Use the envelope theorem, not an assumed output change. After-tax profit is (P-t)q-C(q,k)-K. Since C_k<0, higher k lowers cost even if the firm keeps its previous feasible output; optimizing again cannot undo that gain. At a regular optimum, \n(dπ^*)/(dk)=-C_k>0.\n Thus C is necessarily correct. The output derivative depends on the unspecified cross derivative C_(qk), so the total output tax tq need not move in a known direction.",
     "hint": "Use the old feasible output as a comparison, or apply the envelope theorem.",
     "topic": "Microeconomics",
     "sourcePage": 10,
@@ -231,6 +361,12 @@
       "Must pay more tax",
       "After-tax profit increases",
       "None of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use the envelope theorem, not an assumed output change",
+        "body": "After-tax profit is $(P-t)q-C(q,k)-K$. Since $C_k<0$, higher $k$ lowers cost even if the firm keeps its previous feasible output; optimizing again cannot undo that gain. At a regular optimum, $$\\frac{d\\pi^*}{dk}=-C_k>0.$$ Thus C is necessarily correct. The output derivative depends on the unspecified cross derivative $C_{qk}$, so the total output tax $tq$ need not move in a known direction."
+      }
     ]
   },
   {
@@ -243,7 +379,7 @@
     "originalPaperCode": "ME II",
     "stem": "In a sealed-bid second-price(Vickrey) auction the highest bidder wins and pays the second-highest bid. A painting is worth20000 to you. What should you bid?",
     "answer": "C:20000.",
-    "solution": "Truthful bidding is weakly dominant with private values and standard quasilinear payoffs. If the highest rival bid is below20000, winning at that rival price gives positive surplus and bidding20000 wins. If it is above20000, winning would give negative surplus and bidding20000 loses. Misreporting can only switch a desirable win to a loss or an undesirable loss to a win; it does not lower the price conditional on already winning.",
+    "solution": "Match the bid to the private valuation. Bid 20000, option C. Conditional on winning a second-price auction, the amount paid is the highest rival bid, not one's own bid. If that rival bid is below 20000, winning creates nonnegative surplus; if it is above 20000, winning creates a loss. A truthful bid wins in the first case and loses in the second, while shading or overbidding can only create a wrong decision. This is the usual weakly dominant private-value strategy.",
     "hint": "Your own bid controls whether you win, not the price paid conditional on winning.",
     "topic": "Microeconomics",
     "sourcePage": 11,
@@ -254,6 +390,12 @@
       "19998",
       "20000",
       "20002"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Match the bid to the private valuation",
+        "body": "Bid 20000, option C. Conditional on winning a second-price auction, the amount paid is the highest rival bid, not one's own bid. If that rival bid is below 20000, winning creates nonnegative surplus; if it is above 20000, winning creates a loss. A truthful bid wins in the first case and loses in the second, while shading or overbidding can only create a wrong decision. This is the usual weakly dominant private-value strategy."
+      }
     ]
   },
   {
@@ -266,7 +408,7 @@
     "originalPaperCode": "ME II",
     "stem": "A person earnsY only in period1, savesS and consumes allS plus interest in period2. If the return rises from10% to12%, what happens to saving?",
     "answer": "D:It may rise, fall or stay unchanged.",
-    "solution": "Higher interest makes future consumption cheaper relative to current consumption, creating a substitution effect toward saving, but also makes a given retirement target cheaper to finance, creating an opposing income effect. Their net strength depends on preferences. Log utility gives a fixed saving share independent ofr. In theCRRA two-period model with only first-period income, saving increases for relative-risk-aversionθ<1 and decreases forθ>1. Thus each listed response is possible.",
+    "solution": "Separate the two interest-rate effects. A higher return makes future consumption cheaper relative to current consumption, inducing substitution toward saving. It also lets the person finance future consumption with less saving, creating an opposing income effect. Their relative strength is a preference property not supplied in the question. Log utility can make saving unchanged; CRRA examples with parameter below or above one make it rise or fall. Choose D: any of the three responses is possible.",
     "hint": "Interest changes both intertemporal prices and the value of future purchasing power.",
     "topic": "Microeconomics",
     "sourcePage": 11,
@@ -277,6 +419,12 @@
       "Falls",
       "Unchanged",
       "Any of the above"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Separate the two interest-rate effects",
+        "body": "A higher return makes future consumption cheaper relative to current consumption, inducing substitution toward saving. It also lets the person finance future consumption with less saving, creating an opposing income effect. Their relative strength is a preference property not supplied in the question. Log utility can make saving unchanged; CRRA examples with parameter below or above one make it rise or fall. Choose D: any of the three responses is possible."
+      }
     ]
   },
   {
@@ -289,7 +437,7 @@
     "originalPaperCode": "ME II",
     "stem": "Fill the blanks: In standard macroeconomic goods and money markets, ___ interest affects investment and consumption, while ___ interest affects real money demand.",
     "answer": "B:Real, nominal.",
-    "solution": "Investment and intertemporal consumption depend on the purchasing-power return, the real interest r≈i−expected inflation. Holding non-interest-bearing money instead of interest-bearing assets sacrifices the nominal interesti, so nominal interest is the opportunity cost entering real money demand.",
+    "solution": "Use the appropriate opportunity cost in each market. Investment and intertemporal consumption compare purchasing power across dates, so they depend on the real rate r≈ i-π^e. Holding non-interest-bearing money instead of interest-bearing nominal assets forgoes nominal interest i, making that the opportunity cost in real money demand. The blanks are therefore real, nominal: B. Calling money demand “real” does not make its interest argument the real rate.",
     "hint": "Distinguish purchasing-power borrowing cost from the opportunity cost of cash.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
@@ -300,6 +448,12 @@
       "Real,nominal",
       "Nominal,nominal",
       "Nominal,real"
+    ],
+    "solutionSteps": [
+      {
+        "title": "Use the appropriate opportunity cost in each market",
+        "body": "Investment and intertemporal consumption compare purchasing power across dates, so they depend on the real rate $r\\simeq i-\\pi^e$. Holding non-interest-bearing money instead of interest-bearing nominal assets forgoes nominal interest $i$, making that the opportunity cost in real money demand. The blanks are therefore real, nominal: B. Calling money demand “real” does not make its interest argument the real rate."
+      }
     ]
   }
 ]

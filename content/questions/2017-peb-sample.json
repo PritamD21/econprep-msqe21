@@ -18,7 +18,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "A higher output price against a fixed nominal wage lowers the real wage. With diminishing marginal labour productivity, firms hire more labour and produce more, so output supplied rises with price.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "A higher output price against a fixed nominal wage lowers the real wage. With diminishing marginal labour productivity, firms hire more labour and produce more, so output supplied rises with price."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q2",
@@ -32,14 +39,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. Anticipated; unanticipated",
-    "solution": "In the intended Lucas/new-classical signal-extraction model, real supply changes can affect output even when anticipated. Anticipated demand changes are incorporated into price expectations and have no real effect; unexpected demand changes can temporarily alter output because producers cannot immediately distinguish relative from aggregate price changes. Thus B is the intended pairing. With full contemporaneous information and a vertical supply curve, even unexpected pure demand shocks would not affect real output.",
+    "solution": "In the intended Lucas/new-classical signal-extraction model, real supply changes can affect output even when anticipated. Anticipated demand changes are incorporated into price expectations and have no real effect; unexpected demand changes can temporarily alter output because producers cannot immediately distinguish relative from aggregate price changes.\n\nThus B is the intended pairing. With full contemporaneous information and a vertical supply curve, even unexpected pure demand shocks would not affect real output.",
     "hint": "Distinguish real supply effects from surprise-demand effects in the new-classical model.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Answer B assumes the conventional imperfect-information new-classical interpretation; rational expectations and flexible prices alone do not specify it."
+    "notes": "Answer B assumes the conventional imperfect-information new-classical interpretation; rational expectations and flexible prices alone do not specify it.",
+    "solutionOriginal": "In the intended Lucas/new-classical signal-extraction model, real supply changes can affect output even when anticipated. Anticipated demand changes are incorporated into price expectations and have no real effect; unexpected demand changes can temporarily alter output because producers cannot immediately distinguish relative from aggregate price changes. Thus B is the intended pairing. With full contemporaneous information and a vertical supply curve, even unexpected pure demand shocks would not affect real output.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "In the intended Lucas/new-classical signal-extraction model, real supply changes can affect output even when anticipated. Anticipated demand changes are incorporated into price expectations and have no real effect; unexpected demand changes can temporarily alter output because producers cannot immediately distinguish relative from aggregate price changes.\n\nThus B is the intended pairing. With full contemporaneous information and a vertical supply curve, even unexpected pure demand shocks would not affect real output."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q3",
@@ -60,7 +74,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The standard liquidity-trap explanation is that at a sufficiently low interest rate, additional money is willingly held rather than reducing rates; LM is locally horizontal. None of A–C states this explanation. An interest-insensitive investment/vertical-IS mechanism can also make money ineffective, but is a different special case from the usual liquidity-trap answer.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The standard liquidity-trap explanation is that at a sufficiently low interest rate, additional money is willingly held rather than reducing rates; LM is locally horizontal. None of A–C states this explanation. An interest-insensitive investment/vertical-IS mechanism can also make money ineffective, but is a different special case from the usual liquidity-trap answer."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q4",
@@ -74,14 +95,25 @@
     ],
     "correctIndex": 3,
     "answer": "D. Higher saving has no impact on steady-state growth",
-    "solution": "The saving rate changes steady-state capital and income levels but not their long-run growth rates, so D is the robust intended answer. If growth means aggregate output, its balanced-growth rate is population growth plus exogenous technical progress, and changing population growth does change it. If growth means per-worker output, it is technical progress alone and C is also true. The source does not specify the growth variable, so its claimed single-answer format is ambiguous under the per-worker reading.",
+    "solution": "The saving rate changes steady-state capital and income levels but not their long-run growth rates, so D is the robust intended answer. If growth means aggregate output, its balanced-growth rate is population growth plus exogenous technical progress, and changing population growth does change it.\n\nIf growth means per-worker output, it is technical progress alone and C is also true. The source does not specify the growth variable, so its claimed single-answer format is ambiguous under the per-worker reading.\n\nD is intended; C is additionally correct if steady-state growth means per-capita growth.",
     "hint": "Separate level effects of saving from exogenous long-run growth.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "needs_review",
-    "notes": "D is intended; C is additionally correct if steady-state growth means per-capita growth."
+    "notes": "D is intended; C is additionally correct if steady-state growth means per-capita growth.",
+    "solutionOriginal": "The saving rate changes steady-state capital and income levels but not their long-run growth rates, so D is the robust intended answer. If growth means aggregate output, its balanced-growth rate is population growth plus exogenous technical progress, and changing population growth does change it. If growth means per-worker output, it is technical progress alone and C is also true. The source does not specify the growth variable, so its claimed single-answer format is ambiguous under the per-worker reading.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The saving rate changes steady-state capital and income levels but not their long-run growth rates, so D is the robust intended answer. If growth means aggregate output, its balanced-growth rate is population growth plus exogenous technical progress, and changing population growth does change it.\n\nIf growth means per-worker output, it is technical progress alone and C is also true. The source does not specify the growth variable, so its claimed single-answer format is ambiguous under the per-worker reading."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "D is intended; C is additionally correct if steady-state growth means per-capita growth."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q5",
@@ -95,14 +127,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. Decreasing; decreasing",
-    "solution": "For reserve ratio $r$ and currency ratio $c$, $m=(1+c)/(r+c)$. Its reserve derivative is $-(1+c)/(r+c)^2<0$. Its currency derivative is $(r-1)/(r+c)^2<0$ under the usual fractional-reserve condition $0\\leq r<1$. Hence both increases lower the multiplier.",
+    "solution": "For reserve ratio $r$ and currency ratio $c$, $m=(1+c)/(r+c)$. Its reserve derivative is $-(1+c)/(r+c)^2<0$.\n\nIts currency derivative is $(r-1)/(r+c)^2<0$ under the usual fractional-reserve condition $0\\leq r<1$. Hence both increases lower the multiplier.",
     "hint": "Differentiate the currency-adjusted multiplier.",
     "topic": "Macroeconomics",
     "sourcePage": 7,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For reserve ratio $r$ and currency ratio $c$, $m=(1+c)/(r+c)$. Its reserve derivative is $-(1+c)/(r+c)^2<0$. Its currency derivative is $(r-1)/(r+c)^2<0$ under the usual fractional-reserve condition $0\\leq r<1$. Hence both increases lower the multiplier.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For reserve ratio $r$ and currency ratio $c$, $m=(1+c)/(r+c)$. Its reserve derivative is $-(1+c)/(r+c)^2<0$.\n\nIts currency derivative is $(r-1)/(r+c)^2<0$ under the usual fractional-reserve condition $0\\leq r<1$. Hence both increases lower the multiplier."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q6",
@@ -123,7 +162,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options C,D continue on page 8."
+    "notes": "Options C,D continue on page 8.",
+    "solutionOriginal": "Vertical LM fixes output at the level consistent with the money market. The rightward IS shift raises the interest rate until interest-sensitive investment falls by the increase in government spending, leaving equilibrium income unchanged.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Vertical LM fixes output at the level consistent with the money market. The rightward IS shift raises the interest rate until interest-sensitive investment falls by the increase in government spending, leaving equilibrium income unchanged."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q7",
@@ -144,7 +190,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With vertical IS, goods-market equilibrium fixes output independently of the interest rate. Monetary expansion shifts LM down and changes the interest rate, but its intersection remains at the same output.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With vertical IS, goods-market equilibrium fixes output independently of the interest rate. Monetary expansion shifts LM down and changes the interest rate, but its intersection remains at the same output."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q8",
@@ -165,7 +218,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Fiscal expansion raises demand directly but can crowd out investment through higher interest rates. Smaller interest-rate movements and lower investment sensitivity both reduce this leakage, giving a larger output effect.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Fiscal expansion raises demand directly but can crowd out investment through higher interest rates. Smaller interest-rate movements and lower investment sensitivity both reduce this leakage, giving a larger output effect."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q9",
@@ -186,7 +246,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The Solow model specifies a fixed saving rate. In Ramsey/optimal growth, households choose consumption and saving to maximize intertemporal utility. Standard versions of both can take technical progress as exogenous, and capital utilization is not the defining distinction.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The Solow model specifies a fixed saving rate. In Ramsey/optimal growth, households choose consumption and saving to maximize intertemporal utility. Standard versions of both can take technical progress as exogenous, and capital utilization is not the defining distinction."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q10",
@@ -207,7 +274,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With $S=sY$ and fixed investment $\\bar I$, equilibrium is $Y=\\bar I/s$. Thus $dY/ds=-\\bar I/s^2<0$. The attempted extra saving reduces consumption demand and income, while actual aggregate saving remains equal to fixed investment.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With $S=sY$ and fixed investment $\\bar I$, equilibrium is $Y=\\bar I/s$. Thus $dY/ds=-\\bar I/s^2<0$. The attempted extra saving reduces consumption demand and income, while actual aggregate saving remains equal to fixed investment."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q11",
@@ -228,7 +302,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With unit land and labour, output is $K^2$ under A and $\\sqrt K$ under B. For $K>1$, A gives more; for $0<K<1$, B gives more. The stated initial stocks place R above and P below this threshold.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "With unit land and labour, output is $K^2$ under A and $\\sqrt K$ under B. For $K>1$, A gives more; for $0<K<1$, B gives more. The stated initial stocks place R above and P below this threshold."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q12",
@@ -242,14 +323,21 @@
     ],
     "correctIndex": 3,
     "answer": "D. $dK/dt=\\tfrac14[(K^R)^2+(K^P)^{1/2}-2(K^R+K^P)]$",
-    "solution": "R invests $(K_t^R)^2/2$ and P invests $\\sqrt{K_t^P}/2$. Full depreciation gives next-period average $K_{t+1}=[(K_t^R)^2+\\sqrt{K_t^P}]/4$. Subtracting current average $(K_t^R+K_t^P)/2$ gives option D. Strictly, the discrete-period model yields $K_{t+1}-K_t$, not the continuous derivative written in the options.",
+    "solution": "R invests $(K_t^R)^2/2$ and P invests $\\sqrt{K_t^P}/2$. Full depreciation gives next-period average $K_{t+1}=[(K_t^R)^2+\\sqrt{K_t^P}]/4$.\n\nSubtracting current average $(K_t^R+K_t^P)/2$ gives option D. Strictly, the discrete-period model yields $K_{t+1}-K_t$, not the continuous derivative written in the options.",
     "hint": "Average the two saving laws and subtract existing capital.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Source uses dK/dt for what its discrete timing makes a one-period capital change."
+    "notes": "Source uses dK/dt for what its discrete timing makes a one-period capital change.",
+    "solutionOriginal": "R invests $(K_t^R)^2/2$ and P invests $\\sqrt{K_t^P}/2$. Full depreciation gives next-period average $K_{t+1}=[(K_t^R)^2+\\sqrt{K_t^P}]/4$. Subtracting current average $(K_t^R+K_t^P)/2$ gives option D. Strictly, the discrete-period model yields $K_{t+1}-K_t$, not the continuous derivative written in the options.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "R invests $(K_t^R)^2/2$ and P invests $\\sqrt{K_t^P}/2$. Full depreciation gives next-period average $K_{t+1}=[(K_t^R)^2+\\sqrt{K_t^P}]/4$.\n\nSubtracting current average $(K_t^R+K_t^P)/2$ gives option D. Strictly, the discrete-period model yields $K_{t+1}-K_t$, not the continuous derivative written in the options."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q13",
@@ -263,14 +351,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. R income grows perpetually while P income approaches a constant",
-    "solution": "For R, $K_{t+1}=K_t^2/2$ and $K_0>2$, so capital rises without bound and stays above the technology threshold. For P, $K_{t+1}=\\sqrt{K_t}/2$ maps $(0,1)$ into $(0,1/2)$ and has positive fixed point $K^*=1/4$. Taking logs gives $\\ln K_{t+1}=-\\ln2+\\tfrac12\\ln K_t$, a contraction toward $\\ln(1/4)$. P output therefore approaches $\\sqrt{1/4}=1/2$, whether the initial path rises or falls.",
+    "solution": "For R, $K_{t+1}=K_t^2/2$ and $K_0>2$, so capital rises without bound and stays above the technology threshold. For P, $K_{t+1}=\\sqrt{K_t}/2$ maps $(0,1)$ into $(0,1/2)$ and has positive fixed point $K^*=1/4$.\n\nTaking logs gives $\\ln K_{t+1}=-\\ln2+\\tfrac12\\ln K_t$, a contraction toward $\\ln(1/4)$. P output therefore approaches $\\sqrt{1/4}=1/2$, whether the initial path rises or falls.",
     "hint": "Find the fixed points of the separate capital laws.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For R, $K_{t+1}=K_t^2/2$ and $K_0>2$, so capital rises without bound and stays above the technology threshold. For P, $K_{t+1}=\\sqrt{K_t}/2$ maps $(0,1)$ into $(0,1/2)$ and has positive fixed point $K^*=1/4$. Taking logs gives $\\ln K_{t+1}=-\\ln2+\\tfrac12\\ln K_t$, a contraction toward $\\ln(1/4)$. P output therefore approaches $\\sqrt{1/4}=1/2$, whether the initial path rises or falls.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For R, $K_{t+1}=K_t^2/2$ and $K_0>2$, so capital rises without bound and stays above the technology threshold. For P, $K_{t+1}=\\sqrt{K_t}/2$ maps $(0,1)$ into $(0,1/2)$ and has positive fixed point $K^*=1/4$.\n\nTaking logs gives $\\ln K_{t+1}=-\\ln2+\\tfrac12\\ln K_t$, a contraction toward $\\ln(1/4)$. P output therefore approaches $\\sqrt{1/4}=1/2$, whether the initial path rises or falls."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q14",
@@ -284,14 +379,25 @@
     ],
     "correctIndex": 1,
     "answer": "Not determined as stated; B under the intended equal-price initial marginal-product comparison.",
-    "solution": "An unqualified choice cannot be determined because the price and supply of land, capital price, and timing of replacement after full depreciation are unspecified. The likely intended marginal comparison, at the initial stocks and equal unit prices, is B: under A with $N=L=1$, $MP_K/MP_N=4/K>1$ for $2<K_0^R<4$; under B the ratio is $1/K>1$ for $K_0^P<1$. But this is only an initial marginal comparison, not a complete end-of-period finite-investment problem. Changing the relative land price can reverse either choice.",
+    "solution": "An unqualified choice cannot be determined because the price and supply of land, capital price, and timing of replacement after full depreciation are unspecified. The likely intended marginal comparison, at the initial stocks and equal unit prices, is B: under A with $N=L=1$, $MP_K/MP_N=4/K>1$ for $2<K_0^R<4$; under B the ratio is $1/K>1$ for $K_0^P<1$.\n\nBut this is only an initial marginal comparison, not a complete end-of-period finite-investment problem. Changing the relative land price can reverse either choice.\n\nB is conditional intended answer, not determined by the literal data; land price and end-of-period investment timing missing.",
     "hint": "Compare marginal products per rupee, which requires factor prices.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "needs_review",
-    "notes": "B is conditional intended answer, not determined by the literal data; land price and end-of-period investment timing missing."
+    "notes": "B is conditional intended answer, not determined by the literal data; land price and end-of-period investment timing missing.",
+    "solutionOriginal": "An unqualified choice cannot be determined because the price and supply of land, capital price, and timing of replacement after full depreciation are unspecified. The likely intended marginal comparison, at the initial stocks and equal unit prices, is B: under A with $N=L=1$, $MP_K/MP_N=4/K>1$ for $2<K_0^R<4$; under B the ratio is $1/K>1$ for $K_0^P<1$. But this is only an initial marginal comparison, not a complete end-of-period finite-investment problem. Changing the relative land price can reverse either choice.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "An unqualified choice cannot be determined because the price and supply of land, capital price, and timing of replacement after full depreciation are unspecified. The likely intended marginal comparison, at the initial stocks and equal unit prices, is B: under A with $N=L=1$, $MP_K/MP_N=4/K>1$ for $2<K_0^R<4$; under B the ratio is $1/K>1$ for $K_0^P<1$.\n\nBut this is only an initial marginal comparison, not a complete end-of-period finite-investment problem. Changing the relative land price can reverse either choice."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "B is conditional intended answer, not determined by the literal data; land price and end-of-period investment timing missing."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q15",
@@ -305,14 +411,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. GDP and interest unchanged; currency depreciates",
-    "solution": "The world rate fixes domestic interest. With fixed real money supply, LM fixes output at that rate. Higher taxes lower consumption and shift IS left; depreciation raises net exports to offset the demand decline. Thus output and interest remain unchanged, while the currency depreciates.",
+    "solution": "The world rate fixes domestic interest. With fixed real money supply, LM fixes output at that rate.\n\nHigher taxes lower consumption and shift IS left; depreciation raises net exports to offset the demand decline. Thus output and interest remain unchanged, while the currency depreciates.",
     "hint": "Under a float the exchange rate absorbs a fiscal-demand shock.",
     "topic": "Macroeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The world rate fixes domestic interest. With fixed real money supply, LM fixes output at that rate. Higher taxes lower consumption and shift IS left; depreciation raises net exports to offset the demand decline. Thus output and interest remain unchanged, while the currency depreciates.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The world rate fixes domestic interest. With fixed real money supply, LM fixes output at that rate.\n\nHigher taxes lower consumption and shift IS left; depreciation raises net exports to offset the demand decline. Thus output and interest remain unchanged, while the currency depreciates."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q16",
@@ -333,7 +446,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The linear index $3x_1+2x_2$ gives equal value to $(2,0)$ and $(0,3)$. A is its square, an increasing transformation on nonnegative quantities; C is ten times the index minus a constant. B instead has complementary, L-shaped preferences and does not preserve the substitution tradeoff.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The linear index $3x_1+2x_2$ gives equal value to $(2,0)$ and $(0,3)$. A is its square, an increasing transformation on nonnegative quantities; C is ten times the index minus a constant. B instead has complementary, L-shaped preferences and does not preserve the substitution tradeoff."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q17",
@@ -347,14 +467,21 @@
     ],
     "correctIndex": 2,
     "answer": "C. Demand falls by 8",
-    "solution": "Initially $q_0=0.02(6000)-2(30)=60$. Slutsky compensation preserves affordability of that old bundle by adding $60(40-30)=600$ to income. Demand at new price and compensated income is $0.02(6600)-80=52$. Thus the Slutsky substitution effect is $52-60=-8$. The remaining income effect is $40-52=-12$.",
+    "solution": "Initially $q_0=0.02(6000)-2(30)=60$. Slutsky compensation preserves affordability of that old bundle by adding $60(40-30)=600$ to income.\n\nDemand at new price and compensated income is $0.02(6600)-80=52$. Thus the Slutsky substitution effect is $52-60=-8$.\n\nThe remaining income effect is $40-52=-12$.",
     "hint": "Compensate income by the price rise times the old quantity.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "C uses the finite Slutsky purchasing-power compensation, not exact Hicksian constant-utility compensation."
+    "notes": "C uses the finite Slutsky purchasing-power compensation, not exact Hicksian constant-utility compensation.",
+    "solutionOriginal": "Initially $q_0=0.02(6000)-2(30)=60$. Slutsky compensation preserves affordability of that old bundle by adding $60(40-30)=600$ to income. Demand at new price and compensated income is $0.02(6600)-80=52$. Thus the Slutsky substitution effect is $52-60=-8$. The remaining income effect is $40-52=-12$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Initially $q_0=0.02(6000)-2(30)=60$. Slutsky compensation preserves affordability of that old bundle by adding $60(40-30)=600$ to income.\n\nDemand at new price and compensated income is $0.02(6600)-80=52$. Thus the Slutsky substitution effect is $52-60=-8$.\n\nThe remaining income effect is $40-52=-12$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q18",
@@ -368,14 +495,25 @@
     ],
     "correctIndex": 2,
     "answer": "Exact rate 17/83 ≈ 20.48%; C is the closest intended option.",
-    "solution": "The interior Euler condition is $[1/(2\\sqrt{c_1})]/[0.83/(2\\sqrt{c_2})]=1+r$. At equal consumption this gives $1+r=1/0.83$, so $r=17/83\\approx0.204819$. C (20%) is the intended rounded option, but none is exactly correct for the printed coefficient 0.83. The income ratio affects the equal-consumption level, not this marginal condition.",
+    "solution": "The interior Euler condition is $[1/(2\\sqrt{c_1})]/[0.83/(2\\sqrt{c_2})]=1+r$. At equal consumption this gives $1+r=1/0.83$, so $r=17/83\\approx0.204819$.\n\nC (20%) is the intended rounded option, but none is exactly correct for the printed coefficient 0.83. The income ratio affects the equal-consumption level, not this marginal condition.\n\nNo exact listed answer; 0.20 approximates 17/83. If coefficient had been 5/6, exactly 0.20 would follow.",
     "hint": "Set the marginal rate of substitution equal to the gross return.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "needs_review",
-    "notes": "No exact listed answer; 0.20 approximates 17/83. If coefficient had been 5/6, exactly 0.20 would follow."
+    "notes": "No exact listed answer; 0.20 approximates 17/83. If coefficient had been 5/6, exactly 0.20 would follow.",
+    "solutionOriginal": "The interior Euler condition is $[1/(2\\sqrt{c_1})]/[0.83/(2\\sqrt{c_2})]=1+r$. At equal consumption this gives $1+r=1/0.83$, so $r=17/83\\approx0.204819$. C (20%) is the intended rounded option, but none is exactly correct for the printed coefficient 0.83. The income ratio affects the equal-consumption level, not this marginal condition.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The interior Euler condition is $[1/(2\\sqrt{c_1})]/[0.83/(2\\sqrt{c_2})]=1+r$. At equal consumption this gives $1+r=1/0.83$, so $r=17/83\\approx0.204819$.\n\nC (20%) is the intended rounded option, but none is exactly correct for the printed coefficient 0.83. The income ratio affects the equal-consumption level, not this marginal condition."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "No exact listed answer; 0.20 approximates 17/83. If coefficient had been 5/6, exactly 0.20 would follow."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q19",
@@ -396,7 +534,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Options on page 11."
+    "notes": "Options on page 11.",
+    "solutionOriginal": "Tenants demand $114-4(10)=74$ apartments. To supply 74, landlords must receive effective rent satisfying $18+2p_s=74$, giving $p_s=28$. The subsidy is the difference between this receipt and the tenant price: $28-10=18$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Tenants demand $114-4(10)=74$ apartments. To supply 74, landlords must receive effective rent satisfying $18+2p_s=74$, giving $p_s=28$. The subsidy is the difference between this receipt and the tenant price: $28-10=18$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q20",
@@ -417,7 +562,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Scaling both inputs by $t$ multiplies output by $t^{0.70-0.30}=t^{0.40}$, so returns to scale decrease. Holding $y>0$ fixed, $f_{xx}=0.70(-0.30)x^{-1.30}y^{-0.30}<0$, so marginal product of x diminishes.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Scaling both inputs by $t$ multiplies output by $t^{0.70-0.30}=t^{0.40}$, so returns to scale decrease. Holding $y>0$ fixed, $f_{xx}=0.70(-0.30)x^{-1.30}y^{-0.30}<0$, so marginal product of x diminishes."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q21",
@@ -438,7 +590,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "C is the conditional efficient proportion for positive production; zero/unbounded scale cases depend on output price."
+    "notes": "C is the conditional efficient proportion for positive production; zero/unbounded scale cases depend on output price.",
+    "solutionOriginal": "For positive cost-minimizing production, $MP_1/MP_2=x_2/x_1$ equals the factor-price ratio $8/16=1/2$, so $x_1=2x_2$. The output price determines whether the firm produces and at what scale, not this efficient positive-production input ratio. With constant returns, existence of finite positive profit maximization also depends on output price relative to unit cost.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For positive cost-minimizing production, $MP_1/MP_2=x_2/x_1$ equals the factor-price ratio $8/16=1/2$, so $x_1=2x_2$. The output price determines whether the firm produces and at what scale, not this efficient positive-production input ratio. With constant returns, existence of finite positive profit maximization also depends on output price relative to unit cost."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q22",
@@ -459,7 +618,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Invert supply to obtain marginal cost $MC(q)=2q$ on the active branch. Integrating from zero to 3 gives $VC(3)=\\int_0^3 2q\\,dq=9$, using zero variable cost at zero output.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Invert supply to obtain marginal cost $MC(q)=2q$ on the active branch. Integrating from zero to 3 gives $VC(3)=\\int_0^3 2q\\,dq=9$, using zero variable cost at zero output."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q23",
@@ -473,14 +639,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. Government subsidy 59 with zero price can achieve a Pareto improvement",
-    "solution": "Maximum monopoly revenue is $7\\times7=49<54$, so without assistance the firm does not enter. At zero price quantity demanded is 14, and total gross consumer benefit is $\\int_0^{14}(14-q)dq=98$. A subsidy of 59 covers cost and gives the firm profit 5; financing 59 from beneficiaries leaves aggregate consumer gain 39. Thus entry at zero price can make the firm and consumers better off with an appropriate beneficiary-tax allocation. Social net surplus is $98-54=44>0$.",
+    "solution": "Maximum monopoly revenue is $7\\times7=49<54$, so without assistance the firm does not enter. At zero price quantity demanded is 14, and total gross consumer benefit is $\\int_0^{14}(14-q)dq=98$.\n\nA subsidy of 59 covers cost and gives the firm profit 5; financing 59 from beneficiaries leaves aggregate consumer gain 39. Thus entry at zero price can make the firm and consumers better off with an appropriate beneficiary-tax allocation.\n\nSocial net surplus is $98-54=44>0$.",
     "hint": "Compare setup cost with both monopoly revenue and total willingness to pay.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Pareto improvement requires appropriate financing from beneficiaries; an arbitrary tax incidence is not guaranteed to improve every individual."
+    "notes": "Pareto improvement requires appropriate financing from beneficiaries; an arbitrary tax incidence is not guaranteed to improve every individual.",
+    "solutionOriginal": "Maximum monopoly revenue is $7\\times7=49<54$, so without assistance the firm does not enter. At zero price quantity demanded is 14, and total gross consumer benefit is $\\int_0^{14}(14-q)dq=98$. A subsidy of 59 covers cost and gives the firm profit 5; financing 59 from beneficiaries leaves aggregate consumer gain 39. Thus entry at zero price can make the firm and consumers better off with an appropriate beneficiary-tax allocation. Social net surplus is $98-54=44>0$.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Maximum monopoly revenue is $7\\times7=49<54$, so without assistance the firm does not enter. At zero price quantity demanded is 14, and total gross consumer benefit is $\\int_0^{14}(14-q)dq=98$.\n\nA subsidy of 59 covers cost and gives the firm profit 5; financing 59 from beneficiaries leaves aggregate consumer gain 39. Thus entry at zero price can make the firm and consumers better off with an appropriate beneficiary-tax allocation.\n\nSocial net surplus is $98-54=44>0$."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q24",
@@ -501,7 +674,14 @@
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": "Local change and nonnegative marginal cost are the usual assumptions."
+    "notes": "Local change and nonnegative marginal cost are the usual assumptions.",
+    "solutionOriginal": "Market 2 demand is inelastic, so a small price increase raises revenue while reducing quantity and, with nonnegative marginal production cost, weakly reducing cost. Thus it raises profit. In market 1 demand is elastic, so the profitability of a price change depends on marginal cost; no universal instruction for p1 follows.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Market 2 demand is inelastic, so a small price increase raises revenue while reducing quantity and, with nonnegative marginal production cost, weakly reducing cost. Thus it raises profit. In market 1 demand is elastic, so the profitability of a price change depends on marginal cost; no universal instruction for p1 follows."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q25",
@@ -515,14 +695,25 @@
     ],
     "correctIndex": null,
     "answer": "6750; no listed option is correct.",
-    "solution": "For inverse demand $a-bQ$, interior Cournot output is $q_A=(a-2c_A+c_B)/(3b)$. Substitution gives $(360-30+75)/(0.06)=6750$. B produces $(360-150+15)/0.06=3750$, so the interior solution is valid. None of the printed options is 6750; changing the demand slope to 0.20 would give option A, but that is not the printed question.",
+    "solution": "For inverse demand $a-bQ$, interior Cournot output is $q_A=(a-2c_A+c_B)/(3b)$. Substitution gives $(360-30+75)/(0.06)=6750$.\n\nB produces $(360-150+15)/0.06=3750$, so the interior solution is valid. None of the printed options is 6750; changing the demand slope to 0.20 would give option A, but that is not the printed question.\n\nThe scan clearly prints 0.02 and all four options miss the resulting 6750. No guessed correction applied.",
     "hint": "Check the decimal in the demand slope before using the asymmetric Cournot formula.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "needs_review",
-    "notes": "The scan clearly prints 0.02 and all four options miss the resulting 6750. No guessed correction applied."
+    "notes": "The scan clearly prints 0.02 and all four options miss the resulting 6750. No guessed correction applied.",
+    "solutionOriginal": "For inverse demand $a-bQ$, interior Cournot output is $q_A=(a-2c_A+c_B)/(3b)$. Substitution gives $(360-30+75)/(0.06)=6750$. B produces $(360-150+15)/0.06=3750$, so the interior solution is valid. None of the printed options is 6750; changing the demand slope to 0.20 would give option A, but that is not the printed question.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "For inverse demand $a-bQ$, interior Cournot output is $q_A=(a-2c_A+c_B)/(3b)$. Substitution gives $(360-30+75)/(0.06)=6750$.\n\nB produces $(360-150+15)/0.06=3750$, so the interior solution is valid. None of the printed options is 6750; changing the demand slope to 0.20 would give option A, but that is not the printed question."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "The scan clearly prints 0.02 and all four options miss the resulting 6750. No guessed correction applied."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q26",
@@ -536,14 +727,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. Total milk production is 8000",
-    "solution": "The production frontier is $M/16+W/37=1000$, with marginal transformation ratio $37/16$ wheat per milk. At an interior efficient allocation, every positively consuming citizen has $W_i/M_i=37/16$, so the same ratio holds in aggregate. Substitution into the frontier gives $2M/16=1000$, hence $M=8000$ and $W=18500$. Pareto weights alter distribution, not this common homothetic production mix.",
+    "solution": "The production frontier is $M/16+W/37=1000$, with marginal transformation ratio $37/16$ wheat per milk. At an interior efficient allocation, every positively consuming citizen has $W_i/M_i=37/16$, so the same ratio holds in aggregate.\n\nSubstitution into the frontier gives $2M/16=1000$, hence $M=8000$ and $W=18500$. Pareto weights alter distribution, not this common homothetic production mix.",
     "hint": "Combine the common Cobb–Douglas consumption ratio with the linear production frontier.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The production frontier is $M/16+W/37=1000$, with marginal transformation ratio $37/16$ wheat per milk. At an interior efficient allocation, every positively consuming citizen has $W_i/M_i=37/16$, so the same ratio holds in aggregate. Substitution into the frontier gives $2M/16=1000$, hence $M=8000$ and $W=18500$. Pareto weights alter distribution, not this common homothetic production mix.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "The production frontier is $M/16+W/37=1000$, with marginal transformation ratio $37/16$ wheat per milk. At an interior efficient allocation, every positively consuming citizen has $W_i/M_i=37/16$, so the same ratio holds in aggregate.\n\nSubstitution into the frontier gives $2M/16=1000$, hence $M=8000$ and $W=18500$. Pareto weights alter distribution, not this common homothetic production mix."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q27",
@@ -557,14 +755,25 @@
     ],
     "correctIndex": null,
     "answer": "At the printed Rs. 50 cost: D1=D2=0; no listed option.",
-    "solution": "As printed, substituting $c=m-50d$ gives own driving utility $2m-95d-d^2-2h$, strictly decreasing for every $d\\geq0$. Thus private optimum is $D_1=0$, and adding external harms cannot raise efficient driving, so $D_2=0$. No option matches. If the intended cost were Rs. 0.50 rather than Rs. 50, private driving would be 2; obtaining efficient driving 1 would further require h to represent one other driver’s/common representative driving, rather than unspecified aggregate driving of all others. These are possible repairs, not the given statement.",
+    "solution": "As printed, substituting $c=m-50d$ gives own driving utility $2m-95d-d^2-2h$, strictly decreasing for every $d\\geq0$. Thus private optimum is $D_1=0$, and adding external harms cannot raise efficient driving, so $D_2=0$.\n\nNo option matches. If the intended cost were Rs. 0.50 rather than Rs. 50, private driving would be 2; obtaining efficient driving 1 would further require h to represent one other driver’s/common representative driving, rather than unspecified aggregate driving of all others.\n\nThese are possible repairs, not the given statement.\n\nPrinted Rs.50 and unspecified aggregation of others’ driving do not support the listed pairs. No silent decimal correction.",
     "hint": "Convert the money cost into utility units before differentiating.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "needs_review",
-    "notes": "Printed Rs.50 and unspecified aggregation of others’ driving do not support the listed pairs. No silent decimal correction."
+    "notes": "Printed Rs.50 and unspecified aggregation of others’ driving do not support the listed pairs. No silent decimal correction.",
+    "solutionOriginal": "As printed, substituting $c=m-50d$ gives own driving utility $2m-95d-d^2-2h$, strictly decreasing for every $d\\geq0$. Thus private optimum is $D_1=0$, and adding external harms cannot raise efficient driving, so $D_2=0$. No option matches. If the intended cost were Rs. 0.50 rather than Rs. 50, private driving would be 2; obtaining efficient driving 1 would further require h to represent one other driver’s/common representative driving, rather than unspecified aggregate driving of all others. These are possible repairs, not the given statement.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "As printed, substituting $c=m-50d$ gives own driving utility $2m-95d-d^2-2h$, strictly decreasing for every $d\\geq0$. Thus private optimum is $D_1=0$, and adding external harms cannot raise efficient driving, so $D_2=0$.\n\nNo option matches. If the intended cost were Rs. 0.50 rather than Rs. 50, private driving would be 2; obtaining efficient driving 1 would further require h to represent one other driver’s/common representative driving, rather than unspecified aggregate driving of all others.\n\nThese are possible repairs, not the given statement."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Printed Rs.50 and unspecified aggregation of others’ driving do not support the listed pairs. No silent decimal correction."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q28",
@@ -578,14 +787,21 @@
     ],
     "correctIndex": 1,
     "answer": "B. $H_1=14,H_2=16$",
-    "solution": "Joint profit is $22X-X^2+32Y-Y^2-XY$. FOCs are $2X+Y=22$, $X+2Y=32$, yielding $X=4,Y=14$; the negative-definite Hessian confirms the maximum. With compensation XY, developer profit becomes $32Y-Y^2$ and is maximized at $Y=16$, while the airport chooses $X=(22-Y)/2=3$. Thus $H_1=14,H_2=16$. Full damages remove the developer’s incentive to economize on exposure to the airport externality.",
+    "solution": "Joint profit is $22X-X^2+32Y-Y^2-XY$. FOCs are $2X+Y=22$, $X+2Y=32$, yielding $X=4,Y=14$; the negative-definite Hessian confirms the maximum.\n\nWith compensation XY, developer profit becomes $32Y-Y^2$ and is maximized at $Y=16$, while the airport chooses $X=(22-Y)/2=3$. Thus $H_1=14,H_2=16$.\n\nFull damages remove the developer’s incentive to economize on exposure to the airport externality.",
     "hint": "Write each party’s profit after the damage payment.",
     "topic": "Microeconomics",
     "sourcePage": 12,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Joint profit is $22X-X^2+32Y-Y^2-XY$. FOCs are $2X+Y=22$, $X+2Y=32$, yielding $X=4,Y=14$; the negative-definite Hessian confirms the maximum. With compensation XY, developer profit becomes $32Y-Y^2$ and is maximized at $Y=16$, while the airport chooses $X=(22-Y)/2=3$. Thus $H_1=14,H_2=16$. Full damages remove the developer’s incentive to economize on exposure to the airport externality.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Joint profit is $22X-X^2+32Y-Y^2-XY$. FOCs are $2X+Y=22$, $X+2Y=32$, yielding $X=4,Y=14$; the negative-definite Hessian confirms the maximum.\n\nWith compensation XY, developer profit becomes $32Y-Y^2$ and is maximized at $Y=16$, while the airport chooses $X=(22-Y)/2=3$. Thus $H_1=14,H_2=16$.\n\nFull damages remove the developer’s incentive to economize on exposure to the airport externality."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q29",
@@ -599,14 +815,21 @@
     ],
     "correctIndex": 0,
     "answer": "A. 80 square metres",
-    "solution": "Each individual’s marginal willingness to pay is $64/Y^2$. The Samuelson condition sums across 500 people: $500(64/Y^2)=5$. Thus $Y^2=6400$ and $Y=80$. Income levels permit financing without binding private-consumption constraints.",
+    "solution": "Each individual’s marginal willingness to pay is $64/Y^2$. The Samuelson condition sums across 500 people: $500(64/Y^2)=5$.\n\nThus $Y^2=6400$ and $Y=80$. Income levels permit financing without binding private-consumption constraints.",
     "hint": "Sum marginal willingness to pay vertically for a public good.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Each individual’s marginal willingness to pay is $64/Y^2$. The Samuelson condition sums across 500 people: $500(64/Y^2)=5$. Thus $Y^2=6400$ and $Y=80$. Income levels permit financing without binding private-consumption constraints.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Each individual’s marginal willingness to pay is $64/Y^2$. The Samuelson condition sums across 500 people: $500(64/Y^2)=5$.\n\nThus $Y^2=6400$ and $Y=80$. Income levels permit financing without binding private-consumption constraints."
+      }
+    ]
   },
   {
     "id": "2017-PEB-SAMPLE-Q30",
@@ -620,13 +843,20 @@
     ],
     "correctIndex": 2,
     "answer": "C. A straight line of slope 1/4 through the upper-right corner",
-    "solution": "Let total supplies be B and W and Akash receive $(b,w)$. His marginal substitution ratio is $6/24=1/4$. Akshey receives $(B-b,W-w)$ and has ratio $(W-w)/(B-b)$. Interior efficiency equates them, giving $w=W-B/4+b/4$, a straight line of slope 1/4 passing through $(B,W)$. Appropriate boundary pieces may complete the full contract curve; the question asks what it contains.",
+    "solution": "Let total supplies be B and W and Akash receive $(b,w)$. His marginal substitution ratio is $6/24=1/4$.\n\nAkshey receives $(B-b,W-w)$ and has ratio $(W-w)/(B-b)$. Interior efficiency equates them, giving $w=W-B/4+b/4$, a straight line of slope 1/4 passing through $(B,W)$.\n\nAppropriate boundary pieces may complete the full contract curve; the question asks what it contains.",
     "hint": "Equate substitution ratios using the other consumer’s remaining bundle.",
     "topic": "Microeconomics",
     "sourcePage": 13,
     "sourceFile": "ISI 2017 Sample.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Let total supplies be B and W and Akash receive $(b,w)$. His marginal substitution ratio is $6/24=1/4$. Akshey receives $(B-b,W-w)$ and has ratio $(W-w)/(B-b)$. Interior efficiency equates them, giving $w=W-B/4+b/4$, a straight line of slope 1/4 passing through $(B,W)$. Appropriate boundary pieces may complete the full contract curve; the question asks what it contains.",
+    "solutionSteps": [
+      {
+        "title": "Work through the calculation",
+        "body": "Let total supplies be B and W and Akash receive $(b,w)$. His marginal substitution ratio is $6/24=1/4$.\n\nAkshey receives $(B-b,W-w)$ and has ratio $(W-w)/(B-b)$. Interior efficiency equates them, giving $w=W-B/4+b/4$, a straight line of slope 1/4 passing through $(B,W)$.\n\nAppropriate boundary pieces may complete the full contract curve; the question asks what it contains."
+      }
+    ]
   }
 ]

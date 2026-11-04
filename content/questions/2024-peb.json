@@ -4,209 +4,378 @@
     "number": "1(a)",
     "stem": "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be a differentiable function. Show that there always exists a point $c>1$ such that $f(2)-2f(1)=cf'(c)-f(c)$. [4 marks]",
     "answer": "Such a point exists in $(1,2)$.",
-    "solution": "Put $K=f(2)-2f(1)$ and define $g(x)=(f(x)+K)/x$ on $[1,2]$. Then $g(1)=f(2)-f(1)=g(2)$. The function is continuous on $[1,2]$ and differentiable on $(1,2)$. By Rolle's theorem, some $c\\in(1,2)$ satisfies $g'(c)=0$. But $g'(x)=[xf'(x)-f(x)-K]/x^2$. Thus $cf'(c)-f(c)=K=f(2)-2f(1)$, as required.",
+    "solution": "The expression $xf'(x)-f(x)$ is the numerator obtained by differentiating $f(x)/x$. This suggests adding a constant before dividing, so that the new function has equal endpoint values. Write $K=f(2)-2f(1)$ and consider\n\n$$g(x)=\\frac{f(x)+K}{x},\\qquad g'(x)=\\frac{xf'(x)-f(x)-K}{x^2}.$$\n\nThe choice of K is deliberate: $g(1)=g(2)$. Since the interval does not contain zero, division by x creates no continuity or differentiability problem. A zero of $g'$ is exactly the identity we need, rather than merely an unrelated stationary point.\n\nPut $K=f(2)-2f(1)$ and define $g(x)=(f(x)+K)/x$ on $[1,2]$. Then $g(1)=f(2)-f(1)=g(2)$.\n\nThe function is continuous on $[1,2]$ and differentiable on $(1,2)$. By Rolle's theorem, some $c\\in(1,2)$ satisfies $g'(c)=0$.\n\nBut $g'(x)=[xf'(x)-f(x)-K]/x^2$. Thus $cf'(c)-f(c)=K=f(2)-2f(1)$, as required.",
     "hint": "Add a suitable constant to $f(x)$ and divide by $x$, so the new function has equal values at 1 and 2.",
     "topic": "Calculus",
     "sourcePage": 1,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Put $K=f(2)-2f(1)$ and define $g(x)=(f(x)+K)/x$ on $[1,2]$. Then $g(1)=f(2)-f(1)=g(2)$. The function is continuous on $[1,2]$ and differentiable on $(1,2)$. By Rolle's theorem, some $c\\in(1,2)$ satisfies $g'(c)=0$. But $g'(x)=[xf'(x)-f(x)-K]/x^2$. Thus $cf'(c)-f(c)=K=f(2)-2f(1)$, as required.",
+    "solutionSteps": [
+      {
+        "title": "Choose a function to which Rolle’s theorem applies",
+        "body": "The expression $xf'(x)-f(x)$ is the numerator obtained by differentiating $f(x)/x$. This suggests adding a constant before dividing, so that the new function has equal endpoint values. Write $K=f(2)-2f(1)$ and consider\n\n$$g(x)=\\frac{f(x)+K}{x},\\qquad g'(x)=\\frac{xf'(x)-f(x)-K}{x^2}.$$\n\nThe choice of K is deliberate: $g(1)=g(2)$. Since the interval does not contain zero, division by x creates no continuity or differentiability problem. A zero of $g'$ is exactly the identity we need, rather than merely an unrelated stationary point."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Put $K=f(2)-2f(1)$ and define $g(x)=(f(x)+K)/x$ on $[1,2]$. Then $g(1)=f(2)-f(1)=g(2)$.\n\nThe function is continuous on $[1,2]$ and differentiable on $(1,2)$. By Rolle's theorem, some $c\\in(1,2)$ satisfies $g'(c)=0$.\n\nBut $g'(x)=[xf'(x)-f(x)-K]/x^2$. Thus $cf'(c)-f(c)=K=f(2)-2f(1)$, as required."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q1b",
     "number": "1(b)",
     "stem": "Let $f:(a,b)\\to\\mathbb{R}$ have some $c\\in(a,b)$ satisfying $f(c)=\\max\\{f(x):x\\in(a,b)\\}$. Assume that the one-sided derivatives $f'_-(c)$ and $f'_+(c)$ exist. Show that $f'_-(c)\\geq0$ and $f'_+(c)\\leq0$. [8 marks]",
     "answer": "The left derivative is nonnegative and the right derivative is nonpositive.",
-    "solution": "Since $f(c)$ is a maximum, $f(c+h)-f(c)\\leq0$ for every sufficiently small $h$. For $h<0$, division by $h$ reverses the inequality, so $[f(c+h)-f(c)]/h\\geq0$. Passing to the left limit gives $f'_-(c)\\geq0$. For $h>0$ the quotient is nonpositive; passing to the right limit gives $f'_+(c)\\leq0$.",
+    "solution": "A maximum compares function values, while a derivative compares the resulting change with the change in the argument. At an interior maximum, the numerator $f(c+h)-f(c)$ is nonpositive on both sides. The denominator changes sign, which is the essential distinction:\n\n$$\\begin{aligned}h<0&:\\quad \\frac{f(c+h)-f(c)}h\\geq0,\\\\h>0&:\\quad \\frac{f(c+h)-f(c)}h\\leq0.\\end{aligned}$$\n\nTaking a limit preserves these weak inequalities. There is no need to assume the two one-sided derivatives coincide; a corner maximum can have a positive left derivative and a negative right derivative.\n\nSince $f(c)$ is a maximum, $f(c+h)-f(c)\\leq0$ for every sufficiently small $h$. For $h<0$, division by $h$ reverses the inequality, so $[f(c+h)-f(c)]/h\\geq0$.\n\nPassing to the left limit gives $f'_-(c)\\geq0$. For $h>0$ the quotient is nonpositive; passing to the right limit gives $f'_+(c)\\leq0$.",
     "hint": "Use the signs of the difference quotients on the two sides of a maximum.",
     "topic": "Calculus",
     "sourcePage": 1,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Since $f(c)$ is a maximum, $f(c+h)-f(c)\\leq0$ for every sufficiently small $h$. For $h<0$, division by $h$ reverses the inequality, so $[f(c+h)-f(c)]/h\\geq0$. Passing to the left limit gives $f'_-(c)\\geq0$. For $h>0$ the quotient is nonpositive; passing to the right limit gives $f'_+(c)\\leq0$.",
+    "solutionSteps": [
+      {
+        "title": "Read the sign of each difference quotient",
+        "body": "A maximum compares function values, while a derivative compares the resulting change with the change in the argument. At an interior maximum, the numerator $f(c+h)-f(c)$ is nonpositive on both sides. The denominator changes sign, which is the essential distinction:\n\n$$\\begin{aligned}h<0&:\\quad \\frac{f(c+h)-f(c)}h\\geq0,\\\\h>0&:\\quad \\frac{f(c+h)-f(c)}h\\leq0.\\end{aligned}$$\n\nTaking a limit preserves these weak inequalities. There is no need to assume the two one-sided derivatives coincide; a corner maximum can have a positive left derivative and a negative right derivative."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Since $f(c)$ is a maximum, $f(c+h)-f(c)\\leq0$ for every sufficiently small $h$. For $h<0$, division by $h$ reverses the inequality, so $[f(c+h)-f(c)]/h\\geq0$.\n\nPassing to the left limit gives $f'_-(c)\\geq0$. For $h>0$ the quotient is nonpositive; passing to the right limit gives $f'_+(c)\\leq0$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q1c",
     "number": "1(c)",
     "stem": "Let $f$ be continuous on $[0,1]$ and differentiable on $(0,1)$, with $f(0)=f(1)=0$. Assume that some $c\\in(0,1)$ satisfies $f(c)=1$. Prove that there exists $x_0\\in(0,1)$ such that $|f'(x_0)|>2$. [12 marks]",
     "answer": "There must be a derivative whose absolute value is strictly greater than 2.",
-    "solution": "Suppose, to the contrary, that $|f'(x)|\\leq2$ throughout $(0,1)$. The mean value theorem then gives $|f(y)-f(x)|\\leq2|y-x|$ for $x,y\\in[0,1]$. In particular $f(x)\\leq\\min\\{2x,2(1-x)\\}$. Because $f(c)=1$, necessarily $c=1/2$. If $0\\leq x\\leq1/2$, the same bound between $x$ and $1/2$ gives $1-f(x)\\leq2(1/2-x)$, hence $f(x)\\geq2x$. Therefore $f(x)=2x$ on this half-interval. Similarly $f(x)=2(1-x)$ on $[1/2,1]$. This function has left derivative 2 and right derivative -2 at $1/2$, contradicting differentiability there. The supposition is false, so some $|f'(x_0)|>2$.",
+    "solution": "A first application of the mean value theorem gives slopes $1/c$ on the way from 0 to 1, and $-1/(1-c)$ on the way back to zero. If $c\\ne1/2$, one of their absolute values already exceeds 2. The only difficult case is the exact midpoint. Merely finding slopes 2 and -2 does not yet prove the requested strict inequality.\n\nSuppose every derivative had absolute value at most 2. The mean value theorem would then make f globally 2-Lipschitz:\n\n$$|f(y)-f(x)|\\leq2|y-x|.$$\n\nAt the midpoint, using this bound both from the endpoints and from the peak forces equality everywhere, producing a tent-shaped graph. Its corner contradicts differentiability; this rules out the only case in which a weak bound could have been insufficient.\n\nSuppose, to the contrary, that $|f'(x)|\\leq2$ throughout $(0,1)$. The mean value theorem then gives $|f(y)-f(x)|\\leq2|y-x|$ for $x,y\\in[0,1]$.\n\nIn particular $f(x)\\leq\\min\\{2x,2(1-x)\\}$. Because $f(c)=1$, necessarily $c=1/2$.\n\nIf $0\\leq x\\leq1/2$, the same bound between $x$ and $1/2$ gives $1-f(x)\\leq2(1/2-x)$, hence $f(x)\\geq2x$. Therefore $f(x)=2x$ on this half-interval.\n\nSimilarly $f(x)=2(1-x)$ on $[1/2,1]$. This function has left derivative 2 and right derivative -2 at $1/2$, contradicting differentiability there.\n\nThe supposition is false, so some $|f'(x_0)|>2$.",
     "hint": "The mean value theorem handles $c\\neq1/2$ immediately. To obtain strict inequality when $c=1/2$, rule out the tent-shaped function that equality would force.",
     "topic": "Calculus",
     "sourcePage": 1,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": "The strict inequality is important: applying the mean value theorem only to [0,c] and [c,1] gives only >=2 when c=1/2, so an additional differentiability argument is necessary."
+    "notes": "The strict inequality is important: applying the mean value theorem only to [0,c] and [c,1] gives only >=2 when c=1/2, so an additional differentiability argument is necessary.",
+    "solutionOriginal": "Suppose, to the contrary, that $|f'(x)|\\leq2$ throughout $(0,1)$. The mean value theorem then gives $|f(y)-f(x)|\\leq2|y-x|$ for $x,y\\in[0,1]$. In particular $f(x)\\leq\\min\\{2x,2(1-x)\\}$. Because $f(c)=1$, necessarily $c=1/2$. If $0\\leq x\\leq1/2$, the same bound between $x$ and $1/2$ gives $1-f(x)\\leq2(1/2-x)$, hence $f(x)\\geq2x$. Therefore $f(x)=2x$ on this half-interval. Similarly $f(x)=2(1-x)$ on $[1/2,1]$. This function has left derivative 2 and right derivative -2 at $1/2$, contradicting differentiability there. The supposition is false, so some $|f'(x_0)|>2$.",
+    "solutionSteps": [
+      {
+        "title": "Explain why the bound must be strict",
+        "body": "A first application of the mean value theorem gives slopes $1/c$ on the way from 0 to 1, and $-1/(1-c)$ on the way back to zero. If $c\\ne1/2$, one of their absolute values already exceeds 2. The only difficult case is the exact midpoint. Merely finding slopes 2 and -2 does not yet prove the requested strict inequality.\n\nSuppose every derivative had absolute value at most 2. The mean value theorem would then make f globally 2-Lipschitz:\n\n$$|f(y)-f(x)|\\leq2|y-x|.$$\n\nAt the midpoint, using this bound both from the endpoints and from the peak forces equality everywhere, producing a tent-shaped graph. Its corner contradicts differentiability; this rules out the only case in which a weak bound could have been insufficient."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Suppose, to the contrary, that $|f'(x)|\\leq2$ throughout $(0,1)$. The mean value theorem then gives $|f(y)-f(x)|\\leq2|y-x|$ for $x,y\\in[0,1]$.\n\nIn particular $f(x)\\leq\\min\\{2x,2(1-x)\\}$. Because $f(c)=1$, necessarily $c=1/2$.\n\nIf $0\\leq x\\leq1/2$, the same bound between $x$ and $1/2$ gives $1-f(x)\\leq2(1/2-x)$, hence $f(x)\\geq2x$. Therefore $f(x)=2x$ on this half-interval.\n\nSimilarly $f(x)=2(1-x)$ on $[1/2,1]$. This function has left derivative 2 and right derivative -2 at $1/2$, contradicting differentiability there.\n\nThe supposition is false, so some $|f'(x_0)|>2$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q2a",
     "number": "2(a)",
     "stem": "A restaurant has a menu card containing three Chinese items, six Indian items and five Continental items. Six items are selected at random. Let $X$ and $Y$ denote respectively the number of Indian and Continental items selected. Compute the conditional probability mass function of $X$ given $Y=3$. Also compute $E(X\\mid Y=3)$. [8+4=12 marks]",
     "answer": "$P(X=x\\mid Y=3)=\\binom6x\\binom3{3-x}/\\binom93$, for $x=0,1,2,3$; the mean is 2.",
-    "solution": "All six-item subsets of the 14-item menu are equally likely. Conditional on selecting exactly three Continental items, the remaining three items form a uniformly selected subset of the nine non-Continental items: six Indian and three Chinese. Hence $X\\mid Y=3$ is hypergeometric with population size 9, six successes and sample size 3. Thus $P(X=x\\mid Y=3)=\\binom6x\\binom3{3-x}/\\binom93$ for $x=0,1,2,3$, and zero otherwise. In order, the probabilities are $1/84,\\ 18/84,\\ 45/84,\\ 20/84$. Its mean is $3(6/9)=2$.",
+    "solution": "Conditioning on Y=3 fixes how many of the six selected dishes are Continental. It does not fix which Continental dishes were chosen, but that choice has the same number of possibilities for every admissible Indian count and therefore cancels from the conditional probability. Only the three remaining selections matter.\n\n$$\\begin{aligned}\\text{remaining population}&=6\\text{ Indian}+3\\text{ Chinese},\\\\\\text{remaining sample size}&=3,\\\\P(X=x\\mid Y=3)&=\\frac{\\binom6x\\binom3{3-x}}{\\binom93}.\\end{aligned}$$\n\nThe sample size, rather than the original six-item total, is what must be used in the conditional hypergeometric mean. As a check, the four probabilities sum to $(1+18+45+20)/84=1$.\n\nAll six-item subsets of the 14-item menu are equally likely. Conditional on selecting exactly three Continental items, the remaining three items form a uniformly selected subset of the nine non-Continental items: six Indian and three Chinese.\n\nHence $X\\mid Y=3$ is hypergeometric with population size 9, six successes and sample size 3. Thus $P(X=x\\mid Y=3)=\\binom6x\\binom3{3-x}/\\binom93$ for $x=0,1,2,3$, and zero otherwise.\n\nIn order, the probabilities are $1/84,\\ 18/84,\\ 45/84,\\ 20/84$. Its mean is $3(6/9)=2$.",
     "hint": "After conditioning on three Continental items, choose the remaining three items from the six Indian and three Chinese items.",
     "topic": "Probability",
     "sourcePage": 1,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "All six-item subsets of the 14-item menu are equally likely. Conditional on selecting exactly three Continental items, the remaining three items form a uniformly selected subset of the nine non-Continental items: six Indian and three Chinese. Hence $X\\mid Y=3$ is hypergeometric with population size 9, six successes and sample size 3. Thus $P(X=x\\mid Y=3)=\\binom6x\\binom3{3-x}/\\binom93$ for $x=0,1,2,3$, and zero otherwise. In order, the probabilities are $1/84,\\ 18/84,\\ 45/84,\\ 20/84$. Its mean is $3(6/9)=2$.",
+    "solutionSteps": [
+      {
+        "title": "Condition first, then count the remaining choices",
+        "body": "Conditioning on Y=3 fixes how many of the six selected dishes are Continental. It does not fix which Continental dishes were chosen, but that choice has the same number of possibilities for every admissible Indian count and therefore cancels from the conditional probability. Only the three remaining selections matter.\n\n$$\\begin{aligned}\\text{remaining population}&=6\\text{ Indian}+3\\text{ Chinese},\\\\\\text{remaining sample size}&=3,\\\\P(X=x\\mid Y=3)&=\\frac{\\binom6x\\binom3{3-x}}{\\binom93}.\\end{aligned}$$\n\nThe sample size, rather than the original six-item total, is what must be used in the conditional hypergeometric mean. As a check, the four probabilities sum to $(1+18+45+20)/84=1$."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "All six-item subsets of the 14-item menu are equally likely. Conditional on selecting exactly three Continental items, the remaining three items form a uniformly selected subset of the nine non-Continental items: six Indian and three Chinese.\n\nHence $X\\mid Y=3$ is hypergeometric with population size 9, six successes and sample size 3. Thus $P(X=x\\mid Y=3)=\\binom6x\\binom3{3-x}/\\binom93$ for $x=0,1,2,3$, and zero otherwise.\n\nIn order, the probabilities are $1/84,\\ 18/84,\\ 45/84,\\ 20/84$. Its mean is $3(6/9)=2$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q2b",
     "number": "2(b)",
     "stem": "Let the joint probability mass function of $X$ and $Y$ be $p(1,1)=1/9$, $p(2,1)=1/3$, $p(3,1)=1/9$; $p(1,2)=1/9$, $p(2,2)=0$, $p(3,2)=1/18$; $p(1,3)=0$, $p(2,3)=1/6$, $p(3,3)=1/9$, where $p(x,y)=P(X=x,Y=y)$ for all $x,y\\in\\{1,2,3\\}$. Find the correlation between $X$ and $Y$. Also find $E(X\\mid Y=3)$. [8+4=12 marks]",
     "answer": "$\\operatorname{Corr}(X,Y)=41/\\sqrt{39445}$ and $E(X\\mid Y=3)=12/5$.",
-    "solution": "Summing the joint masses gives $E[X]=37/18$, $E[Y]=31/18$, $E[X^2]=85/18$, $E[Y^2]=67/18$ and $E[XY]=11/3$. Consequently $\\operatorname{Var}(X)=161/324$, $\\operatorname{Var}(Y)=245/324$ and $\\operatorname{Cov}(X,Y)=41/324$. The correlation is therefore $41/\\sqrt{161\\cdot245}=41/\\sqrt{39445}$. Also $P(Y=3)=1/6+1/9=5/18$. Conditional on $Y=3$, the probabilities of $X=2$ and $X=3$ are $3/5$ and $2/5$, respectively. Thus $E[X\\mid Y=3]=2(3/5)+3(2/5)=12/5$.",
+    "solution": "Correlation is covariance divided by the product of standard deviations. It cannot be read directly from the largest cells of the joint table. First sum the table by x and by y to obtain marginal probabilities, then compute the five raw moments needed:\n\n$$\\begin{aligned}E[X]&=\\sum_{x,y}x p(x,y),&E[Y]&=\\sum_{x,y}y p(x,y),\\\\E[X^2]&=\\sum_{x,y}x^2p(x,y),&E[Y^2]&=\\sum_{x,y}y^2p(x,y),\\\\E[XY]&=\\sum_{x,y}xy p(x,y).\\end{aligned}$$\n\nUse $\\operatorname{Cov}(X,Y)=E[XY]-E[X]E[Y]$ and $\\operatorname{Var}(X)=E[X^2]-E[X]^2$, with the analogous formula for Y. For the conditional mean, start again with only the Y=3 row and divide each cell by its row total; the unconditional marginals cannot be used as conditional weights.\n\nSumming the joint masses gives $E[X]=37/18$, $E[Y]=31/18$, $E[X^2]=85/18$, $E[Y^2]=67/18$ and $E[XY]=11/3$. Consequently $\\operatorname{Var}(X)=161/324$, $\\operatorname{Var}(Y)=245/324$ and $\\operatorname{Cov}(X,Y)=41/324$.\n\nThe correlation is therefore $41/\\sqrt{161\\cdot245}=41/\\sqrt{39445}$. Also $P(Y=3)=1/6+1/9=5/18$.\n\nConditional on $Y=3$, the probabilities of $X=2$ and $X=3$ are $3/5$ and $2/5$, respectively. Thus $E[X\\mid Y=3]=2(3/5)+3(2/5)=12/5$.",
     "hint": "Compute the marginal moments and $E[XY]$ first. For the conditional mean, normalize the row with $Y=3$.",
     "topic": "Statistics",
     "sourcePage": 1,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Summing the joint masses gives $E[X]=37/18$, $E[Y]=31/18$, $E[X^2]=85/18$, $E[Y^2]=67/18$ and $E[XY]=11/3$. Consequently $\\operatorname{Var}(X)=161/324$, $\\operatorname{Var}(Y)=245/324$ and $\\operatorname{Cov}(X,Y)=41/324$. The correlation is therefore $41/\\sqrt{161\\cdot245}=41/\\sqrt{39445}$. Also $P(Y=3)=1/6+1/9=5/18$. Conditional on $Y=3$, the probabilities of $X=2$ and $X=3$ are $3/5$ and $2/5$, respectively. Thus $E[X\\mid Y=3]=2(3/5)+3(2/5)=12/5$.",
+    "solutionSteps": [
+      {
+        "title": "Separate raw moments from centred moments",
+        "body": "Correlation is covariance divided by the product of standard deviations. It cannot be read directly from the largest cells of the joint table. First sum the table by x and by y to obtain marginal probabilities, then compute the five raw moments needed:\n\n$$\\begin{aligned}E[X]&=\\sum_{x,y}x p(x,y),&E[Y]&=\\sum_{x,y}y p(x,y),\\\\E[X^2]&=\\sum_{x,y}x^2p(x,y),&E[Y^2]&=\\sum_{x,y}y^2p(x,y),\\\\E[XY]&=\\sum_{x,y}xy p(x,y).\\end{aligned}$$\n\nUse $\\operatorname{Cov}(X,Y)=E[XY]-E[X]E[Y]$ and $\\operatorname{Var}(X)=E[X^2]-E[X]^2$, with the analogous formula for Y. For the conditional mean, start again with only the Y=3 row and divide each cell by its row total; the unconditional marginals cannot be used as conditional weights."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Summing the joint masses gives $E[X]=37/18$, $E[Y]=31/18$, $E[X^2]=85/18$, $E[Y^2]=67/18$ and $E[XY]=11/3$. Consequently $\\operatorname{Var}(X)=161/324$, $\\operatorname{Var}(Y)=245/324$ and $\\operatorname{Cov}(X,Y)=41/324$.\n\nThe correlation is therefore $41/\\sqrt{161\\cdot245}=41/\\sqrt{39445}$. Also $P(Y=3)=1/6+1/9=5/18$.\n\nConditional on $Y=3$, the probabilities of $X=2$ and $X=3$ are $3/5$ and $2/5$, respectively. Thus $E[X\\mid Y=3]=2(3/5)+3(2/5)=12/5$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q3a",
     "number": "3(a)",
     "stem": "A consumer consumes park visits $x$ and a composite good $y$, with utility $u=xy$, income $R$, and composite-good price 1. Initially the entry fee is $p^*$ per visit; a proposal reduces it to $p'<p^*$. Find the increase in consumer's surplus resulting from this proposal. [3 marks]",
     "answer": "$\\Delta S=(R/2)\\log(p^*/p')$.",
-    "solution": "The budget is $px+y=R$. Maximizing $x(R-px)$ gives the Marshallian demand $x(p,R)=R/(2p)$ and $y=R/2$. The increase in ordinary consumer surplus from lowering the price is the area under this demand curve: $\\Delta S=\\int_{p'}^{p^*}R/(2p)\\,dp=(R/2)\\log(p^*/p')$. This assumes the usual positive prices and income, $0<p'<p^*$ and $R>0$.",
+    "solution": "The price cut changes the optimal number of visits. Ordinary consumer surplus measures the area between the old and new prices under the Marshallian demand curve, holding money income R fixed. The budget substitution gives an especially simple one-variable objective:\n\n$$\\begin{aligned}u(x)&=x(R-px),\\\\\\frac{du}{dx}&=R-2px,\\\\x(p,R)&=\\frac{R}{2p}.\\end{aligned}$$\n\nIts second derivative is $-2p<0$, so the stationary demand is the maximum. Integrating demand, rather than multiplying the old number of visits by the price change, includes the consumer’s adjustment in visits.\n\nThe budget is $px+y=R$. Maximizing $x(R-px)$ gives the Marshallian demand $x(p,R)=R/(2p)$ and $y=R/2$.\n\nThe increase in ordinary consumer surplus from lowering the price is the area under this demand curve: $\\Delta S=\\int_{p'}^{p^*}R/(2p)\\,dp=(R/2)\\log(p^*/p')$. This assumes the usual positive prices and income, $0<p'<p^*$ and $R>0$.",
     "hint": "Find the uncompensated demand for visits, then integrate it over the price reduction.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 3,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The budget is $px+y=R$. Maximizing $x(R-px)$ gives the Marshallian demand $x(p,R)=R/(2p)$ and $y=R/2$. The increase in ordinary consumer surplus from lowering the price is the area under this demand curve: $\\Delta S=\\int_{p'}^{p^*}R/(2p)\\,dp=(R/2)\\log(p^*/p')$. This assumes the usual positive prices and income, $0<p'<p^*$ and $R>0$.",
+    "solutionSteps": [
+      {
+        "title": "Find demand before measuring the price benefit",
+        "body": "The price cut changes the optimal number of visits. Ordinary consumer surplus measures the area between the old and new prices under the Marshallian demand curve, holding money income R fixed. The budget substitution gives an especially simple one-variable objective:\n\n$$\\begin{aligned}u(x)&=x(R-px),\\\\\\frac{du}{dx}&=R-2px,\\\\x(p,R)&=\\frac{R}{2p}.\\end{aligned}$$\n\nIts second derivative is $-2p<0$, so the stationary demand is the maximum. Integrating demand, rather than multiplying the old number of visits by the price change, includes the consumer’s adjustment in visits."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The budget is $px+y=R$. Maximizing $x(R-px)$ gives the Marshallian demand $x(p,R)=R/(2p)$ and $y=R/2$.\n\nThe increase in ordinary consumer surplus from lowering the price is the area under this demand curve: $\\Delta S=\\int_{p'}^{p^*}R/(2p)\\,dp=(R/2)\\log(p^*/p')$. This assumes the usual positive prices and income, $0<p'<p^*$ and $R>0$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q3b",
     "number": "3(b)",
     "stem": "A consumer consumes park visits $x$ and a composite good $y$, with utility $u=xy$, income $R$, and composite-good price 1. Initially the entry fee is $p^*$ per visit; a proposal reduces it to $p'<p^*$. An alternative maintains the initial fee $p^*$ but gives the consumer a one-off cash voucher, regardless of the number of visits. Find the minimum voucher value that makes the consumer not worse off than under the proposal reducing the fee from $p^*$ to $p'$. [7 marks]",
     "answer": "$E=R\\left(\\sqrt{p^*/p'}-1\\right)$.",
-    "solution": "With income $m$ and visit price $p$, indirect utility is $v(p,m)=m^2/(4p)$. Under the price reduction the consumer obtains $R^2/(4p')$. A voucher $E$ at the old price gives $(R+E)^2/(4p^*)$. Since utility increases with income, the smallest acceptable voucher satisfies equality. Thus $R+E=R\\sqrt{p^*/p'}$, yielding $E=R(\\sqrt{p^*/p'}-1)$.",
+    "solution": "A voucher and a price cut generally do not create the same budget set. To compare them we therefore compare the highest utility obtainable under each, allowing the consumer to reoptimize. Cobb–Douglas demand spends half of income on each good:\n\n$$v(p,m)=\\left(\\frac{m}{2p}\\right)\\left(\\frac m2\\right)=\\frac{m^2}{4p}.$$\n\nThe reference is the lower-price policy, not the original situation. At the old price, a voucher E raises disposable income to R+E. Minimum compensation means utility equality; any larger E would make the voucher policy strictly better. Use the positive square root because income and consumption are positive.\n\nWith income $m$ and visit price $p$, indirect utility is $v(p,m)=m^2/(4p)$. Under the price reduction the consumer obtains $R^2/(4p')$.\n\nA voucher $E$ at the old price gives $(R+E)^2/(4p^*)$. Since utility increases with income, the smallest acceptable voucher satisfies equality.\n\nThus $R+E=R\\sqrt{p^*/p'}$, yielding $E=R(\\sqrt{p^*/p'}-1)$.",
     "hint": "Equate indirect utility at the old price plus the voucher to indirect utility at the lower price without a voucher.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "With income $m$ and visit price $p$, indirect utility is $v(p,m)=m^2/(4p)$. Under the price reduction the consumer obtains $R^2/(4p')$. A voucher $E$ at the old price gives $(R+E)^2/(4p^*)$. Since utility increases with income, the smallest acceptable voucher satisfies equality. Thus $R+E=R\\sqrt{p^*/p'}$, yielding $E=R(\\sqrt{p^*/p'}-1)$.",
+    "solutionSteps": [
+      {
+        "title": "Match utility levels under the two policies",
+        "body": "A voucher and a price cut generally do not create the same budget set. To compare them we therefore compare the highest utility obtainable under each, allowing the consumer to reoptimize. Cobb–Douglas demand spends half of income on each good:\n\n$$v(p,m)=\\left(\\frac{m}{2p}\\right)\\left(\\frac m2\\right)=\\frac{m^2}{4p}.$$\n\nThe reference is the lower-price policy, not the original situation. At the old price, a voucher E raises disposable income to R+E. Minimum compensation means utility equality; any larger E would make the voucher policy strictly better. Use the positive square root because income and consumption are positive."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "With income $m$ and visit price $p$, indirect utility is $v(p,m)=m^2/(4p)$. Under the price reduction the consumer obtains $R^2/(4p')$.\n\nA voucher $E$ at the old price gives $(R+E)^2/(4p^*)$. Since utility increases with income, the smallest acceptable voucher satisfies equality.\n\nThus $R+E=R\\sqrt{p^*/p'}$, yielding $E=R(\\sqrt{p^*/p'}-1)$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q3c",
     "number": "3(c)",
     "stem": "A consumer consumes park visits $x$ and a composite good $y$, with utility $u=xy$, income $R$, and composite-good price 1. Initially the entry fee is $p^*$ per visit; a proposal reduces it to $p'<p^*$. A third proposal reduces the fee to $p'$ and charges a one-off lump-sum user fee, regardless of the number of visits. Find the maximum lump-sum fee that makes the consumer not worse off than initially, when the fee was $p^*$ per visit with no lump-sum payment. [7 marks]",
     "answer": "$C=R\\left(1-\\sqrt{p'/p^*}\\right)$.",
-    "solution": "Paying a lump-sum fee $C$ leaves income $R-C$. Utility at the lower visit price is $(R-C)^2/(4p')$, while initial utility was $R^2/(4p^*)$. The largest acceptable fee makes these equal, with $R-C>0$. Therefore $R-C=R\\sqrt{p'/p^*}$ and $C=R(1-\\sqrt{p'/p^*})$.",
+    "solution": "Here the consumer keeps the lower price but loses the lump-sum fee from income. The reference utility is the original high-price situation, unlike part (b). Thus the relevant comparison is\n\n$$\\frac{(R-C)^2}{4p'}\\geq\\frac{R^2}{4p^*},\\qquad 0\\leq C<R.$$\n\nThe largest affordable fee that preserves the old utility makes this inequality bind. The positive residual-income restriction matters: the other algebraic square-root sign would not describe a feasible Cobb–Douglas consumption choice. This is why the fee and voucher are different money measures of the same price change.\n\nPaying a lump-sum fee $C$ leaves income $R-C$. Utility at the lower visit price is $(R-C)^2/(4p')$, while initial utility was $R^2/(4p^*)$.\n\nThe largest acceptable fee makes these equal, with $R-C>0$. Therefore $R-C=R\\sqrt{p'/p^*}$ and $C=R(1-\\sqrt{p'/p^*})$.",
     "hint": "The lump-sum fee reduces disposable income. Equate the resulting indirect utility to initial utility.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Paying a lump-sum fee $C$ leaves income $R-C$. Utility at the lower visit price is $(R-C)^2/(4p')$, while initial utility was $R^2/(4p^*)$. The largest acceptable fee makes these equal, with $R-C>0$. Therefore $R-C=R\\sqrt{p'/p^*}$ and $C=R(1-\\sqrt{p'/p^*})$.",
+    "solutionSteps": [
+      {
+        "title": "Distinguish willingness to pay from the required voucher",
+        "body": "Here the consumer keeps the lower price but loses the lump-sum fee from income. The reference utility is the original high-price situation, unlike part (b). Thus the relevant comparison is\n\n$$\\frac{(R-C)^2}{4p'}\\geq\\frac{R^2}{4p^*},\\qquad 0\\leq C<R.$$\n\nThe largest affordable fee that preserves the old utility makes this inequality bind. The positive residual-income restriction matters: the other algebraic square-root sign would not describe a feasible Cobb–Douglas consumption choice. This is why the fee and voucher are different money measures of the same price change."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Paying a lump-sum fee $C$ leaves income $R-C$. Utility at the lower visit price is $(R-C)^2/(4p')$, while initial utility was $R^2/(4p^*)$.\n\nThe largest acceptable fee makes these equal, with $R-C>0$. Therefore $R-C=R\\sqrt{p'/p^*}$ and $C=R(1-\\sqrt{p'/p^*})$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q3d",
     "number": "3(d)",
     "stem": "A consumer consumes park visits $x$ and a composite good $y$, with utility $u=xy$, income $R$, and composite-good price 1. Initially the entry fee is $p^*$ per visit; a proposal reduces it to $p'<p^*$. Prove that $C<\\Delta S<E$, where $\\Delta S$ is the surplus increase from part (a), $E$ the minimum voucher from part (b), and $C$ the maximum lump-sum fee from part (c). [7 marks]",
     "answer": "$R(1-1/t)<R\\log t<R(t-1)$ for $t=\\sqrt{p^*/p'}>1$.",
-    "solution": "Let $t=\\sqrt{p^*/p'}>1$. The earlier answers become $C=R(1-1/t)$, $\\Delta S=R\\log t$ and $E=R(t-1)$. For $s\\in(1,t)$, $1/t<1/s<1$. Integrating strictly over this nonempty interval gives $(t-1)/t<\\int_1^t(1/s)\\,ds<t-1$, or $1-1/t<\\log t<t-1$. Multiplication by $R>0$ proves the result. A strict positive price reduction is needed; if prices are equal all three quantities are zero.",
+    "solution": "All three amounts scale with income, so divide by R and write $t=\\sqrt{p^*/p'}>1$. We need to compare $1-1/t$, $\\ln t$ and $t-1$. On the interval from 1 to t, the decreasing function $1/s$ is strictly between the two endpoint heights. Its area is therefore strictly between the areas of the corresponding rectangles:\n\n$$\\frac{t-1}{t}<\\int_1^t\\frac{ds}{s}<t-1.$$\n\nThis also explains strictness: the price reduction makes the interval have positive length. If there is no price change, the interval collapses and all three measures are zero.\n\nLet $t=\\sqrt{p^*/p'}>1$. The earlier answers become $C=R(1-1/t)$, $\\Delta S=R\\log t$ and $E=R(t-1)$.\n\nFor $s\\in(1,t)$, $1/t<1/s<1$. Integrating strictly over this nonempty interval gives $(t-1)/t<\\int_1^t(1/s)\\,ds<t-1$, or $1-1/t<\\log t<t-1$.\n\nMultiplication by $R>0$ proves the result. A strict positive price reduction is needed; if prices are equal all three quantities are zero.",
     "hint": "Set $t=\\sqrt{p^*/p'}$ and compare $\\int_1^t1/s\\,ds$ with rectangles of heights $1/t$ and 1.",
     "topic": "Microeconomics",
     "sourcePage": 2,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 7,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Let $t=\\sqrt{p^*/p'}>1$. The earlier answers become $C=R(1-1/t)$, $\\Delta S=R\\log t$ and $E=R(t-1)$. For $s\\in(1,t)$, $1/t<1/s<1$. Integrating strictly over this nonempty interval gives $(t-1)/t<\\int_1^t(1/s)\\,ds<t-1$, or $1-1/t<\\log t<t-1$. Multiplication by $R>0$ proves the result. A strict positive price reduction is needed; if prices are equal all three quantities are zero.",
+    "solutionSteps": [
+      {
+        "title": "Reduce the welfare comparison to one elementary inequality",
+        "body": "All three amounts scale with income, so divide by R and write $t=\\sqrt{p^*/p'}>1$. We need to compare $1-1/t$, $\\ln t$ and $t-1$. On the interval from 1 to t, the decreasing function $1/s$ is strictly between the two endpoint heights. Its area is therefore strictly between the areas of the corresponding rectangles:\n\n$$\\frac{t-1}{t}<\\int_1^t\\frac{ds}{s}<t-1.$$\n\nThis also explains strictness: the price reduction makes the interval have positive length. If there is no price change, the interval collapses and all three measures are zero."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Let $t=\\sqrt{p^*/p'}>1$. The earlier answers become $C=R(1-1/t)$, $\\Delta S=R\\log t$ and $E=R(t-1)$.\n\nFor $s\\in(1,t)$, $1/t<1/s<1$. Integrating strictly over this nonempty interval gives $(t-1)/t<\\int_1^t(1/s)\\,ds<t-1$, or $1-1/t<\\log t<t-1$.\n\nMultiplication by $R>0$ proves the result. A strict positive price reduction is needed; if prices are equal all three quantities are zero."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q4a",
     "number": "4(a)",
     "stem": "A worker chooses education $e\\geq0$ at cost $2e^2/\\theta$, with privately known ability $\\theta=2$ (high) or $\\theta=1$ (low). A firm pays wage 2 if it believes she is high ability and wage 1 if it believes she is low ability. Utility is $u(w,e\\mid\\theta)=w-2e^2/\\theta$. Draw the high-ability and low-ability indifference maps with education on the horizontal axis and wage on the vertical axis. How many times can an indifference curve of a low-ability worker intersect one of a high-ability worker? [2+2+2=6 marks]",
     "answer": "High type: $w=\\bar u_H+e^2$; low type: $w=\\bar u_L+2e^2$. Any such pair intersects at most once for $e\\geq0$.",
-    "solution": "For fixed utility, the high type's indifference curves are $w=\\bar u_H+e^2$, upward-sloping convex parabolas on $e\\geq0$. The low type's are $w=\\bar u_L+2e^2$, also upward-sloping convex parabolas but steeper at every $e>0$: slopes are $2e$ and $4e$, respectively. Higher curves correspond to higher utility. An intersection satisfies $\\bar u_H+e^2=\\bar u_L+2e^2$, hence $e^2=\\bar u_H-\\bar u_L$. On the nonnegative education axis there is one intersection if the right side is nonnegative (at $e=0$ if it is zero), and no intersection otherwise. Thus at most one intersection is possible.",
+    "solution": "An indifference curve records the wage needed to compensate education cost at a fixed utility level. The low type’s education cost is twice the high type’s, so she needs a larger wage increase for the same education increment:\n\n$$\\begin{aligned}w_H(e)&=\\bar u_H+e^2,&w_H'(e)&=2e,\\\\w_L(e)&=\\bar u_L+2e^2,&w_L'(e)&=4e.\\end{aligned}$$\n\nOnly nonnegative education is feasible. Although two parabolas on the entire real line could intersect at a positive and a negative point, at most one of these lies on the relevant half-axis. At e=0 both slopes are zero; the strict slope ranking applies at positive education.\n\nFor fixed utility, the high type's indifference curves are $w=\\bar u_H+e^2$, upward-sloping convex parabolas on $e\\geq0$. The low type's are $w=\\bar u_L+2e^2$, also upward-sloping convex parabolas but steeper at every $e>0$: slopes are $2e$ and $4e$, respectively.\n\nHigher curves correspond to higher utility. An intersection satisfies $\\bar u_H+e^2=\\bar u_L+2e^2$, hence $e^2=\\bar u_H-\\bar u_L$.\n\nOn the nonnegative education axis there is one intersection if the right side is nonnegative (at $e=0$ if it is zero), and no intersection otherwise. Thus at most one intersection is possible.",
     "hint": "Rearrange each fixed-utility equation to express the wage as a function of education.",
     "topic": "Microeconomics",
     "sourcePage": 3,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For fixed utility, the high type's indifference curves are $w=\\bar u_H+e^2$, upward-sloping convex parabolas on $e\\geq0$. The low type's are $w=\\bar u_L+2e^2$, also upward-sloping convex parabolas but steeper at every $e>0$: slopes are $2e$ and $4e$, respectively. Higher curves correspond to higher utility. An intersection satisfies $\\bar u_H+e^2=\\bar u_L+2e^2$, hence $e^2=\\bar u_H-\\bar u_L$. On the nonnegative education axis there is one intersection if the right side is nonnegative (at $e=0$ if it is zero), and no intersection otherwise. Thus at most one intersection is possible.",
+    "solutionSteps": [
+      {
+        "title": "Compare the cost of holding utility constant",
+        "body": "An indifference curve records the wage needed to compensate education cost at a fixed utility level. The low type’s education cost is twice the high type’s, so she needs a larger wage increase for the same education increment:\n\n$$\\begin{aligned}w_H(e)&=\\bar u_H+e^2,&w_H'(e)&=2e,\\\\w_L(e)&=\\bar u_L+2e^2,&w_L'(e)&=4e.\\end{aligned}$$\n\nOnly nonnegative education is feasible. Although two parabolas on the entire real line could intersect at a positive and a negative point, at most one of these lies on the relevant half-axis. At e=0 both slopes are zero; the strict slope ranking applies at positive education."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "For fixed utility, the high type's indifference curves are $w=\\bar u_H+e^2$, upward-sloping convex parabolas on $e\\geq0$. The low type's are $w=\\bar u_L+2e^2$, also upward-sloping convex parabolas but steeper at every $e>0$: slopes are $2e$ and $4e$, respectively.\n\nHigher curves correspond to higher utility. An intersection satisfies $\\bar u_H+e^2=\\bar u_L+2e^2$, hence $e^2=\\bar u_H-\\bar u_L$.\n\nOn the nonnegative education axis there is one intersection if the right side is nonnegative (at $e=0$ if it is zero), and no intersection otherwise. Thus at most one intersection is possible."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q4b",
     "number": "4(b)",
     "stem": "A worker chooses education $e\\geq0$ at cost $2e^2/\\theta$, with privately known ability $\\theta=2$ (high) or $\\theta=1$ (low). A firm pays wage 2 if it believes she is high ability and wage 1 if it believes she is low ability. Utility is $u(w,e\\mid\\theta)=w-2e^2/\\theta$. Suppose the firm perfectly infers ability upon observing education, and suppose the low-ability worker chooses $e=0$. How much education would the high-ability worker purchase? [9 marks]",
     "answer": "The usual least-cost separating answer is $e_H=1/\\sqrt2$. More generally the incentive-compatible separating levels are $1/\\sqrt2\\leq e_H\\leq1$; uniqueness needs an equilibrium refinement or off-path wage rule.",
-    "solution": "A low type choosing zero receives utility 1. If she imitates a high type choosing $e_H$, she receives $2-2e_H^2$. To sustain separation, $1\\geq2-2e_H^2$, so $e_H\\geq1/\\sqrt2$. The high type receives $2-e_H^2$ if identified as high, and can obtain 1 by choosing zero and being treated as low. Thus $2-e_H^2\\geq1$, requiring $e_H\\leq1$. Among education levels that sustain separation, a high type would prefer the smallest cost, giving the conventional least-cost level $e_H=1/\\sqrt2$ and high-type utility $3/2$. However, with unspecified beliefs for education levels not chosen in equilibrium, the stated assumptions alone do not rule out other separating equilibria in $[1/\\sqrt2,1]$. The least-cost answer therefore uses the standard minimal-separation interpretation.",
+    "solution": "Correct inference alone does not identify a unique education level. Separation must first prevent the low type from imitating, and must also give the high type at least what she could obtain by selecting the low-type action. With zero low-type education these conditions are\n\n$$\\begin{aligned}1&\\geq2-2e_H^2&&\\text{(low type does not mimic)},\\\\2-e_H^2&\\geq1&&\\text{(high type does not choose zero)}.\\end{aligned}$$\n\nTogether they give $1/\\sqrt2\\leq e_H\\leq1$. The least-cost separating choice uses the lower endpoint, since additional education lowers the high type’s utility without changing the on-path wage. Treating that endpoint as the unique equilibrium would additionally require assumptions about firms’ beliefs after education choices not observed in equilibrium.\n\nA low type choosing zero receives utility 1. If she imitates a high type choosing $e_H$, she receives $2-2e_H^2$.\n\nTo sustain separation, $1\\geq2-2e_H^2$, so $e_H\\geq1/\\sqrt2$. The high type receives $2-e_H^2$ if identified as high, and can obtain 1 by choosing zero and being treated as low.\n\nThus $2-e_H^2\\geq1$, requiring $e_H\\leq1$. Among education levels that sustain separation, a high type would prefer the smallest cost, giving the conventional least-cost level $e_H=1/\\sqrt2$ and high-type utility $3/2$.\n\nHowever, with unspecified beliefs for education levels not chosen in equilibrium, the stated assumptions alone do not rule out other separating equilibria in $[1/\\sqrt2,1]$. The least-cost answer therefore uses the standard minimal-separation interpretation.\n\nSource ambiguity: no off-path wage beliefs or least-cost equilibrium refinement are specified. The conventional minimal-separating answer is supplied with the full IC interval, rather than asserting an unqualified unique prediction.",
     "hint": "First prevent the low type from wanting to imitate the high type. Then check that the high type prefers separation to the low type's zero-education outcome.",
     "topic": "Microeconomics",
     "sourcePage": 3,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 9,
     "status": "needs_review",
-    "notes": "Source ambiguity: no off-path wage beliefs or least-cost equilibrium refinement are specified. The conventional minimal-separating answer is supplied with the full IC interval, rather than asserting an unqualified unique prediction."
+    "notes": "Source ambiguity: no off-path wage beliefs or least-cost equilibrium refinement are specified. The conventional minimal-separating answer is supplied with the full IC interval, rather than asserting an unqualified unique prediction.",
+    "solutionOriginal": "A low type choosing zero receives utility 1. If she imitates a high type choosing $e_H$, she receives $2-2e_H^2$. To sustain separation, $1\\geq2-2e_H^2$, so $e_H\\geq1/\\sqrt2$. The high type receives $2-e_H^2$ if identified as high, and can obtain 1 by choosing zero and being treated as low. Thus $2-e_H^2\\geq1$, requiring $e_H\\leq1$. Among education levels that sustain separation, a high type would prefer the smallest cost, giving the conventional least-cost level $e_H=1/\\sqrt2$ and high-type utility $3/2$. However, with unspecified beliefs for education levels not chosen in equilibrium, the stated assumptions alone do not rule out other separating equilibria in $[1/\\sqrt2,1]$. The least-cost answer therefore uses the standard minimal-separation interpretation.",
+    "solutionSteps": [
+      {
+        "title": "Check both types’ incentive constraints",
+        "body": "Correct inference alone does not identify a unique education level. Separation must first prevent the low type from imitating, and must also give the high type at least what she could obtain by selecting the low-type action. With zero low-type education these conditions are\n\n$$\\begin{aligned}1&\\geq2-2e_H^2&&\\text{(low type does not mimic)},\\\\2-e_H^2&\\geq1&&\\text{(high type does not choose zero)}.\\end{aligned}$$\n\nTogether they give $1/\\sqrt2\\leq e_H\\leq1$. The least-cost separating choice uses the lower endpoint, since additional education lowers the high type’s utility without changing the on-path wage. Treating that endpoint as the unique equilibrium would additionally require assumptions about firms’ beliefs after education choices not observed in equilibrium."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "A low type choosing zero receives utility 1. If she imitates a high type choosing $e_H$, she receives $2-2e_H^2$.\n\nTo sustain separation, $1\\geq2-2e_H^2$, so $e_H\\geq1/\\sqrt2$. The high type receives $2-e_H^2$ if identified as high, and can obtain 1 by choosing zero and being treated as low.\n\nThus $2-e_H^2\\geq1$, requiring $e_H\\leq1$. Among education levels that sustain separation, a high type would prefer the smallest cost, giving the conventional least-cost level $e_H=1/\\sqrt2$ and high-type utility $3/2$.\n\nHowever, with unspecified beliefs for education levels not chosen in equilibrium, the stated assumptions alone do not rule out other separating equilibria in $[1/\\sqrt2,1]$. The least-cost answer therefore uses the standard minimal-separation interpretation."
+      },
+      {
+        "title": "Qualification in the source",
+        "body": "Source ambiguity: no off-path wage beliefs or least-cost equilibrium refinement are specified. The conventional minimal-separating answer is supplied with the full IC interval, rather than asserting an unqualified unique prediction."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q4c",
     "number": "4(c)",
     "stem": "A worker chooses education $e\\geq0$ at cost $2e^2/\\theta$, with privately known ability $\\theta=2$ (high) or $\\theta=1$ (low). A firm pays wage 2 if it believes she is high ability and wage 1 if it believes she is low ability. Utility is $u(w,e\\mid\\theta)=w-2e^2/\\theta$. Continue to assume that the firm perfectly infers ability. Suppose the high type's education matches the least-cost separating value from part (b). Show that the worker would purchase no education if she were low ability. [9 marks]",
     "answer": "At $e_H=1/\\sqrt2$, choosing $e_L=0$ is optimal for the low type, though not uniquely optimal: mimicking also gives utility 1.",
-    "solution": "At $e_L=0$ the correctly identified low type receives wage 1 at zero cost, so utility is 1. Imitating the high type at $e_H=1/\\sqrt2$ yields utility $2-2(1/\\sqrt2)^2=1$, not a strict improvement. Any positive education at a wage of 1 lowers utility below 1. Under the usual threshold wage rule (wage 2 only at education at least $1/\\sqrt2$), any larger high-wage education also gives utility below 1. Thus zero education is a best response. It is weakly optimal: the low type is indifferent to mimicking exactly at the threshold. Selecting zero when indifferent supports the proposed separating outcome; strict preference for zero would require an education threshold strictly above $1/\\sqrt2$.",
+    "solution": "At the least-cost separating threshold, the low type’s incentive constraint binds. Calculate the two payoffs explicitly:\n\n$$\\begin{aligned}u_L(1,0)&=1,\\\\u_L\\left(2,\\frac1{\\sqrt2}\\right)&=2-2\\left(\\frac1{\\sqrt2}\\right)^2=1.\\end{aligned}$$\n\nZero education is therefore a best response, but it is not strictly preferred to exact imitation. Above the threshold, the same high wage comes with an even larger low-type education cost. Below it, under the threshold wage rule, positive education earns only the low wage and wastes resources. Selecting zero at the tie sustains separation; it must not be described as a strict incentive.\n\nAt $e_L=0$ the correctly identified low type receives wage 1 at zero cost, so utility is 1. Imitating the high type at $e_H=1/\\sqrt2$ yields utility $2-2(1/\\sqrt2)^2=1$, not a strict improvement.\n\nAny positive education at a wage of 1 lowers utility below 1. Under the usual threshold wage rule (wage 2 only at education at least $1/\\sqrt2$), any larger high-wage education also gives utility below 1.\n\nThus zero education is a best response. It is weakly optimal: the low type is indifferent to mimicking exactly at the threshold.\n\nSelecting zero when indifferent supports the proposed separating outcome; strict preference for zero would require an education threshold strictly above $1/\\sqrt2$.",
     "hint": "Compare utility at zero education and wage 1 with utility from imitating the high type at wage 2.",
     "topic": "Microeconomics",
     "sourcePage": 3,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 9,
     "status": "verified",
-    "notes": "The question starts on page 3 and continues on page 4. At the least-cost threshold the low type is indifferent, so the result establishes optimality of zero, not unique optimality. Uses the standard separating threshold interpretation from 4(b)."
+    "notes": "The question starts on page 3 and continues on page 4. At the least-cost threshold the low type is indifferent, so the result establishes optimality of zero, not unique optimality. Uses the standard separating threshold interpretation from 4(b).",
+    "solutionOriginal": "At $e_L=0$ the correctly identified low type receives wage 1 at zero cost, so utility is 1. Imitating the high type at $e_H=1/\\sqrt2$ yields utility $2-2(1/\\sqrt2)^2=1$, not a strict improvement. Any positive education at a wage of 1 lowers utility below 1. Under the usual threshold wage rule (wage 2 only at education at least $1/\\sqrt2$), any larger high-wage education also gives utility below 1. Thus zero education is a best response. It is weakly optimal: the low type is indifferent to mimicking exactly at the threshold. Selecting zero when indifferent supports the proposed separating outcome; strict preference for zero would require an education threshold strictly above $1/\\sqrt2$.",
+    "solutionSteps": [
+      {
+        "title": "Distinguish a best response from a strict best response",
+        "body": "At the least-cost separating threshold, the low type’s incentive constraint binds. Calculate the two payoffs explicitly:\n\n$$\\begin{aligned}u_L(1,0)&=1,\\\\u_L\\left(2,\\frac1{\\sqrt2}\\right)&=2-2\\left(\\frac1{\\sqrt2}\\right)^2=1.\\end{aligned}$$\n\nZero education is therefore a best response, but it is not strictly preferred to exact imitation. Above the threshold, the same high wage comes with an even larger low-type education cost. Below it, under the threshold wage rule, positive education earns only the low wage and wastes resources. Selecting zero at the tie sustains separation; it must not be described as a strict incentive."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At $e_L=0$ the correctly identified low type receives wage 1 at zero cost, so utility is 1. Imitating the high type at $e_H=1/\\sqrt2$ yields utility $2-2(1/\\sqrt2)^2=1$, not a strict improvement.\n\nAny positive education at a wage of 1 lowers utility below 1. Under the usual threshold wage rule (wage 2 only at education at least $1/\\sqrt2$), any larger high-wage education also gives utility below 1.\n\nThus zero education is a best response. It is weakly optimal: the low type is indifferent to mimicking exactly at the threshold.\n\nSelecting zero when indifferent supports the proposed separating outcome; strict preference for zero would require an education threshold strictly above $1/\\sqrt2$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q5a",
     "number": "5(a)",
     "stem": "An individual lives for periods 1 and 2, with utility $U(C_1)+\\beta U(C_2)$, where $0<\\beta<1$, $U'(C)>0$, $U''(C)<0$, $\\lim_{C\\to0}U'(C)=\\infty$ and $\\lim_{C\\to\\infty}U'(C)=0$. Period-1 income is $w>0$ and period-2 income is zero. The individual may lend or borrow freely at interest rate $r>0$, so $C_1=w-S$ and $C_2=(1+r)S$. Suppose $\\beta(1+r)=1$. Solve for $C_1$ and $C_2$ in terms of the exogenous parameters. [4 marks]",
     "answer": "$C_1=C_2=(1+r)w/(2+r)$ and $S=w/(2+r)$.",
-    "solution": "The marginal-utility conditions ensure an interior optimum with $0<S<w$, and strict concavity makes it unique. The saving first-order condition is $U'(w-S)=\\beta(1+r)U'((1+r)S)$. Under $\\beta(1+r)=1$, the marginal utilities are equal. Since $U'$ is strictly decreasing, $w-S=(1+r)S$. Hence $S=w/(2+r)$ and $C_1=C_2=(1+r)w/(2+r)$. Equivalently, because $\\beta=1/(1+r)$, each period's consumption is $w/(1+\\beta)$.",
+    "solution": "Because there is no second-period income, positive consumption in both periods requires saving strictly between zero and w. Maximize the one-variable objective\n\n$$V(S)=U(w-S)+\\beta U((1+r)S).$$\n\nThe first-order condition equates the marginal utility lost today with the discounted marginal utility gained tomorrow. The condition $\\beta(1+r)=1$ removes the intertemporal price wedge. Strictly decreasing marginal utility then makes equal marginal utilities imply equal consumption levels, not merely equal spending. Solve that equality together with $C_1=w-S$ and $C_2=(1+r)S$.\n\nThe marginal-utility conditions ensure an interior optimum with $0<S<w$, and strict concavity makes it unique. The saving first-order condition is $U'(w-S)=\\beta(1+r)U'((1+r)S)$.\n\nUnder $\\beta(1+r)=1$, the marginal utilities are equal. Since $U'$ is strictly decreasing, $w-S=(1+r)S$.\n\nHence $S=w/(2+r)$ and $C_1=C_2=(1+r)w/(2+r)$. Equivalently, because $\\beta=1/(1+r)$, each period's consumption is $w/(1+\\beta)$.",
     "hint": "When the discounted gross return is 1, the Euler equation equates the two marginal utilities.",
     "topic": "Microeconomics",
     "sourcePage": 4,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 4,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The marginal-utility conditions ensure an interior optimum with $0<S<w$, and strict concavity makes it unique. The saving first-order condition is $U'(w-S)=\\beta(1+r)U'((1+r)S)$. Under $\\beta(1+r)=1$, the marginal utilities are equal. Since $U'$ is strictly decreasing, $w-S=(1+r)S$. Hence $S=w/(2+r)$ and $C_1=C_2=(1+r)w/(2+r)$. Equivalently, because $\\beta=1/(1+r)$, each period's consumption is $w/(1+\\beta)$.",
+    "solutionSteps": [
+      {
+        "title": "Use the Euler equation and the lifetime resource constraint",
+        "body": "Because there is no second-period income, positive consumption in both periods requires saving strictly between zero and w. Maximize the one-variable objective\n\n$$V(S)=U(w-S)+\\beta U((1+r)S).$$\n\nThe first-order condition equates the marginal utility lost today with the discounted marginal utility gained tomorrow. The condition $\\beta(1+r)=1$ removes the intertemporal price wedge. Strictly decreasing marginal utility then makes equal marginal utilities imply equal consumption levels, not merely equal spending. Solve that equality together with $C_1=w-S$ and $C_2=(1+r)S$."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The marginal-utility conditions ensure an interior optimum with $0<S<w$, and strict concavity makes it unique. The saving first-order condition is $U'(w-S)=\\beta(1+r)U'((1+r)S)$.\n\nUnder $\\beta(1+r)=1$, the marginal utilities are equal. Since $U'$ is strictly decreasing, $w-S=(1+r)S$.\n\nHence $S=w/(2+r)$ and $C_1=C_2=(1+r)w/(2+r)$. Equivalently, because $\\beta=1/(1+r)$, each period's consumption is $w/(1+\\beta)$."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q5b",
     "number": "5(b)",
     "stem": "An individual lives for periods 1 and 2, with utility $U(C_1)+\\beta U(C_2)$, where $0<\\beta<1$, $U'(C)>0$, $U''(C)<0$, $\\lim_{C\\to0}U'(C)=\\infty$ and $\\lim_{C\\to\\infty}U'(C)=0$. Period-1 income is $w>0$ and period-2 income is zero. The individual may lend or borrow freely at interest rate $r>0$, so $C_1=w-S$ and $C_2=(1+r)S$. Remove the restriction $\\beta(1+r)=1$. How is saving $S$ affected if $\\beta$ rises, ceteris paribus? [8 marks]",
     "answer": "Saving rises strictly: $\\partial S/\\partial\\beta>0$.",
-    "solution": "At the unique interior optimum define $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Its derivative with respect to saving is $D=-U''(C_1)-\\beta(1+r)^2U''(C_2)>0$. Also $F_\\beta=-(1+r)U'(C_2)<0$. Implicit differentiation gives $\\partial S/\\partial\\beta=(1+r)U'(C_2)/D>0$. A higher discount factor places more weight on second-period consumption and therefore raises saving. The positivity constraints and Inada conditions rule out a boundary optimum.",
+    "solution": "The utility function is not specified, so an explicit formula for saving is generally unavailable. The implicit-function method uses the Euler equation directly. With $C_1=w-S$ and $C_2=(1+r)S$, let\n\n$$F=U'(C_1)-\\beta(1+r)U'(C_2)=0.$$\n\nA rise in beta makes the future benefit of the current saving choice larger. To restore equality, saving must rise: this lowers present consumption and increases future consumption, raising the left marginal utility and lowering the right one. The formal derivative below verifies this reasoning and uses strict concavity to establish its sign.\n\nAt the unique interior optimum define $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Its derivative with respect to saving is $D=-U''(C_1)-\\beta(1+r)^2U''(C_2)>0$.\n\nAlso $F_\\beta=-(1+r)U'(C_2)<0$. Implicit differentiation gives $\\partial S/\\partial\\beta=(1+r)U'(C_2)/D>0$.\n\nA higher discount factor places more weight on second-period consumption and therefore raises saving. The positivity constraints and Inada conditions rule out a boundary optimum.",
     "hint": "Differentiate the Euler equation implicitly with respect to $\\beta$, keeping $w$ and $r$ fixed.",
     "topic": "Microeconomics",
     "sourcePage": 4,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "At the unique interior optimum define $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Its derivative with respect to saving is $D=-U''(C_1)-\\beta(1+r)^2U''(C_2)>0$. Also $F_\\beta=-(1+r)U'(C_2)<0$. Implicit differentiation gives $\\partial S/\\partial\\beta=(1+r)U'(C_2)/D>0$. A higher discount factor places more weight on second-period consumption and therefore raises saving. The positivity constraints and Inada conditions rule out a boundary optimum.",
+    "solutionSteps": [
+      {
+        "title": "Differentiate the optimality condition rather than a guessed saving formula",
+        "body": "The utility function is not specified, so an explicit formula for saving is generally unavailable. The implicit-function method uses the Euler equation directly. With $C_1=w-S$ and $C_2=(1+r)S$, let\n\n$$F=U'(C_1)-\\beta(1+r)U'(C_2)=0.$$\n\nA rise in beta makes the future benefit of the current saving choice larger. To restore equality, saving must rise: this lowers present consumption and increases future consumption, raising the left marginal utility and lowering the right one. The formal derivative below verifies this reasoning and uses strict concavity to establish its sign."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At the unique interior optimum define $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Its derivative with respect to saving is $D=-U''(C_1)-\\beta(1+r)^2U''(C_2)>0$.\n\nAlso $F_\\beta=-(1+r)U'(C_2)<0$. Implicit differentiation gives $\\partial S/\\partial\\beta=(1+r)U'(C_2)/D>0$.\n\nA higher discount factor places more weight on second-period consumption and therefore raises saving. The positivity constraints and Inada conditions rule out a boundary optimum."
+      }
+    ]
   },
   {
     "id": "2024-PEB-Q5c",
     "number": "5(c)",
     "stem": "An individual lives for periods 1 and 2, with utility $U(C_1)+\\beta U(C_2)$, where $0<\\beta<1$, $U'(C)>0$, $U''(C)<0$, $\\lim_{C\\to0}U'(C)=\\infty$ and $\\lim_{C\\to\\infty}U'(C)=0$. Period-1 income is $w>0$ and period-2 income is zero. The individual may lend or borrow freely at interest rate $r>0$, so $C_1=w-S$ and $C_2=(1+r)S$. Without imposing $\\beta(1+r)=1$, show that saving rises when $w$ rises, ceteris paribus, and that the rise in saving is smaller than the rise in $w$. [8+4=12 marks]",
     "answer": "$0<\\partial S/\\partial w<1$.",
-    "solution": "Use $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Let $A=-U''(C_1)>0$ and $B=-\\beta(1+r)^2U''(C_2)>0$. Then $F_S=A+B$ and $F_w=U''(C_1)=-A$. Consequently $\\partial S/\\partial w=-F_w/F_S=A/(A+B)$, which lies strictly between zero and one. Saving therefore increases with income, but by less than the income increase. For a finite increase, the same bounds follow by integrating the marginal response (or applying the mean value theorem) along the optimal saving function. First-period consumption also increases because $\\partial C_1/\\partial w=1-\\partial S/\\partial w>0$.",
+    "solution": "The goal has two parts: saving must increase, but it must not absorb the whole income increase. Define the positive curvature terms\n\n$$A=-U''(C_1)>0,\\qquad B=-\\beta(1+r)^2U''(C_2)>0.$$\n\nThe saving response is a share of two positive terms, $A/(A+B)$. This is stronger than simply saying saving is a normal choice: it also proves present consumption increases, because $dC_1/dw=1-dS/dw$. Future consumption rises as well, since $dC_2/dw=(1+r)dS/dw$. Both periods therefore share the benefit of higher first-period resources.\n\nUse $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Let $A=-U''(C_1)>0$ and $B=-\\beta(1+r)^2U''(C_2)>0$.\n\nThen $F_S=A+B$ and $F_w=U''(C_1)=-A$. Consequently $\\partial S/\\partial w=-F_w/F_S=A/(A+B)$, which lies strictly between zero and one.\n\nSaving therefore increases with income, but by less than the income increase. For a finite increase, the same bounds follow by integrating the marginal response (or applying the mean value theorem) along the optimal saving function.\n\nFirst-period consumption also increases because $\\partial C_1/\\partial w=1-\\partial S/\\partial w>0$.",
     "hint": "Implicit differentiation of the Euler equation gives a ratio of two positive curvature terms.",
     "topic": "Microeconomics",
     "sourcePage": 4,
     "sourceFile": "MSQE-PEB-2024.pdf",
     "marks": 12,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Use $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Let $A=-U''(C_1)>0$ and $B=-\\beta(1+r)^2U''(C_2)>0$. Then $F_S=A+B$ and $F_w=U''(C_1)=-A$. Consequently $\\partial S/\\partial w=-F_w/F_S=A/(A+B)$, which lies strictly between zero and one. Saving therefore increases with income, but by less than the income increase. For a finite increase, the same bounds follow by integrating the marginal response (or applying the mean value theorem) along the optimal saving function. First-period consumption also increases because $\\partial C_1/\\partial w=1-\\partial S/\\partial w>0$.",
+    "solutionSteps": [
+      {
+        "title": "Show both consumption and saving absorb extra income",
+        "body": "The goal has two parts: saving must increase, but it must not absorb the whole income increase. Define the positive curvature terms\n\n$$A=-U''(C_1)>0,\\qquad B=-\\beta(1+r)^2U''(C_2)>0.$$\n\nThe saving response is a share of two positive terms, $A/(A+B)$. This is stronger than simply saying saving is a normal choice: it also proves present consumption increases, because $dC_1/dw=1-dS/dw$. Future consumption rises as well, since $dC_2/dw=(1+r)dS/dw$. Both periods therefore share the benefit of higher first-period resources."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Use $F(S,w,\\beta)=U'(w-S)-\\beta(1+r)U'((1+r)S)=0$. Let $A=-U''(C_1)>0$ and $B=-\\beta(1+r)^2U''(C_2)>0$.\n\nThen $F_S=A+B$ and $F_w=U''(C_1)=-A$. Consequently $\\partial S/\\partial w=-F_w/F_S=A/(A+B)$, which lies strictly between zero and one.\n\nSaving therefore increases with income, but by less than the income increase. For a finite increase, the same bounds follow by integrating the marginal response (or applying the mean value theorem) along the optimal saving function.\n\nFirst-period consumption also increases because $\\partial C_1/\\partial w=1-\\partial S/\\partial w>0$."
+      }
+    ]
   }
 ]

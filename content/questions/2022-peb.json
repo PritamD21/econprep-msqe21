@@ -4,321 +4,574 @@
     "number": "1(a)",
     "stem": "Find all maxima and minima of $f(x,y)=xy$, subject to $x+4y=120$ and $x,y\\geq0$. [10 marks]",
     "answer": "Maximum900 at $(60,15)$; minimum0 at $(120,0)$ and $(0,30)$.",
-    "solution": "The feasible set has $x=120-4y$ with $0\\leq y\\leq30$. Hence $f(y)=120y-4y^2=900-4(y-15)^2$. The unique maximum is900 at $y=15,x=60$. Since both coordinates are nonnegative, $xy\\geq0$; equality occurs only at the two endpoints $(120,0)$ and $(0,30)$, which are the minima.",
+    "solution": "Use the linear constraint to remove one variable: x=120-4y and 0≤y≤30. The product becomes a concave quadratic in y. Its stationary point supplies the maximum, while the two endpoints must be checked for minima. Because all feasible quantities are nonnegative, zero is already a lower bound; identifying where one factor becomes zero locates every minimizer without relying on a misleading unconstrained saddle-point calculation.\n\nThe feasible set has $x=120-4y$ with $0\\leq y\\leq30$. Hence $f(y)=120y-4y^2=900-4(y-15)^2$.\n\nThe unique maximum is900 at $y=15,x=60$. Since both coordinates are nonnegative, $xy\\geq0$; equality occurs only at the two endpoints $(120,0)$ and $(0,30)$, which are the minima.",
     "hint": "Eliminate one variable and retain the feasible interval, including its endpoints.",
     "topic": "Calculus",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The feasible set has $x=120-4y$ with $0\\leq y\\leq30$. Hence $f(y)=120y-4y^2=900-4(y-15)^2$. The unique maximum is900 at $y=15,x=60$. Since both coordinates are nonnegative, $xy\\geq0$; equality occurs only at the two endpoints $(120,0)$ and $(0,30)$, which are the minima.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Use the linear constraint to remove one variable: x=120-4y and 0≤y≤30. The product becomes a concave quadratic in y. Its stationary point supplies the maximum, while the two endpoints must be checked for minima. Because all feasible quantities are nonnegative, zero is already a lower bound; identifying where one factor becomes zero locates every minimizer without relying on a misleading unconstrained saddle-point calculation."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "The feasible set has $x=120-4y$ with $0\\leq y\\leq30$. Hence $f(y)=120y-4y^2=900-4(y-15)^2$.\n\nThe unique maximum is900 at $y=15,x=60$. Since both coordinates are nonnegative, $xy\\geq0$; equality occurs only at the two endpoints $(120,0)$ and $(0,30)$, which are the minima."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q1b",
     "number": "1(b)",
     "stem": "Find the points on the circle $x^2+y^2=50$ that are closest to and farthest from $(1,1)$. [15 marks]",
     "answer": "Closest $(5,5)$, at distance $4\\sqrt2$; farthest $(-5,-5)$, at distance $6\\sqrt2$.",
-    "solution": "On the circle the squared distance is $(x-1)^2+(y-1)^2=52-2(x+y)$. Cauchy-Schwarz gives $|x+y|\\leq\\sqrt{2(x^2+y^2)}=10$, with equality when $x=y$. Thus distance is minimized at $x=y=5$ and maximized at $x=y=-5$. The respective squared distances are32 and72, giving $4\\sqrt2$ and $6\\sqrt2$.",
+    "solution": "The squared distance to (1,1) is $x^2+y^2-2(x+y)+2$. On the circle x²+y²=50, only the linear term x+y varies. Thus nearest and farthest points are obtained by maximizing and minimizing x+y respectively. The Cauchy–Schwarz bound makes these extreme values easy to find, and its equality condition tells us the point lies along the radial direction (1,1). This also gives a geometric explanation independent of Lagrange multipliers.\n\nOn the circle the squared distance is $(x-1)^2+(y-1)^2=52-2(x+y)$. Cauchy-Schwarz gives $|x+y|\\leq\\sqrt{2(x^2+y^2)}=10$, with equality when $x=y$.\n\nThus distance is minimized at $x=y=5$ and maximized at $x=y=-5$. The respective squared distances are32 and72, giving $4\\sqrt2$ and $6\\sqrt2$.",
     "hint": "The circle constraint makes squared distance a linear function of $x+y$.",
     "topic": "Calculus",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "On the circle the squared distance is $(x-1)^2+(y-1)^2=52-2(x+y)$. Cauchy-Schwarz gives $|x+y|\\leq\\sqrt{2(x^2+y^2)}=10$, with equality when $x=y$. Thus distance is minimized at $x=y=5$ and maximized at $x=y=-5$. The respective squared distances are32 and72, giving $4\\sqrt2$ and $6\\sqrt2$.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "The squared distance to (1,1) is $x^2+y^2-2(x+y)+2$. On the circle x²+y²=50, only the linear term x+y varies. Thus nearest and farthest points are obtained by maximizing and minimizing x+y respectively. The Cauchy–Schwarz bound makes these extreme values easy to find, and its equality condition tells us the point lies along the radial direction (1,1). This also gives a geometric explanation independent of Lagrange multipliers."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "On the circle the squared distance is $(x-1)^2+(y-1)^2=52-2(x+y)$. Cauchy-Schwarz gives $|x+y|\\leq\\sqrt{2(x^2+y^2)}=10$, with equality when $x=y$.\n\nThus distance is minimized at $x=y=5$ and maximized at $x=y=-5$. The respective squared distances are32 and72, giving $4\\sqrt2$ and $6\\sqrt2$."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q1c",
     "number": "1(c)",
     "stem": "For which real $\\alpha$ are $(0,1,\\alpha)$, $(\\alpha,1,0)$ and $(1,\\alpha,1)$ in $\\mathbb R^3$ linearly independent? [5 marks]",
     "answer": "$\\alpha\\notin\\{0,\\sqrt2,-\\sqrt2\\}$.",
-    "solution": "Use the vectors as rows of a matrix. Its determinant is $\\det\\begin{pmatrix}0&1&\\alpha\\\\\\alpha&1&0\\\\1&\\alpha&1\\end{pmatrix}=\\alpha^3-2\\alpha=\\alpha(\\alpha^2-2)$. Three vectors in $\\mathbb R^3$ are linearly independent precisely when this determinant is nonzero, giving the result.",
+    "solution": "Three vectors in R³ are independent exactly when the matrix with those vectors as columns has nonzero determinant. Independence fails only at roots of that determinant polynomial. Record whether the vectors were inserted as rows or columns, although transposing does not change the zero/nonzero test. After factoring the polynomial, exclude every real root, including zero; checking only the two nonzero square-root values would miss a degenerate case.\n\nUse the vectors as rows of a matrix. Its determinant is $\\det\\begin{pmatrix}0&1&\\alpha\\\\\\alpha&1&0\\\\1&\\alpha&1\\end{pmatrix}=\\alpha^3-2\\alpha=\\alpha(\\alpha^2-2)$. Three vectors in $\\mathbb R^3$ are linearly independent precisely when this determinant is nonzero, giving the result.",
     "hint": "Compute the determinant of the matrix with the three vectors as rows.",
     "topic": "Linear algebra",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Use the vectors as rows of a matrix. Its determinant is $\\det\\begin{pmatrix}0&1&\\alpha\\\\\\alpha&1&0\\\\1&\\alpha&1\\end{pmatrix}=\\alpha^3-2\\alpha=\\alpha(\\alpha^2-2)$. Three vectors in $\\mathbb R^3$ are linearly independent precisely when this determinant is nonzero, giving the result.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Three vectors in R³ are independent exactly when the matrix with those vectors as columns has nonzero determinant. Independence fails only at roots of that determinant polynomial. Record whether the vectors were inserted as rows or columns, although transposing does not change the zero/nonzero test. After factoring the polynomial, exclude every real root, including zero; checking only the two nonzero square-root values would miss a degenerate case."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Use the vectors as rows of a matrix. Its determinant is $\\det\\begin{pmatrix}0&1&\\alpha\\\\\\alpha&1&0\\\\1&\\alpha&1\\end{pmatrix}=\\alpha^3-2\\alpha=\\alpha(\\alpha^2-2)$. Three vectors in $\\mathbb R^3$ are linearly independent precisely when this determinant is nonzero, giving the result."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q2a",
     "number": "2(a)",
     "stem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous and let $\\mathbb Q$ be the rational numbers. Prove that if $f(\\mathbb Q)\\subseteq\\{1,2,3,\\ldots\\}$, then $f$ is constant. [20 marks]",
     "answer": "$f(x)=k$ for every real $x$, for some positive integer $k$.",
-    "solution": "For any real $x$, choose rational $q_m\\to x$. Continuity gives $f(q_m)\\to f(x)$. A convergent sequence of positive integers is eventually constant, so its limit is a positive integer. Thus $f$ takes positive-integer values everywhere, not merely on rationals. If it were nonconstant, two values would be distinct integers. The intermediate value theorem would then force a noninteger value strictly between them, a contradiction. Therefore $f$ is constant, and its value is a positive integer.",
+    "solution": "Two properties of the real line work together. Density of the rationals lets continuity transfer the restriction from rational arguments to every real argument. Then the intermediate value theorem prevents a continuous function from jumping between distinct integer outputs. Neither idea alone is enough: knowing integer values on a dense set needs continuity, and merely knowing integer values everywhere needs connectedness of the domain to force constancy.\n\nFor any real $x$, choose rational $q_m\\to x$. Continuity gives $f(q_m)\\to f(x)$.\n\nA convergent sequence of positive integers is eventually constant, so its limit is a positive integer. Thus $f$ takes positive-integer values everywhere, not merely on rationals.\n\nIf it were nonconstant, two values would be distinct integers. The intermediate value theorem would then force a noninteger value strictly between them, a contradiction.\n\nTherefore $f$ is constant, and its value is a positive integer.",
     "hint": "First extend the integer-valued property from a dense subset to all of $\\mathbb R$, then apply the intermediate value theorem.",
     "topic": "Calculus",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 20,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For any real $x$, choose rational $q_m\\to x$. Continuity gives $f(q_m)\\to f(x)$. A convergent sequence of positive integers is eventually constant, so its limit is a positive integer. Thus $f$ takes positive-integer values everywhere, not merely on rationals. If it were nonconstant, two values would be distinct integers. The intermediate value theorem would then force a noninteger value strictly between them, a contradiction. Therefore $f$ is constant, and its value is a positive integer.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Two properties of the real line work together. Density of the rationals lets continuity transfer the restriction from rational arguments to every real argument. Then the intermediate value theorem prevents a continuous function from jumping between distinct integer outputs. Neither idea alone is enough: knowing integer values on a dense set needs continuity, and merely knowing integer values everywhere needs connectedness of the domain to force constancy."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "For any real $x$, choose rational $q_m\\to x$. Continuity gives $f(q_m)\\to f(x)$.\n\nA convergent sequence of positive integers is eventually constant, so its limit is a positive integer. Thus $f$ takes positive-integer values everywhere, not merely on rationals.\n\nIf it were nonconstant, two values would be distinct integers. The intermediate value theorem would then force a noninteger value strictly between them, a contradiction.\n\nTherefore $f$ is constant, and its value is a positive integer."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q2b",
     "number": "2(b)",
     "stem": "Let $f:\\mathbb R\\to\\mathbb R$ be continuous. Calculate $f'(0)$ when $f$ is differentiable and $|f(x)|\\leq x^2$ for all real $x$. [10 marks]",
     "answer": "$f'(0)=0$.",
-    "solution": "Putting $x=0$ gives $f(0)=0$. For $h\\neq0$, $|(f(h)-f(0))/h|\\leq h^2/|h|=|h|$. The right side tends to zero as $h\\to0$, so the difference quotient tends to zero by squeezing. Thus $f'(0)=0$. In fact the stated bound alone guarantees differentiability at zero.",
+    "solution": "First substitute x=0 into the bound; this determines f(0), which must be subtracted in the derivative definition. Next divide the bound at h by |h|, not by h without tracking its sign. The bound becomes\n\n$$\\left|\\frac{f(h)-f(0)}h\\right|\\leq|h|.$$\n\nSince the right side tends to zero from either direction, the derivative follows by squeezing. In fact no global differentiability assumption is needed: this local bound itself proves differentiability at zero.\n\nPutting $x=0$ gives $f(0)=0$. For $h\\neq0$, $|(f(h)-f(0))/h|\\leq h^2/|h|=|h|$.\n\nThe right side tends to zero as $h\\to0$, so the difference quotient tends to zero by squeezing. Thus $f'(0)=0$.\n\nIn fact the stated bound alone guarantees differentiability at zero.",
     "hint": "Bound the absolute value of the difference quotient.",
     "topic": "Calculus",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Putting $x=0$ gives $f(0)=0$. For $h\\neq0$, $|(f(h)-f(0))/h|\\leq h^2/|h|=|h|$. The right side tends to zero as $h\\to0$, so the difference quotient tends to zero by squeezing. Thus $f'(0)=0$. In fact the stated bound alone guarantees differentiability at zero.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "First substitute x=0 into the bound; this determines f(0), which must be subtracted in the derivative definition. Next divide the bound at h by |h|, not by h without tracking its sign. The bound becomes\n\n$$\\left|\\frac{f(h)-f(0)}h\\right|\\leq|h|.$$\n\nSince the right side tends to zero from either direction, the derivative follows by squeezing. In fact no global differentiability assumption is needed: this local bound itself proves differentiability at zero."
+      },
+      {
+        "title": "Complete the argument",
+        "body": "Putting $x=0$ gives $f(0)=0$. For $h\\neq0$, $|(f(h)-f(0))/h|\\leq h^2/|h|=|h|$.\n\nThe right side tends to zero as $h\\to0$, so the difference quotient tends to zero by squeezing. Thus $f'(0)=0$.\n\nIn fact the stated bound alone guarantees differentiability at zero."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q3a",
     "number": "3(a)",
     "stem": "There are $n\\geq2$ political parties and $V$ voters, each voting for exactly one party. Party $i$ receives $V_i$ votes, with $V=\\sum_iV_i$. Let $P_1$ be the probability that two randomly drawn voters voted for different parties when sampling with replacement, and $P_2$ the corresponding probability without replacement. Derive $P_2/P_1$ as a function of $V$ alone. [25 marks]",
     "answer": "$P_2/P_1=V/(V-1)$ whenever $V\\geq2$ and at least two parties receive votes.",
-    "solution": "With replacement, the probability of matching parties is $\\sum_i(V_i/V)^2$, so $P_1=(V^2-\\sum_iV_i^2)/V^2$. Without replacement it is $\\sum_iV_i(V_i-1)/[V(V-1)]$, so $P_2=(V^2-\\sum_iV_i^2)/[V(V-1)]$. Cancelling the common positive numerator gives $P_2/P_1=V/(V-1)$. If all votes go to one party, both probabilities are zero and the ratio is undefined; the identity $P_2=VP_1/(V-1)$ remains valid. Sampling without replacement itself requires $V\\geq2$.",
+    "solution": "Sampling with replacement allows the same voter to be drawn twice, while sampling without replacement excludes that possibility. It is easiest to count the complementary event that the two votes belong to the same party. In the without-replacement count, the second choice from party i has Vi-1 rather than Vi available voters. Simplifying both complements reveals a common numerator; cancel it only when it is nonzero, because unanimous voting makes the requested ratio undefined.\n\nWith replacement, the probability of matching parties is $\\sum_i(V_i/V)^2$, so $P_1=(V^2-\\sum_iV_i^2)/V^2$. Without replacement it is $\\sum_iV_i(V_i-1)/[V(V-1)]$, so $P_2=(V^2-\\sum_iV_i^2)/[V(V-1)]$.\n\nCancelling the common positive numerator gives $P_2/P_1=V/(V-1)$. If all votes go to one party, both probabilities are zero and the ratio is undefined; the identity $P_2=VP_1/(V-1)$ remains valid.\n\nSampling without replacement itself requires $V\\geq2$.",
     "hint": "Compute the complement probability that both voters support the same party in each sampling scheme.",
     "topic": "Probability",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 25,
     "status": "verified",
-    "notes": "The ratio needs P1>0. The printed n>=2 by itself does not exclude all voters supporting one party, so the zero-over-zero exception is stated explicitly."
+    "notes": "The ratio needs P1>0. The printed n>=2 by itself does not exclude all voters supporting one party, so the zero-over-zero exception is stated explicitly.",
+    "solutionOriginal": "With replacement, the probability of matching parties is $\\sum_i(V_i/V)^2$, so $P_1=(V^2-\\sum_iV_i^2)/V^2$. Without replacement it is $\\sum_iV_i(V_i-1)/[V(V-1)]$, so $P_2=(V^2-\\sum_iV_i^2)/[V(V-1)]$. Cancelling the common positive numerator gives $P_2/P_1=V/(V-1)$. If all votes go to one party, both probabilities are zero and the ratio is undefined; the identity $P_2=VP_1/(V-1)$ remains valid. Sampling without replacement itself requires $V\\geq2$.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Sampling with replacement allows the same voter to be drawn twice, while sampling without replacement excludes that possibility. It is easiest to count the complementary event that the two votes belong to the same party. In the without-replacement count, the second choice from party i has Vi-1 rather than Vi available voters. Simplifying both complements reveals a common numerator; cancel it only when it is nonzero, because unanimous voting makes the requested ratio undefined."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "With replacement, the probability of matching parties is $\\sum_i(V_i/V)^2$, so $P_1=(V^2-\\sum_iV_i^2)/V^2$. Without replacement it is $\\sum_iV_i(V_i-1)/[V(V-1)]$, so $P_2=(V^2-\\sum_iV_i^2)/[V(V-1)]$.\n\nCancelling the common positive numerator gives $P_2/P_1=V/(V-1)$. If all votes go to one party, both probabilities are zero and the ratio is undefined; the identity $P_2=VP_1/(V-1)$ remains valid.\n\nSampling without replacement itself requires $V\\geq2$."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q3b",
     "number": "3(b)",
     "stem": "There are $n\\geq2$ political parties and $V$ voters, each voting for exactly one party. Party $i$ receives $V_i$ votes, with $V=\\sum_iV_i$. Let $P_1$ be the probability that two randomly drawn voters voted for different parties when sampling with replacement, and $P_2$ the corresponding probability without replacement. Suppose $V_i=V/n$ for every party. Find $P_1$ and $P_2$. [5 marks]",
     "answer": "$P_1=(n-1)/n$ and $P_2=V(n-1)/[n(V-1)]$.",
-    "solution": "Equal vote shares give $\\sum_i(V_i/V)^2=n(1/n)^2=1/n$, so $P_1=1-1/n$. Apply part(a), or count without-replacement pairs directly, to obtain $P_2=[V/(V-1)](n-1)/n$. This equal-count scenario requires $V/n$ to be an integer.",
+    "solution": "Equal party vote counts imply equal population shares, so the with-replacement probability of matching a party is the sum of n identical squares. The without-replacement probability is slightly less likely to match, because removing the first voter reduces that party’s remaining representation. Apply the ratio derived above only after checking V≥2 and that V/n is an integer; otherwise the stipulated equal-count electorate cannot exist.\n\nEqual vote shares give $\\sum_i(V_i/V)^2=n(1/n)^2=1/n$, so $P_1=1-1/n$. Apply part(a), or count without-replacement pairs directly, to obtain $P_2=[V/(V-1)](n-1)/n$. This equal-count scenario requires $V/n$ to be an integer.",
     "hint": "Each party has vote share $1/n$.",
     "topic": "Probability",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Equal vote shares give $\\sum_i(V_i/V)^2=n(1/n)^2=1/n$, so $P_1=1-1/n$. Apply part(a), or count without-replacement pairs directly, to obtain $P_2=[V/(V-1)](n-1)/n$. This equal-count scenario requires $V/n$ to be an integer.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Equal party vote counts imply equal population shares, so the with-replacement probability of matching a party is the sum of n identical squares. The without-replacement probability is slightly less likely to match, because removing the first voter reduces that party’s remaining representation. Apply the ratio derived above only after checking V≥2 and that V/n is an integer; otherwise the stipulated equal-count electorate cannot exist."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Equal vote shares give $\\sum_i(V_i/V)^2=n(1/n)^2=1/n$, so $P_1=1-1/n$. Apply part(a), or count without-replacement pairs directly, to obtain $P_2=[V/(V-1)](n-1)/n$. This equal-count scenario requires $V/n$ to be an integer."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q4a",
     "number": "4(a)",
     "stem": "A two-period agent maximizes $U(C_1)+U(C_2)/(1+\\rho)$, where $\\rho>0$, with $C_1+s=w$ and $C_2=(1+r)s$. Period1 labour is supplied inelastically; period2 has no wage income. Per-period utility is represented, up to a positive affine transformation, by $U(C)=(C^{1-\\theta}-1)/(1-\\theta)$, $0<\\theta<1$. Derive the response of optimal saving to the interest rate $r$. [20 marks]",
     "answer": "Holding $\\rho$ fixed, saving increases with $r$. With $z=(1+r)^{(1-\\theta)/\\theta}(1+\\rho)^{-1/\\theta}$, $s=wz/(1+z)$ and $ds/dr>0$.",
-    "solution": "The interior Euler equation is $(w-s)^{-\\theta}=[(1+r)/(1+\\rho)]((1+r)s)^{-\\theta}$. Therefore $s/(w-s)=z$, where $z=(1+r)^{(1-\\theta)/\\theta}(1+\\rho)^{-1/\\theta}$. Solving gives $s=wz/(1+z)$. At fixed $\\rho$, $z_r=z(1-\\theta)/[\\theta(1+r)]>0$. Thus $ds/dr=wz(1-\\theta)/[\\theta(1+r)(1+z)^2]>0$. The parameter restriction $\\theta<1$ makes the substitution incentive dominate the income effect of the interest increase.",
+    "solution": "Saving one more first-period unit sacrifices current marginal utility and buys 1+r second-period consumption units, discounted by 1/(1+rho). Insert the power marginal utility C to the power -theta and solve for the saving-to-consumption ratio before differentiating. This isolates interest inside a single positive quantity z. Keep rho fixed in this experiment; allowing it to move with r changes both preferences and returns and produces a different sign in the next part.\n\nThe interior Euler equation is $(w-s)^{-\\theta}=[(1+r)/(1+\\rho)]((1+r)s)^{-\\theta}$. Therefore $s/(w-s)=z$, where $z=(1+r)^{(1-\\theta)/\\theta}(1+\\rho)^{-1/\\theta}$.\n\nSolving gives $s=wz/(1+z)$. At fixed $\\rho$, $z_r=z(1-\\theta)/[\\theta(1+r)]>0$.\n\nThus $ds/dr=wz(1-\\theta)/[\\theta(1+r)(1+z)^2]>0$. The parameter restriction $\\theta<1$ makes the substitution incentive dominate the income effect of the interest increase.",
     "hint": "Use $U'(C)=C^{-\\theta}$ in the Euler equation, then solve explicitly for $s$.",
     "topic": "Microeconomics",
     "sourcePage": 9,
     "sourceFile": "ISI 2022.pdf",
     "marks": 20,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The interior Euler equation is $(w-s)^{-\\theta}=[(1+r)/(1+\\rho)]((1+r)s)^{-\\theta}$. Therefore $s/(w-s)=z$, where $z=(1+r)^{(1-\\theta)/\\theta}(1+\\rho)^{-1/\\theta}$. Solving gives $s=wz/(1+z)$. At fixed $\\rho$, $z_r=z(1-\\theta)/[\\theta(1+r)]>0$. Thus $ds/dr=wz(1-\\theta)/[\\theta(1+r)(1+z)^2]>0$. The parameter restriction $\\theta<1$ makes the substitution incentive dominate the income effect of the interest increase.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Saving one more first-period unit sacrifices current marginal utility and buys 1+r second-period consumption units, discounted by 1/(1+rho). Insert the power marginal utility C to the power -theta and solve for the saving-to-consumption ratio before differentiating. This isolates interest inside a single positive quantity z. Keep rho fixed in this experiment; allowing it to move with r changes both preferences and returns and produces a different sign in the next part."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The interior Euler equation is $(w-s)^{-\\theta}=[(1+r)/(1+\\rho)]((1+r)s)^{-\\theta}$. Therefore $s/(w-s)=z$, where $z=(1+r)^{(1-\\theta)/\\theta}(1+\\rho)^{-1/\\theta}$.\n\nSolving gives $s=wz/(1+z)$. At fixed $\\rho$, $z_r=z(1-\\theta)/[\\theta(1+r)]>0$.\n\nThus $ds/dr=wz(1-\\theta)/[\\theta(1+r)(1+z)^2]>0$. The parameter restriction $\\theta<1$ makes the substitution incentive dominate the income effect of the interest increase."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q4b",
     "number": "4(b)",
     "stem": "A two-period agent maximizes $U(C_1)+U(C_2)/(1+\\rho)$, where $\\rho>0$, with $C_1+s=w$ and $C_2=(1+r)s$. Period1 labour is supplied inelastically; period2 has no wage income. Per-period utility is represented, up to a positive affine transformation, by $U(C)=(C^{1-\\theta}-1)/(1-\\theta)$, $0<\\theta<1$. Initially $r=\\rho$. What happens to saving if $r$ and $\\rho$ rise by the same amount, preserving $r=\\rho$? [10 marks]",
     "answer": "Saving falls: along $r=\\rho$, $s=w/(2+r)$.",
-    "solution": "When $r=\\rho$, the discount factor times the gross interest factor equals1. The Euler equation then gives $U'(C_1)=U'(C_2)$, hence $C_1=C_2$ by strict concavity. From $w-s=(1+r)s$, $s=w/(2+r)$. Along the specified joint change, $ds/dr=-w/(2+r)^2<0$. This is not the same experiment as part(a), which held the time-preference parameter fixed.",
+    "solution": "The condition r=rho is maintained during the change, so the financial incentive to postpone consumption is exactly offset by the subjective discount wedge at every compared optimum. Equal marginal utilities and strict concavity then imply equal consumption levels. Saving must finance the same consumption as that retained in period 1; as the gross return rises, less principal is needed to do so. This is why saving can fall here even though it rose in the fixed-preference experiment.\n\nWhen $r=\\rho$, the discount factor times the gross interest factor equals1. The Euler equation then gives $U'(C_1)=U'(C_2)$, hence $C_1=C_2$ by strict concavity.\n\nFrom $w-s=(1+r)s$, $s=w/(2+r)$. Along the specified joint change, $ds/dr=-w/(2+r)^2<0$.\n\nThis is not the same experiment as part(a), which held the time-preference parameter fixed.",
     "hint": "Along this change the Euler equation continues to imply equal consumption in both periods.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "When $r=\\rho$, the discount factor times the gross interest factor equals1. The Euler equation then gives $U'(C_1)=U'(C_2)$, hence $C_1=C_2$ by strict concavity. From $w-s=(1+r)s$, $s=w/(2+r)$. Along the specified joint change, $ds/dr=-w/(2+r)^2<0$. This is not the same experiment as part(a), which held the time-preference parameter fixed.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "The condition r=rho is maintained during the change, so the financial incentive to postpone consumption is exactly offset by the subjective discount wedge at every compared optimum. Equal marginal utilities and strict concavity then imply equal consumption levels. Saving must finance the same consumption as that retained in period 1; as the gross return rises, less principal is needed to do so. This is why saving can fall here even though it rose in the fixed-preference experiment."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "When $r=\\rho$, the discount factor times the gross interest factor equals1. The Euler equation then gives $U'(C_1)=U'(C_2)$, hence $C_1=C_2$ by strict concavity.\n\nFrom $w-s=(1+r)s$, $s=w/(2+r)$. Along the specified joint change, $ds/dr=-w/(2+r)^2<0$.\n\nThis is not the same experiment as part(a), which held the time-preference parameter fixed."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q5a",
     "number": "5(a)",
     "stem": "A monopolist has cost $C(x)=cx$, $c>0$, and sells all output $x\\geq0$ to one consumer. The consumer can buy $0\\leq y\\leq x$ and has utility $\\theta\\sqrt y-T(y)$, $\\theta>0$. For positive purchases $T(y)=py+t$, with $p,t\\geq0$, while $T(0)=0$. Find monopoly profit when any nonnegative two-part tariff $(p,t)$ can be chosen. [10 marks]",
     "answer": "Maximum profit is $\\theta^2/(4c)$, attained by $p=c$, $t=\\theta^2/(4c)$ and $x=y=\\theta^2/(4c^2)$ under participation at indifference.",
-    "solution": "A fixed fee cannot exceed the consumer's surplus before the fee. Hence profit at any sold quantity is bounded by total surplus $\\theta\\sqrt y-cy$. Maximizing this expression gives $\\theta/(2\\sqrt y)=c$, so $y^*=\\theta^2/(4c^2)$ and total surplus $\\theta^2/(4c)$. Set the per-unit price to marginal cost, $p=c$, to induce this quantity, and extract its remaining gross consumer surplus through $t=\\theta\\sqrt{y^*}-cy^*=\\theta^2/(4c)$. The consumer obtains zero net utility and profit equals all total surplus. If the consumer refuses purchases when exactly indifferent, use a fee arbitrarily below this level; the displayed amount is then the profit supremum. Other equivalent tariffs can implement the same quantity when the available-output cap binds, so the displayed tariff need not be unique.",
+    "solution": "With one known consumer, a fixed fee can extract utility without changing the marginal purchase incentive. Total profit can never exceed gross consumption benefit minus production cost, since the buyer must be at least as well off as buying nothing. Maximizing that surplus gives an upper bound on profit. A per-unit price equal to marginal cost implements the efficient quantity, and a fixed fee equal to the resulting surplus attains the bound under acceptance at indifference.\n\nA fixed fee cannot exceed the consumer's surplus before the fee. Hence profit at any sold quantity is bounded by total surplus $\\theta\\sqrt y-cy$.\n\nMaximizing this expression gives $\\theta/(2\\sqrt y)=c$, so $y^*=\\theta^2/(4c^2)$ and total surplus $\\theta^2/(4c)$. Set the per-unit price to marginal cost, $p=c$, to induce this quantity, and extract its remaining gross consumer surplus through $t=\\theta\\sqrt{y^*}-cy^*=\\theta^2/(4c)$.\n\nThe consumer obtains zero net utility and profit equals all total surplus. If the consumer refuses purchases when exactly indifferent, use a fee arbitrarily below this level; the displayed amount is then the profit supremum.\n\nOther equivalent tariffs can implement the same quantity when the available-output cap binds, so the displayed tariff need not be unique.",
     "hint": "The fixed fee can extract consumer surplus; choose quantity to maximize total surplus.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Usual participation-at-indifference convention is made explicit. The source allows a supply cap y<=x, so no uniqueness of the implementing two-part tariff is asserted."
+    "notes": "Usual participation-at-indifference convention is made explicit. The source allows a supply cap y<=x, so no uniqueness of the implementing two-part tariff is asserted.",
+    "solutionOriginal": "A fixed fee cannot exceed the consumer's surplus before the fee. Hence profit at any sold quantity is bounded by total surplus $\\theta\\sqrt y-cy$. Maximizing this expression gives $\\theta/(2\\sqrt y)=c$, so $y^*=\\theta^2/(4c^2)$ and total surplus $\\theta^2/(4c)$. Set the per-unit price to marginal cost, $p=c$, to induce this quantity, and extract its remaining gross consumer surplus through $t=\\theta\\sqrt{y^*}-cy^*=\\theta^2/(4c)$. The consumer obtains zero net utility and profit equals all total surplus. If the consumer refuses purchases when exactly indifferent, use a fee arbitrarily below this level; the displayed amount is then the profit supremum. Other equivalent tariffs can implement the same quantity when the available-output cap binds, so the displayed tariff need not be unique.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "With one known consumer, a fixed fee can extract utility without changing the marginal purchase incentive. Total profit can never exceed gross consumption benefit minus production cost, since the buyer must be at least as well off as buying nothing. Maximizing that surplus gives an upper bound on profit. A per-unit price equal to marginal cost implements the efficient quantity, and a fixed fee equal to the resulting surplus attains the bound under acceptance at indifference."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "A fixed fee cannot exceed the consumer's surplus before the fee. Hence profit at any sold quantity is bounded by total surplus $\\theta\\sqrt y-cy$.\n\nMaximizing this expression gives $\\theta/(2\\sqrt y)=c$, so $y^*=\\theta^2/(4c^2)$ and total surplus $\\theta^2/(4c)$. Set the per-unit price to marginal cost, $p=c$, to induce this quantity, and extract its remaining gross consumer surplus through $t=\\theta\\sqrt{y^*}-cy^*=\\theta^2/(4c)$.\n\nThe consumer obtains zero net utility and profit equals all total surplus. If the consumer refuses purchases when exactly indifferent, use a fee arbitrarily below this level; the displayed amount is then the profit supremum.\n\nOther equivalent tariffs can implement the same quantity when the available-output cap binds, so the displayed tariff need not be unique."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q5b",
     "number": "5(b)",
     "stem": "A monopolist has cost $C(x)=cx$, $c>0$, and sells all output $x\\geq0$ to one consumer. The consumer can buy $0\\leq y\\leq x$ and has utility $\\theta\\sqrt y-T(y)$, $\\theta>0$. For positive purchases $T(y)=py+t$, with $p,t\\geq0$, while $T(0)=0$. Now impose $t=0$ but allow any nonnegative $p$. Find profit and compare it with part(a). [10 marks]",
     "answer": "$p=2c$, $x=y=\\theta^2/(16c^2)$, profit $\\theta^2/(16c)$, one quarter of part(a).",
-    "solution": "For a positive per-unit price, the consumer's first-order condition gives $y=\\theta^2/(4p^2)$. Equivalently inverse demand is $p=\\theta/(2\\sqrt y)$. Revenue is $\\theta\\sqrt y/2$, so monopoly profit is $\\theta\\sqrt y/2-cy$. Maximization gives $\\sqrt y=\\theta/(4c)$, hence $y=\\theta^2/(16c^2)$ and $p=2c$. Profit is $\\theta^2/(16c)$, exactly one quarter of the unrestricted two-part-tariff profit. Without a fixed fee, extracting surplus through a price markup distorts quantity downward.",
+    "solution": "Removing the entry fee forces the monopolist to recover surplus through the per-unit markup alone. Derive the buyer’s demand from marginal benefit equal to p, then invert it so revenue and cost can be expressed in the actual sold quantity. The firm’s marginal revenue is less than the consumer’s marginal willingness to pay, which explains why uniform linear pricing chooses less than the efficient quantity and yields lower profit than the two-part tariff.\n\nFor a positive per-unit price, the consumer's first-order condition gives $y=\\theta^2/(4p^2)$. Equivalently inverse demand is $p=\\theta/(2\\sqrt y)$.\n\nRevenue is $\\theta\\sqrt y/2$, so monopoly profit is $\\theta\\sqrt y/2-cy$. Maximization gives $\\sqrt y=\\theta/(4c)$, hence $y=\\theta^2/(16c^2)$ and $p=2c$.\n\nProfit is $\\theta^2/(16c)$, exactly one quarter of the unrestricted two-part-tariff profit. Without a fixed fee, extracting surplus through a price markup distorts quantity downward.",
     "hint": "Use the consumer's demand to maximize linear-price profit, or use inverse demand and maximize over quantity.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "For a positive per-unit price, the consumer's first-order condition gives $y=\\theta^2/(4p^2)$. Equivalently inverse demand is $p=\\theta/(2\\sqrt y)$. Revenue is $\\theta\\sqrt y/2$, so monopoly profit is $\\theta\\sqrt y/2-cy$. Maximization gives $\\sqrt y=\\theta/(4c)$, hence $y=\\theta^2/(16c^2)$ and $p=2c$. Profit is $\\theta^2/(16c)$, exactly one quarter of the unrestricted two-part-tariff profit. Without a fixed fee, extracting surplus through a price markup distorts quantity downward.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Removing the entry fee forces the monopolist to recover surplus through the per-unit markup alone. Derive the buyer’s demand from marginal benefit equal to p, then invert it so revenue and cost can be expressed in the actual sold quantity. The firm’s marginal revenue is less than the consumer’s marginal willingness to pay, which explains why uniform linear pricing chooses less than the efficient quantity and yields lower profit than the two-part tariff."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "For a positive per-unit price, the consumer's first-order condition gives $y=\\theta^2/(4p^2)$. Equivalently inverse demand is $p=\\theta/(2\\sqrt y)$.\n\nRevenue is $\\theta\\sqrt y/2$, so monopoly profit is $\\theta\\sqrt y/2-cy$. Maximization gives $\\sqrt y=\\theta/(4c)$, hence $y=\\theta^2/(16c^2)$ and $p=2c$.\n\nProfit is $\\theta^2/(16c)$, exactly one quarter of the unrestricted two-part-tariff profit. Without a fixed fee, extracting surplus through a price markup distorts quantity downward."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q5c",
     "number": "5(c)",
     "stem": "A monopolist has cost $C(x)=cx$, $c>0$, and sells all output $x\\geq0$ to one consumer. The consumer can buy $0\\leq y\\leq x$ and has utility $\\theta\\sqrt y-T(y)$, $\\theta>0$. For positive purchases $T(y)=py+t$, with $p,t\\geq0$, while $T(0)=0$. Calculate which tariff regime has higher social surplus and explain. [5 marks]",
     "answer": "Two-part pricing has surplus $\\theta^2/(4c)$, versus $3\\theta^2/(16c)$ under linear pricing.",
-    "solution": "Social surplus is gross utility minus real production cost, $\\theta\\sqrt y-cy$. At the efficient two-part-tariff quantity it equals $\\theta^2/(4c)$. At the linear monopoly quantity it equals $\\theta^2/(4c)-\\theta^2/(16c)=3\\theta^2/(16c)$. Thus two-part pricing raises total surplus by $\\theta^2/(16c)$ by removing the quantity distortion.",
+    "solution": "A fee is a transfer between buyer and seller; it does not destroy social resources. To compare social surplus, use the quantity each tariff induces and subtract only production cost from gross benefit. The efficient two-part tariff maximizes that expression. Linear monopoly leaves mutually beneficial marginal trades unrealized, so its welfare shortfall is a quantity distortion rather than the existence of a high payment by itself.\n\nSocial surplus is gross utility minus real production cost, $\\theta\\sqrt y-cy$. At the efficient two-part-tariff quantity it equals $\\theta^2/(4c)$.\n\nAt the linear monopoly quantity it equals $\\theta^2/(4c)-\\theta^2/(16c)=3\\theta^2/(16c)$. Thus two-part pricing raises total surplus by $\\theta^2/(16c)$ by removing the quantity distortion.",
     "hint": "Transfers between seller and buyer cancel when adding social surplus.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Social surplus is gross utility minus real production cost, $\\theta\\sqrt y-cy$. At the efficient two-part-tariff quantity it equals $\\theta^2/(4c)$. At the linear monopoly quantity it equals $\\theta^2/(4c)-\\theta^2/(16c)=3\\theta^2/(16c)$. Thus two-part pricing raises total surplus by $\\theta^2/(16c)$ by removing the quantity distortion.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "A fee is a transfer between buyer and seller; it does not destroy social resources. To compare social surplus, use the quantity each tariff induces and subtract only production cost from gross benefit. The efficient two-part tariff maximizes that expression. Linear monopoly leaves mutually beneficial marginal trades unrealized, so its welfare shortfall is a quantity distortion rather than the existence of a high payment by itself."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Social surplus is gross utility minus real production cost, $\\theta\\sqrt y-cy$. At the efficient two-part-tariff quantity it equals $\\theta^2/(4c)$.\n\nAt the linear monopoly quantity it equals $\\theta^2/(4c)-\\theta^2/(16c)=3\\theta^2/(16c)$. Thus two-part pricing raises total surplus by $\\theta^2/(16c)$ by removing the quantity distortion."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q5d",
     "number": "5(d)",
     "stem": "A monopolist has cost $C(x)=cx$, $c>0$, and sells all output $x\\geq0$ to one consumer. The consumer can buy $0\\leq y\\leq x$ and has utility $\\theta\\sqrt y-T(y)$, $\\theta>0$. For positive purchases $T(y)=py+t$, with $p,t\\geq0$, while $T(0)=0$. Calculate which tariff regime has higher consumer surplus and explain. [5 marks]",
     "answer": "Consumer surplus is zero under surplus-extracting two-part pricing and $\\theta^2/(8c)$ under linear pricing.",
-    "solution": "The optimal two-part fee extracts all surplus, leaving the buyer with zero net utility. Under linear pricing, gross utility at $y=\\theta^2/(16c^2)$ is $\\theta^2/(4c)$ and payment is $2c\\cdot\\theta^2/(16c^2)=\\theta^2/(8c)$. Their difference is $\\theta^2/(8c)>0$. Thus the buyer prefers linear pricing even though it generates lower total surplus, because the monopolist cannot extract all surplus without a fixed charge.",
+    "solution": "Consumer surplus is the buyer’s residual utility after all payments, not total social surplus. With the optimal two-part tariff, the fixed fee deliberately exhausts that residual, even though output is efficient. With no fixed fee, the seller cannot fully appropriate the buyer’s gain, so the consumer keeps a positive amount. Thus the tariff preferred by society need not be the tariff preferred by the consumer; distribution and efficiency are separate comparisons.\n\nThe optimal two-part fee extracts all surplus, leaving the buyer with zero net utility. Under linear pricing, gross utility at $y=\\theta^2/(16c^2)$ is $\\theta^2/(4c)$ and payment is $2c\\cdot\\theta^2/(16c^2)=\\theta^2/(8c)$.\n\nTheir difference is $\\theta^2/(8c)>0$. Thus the buyer prefers linear pricing even though it generates lower total surplus, because the monopolist cannot extract all surplus without a fixed charge.",
     "hint": "Subtract the actual total payment from gross consumer utility in each regime.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 5,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "The optimal two-part fee extracts all surplus, leaving the buyer with zero net utility. Under linear pricing, gross utility at $y=\\theta^2/(16c^2)$ is $\\theta^2/(4c)$ and payment is $2c\\cdot\\theta^2/(16c^2)=\\theta^2/(8c)$. Their difference is $\\theta^2/(8c)>0$. Thus the buyer prefers linear pricing even though it generates lower total surplus, because the monopolist cannot extract all surplus without a fixed charge.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Consumer surplus is the buyer’s residual utility after all payments, not total social surplus. With the optimal two-part tariff, the fixed fee deliberately exhausts that residual, even though output is efficient. With no fixed fee, the seller cannot fully appropriate the buyer’s gain, so the consumer keeps a positive amount. Thus the tariff preferred by society need not be the tariff preferred by the consumer; distribution and efficiency are separate comparisons."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "The optimal two-part fee extracts all surplus, leaving the buyer with zero net utility. Under linear pricing, gross utility at $y=\\theta^2/(16c^2)$ is $\\theta^2/(4c)$ and payment is $2c\\cdot\\theta^2/(16c^2)=\\theta^2/(8c)$.\n\nTheir difference is $\\theta^2/(8c)>0$. Thus the buyer prefers linear pricing even though it generates lower total surplus, because the monopolist cannot extract all surplus without a fixed charge."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q6a",
     "number": "6(a)",
     "stem": "At unit output, conditional input demands are $x_1=1+3w_1^{-1/2}w_2^a$ and $x_2=1+bw_1^{1/2}w_2^c$, where $w_1,w_2>0$ are input prices. Find $a,b,c$ for a profit-maximizing competitive firm. [10 marks]",
     "answer": "$a=1/2$, $b=3$, $c=-1/2$.",
-    "solution": "Conditional factor demands are homogeneous of degree zero in all prices. Applying this to $x_1$ gives $a-1/2=0$, so $a=1/2$. Integrability requires symmetric cross-price derivatives: $\\partial x_1/\\partial w_2=(3/2)w_1^{-1/2}w_2^{-1/2}$ must equal $\\partial x_2/\\partial w_1=(b/2)w_1^{-1/2}w_2^c$. Equality for every positive price pair implies $c=-1/2$ and $b=3$. These demands are indeed generated by the homogeneous concave unit cost $w_1+w_2+6\\sqrt{w_1w_2}$, so the restrictions are consistent.",
+    "solution": "Conditional factor demands come from derivatives of a cost function. Such a function is homogeneous of degree one in input prices, so its derivatives are homogeneous of degree zero; demand depends on relative prices, not the scale of all prices. If the cost function is smooth, its two cross derivatives must also agree. Use these two restrictions to identify the exponents and the remaining coefficient, rather than treating the two demand formulas as unrelated equations.\n\nConditional factor demands are homogeneous of degree zero in all prices. Applying this to $x_1$ gives $a-1/2=0$, so $a=1/2$.\n\nIntegrability requires symmetric cross-price derivatives: $\\partial x_1/\\partial w_2=(3/2)w_1^{-1/2}w_2^{-1/2}$ must equal $\\partial x_2/\\partial w_1=(b/2)w_1^{-1/2}w_2^c$. Equality for every positive price pair implies $c=-1/2$ and $b=3$.\n\nThese demands are indeed generated by the homogeneous concave unit cost $w_1+w_2+6\\sqrt{w_1w_2}$, so the restrictions are consistent.",
     "hint": "Use price homogeneity and symmetry of the Hessian of the cost function.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Conditional factor demands are homogeneous of degree zero in all prices. Applying this to $x_1$ gives $a-1/2=0$, so $a=1/2$. Integrability requires symmetric cross-price derivatives: $\\partial x_1/\\partial w_2=(3/2)w_1^{-1/2}w_2^{-1/2}$ must equal $\\partial x_2/\\partial w_1=(b/2)w_1^{-1/2}w_2^c$. Equality for every positive price pair implies $c=-1/2$ and $b=3$. These demands are indeed generated by the homogeneous concave unit cost $w_1+w_2+6\\sqrt{w_1w_2}$, so the restrictions are consistent.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Conditional factor demands come from derivatives of a cost function. Such a function is homogeneous of degree one in input prices, so its derivatives are homogeneous of degree zero; demand depends on relative prices, not the scale of all prices. If the cost function is smooth, its two cross derivatives must also agree. Use these two restrictions to identify the exponents and the remaining coefficient, rather than treating the two demand formulas as unrelated equations."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Conditional factor demands are homogeneous of degree zero in all prices. Applying this to $x_1$ gives $a-1/2=0$, so $a=1/2$.\n\nIntegrability requires symmetric cross-price derivatives: $\\partial x_1/\\partial w_2=(3/2)w_1^{-1/2}w_2^{-1/2}$ must equal $\\partial x_2/\\partial w_1=(b/2)w_1^{-1/2}w_2^c$. Equality for every positive price pair implies $c=-1/2$ and $b=3$.\n\nThese demands are indeed generated by the homogeneous concave unit cost $w_1+w_2+6\\sqrt{w_1w_2}$, so the restrictions are consistent."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q6b",
     "number": "6(b)",
     "stem": "A competitive firm's observed choices are: observation1 $(p,w,q,x)=(50,20,20,25)$; observation2 $(45,15,24,36)$; observation3 $(40,20,16,16)$. Here $p,w$ are output/input prices and $q,x$ output/input quantities. Are these choices consistent with profit maximization? [10 marks]",
     "answer": "Yes. Each observed choice yields at least as much profit as the other observed feasible choices at its own prices.",
-    "solution": "At prices from observation1, profits from choices1,2,3 are respectively $(500,480,480)$. At prices from observation2 they are $(525,540,480)$. At prices from observation3 they are $(300,240,320)$. Every diagonal entry is the largest in its row. Therefore no observed alternative would have made higher profit at any observation's own prices. A technology containing these observed production plans (or their convex free-disposal hull) rationalizes all three choices. Thus the data pass the revealed-profit-maximization restrictions.",
+    "solution": "Revealed profit maximization compares the chosen production plan with every other observed plan at the prices of the current observation. Build a matrix whose row i evaluates all available observed plans at row i prices. Each diagonal value must be at least every other entry in that row. Do not compare profits across rows, because a higher price or a different wage can change profit even when every choice is optimal.\n\nAt prices from observation1, profits from choices1,2,3 are respectively $(500,480,480)$. At prices from observation2 they are $(525,540,480)$.\n\nAt prices from observation3 they are $(300,240,320)$. Every diagonal entry is the largest in its row.\n\nTherefore no observed alternative would have made higher profit at any observation's own prices. A technology containing these observed production plans (or their convex free-disposal hull) rationalizes all three choices.\n\nThus the data pass the revealed-profit-maximization restrictions.",
     "hint": "At each observed price pair, compare the chosen profit with profits from every other observed production plan.",
     "topic": "Microeconomics",
     "sourcePage": 10,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": "Question and table start on PDF page10; notation continues on page11."
+    "notes": "Question and table start on PDF page10; notation continues on page11.",
+    "solutionOriginal": "At prices from observation1, profits from choices1,2,3 are respectively $(500,480,480)$. At prices from observation2 they are $(525,540,480)$. At prices from observation3 they are $(300,240,320)$. Every diagonal entry is the largest in its row. Therefore no observed alternative would have made higher profit at any observation's own prices. A technology containing these observed production plans (or their convex free-disposal hull) rationalizes all three choices. Thus the data pass the revealed-profit-maximization restrictions.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Revealed profit maximization compares the chosen production plan with every other observed plan at the prices of the current observation. Build a matrix whose row i evaluates all available observed plans at row i prices. Each diagonal value must be at least every other entry in that row. Do not compare profits across rows, because a higher price or a different wage can change profit even when every choice is optimal."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "At prices from observation1, profits from choices1,2,3 are respectively $(500,480,480)$. At prices from observation2 they are $(525,540,480)$.\n\nAt prices from observation3 they are $(300,240,320)$. Every diagonal entry is the largest in its row.\n\nTherefore no observed alternative would have made higher profit at any observation's own prices. A technology containing these observed production plans (or their convex free-disposal hull) rationalizes all three choices.\n\nThus the data pass the revealed-profit-maximization restrictions."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q6c",
     "number": "6(c)",
     "stem": "A competitive firm has cost $c(q;w)=w_1^\\alpha w_2^{1-\\alpha}q$, with $0<\\alpha<1$. Derive conditional factor demands and a production function consistent with this cost. [5+5=10 marks]",
     "answer": "$x_1=\\alpha q w_1^{\\alpha-1}w_2^{1-\\alpha}$, $x_2=(1-\\alpha)q w_1^\\alpha w_2^{-\\alpha}$; $f(x_1,x_2)=(x_1/\\alpha)^\\alpha(x_2/(1-\\alpha))^{1-\\alpha}$.",
-    "solution": "By Shephard's lemma, differentiating cost with respect to each input price yields $x_1=\\alpha q w_1^{\\alpha-1}w_2^{1-\\alpha}$ and $x_2=(1-\\alpha)q w_1^\\alpha w_2^{-\\alpha}$. Substitute these demands into $(x_1/\\alpha)^\\alpha(x_2/(1-\\alpha))^{1-\\alpha}$: powers of both prices cancel and the result is $q$. This normalized Cobb-Douglas technology has minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, hence is consistent with the given cost. Under the usual closed convex free-disposal production-set assumptions, cost duality recovers this efficient frontier.",
+    "solution": "Use Shephard’s lemma to differentiate the cost function with respect to each input price. These are quantities needed to produce q at minimum cost. To recover a technology consistent with the result, remember that a Cobb–Douglas production function generally carries a normalization constant. Choosing that constant correctly makes the minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, rather than that expression multiplied by an extra parameter-dependent factor.\n\nBy Shephard's lemma, differentiating cost with respect to each input price yields $x_1=\\alpha q w_1^{\\alpha-1}w_2^{1-\\alpha}$ and $x_2=(1-\\alpha)q w_1^\\alpha w_2^{-\\alpha}$. Substitute these demands into $(x_1/\\alpha)^\\alpha(x_2/(1-\\alpha))^{1-\\alpha}$: powers of both prices cancel and the result is $q$.\n\nThis normalized Cobb-Douglas technology has minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, hence is consistent with the given cost. Under the usual closed convex free-disposal production-set assumptions, cost duality recovers this efficient frontier.",
     "hint": "Apply Shephard's lemma and eliminate prices from the two factor-demand expressions.",
     "topic": "Microeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "By Shephard's lemma, differentiating cost with respect to each input price yields $x_1=\\alpha q w_1^{\\alpha-1}w_2^{1-\\alpha}$ and $x_2=(1-\\alpha)q w_1^\\alpha w_2^{-\\alpha}$. Substitute these demands into $(x_1/\\alpha)^\\alpha(x_2/(1-\\alpha))^{1-\\alpha}$: powers of both prices cancel and the result is $q$. This normalized Cobb-Douglas technology has minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, hence is consistent with the given cost. Under the usual closed convex free-disposal production-set assumptions, cost duality recovers this efficient frontier.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Use Shephard’s lemma to differentiate the cost function with respect to each input price. These are quantities needed to produce q at minimum cost. To recover a technology consistent with the result, remember that a Cobb–Douglas production function generally carries a normalization constant. Choosing that constant correctly makes the minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, rather than that expression multiplied by an extra parameter-dependent factor."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "By Shephard's lemma, differentiating cost with respect to each input price yields $x_1=\\alpha q w_1^{\\alpha-1}w_2^{1-\\alpha}$ and $x_2=(1-\\alpha)q w_1^\\alpha w_2^{-\\alpha}$. Substitute these demands into $(x_1/\\alpha)^\\alpha(x_2/(1-\\alpha))^{1-\\alpha}$: powers of both prices cancel and the result is $q$.\n\nThis normalized Cobb-Douglas technology has minimized unit cost exactly $w_1^\\alpha w_2^{1-\\alpha}$, hence is consistent with the given cost. Under the usual closed convex free-disposal production-set assumptions, cost duality recovers this efficient frontier."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q7a",
     "number": "7(a)",
     "stem": "Home and Foreign each produce one good at fixed full-employment outputs $Y$ and $Y^*$. Foreign's good is the numeraire and $p$ is the relative price of Home's good. Home expenditure $E$ is measured in Home goods and treated as a parameter; Foreign expenditure $E^*$ is measured in Foreign goods and is endogenous. Cobb-Douglas import shares are $\\alpha$ at Home and $\\alpha^*$ abroad, with $1-\\alpha>\\alpha^*$. World income equals world expenditure and both goods markets clear. Suppose $E$ falls. What happens to $p$? Prove it. [20 marks]",
     "answer": "The relative price of Home's good falls.",
-    "solution": "World expenditure balance gives $E^*=p(Y-E)+Y^*$. Home-good market clearing in Foreign-good value units gives $pY=(1-\\alpha)pE+\\alpha^*E^*$. Substituting yields $p[(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E]=\\alpha^*Y^*$. Let $d=1-\\alpha-\\alpha^*>0$ and $D=(1-\\alpha^*)Y-dE$. At an interior positive-price equilibrium $D>0$, and $p=\\alpha^*Y^*/D$. Therefore $dp/dE=\\alpha^*Y^*d/D^2>0$. A fall in Home expenditure lowers $p$: with home bias, it disproportionately reduces world demand for the Home good.",
+    "solution": "A reduction in Home absorption is not just a fall in one country’s demand holding everyone else’s expenditure fixed: world expenditure must still equal world income. First eliminate Foreign expenditure using that accounting restriction. Then impose market clearing for the Home good, expressing both countries’ spending in the same numeraire. The home-bias condition makes a Home spending reduction disproportionately reduce demand for its own good, explaining the sign of the resulting relative-price change.\n\nWorld expenditure balance gives $E^*=p(Y-E)+Y^*$. Home-good market clearing in Foreign-good value units gives $pY=(1-\\alpha)pE+\\alpha^*E^*$.\n\nSubstituting yields $p[(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E]=\\alpha^*Y^*$. Let $d=1-\\alpha-\\alpha^*>0$ and $D=(1-\\alpha^*)Y-dE$.\n\nAt an interior positive-price equilibrium $D>0$, and $p=\\alpha^*Y^*/D$. Therefore $dp/dE=\\alpha^*Y^*d/D^2>0$.\n\nA fall in Home expenditure lowers $p$: with home bias, it disproportionately reduces world demand for the Home good.",
     "hint": "Combine the Home-good clearing equation with the world expenditure identity.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 20,
     "status": "verified",
-    "notes": "Uses positive outputs and positive interior Cobb-Douglas expenditure shares, as usual for the stated model."
+    "notes": "Uses positive outputs and positive interior Cobb-Douglas expenditure shares, as usual for the stated model.",
+    "solutionOriginal": "World expenditure balance gives $E^*=p(Y-E)+Y^*$. Home-good market clearing in Foreign-good value units gives $pY=(1-\\alpha)pE+\\alpha^*E^*$. Substituting yields $p[(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E]=\\alpha^*Y^*$. Let $d=1-\\alpha-\\alpha^*>0$ and $D=(1-\\alpha^*)Y-dE$. At an interior positive-price equilibrium $D>0$, and $p=\\alpha^*Y^*/D$. Therefore $dp/dE=\\alpha^*Y^*d/D^2>0$. A fall in Home expenditure lowers $p$: with home bias, it disproportionately reduces world demand for the Home good.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "A reduction in Home absorption is not just a fall in one country’s demand holding everyone else’s expenditure fixed: world expenditure must still equal world income. First eliminate Foreign expenditure using that accounting restriction. Then impose market clearing for the Home good, expressing both countries’ spending in the same numeraire. The home-bias condition makes a Home spending reduction disproportionately reduce demand for its own good, explaining the sign of the resulting relative-price change."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "World expenditure balance gives $E^*=p(Y-E)+Y^*$. Home-good market clearing in Foreign-good value units gives $pY=(1-\\alpha)pE+\\alpha^*E^*$.\n\nSubstituting yields $p[(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E]=\\alpha^*Y^*$. Let $d=1-\\alpha-\\alpha^*>0$ and $D=(1-\\alpha^*)Y-dE$.\n\nAt an interior positive-price equilibrium $D>0$, and $p=\\alpha^*Y^*/D$. Therefore $dp/dE=\\alpha^*Y^*d/D^2>0$.\n\nA fall in Home expenditure lowers $p$: with home bias, it disproportionately reduces world demand for the Home good."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q7b",
     "number": "7(b)",
     "stem": "Home and Foreign each produce one good at fixed full-employment outputs $Y$ and $Y^*$. Foreign's good is the numeraire and $p$ is the relative price of Home's good. Home expenditure $E$ is measured in Home goods and treated as a parameter; Foreign expenditure $E^*$ is measured in Foreign goods and is endogenous. Cobb-Douglas import shares are $\\alpha$ at Home and $\\alpha^*$ abroad, with $1-\\alpha>\\alpha^*$. World income equals world expenditure and both goods markets clear. Suppose $E$ falls. What happens to Home's trade balance in Foreign-good units, $p(Y-E)$? Prove it. [10 marks]",
     "answer": "Home's trade balance improves.",
-    "solution": "Using $p=\\alpha^*Y^*/D$ from part(a), $TB=\\alpha^*Y^*(Y-E)/D$, where $D=(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E$. Differentiating and simplifying gives $dTB/dE=-\\alpha\\alpha^*YY^*/D^2<0$. Consequently a fall in $E$ raises the Home trade balance. Although the relative price of the Home good falls, the direct fall in Home absorption dominates in this model.",
+    "solution": "The trade balance is a value, so both the physical surplus Y-E and the relative price p change when expenditure moves. Differentiate their product, or substitute the solved price and use the quotient rule. Looking only at the decrease in imports would miss the terms-of-trade response. The algebra shows that the direct absorption effect dominates the adverse Home-price movement in this specified Cobb–Douglas model.\n\nUsing $p=\\alpha^*Y^*/D$ from part(a), $TB=\\alpha^*Y^*(Y-E)/D$, where $D=(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E$. Differentiating and simplifying gives $dTB/dE=-\\alpha\\alpha^*YY^*/D^2<0$.\n\nConsequently a fall in $E$ raises the Home trade balance. Although the relative price of the Home good falls, the direct fall in Home absorption dominates in this model.",
     "hint": "Differentiate the trade balance after substituting the equilibrium relative price.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 10,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Using $p=\\alpha^*Y^*/D$ from part(a), $TB=\\alpha^*Y^*(Y-E)/D$, where $D=(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E$. Differentiating and simplifying gives $dTB/dE=-\\alpha\\alpha^*YY^*/D^2<0$. Consequently a fall in $E$ raises the Home trade balance. Although the relative price of the Home good falls, the direct fall in Home absorption dominates in this model.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "The trade balance is a value, so both the physical surplus Y-E and the relative price p change when expenditure moves. Differentiate their product, or substitute the solved price and use the quotient rule. Looking only at the decrease in imports would miss the terms-of-trade response. The algebra shows that the direct absorption effect dominates the adverse Home-price movement in this specified Cobb–Douglas model."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Using $p=\\alpha^*Y^*/D$ from part(a), $TB=\\alpha^*Y^*(Y-E)/D$, where $D=(1-\\alpha^*)Y-(1-\\alpha-\\alpha^*)E$. Differentiating and simplifying gives $dTB/dE=-\\alpha\\alpha^*YY^*/D^2<0$.\n\nConsequently a fall in $E$ raises the Home trade balance. Although the relative price of the Home good falls, the direct fall in Home absorption dominates in this model."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q8a",
     "number": "8(a)",
     "stem": "Consider the standard Solow model with constant saving propensity $s$, labour-force growth rate $n$, no technological progress and zero depreciation. Let $v=K/Y$ be the capital-output ratio. Prove that $s/v=n$ at the steady state. [8 marks]",
     "answer": "At a steady capital-labour ratio, $sY/K=n$, hence $s/v=n$.",
-    "solution": "Capital accumulation is $\\dot K=sY$. Thus the growth rate of capital is $g_K=\\dot K/K=sY/K=s/v$. At the steady state capital per worker is constant, so capital and labour grow at the same rate: $g_K=g_L=n$. Therefore $s/v=n$. The equivalent discrete-time steady-state accumulation equation is $sY=nK$.",
+    "solution": "At a Solow steady state, per-worker quantities are constant, while aggregate capital and output can keep growing with population. Since investment equals saving and there is no depreciation, aggregate capital growth is sY/K=s/v. Constant capital per worker requires that rate to equal labour growth n. The statement is therefore a balanced-growth condition, not the assertion that aggregate capital stops changing.\n\nCapital accumulation is $\\dot K=sY$. Thus the growth rate of capital is $g_K=\\dot K/K=sY/K=s/v$.\n\nAt the steady state capital per worker is constant, so capital and labour grow at the same rate: $g_K=g_L=n$. Therefore $s/v=n$.\n\nThe equivalent discrete-time steady-state accumulation equation is $sY=nK$.",
     "hint": "Compare capital growth from saving with labour growth at a constant capital-labour ratio.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 8,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Capital accumulation is $\\dot K=sY$. Thus the growth rate of capital is $g_K=\\dot K/K=sY/K=s/v$. At the steady state capital per worker is constant, so capital and labour grow at the same rate: $g_K=g_L=n$. Therefore $s/v=n$. The equivalent discrete-time steady-state accumulation equation is $sY=nK$.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "At a Solow steady state, per-worker quantities are constant, while aggregate capital and output can keep growing with population. Since investment equals saving and there is no depreciation, aggregate capital growth is sY/K=s/v. Constant capital per worker requires that rate to equal labour growth n. The statement is therefore a balanced-growth condition, not the assertion that aggregate capital stops changing."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Capital accumulation is $\\dot K=sY$. Thus the growth rate of capital is $g_K=\\dot K/K=sY/K=s/v$.\n\nAt the steady state capital per worker is constant, so capital and labour grow at the same rate: $g_K=g_L=n$. Therefore $s/v=n$.\n\nThe equivalent discrete-time steady-state accumulation equation is $sY=nK$."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q8b",
     "number": "8(b)",
     "stem": "Consider the standard Solow model with constant saving propensity $s$, labour-force growth rate $n$, no technological progress and zero depreciation. Let $v=K/Y$ be the capital-output ratio. Initially $s/v>n$. Explain how the economy restores equality over time. [16 marks]",
     "answer": "Capital per worker rises; diminishing returns increase $v$ and lower $s/v$ until it equals $n$.",
-    "solution": "Write output per worker as $f(k)$, where $k=K/L$, under the usual neoclassical Solow assumptions. Then $\\dot k=sf(k)-nk=k(s/v-n)$. The assumed inequality makes $k$ rise. The capital-output ratio is $v=k/f(k)$, whose derivative is $[f(k)-kf'(k)]/f(k)^2>0$ when the marginal product of labour is positive. Thus accumulating capital relative to labour raises $v$, reducing $s/v$. Diminishing returns progressively reduce excess capital growth until $sf(k^*)=nk^*$, equivalently $s/v^*=n$. Factor prices adapt as relative factor scarcity changes; continued saving need not make output grow as fast as capital because capital has diminishing marginal productivity.",
+    "solution": "When s/v exceeds n, capital grows faster than the labour force. The adjustment variable is therefore k=K/L. Diminishing marginal productivity means output rises less than proportionately with capital per worker, raising the capital–output ratio v=k/f(k). That reduces s/v toward n. This is the Solow adjustment mechanism that restores a balanced growth relation without requiring households to change their exogenous saving propensity.\n\nWrite output per worker as $f(k)$, where $k=K/L$, under the usual neoclassical Solow assumptions. Then $\\dot k=sf(k)-nk=k(s/v-n)$.\n\nThe assumed inequality makes $k$ rise. The capital-output ratio is $v=k/f(k)$, whose derivative is $[f(k)-kf'(k)]/f(k)^2>0$ when the marginal product of labour is positive.\n\nThus accumulating capital relative to labour raises $v$, reducing $s/v$. Diminishing returns progressively reduce excess capital growth until $sf(k^*)=nk^*$, equivalently $s/v^*=n$.\n\nFactor prices adapt as relative factor scarcity changes; continued saving need not make output grow as fast as capital because capital has diminishing marginal productivity.",
     "hint": "Use the law of motion of capital per worker and how $k/f(k)$ changes with $k$.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 16,
     "status": "verified",
-    "notes": "The standard neoclassical Solow assumptions (constant returns, positive marginal products and diminishing returns to capital per worker) underlie this adjustment; the question invokes the model by name rather than specifying a production function."
+    "notes": "The standard neoclassical Solow assumptions (constant returns, positive marginal products and diminishing returns to capital per worker) underlie this adjustment; the question invokes the model by name rather than specifying a production function.",
+    "solutionOriginal": "Write output per worker as $f(k)$, where $k=K/L$, under the usual neoclassical Solow assumptions. Then $\\dot k=sf(k)-nk=k(s/v-n)$. The assumed inequality makes $k$ rise. The capital-output ratio is $v=k/f(k)$, whose derivative is $[f(k)-kf'(k)]/f(k)^2>0$ when the marginal product of labour is positive. Thus accumulating capital relative to labour raises $v$, reducing $s/v$. Diminishing returns progressively reduce excess capital growth until $sf(k^*)=nk^*$, equivalently $s/v^*=n$. Factor prices adapt as relative factor scarcity changes; continued saving need not make output grow as fast as capital because capital has diminishing marginal productivity.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "When s/v exceeds n, capital grows faster than the labour force. The adjustment variable is therefore k=K/L. Diminishing marginal productivity means output rises less than proportionately with capital per worker, raising the capital–output ratio v=k/f(k). That reduces s/v toward n. This is the Solow adjustment mechanism that restores a balanced growth relation without requiring households to change their exogenous saving propensity."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Write output per worker as $f(k)$, where $k=K/L$, under the usual neoclassical Solow assumptions. Then $\\dot k=sf(k)-nk=k(s/v-n)$.\n\nThe assumed inequality makes $k$ rise. The capital-output ratio is $v=k/f(k)$, whose derivative is $[f(k)-kf'(k)]/f(k)^2>0$ when the marginal product of labour is positive.\n\nThus accumulating capital relative to labour raises $v$, reducing $s/v$. Diminishing returns progressively reduce excess capital growth until $sf(k^*)=nk^*$, equivalently $s/v^*=n$.\n\nFactor prices adapt as relative factor scarcity changes; continued saving need not make output grow as fast as capital because capital has diminishing marginal productivity."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q8c",
     "number": "8(c)",
     "stem": "Consider the standard Solow model with constant saving propensity $s$, labour-force growth rate $n$, no technological progress and zero depreciation. Let $v=K/Y$ be the capital-output ratio. During the adjustment in part(b), how do the real wage and real rental on capital change? Explain. [6 marks]",
     "answer": "The real wage rises and the real rental on capital falls.",
-    "solution": "Competitive factor rewards are $r_K=f'(k)$ and $w=f(k)-kf'(k)$. As capital per worker rises and $f''(k)<0$, the rental falls: $dr_K/dk=f''(k)<0$. The real wage rises because $dw/dk=-kf''(k)>0$. Capital becomes less scarce relative to labour, increasing labour productivity and reducing capital's marginal product.",
+    "solution": "Factor rewards are marginal products, not fixed factor shares in physical units. Increasing capital relative to labour makes an extra capital unit less productive, lowering the rental. It makes each worker more productive, raising the wage. The wage formula $w=f(k)-kf'(k)$ allows its derivative to be evaluated directly, with the cancellation of the two first-derivative terms leaving $-kf''(k)>0$.\n\nCompetitive factor rewards are $r_K=f'(k)$ and $w=f(k)-kf'(k)$. As capital per worker rises and $f''(k)<0$, the rental falls: $dr_K/dk=f''(k)<0$.\n\nThe real wage rises because $dw/dk=-kf''(k)>0$. Capital becomes less scarce relative to labour, increasing labour productivity and reducing capital's marginal product.",
     "hint": "Differentiate the competitive factor-price formulas with respect to capital per worker.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 6,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Competitive factor rewards are $r_K=f'(k)$ and $w=f(k)-kf'(k)$. As capital per worker rises and $f''(k)<0$, the rental falls: $dr_K/dk=f''(k)<0$. The real wage rises because $dw/dk=-kf''(k)>0$. Capital becomes less scarce relative to labour, increasing labour productivity and reducing capital's marginal product.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Factor rewards are marginal products, not fixed factor shares in physical units. Increasing capital relative to labour makes an extra capital unit less productive, lowering the rental. It makes each worker more productive, raising the wage. The wage formula $w=f(k)-kf'(k)$ allows its derivative to be evaluated directly, with the cancellation of the two first-derivative terms leaving $-kf''(k)>0$."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Competitive factor rewards are $r_K=f'(k)$ and $w=f(k)-kf'(k)$. As capital per worker rises and $f''(k)<0$, the rental falls: $dr_K/dk=f''(k)<0$.\n\nThe real wage rises because $dw/dk=-kf''(k)>0$. Capital becomes less scarce relative to labour, increasing labour productivity and reducing capital's marginal product."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q9a",
     "number": "9(a)",
     "stem": "Using a simple Keynesian income-determination model, derive and explain conditions under which an increase in the marginal propensity to save reduces aggregate saving. [15 marks]",
     "answer": "With positively income-induced investment, higher thrift lowers income and equilibrium investment/saving. With purely autonomous investment, aggregate saving stays constant rather than falling.",
-    "solution": "Consider a closed underemployment economy with $C=C_0+(1-\\sigma)Y$ and $I=I_0+bY$, where $\\sigma$ is the marginal propensity to save, $b\\geq0$, $C_0+I_0>0$, and stability requires $\\sigma>b$. Goods-market clearing gives $Y=(C_0+I_0)/(\\sigma-b)$, so increasing $\\sigma$ lowers income. Aggregate saving is $S=Y-C=\\sigma Y-C_0=(\\sigma I_0+bC_0)/(\\sigma-b)$. Its derivative is $dS/d\\sigma=-b(C_0+I_0)/(\\sigma-b)^2$. Thus saving falls strictly if $b>0$: the income contraction reduces induced investment, which equals saving in equilibrium. If $b=0$, the conventional autonomous-investment model gives $S=I_0$ and the derivative is zero, not negative. More generally, a positive response of investment to income supplies the extra condition for a strict paradox of thrift in this simple framework.",
+    "solution": "The ordinary paradox of thrift with autonomous investment lowers income but leaves actual saving fixed at investment. To prove a strict fall in aggregate saving, add a channel by which investment itself falls when income contracts. A positive induced-investment coefficient provides that channel. State the stability condition before differentiating equilibrium income; otherwise a formal algebraic response can have the opposite sign in an unstable model.\n\nConsider a closed underemployment economy with $C=C_0+(1-\\sigma)Y$ and $I=I_0+bY$, where $\\sigma$ is the marginal propensity to save, $b\\geq0$, $C_0+I_0>0$, and stability requires $\\sigma>b$. Goods-market clearing gives $Y=(C_0+I_0)/(\\sigma-b)$, so increasing $\\sigma$ lowers income.\n\nAggregate saving is $S=Y-C=\\sigma Y-C_0=(\\sigma I_0+bC_0)/(\\sigma-b)$. Its derivative is $dS/d\\sigma=-b(C_0+I_0)/(\\sigma-b)^2$.\n\nThus saving falls strictly if $b>0$: the income contraction reduces induced investment, which equals saving in equilibrium. If $b=0$, the conventional autonomous-investment model gives $S=I_0$ and the derivative is zero, not negative.\n\nMore generally, a positive response of investment to income supplies the extra condition for a strict paradox of thrift in this simple framework.",
     "hint": "Distinguish the desire to save at fixed income from equilibrium saving; examine whether investment itself falls when income falls.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Consider a closed underemployment economy with $C=C_0+(1-\\sigma)Y$ and $I=I_0+bY$, where $\\sigma$ is the marginal propensity to save, $b\\geq0$, $C_0+I_0>0$, and stability requires $\\sigma>b$. Goods-market clearing gives $Y=(C_0+I_0)/(\\sigma-b)$, so increasing $\\sigma$ lowers income. Aggregate saving is $S=Y-C=\\sigma Y-C_0=(\\sigma I_0+bC_0)/(\\sigma-b)$. Its derivative is $dS/d\\sigma=-b(C_0+I_0)/(\\sigma-b)^2$. Thus saving falls strictly if $b>0$: the income contraction reduces induced investment, which equals saving in equilibrium. If $b=0$, the conventional autonomous-investment model gives $S=I_0$ and the derivative is zero, not negative. More generally, a positive response of investment to income supplies the extra condition for a strict paradox of thrift in this simple framework.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "The ordinary paradox of thrift with autonomous investment lowers income but leaves actual saving fixed at investment. To prove a strict fall in aggregate saving, add a channel by which investment itself falls when income contracts. A positive induced-investment coefficient provides that channel. State the stability condition before differentiating equilibrium income; otherwise a formal algebraic response can have the opposite sign in an unstable model."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Consider a closed underemployment economy with $C=C_0+(1-\\sigma)Y$ and $I=I_0+bY$, where $\\sigma$ is the marginal propensity to save, $b\\geq0$, $C_0+I_0>0$, and stability requires $\\sigma>b$. Goods-market clearing gives $Y=(C_0+I_0)/(\\sigma-b)$, so increasing $\\sigma$ lowers income.\n\nAggregate saving is $S=Y-C=\\sigma Y-C_0=(\\sigma I_0+bC_0)/(\\sigma-b)$. Its derivative is $dS/d\\sigma=-b(C_0+I_0)/(\\sigma-b)^2$.\n\nThus saving falls strictly if $b>0$: the income contraction reduces induced investment, which equals saving in equilibrium. If $b=0$, the conventional autonomous-investment model gives $S=I_0$ and the derivative is zero, not negative.\n\nMore generally, a positive response of investment to income supplies the extra condition for a strict paradox of thrift in this simple framework."
+      }
+    ]
   },
   {
     "id": "2022-PEB-Q9b",
     "number": "9(b)",
     "stem": "Using an aggregate-demand and aggregate-supply model, explain how an increase in fuel prices affects aggregate output, employment and the price level. [15 marks]",
     "answer": "A fuel-cost supply shock lowers output and employment and raises the price level, other things equal.",
-    "solution": "Fuel is a production input, so a higher fuel price raises firms' marginal cost at any given output. Holding aggregate demand and other conditions fixed, short-run aggregate supply shifts upward/left. In a graph with output on the horizontal axis and the price level on the vertical axis, the unchanged downward-sloping AD curve meets the new SRAS at a point with lower $Y$ and higher $P$ than initially. Lower output requires less employment when production increases with labour input. The simultaneous inflation and output contraction is stagflation. A temporary input-cost shock need not shift long-run potential output; a persistent change affecting productive capacity can have longer-run effects. The stated short-run signs are the standard isolated supply-shock comparison, not a claim that AD can never respond too.",
+    "solution": "Fuel costs affect the price firms need to cover production at a given output. They therefore move short-run aggregate supply, rather than initially shifting aggregate demand. Draw the old and new AS curves against one unchanged AD curve. The new intersection combines a higher price level with lower output, unlike a demand expansion that raises both. Employment follows output under a fixed increasing labour–output relation; policy or further demand effects would be separate shocks.\n\nFuel is a production input, so a higher fuel price raises firms' marginal cost at any given output. Holding aggregate demand and other conditions fixed, short-run aggregate supply shifts upward/left.\n\nIn a graph with output on the horizontal axis and the price level on the vertical axis, the unchanged downward-sloping AD curve meets the new SRAS at a point with lower $Y$ and higher $P$ than initially. Lower output requires less employment when production increases with labour input.\n\nThe simultaneous inflation and output contraction is stagflation. A temporary input-cost shock need not shift long-run potential output; a persistent change affecting productive capacity can have longer-run effects.\n\nThe stated short-run signs are the standard isolated supply-shock comparison, not a claim that AD can never respond too.",
     "hint": "Treat higher fuel prices as a rise in marginal production costs and shift SRAS, leaving AD fixed for the comparison.",
     "topic": "Macroeconomics",
     "sourcePage": 11,
     "sourceFile": "ISI 2022.pdf",
     "marks": 15,
     "status": "verified",
-    "notes": ""
+    "notes": "",
+    "solutionOriginal": "Fuel is a production input, so a higher fuel price raises firms' marginal cost at any given output. Holding aggregate demand and other conditions fixed, short-run aggregate supply shifts upward/left. In a graph with output on the horizontal axis and the price level on the vertical axis, the unchanged downward-sloping AD curve meets the new SRAS at a point with lower $Y$ and higher $P$ than initially. Lower output requires less employment when production increases with labour input. The simultaneous inflation and output contraction is stagflation. A temporary input-cost shock need not shift long-run potential output; a persistent change affecting productive capacity can have longer-run effects. The stated short-run signs are the standard isolated supply-shock comparison, not a claim that AD can never respond too.",
+    "solutionSteps": [
+      {
+        "title": "Understand the method",
+        "body": "Fuel costs affect the price firms need to cover production at a given output. They therefore move short-run aggregate supply, rather than initially shifting aggregate demand. Draw the old and new AS curves against one unchanged AD curve. The new intersection combines a higher price level with lower output, unlike a demand expansion that raises both. Employment follows output under a fixed increasing labour–output relation; policy or further demand effects would be separate shocks."
+      },
+      {
+        "title": "Work through the calculation",
+        "body": "Fuel is a production input, so a higher fuel price raises firms' marginal cost at any given output. Holding aggregate demand and other conditions fixed, short-run aggregate supply shifts upward/left.\n\nIn a graph with output on the horizontal axis and the price level on the vertical axis, the unchanged downward-sloping AD curve meets the new SRAS at a point with lower $Y$ and higher $P$ than initially. Lower output requires less employment when production increases with labour input.\n\nThe simultaneous inflation and output contraction is stagflation. A temporary input-cost shock need not shift long-run potential output; a persistent change affecting productive capacity can have longer-run effects.\n\nThe stated short-run signs are the standard isolated supply-shock comparison, not a claim that AD can never respond too."
+      }
+    ]
   }
 ]

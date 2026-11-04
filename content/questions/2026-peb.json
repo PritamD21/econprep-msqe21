@@ -1,0 +1,216 @@
+[
+  {
+    "id": "2026-PEB-Q1",
+    "number": "1",
+    "stem": "Positive $(a_k)$ satisfies $\\sum_{k\\geq1}a_{k+1}/a_k\\leq1$. Assess the claim $a_n\\leq1/(n-1)!$ for $n\\geq2$.",
+    "answer": "False without normalizing a1; a valid scale-invariant bound is $a_n\\leq a_1/(n-1)^{n-1}\\leq a_1/(n-1)!$.",
+    "solution": "Multiplying every sequence term by the same positive constant does not change any ratio $a_{k+1}/a_k$. Thus the assumption controls the shape of the sequence but not its absolute size. An absolute upper bound independent of a1 cannot follow without a normalization. This issue must be resolved before trying an induction proof.\n\nTake\n\n$$a_1=4,\\qquad \\frac{a_{k+1}}{a_k}=2^{-k},\\qquad a_k=4\\cdot2^{-k(k-1)/2}.$$\n\nEvery term is positive and the ratio series sums to $\\sum_{k\\geq1}2^{-k}=1$. But $a_2=2>1=1/(2-1)!$, contradicting the asserted bound already at n=2.\n\nLet $r_k=a_{k+1}/a_k$ and m=n-1. The arithmetic–geometric mean inequality gives\n\n$$\\begin{aligned}\\frac{a_n}{a_1}&=\\prod_{k=1}^m r_k\\\\&\\leq\\left(\\frac{\\sum_{k=1}^m r_k}{m}\\right)^m\\leq\\frac1{m^m}\\leq\\frac1{m!}.\\end{aligned}$$\n\nThe last inequality uses $m!\\leq m^m$. In fact the finite partial sum is strictly below 1 because all remaining ratios are positive, although weak inequalities suffice. If an omitted assumption were $a_1\\leq1$, the original factorial bound would follow. This is a conditional repair, not an assumption present in the transcription.",
+    "solutionSteps": [
+      {
+        "title": "Check whether the assumptions fix the scale",
+        "body": "Multiplying every sequence term by the same positive constant does not change any ratio $a_{k+1}/a_k$. Thus the assumption controls the shape of the sequence but not its absolute size. An absolute upper bound independent of a1 cannot follow without a normalization. This issue must be resolved before trying an induction proof."
+      },
+      {
+        "title": "Give a positive infinite counterexample",
+        "body": "Take\n\n$$a_1=4,\\qquad \\frac{a_{k+1}}{a_k}=2^{-k},\\qquad a_k=4\\cdot2^{-k(k-1)/2}.$$\n\nEvery term is positive and the ratio series sums to $\\sum_{k\\geq1}2^{-k}=1$. But $a_2=2>1=1/(2-1)!$, contradicting the asserted bound already at n=2."
+      },
+      {
+        "title": "Prove the corrected bound",
+        "body": "Let $r_k=a_{k+1}/a_k$ and m=n-1. The arithmetic–geometric mean inequality gives\n\n$$\\begin{aligned}\\frac{a_n}{a_1}&=\\prod_{k=1}^m r_k\\\\&\\leq\\left(\\frac{\\sum_{k=1}^m r_k}{m}\\right)^m\\leq\\frac1{m^m}\\leq\\frac1{m!}.\\end{aligned}$$\n\nThe last inequality uses $m!\\leq m^m$. In fact the finite partial sum is strictly below 1 because all remaining ratios are positive, although weak inequalities suffice. If an omitted assumption were $a_1\\leq1$, the original factorial bound would follow. This is a conditional repair, not an assumption present in the transcription."
+      }
+    ],
+    "hint": "First test whether multiplying the entire sequence by a constant preserves the assumption.",
+    "topic": "Algebra",
+    "sourcePage": 89,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "needs_review",
+    "notes": "Transcribed question omits an initial normalization. The absolute bound is false as printed; counterexample and corrected scale-invariant theorem supplied.",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q2",
+    "number": "2",
+    "stem": "For $t>0$, show $((1+t^2)x+ty,\\ t^2x+e^{-t}y)=(0,0)$ has a one-dimensional solution space for some t.",
+    "answer": "An appropriate $t_0\\in(0,1)$ exists; its kernel is the line spanned by $(t_0,-1-t_0^2)$.",
+    "solution": "The coefficient matrix is\n\n$$A(t)=\\begin{pmatrix}1+t^2&t\\\\t^2&e^{-t}\\end{pmatrix},\\qquad D(t)=\\det A(t)=(1+t^2)e^{-t}-t^3.$$\n\nA nonzero determinant would give only the zero solution, a zero-dimensional space. We therefore seek a zero determinant, but must also rule out rank zero before concluding that the kernel has dimension one.\n\nD is continuous even at t=0, where D(0)=1. At t=1, $D(1)=2/e-1<0$. The intermediate value theorem supplies a root $t_0\\in(0,1)$. The use of t=0 here is only to evaluate the continuous extension; the root itself is strictly positive as required.\n\nThe first entry $1+t_0^2$ is positive, so the matrix is not the zero matrix. A singular nonzero 2×2 matrix has rank exactly one, hence nullity $2-1=1$. Its first equation gives $y=-(1+t_0^2)x/t_0$, so all solutions are scalar multiples of $(t_0,-1-t_0^2)$. The determinant condition ensures the second equation gives the same line.",
+    "solutionSteps": [
+      {
+        "title": "Turn the dimension question into a determinant question",
+        "body": "The coefficient matrix is\n\n$$A(t)=\\begin{pmatrix}1+t^2&t\\\\t^2&e^{-t}\\end{pmatrix},\\qquad D(t)=\\det A(t)=(1+t^2)e^{-t}-t^3.$$\n\nA nonzero determinant would give only the zero solution, a zero-dimensional space. We therefore seek a zero determinant, but must also rule out rank zero before concluding that the kernel has dimension one."
+      },
+      {
+        "title": "Use continuity to find a singular matrix",
+        "body": "D is continuous even at t=0, where D(0)=1. At t=1, $D(1)=2/e-1<0$. The intermediate value theorem supplies a root $t_0\\in(0,1)$. The use of t=0 here is only to evaluate the continuous extension; the root itself is strictly positive as required."
+      },
+      {
+        "title": "Verify the rank and describe the solution line",
+        "body": "The first entry $1+t_0^2$ is positive, so the matrix is not the zero matrix. A singular nonzero 2×2 matrix has rank exactly one, hence nullity $2-1=1$. Its first equation gives $y=-(1+t_0^2)x/t_0$, so all solutions are scalar multiples of $(t_0,-1-t_0^2)$. The determinant condition ensures the second equation gives the same line."
+      }
+    ],
+    "hint": "Make the determinant change sign, then check the singular matrix is not the zero matrix.",
+    "topic": "Linear algebra",
+    "sourcePage": 89,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q3",
+    "number": "3",
+    "stem": "Prove that every real-valued convex periodic function on $\\mathbb R$ is differentiable.",
+    "answer": "It is necessarily constant, and therefore has derivative zero everywhere.",
+    "solution": "Let T>0 be a period and choose arbitrary real x<y. Pick a positive integer m large enough that $y\\leq x+mT$. Convexity bounds any value between the two endpoints by their linear interpolation. Periodicity makes those endpoints equal:\n\n$$f(y)\\leq\\left(1-\\frac{y-x}{mT}\\right)f(x)+\\frac{y-x}{mT}f(x+mT)=f(x).$$\n\nThus f(y) cannot exceed f(x), even though we assumed no monotonicity.\n\nChoose a positive integer j with $y-jT\\leq x$. Now x lies between y-jT and y, whose f values both equal f(y). The same convexity argument gives f(x)≤f(y). Therefore f(x)=f(y) for arbitrary x<y, so f is constant on the entire real line. A constant function is differentiable everywhere and $f'(x)=0$. This proof does not assume differentiability in order to establish it.",
+    "solutionSteps": [
+      {
+        "title": "Prove a stronger statement than differentiability",
+        "body": "Let T>0 be a period and choose arbitrary real x<y. Pick a positive integer m large enough that $y\\leq x+mT$. Convexity bounds any value between the two endpoints by their linear interpolation. Periodicity makes those endpoints equal:\n\n$$f(y)\\leq\\left(1-\\frac{y-x}{mT}\\right)f(x)+\\frac{y-x}{mT}f(x+mT)=f(x).$$\n\nThus f(y) cannot exceed f(x), even though we assumed no monotonicity."
+      },
+      {
+        "title": "Reverse the roles using another period interval",
+        "body": "Choose a positive integer j with $y-jT\\leq x$. Now x lies between y-jT and y, whose f values both equal f(y). The same convexity argument gives f(x)≤f(y). Therefore f(x)=f(y) for arbitrary x<y, so f is constant on the entire real line. A constant function is differentiable everywhere and $f'(x)=0$. This proof does not assume differentiability in order to establish it."
+      }
+    ],
+    "hint": "Prove the stronger claim that convexity and periodicity force the function to be constant.",
+    "topic": "Calculus",
+    "sourcePage": 89,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q4",
+    "number": "4",
+    "stem": "For N outcomes, $P(\\omega_{j+1})=2P(\\omega_j)$. Determine $P(\\{\\omega_1,\\ldots,\\omega_k\\})$.",
+    "answer": "$P(A_k)=(2^k-1)/(2^N-1)$, $1\\leq k\\leq N$.",
+    "solution": "Write the first outcome probability as c. Repeated doubling gives $P(\\omega_j)=2^{j-1}c$. Probabilities of all N outcomes must sum to one, so\n\n$$1=c(1+2+\\cdots+2^{N-1})=c(2^N-1).$$\n\nHence $c=1/(2^N-1)$. Assigning equal probability to the outcomes would ignore the doubling assumption.\n\nThe first k outcomes have total probability\n\n$$P(A_k)=c\\sum_{j=1}^k2^{j-1}=\\frac{2^k-1}{2^N-1}.$$\n\nAt k=1 this reduces to the first outcome’s probability, and at k=N it equals one. These endpoint checks confirm the normalization and indexing.",
+    "solutionSteps": [
+      {
+        "title": "Normalize the geometric probability weights",
+        "body": "Write the first outcome probability as c. Repeated doubling gives $P(\\omega_j)=2^{j-1}c$. Probabilities of all N outcomes must sum to one, so\n\n$$1=c(1+2+\\cdots+2^{N-1})=c(2^N-1).$$\n\nHence $c=1/(2^N-1)$. Assigning equal probability to the outcomes would ignore the doubling assumption."
+      },
+      {
+        "title": "Sum only the requested initial outcomes",
+        "body": "The first k outcomes have total probability\n\n$$P(A_k)=c\\sum_{j=1}^k2^{j-1}=\\frac{2^k-1}{2^N-1}.$$\n\nAt k=1 this reduces to the first outcome’s probability, and at k=N it equals one. These endpoint checks confirm the normalization and indexing."
+      }
+    ],
+    "hint": "Normalize geometric probability weights before summing the first k outcomes.",
+    "topic": "Probability",
+    "sourcePage": 89,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q5",
+    "number": "5",
+    "stem": "Uniform sampling without replacement selects n of M students, K female. Find the probability draw j is female conditional on (a) k previous female draws; (b) k females among all n selections.",
+    "answer": "(a) $(K-k)/(M-j+1)$; (b) $k/n$, for feasible conditioning events and $1\\leq j\\leq n$.",
+    "solution": "After j-1 draws, exactly k females have been removed. The urn therefore contains K-k females among $M-(j-1)$ total remaining students. Every remaining roll number is equally likely at the next draw, so\n\n$$P(\\text{draw j female}\\mid k\\text{ previous females})=\\frac{K-k}{M-j+1}.$$\n\nThis requires a feasible previous history: k cannot exceed either K or j-1, and the previous male count j-1-k cannot exceed M-K.\n\nNow the information concerns all n positions, not the first j-1 positions. Conditional on exactly k females among the n selected students, every arrangement of those k female positions is equally likely. There are $\\binom nk$ possible position sets and $\\binom{n-1}{k-1}$ containing the particular position j. For 0<k≤n,\n\n$$P(\\text{draw j female}\\mid k\\text{ committee females})=\\frac{\\binom{n-1}{k-1}}{\\binom nk}=\\frac kn.$$\n\nThe result is also zero for k=0. The total-female condition must be feasible given K and M-K. It does not tell us how many females preceded j, so using the formula from part (a) with k substituted would condition on the wrong event.",
+    "solutionSteps": [
+      {
+        "title": "Part (a): condition on the history before draw j",
+        "body": "After j-1 draws, exactly k females have been removed. The urn therefore contains K-k females among $M-(j-1)$ total remaining students. Every remaining roll number is equally likely at the next draw, so\n\n$$P(\\text{draw j female}\\mid k\\text{ previous females})=\\frac{K-k}{M-j+1}.$$\n\nThis requires a feasible previous history: k cannot exceed either K or j-1, and the previous male count j-1-k cannot exceed M-K."
+      },
+      {
+        "title": "Part (b): condition on the final committee composition instead",
+        "body": "Now the information concerns all n positions, not the first j-1 positions. Conditional on exactly k females among the n selected students, every arrangement of those k female positions is equally likely. There are $\\binom nk$ possible position sets and $\\binom{n-1}{k-1}$ containing the particular position j. For 0<k≤n,\n\n$$P(\\text{draw j female}\\mid k\\text{ committee females})=\\frac{\\binom{n-1}{k-1}}{\\binom nk}=\\frac kn.$$\n\nThe result is also zero for k=0. The total-female condition must be feasible given K and M-K. It does not tell us how many females preceded j, so using the formula from part (a) with k substituted would condition on the wrong event."
+      }
+    ],
+    "hint": "Distinguish conditioning on the previous draws from conditioning on the final committee.",
+    "topic": "Probability",
+    "sourcePage": 89,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "verified",
+    "notes": "",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q6",
+    "number": "6",
+    "stem": "A monopolist uses one labour unit per output at wage $w>0$. Demand has $p(0)>w$, $p\\prime<0$, $p^{\\prime\\prime}\\leq0$, and $p,qp\\to0$ at infinity. Compare (a) wages paid after sales; (b) prepaid wages financed by interest-r borrowing or cash C.",
+    "answer": "The global demand assumptions are inconsistent. Under a coherent operating-range interpretation: (a) MR=w; (b) MR=(1+r)w with borrowing, or $q=\\min\\{q_0,C/w\\}$ using cash.",
+    "solution": "A globally concave differentiable demand with p′<0 cannot decrease to zero at infinity from a positive level. Choose any q0 where $p'(q_0)<0$. Concavity places the graph below its tangent:\n\n$$p(q)\\leq p(q_0)+p'(q_0)(q-q_0),\\qquad q>q_0.$$\n\nThe right side tends to negative infinity, contradicting $p(q)\\to0$. Thus no function satisfies every printed assumption on the unbounded output domain. The economic solutions below are conditional on a coherent nonnegative-demand operating range with decreasing marginal revenue, rather than pretending the original function class is nonempty.\n\nIf labour can be paid after revenue is collected, output q gives profit $\\pi_0(q)=qp(q)-wq$. Its marginal profit is $p(q)+qp'(q)-w$. At an interior optimum q0,\n\n$$MR(q_0)=p(q_0)+q_0p'(q_0)=w.$$\n\nOn an operating range with p′<0 and p″≤0, $MR'=2p'+qp''<0$, so this solution is unique whenever the marginal-revenue curve crosses w. The initial condition p(0)>w makes producing a sufficiently small positive output profitable, excluding shutdown in that coherent case.\n\nIf the firm borrows just what its wage bill requires, the loan is B=wq. Repayment after sales is $(1+r)wq$, giving profit $qp(q)-(1+r)wq$. If $p(0)>(1+r)w$, the positive optimum qr satisfies\n\n$$MR(q_r)=(1+r)w>w,$$\n\nso qr<q0 when marginal revenue decreases. If $p(0)\\leq(1+r)w$, the profit-maximizing choice is shutdown. If B is instead an exogenous credit ceiling, also impose $q\\leq B/w$, giving $q^*=\\min\\{q_r,B/w\\}$ when positive. The transcription does not clearly distinguish an endogenously chosen loan amount from a fixed borrowing limit.\n\nWithout borrowing, upfront wages require $wq\\leq C$. If using own cash has no separately specified interest opportunity cost, the objective is still $qp(q)-wq$; only the feasible set changes. Therefore\n\n$$q_C=\\min\\left\\{q_0,\\frac Cw\\right\\}.$$\n\nWhen cash is sufficient, the firm chooses the unconstrained monopoly quantity. When C<wq0, all available cash is used and output is C/w. At C=0 it produces nothing. Treating all existing cash as an additional production cost, rather than just deducting actual wages, would incorrectly change the optimum.",
+    "solutionSteps": [
+      {
+        "title": "First identify the inconsistency in the transcribed demand class",
+        "body": "A globally concave differentiable demand with p′<0 cannot decrease to zero at infinity from a positive level. Choose any q0 where $p'(q_0)<0$. Concavity places the graph below its tangent:\n\n$$p(q)\\leq p(q_0)+p'(q_0)(q-q_0),\\qquad q>q_0.$$\n\nThe right side tends to negative infinity, contradicting $p(q)\\to0$. Thus no function satisfies every printed assumption on the unbounded output domain. The economic solutions below are conditional on a coherent nonnegative-demand operating range with decreasing marginal revenue, rather than pretending the original function class is nonempty."
+      },
+      {
+        "title": "Part (a): no need to prefinance the wage bill",
+        "body": "If labour can be paid after revenue is collected, output q gives profit $\\pi_0(q)=qp(q)-wq$. Its marginal profit is $p(q)+qp'(q)-w$. At an interior optimum q0,\n\n$$MR(q_0)=p(q_0)+q_0p'(q_0)=w.$$\n\nOn an operating range with p′<0 and p″≤0, $MR'=2p'+qp''<0$, so this solution is unique whenever the marginal-revenue curve crosses w. The initial condition p(0)>w makes producing a sufficiently small positive output profitable, excluding shutdown in that coherent case."
+      },
+      {
+        "title": "Part (b)(i): interest raises the effective marginal cost",
+        "body": "If the firm borrows just what its wage bill requires, the loan is B=wq. Repayment after sales is $(1+r)wq$, giving profit $qp(q)-(1+r)wq$. If $p(0)>(1+r)w$, the positive optimum qr satisfies\n\n$$MR(q_r)=(1+r)w>w,$$\n\nso qr<q0 when marginal revenue decreases. If $p(0)\\leq(1+r)w$, the profit-maximizing choice is shutdown. If B is instead an exogenous credit ceiling, also impose $q\\leq B/w$, giving $q^*=\\min\\{q_r,B/w\\}$ when positive. The transcription does not clearly distinguish an endogenously chosen loan amount from a fixed borrowing limit."
+      },
+      {
+        "title": "Part (b)(ii): cash produces a quantity constraint, not an interest wedge",
+        "body": "Without borrowing, upfront wages require $wq\\leq C$. If using own cash has no separately specified interest opportunity cost, the objective is still $qp(q)-wq$; only the feasible set changes. Therefore\n\n$$q_C=\\min\\left\\{q_0,\\frac Cw\\right\\}.$$\n\nWhen cash is sufficient, the firm chooses the unconstrained monopoly quantity. When C<wq0, all available cash is used and output is C/w. At C=0 it produces nothing. Treating all existing cash as an additional production cost, rather than just deducting actual wages, would incorrectly change the optimum."
+      }
+    ],
+    "hint": "Check the demand assumptions; in a coherent version, compare financing with a higher marginal cost or a quantity cap.",
+    "topic": "Microeconomics",
+    "sourcePage": 90,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "needs_review",
+    "notes": "Global p′<0, p″≤0 and p→0 assumptions are mutually inconsistent. Conditional standard monopoly-finance results are supplied explicitly; interpretation of B as loan choice versus credit cap also recorded.",
+    "sourceKind": "transcription"
+  },
+  {
+    "id": "2026-PEB-Q7",
+    "number": "7",
+    "stem": "A two-period household has $C_1+S=w_1N_1+T_1$, $C_2=RS+w_2N_2+T_2$, and $T=T_1+T_2/R$ fixed. Utility is $\\ln C_1+\\ln(1-N_1)+\\beta[\\ln C_2+\\ln(1-N_2)]$. Solve consumption, assess transfer timing, then replace future weight by $\\delta\\beta$ without commitment.",
+    "answer": "Let $H=w_1+w_2/R+T$. Interior consumption is $C_1=H/[2(1+\\beta)]$, $C_2=\\beta RH/[2(1+\\beta)]$; timing is irrelevant. Present bias replaces beta by delta beta. Corner formula is given below.",
+    "solution": "Write leisure $q_i=1-N_i$. Eliminate saving from the two budgets and move leisure spending to the left:\n\n$$C_1+w_1q_1+\\frac{C_2+w_2q_2}{R}=H,\\qquad H=w_1+\\frac{w_2}{R}+T.$$\n\nAssume positive wages and R, H>0, and unrestricted intertemporal borrowing/saving as no borrowing constraint is stated. The household allocates full income among four goods with utility weights 1,1,beta,beta and present-value prices 1,w1,1/R,w2/R.\n\nThe multiplier conditions imply $1/C_1=\\lambda$, $1/q_1=\\lambda w_1$, $\\beta/C_2=\\lambda/R$ and $\\beta/q_2=\\lambda w_2/R$. Thus current consumption and current leisure have equal present-value spending; each future expenditure is beta times each current expenditure. Summing expenditures gives\n\n$$\\begin{aligned}C_1&=\\frac{H}{2(1+\\beta)},& C_2&=\\frac{\\beta RH}{2(1+\\beta)},\\\\q_1&=\\frac{H}{2(1+\\beta)w_1},&q_2&=\\frac{\\beta RH}{2(1+\\beta)w_2}.\\end{aligned}$$\n\nThese formulas are valid when both implied leisure levels are at most one. Strict concavity of the logarithms establishes uniqueness over the convex feasible set.\n\nNonnegative labour requires q1,q2≤1; large positive transfers can make one of these constraints bind. Put x=C1. The exact consumption solution with these bounds is $C_2=\\beta Rx$, where x is the unique positive solution of\n\n$$ (1+\\beta)x+\\min\\{w_1,x\\}+\\min\\{w_2/R,\\beta x\\}=H.$$\n\nThen $q_1=\\min\\{1,x/w_1\\}$ and $q_2=\\min\\{1,\\beta Rx/w_2\\}$. The left side is continuous and strictly increasing from zero, so it defines x uniquely. This scalar expression covers every combination of zero-work corners without asserting an interior allocation for arbitrary transfers.\n\nBoth the interior formulas and the corner equation depend on transfers only through their present value T. Changing T1 and T2 while keeping T fixed therefore leaves consumption and labour choices unchanged. Savings adjusts to implement them: $S=w_1N_1+T_1-C_1$. A rise in current transfers offset by a present-value-equivalent fall in future transfers raises saving by the same current transfer amount. This timing neutrality relies on being able to make that saving/borrowing adjustment; a binding borrowing restriction would invalidate it.\n\nAt date 2, given S, the household maximizes $\\ln C_2+\\ln q_2$ subject to $C_2+w_2q_2=RS+T_2+w_2$. An interior date-2 solution divides this wealth equally between consumption and leisure spending; with a zero-work corner it uses the corresponding constrained optimum. Let V2(S) be this optimized utility. The envelope condition is $V_2'(S)=R/C_2$.\n\nThe date-1 household maximizes current utility plus $\\delta\\beta V_2(S)$. Its saving FOC is therefore\n\n$$\\frac1{C_1}=\\delta\\beta\\frac R{C_2},\\qquad C_2=\\delta\\beta R C_1.$$\n\nWriting $\\eta=\\delta\\beta$, the interior answer is $C_1=H/[2(1+\\eta)]$, $C_2=\\eta RH/[2(1+\\eta)]$. For corners, replace beta by eta in the preceding scalar equation and leisure formulas.\n\nThe date-2 self’s relative tastes for consumption and leisure are unchanged: multiplying its whole utility by beta or delta beta does not change its within-period choice. There is no date 3 at which it could revise a further saving plan. Therefore backward induction produces the same allocation as a commitment problem with future weight delta beta; lack of commitment introduces no additional distortion beyond that lower weight here. A smaller delta raises current consumption and lowers future consumption in the interior formula, while transfer timing remains irrelevant with unconstrained capital markets.",
+    "solutionSteps": [
+      {
+        "title": "Part (a): convert labour endowments into full income",
+        "body": "Write leisure $q_i=1-N_i$. Eliminate saving from the two budgets and move leisure spending to the left:\n\n$$C_1+w_1q_1+\\frac{C_2+w_2q_2}{R}=H,\\qquad H=w_1+\\frac{w_2}{R}+T.$$\n\nAssume positive wages and R, H>0, and unrestricted intertemporal borrowing/saving as no borrowing constraint is stated. The household allocates full income among four goods with utility weights 1,1,beta,beta and present-value prices 1,w1,1/R,w2/R."
+      },
+      {
+        "title": "Solve the interior allocation and verify its meaning",
+        "body": "The multiplier conditions imply $1/C_1=\\lambda$, $1/q_1=\\lambda w_1$, $\\beta/C_2=\\lambda/R$ and $\\beta/q_2=\\lambda w_2/R$. Thus current consumption and current leisure have equal present-value spending; each future expenditure is beta times each current expenditure. Summing expenditures gives\n\n$$\\begin{aligned}C_1&=\\frac{H}{2(1+\\beta)},& C_2&=\\frac{\\beta RH}{2(1+\\beta)},\\\\q_1&=\\frac{H}{2(1+\\beta)w_1},&q_2&=\\frac{\\beta RH}{2(1+\\beta)w_2}.\\end{aligned}$$\n\nThese formulas are valid when both implied leisure levels are at most one. Strict concavity of the logarithms establishes uniqueness over the convex feasible set."
+      },
+      {
+        "title": "Retain zero-work corners when transfers are large",
+        "body": "Nonnegative labour requires q1,q2≤1; large positive transfers can make one of these constraints bind. Put x=C1. The exact consumption solution with these bounds is $C_2=\\beta Rx$, where x is the unique positive solution of\n\n$$ (1+\\beta)x+\\min\\{w_1,x\\}+\\min\\{w_2/R,\\beta x\\}=H.$$\n\nThen $q_1=\\min\\{1,x/w_1\\}$ and $q_2=\\min\\{1,\\beta Rx/w_2\\}$. The left side is continuous and strictly increasing from zero, so it defines x uniquely. This scalar expression covers every combination of zero-work corners without asserting an interior allocation for arbitrary transfers."
+      },
+      {
+        "title": "Part (b): show exactly why transfer timing does not matter",
+        "body": "Both the interior formulas and the corner equation depend on transfers only through their present value T. Changing T1 and T2 while keeping T fixed therefore leaves consumption and labour choices unchanged. Savings adjusts to implement them: $S=w_1N_1+T_1-C_1$. A rise in current transfers offset by a present-value-equivalent fall in future transfers raises saving by the same current transfer amount. This timing neutrality relies on being able to make that saving/borrowing adjustment; a binding borrowing restriction would invalidate it."
+      },
+      {
+        "title": "Part (c): solve backward with present bias",
+        "body": "At date 2, given S, the household maximizes $\\ln C_2+\\ln q_2$ subject to $C_2+w_2q_2=RS+T_2+w_2$. An interior date-2 solution divides this wealth equally between consumption and leisure spending; with a zero-work corner it uses the corresponding constrained optimum. Let V2(S) be this optimized utility. The envelope condition is $V_2'(S)=R/C_2$.\n\nThe date-1 household maximizes current utility plus $\\delta\\beta V_2(S)$. Its saving FOC is therefore\n\n$$\\frac1{C_1}=\\delta\\beta\\frac R{C_2},\\qquad C_2=\\delta\\beta R C_1.$$\n\nWriting $\\eta=\\delta\\beta$, the interior answer is $C_1=H/[2(1+\\eta)]$, $C_2=\\eta RH/[2(1+\\eta)]$. For corners, replace beta by eta in the preceding scalar equation and leisure formulas."
+      },
+      {
+        "title": "Explain the role of no commitment in this two-period problem",
+        "body": "The date-2 self’s relative tastes for consumption and leisure are unchanged: multiplying its whole utility by beta or delta beta does not change its within-period choice. There is no date 3 at which it could revise a further saving plan. Therefore backward induction produces the same allocation as a commitment problem with future weight delta beta; lack of commitment introduces no additional distortion beyond that lower weight here. A smaller delta raises current consumption and lowers future consumption in the interior formula, while transfer timing remains irrelevant with unconstrained capital markets."
+      }
+    ],
+    "hint": "Use leisure as a good in a full-income budget and solve the date-2 problem first for present bias.",
+    "topic": "Microeconomics",
+    "sourcePage": 90,
+    "sourceFile": "External 2026 transcription (Econschool)",
+    "sourceUrl": "https://www.econschool.in/wp-content/uploads/2026/06/isi_peb.pdf",
+    "sourceType": "third-party 2026 transcription; not an official 2026 sample",
+    "status": "verified",
+    "notes": "Solutions distinguish interior labour from zero-work corners, assume positive wages/R and H, and do not impose an unstated nonnegative-saving constraint. Two-period no-commitment problem solved by backward induction, not by assuming an extra time inconsistency.",
+    "sourceKind": "transcription"
+  }
+]
